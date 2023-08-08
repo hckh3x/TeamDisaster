@@ -3,7 +3,7 @@
 ## Modding/settings/videogames/etc
 ---
 - [Youtube](https://www.youtube.com/@TeamDisaster)
-- [Patreon](patreon.com/TeamDisaster)
+- [Patreon](https://patreon.com/TeamDisaster)
 - [Facebook](https://www.facebook.com/TeamDisasterTD)
 
 ---

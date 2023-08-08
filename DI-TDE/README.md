@@ -13,7 +13,9 @@ I really hope that you enjoy it.
 5. Enjoy it!.
 
 ## Recomendation:
+
 Install [Reshade](https://reshade.me) on Dead Island and use my present (.ini file) to get better graphics.
+- The ReShadePreset.ini may be loaded into Reshade app (during game, press "home" and skip tutorial. Load setting and select that present).
 ---
 ## Changed:
 

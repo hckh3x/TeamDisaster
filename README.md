@@ -1,4 +1,5 @@
 # Team Disaster
+![image](tdportadaxd.png)
 ## Modding/settings/videogames/etc
 ---
 - [Youtube](https://www.youtube.com/@TeamDisaster)

@@ -46,4 +46,4 @@ Gameplay/settings/optimizations/etc:
 - Health max level: now every five levels you will get a max level bonus (instance every level) but this gonna give you more health whe you reach 60 level. example; before max health was: 240, now while you reach level 60, you got 340 max health. 
 ---
 ### I want to support you!
-[Gift'em a Coffee cup!](patreon.com/TeamDisaster)
+[Gift'em a Coffee cup!](https://patreon.com/TeamDisaster)

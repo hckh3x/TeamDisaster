@@ -1,11 +1,13 @@
 # **Dead island - Team Disaster Edition (Definitive Edition MOD)**
 ---
-# Introduction:
+## Introduction:
+
 For a while years ago, DI has been one of my zombies favourite games. But this got too easy and bored to play. So, now, this mod project its trying to get a painful-hardcore game to people that wanna really enjoy this -as God tell us-.
 I really hope that you enjoy it.
 //
 Durante hace algunos años, DI ha sido uno de mis juegos favoritos de zombis. Pero, se volvió muy fácil y aburrido para jugar. Entonces, ahora, este proyecto está intentando de obtener un juego doloroso-difícil para la raza que quiere realmente disfrutarlo -como Dios manda-.
 Realmente espero que lo disfrutes.
+
 ---
 ## Installation:
 1. Go to your DIDE folder steam/steamapps/common/DIDE/ (Steam) or wherever you got installed this game.
@@ -34,7 +36,7 @@ Install [Reshade](https://reshade.me) on Dead Island and use my present (.ini fi
 - The ReShadePreset.ini may be loaded into Reshade app (during game, press "home" and skip tutorial. Load setting and select that present).
 
 ---
-## Changed:
+### Changed:
 
 Gameplay/settings/optimizations/etc:
 - Fov of player has been changed from 62.5 to 97.5, trying to get realistic gamesense

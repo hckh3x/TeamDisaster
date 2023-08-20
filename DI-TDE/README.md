@@ -2,20 +2,37 @@
 ---
 # Introduction:
 For a while years ago, DI has been one of my zombies favourite games. But this got too easy and bored to play. So, now, this mod project its trying to get a painful-hardcore game to people that wanna really enjoy this -as God tell us-.
-
 I really hope that you enjoy it.
+//
+Durante hace algunos años, DI ha sido uno de mis juegos favoritos de zombis. Pero, se volvió muy fácil y aburrido para jugar. Entonces, ahora, este proyecto está intentando de obtener un juego doloroso-difícil para la raza que quiere realmente disfrutarlo -como Dios manda-.
+Realmente espero que lo disfrutes.
 ---
 ## Installation:
 1. Go to your DIDE folder steam/steamapps/common/DIDE/ (Steam) or wherever you got installed this game.
 2. Enter to "DI" folder.
-3. Backup data0.pak file (change name file to data0.pak.bak, for example)
-4. Repleace/paste data0.pak (mod file) and data3.pak to folder and already to enjoy it.
-5. Enjoy it!.
+3. Repleace/paste data3.pak (mod file) to folder and already to enjoy it.
+4. Enjoy it!.
+//
+1. Ve a la carpeta que tienes DIDE steam/steamapps/common/DIDE/ (Steam) o donde sea que lo tienes instalado.
+2. Entra a la carpeta "DI".
+3. Remplaza o pega el archivo data3.pak y listo para disfrutarlo.
+4. ¡Disfrútalo!.
 
+## Unistall:
+1. Simply remove Data3.pak file.
+//
+1. Simplemente elimina el archivo "Data3.pak".
+
+## Caution:
+If you gonna play this game with friends, them needed installed too.
+//
+Si jugarás este juego con tus amigos, ellos tendrán que instalarlo también.
+---
 ## Recomendation:
 
 Install [Reshade](https://reshade.me) on Dead Island and use my present (.ini file) to get better graphics.
 - The ReShadePreset.ini may be loaded into Reshade app (during game, press "home" and skip tutorial. Load setting and select that present).
+
 ---
 ## Changed:
 
@@ -23,8 +40,8 @@ Gameplay/settings/optimizations/etc:
 - Fov of player has been changed from 62.5 to 97.5, trying to get realistic gamesense
 - Fov on boat has been changed to 85 from 60 and boost mode (when accelerate it) to 45 from 60. This trying to simulate a speed-fov-realistic visual effect.
 - Quick Slot count set as default 8 (no level influenced) stucked.
-- Now "performance mode" its a really performance mode. Lowest settings possible to runs as hell.
-- Quality mode: its highest settings for beauty video settings
+- Now "performance mode" its a really performance mode. Lowest settings possible to runs as hell. (At least 1GB vram).
+- Quality mode: its highest settings for beauty video settings (At least 4GB vram).
 - Regeneration has decreased to 15hp, slower speed and hardest health stuffs.
 - Carriable objects are more balanced...
 - More damage receive by zombis. Bite: 70 (from 11), hands: 20 (from 7) and more angle to be biten: 80 (from 60)

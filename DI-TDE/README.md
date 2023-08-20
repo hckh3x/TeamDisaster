@@ -22,18 +22,13 @@ Español:
 2- Entra a la carpeta "DI".
 3- Remplaza o pega el archivo data3.pak y listo para disfrutarlo.
 4- ¡Disfrútalo!.
-
+---
 ## Unistall:
 1. Simply remove Data3.pak file.
 
-Esp:
-1. Simplemente elimina el archivo "Data3.pak".
-
+---
 ## Caution:
 If you gonna play this game with friends, them needed installed too.
-
-Esp:
-Si jugarás este juego con tus amigos, ellos tendrán que instalarlo también.
 ---
 ## Recomendation:
 

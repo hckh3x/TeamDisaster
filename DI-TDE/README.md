@@ -4,7 +4,9 @@
 
 For a while years ago, DI has been one of my zombies favourite games. But this got too easy and bored to play. So, now, this mod project its trying to get a painful-hardcore game to people that wanna really enjoy this -as God tell us-.
 I really hope that you enjoy it.
-//
+
+
+Español:
 Durante hace algunos años, DI ha sido uno de mis juegos favoritos de zombis. Pero, se volvió muy fácil y aburrido para jugar. Entonces, ahora, este proyecto está intentando de obtener un juego doloroso-difícil para la raza que quiere realmente disfrutarlo -como Dios manda-.
 Realmente espero que lo disfrutes.
 
@@ -14,20 +16,23 @@ Realmente espero que lo disfrutes.
 2. Enter to "DI" folder.
 3. Repleace/paste data3.pak (mod file) to folder and already to enjoy it.
 4. Enjoy it!.
-//
-1. Ve a la carpeta que tienes DIDE steam/steamapps/common/DIDE/ (Steam) o donde sea que lo tienes instalado.
-2. Entra a la carpeta "DI".
-3. Remplaza o pega el archivo data3.pak y listo para disfrutarlo.
-4. ¡Disfrútalo!.
+
+Español:
+1- Ve a la carpeta que tienes DIDE steam/steamapps/common/DIDE/ (Steam) o donde sea que lo tienes instalado.
+2- Entra a la carpeta "DI".
+3- Remplaza o pega el archivo data3.pak y listo para disfrutarlo.
+4- ¡Disfrútalo!.
 
 ## Unistall:
 1. Simply remove Data3.pak file.
-//
+
+Esp:
 1. Simplemente elimina el archivo "Data3.pak".
 
 ## Caution:
 If you gonna play this game with friends, them needed installed too.
-//
+
+Esp:
 Si jugarás este juego con tus amigos, ellos tendrán que instalarlo también.
 ---
 ## Recomendation:

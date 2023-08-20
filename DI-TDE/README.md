@@ -16,12 +16,6 @@ Realmente espero que lo disfrutes.
 2. Enter to "DI" folder.
 3. Repleace/paste data3.pak (mod file) to folder and already to enjoy it.
 4. Enjoy it!.
-
-Español:
-1- Ve a la carpeta que tienes DIDE steam/steamapps/common/DIDE/ (Steam) o donde sea que lo tienes instalado.
-2- Entra a la carpeta "DI".
-3- Remplaza o pega el archivo data3.pak y listo para disfrutarlo.
-4- ¡Disfrútalo!.
 ---
 ## Unistall:
 1. Simply remove Data3.pak file.
@@ -38,7 +32,7 @@ Install [Reshade](https://reshade.me) on Dead Island and use my present (.ini fi
 ---
 ### Changed:
 
-Gameplay/settings/optimizations/etc:
+`Gameplay/settings/optimizations/etc:
 - Fov of player has been changed from 62.5 to 97.5, trying to get realistic gamesense
 - Fov on boat has been changed to 85 from 60 and boost mode (when accelerate it) to 45 from 60. This trying to simulate a speed-fov-realistic visual effect.
 - Quick Slot count set as default 8 (no level influenced) stucked.
@@ -62,7 +56,7 @@ Gameplay/settings/optimizations/etc:
 - Special habilities from survivor got buff (to reforce concept on each one).
 - Every survivor got a rework of their own habilities (rage got a buff, health and stammina balanced). Also, each one of survivors got a diferent speed, stammina, acceleration, etc. So try to playing everyone.
 - Female survivors are by default faster than male survivors but have less health. Male survivors have more health but less acceleration and spring speed.
-- Health max level: now every five levels you will get a max level bonus (instance every level) but this gonna give you more health whe you reach 60 level. example; before max health was: 240, now while you reach level 60, you got 340 max health. 
+- Health max level: now every five levels you will get a max level bonus (instance every level) but this gonna give you more health whe you reach 60 level. example; before max health was: 240, now while you reach level 60, you got 340 max health.``
 ---
 ### I want to support you!
 [Gift'em a Coffee cup!](https://patreon.com/TeamDisaster)

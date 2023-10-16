@@ -3,7 +3,7 @@
 ## Modding/settings/videogames/etc
 ---
 - [Youtube](https://www.youtube.com/@TeamDisaster)
-- [Patreon](patreon.com/TeamDisaster)
+- [Patreon](https://patreon.com/TeamDisaster)
 - [Facebook](https://www.facebook.com/TeamDisasterTD)
 
 ---
@@ -17,3 +17,8 @@ Please, enjoy it and comment us what you think'bout those. You know where find u
 Este repositorio se ha creado para almacenar todos los proyectos de Team Disaster (mods, ajustes, etc.). Team disaster Comparte este contenido solo siguiendo un propósito: ¡Puedes disfrutarlo!.
 Por favor, disfrútalo y coméntanos lo que piensas sobre ello. Sabes dónde encontrarnos.
 
+---
+
+## Look at this:
+- [Dead Island Team Disaster Edition](DI-TDE)
+  

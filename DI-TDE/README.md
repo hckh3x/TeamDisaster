@@ -1,24 +1,28 @@
 # **Dead island - Team Disaster Edition (Definitive Edition MOD)**
 ---
+
 ## Introduction:
-
-For a while years ago, DI has been one of my zombies favourite games. But this got too easy and bored to play. So, now, this mod project its trying to get a painful-hardcore game to people that wanna really enjoy this -as God tell us-.
-I really hope that you enjoy it.
-
-
-Español:
 Durante hace algunos años, DI ha sido uno de mis juegos favoritos de zombis. Pero, se volvió muy fácil y aburrido para jugar. Entonces, ahora, este proyecto está intentando de obtener un juego doloroso-difícil para la raza que quiere realmente disfrutarlo -como Dios manda-.
 Realmente espero que lo disfrutes.
 
 ---
 ## Installation:
-1. Go to your DIDE folder steam/steamapps/common/DIDE/ (Steam) or wherever you got installed this game.
-2. Enter to "DI" folder.
-3. Repleace/paste data3.pak (mod file) to folder and already to enjoy it.
-4. Enjoy it!.
+### Atención: Antes de instalarlo, haz un backup de tu progreso (posiblemente en la carpeta documentos), DIDE, out y ahí verás.
+1. Ubica la sección "Releases"/"Liberaciones" a la derecha de la pagina central [Team Disaster](https://github.com/hckh3x/TeamDisaster/tree/main) y entra en "Dead Island - TDE (MOD)", selecciona el .EXE y descárgalo
+2. Una vez lo hayas descargado, da click en él
+3. ¡Listo!, el mod se te instaló en la carpeta del juego:
+C:\Program Files (x86)\Steam\steamapps\common\DIDE
+4. Si esa no es la carpeta, igual entra y los archivos que estén ahí, pégalos en la carpeta DI de tu juego (verás DATA1.pak y DATA2.pak)
+5. Y listo, a jugar.
+6. OPCIONAL: Instala [ReShade](https://reshade.me/) y carga el archivo dentro de la carpeta DI, no te arrepentirás.
 ---
 ## Unistall:
-1. Simply remove Data3.pak file.
+1. Para desinstalar solo borra el archivo DATA3.pak y listo :D
+
+---
+## Caution:
+### Atención: 
+ Si juegas con amigos, todos deben tener el mod (sino los estará sacando).
 
 ---
 ## Caution:
@@ -59,4 +63,5 @@ Install [Reshade](https://reshade.me) on Dead Island and use my present (.ini fi
 - Health max level: now every five levels you will get a max level bonus (instance every level) but this gonna give you more health whe you reach 60 level. example; before max health was: 240, now while you reach level 60, you got 340 max health.``
 ---
 ### I want to support you!
+#### ¡Ayúdame!, al menos compárteme.
 [Gift'em a Coffee cup!](https://patreon.com/TeamDisaster)

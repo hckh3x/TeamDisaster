@@ -9,6 +9,7 @@
 ## Instalación:
 ### Atención: Antes de instalarlo, haz un backup de tu progreso (posiblemente en la carpeta documentos), DIDE, out y ahí verás.
  1. Ubica la sección "Releases"/"Liberaciones" a la derecha de la pagina central [Team Disaster](https://github.com/hckh3x/TeamDisaster/tree/main) y entra en "Dead Island - TDE (MOD)", selecciona el .EXE y descárgalo
+ 1.1 O entra al archivo Data3.pak y después en el ícono de descarga (a la derecha).
  2. Una vez lo hayas descargado, da click en él
  3. ¡Listo!, el mod se te instaló en la carpeta del juego:
 C:\Program Files (x86)\Steam\steamapps\common\DIDE

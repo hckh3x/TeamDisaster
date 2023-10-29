@@ -1,0 +1,29 @@
+//----- animacje z M60
+//!include("M_FPP_Unarmed.scr")
+
+// --- Noise kamery 
+
+SeqTrack( "FPP_M60_StandNoise",				"M_FPP_Stick_StandNoise.anm2",	        0, 170, 15, 1, 0.3)
+SeqTrack( "FPP_M60_MoveForwardNoise",			"M_FPP_AK47_MoveNoise.anm2",		0, 129, 30, 1, 0.5)
+SeqTrackAlias( "FPP_M60_MoveRightNoise",		"FPP_M60_MoveForwardNoise")
+SeqTrackAlias( "FPP_M60_MoveLeftNoise",			"FPP_M60_MoveForwardNoise")
+SeqTrackAlias( "FPP_M60_MoveBackwardNoise",		"FPP_M60_MoveForwardNoise")
+
+// AK47 - podstawowe
+SeqTrack("FPP_M60_Reload", 				"M_FPP_M60_Reload.anm2",			0, 349, 60, 1, 0.3)
+
+SeqTrack("FPP_M60_Shot", 				"M_FPP_M60_Shot.anm2",			0, 38, 60, 1, 0.3)
+SeqTrack("FPP_M60_Stand", 				"M_FPP_M60_Stand_1.anm2",		0, 20, 60, 1, 0.3)
+				
+SeqTrack("FPP_M60_Aim_Stand", 				"M_FPP_M60_Aim_StandPos.anm2",		0, 10, 60, 1, 0.3)
+SeqTrack("FPP_M60_Aim_Shot", 				"M_FPP_M60_Aim_Shot.anm2",		0, 37, 60, 1, 0.3)
+
+// Empty shots
+//SeqTrack("FPP_M60_ShotEmpty", 				"M_FPP_M60_ShotEmpty.anm2",		0, 37, 60, 1, 0.3)
+SeqTrack("FPP_M60_ShotEmpty", 				"M_FPP_M60_Shot.anm2",			0, 38, 60, 1, 0.3)
+//SeqTrack("FPP_M60_Aim_ShotEmpty", 			"M_FPP_M60_Aim_ShotEmpty.anm2", 		0, 33, 60, 1, 0.3)
+SeqTrack("FPP_M60_Aim_ShotEmpty", 				"M_FPP_M60_Aim_Shot.anm2",		0, 37, 60, 1, 0.3)
+
+SeqTrack("FPP_M60_Wall", 				"M_FPP_M60_WallPos.anm2",          	2, 10, 60, 1, 0.3) 
+
+SeqTrackAlias( "FPP_Unarmed_Vigilent2",		"FPP_Unarmed_Vigilent1")

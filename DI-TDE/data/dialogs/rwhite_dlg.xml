@@ -1,0 +1,1124 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<speakers>
+	<speaker name="Charon">
+		<group name="Charon_M_B">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Charon_M_B"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Charon_M_C">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Charon_M_C"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Charon_M_D">
+			<state type="use" range="100.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Charon_M_D"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Charon_M_E">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Charon_M_E"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Charon_QF01_NF">
+			<state type="near_to_middle" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Charon_QF01_NearToMiddle"/>
+				</dialog>
+			</state>
+			<state type="middle_to_near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Charon_QF01_MiddleToNear"/>
+				</dialog>
+			</state>
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Charon_QF01_Use_Second"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Charon_QF01_InProgress">
+			<state type="middle_to_near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Charon_QF01_InProgress_01"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Charon_QF03_NF">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Charon_RWPQ_QF04_Use"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Charon_QF03_InProgress">
+			<state type="middle_to_near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Charon_QF03_InProgress_01"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Charon_QF03_Radio_B" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Charon_RWPQ_QF03_Radio_B"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Charon_QF03_Radio_C">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Charon_QF03_Radio_C"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Charon_QF02_Radio_A">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Charon_QF02_Radio_A"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Charon_QF02_Radio_B">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Charon_QF02_Radio_B"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Charon_QF02_Radio_C">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Charon_QF02_Radio_C"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Charon_QF02_Radio_D" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Charon_QF02_Radio_D"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Charon_QF04_NF">
+			<state type="near_to_middle" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Charon_QF04_NearToMiddle"/>
+				</dialog>
+			</state>
+			<state type="middle_to_near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Charon_QF04_MiddleToNear"/>
+				</dialog>
+			</state>
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Charon_QF04_Use"/>
+				</dialog>
+			</state>
+			<state type="use_second" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Charon_QF04_Use_Second"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Charon_QF04_InProgress">
+			<state type="middle_to_near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Charon_QF04_InProgress_01"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Charon_QF04_Radio_A">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Charon_QF04_Radio_A"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Charon_QF04_Radio_B" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Charon_RWPQ_QF04_Radio_B"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Charon_QF04_Radio_C" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Charon_QF04_Radio_C"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Charon_RWPQ_06">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Charon_RWPQ_06"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Charon_RWPQ_07">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Charon_RWPQ_07"/>
+					<line id="Charon_RWPQ_08"/>
+					<line id="Charon_RWPQ_09"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Charon_RWPQ_08">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Charon_RWPQ_08"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Charon_RWPQ_09">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Charon_RWPQ_09"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Charon_RWPQ_11" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Charon_RWPQ_11"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Charon_RWPQ_12" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Charon_RWPQ_12"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Charon_RWPQ_13" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Charon_RWPQ_13"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Charon_RWPQ_37" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Charon_RWPQ_37"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Charon_RWPQ_39" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Charon_RWPQ_39"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Charon_RWPQ_65" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Charon_RWPQ_65"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Charon_RWPQ_66">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Charon_RWPQ_66"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Charon_RWPQ_67">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Charon_RWPQ_67"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Charon_RWPQ_68_Docks" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Charon_RWPQ_68_Docks"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Charon_RWPQ_69" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Charon_RWPQ_69"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Charon_RWPQ_70" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Charon_RWPQ_70"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Charon_RWPQ_68" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Charon_RWPQ_68"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Charon_RWPQ_39a" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Charon_RWPQ_39a"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Charon_RWPQ_39b" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Charon_RWPQ_39b"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="Emily">
+		<group name="Emily_RWPQ_02">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Emily_RWPQ_02"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="White">
+		<group name="Ryder_RWPQ_01" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Ryder_RWPQ_01"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Ryder_RWPQ_05" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Ryder_RWPQ_05"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Ryder_RWPQ_10" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Ryder_RWPQ_10"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Ryder_RWPQ_103" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Ryder_RWPQ_103"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Ryder_RWPQ_104" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Ryder_RWPQ_104"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Ryder_RWPQ_38" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Ryder_RWPQ_38"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Ryder_RWPQ_40" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Ryder_RWPQ_40"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Ryder_RWPQ_103a" voice_2d="true">
+			<state type="use" range="100.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Ryder_RWPQ_103a"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Ryder_RWPQ_41" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Ryder_RWPQ_41"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Ryder_RWPQ_01_A" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Ryder_RWPQ_01_A"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Ryder_RWPQ_01_B" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Ryder_RWPQ_01_B"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Ryder_RWPQ_01_C" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Ryder_RWPQ_01_C"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Ryder_RWPQ_105" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Ryder_RWPQ_105"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Ryder_RWPQ_106" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Ryder_RWPQ_106"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Ryder_RWPQ_107" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Ryder_RWPQ_107"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Ryder_RWPQ_108" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Ryder_RWPQ_108"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="Kevin">
+		<group name="Charon_RWPQ_04" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Charon_RWPQ_04"/>
+					<line id="Charon_RWPQ_04a"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="PrisonerRWPQ_001">
+		<group name="Prisoner_RWPQ_14">
+			<state type="use" range="100.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Prisoner_RWPQ_14"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Prisoner_RWPQ_17">
+			<state type="use" range="100.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Prisoner_RWPQ_17"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Prisoner_RWPQ_20">
+			<state type="use" range="100.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Prisoner_RWPQ_20"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="PrisonerRWPQ_002">
+		<group name="Prisoner_RWPQ_22">
+			<state type="use" range="100.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Prisoner_RWPQ_22"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Prisoner_RWPQ_26">
+			<state type="use" range="100.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Prisoner_RWPQ_26"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="PrisonerRWPQ_003">
+		<group name="Prisoner_RWPQ_32">
+			<state type="use" range="100.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Prisoner_RWPQ_32"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Prisoner_RWPQ_34">
+			<state type="use" range="100.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Prisoner_RWPQ_34"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Prisoner_RWPQ_36">
+			<state type="use" range="100.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Prisoner_RWPQ_36"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="PrisonerRWPQ_004">
+		<group name="Prisoner_RWPQ_41">
+			<state type="use" range="100.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Prisoner_RWPQ_41"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Prisoner_RWPQ_44">
+			<state type="use" range="100.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Prisoner_RWPQ_44"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Prisoner_RWPQ_45">
+			<state type="use" range="100.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Prisoner_RWPQ_45"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="PrisonerRWPQ_005">
+		<group name="Prisoner_RWPQ_51">
+			<state type="use" range="100.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Prisoner_RWPQ_51"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Prisoner_RWPQ_52">
+			<state type="use" range="100.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Prisoner_RWPQ_52"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Prisoner_RWPQ_58">
+			<state type="use" range="100.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Prisoner_RWPQ_58"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="PrisonerRWPQ_006">
+		<group name="Prisoner_RWPQ_61">
+			<state type="use" range="100.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Prisoner_RWPQ_61"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Prisoner_RWPQ_63">
+			<state type="use" range="100.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Prisoner_RWPQ_63"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Prisoner_RWPQ_64">
+			<state type="use" range="100.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Prisoner_RWPQ_64"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="PrisonerRWPQ_007">
+		<group name="Prisoner_RWPQ_70">
+			<state type="use" range="100.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Prisoner_RWPQ_70"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Prisoner_RWPQ_73">
+			<state type="use" range="100.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Prisoner_RWPQ_73"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="PrisonerRWPQ_008">
+		<group name="Prisoner_RWPQ_81">
+			<state type="use" range="100.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Prisoner_RWPQ_81"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Prisoner_RWPQ_84">
+			<state type="use" range="100.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Prisoner_RWPQ_84"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="PrisonerRWPQ_009">
+		<group name="Prisoner_RWPQ_86">
+			<state type="use" range="100.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Prisoner_RWPQ_86"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="PrisonerRWPQ_010">
+		<group name="Prisoner_RWPQ_99">
+			<state type="use" range="100.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Prisoner_RWPQ_99"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="PrisonerRWPQ_011">
+		<group name="Prisoner_RWPQ_102">
+			<state type="use" range="100.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Prisoner_RWPQ_102"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="PrisonerRWPQ_012">
+		<group name="Prisoner_RWPQ_100_Docks">
+			<state type="use" range="100.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Prisoner_RWPQ_100_Docks"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Prisoner_RWPQ_100_Docks_1">
+			<state type="use" range="100.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Prisoner_RWPQ_100_Docks_1"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="PrisonerRWPQ_013">
+		<group name="Prisoner_RWPQ_90">
+			<state type="use" range="100.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Prisoner_RWPQ_90"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Prisoner_RWPQ_27">
+			<state type="use" range="100.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Prisoner_RWPQ_27"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="PrisonerRWPQ_014">
+		<group name="Prisoner_RWPQ_89">
+			<state type="use" range="100.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Prisoner_RWPQ_89"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Prisoner_RWPQ_57">
+			<state type="use" range="100.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Prisoner_RWPQ_57"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="PrisonerRWPQ_015">
+		<group name="Prisoner_RWPQ_35">
+			<state type="use" range="100.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="CINPrison_05_Prisoner"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="Prisoner">
+		<group name="Prisoner_RWPQ_100">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Prisoner_RWPQ_100"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Prisoner_RWPQ_101">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Prisoner_RWPQ_101"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Prisoner_RWPQ_15">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Prisoner_RWPQ_15"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Prisoner_RWPQ_16">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Prisoner_RWPQ_16"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Prisoner_RWPQ_18">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Prisoner_RWPQ_18"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Prisoner_RWPQ_19">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Prisoner_RWPQ_19"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Prisoner_RWPQ_21">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Prisoner_RWPQ_21"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Prisoner_RWPQ_23">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Prisoner_RWPQ_23"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Prisoner_RWPQ_24">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Prisoner_RWPQ_24"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Prisoner_RWPQ_25">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Prisoner_RWPQ_25"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Prisoner_RWPQ_28">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Prisoner_RWPQ_28"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Prisoner_RWPQ_29">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Prisoner_RWPQ_29"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Prisoner_RWPQ_30">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Prisoner_RWPQ_30"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Prisoner_RWPQ_31">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Prisoner_RWPQ_31"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Prisoner_RWPQ_33">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Prisoner_RWPQ_33"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Prisoner_RWPQ_42">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Prisoner_RWPQ_42"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Prisoner_RWPQ_43">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Prisoner_RWPQ_43"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Prisoner_RWPQ_46">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Prisoner_RWPQ_46"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Prisoner_RWPQ_47">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Prisoner_RWPQ_47"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Prisoner_RWPQ_48">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Prisoner_RWPQ_48"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Prisoner_RWPQ_49">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Prisoner_RWPQ_49"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Prisoner_RWPQ_50">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Prisoner_RWPQ_50"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Prisoner_RWPQ_53">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Prisoner_RWPQ_53"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Prisoner_RWPQ_54">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Prisoner_RWPQ_54"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Prisoner_RWPQ_55">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Prisoner_RWPQ_55"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Prisoner_RWPQ_56">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Prisoner_RWPQ_56"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Prisoner_RWPQ_59">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Prisoner_RWPQ_59"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Prisoner_RWPQ_60">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Prisoner_RWPQ_60"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Prisoner_RWPQ_62">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Prisoner_RWPQ_62"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Prisoner_RWPQ_68">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Prisoner_RWPQ_68"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Prisoner_RWPQ_69">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Prisoner_RWPQ_69"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Prisoner_RWPQ_71">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Prisoner_RWPQ_71"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Prisoner_RWPQ_72">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Prisoner_RWPQ_72"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Prisoner_RWPQ_74">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Prisoner_RWPQ_74"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Prisoner_RWPQ_75">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Prisoner_RWPQ_75"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Prisoner_RWPQ_76">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Prisoner_RWPQ_76"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Prisoner_RWPQ_77">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Prisoner_RWPQ_77"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Prisoner_RWPQ_78">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Prisoner_RWPQ_78"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Prisoner_RWPQ_79">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Prisoner_RWPQ_79"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Prisoner_RWPQ_80">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Prisoner_RWPQ_80"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Prisoner_RWPQ_82">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Prisoner_RWPQ_82"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Prisoner_RWPQ_83">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Prisoner_RWPQ_83"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Prisoner_RWPQ_85">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Prisoner_RWPQ_85"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Prisoner_RWPQ_87">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Prisoner_RWPQ_87"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Prisoner_RWPQ_88">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Prisoner_RWPQ_88"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Prisoner_RWPQ_91">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Prisoner_RWPQ_91"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Prisoner_RWPQ_92">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Prisoner_RWPQ_92"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Prisoner_RWPQ_93">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Prisoner_RWPQ_93"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Prisoner_RWPQ_94">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Prisoner_RWPQ_94"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Prisoner_RWPQ_95">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Prisoner_RWPQ_95"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Prisoner_RWPQ_96">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Prisoner_RWPQ_96"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Prisoner_RWPQ_97">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Prisoner_RWPQ_97"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Prisoner_RWPQ_98">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Prisoner_RWPQ_98"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="Pilot">
+		<group name="Pilot_RWPQ_103" voice_2d="true">
+			<state type="use" range="100.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Pilot_RWPQ_103"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Pilot_RWPQ_00" voice_2d="true">
+			<state type="use" range="100.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Pilot_RWPQ_00"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="Emily_1">
+		<group name="Em_Tape1">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Emily_Tape1"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="Emily_2">
+		<group name="Em_Tape2">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Emily_Tape2"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="Emily_3">
+		<group name="Em_Tape3">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Emily_Tape3"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="Emily_4">
+		<group name="Em_Tape4">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Emily_Tape4"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="Emily_5">
+		<group name="Em_Tape5">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Emily_Tape5"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="Emily_6">
+		<group name="Em_Tape6">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Emily_Tape6"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="fake_charon">
+		<group name="Charon_M_D_RW">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Charon_M_D_RW"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+</speakers>
+

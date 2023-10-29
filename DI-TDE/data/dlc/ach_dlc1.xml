@@ -1,0 +1,233 @@
+<?xml version="1.0"?>
+
+<!-- COMMON PARAMS -->
+
+<stats>
+    <stat type="achievement" 
+    name = "Wave and Smile"
+    dlc ="1"
+    xlast_id = "49"
+    image=""
+    points="8"
+    grade="4"
+    hidden="0"
+    progress_type = "number"
+    count = "1">
+        <event class = "Evn_GameDeltaTimePassed" xlast_map="22">
+           <params coop="true" min_play_time="0"/>
+        </event>
+        <event class = "Evn_GameDeltaTimePassed" xlast_map="23">
+           <params coop="true" min_play_time="0"/>
+        </event>
+        <event class = "Evn_GameDeltaTimePassed" xlast_map="24">
+           <params coop="true" min_play_time="0"/>
+        </event>
+        <event class = "Evn_GameDeltaTimePassed" xlast_map="25">
+           <params coop="true" min_play_time="0"/>
+        </event>
+    </stat>
+
+    <stat type="achievement" 
+    name = "Extreme Firefighting"
+    dlc ="1"
+    xlast_id = "50"
+    image=""
+    points="20"
+    grade="3"
+    hidden="0"
+    progress_type = "number"
+    count = "5">
+        <event class = "Evn_Kill">
+            <params no_time ="true" set_on_fire="true"/>
+		</event>
+    </stat>
+
+    <stat type="achievement" 
+    name = "Out of honey? Chew bees!"
+    dlc ="1"
+    xlast_id = "51"
+    image=""
+    points="20"
+    grade="4"
+    hidden="0"
+    progress_type = "number"
+    count = "5"
+	single_arena_run="true">
+        <event class = "Evn_ArenaScore">
+            <params no_time ="true" no_weapons="true"/>
+		</event>
+    </stat>
+
+	<stat type="achievement_checklist" 
+    name = "Complete a set"
+    dlc ="1"
+    xlast_id = "52"
+    image=""
+    points="12"
+    grade="4"
+    hidden="0"
+    progress_type = "list"
+    count = "6"
+	arena = "true"
+	single_arena_run="true">
+		<params complete="all"/>
+		<objective name="&InfectedObjective&" desc_text="" done_text="">
+			<event class="Evn_Kill">
+				<params victim="Infected"/>
+			</event>
+		</objective>
+		<objective name="&SuiciderObjective&" desc_text="" done_text="">
+			<event class="Evn_Kill">
+				<params victim="Suicider"/>
+			</event>
+		</objective>
+		<objective name="&BerserkerObjective&" desc_text="" done_text="">
+			<event class="Evn_Kill">
+				<params victim="Berserker"/>
+			</event>
+		</objective>
+		<objective name="&ButcherObjective&" desc_text="" done_text="">
+			<event class="Evn_Kill">
+				<params victim="Butcher"/>
+			</event>
+		</objective>
+		<objective name="&CorrupterObjective&" desc_text="" done_text="">
+			<event class="Evn_Kill">
+				<params victim="Corrupter"/>
+			</event>
+		</objective>
+		<objective name="&WalkerObjective&" desc_text="" done_text="">
+			<event class="Evn_Kill">
+				<params victim="Walker"/>
+			</event>
+		</objective>
+	</stat>
+
+    <stat type="achievement_checklist" 
+    name = "Looking for trouble"
+    dlc ="1"
+    xlast_id = "53"
+    image=""
+    points="12"
+    grade="4"
+    hidden="0"
+    progress_type = "number"
+    count = "5">
+		<params complete="all"/>
+		<objective name="&ArenaAObjective&" desc_text="" done_text="">
+			<event class = "Evn_ArenaScore" xlast_map="22">
+				<params no_time ="true" accumulate_count="5" single_arena_run="true"/>
+			</event>
+		</objective>
+		<objective name="&ArenaBObjective&" desc_text="" done_text="">
+			<event class = "Evn_ArenaScore" xlast_map="23">
+				<params no_time ="true" accumulate_count="5" single_arena_run="true"/>
+			</event>
+		</objective>
+		<objective name="&ArenaCObjective&" desc_text="" done_text="">
+			<event class = "Evn_ArenaScore" xlast_map="24">
+				<params no_time ="true" accumulate_count="5" single_arena_run="true"/>
+			</event>
+		</objective>
+		<objective name="&ArenaDObjective&" desc_text="" done_text="">
+			<event class = "Evn_ArenaScore" xlast_map="25">
+				<params no_time ="true" accumulate_count="5" single_arena_run="true"/>
+			</event>
+		</objective>
+	</stat>
+
+    <stat type="achievement" 
+    name = "Stick it to the enemy"
+    dlc ="1"
+    xlast_id = "54"
+    image=""
+    points="24"
+    grade="4"
+    hidden="0"
+    progress_type = "number"
+    count = "15"
+    single_arena_run = "true">
+        <event class = "Evn_ArenaScore">
+            <params no_time ="true" analog_fighting ="true"/>
+		</event>
+    </stat>
+
+    <stat type="achievement_checklist" 
+    name = "Gladiator school"
+    dlc ="1"
+    xlast_id = "55"
+    image=""
+    points="20"
+    grade="4"
+    hidden="0"
+    progress_type = "number"
+    count = "4">
+		<params complete="all"/>
+		<objective name="&PurnaObjective&" desc_text="" done_text="">
+			<event class = "Evn_ArenaScore">
+				<params no_time ="true" character="Purna" accumulate_count="15" single_arena_run="true"/>
+			</event>
+		</objective>
+		<objective name="&SamBObjective&" desc_text="" done_text="">
+			<event class = "Evn_ArenaScore">
+				<params no_time ="true" character="SamB" accumulate_count="15" single_arena_run="true"/>
+			</event>
+		</objective>
+		<objective name="&LoganObjective&" desc_text="" done_text="">
+			<event class = "Evn_ArenaScore">
+				<params no_time ="true" character="Logan" accumulate_count="15" single_arena_run="true"/>
+			</event>
+		</objective>
+		<objective name="&XianObjective&" desc_text="" done_text="">
+			<event class = "Evn_ArenaScore">
+				<params no_time ="true" character="Xian" accumulate_count="15" single_arena_run="true"/>
+			</event>
+		</objective>
+	</stat>
+
+    <stat type="achievement" 
+    name = "Fancy"
+    dlc ="1"
+    xlast_id = "56"
+    image=""
+    points="20"
+    grade="4"
+    hidden="0"
+    progress_type = "number"
+    count = "10"
+	single_arena_run="true">
+        <event class = "Evn_ArenaScore">
+            <params no_time ="true" custom_weapon="true"/>
+		</event>
+    </stat>
+
+    <stat type="achievement" 
+    name = "Morituri te salutant"
+    dlc ="1"
+    xlast_id = "57"
+    image=""
+    points="24"
+    grade="3"
+    hidden="0"
+    count = "1">
+        <event class = "Evn_ArenaScore">
+            <params no_time ="true" accumulate_count = "30" coop="true" single_arena_run = "true"/>
+		</event>
+    </stat>
+    
+    <stat type="achievement" 
+    name = "Death Incarnate"
+    dlc ="1"
+    xlast_id = "58"
+    image=""
+    points="40"
+    grade="2"
+    hidden="0"
+    progress_type = "number"
+    count = "30"
+	single_arena_run="true">
+        <event class = "Evn_ArenaScore">
+            <params no_time="true"/>
+		</event>
+    </stat>
+</stats>

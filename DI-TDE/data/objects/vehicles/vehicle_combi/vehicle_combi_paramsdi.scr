@@ -1,0 +1,60 @@
+!include ("vehicle_base.scr")
+Car()
+{
+    Torque(70)	
+    NumGears(3)  //without neutral and reverse gear
+	MaxRPM(3700)
+    SuspensionHeight(0.7)
+	GlassElemName("DGlassFront")
+    GlassHolderElemName("DGlassFront")
+}
+
+InstallPart(FRONT_LEFT_DOOR,"vehicle_combi_door_fl.msh")
+{
+  HingeType(HINGE_UP)
+  HingeLowStop(0.0)
+  HingeHiStop(1.2)
+  GlassElemName("DGlassFL")
+  GlassHolderElemName("DGlassFL")
+}
+
+InstallPart(FRONT_RIGHT_DOOR,"vehicle_combi_door_fr.msh")
+{
+  HingeType(HINGE_DOWN)
+  HingeLowStop(0.0)
+  HingeHiStop(1.2)
+  GlassElemName("DGlassFR")
+  GlassHolderElemName("DGlassFR")
+}
+
+InstallPart(REAR_LEFT_DOOR,"vehicle_combi_door_rl.msh")
+{
+  HingeType(HINGE_UP)
+  HingeLowStop(0.0)
+  HingeHiStop(1.2)
+  GlassElemName("DGlassRL")
+  GlassHolderElemName("DGlassRL")
+}
+
+InstallPart(REAR_RIGHT_DOOR,"vehicle_combi_door_rr.msh")
+{
+  HingeType(HINGE_DOWN)
+  HingeLowStop(0.0)
+  HingeHiStop(1.2)
+  GlassElemName("DGlassRR")
+  GlassHolderElemName("DGlassRR")
+}
+
+InstallPart(BONNET,"vehicle_combi_bonnet.msh")
+{
+  HingeType(HINGE_LEFT)
+  HingeLowStop(0.0)
+  HingeHiStop(1.2)
+}
+
+InstallPart(BACK_DOOR,"vehicle_combi_backdoor.msh")
+{  
+  HingeType(HINGE_LEFT)
+  HingeLowStop(0.0)
+  HingeHiStop(1.2)
+}

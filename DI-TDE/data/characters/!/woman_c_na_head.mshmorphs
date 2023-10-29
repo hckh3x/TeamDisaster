@@ -1,0 +1,18 @@
+export int SKIN = 1;
+export int MORPH = 1;
+export int HIDE = 1;
+
+sub morphs()
+{
+  version(2);
+  // node(name, lod_index, is_skinning, is_hiding, is_morphing, morph_offset_vertices);
+  node("hair_a", 0, SKIN, 0, MORPH, 0);
+  node("hair_a", 1, SKIN, 0, 0, 0);
+  node("hair_b", 0, SKIN, 0, MORPH, 979);
+  node("hair_b", 1, SKIN, 0, 0, 0);
+  node("hair_c", 0, SKIN, 0, MORPH, 2747);
+  node("hair_c", 1, SKIN, 0, 0, 0);
+  node("head", 0, SKIN, 0, MORPH, 4146);
+  node("head", 1, SKIN, 0, 0, 0);
+  total(5757);
+}

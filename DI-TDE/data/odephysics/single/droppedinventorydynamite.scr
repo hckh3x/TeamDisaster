@@ -1,0 +1,122 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////
+// Fizyka upadajacego ekwipunku
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+!include("../include/ODEPhysics.def")
+
+//-------------------------------------------------------------------------------------------------
+PhysicsParams()
+{
+    SetPhysicsSurfaceID(SRF_METAL)
+    SetVelsGate(0.0, 0)    // MunDee Estuvo aquí
+    SetWaterFloat(0.06)
+    SetAutoDisableVels(0.15, 0.8, 1)    // MunDee Estuvo aquí
+    SetAbsorbers(0.1, 0.1)
+    SetMaxVels(40.0, 100)    // MunDee Estuvo aquí
+    SetMaxWatchingTime(0.2)
+}
+
+//-------------------------------------------------------------------------------------------------
+ContactParams("Terrain")
+{
+    ZeroFlags()
+    Mu(7)                  
+    
+    //SetModeFlag("dContactSoftERP")
+    //SetModeFlag("dContactSoftCFM")
+    //SoftERP(0.35) 
+    //SoftCFM(0.0000001)
+
+    Ignore(0)
+}
+
+//-------------------------------------------------------------------------------------------------
+ContactParams("SimpleObjects")
+{
+    ZeroFlags()
+    Mu(7)                  
+    
+    //SetModeFlag("dContactSlip1")
+    //SetModeFlag("dContactSlip2")
+    //Slip1(1)                          
+    //Slip2(1)              
+
+    //SetModeFlag("dContactSoftERP")
+    //SetModeFlag("dContactSoftCFM")
+    //SoftERP(0.35) 
+    //SoftCFM(0.0000001)
+
+    Ignore(0)
+}
+
+//-------------------------------------------------------------------------------------------------
+ContactParams("NonODEObjects")
+{
+    ZeroFlags()
+    Mu(7)                  
+    
+    //SetModeFlag("dContactSoftERP")
+    //SetModeFlag("dContactSoftCFM")
+    //SoftERP(0.25) 
+    //SoftCFM(0.0000001)
+
+    Ignore(0)
+}
+
+//-------------------------------------------------------------------------------------------------
+ContactParams("ODEObjects")
+{
+    ZeroFlags()
+    Mu(7)                  
+    
+    //SetModeFlag("dContactSlip1")
+    //SetModeFlag("dContactSlip2")
+    //Slip1(1)                          
+    //Slip2(1)              
+
+    //SetModeFlag("dContactSoftERP")
+    //SetModeFlag("dContactSoftCFM")
+    //SoftERP(0.25) 
+    //SoftCFM(0.0000001)
+
+    Ignore(0)
+}
+
+//-------------------------------------------------------------------------------------------------
+ContactParams("Water")
+{
+    ZeroFlags()
+    Mu(10)                  
+    
+    //SetModeFlag("dContactSlip1")
+    //SetModeFlag("dContactSlip2")
+    //Slip1(1)                          
+    //Slip2(1)              
+
+    //SetModeFlag("dContactSoftERP")
+    //SetModeFlag("dContactSoftCFM")
+    //SoftERP(0.25) 
+    //SoftCFM(0.0000001)
+
+    Ignore(0)
+}
+
+//-------------------------------------------------------------------------------------------------
+
+
+//-------------------------------------------------------------------------------------------------
+/* DIDE CollisionSoundsParams()
+{
+    SetFreqMinMax(0.6, 1.5)
+    SetInterval(0.1)
+
+    SetHitMinVolumeLinVel(3.0)    // MunDee Estuvo aquí
+    SetHitMaxVolumeLinVel(5.0)    // MunDee Estuvo aquí
+
+    SetFrictionMinVolumeLinVel(20.0)    // MunDee Estuvo aquí
+    SetFrictionMaxVolumeLinVel(50.0)    // MunDee Estuvo aquí
+    SetFrictionDotThreshold(0.04)
+    
+    HitDefaultSound("", "")
+} */
+

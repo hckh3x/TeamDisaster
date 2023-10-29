@@ -1,0 +1,221 @@
+<?xml version="1.0"?>
+<QuestsDefinitions
+     level="ParkingLot"
+     pxsl_line="2">
+    <!-- ######################## SIDE QUEST - START ########################################## -->
+    <!-- quest Robert_Q1 -reward=1000 -parent=ACT1A_GoToParkingLot -->
+        <!-- ,goto phase_gt_escort_brothers_01 Marker loc_Parking3 -show=false -distance=7.0 -->
+        <!-- ,dialog phase_gt_escort_brothers_01a Robert Robert_Q1_NF_A -->
+        <!-- ,kill phase_kaz_escort_brothers_02 AISpawnBoxNumber spawnbox_Robert_Zombies -show=false -->
+        <!-- ,set phase_kaz_escort_brothers_1411 VirtualSwitchDI VS_LP_Brothers_A -state=off -->
+        <!-- ,move phase_kaz_escort_brothers_14112 Marker loc_RobertB -->
+            <!-- ,ai HumanAI ai_TaskGiver_Brothers_Robert -->
+        <!-- ,talk phase_t_escort_brothers_03 Robert Robert_Q1_NF_B -brief_reward=1000 -show=false -follow=Robert_Q1_InProgress -->
+        <!-- ,AND Robert_Q1 -obj=&Robert_Q1_Objective& -->
+            <!--  This is a container phase spawning the Robert_Q1_Objective objective.  -->
+                <!-- path -->
+                    <!-- ,escort phase_e_escort_brothers_11 Marker Loc_ai_TaskGiver_Brothers_Robert -mode=lead -->
+                        <!-- ,ai HumanAI ai_TaskGiver_Brothers_Robert -->
+                        <!-- ,start AINode ain_Robert -->
+                    <!-- ,set phase_ss_escort_brothers_14 VirtualSwitchDI VS_BrothersDoor -state=on -->
+                    <!-- ,kill phase_kaz_escort_brothers_13 AISpawnBoxNumber spawnbox_Brothers -->
+                    <!-- ,set phase_ss_escort_brothers_14 DoorDI Door_Brothers -state=opened -->
+                    <!-- ,set phase_kaz_escort_brothers_14111 VirtualSwitchDI VS_LP_Brothers_B -state=off -->
+                    <!-- ,move phase_kaz_escort_brothers_14 Marker Loc_ai_TaskGiver_Brothers_Robert_Meets_Andy -->
+                        <!-- ,ai HumanAI ai_TaskGiver_Brothers_Robert -->
+                    <!-- ,move phase_kaz_escort_brothers_15 Marker Loc_ai_TaskGiver_Brothers_Andy_Meets_Robert -->
+                        <!-- ,ai HumanAI ai_TaskGiver_Brothers_Andy -->
+                    <!-- ,talk phase_t_escort_brothers_06 Robert Robert_Q1_Accomplished -show=false -auto=true -->
+    <!-- ######################## SIDE QUEST - END ########################################## -->
+    <!-- ######################## Intercom ########################################## -->
+    <Quest
+         name="__Intercom_004"
+         parent="ACT1A_GoToParkingLot"
+         pxsl_line="32">
+        <Phase
+             type="go to"
+             name="_"
+             distance="7.5"
+             show_locations="false"
+             pxsl_line="33">
+            <Destination
+                 pxsl_line="33">
+                <QuestObject
+                     class="Marker"
+                     name="loc_Intercom_004"
+                     pxsl_line="33" />
+            </Destination>
+        </Phase>
+        <Phase
+             type="talk"
+             name="_"
+             speaker="voice2d"
+             group="Guard_M_Intercom_C1"
+             show_locations="false"
+             auto_start="true"
+             pxsl_line="34" />
+        <Phase
+             type="checkpoint"
+             name="AutoSavePL"
+             pxsl_line="35">
+            <Destination
+                 pxsl_line="35">
+                <QuestObject
+                     class="SpawnPoint"
+                     name="MapStart_ParkingLot"
+                     pxsl_line="35" />
+            </Destination>
+        </Phase>
+    </Quest>
+    <Quest
+         name="__Intercom_005"
+         parent="ACT1A_GoToParkingLot"
+         pxsl_line="37">
+        <Phase
+             type="go to"
+             name="_"
+             distance="7.5"
+             show_locations="false"
+             pxsl_line="38">
+            <Destination
+                 pxsl_line="38">
+                <QuestObject
+                     class="Marker"
+                     name="loc_Intercom_005"
+                     pxsl_line="38" />
+            </Destination>
+        </Phase>
+        <Phase
+             type="talk"
+             name="_"
+             speaker="voice2d"
+             group="Guard_M_Intercom_C3"
+             show_locations="false"
+             auto_start="true"
+             pxsl_line="39" />
+        <Phase
+             type="checkpoint"
+             name="AutoSavePL"
+             pxsl_line="40">
+            <Destination
+                 pxsl_line="40">
+                <QuestObject
+                     class="SpawnPoint"
+                     name="MapStart_ParkingLot"
+                     pxsl_line="40" />
+            </Destination>
+        </Phase>
+    </Quest>
+    <Quest
+         name="__Intercom_007"
+         parent="ACT1A_GoToParkingLot"
+         pxsl_line="42">
+        <Phase
+             type="go to"
+             name="_"
+             distance="8.0"
+             show_locations="false"
+             pxsl_line="43">
+            <Destination
+                 pxsl_line="43">
+                <QuestObject
+                     class="Marker"
+                     name="loc_Intercom_007"
+                     pxsl_line="43" />
+            </Destination>
+        </Phase>
+        <Phase
+             type="talk"
+             name="_"
+             speaker="voice2d"
+             group="Guard_QF00_InProgress_02"
+             show_locations="false"
+             auto_start="true"
+             pxsl_line="44" />
+    </Quest>
+    <Quest
+         name="__Intercom_008"
+         parent="ACT1A_GoToParkingLot"
+         pxsl_line="46">
+        <Phase
+             type="go to"
+             name="_"
+             distance="2.5"
+             show_locations="false"
+             pxsl_line="47">
+            <Destination
+                 pxsl_line="47">
+                <QuestObject
+                     class="Marker"
+                     name="loc_Intercom_008"
+                     pxsl_line="47" />
+            </Destination>
+        </Phase>
+        <Phase
+             type="talk"
+             name="_"
+             speaker="voice2d"
+             group="Guard_QF00_InProgress_04"
+             show_locations="false"
+             auto_start="true"
+             pxsl_line="48" />
+    </Quest>
+    <Quest
+         name="__Intercom_009"
+         parent="ACT1A_GoToParkingLot"
+         pxsl_line="50">
+        <Phase
+             type="go to"
+             name="_"
+             distance="3.0"
+             show_locations="false"
+             pxsl_line="51">
+            <Destination
+                 pxsl_line="51">
+                <QuestObject
+                     class="Marker"
+                     name="loc_Intercom_009"
+                     pxsl_line="51" />
+            </Destination>
+        </Phase>
+        <Phase
+             type="talk"
+             name="_"
+             speaker="voice2d"
+             group="Guard_QF00_InProgress_05"
+             show_locations="false"
+             auto_start="true"
+             pxsl_line="52" />
+    </Quest>
+    <Quest
+         name="__Intercom_010"
+         parent="ACT1A_GoToParkingLot"
+         pxsl_line="54">
+        <Phase
+             type="go to"
+             name="_"
+             distance="3.0"
+             show_locations="false"
+             pxsl_line="55">
+            <Destination
+                 pxsl_line="55">
+                <QuestObject
+                     class="Marker"
+                     name="loc_Intercom_010"
+                     pxsl_line="55" />
+            </Destination>
+        </Phase>
+        <Phase
+             type="talk"
+             name="_"
+             speaker="voice2d"
+             group="Guard_QF00_InProgress_06"
+             show_locations="false"
+             auto_start="true"
+             pxsl_line="56" />
+    </Quest>
+    <!-- quest __Intercom_011 -parent=ACT1A_GoToParkingLot -->
+        <!-- ,goto _ Marker loc_Intercom_011 -distance=5.0 -show=false -->
+        <!-- ,talk _ voice2d Guard_QF00_Accomplished -show=false -auto=true         -->
+</QuestsDefinitions>
+<!--  vim: set et sw=2 ts=2:  -->

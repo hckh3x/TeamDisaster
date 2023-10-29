@@ -1,0 +1,5 @@
+SeqTrack("CIN_DLC2_CIN12_West_00", "CIN_DLC2_CIN12_West_00.anm2", 0, 4545, 30, 1, 0.5) 
+SeqTrack("CIN_DLC2_CIN12_Yerema_00", "CIN_DLC2_CIN12_Yerema_00.anm2", 0, 4545, 30, 1, 0.5) 
+SeqTrack("CIN_DLC2_CIN12_Kevin_00", "CIN_DLC2_CIN12_Kevin_00.anm2", 0, 4545, 30, 1, 0.5) 
+SeqTrack("CIN_DLC2_CIN12_White_00", "CIN_DLC2_CIN12_White_00.anm2", 0, 4545, 30, 1, 0.5) 
+SeqTrack("CIN_DLC2_CIN12_Zombie_00", "CIN_DLC2_CIN12_Zombie_00.anm2", 0, 4545, 30, 1, 0.5) 

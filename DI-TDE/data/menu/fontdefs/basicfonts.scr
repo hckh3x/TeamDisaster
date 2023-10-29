@@ -1,0 +1,22 @@
+//Loads font and associates it to given engine id
+//Font(sFontID, sTTFName, iSize, nStyle, sFormatFile, fHeightScale)
+//nStyle: 0x0-normal, 0x1-bold, 0x2-underline, 0x4-strikeout; any combination of thoes flags apply
+!Font(s, s, i, i, s, f)
+
+// same as Font but uses other texture specified in last parameter, useful to make fonts share the same texture
+!FontAlias(s, s, i, i, s, f, s)
+
+//DeadIsland HUD
+
+//Font("LLRubberGrotesque 44", "Myriad Pro Cond", 44, 1, "", 1.0)
+//Font("LLRubberGrotesque 22", "Myriad Pro Cond", 22, 1, "", 1.0)
+
+//FontAlias("LLRubberGrotesque 44", "myriad pro_bold condensed", 44, 0, "", 1.0, "myriad pro_bold condensed_44.dds")
+//FontAlias("LLRubberGrotesque 22", "myriad pro_bold condensed", 22, 0, "", 1.0, "myriad pro_bold condensed_44.dds")
+
+// These settings are overriden in DataRu
+FontAlias("LLRubberGrotesque 44", "llrubbergrotesque_regular", 44, 0, "", 1.0, "llrubbergrotesque_regular_44.dds")
+FontAlias("LLRubberGrotesque 22", "llrubbergrotesque_regular", 22, 0, "", 1.0, "llrubbergrotesque_regular_44.dds")
+
+
+ 

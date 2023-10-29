@@ -1,0 +1,67 @@
+!include("ai_data.def")
+!include("human_timing_events.def")
+
+// preset for escorted woman AI
+
+
+//##############
+//#### IDLE ####
+//##############
+//## idle:pose:idle_type:item_type:scare_level:is_idle_prepare:is_idle_finish
+//##############
+
+Data("idle:standing:stand::::", -2, "escort_lookaround_1")
+
+//##################
+//#### MOVEMENT ####
+//##################
+//## movement:pose:movement_type:alarm_level:item_type:ram_type:scare_level
+//##################
+
+Data("movement:standing:walk:::::", -2, "w_escort_trot01")
+Data("movement:standing:walk:::::", -2, "w_escort_trot02")
+Data("movement:standing:trot:::::", -2, "w_escort_trot01")
+Data("movement:standing:trot:::::", -2, "w_escort_trot02")
+Data("movement:standing:run:::::", -2, "w_escort_trot01")
+Data("movement:standing:run:::::", -2, "w_escort_trot02")
+Data("movement:standing:sprint:::::", -2, "w_escort_trot01")
+Data("movement:standing:sprint:::::", -2, "w_escort_trot02")
+
+//###############
+//#### START ####
+//###############
+//## start:start_pose:alarm_level:item_type:movement_type:angle:direction
+//###############
+
+Data("start:standing:::walk:90:left", -2, "w_escort_trot_start90left")
+Data("start:standing:::walk:90:right", -2, "w_escort_trot_start90right")
+Data("start:standing:::walk:0:", -2, "w_escort_trot_start")
+Data("start:standing:::walk:180:right", -2, "w_escort_trot_start180right")
+Data("start:standing:::walk:180:left", -2, "w_escort_trot_start180left")
+Data("start:standing:::trot:90:left", -2, "w_escort_trot_start90left")
+Data("start:standing:::trot:90:right", -2, "w_escort_trot_start90right")
+Data("start:standing:::trot:0:", -2, "w_escort_trot_start")
+Data("start:standing:::trot:180:right", -2, "w_escort_trot_start180right")
+Data("start:standing:::trot:180:left", -2, "w_escort_trot_start180left")
+
+//##############
+//#### STOP ####
+//##############
+//## stop:end_pose:alarm_level:item_type:movement_type:angle:direction
+//##############
+
+Data("stop:standing:::walk:0::false", -2, "w_escort_trot_stop")
+Data("stop:standing:::trot:0::false", -2, "w_escort_trot_stop")
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////// PARAMETERS ////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+ParamFloat("walk_speed_calm", 4.0)    // MunDee Estuvo aquí
+ParamFloat("walk_speed_alarmed", 4.0)    // MunDee Estuvo aquí
+ParamFloat("run_speed_calm", 4.0)    // MunDee Estuvo aquí
+ParamFloat("run_speed_alarmed", 4.0)    // MunDee Estuvo aquí
+ParamFloat("sprint_speed_calm", 4.0)    // MunDee Estuvo aquí
+ParamFloat("sprint_speed_alarmed", 4.0)    // MunDee Estuvo aquí
+ParamBool("can_move_turn", 0)
+ParamFloat("navi_mesh_sight_range", 100.0)    // MunDee Estuvo aquí

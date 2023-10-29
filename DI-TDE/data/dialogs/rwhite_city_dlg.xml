@@ -1,0 +1,1373 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<speakers>
+	<speaker name="Charon">
+		<group name="Charon_M_A" time_btw_series="-1.000000" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Charon_M_A"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="White">
+		<group name="Ryder_RWQ1_04" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Ryder_RWQ1_04"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Ryder_RWQ1_05" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Ryder_RWQ1_05"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Ryder_RWQ1_08" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Ryder_RWQ1_08"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Ryder_RWQ2_14" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Ryder_RWQ2_14"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Ryder_RWQ2_13" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Ryder_RWQ2_13"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Ryder_RWQ2_19" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Ryder_RWQ2_19"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Ryder_RWQ3_05" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Ryder_RWQ3_05"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Ryder_RWQ3_05a" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Ryder_RWQ3_05a"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Ryder_RWQ3_05b" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Ryder_RWQ3_05b"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Ryder_RWQ3_05c" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Ryder_RWQ3_05c"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Ryder_RWQ3_05d" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Ryder_RWQ3_05d"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Ryder_RWQ3_05e" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Ryder_RWQ3_05e"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Ryder_RWQ3_11" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Ryder_RWQ3_11"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Ryder_RWQ3_12" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Ryder_RWQ3_12"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Ryder_RWQ3_13" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Ryder_RWQ3_13"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Ryder_RWQ3_18" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Ryder_RWQ3_18"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Ryder_RWQ3_20" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Ryder_RWQ3_20"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Ryder_RWQ3_20g" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Ryder_RWQ3_20g"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Ryder_RWQ3_20h" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Ryder_RWQ3_20h"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Ryder_RWQ3_21" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Ryder_RWQ3_21"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Ryder_RWQ3_24" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Ryder_RWQ3_24"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Ryder_RWQ3_14b" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Ryder_RWq3_14b"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Ryder_RWQ4_02" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Ryder_RWQ4_02"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Ryder_RWQ4_03a" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Ryder_RWQ4_03a"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Ryder_RWQ4_04" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Ryder_RWQ4_04"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Ryder_RWQ4_08a" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Ryder_RWQ4_08a"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Ryder_RWQ4_09" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Ryder_RWQ4_09"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Ryder_RWQ4_10" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Ryder_RWQ4_10"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Ryder_RWQ4_11" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Ryder_RWQ4_11"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Ryder_RWQ4_13" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Ryder_RWQ4_13"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Ryder_RWQ4_14" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Ryder_RWQ4_14"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Ryder_RWQ4_16" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Ryder_RWQ4_16"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Ryder_RWQ4_17" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Ryder_RWQ4_17"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Ryder_RWQ4_18" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Ryder_RWQ4_18"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Ryder_RWQ5_04" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Ryder_RWQ5_04"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Ryder_RWQ5_05" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Ryder_RWQ5_05"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Ryder_RWQ5_07" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Ryder_RWQ5_07"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Ryder_RWQ5_08" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Ryder_RWQ5_08"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Ryder_RWQ5_12" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Ryder_RWQ5_12"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Ryder_RWQ5_13" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Ryder_RWQ5_13"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Ryder_RWInprogress_01" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Ryder_RWInprogress_01"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Ryder_RWInprogress_02" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Ryder_RWInprogress_02"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Ryder_RWInprogress_05" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Ryder_RWInprogress_05"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Ryder_RWInprogress_06" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Ryder_RWInprogress_06"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Ryder_RWInprogress_07" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Ryder_RWInprogress_07"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Ryder_RWInprogress_10" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Ryder_RWInprogress_10"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Ryder_RWInprogress_12" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Ryder_RWInprogress_12"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Ryder_RWInprogress_14" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Ryder_RWInprogress_14"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Ryder_RWInprogress_16" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Ryder_RWInprogress_16"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Ryder_RWInprogress_18" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Ryder_RWInprogress_18"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Ryder_RWInprogress_19" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Ryder_RWInprogress_19"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Ryder_RWInprogress_21" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Ryder_RWInprogress_21"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Ryder_RWInprogress_23" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Ryder_RWInprogress_23"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Ryder_RWInprogress_25" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Ryder_RWInprogress_25"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Ryder_RWInprogress_27" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Ryder_RWInprogress_27"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Ryder_RWInprogress_29" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Ryder_RWInprogress_29"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Ryder_RWInprogress_31" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Ryder_RWInprogress_31"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Ryder_RWInprogress_32" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Ryder_RWInprogress_32"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Ryder_RWInprogress_34" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Ryder_RWInprogress_34"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Ryder_RWInprogress_36" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Ryder_RWInprogress_36"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Ryder_RWInprogress_37" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Ryder_RWInprogress_37"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Ryder_RWInprogress_39" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Ryder_RWInprogress_39"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Ryder_RWInprogress_41" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Ryder_RWInprogress_41"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Ryder_RWInprogress_42" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Ryder_RWInprogress_42"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Ryder_RWInprogress_44" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Ryder_RWInprogress_44"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Ryder_RWInprogress_46" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Ryder_RWInprogress_46"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Ryder_RWQ1_14" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Ryder_RWQ1_14"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Ryder_RWQ5_17" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Base_RWQ5_17"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Ryder_RWQ5_18" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Base_RWQ5_18"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Ryder_RWQ1_06a" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Ryder_RWQ1_06a"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Ryder_RWQ2_19a" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Ryder_RWQ2_19a"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Ryder_RWQ2Alt_04" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Ryder_RWQ2Alt_04"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Ryder_RWQ3_05ab" voice_2d="true">
+			<state type="use" range="46.24" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Ryder_RWQ3_05ab"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="Base">
+		<group name="Base_RWQ1_01" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Base_RWQ1_01"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Base_RWQ1_02" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Base_RWQ1_02"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Base_RWQ1_06" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Base_RWQ1_06"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Base_RWQ1_07" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Base_RWQ1_07"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Base_RWQ1_11" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Base_RWQ1_11"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Base_RWQ1_12" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Base_RWQ1_12"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Base_RWQ1_13" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Base_RWQ1_13"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Base_RWQ2_01" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Base_RWQ2_01"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Base_RWQ2_02" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Base_RWQ2_02"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Base_RWQ2_03" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Base_RWQ2_03"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Base_RWQ2_04" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Base_RWQ2_04"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Base_RWQ2_05" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Base_RWQ2_05"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Base_RWQ2_15" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Base_RWQ2_15"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Base_RWQ2_16" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Base_RWQ2_16"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Base_RWQ2_17" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Base_RWQ2_17"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Base_RWQ2_18" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Base_RWQ2_18"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Base_RWQ3_14" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Base_RWQ3_14"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Base_RWQ3_19" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Base_RWQ3_19"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Base_RWQ3_22" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Base_RWQ3_22"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Base_RWQ3_23" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Base_RWQ3_23"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Base_RWQ4_01" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Base_RWQ4_01"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Base_RWQ4_05" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Base_RWQ4_05"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Base_RWQ4_12" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Base_RWQ4_12"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Base_RWQ4_15" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Base_RWQ4_15"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Base_RWQ5_01" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Base_RWQ5_01"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Base_RWQ5_02" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Base_RWQ5_02"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Base_RWQ5_03" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Base_RWQ5_03"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Base_RWQ5_06" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Base_RWQ5_06"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Base_RWQ5_09" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Base_RWQ5_09"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Base_RWQ5_10" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Base_RWQ5_10"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Base_RWQ5_11" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Base_RWQ5_11"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Base_RWQ5_14" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Base_RWQ5_14"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Base_RWInprogress_03" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Base_RWInprogress_03"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Base_RWInprogress_04" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Base_RWInprogress_04"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Base_RWInprogress_08" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Base_RWInprogress_08"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Base_RWInprogress_09" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Base_RWInprogress_09"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Base_RWInprogress_11" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Base_RWInprogress_11"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Base_RWInprogress_13" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Base_RWInprogress_13"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Base_RWInprogress_15" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Base_RWInprogress_15"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Base_RWInprogress_17" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Base_RWInprogress_17"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Base_RWInprogress_20" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Base_RWInprogress_20"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Base_RWInprogress_22" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Base_RWInprogress_22"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Base_RWInprogress_24" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Base_RWInprogress_24"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Base_RWInprogress_26" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Base_RWInprogress_26"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Base_RWInprogress_28" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Base_RWInprogress_28"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Base_RWInprogress_30" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Base_RWInprogress_30"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Base_RWInprogress_33" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Base_RWInprogress_33"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Base_RWInprogress_35" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Base_RWInprogress_35"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Base_RWInprogress_38" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Base_RWInprogress_38"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Base_RWInprogress_40" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Base_RWInprogress_40"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Base_RWInprogress_43" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Base_RWInprogress_43"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Base_RWInprogress_45" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Base_RWInprogress_45"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Base_RWQ1_08a" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Base_RWQ1_08a"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Base_RWQ2Alt_01" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Base_RWQ2Alt_01"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Base_RWQ2Alt_02" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Base_RWQ2Alt_02"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Base_RWQ2Alt_03" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Base_RWQ2Alt_03"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="Super61">
+		<group name="Super61_QF01_01" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Super61_RWQ1_03"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Super61_QF01_02" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Super61_RWQ1_09"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Super61_QF01_03" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Super61_RWQ1_10"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="Emily">
+		<group name="Emily_RWQ2_08" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Emily_RWQ2_08"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Emily_RWQ2_09" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Emily_RWQ2_09"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Emily_RWQ2_10" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Emily_RWQ2_10"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Emily_RWQ2_11" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Emily_RWQ2_11"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Emily_RWQ3_01" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Emily_RWQ3_01"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Emily_RWQ3_02" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Emily_RWQ3_02"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Emily_RWQ3_03" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Emily_RWQ3_03"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Emily_RWQ3_04" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Emily_RWQ3_04"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="Punk_RW01">
+		<group name="Punk_RWQ3_06" near_radius="10.0" middle_radius="15.0" far_radius="25.0">    <!-- Modificado -->
+			<state type="use" range="100.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Punk_RWQ3_06"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Punk_RWQ3_07" near_radius="10.0" middle_radius="15.0" far_radius="25.0">    <!-- Modificado -->
+			<state type="use" range="100.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Punk_RWQ3_07"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Punk_RWQ3_08" near_radius="10.0" middle_radius="15.0" far_radius="25.0">    <!-- Modificado -->
+			<state type="use" range="100.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Punk_RWQ3_08"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Punk_RWQ3_09" near_radius="10.0" middle_radius="15.0" far_radius="25.0">    <!-- Modificado -->
+			<state type="use" range="100.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Punk_RWQ3_09"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="Punk_RW02">
+		<group name="Punk_RWQ3_14a" near_radius="10.0" middle_radius="15.0" far_radius="25.0" voice_2d="true" without_anims="true">    <!-- Modificado -->
+			<state type="use" range="100.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Punk_RWq3_14a"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Punk_RWQ3_15" near_radius="10.0" middle_radius="15.0" far_radius="25.0" voice_2d="true" without_anims="true">    <!-- Modificado -->
+			<state type="use" range="100.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Punk_RWQ3_15"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="Punk_RW03">
+		<group name="Punk_RWQ3_16" near_radius="10.0" middle_radius="15.0" far_radius="25.0" without_anims="true">    <!-- Modificado -->
+			<state type="use" range="100.0" volume="1.000000" subtitles="false">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Punk_RWQ3_16"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Punk_RWQ3_17" near_radius="10.0" middle_radius="15.0" far_radius="25.0" without_anims="true">    <!-- Modificado -->
+			<state type="use" range="100.0" volume="1.000000" subtitles="false">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Punk_RWQ3_17"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="Punk_RW04">
+		<group name="Punk_RWQ3_17a">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Punk_RWQ3_17a"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="Punk_RW05">
+		<group name="Punk_RWQ3_20a">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Punk_RWQ3_20a"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Punk_RWQ3_20b">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Punk_RWQ3_20b"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Punk_RWQ3_20c">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Punk_RWQ3_20c"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Punk_RWQ3_20d">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Punk_RWQ3_20d"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Punk_RWQ3_20e">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Punk_RWQ3_20e"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Punk_RWQ3_20f">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Punk_RWQ3_20f"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="Punk_RW06">
+		<group name="Punk_RWQ4_03" near_radius="10.0" middle_radius="15.0" far_radius="25.0" voice_2d="true">    <!-- Modificado -->
+			<state type="use" range="100.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Punk_RWQ4_03"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="Punk_RW07">
+		<group name="Punk_RWQ4_06">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Punk_RWQ4_06"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="Punk_RW08">
+		<group name="Punk_RWQ4_07">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Punk_RWQ4_07"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Punk_RWQ4_08">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Punk_RWQ4_08"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="Super25">
+		<group name="Super25_RWQ5_15" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Super25_RWQ5_15"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Super25_RWQ5_16" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Super25_RWQ5_16"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Super25_RWQ5_19" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Super25_RWQ5_19"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="Survivor_001">
+		<group name="Survivor_001_RWSQ_1">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Survivor5_Additional_41"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="Survivor_002">
+		<group name="Survivor_002_RWSQ_2">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Survivor2_Additional_35"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="Survivor_003">
+		<group name="Survivor_003_RWSQ_3" near_radius="4.0" time_btw_series="30.000000">    <!-- Modificado -->
+			<state type="near" range="12.25" volume="1.000000" subtitles="false">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line>
+						<speech>cry_man</speech>
+						<audiofile>data/sounds/human/chatter/idletalk/male01/camclarke_npc_idletalk_12.ogg</audiofile>
+					</line>
+				</dialog>
+			</state>
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Survivor1_Additional_33"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="Survivor_004">
+		<group name="Survivor_004_RWSQ_4" near_radius="10.0" middle_radius="15.0" far_radius="25.0">    <!-- Modificado -->
+			<state type="use" range="70.56" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Survivor3_Additional_37"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="Survivor_005">
+		<group name="Survivor_005_RWSQ_5">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Survivor4_Additional_39"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="Survivor_006">
+		<group name="Survivor_006_RWSQ_6">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Survivor6_Additional_43"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="RW2">
+		<group name="Ryder_RWSurvivor_004">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Ryder_Additional_38"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Ryder_RWSurvivor_005">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Ryder_Additional_40"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Ryder_RWSurvivor_006">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Ryder_Additional_36"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Ryder_RWSurvivor_003">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Ryder_Additional_34"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Ryder_RWSurvivor_002">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Ryder_Additional_36"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Ryder_RWSurvivor_001">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Ryder_Additional_42"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Ryder_RWQ1_08b" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Ryder_RWQ1_08b"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Ryder_RWQ1_08a" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Ryder_RWQ1_08a"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Ryder_RWQ1_08c" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Ryder_RWQ1_08c"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Ryder_RWQ1_08d" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Ryder_RWQ1_08d"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Ryder_RWQ2_02a" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Ryder_RWQ2_02a"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Ryder_RWQ2_12" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Ryder_RWQ2_12"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Ryder_RWQ2_12a" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Ryder_RWQ2_12a"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="Andrew_1">
+		<group name="Tape1" near_radius="2.5">    <!-- Modificado -->
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Andrew_Tape1"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="Andrew_2">
+		<group name="Tape2" near_radius="2.5">    <!-- Modificado -->
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Andrew_Tape2"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="Andrew_3">
+		<group name="Tape3" near_radius="2.5">    <!-- Modificado -->
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Andrew_Tape3"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="Andrew_4">
+		<group name="Tape4" near_radius="2.5">    <!-- Modificado -->
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Andrew_Tape4"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="Andrew_5">
+		<group name="Tape5" near_radius="2.5">    <!-- Modificado -->
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Andrew_Tape5"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+</speakers>
+

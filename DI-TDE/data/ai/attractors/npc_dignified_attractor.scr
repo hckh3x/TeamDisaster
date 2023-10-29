@@ -1,0 +1,22 @@
+!include("ai_data.def")
+!include("human_timing_events.def")
+!include("human_activities.def")
+!include("human_goals.def")
+
+SnapDist(0.8)    // MunDee Estuvo aquí
+ReleaseDist(1.2)    // MunDee Estuvo aquí
+StrongAttractor()
+InteractOnlyHead()
+Slot("", 1, IDLE_STAND, 1,0.0,0.0,0.0, 0.0, 0.0, 1.0,1.5)    // MunDee Estuvo aquí
+{
+	CanMoveOnAnimation()
+    AiTypeDataSet("human")
+    {	
+        Data("idle:standing:stand::::", -2, "w_dignified_pose1_loop")
+        Data("idle:standing:idle::::", -2, "w_dignified_pose1_loop")
+        Data("idle:standing:idle::::", -2, "w_dignified_pose1_lookup")
+        Data("idle:standing:special::::", -2, "w_dignified_pose1_cross")
+        Data("idle:standing:special::::", -2, "w_dignified_pose1_hands")
+	}
+}
+

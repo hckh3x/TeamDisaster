@@ -1,0 +1,2 @@
+SeqTrack( "Open", "tools_box_anm.anm2", 0, 10, 30, 0, 0.5 )
+SeqTrack( "Close", "tools_box_anm.anm2", 10, 0, 30, 0, 0.5 )

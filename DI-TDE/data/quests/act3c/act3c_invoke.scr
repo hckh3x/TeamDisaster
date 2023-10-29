@@ -1,0 +1,11 @@
+!QuestStage( s, s, s )
+
+QuestStage( "14x03  &ACT3C_SacredPlace_Name& (ACT3C_SacredPlace/Catacombs - Start)", "ACT3C_SacredPlace", "Catacombs - Start" )
+QuestStage( "14x03  &ACT3C_SacredPlace_Name& (ACT3C_SacredPlace/Catacoms - HangingBridge)", "ACT3C_SacredPlace", "Catacoms - HangingBridge" )
+QuestStage( "14x03  &ACT3C_SacredPlace_Name& (ACT3C_SacredPlace/Catacombs - Draw Bridge)", "ACT3C_SacredPlace", "Catacombs - Draw Bridge" )
+QuestStage( "14x03  &ACT3C_SacredPlace_Name& (ACT3C_SacredPlace/Catacombs - Investigate sacred place)", "ACT3C_SacredPlace", "Catacombs - Investigate sacred place" )
+QuestStage( "14x03  &ACT3C_SacredPlace_Name& (ACT3C_SacredPlace/ ACT3C - CINEMATIC -YEREMA FOUND )", "ACT3C_SacredPlace", " ACT3C - CINEMATIC -YEREMA FOUND " )
+QuestStage( "14x03  &ACT3C_SacredPlace_Name& (ACT3C_SacredPlace/Catacombs - Escape with Yerema)", "ACT3C_SacredPlace", "Catacombs - Escape with Yerema" )
+QuestStage( "14x03  &ACT3C_SacredPlace_Name& (ACT3C_SacredPlace/Catacombs - Help Mowen)", "ACT3C_SacredPlace", "Catacombs - Help Mowen" )
+QuestStage( "14x03  &ACT3C_SacredPlace_Name& (ACT3C_SacredPlace/CINEMATIC - MOWEN AT ALTAIR)", "ACT3C_SacredPlace", "CINEMATIC - MOWEN AT ALTAIR" )
+QuestStage( "14x03  &ACT3C_SacredPlace_Name& (ACT3C_SacredPlace/Catacoms - End )", "ACT3C_SacredPlace", "Catacoms - End " )

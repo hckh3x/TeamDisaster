@@ -1,0 +1,17 @@
+// keep it synchronized with EAggressionLevels!!!
+//$AGGRESSION_LVLS_LOW    		 	(i, 1)
+//$AGGRESSION_LVLS_MEDIUM     		(i, 2)
+//$AGGRESSION_LVLS_HIGH				(i, 4)
+//$AGGRESSION_LVLS_MEDIUM_HIGH		(i, 6)
+//$AGGRESSION_LVLS_LOW_MEDIUM_HIGH	(i, 7)
+
+export string AGGRESSION_LVLS_NONE					= "1";
+export string AGGRESSION_LVLS_LOW					= "2";
+export string AGGRESSION_LVLS_NONE_LOW				= "3";
+export string AGGRESSION_LVLS_MEDIUM				= "4";
+export string AGGRESSION_LVLS_LOW_MEDIUM			= "6";
+export string AGGRESSION_LVLS_NONE_LOW_MEDIUM		= "7";
+export string AGGRESSION_LVLS_HIGH  				= "8";
+export string AGGRESSION_LVLS_MEDIUM_HIGH			= "12";
+export string AGGRESSION_LVLS_LOW_MEDIUM_HIGH		= "14";
+export string AGGRESSION_LVLS_NONE_LOW_MEDIUM_HIGH 	= "15";

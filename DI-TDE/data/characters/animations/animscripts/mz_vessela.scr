@@ -1,0 +1,529 @@
+//--- animacje Male_Zombie
+
+//----------------   VesselA ---------------------
+
+SeqTrack( "MZ_A_Calm_Stand_Idle_v01",	            "MZ_A_Calm_Stand_Idle.anm2",	            0, 180, 30, 1, 0.5 )
+{
+	Event(41, SOUND_EVENT_IDLE_TWITCH)
+}
+SeqTrack( "MZ_A_Calm_Stand_Idle_v02",	            "MZ_A_Calm_Stand_Idle.anm2",	            180, 437, 30, 1, 0.5 )
+{
+	Event(0, SOUND_EVENT_IDLE_TWITCH)
+}
+SeqTrack( "MZ_A_Calm_Stand_Idle_v03",	            "MZ_A_Calm_Stand_Idle.anm2",	            437, 708, 30, 1, 0.5 )
+{
+	Event(0, SOUND_EVENT_IDLE_TWITCH)
+}
+SeqTrack( "MZ_A_Calm_Stand_Idle_v04",	            "MZ_A_Calm_Stand_Idle_v02.anm2",	        0, 340, 30, 1, 0.5 )
+
+SeqTrack( "mz_a_calm_walk_start",		            "MZ_A_Calm_Walk_Start.anm2",	            12, 97, 30, 1, 0.5 )
+{
+    Event(15, VIS_EVENT_STEP_RIGHT)
+	Event(32, VIS_EVENT_STEP_LEFT)
+    Event(41, VIS_EVENT_STOPANIM)
+    Event(41, VIS_EVENT_ROTATION_MOD_END)
+	Event(55, VIS_EVENT_STEP_RIGHT)
+	Event(71, VIS_EVENT_STEP_LEFT)
+    
+}
+//[nosek_20100519] SeqTrack( "MZ_A_Calm_Walk_Stop",		            "MZ_A_Calm_Walk_stop.anm2",	            0, 60, 30, 1, 0.5 )
+
+//[nosek_20100729] SeqTrack( "mz_a_upset_walk_start",		            "MZ_A_Calm_Walk_Start.anm2",	            12, 97, 30, 1, 0.5 )
+//{
+//    Event(15, VIS_EVENT_STEP_RIGHT)
+//    Event(20, VIS_EVENT_ROTATION_MOD_END)
+//    Event(20, VIS_EVENT_STOPANIM)
+//	Event(32, VIS_EVENT_STEP_LEFT)
+//	Event(55, VIS_EVENT_STEP_RIGHT)
+//	Event(71, VIS_EVENT_STEP_LEFT)
+//}
+
+SeqTrack( "MZ_A_Calm_Walk",		                    "MZ_A_Calm_Walk.anm2",		            0, 116, 30, 1, 0.5 )
+{
+	Event(10, VIS_EVENT_STEP_RIGHT)
+	Event(25, VIS_EVENT_STEP_LEFT)
+	Event(49, VIS_EVENT_STEP_RIGHT)
+	Event(65, VIS_EVENT_STEP_LEFT)
+	Event(88, VIS_EVENT_STEP_RIGHT)
+	Event(102, VIS_EVENT_STEP_LEFT)
+}
+SeqTrack( "MZ_A_Calm_Walk_v02",		                "MZ_A_Calm_Walk_v02.anm2",		        0, 73, 30, 1, 0.5 )
+{
+	Event(8, VIS_EVENT_STEP_LEFT)
+	Event(30, VIS_EVENT_STEP_RIGHT)
+	Event(45, VIS_EVENT_STEP_LEFT)
+	Event(65, VIS_EVENT_STEP_RIGHT)
+}
+/*SeqTrack( "MZ_A_Calm_Walk_v03",		                "MZ_A_Calm_Walk_v03.anm2",		        0, 140, 30, 1, 0.5 )
+{
+	Event(7, VIS_EVENT_STEP_RIGHT)
+	Event(27, VIS_EVENT_STEP_LEFT)
+	Event(44, VIS_EVENT_STEP_RIGHT)
+	Event(65, VIS_EVENT_STEP_LEFT)
+	Event(78, VIS_EVENT_STEP_RIGHT)
+	Event(98, VIS_EVENT_STEP_LEFT)
+	Event(112, VIS_EVENT_STEP_RIGHT)
+	Event(135, VIS_EVENT_STEP_LEFT)
+}*/
+
+//[nosek_20100519] SeqTrack( "MZ_A_Calm_Backward_v01",	                "MZ_A_Calm_Backward_v01.anm2",		    0, 78, 30, 1, 0.5 )
+//[nosek_20100519] SeqTrack( "MZ_A_Calm_Backward_v02",	                "MZ_A_Calm_Backward_v02.anm2",		    0, 66, 30, 1, 0.5 )
+
+//[nosek_20100519] SeqTrack( "MZ_A_Calm_Walk_Turn_180_L",	            "MZ_A_Calm_Walk_Turn_180_L.anm2",	    0, 135, 30, 1, 0.5 )
+//[nosek_20100519] SeqTrack( "MZ_A_Calm_Walk_Turn_180_R",	            "MZ_A_Calm_Walk_Turn_180_R.anm2",	    0, 142, 30, 1, 0.5 )
+
+SeqTrack( "MZ_A_Calm_Turn_90_L",	                "MZ_A_Calm_Turn_90_L.anm2",		        13, 75, 30, 1, 0.5 ) //100
+{
+	Event(17, VIS_EVENT_STEP_LEFT)
+	Event(37, VIS_EVENT_STEP_RIGHT)
+	Event(60, VIS_EVENT_STEP_LEFT)
+}
+SeqTrack( "MZ_A_Calm_Turn_90_R",	                "MZ_A_Calm_Turn_90_R.anm2",		        14, 75, 30, 1, 0.5 ) //100
+{
+	Event(18, VIS_EVENT_STEP_RIGHT)
+	Event(39, VIS_EVENT_STEP_LEFT)
+	Event(60, VIS_EVENT_STEP_RIGHT)
+}
+SeqTrack( "MZ_A_Calm_Turn_180_L",	                "MZ_A_Calm_Turn_180_L.anm2",		        10, 68, 30, 1, 0.5 ) //90
+{
+	Event(16, VIS_EVENT_STEP_LEFT)
+	Event(41, VIS_EVENT_STEP_RIGHT)
+	Event(58, VIS_EVENT_STEP_LEFT)
+}
+/*SeqTrack( "MZ_A_Calm_Turn_180_L_v02",	            "MZ_A_Calm_Turn_180_L_v02.anm2",		    12, 106, 30, 1, 0.5 ) //150
+{
+	Event(7, VIS_EVENT_STEP_LEFT)
+	Event(29, VIS_EVENT_STEP_RIGHT)
+	Event(52, VIS_EVENT_STEP_LEFT)
+	Event(74, VIS_EVENT_STEP_RIGHT)
+	Event(94, VIS_EVENT_STEP_LEFT)
+}*/
+SeqTrack( "MZ_A_Calm_Turn_180_R",	                "MZ_A_Calm_Turn_180_R.anm2",		        7, 98, 30, 1, 0.5 ) //119
+{
+	Event(13, VIS_EVENT_STEP_RIGHT)
+	Event(36, VIS_EVENT_STEP_LEFT)
+	Event(61, VIS_EVENT_STEP_RIGHT)
+	Event(79, VIS_EVENT_STEP_LEFT)
+	Event(91, VIS_EVENT_STEP_RIGHT)
+}
+/*SeqTrack( "MZ_A_Calm_Turn_180_R_v02",	            "MZ_A_Calm_Turn_180_R_v02.anm2",		    20, 129, 30, 1, 0.5 ) //155
+{
+	Event(15, VIS_EVENT_STEP_RIGHT)
+	Event(42, VIS_EVENT_STEP_LEFT)
+	Event(61, VIS_EVENT_STEP_RIGHT)
+	Event(86, VIS_EVENT_STEP_LEFT)
+	Event(109, VIS_EVENT_STEP_RIGHT)
+}*/
+SeqTrack( "MZ_A_Calm_Turn_45_R",	                "MZ_A_Calm_Turn_45_R.anm2",		        12, 51, 30, 1, 0.5 ) //60
+{
+	Event(21, VIS_EVENT_STEP_RIGHT)
+	Event(39, VIS_EVENT_STEP_LEFT)
+}
+SeqTrack( "MZ_A_Calm_Turn_45_L",	                "MZ_A_Calm_Turn_45_L.anm2",		        13, 52, 30, 1, 0.5 ) //59
+{
+	Event(17, VIS_EVENT_STEP_LEFT)
+	Event(39, VIS_EVENT_STEP_RIGHT)
+}
+
+SeqTrack( "MZ_A_Upset_Walk",		                "MZ_A_Upset_Walk.anm2",		            0, 54, 30, 1, 0.5 )
+{
+	Event(8, VIS_EVENT_STEP_RIGHT)
+	Event(16, VIS_EVENT_STEP_LEFT)
+	Event(25, VIS_EVENT_STEP_RIGHT)
+	Event(33, VIS_EVENT_STEP_LEFT)
+	Event(43, VIS_EVENT_STEP_RIGHT)
+	Event(52, VIS_EVENT_STEP_LEFT)
+}
+/*SeqTrack( "MZ_A_Upset_Walk_v02",		            "MZ_A_Upset_Walk_v02.anm2",		        0, 39, 30, 1, 0.5 )
+{
+	Event(6, VIS_EVENT_STEP_LEFT)
+	Event(16, VIS_EVENT_STEP_RIGHT)
+	Event(24, VIS_EVENT_STEP_LEFT)
+	Event(34, VIS_EVENT_STEP_RIGHT)
+}
+SeqTrack( "MZ_A_Upset_Walk_v03",		            "MZ_A_Upset_Walk_v03.anm2",		        0, 41, 30, 1, 0.5 )
+{
+	Event(8, VIS_EVENT_STEP_RIGHT)
+	Event(19, VIS_EVENT_STEP_LEFT)
+	Event(29, VIS_EVENT_STEP_RIGHT)
+	Event(39, VIS_EVENT_STEP_LEFT)
+}*/
+
+//[nosek_20100519] SeqTrack( "MZ_A_Upset_Walk_Turn_90_L",		        "MZ_A_Upset_Walk_Turn_90_L.anm2",	    0, 72, 30, 1, 0.5 )
+
+//[nosek_20100519] SeqTrack( "MZ_A_Upset_Walk_Backward",		        "MZ_A_Upset_Walk_Backward.anm2",	        0, 96, 30, 1, 0.5 )
+
+//[nosek_20100519] SeqTrack( "MZ_A_Upset_Walk_Backward_Stop",		    "MZ_A_Upset_Walk_Backward_Stop.anm2",	0, 65, 30, 1, 0.5 )
+//[nosek_20100519] SeqTrack( "MZ_A_Upset_Walk_Backward_Start",		    "MZ_A_Upset_Walk_Backward_Start.anm2",	0, 46, 30, 1, 0.5 )
+
+//[nosek_20100519] SeqTrack( "MZ_A_Calm_Injured_Leg_L_Walk",		    "MZ_A_Calm_Injured_Leg_L_Walk.anm2",		0, 70, 30, 1, 0.5 )
+//[nosek_20100519] SeqTrack( "MZ_A_Calm_Injured_Leg_R_Walk",		    "MZ_A_Calm_Injured_Leg_R_Walk.anm2",		0, 72, 30, 1, 0.5 )
+
+//[nosek_20100519] SeqTrack( "MZ_A_Calm_Injured_Leg_L_Walk_Turn_90_L",	    "MZ_A_Calm_Injured_Leg_L_Walk_Turn_90_L.anm2",   0, 176, 30, 1, 0.5 )
+//[nosek_20100519] SeqTrack( "MZ_A_Calm_Injured_Leg_L_Walk_Turn_90_R",	    "MZ_A_Calm_Injured_Leg_L_Walk_Turn_90_R.anm2",   0, 137, 30, 1, 0.5 )
+//[nosek_20100519] SeqTrack( "MZ_A_Calm_Injured_Leg_L_Walk_Turn_180_R",    "MZ_A_Calm_Injured_Leg_L_Walk_Turn_180_R.anm2",  0, 134, 30, 1, 0.5 )
+
+//[nosek_20100519] SeqTrack( "MZ_A_Calm_Injured_Leg_R_Walk_Turn_90_R",	    "MZ_A_Calm_Injured_Leg_R_Walk_Turn_90_R.anm2",	0, 147, 30, 1, 0.5 )
+//[nosek_20100519] SeqTrack( "MZ_A_Calm_Injured_Leg_R_Walk_Turn_180_R",    "MZ_A_Calm_Injured_Leg_R_Walk_Turn_180_R.anm2",	0, 176, 30, 1, 0.5 )
+
+/*SeqTrack( "MZ_A_Upset_Injured_Leg_L_Walk_v01",		"MZ_A_Upset_Injured_Leg_L_Walk_v01.anm2",		0, 100, 30, 1, 0.5 )
+{
+	Event(7, VIS_EVENT_STEP_LEFT)
+	Event(14, VIS_EVENT_STEP_RIGHT)
+	Event(18, VIS_EVENT_STEP_SHUFFLE_LEFT)
+	Event(41, VIS_EVENT_STEP_RIGHT)
+	Event(43, VIS_EVENT_STEP_SHUFFLE_LEFT)
+	Event(64, VIS_EVENT_STEP_RIGHT)
+	Event(67, VIS_EVENT_STEP_SHUFFLE_LEFT)
+	Event(89, VIS_EVENT_STEP_RIGHT)
+	Event(92, VIS_EVENT_STEP_SHUFFLE_LEFT)
+}
+SeqTrack( "MZ_A_Upset_Injured_Leg_L_Walk_v02",		"MZ_A_Upset_Injured_Leg_L_Walk_v02.anm2",		0, 50, 30, 1, 0.5 )
+{
+	Event(5, VIS_EVENT_STEP_LEFT)
+	Event(18, VIS_EVENT_STEP_RIGHT)
+	Event(19, VIS_EVENT_STEP_SHUFFLE_LEFT)
+	Event(42, VIS_EVENT_STEP_RIGHT)
+	Event(46, VIS_EVENT_STEP_SHUFFLE_LEFT)
+}
+SeqTrack( "MZ_A_Upset_Injured_Leg_R_Walk_v01",		"MZ_A_Upset_Injured_Leg_R_Walk_v01.anm2",		0, 95, 30, 1, 0.5 )
+{
+	Event(4, VIS_EVENT_STEP_RIGHT)
+	Event(11, VIS_EVENT_STEP_LEFT)
+	Event(23, VIS_EVENT_STEP_RIGHT)
+	Event(34, VIS_EVENT_STEP_LEFT)
+	Event(51, VIS_EVENT_STEP_RIGHT)
+	Event(60, VIS_EVENT_STEP_LEFT)
+	Event(76, VIS_EVENT_STEP_RIGHT)
+	Event(85, VIS_EVENT_STEP_LEFT)
+}*/
+
+//[nosek_20100519] SeqTrack( "MZ_A_Upset_Injured_Leg_L_Walk_Turn_90_L",    "MZ_A_Upset_Injured_Leg_L_Walk_Turn_90_L.anm2",	0, 95, 30, 1, 0.5 )
+//[nosek_20100519] SeqTrack( "MZ_A_Upset_Injured_Leg_L_Walk_Turn_180_L",   "MZ_A_Upset_Injured_Leg_L_Walk_Turn_180_L.anm2", 0, 104, 30, 1, 0.5 )
+
+//[nosek_20100519] SeqTrack( "MZ_A_Upset_Injured_Leg_R_Walk_Turn_90_R",	"MZ_A_Upset_Injured_Leg_R_Walk_Turn_90_R.anm2",	0, 131, 30, 1, 0.5 )
+
+// --------------- Upset Walk FAll ----------------------------
+//[nosek_20100519] SeqTrack( "MZ_A_Upset_Walk_Fall",	    "MZ_A_Upset_Walk_Fall.anm2",	    0, 125, 30, 1, 0.5 )
+
+// --------------- MZ_A_Calm_Walk_Shotreaction_Torso ----------------------------
+
+//[nosek_20100519] SeqTrack( "MZ_A_Calm_Walk_Shotreaction_Torso_L_V01",	    "MZ_A_Calm_Walk_Shotreaction_Torso_L_V01.anm2",	0, 70, 30, 1, 0.5 )
+//[nosek_20100519] SeqTrack( "MZ_A_Calm_Walk_Shotreaction_Torso_L_V02",	    "MZ_A_Calm_Walk_Shotreaction_Torso_L_V02.anm2",	0, 64, 30, 1, 0.5 )
+//[nosek_20100519] SeqTrack( "MZ_A_Calm_Walk_Shotreaction_Torso_L_V03",	    "MZ_A_Calm_Walk_Shotreaction_Torso_L_V03.anm2",	0, 59, 30, 1, 0.5 )
+//[nosek_20100519] SeqTrack( "MZ_A_Calm_Walk_Shotreaction_Torso_R_V01",	    "MZ_A_Calm_Walk_Shotreaction_Torso_R_V01.anm2",	0, 64, 30, 1, 0.5 )
+//[nosek_20100519] SeqTrack( "MZ_A_Calm_Walk_Shotreaction_Torso_R_V02",	    "MZ_A_Calm_Walk_Shotreaction_Torso_R_V02.anm2",	0, 66, 30, 1, 0.5 )
+//[nosek_20100519] SeqTrack( "MZ_A_Calm_Walk_Shotreaction_Torso_R_V03",	    "MZ_A_Calm_Walk_Shotreaction_Torso_R_V03.anm2",	0, 70, 30, 1, 0.5 )
+
+// --------------- MZ_A_Calm_Walk_Shotreaction_Legs ----------------------------
+
+//[nosek_20100519] SeqTrack( "MZ_A_Calm_Walk_Shotreaction_Legs_L_V01",	    "MZ_A_Calm_Walk_Shotreaction_Legs_L_V01.anm2",	0, 52, 30, 1, 0.5 )
+//[nosek_20100519] SeqTrack( "MZ_A_Calm_Walk_Shotreaction_Legs_L_V02",	    "MZ_A_Calm_Walk_Shotreaction_Legs_L_V02.anm2",	0, 33, 30, 1, 0.5 )
+//[nosek_20100519] SeqTrack( "MZ_A_Calm_Walk_Shotreaction_Legs_R_V01",	    "MZ_A_Calm_Walk_Shotreaction_Legs_R_V01.anm2",	0, 59, 30, 1, 0.5 )
+//[nosek_20100519] SeqTrack( "MZ_A_Calm_Walk_Shotreaction_Legs_R_V02",	    "MZ_A_Calm_Walk_Shotreaction_Legs_R_V02.anm2",	0, 73, 30, 1, 0.5 )
+
+// --------------- MZ_A_Upset_Walk_Shotreaction_Torso ----------------------------
+
+//[nosek_20100519] SeqTrack( "MZ_A_Upset_Walk_Shotreaction_Torso_L_V01",	    "MZ_A_Upset_Walk_Shotreaction_Torso_L_V01.anm2",	0, 40, 30, 1, 0.5 )
+//[nosek_20100519] SeqTrack( "MZ_A_Upset_Walk_Shotreaction_Torso_L_V02",	    "MZ_A_Upset_Walk_Shotreaction_Torso_L_V02.anm2",	0, 30, 30, 1, 0.5 )
+//[nosek_20100519] SeqTrack( "MZ_A_Upset_Walk_Shotreaction_Torso_R_V01",	    "MZ_A_Upset_Walk_Shotreaction_Torso_R_V01.anm2",	0, 45, 30, 1, 0.5 )
+//[nosek_20100519] SeqTrack( "MZ_A_Upset_Walk_Shotreaction_Torso_R_V02",	    "MZ_A_Upset_Walk_Shotreaction_Torso_R_V02.anm2",	0, 36, 30, 1, 0.5 )
+
+//---------------- MZ_A_Upset_Walk_Shotreaction_Legs ----------------------
+
+//[nosek_20100519] SeqTrack( "MZ_A_Upset_Walk_Shotreaction_Legs_L_V01",	"MZ_A_Upset_Walk_Shotreaction_Legs_L_V01.anm2",	0, 50, 30, 1, 0.5 )
+//[nosek_20100519] SeqTrack( "MZ_A_Upset_Walk_Shotreaction_Legs_L_V02",	"MZ_A_Upset_Walk_Shotreaction_Legs_L_V02.anm2",	0, 57, 30, 1, 0.5 )
+//[nosek_20100519] SeqTrack( "MZ_A_Upset_Walk_Shotreaction_Legs_R_V01",	"MZ_A_Upset_Walk_Shotreaction_Legs_R_V01.anm2",	0, 44, 30, 1, 0.5 )
+//[nosek_20100519] SeqTrack( "MZ_A_Upset_Walk_Shotreaction_Legs_R_V02",	"MZ_A_Upset_Walk_Shotreaction_Legs_R_V02.anm2",	0, 54, 30, 1, 0.5 )
+
+
+//-------------- MZ_A Start Walk Turn ---------------------------
+
+SeqTrack( "mz_a_calm_startwalkturn_90_l",	"MZ_A_Calm_StartWalkTurn_90_L.anm2",	0, 153, 30, 1, 0.5 )
+{
+    Event(32, VIS_EVENT_STEP_LEFT)
+	Event(52, VIS_EVENT_STEP_RIGHT)
+	Event(66, VIS_EVENT_STEP_LEFT)
+	Event(69, VIS_EVENT_STOPANIM)
+    Event(69, VIS_EVENT_ROTATION_MOD_END)
+    Event(88, VIS_EVENT_STEP_RIGHT)
+	Event(106, VIS_EVENT_STEP_LEFT)
+}
+SeqTrack( "mz_a_calm_startwalkturn_90_r",	"MZ_A_Calm_StartWalkTurn_90_R.anm2",	0, 136, 30, 1, 0.5 )
+{
+    Event(33, VIS_EVENT_STEP_RIGHT)
+    Event(50, VIS_EVENT_STEP_LEFT)
+	Event(59, VIS_EVENT_STOPANIM)
+    Event(59, VIS_EVENT_ROTATION_MOD_END)
+    Event(71, VIS_EVENT_STEP_RIGHT)
+	Event(85, VIS_EVENT_STEP_LEFT)
+    Event(110, VIS_EVENT_STEP_RIGHT)
+	Event(123, VIS_EVENT_STEP_LEFT)
+}
+SeqTrack( "mz_a_calm_startwalkturn_180_l",	"MZ_A_Calm_StartWalkTurn_180_L.anm2",	0, 191, 30, 1, 0.5 )
+{
+    Event(16, VIS_EVENT_STEP_LEFT)
+	Event(41, VIS_EVENT_STEP_RIGHT)
+	Event(65, VIS_EVENT_STEP_LEFT)
+    Event(90, VIS_EVENT_STEP_RIGHT)
+    Event(105, VIS_EVENT_STEP_LEFT)
+    Event(109, VIS_EVENT_STOPANIM)
+    Event(109, VIS_EVENT_ROTATION_MOD_END)
+    Event(133, VIS_EVENT_STEP_RIGHT)
+    Event(148, VIS_EVENT_STEP_LEFT)
+    Event(171, VIS_EVENT_STEP_RIGHT)
+}
+SeqTrack( "mz_a_calm_startwalkturn_180_r",	"MZ_A_Calm_StartWalkTurn_180_R.anm2",	0, 174, 30, 1, 0.5 )
+{
+	Event(24, VIS_EVENT_STEP_RIGHT)
+	Event(44, VIS_EVENT_STEP_LEFT)
+    Event(68, VIS_EVENT_STEP_RIGHT)
+    Event(87, VIS_EVENT_STEP_LEFT)
+    Event(95, VIS_EVENT_STOPANIM)
+    Event(95, VIS_EVENT_ROTATION_MOD_END)
+    Event(107, VIS_EVENT_STEP_RIGHT)
+    Event(123, VIS_EVENT_STEP_LEFT)
+    Event(147, VIS_EVENT_STEP_RIGHT)    
+}
+
+//[nosek_20100729] SeqTrack( "mz_a_upset_startwalkturn_90_l",	"MZ_A_Calm_StartWalkTurn_90_L.anm2",	0, 53, 30, 1, 0.5 )
+//{
+//    Event(32, VIS_EVENT_STEP_LEFT)
+//	Event(51, VIS_EVENT_STEP_RIGHT)
+//    Event(53, VIS_EVENT_ROTATION_MOD_END)
+//	Event(53, VIS_EVENT_STOPANIM)
+//}
+//[nosek_20100729] SeqTrack( "mz_a_upset_startwalkturn_90_r",	"MZ_A_Calm_StartWalkTurn_90_R.anm2",	0, 52, 30, 1, 0.5 )
+//{
+//    Event(33, VIS_EVENT_STEP_RIGHT)
+//    Event(50, VIS_EVENT_STEP_LEFT)
+//    Event(52, VIS_EVENT_ROTATION_MOD_END)
+//	Event(52, VIS_EVENT_STOPANIM)
+//}
+//[nosek_20100729] SeqTrack( "mz_a_upset_startwalkturn_180_l",	"MZ_A_Calm_StartWalkTurn_180_L.anm2",	0, 88, 30, 1, 0.5 )
+//{
+//    Event(21, VIS_EVENT_STEP_LEFT)
+//	Event(40, VIS_EVENT_STEP_RIGHT)
+//	Event(64, VIS_EVENT_STEP_LEFT)
+//    Event(86, VIS_EVENT_STEP_RIGHT)
+//    Event(88, VIS_EVENT_ROTATION_MOD_END)
+//    Event(88, VIS_EVENT_STOPANIM)
+//}
+//[nosek_20100729] SeqTrack( "mz_a_upset_startwalkturn_180_r",	"MZ_A_Calm_StartWalkTurn_180_R.anm2",	0, 88, 30, 1, 0.5 )
+//{
+//	Event(24, VIS_EVENT_STEP_RIGHT)
+//	Event(44, VIS_EVENT_STEP_LEFT)
+//    Event(68, VIS_EVENT_STEP_RIGHT)
+//    Event(86, VIS_EVENT_STEP_LEFT)
+//    Event(88, VIS_EVENT_ROTATION_MOD_END)
+//    Event(88, VIS_EVENT_STOPANIM)
+//}
+
+//[nosek_20100729] SeqTrack( "mz_a_upset_attack_berserker_lefthand_v01",    "MZ_A_Calm_FastAttack_mirror.anm2",	    0, 150, 36, 1, 0.5 )
+//{
+//	Event(17, VIS_EVENT_STEP_RIGHT)
+//    Event(35, VIS_EVENT_STEP_LEFT)
+//    Event(57, VIS_EVENT_STEP_RIGHT)
+//    Event(62, EVENT_FALL_ON_HIT_ENABLE)
+//    Event(72, EVENT_FORCE_EXECUTE_BERSERKER_ATTACK)
+//    Event(73, VIS_EVENT_STEP_LEFT)
+//    Event(84, EVENT_CANNOT_ATTACK)
+//	Event(88, VIS_EVENT_STEP_RIGHT)
+//    Event(89, EVENT_APPLY_DAMAGE_RIGHT)
+//    Event(98, VIS_EVENT_STEP_LEFT)
+//	Event(106, EVENT_CAN_BREAK_ATTACK)
+//	Event(111, VIS_EVENT_STEP_RIGHT)
+//    Event(123, VIS_EVENT_STEP_LEFT)
+//	Event(133, VIS_EVENT_STEP_RIGHT)
+//}
+//[nosek_20100729] SeqTrack( "mz_a_upset_attack_berserker_strike_lefthand_v01",    "MZ_A_Calm_FastAttack_mirror.anm2",	    32, 150, 36, 1, 0.5 )
+//{
+//	Event(3, VIS_EVENT_STEP_LEFT)
+//    Event(25, VIS_EVENT_STEP_RIGHT)
+//    Event(41, VIS_EVENT_STEP_LEFT)
+//	Event(56, VIS_EVENT_STEP_RIGHT)
+//    Event(57, EVENT_APPLY_DAMAGE_RIGHT)
+//    Event(66, VIS_EVENT_STEP_LEFT)
+//	Event(74, EVENT_CAN_BREAK_ATTACK)
+//	Event(79, VIS_EVENT_STEP_RIGHT)
+//    Event(91, VIS_EVENT_STEP_LEFT)
+//	Event(101, VIS_EVENT_STEP_RIGHT)
+//}
+
+//[nosek_20100729] SeqTrack( "mz_a_upset_attack_berserker_righthand_v01",    "MZ_A_Calm_FastAttack.anm2",	    0, 150, 36, 1, 0.5 )
+//{
+//	Event(17, VIS_EVENT_STEP_LEFT)
+//    Event(35, VIS_EVENT_STEP_RIGHT)
+//    Event(57, VIS_EVENT_STEP_LEFT)
+//    Event(62, EVENT_FALL_ON_HIT_ENABLE)
+//    Event(72, EVENT_FORCE_EXECUTE_BERSERKER_ATTACK)
+//    Event(73, VIS_EVENT_STEP_RIGHT)
+//    Event(84, EVENT_CANNOT_ATTACK)
+//	Event(88, VIS_EVENT_STEP_LEFT)
+//    Event(89, EVENT_APPLY_DAMAGE_LEFT)
+//    Event(98, VIS_EVENT_STEP_RIGHT)
+//	Event(106, EVENT_CAN_BREAK_ATTACK)
+//	Event(111, VIS_EVENT_STEP_LEFT)
+//    Event(123, VIS_EVENT_STEP_RIGHT)
+//	Event(133, VIS_EVENT_STEP_LEFT)
+//}
+//[nosek_20100729] SeqTrack( "mz_a_upset_attack_berserker_strike_righthand_v01",    "MZ_A_Calm_FastAttack.anm2",	    32, 150, 36, 1, 0.5 )
+//{
+//	Event(3, VIS_EVENT_STEP_RIGHT)
+//    Event(25, VIS_EVENT_STEP_LEFT)
+//    Event(41, VIS_EVENT_STEP_RIGHT)
+//	Event(56, VIS_EVENT_STEP_LEFT)
+//    Event(57, EVENT_APPLY_DAMAGE_LEFT)
+//    Event(66, VIS_EVENT_STEP_RIGHT)
+//	Event(74, EVENT_CAN_BREAK_ATTACK)
+//	Event(79, VIS_EVENT_STEP_LEFT)
+//    Event(91, VIS_EVENT_STEP_RIGHT)
+//	Event(101, VIS_EVENT_STEP_LEFT)
+//}
+
+
+//[nosek_20100729] SeqTrack( "mz_a_upset_stand_attack_lefthand_v01",	            "mz_a_Upset_Stand_Attack_Hands_V01.anm2",	415, 477, 30, 1, 0.5 )
+//{
+//    Event(18, EVENT_CLENCH_CHECK_START)
+//	Event(28, EVENT_APPLY_DAMAGE_RIGHT)
+//    Event(38, EVENT_CLENCH_CHECK_END)
+//}
+//[nosek_20100729] SeqTrack( "mz_a_upset_stand_attack_lefthand_v02",	            "mz_a_Upset_Stand_Attack_Hands_V01.anm2",	495, 546, 30, 1, 0.5 )
+//{
+//    Event(14, EVENT_CLENCH_CHECK_START)
+//	Event(24, EVENT_APPLY_DAMAGE_RIGHT)
+//    Event(34, EVENT_CLENCH_CHECK_END)
+//}
+//[nosek_20100729] SeqTrack( "mz_a_upset_stand_attack_righthand_v01",	        "MZ_a_Upset_Stand_Attack_Hands_V01.anm2",	31, 97, 30, 1, 0.5 ) //125
+//{
+//    Event(23, EVENT_CLENCH_CHECK_START)
+//	Event(33, EVENT_APPLY_DAMAGE_LEFT)
+//    Event(43, EVENT_CLENCH_CHECK_END)
+//}
+//[nosek_20100729] SeqTrack( "mz_a_upset_stand_attack_righthand_v02",	        "MZ_a_Upset_Stand_Attack_Hands_V01.anm2",	196, 258, 30, 1, 0.5 ) //289
+//{
+//    Event(18, EVENT_CLENCH_CHECK_START)
+//	Event(28, EVENT_APPLY_DAMAGE_LEFT)
+//    Event(38, EVENT_CLENCH_CHECK_END)
+//}
+//[nosek_20100729] SeqTrack( "mz_a_upset_stand_attack_righthand_v03",	        "MZ_a_Upset_Stand_Attack_Hands_V01.anm2",	327, 411, 30, 1, 0.5 ) //411
+//{
+//    Event(25, EVENT_CLENCH_CHECK_START)
+//	Event(35, EVENT_APPLY_DAMAGE_LEFT)
+//    Event(45, EVENT_CLENCH_CHECK_END)
+//}
+
+//[nosek_20100729] SeqTrack( "mz_a_upset_attack_berserker_lefthand_v02",	    "mz_a_Upset_Attack_Berserker_LeftHand_V01.anm2", 26, 165, 36, 1, 0.5 )
+//{
+//    Event(5, VIS_EVENT_STEP_RIGHT)
+//	Event(16, VIS_EVENT_STEP_LEFT)
+//    Event(25, VIS_EVENT_STEP_RIGHT)
+//	Event(37, VIS_EVENT_STEP_LEFT)
+//    Event(45, VIS_EVENT_STEP_RIGHT)
+//	Event(55, VIS_EVENT_STEP_LEFT)
+//    Event(56, EVENT_FALL_ON_HIT_ENABLE)
+//    Event(64, VIS_EVENT_STEP_RIGHT)
+//    Event(66, EVENT_FORCE_EXECUTE_BERSERKER_ATTACK)
+//    Event(70, EVENT_CANNOT_ATTACK)
+//	Event(76, VIS_EVENT_STEP_LEFT)
+//    Event(77, EVENT_APPLY_DAMAGE_RIGHT)
+//    Event(87, VIS_EVENT_STEP_RIGHT)
+//	Event(99, VIS_EVENT_STEP_LEFT)
+//    Event(112, VIS_EVENT_STEP_RIGHT)
+//	Event(123, VIS_EVENT_STEP_LEFT)
+//}
+//[nosek_20100729] SeqTrack( "mz_a_left_arm_strike_berserker_v02",	    	"mz_a_Upset_Attack_Berserker_LeftHand_V01.anm2", 76, 151, 36, 1, 0.5 ) //165
+//{
+//    Event(5, VIS_EVENT_STEP_LEFT)
+//    Event(14, VIS_EVENT_STEP_RIGHT)
+//    Event(27, VIS_EVENT_STEP_LEFT)
+//    Event(28, EVENT_APPLY_DAMAGE_RIGHT)
+//    Event(38, VIS_EVENT_STEP_RIGHT)
+//	Event(51, VIS_EVENT_STEP_LEFT)
+//    Event(53, EVENT_CAN_BREAK_ATTACK)
+//    Event(63, VIS_EVENT_STEP_RIGHT)
+//	Event(75, VIS_EVENT_STEP_LEFT)
+//}
+
+//[nosek_20100729] SeqTrack( "mz_a_upset_attack_berserker_righthand_v02",	"mz_a_Upset_Attack_Berserker_RightHand_V01.anm2", 45, 146, 36, 1, 0.5 ) //192
+//{
+//    Event(7, VIS_EVENT_STEP_RIGHT)
+//	Event(18, VIS_EVENT_STEP_LEFT)
+//    Event(29, VIS_EVENT_STEP_RIGHT)
+//	Event(39, VIS_EVENT_STEP_LEFT)
+//    Event(48, VIS_EVENT_STEP_RIGHT)
+//    Event(54, EVENT_FALL_ON_HIT_ENABLE)
+//	Event(58, VIS_EVENT_STEP_LEFT)
+//    Event(64, EVENT_FORCE_EXECUTE_BERSERKER_ATTACK)
+//    Event(69, VIS_EVENT_STEP_RIGHT)
+//    Event(70, EVENT_CANNOT_ATTACK)
+//    Event(74, EVENT_APPLY_DAMAGE_LEFT)
+//	Event(77, VIS_EVENT_STEP_LEFT)
+//    Event(88, VIS_EVENT_STEP_RIGHT)
+//}
+//[nosek_20100729] SeqTrack( "mz_a_right_arm_strike_berserker_v02",	"mz_a_Upset_Attack_Berserker_RightHand_V01.anm2", 95, 132, 36, 1, 0.5 )
+//{
+//	Event(7, VIS_EVENT_STEP_LEFT)
+//	Event(18, VIS_EVENT_STEP_Right)
+//	Event(25, VIS_EVENT_STEP_LEFT)
+//    Event(25, EVENT_APPLY_DAMAGE_LEFT)
+//    Event(36, EVENT_CAN_BREAK_ATTACK)
+//    Event(37, VIS_EVENT_STEP_RIGHT)
+//}
+
+
+// techland mocaps
+
+SeqTrack( "mz_a_calm_walk_startf_fast",		                "mz_a_calm_walk_startF.anm2",		      0, 64, 30, 1, 0.5 )
+{
+	Event(23, VIS_EVENT_STEP_LEFT)
+    Event(24, VIS_EVENT_ROTATION_MOD_END)
+	Event(34, VIS_EVENT_STEP_RIGHT)
+    Event(35, VIS_EVENT_STOPANIM)
+	Event(44, VIS_EVENT_STEP_LEFT)
+	Event(56, VIS_EVENT_STEP_RIGHT)
+}
+
+SeqTrack( "mz_a_calm_walk_startr_fast",		                "mz_a_calm_walk_startR.anm2",		      0, 69, 30, 1, 0.5 )
+{
+	Event(28, VIS_EVENT_STEP_LEFT)    
+    Event(31, VIS_EVENT_ROTATION_MOD_END)
+	Event(39, VIS_EVENT_STEP_RIGHT)
+    Event(40, VIS_EVENT_STOPANIM)
+	Event(52, VIS_EVENT_STEP_LEFT)
+	Event(62, VIS_EVENT_STEP_RIGHT)
+}
+
+SeqTrack( "mz_a_calm_walk_startbl_fast",		                "mz_a_calm_walk_startBL.anm2",		      0, 81, 30, 1, 0.5 )
+{
+	Event(9, VIS_EVENT_STEP_RIGHT)
+	Event(27, VIS_EVENT_STEP_LEFT)
+	Event(43, VIS_EVENT_STEP_RIGHT)    
+    Event(44, VIS_EVENT_ROTATION_MOD_END)
+    Event(44, VIS_EVENT_STOPANIM)
+	Event(52, VIS_EVENT_STEP_LEFT)    
+	Event(63, VIS_EVENT_STEP_RIGHT)
+	Event(72, VIS_EVENT_STEP_LEFT)
+}
+
+SeqTrack( "mz_a_calm_walk_startbr_fast",		                "mz_a_calm_walk_startBR.anm2",		      0, 85, 30, 1, 0.5 )
+{
+	Event(28, VIS_EVENT_STEP_RIGHT)
+	Event(40, VIS_EVENT_STEP_LEFT)    
+    Event(45, VIS_EVENT_ROTATION_MOD_END)
+	Event(51, VIS_EVENT_STEP_RIGHT)
+    Event(52, VIS_EVENT_STOPANIM)
+	Event(60, VIS_EVENT_STEP_LEFT)
+	Event(70, VIS_EVENT_STEP_RIGHT)
+	Event(80, VIS_EVENT_STEP_LEFT)
+}
+
+SeqTrack( "mz_a_calm_walk_startl_fast",		                "mz_a_calm_walk_startL.anm2",		      0, 49, 30, 1, 0.5 )
+{
+	Event(22, VIS_EVENT_STEP_LEFT)
+    Event(23, VIS_EVENT_ROTATION_MOD_END)    
+	Event(34, VIS_EVENT_STEP_RIGHT)
+    Event(35, VIS_EVENT_STOPANIM)
+	Event(43, VIS_EVENT_STEP_LEFT)
+}
+

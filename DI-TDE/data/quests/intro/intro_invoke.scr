@@ -1,0 +1,4 @@
+!QuestStage( s, s, s )
+
+QuestStage( "00x01s &intro_root_Name& (intro_root/intro)", "intro_root", "intro" )
+QuestStage( "00x02s &Intro_Movies_Name& (Intro_Movies/Intro Start)", "Intro_Movies", "Intro Start" )

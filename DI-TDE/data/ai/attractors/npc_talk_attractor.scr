@@ -1,0 +1,21 @@
+!include("ai_data.def")
+!include("human_timing_events.def")
+!include("human_activities.def")
+!include("human_goals.def")
+
+SnapDist(0.8)    // MunDee Estuvo aquí
+StrongAttractor()
+ReleaseDist(1.2)    // MunDee Estuvo aquí
+CanPlayDialogAnim()
+InteractOnlyHead()
+Slot("", 1, IDLE_STAND, 1,0.0,0.0,0.0, 0.0, 0.0, 1.0,1.5)    // MunDee Estuvo aquí
+{
+	//BlockRotationsinDialog()
+	NoInteract()
+    AiTypeDataSet("human")
+    {	
+        Data("idle:standing:stand::::", -2, "m_caring_pose2_idle")
+        Data("idle:standing:idle::::", -2, "m_caring_pose2_idle")
+	}
+}
+

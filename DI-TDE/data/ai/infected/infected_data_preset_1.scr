@@ -1,0 +1,32 @@
+!include("ai_data.def")
+!include("infected_timing_events.def")
+
+////////////////////////////////////////////// DATA ///////////////////////////////////////////////
+
+//##############
+//#### IDLE ####
+//##############
+//## idle:pose:idle_type:item_type:scare_level:is_idle_prepare:is_idle_finish
+//##############
+
+//Data("idle:standing:stand:none:none:none:none", -2, "mz_b_calm_idle_v01")
+//Data("idle:standing:stand:none:none:none:none", -2, "mz_b_calm_idle_v02")
+//Data("idle:standing:stand:none:none:none:none", -2, "mz_b_calm_idle_v03")
+//Data("idle:standing:stand:none:none:none:none", -2, "mz_b_calm_idle_v04")
+
+//##################
+//#### MOVEMENT ####
+//##################
+//## movement:is_standing:movement_type:alarm_level:item_type:is_left_leg_crippled:is_right_leg_crippled:ram_type
+//##################
+
+/*Data("movement:standing:walk:calm:none:none:none:", -2, "_i_upset_walkforward_01")
+
+Data("movement:standing:walk:alarmed:none:none:none:", -2, "_i_calm_walkforward_01")
+
+Data("movement:standing:run:calm:none:none:none:", -2, "_i_calm_walkforward_01")
+
+Data("movement:standing:run:alarmed:none:none:none:", -2, "mz_upset_sprint02")*/
+
+/////////////////////////////////////////// PARAMETERS ////////////////////////////////////////////
+

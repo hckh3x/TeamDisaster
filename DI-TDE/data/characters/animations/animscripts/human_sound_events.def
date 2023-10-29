@@ -1,0 +1,4 @@
+//keep this synchronized with EHumanSoundEvent !!!
+
+$SOUND_EVENT_PAIN				(i, 3000)
+$SOUND_EVENT_ATTACK			    (i, 3001)

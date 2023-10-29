@@ -1,0 +1,111 @@
+export float BOTTLE_EMPTY_DENSITY		= 450.0;
+export float CARTON_BOX_DENSITY			= 7.0;
+export float METAL_BOX_LIGHT_DENSITY 		= 250.0;
+export float METAL_BOX_DENSITY			= 500.0;
+export float METAL_BOX_HEAVY_DENSITY 		= 1500.0;
+export float PLASTIC_BOX_LIGHT_DENSITY		= 15.0;
+export float PLASTIC_BOX_DENSITY		= 40.0;
+export float WOODEN_BOX_DENSITY			= 25.0;
+export float PARKING_METER_DENSITY 		= 1000.0;
+
+// Collision type.
+/* Make sure, that are synchronized with FCollisionGroup::TYPE enum. */
+export int LARGE	= 2;		//< Collisions with all objects.
+export int AVERAGE	= 4;		//< Collisions with all objects except of SMALL, TINY and RAGDOLL.
+export int SMALL	= 8;	    //< No collisions with TINY, AVERAGE, PLAYER, AI, RAGDOLL. Collides with other SMALL.
+export int TINY		= 16;	    //< No collisions with SMALL, AVERAGE, PLAYER, AI, RAGDOLL. Doesn't collide with other TINY.
+
+// Activation/deactivation ranges for simulation.
+/* Make sure, that are synchronized with DynamicModelObject::??_RANGE. */
+export float SMALL_OBJ_ENABLE_RANGE     = 2500.0;
+export float SMALL_OBJ_DISABLE_RANGE    = 3000.0;
+export float AVERAGE_OBJ_ENABLE_RANGE   = 4000.0;
+export float AVERAGE_OBJ_DISABLE_RANGE  = 4500.0;
+export float LARGE_OBJ_ENABLE_RANGE     = 5500.0;
+export float LARGE_OBJ_DISABLE_RANGE    = 6000.0;
+
+// ODE geom types.
+/** Make sure, that are synchronized with EODESingleVolume enum. */
+export int SPHERE                     = 0;
+export int BOX                        = 1;
+export int CAPSULE                    = 2;
+export int CYLINDER                   = 3;
+export int YELLIPSOID                 = 9; 
+export int HAT                        = 10;
+export int BARREL                     = 11;
+export int PYRAMID                    = 12;
+export int FROM_MESH_HELPERS          = 13;
+export int SIMPLE_CHAIR               = 14;
+
+
+// 	Materials density [kg/cm3]:
+//
+//	wood			0.0005
+//	oil				0.0008
+//	water			0.001
+//	plastic			0.0015
+//	brick			0.0016
+//	concrete		0.0022
+//	aluminium		0.00272
+//	glass			0.0025
+//	steel			0.0078
+//
+//	Recommended density for objects:
+//
+//	carton box (empty)				0.000007
+//	plastic bin (empty)				0.00008
+//	plastic bin with some rubbish	0.00025
+//	metal bin (empty)				0.00005
+//	bottle (empty)					0.00045	
+
+	
+
+// Physics()			- section with physics params.
+// @@ TODO: add information about default values.
+		
+// Density(0.0005)		- density of the object, will be used to calculate its mass.
+// EnablePhysicsThreshold(0.0)	- minimal physical damage that must be given to the object to enable its physic, can be used to symulate objects fixed to the ground, that can be moved by giving them significant damage. After EnablePhysicsThreshold is exceeded object will have its physic enabled, unless WakeUpPhysicsThreshold is set. If set to default value then isn't taken into consideration. Exception for ChunkObjects - if set to other value then the default one, then ChunkObject doesn't have any physic set at all.
+// WakeUpPhysicsThreshold(0.0)	- minimal physical damage that must be given to the object to wake up ist physic, can be used to avoid enabling objects physics if the object was just 'touched'. To enable/wake up objects physic WakeUpPhysicsThreshold must be exceeded every time, when the physis gets destroyed. If set to default value then isn't taken into consideration. This param isn't used by ChunkObjects.
+// CollisionsType(0)		- type of collisions, the same type is going to be set as well to dynamicaly created objects as relevant simple objects.
+// CollisionFx("")			- not in use so far.
+// CollisionSound("")		- collision sound that is played on collision with CarDI, when the vehicle has low speed.
+// CollisionSoundBig("")	- collision sound that is played on collision with CarDI, when the vehicle has higher speed.
+// PhysicsScript("")		- physics script that should be used by the object. The script must be listed in Preloaded_scripts.phx
+// PhysicsVolumeType(BOX)	- collision hull used by the object.
+// DynamicSkinPostfix("")	- postfix that should be added to original skin name to create skin name for dynamic object
+
+
+// Destroyable()		- section with destroyable params.
+
+// Health(0.0)			- health of object. Max value 1000.0. Given damage decreases health. Health decreased to 0.0 means objects death/destruction. When set to default value then object cannot be destroyed. Exception for ChunkObject: any value different then the default one means that ChunkObject will be destroyed with taking first acceptable damage.
+// TakeDamageThreshold(0.0)	- minimal damage that must be given to the object to decrease its health.
+// HurtFx("")			- fx played when object gets acceptable damage.
+// HurtSound("")		- sound played when object gets acceptable damage.
+// DeathFx("")			- fx played when object destroyed.
+// DeathSound("")		- sound played when object destoyed.
+// DeathSkinPostfix("")	- skin that is applied to the object when the object gets destroyed. If not set then destroyed object will disappear.
+
+
+	
+// Visibility()			- section with visibility params.
+
+// VanishTime(0.0)		- after this time, counted from the moment of its creation, ChunkObjects will disappear. It is given in seconds. If set to default value, then it isn't taken into consideration.
+// VanishRange(0.0)		- distance given in centimeters. If distance between player and the object exceeds VanishRange then ChunkObject will disappear. If set to default value, then it isn't taken into consideration.
+// EnableRelevanceRange(0.0)	- distance given in centimeters to enable relevance. If not set, then the volume will be used to calculate the distance.
+// DisableRelevanceRange(0.0)	- distance given in centimeters to disable relevance. If not set, then the volume will be used to calculate the distance.
+
+
+
+// Attachable()			- section with params related to attaching objects.
+
+// Attach(false)		- ability to attach other objects. If this param set to true then the object will attach all dynamic objects in its extents and objects placed on its top.
+// DetachAngle(0.0)		- condition to detach already attached objects. If objects angle to Y axis exceeds DetachAngle then all attached objects will be detached. If set to the default value equal 0.0 then change of the angle doesn't affect attaching.
+// DetachSpeed(0.0)		- condition to detach already attached objects. If objests speed exceeds DetachSpeed then all attached objects will be detached. If set to the default value equal 0.0 then change of the speed doesn't affect attaching.
+// DetachDamage(0.0)		- condition to detach already attached objects. Currently the damage must be given to attached objects. Required damage is equal DeatachDamage for objects at the bottom of attaching object and it is linear decreasing for objects closer to the top of the attaching object. A physical damaged is here taken into condideration. If DetachDamage set to default value 0.0 then objects can not be detached by giving them any damage.
+
+
+
+// Chunk(extention, class, preset) 	- section related to chunk child objects, created after parents object death. Chunks inherit its parents setting. The setting can be over writen. If Chunk section not present, then destroyed object won't create chunks. Chunk children objects can have their own chunks.
+// extention			- string added to name of parents mesh, to create chunk child mesh name. 
+// class				- string with class of the chunk child object.
+// preset				- string with preset of the chunk child object.

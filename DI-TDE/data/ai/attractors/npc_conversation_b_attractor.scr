@@ -1,0 +1,45 @@
+!include("ai_data.def")
+!include("human_timing_events.def")
+!include("human_activities.def")
+!include("human_goals.def")
+
+SnapDist(0.8)    // MunDee Estuvo aquí
+ReleaseDist(2.2)    // MunDee Estuvo aquí
+StrongAttractor()
+Slot("", 1, IDLE_STAND, 1,0.0,0.0,0.0, 0.0, 0.0, 1.0,1.5)    // MunDee Estuvo aquí
+{
+	CanMoveOnAnimation()
+    AiTypeDataSet("human")
+    {	
+        //Data("idle:standing:stand::::", -2, "M_NPC_StreetConversation_B")
+        //Data("idle:standing:idle::::", -2, "M_NPC_StreetConversation_B")
+        //Data("idle:standing:special::::", -2, "M_NPC_StreetConversation_B")
+		
+		Data("idle:standing:stand::::", -2, "M_NPC_StreetConversation_B_idle_01")
+        Data("idle:standing:idle::::", -2, "M_NPC_StreetConversation_B_idle_01")
+        Data("idle:standing:stand::::", -2, "M_NPC_StreetConversation_B_idle_03")
+        Data("idle:standing:idle::::", -2, "M_NPC_StreetConversation_B_idle_03")
+        Data("idle:standing:idle::::", -2, "M_NPC_StreetConversation_B_idle_04")
+        Data("idle:standing:idle::::", -2, "M_NPC_StreetConversation_B_idle_04")
+		
+		Data("dialog:m_crafty:pose2:use", -2, "M_NPC_StreetConversation_B_use_01")
+		Data("dialog:m_caring:pose2:use", -2, "M_NPC_StreetConversation_B_use_01")
+		Data("dialog:m_scared:pose2:use", -2, "M_NPC_StreetConversation_B_use_01")
+		Data("dialog:m_weak:pose2:use", -2, "M_NPC_StreetConversation_B_use_01")
+		Data("dialog:m_tough:pose2:use", -2, "M_NPC_StreetConversation_B_use_01")
+		Data("dialog:w_broken:pose2:use", -2, "M_NPC_StreetConversation_B_use_01")
+		Data("dialog:w_cheeky:pose2:use", -2, "M_NPC_StreetConversation_B_use_01")
+		Data("dialog:w_dignified:pose2:use", -2, "M_NPC_StreetConversation_B_use_01")
+		Data("dialog:w_scared:pose2:use", -2, "M_NPC_StreetConversation_B_use_01")
+		Data("dialog:w_weak:pose2:use", -2, "M_NPC_StreetConversation_B_use_01")
+		Data("dialog:extra:pose2:use", -2, "M_NPC_StreetConversation_B_use_01")
+		Data("dialog:jin:pose2:use", -2, "M_NPC_StreetConversation_B_use_01")
+		
+		Data("idle:standing:special::::", -2, "M_NPC_StreetConversation_B_special_03")
+        Data("idle:standing:special::::", -2, "M_NPC_StreetConversation_B_special_07")
+        Data("idle:standing:special::::", -2, "M_NPC_StreetConversation_B_special_09")
+        Data("idle:standing:special::::", -2, "M_NPC_StreetConversation_B_special_02")
+        Data("idle:standing:special::::", -2, "M_NPC_StreetConversation_B_special_06")
+	}
+}
+

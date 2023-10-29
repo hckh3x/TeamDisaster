@@ -1,0 +1,41 @@
+import "dide_field_report_act1a.scr"
+import "dide_field_report_act2a.scr"
+import "dide_field_report_act3a.scr"
+import "dide_field_report_act3b.scr"
+import "dide_field_report_act3c.scr"
+import "dide_field_report_act4a.scr"
+import "dide_field_report_act4b.scr"
+import "dide_field_report_arena_a.scr"
+import "dide_field_report_arena_b.scr"
+import "dide_field_report_arena_c.scr"
+import "dide_field_report_arena_d.scr"
+import "dide_field_report_buildinginterior.scr"
+import "dide_field_report_cityhalla.scr"
+import "dide_field_report_cityhallb.scr"
+import "dide_field_report_hotel.scr"
+import "dide_field_report_market.scr"
+import "dide_field_report_parkinglot.scr"
+import "dide_field_report_policestation.scr"
+import "dide_field_report_sewers.scr"
+
+sub main() {
+    use dide_field_report_act1a();
+    use dide_field_report_act2a();
+    use dide_field_report_act3a();
+    use dide_field_report_act3b();
+    use dide_field_report_act3c();
+    use dide_field_report_act4a();
+    use dide_field_report_act4b();
+    use dide_field_report_arena_a();
+    use dide_field_report_arena_b();
+    use dide_field_report_arena_c();
+    use dide_field_report_arena_d();
+    use dide_field_report_buildinginterior();
+    use dide_field_report_cityhalla();
+    use dide_field_report_cityhallb();
+    use dide_field_report_hotel();
+    use dide_field_report_market();
+    use dide_field_report_parkinglot();
+    use dide_field_report_policestation();
+    use dide_field_report_sewers();
+}

@@ -1,0 +1,551 @@
+<?xml version="1.0"?>
+<QuestsDefinitions
+     level="CityHallA"
+     pxsl_line="3">
+    <!-- Go to Mayor -->
+    <Quest
+         name="ACT2B_CityHall"
+         reward="1000"
+         parent="Sewers_GoToACT2B"
+         new_chapter="true"
+         pxsl_line="6">
+        <Phase
+             type="AND"
+             name="_"
+             objective="&amp;ACT2B_GoToMayor_Objective&amp;"
+             pxsl_line="7">
+            <Path
+                 pxsl_line="7">
+                <Phase
+                     type="go to"
+                     name="Go to Mayor"
+                     distance="100.0"
+                     pxsl_line="8">
+                    <Destination
+                         pxsl_line="8">
+                        <QuestObject
+                             class="SpawnPoint"
+                             name="MapStart"
+                             pxsl_line="8" />
+                    </Destination>
+                    <DebugPlayerPosition
+                         pxsl_line="9">
+                        <QuestObject
+                             class="SpawnPoint"
+                             name="MapStart"
+                             pxsl_line="9" />
+                    </DebugPlayerPosition>
+                </Phase>
+                <Phase
+                     type="set state"
+                     name="_"
+                     desired_state="off"
+                     pxsl_line="10">
+                    <Trigger
+                         pxsl_line="10">
+                        <QuestObject
+                             class="VirtualSwitchDI"
+                             name="Movie_Lights_Activator"
+                             pxsl_line="10" />
+                    </Trigger>
+                </Phase>
+                <Phase
+                     type="checkpoint"
+                     name="AutoSave_CityStart"
+                     pxsl_line="11">
+                    <Destination
+                         pxsl_line="11">
+                        <QuestObject
+                             class="SpawnPoint"
+                             name="MapStart"
+                             pxsl_line="11" />
+                    </Destination>
+                </Phase>
+                <Phase
+                     type="set dialog"
+                     name="_"
+                     speaker="zackerman"
+                     group="Zackerman_NF"
+                     pxsl_line="12" />
+                <Phase
+                     type="set dialog"
+                     name="_"
+                     speaker="Policeman004"
+                     group="Policeman004_NF"
+                     pxsl_line="13" />
+                <Phase
+                     type="set dialog"
+                     name="_"
+                     speaker="Policeman002"
+                     group="Policeman002_NF"
+                     pxsl_line="14" />
+                <Phase
+                     type="set dialog"
+                     name="_"
+                     speaker="survivor_act2b_002"
+                     group="Survivor002_NF"
+                     pxsl_line="15" />
+                <Phase
+                     type="set dialog"
+                     name="_"
+                     speaker="michael"
+                     group="Michael_NF"
+                     pxsl_line="16" />
+                <Phase
+                     type="set dialog"
+                     name="_"
+                     speaker="policeman014"
+                     group="Policemanspawner004_NF"
+                     pxsl_line="17" />
+                <Phase
+                     type="set dialog"
+                     name="_"
+                     speaker="survivor_act2b_007"
+                     group="Survivor007_NF"
+                     pxsl_line="18" />
+                <Phase
+                     type="set dialog"
+                     name="_"
+                     speaker="Richman001"
+                     group="Richman_M_A"
+                     pxsl_line="19" />
+                <Phase
+                     type="set dialog"
+                     name="_"
+                     speaker="survivor_act2b_009"
+                     group="Survivor009_NF"
+                     pxsl_line="20" />
+                <Phase
+                     type="set dialog"
+                     name="_"
+                     speaker="Policeman003"
+                     group="Policeman003_Q1_NF"
+                     pxsl_line="21" />
+                <Phase
+                     type="set dialog"
+                     name="_"
+                     speaker="policeman015"
+                     group="policemanspawner005_NF"
+                     pxsl_line="22" />
+                <Phase
+                     type="set dialog"
+                     name="_"
+                     speaker="policeman011"
+                     group="PolicemanSpawner001_NF"
+                     pxsl_line="23" />
+                <Phase
+                     type="set dialog"
+                     name="_"
+                     speaker="Policeman005"
+                     group="Policeman005_Q1_NF"
+                     pxsl_line="24" />
+                <Phase
+                     type="set dialog"
+                     name="_"
+                     speaker="Policeman001"
+                     group="policeman001_NF"
+                     pxsl_line="25" />
+                <Phase
+                     type="set dialog"
+                     name="_"
+                     speaker="Policeman006"
+                     group="policeman006_NF"
+                     pxsl_line="26" />
+                <Phase
+                     type="set dialog"
+                     name="_"
+                     speaker="Josh001"
+                     group="Josh_QF01_NF"
+                     pxsl_line="27" />
+                <Phase
+                     type="set dialog"
+                     name="_"
+                     speaker="policeman013"
+                     group="Policemanspawner003_NF"
+                     pxsl_line="28" />
+                <Phase
+                     type="set dialog"
+                     name="_"
+                     speaker="Ted"
+                     group="one_liner"
+                     pxsl_line="29" />
+                <Phase
+                     type="AND"
+                     name="_"
+                     pxsl_line="30">
+                    <Path
+                         pxsl_line="31">
+                        <Phase
+                             type="go to"
+                             name="_"
+                             distance="1.0"
+                             show_locations="false"
+                             pxsl_line="32">
+                            <Destination
+                                 pxsl_line="32">
+                                <QuestObject
+                                     class="Marker"
+                                     name="MayorOffice"
+                                     pxsl_line="32" />
+                            </Destination>
+                        </Phase>
+                        <Phase
+                             type="set dialog"
+                             name="_"
+                             speaker="Josh001"
+                             pxsl_line="33" />
+                        <Phase
+                             type="set lifeplace"
+                             name="_"
+                             desired_state="off"
+                             pxsl_line="34">
+                            <LifePlace
+                                 pxsl_line="34">
+                                <QuestObject
+                                     class="NPCLifePlace"
+                                     name="MayorLP"
+                                     pxsl_line="34" />
+                            </LifePlace>
+                        </Phase>
+                        <Phase
+                             type="set lifeplace"
+                             name="_"
+                             desired_state="off"
+                             pxsl_line="35">
+                            <LifePlace
+                                 pxsl_line="35">
+                                <QuestObject
+                                     class="NPCLifePlace"
+                                     name="MayorGuardLP"
+                                     pxsl_line="35" />
+                            </LifePlace>
+                        </Phase>
+                    </Path>
+                    <Path
+                         pxsl_line="36">
+                        <Phase
+                             type="talk"
+                             name="_"
+                             speaker="Todd"
+                             group="Todd_Q0_NF"
+                             pxsl_line="37" />
+                        <Phase
+                             type="set dialog"
+                             name="_"
+                             speaker="Policeman008"
+                             group="policeman008_NF_02"
+                             pxsl_line="38" />
+                    </Path>
+                </Phase>
+                <Phase
+                     type="AND"
+                     name="_"
+                     pxsl_line="39">
+                    <Path
+                         pxsl_line="40">
+                        <Phase
+                             type="movie"
+                             name=" CINEMATIC - WHAT WE DO "
+                             movie="Movie_03"
+                             pxsl_line="41">
+                            <DebugPlayerPosition
+                                 pxsl_line="42">
+                                <QuestObject
+                                     class="SpawnPoint"
+                                     name="PositionAfterMovie1"
+                                     pxsl_line="42" />
+                            </DebugPlayerPosition>
+                            <PreMovie
+                                 pxsl_line="43">
+                                <Phase
+                                     type="set state"
+                                     name="_"
+                                     desired_state="on"
+                                     pxsl_line="44">
+                                    <Trigger
+                                         pxsl_line="44">
+                                        <QuestObject
+                                             class="VirtualSwitchDI"
+                                             name="Movie_Lights_Activator"
+                                             pxsl_line="44" />
+                                    </Trigger>
+                                </Phase>
+                            </PreMovie>
+                            <PostMovie
+                                 pxsl_line="45">
+                                <Phase
+                                     type="set state"
+                                     name="_"
+                                     desired_state="off"
+                                     pxsl_line="46">
+                                    <Trigger
+                                         pxsl_line="46">
+                                        <QuestObject
+                                             class="VirtualSwitchDI"
+                                             name="Movie_Lights_Activator"
+                                             pxsl_line="46" />
+                                    </Trigger>
+                                </Phase>
+                                <!-- wylaczamy dialogi one liner -->
+                                <Phase
+                                     type="set dialog"
+                                     name="_"
+                                     speaker="Richman003"
+                                     pxsl_line="48" />
+                                <Phase
+                                     type="set dialog"
+                                     name="_"
+                                     speaker="Policeman001"
+                                     pxsl_line="49" />
+                                <Phase
+                                     type="set dialog"
+                                     name="_"
+                                     speaker="policeman014"
+                                     pxsl_line="50" />
+                                <!-- zmieniam pozycje AI -->
+                                <Phase
+                                     type="set lifeplace"
+                                     name="_"
+                                     desired_state="off"
+                                     pxsl_line="52">
+                                    <LifePlace
+                                         pxsl_line="52">
+                                        <QuestObject
+                                             class="NPCLifePlace"
+                                             name="Richman003_LP"
+                                             pxsl_line="52" />
+                                    </LifePlace>
+                                </Phase>
+                                <Phase
+                                     type="set lifeplace"
+                                     name="_"
+                                     desired_state="off"
+                                     pxsl_line="53">
+                                    <LifePlace
+                                         pxsl_line="53">
+                                        <QuestObject
+                                             class="NPCLifePlace"
+                                             name="Policeman007_LP"
+                                             pxsl_line="53" />
+                                    </LifePlace>
+                                </Phase>
+                                <Phase
+                                     type="move ai"
+                                     name="_"
+                                     teleport="true"
+                                     pxsl_line="54">
+                                    <Destination
+                                         pxsl_line="54">
+                                        <QuestObject
+                                             class="NPCLifePlace"
+                                             name="Richman003_LP"
+                                             pxsl_line="54" />
+                                    </Destination>
+                                    <AI
+                                         pxsl_line="55">
+                                        <QuestObject
+                                             class="HumanAI"
+                                             name="Richman003"
+                                             pxsl_line="55" />
+                                    </AI>
+                                </Phase>
+                                <Phase
+                                     type="move ai"
+                                     name="_"
+                                     teleport="true"
+                                     pxsl_line="56">
+                                    <Destination
+                                         pxsl_line="56">
+                                        <QuestObject
+                                             class="NPCLifePlace"
+                                             name="Policeman007_LP"
+                                             pxsl_line="56" />
+                                    </Destination>
+                                    <AI
+                                         pxsl_line="57">
+                                        <QuestObject
+                                             class="HumanAI"
+                                             name="Policeman007"
+                                             pxsl_line="57" />
+                                    </AI>
+                                </Phase>
+                                <Phase
+                                     type="move ai"
+                                     name="_"
+                                     teleport="true"
+                                     pxsl_line="58">
+                                    <Destination
+                                         pxsl_line="58">
+                                        <QuestObject
+                                             class="NPCLifePlace"
+                                             name="Policeman014_LP"
+                                             pxsl_line="58" />
+                                    </Destination>
+                                    <AI
+                                         pxsl_line="59">
+                                        <QuestObject
+                                             class="HumanAI"
+                                             name="Policeman014"
+                                             pxsl_line="59" />
+                                    </AI>
+                                </Phase>
+                                <Phase
+                                     type="move ai"
+                                     name="_"
+                                     teleport="true"
+                                     pxsl_line="60">
+                                    <Destination
+                                         pxsl_line="60">
+                                        <QuestObject
+                                             class="NPCLifePlace"
+                                             name="JoshLP2"
+                                             pxsl_line="60" />
+                                    </Destination>
+                                    <AI
+                                         pxsl_line="61">
+                                        <QuestObject
+                                             class="HumanAI"
+                                             name="Josh001"
+                                             pxsl_line="61" />
+                                    </AI>
+                                </Phase>
+                                <Phase
+                                     type="set lifeplace"
+                                     name="_"
+                                     desired_state="on"
+                                     pxsl_line="62">
+                                    <LifePlace
+                                         pxsl_line="62">
+                                        <QuestObject
+                                             class="NPCLifePlace"
+                                             name="Richman003_LP"
+                                             pxsl_line="62" />
+                                    </LifePlace>
+                                </Phase>
+                                <Phase
+                                     type="set lifeplace"
+                                     name="_"
+                                     desired_state="on"
+                                     pxsl_line="63">
+                                    <LifePlace
+                                         pxsl_line="63">
+                                        <QuestObject
+                                             class="NPCLifePlace"
+                                             name="Policeman007_LP"
+                                             pxsl_line="63" />
+                                    </LifePlace>
+                                </Phase>
+                                <Phase
+                                     type="set state"
+                                     name="_"
+                                     desired_state="on"
+                                     pxsl_line="64">
+                                    <Trigger
+                                         pxsl_line="64">
+                                        <QuestObject
+                                             class="VirtualSwitchDI"
+                                             name="Chatter_01_Switch"
+                                             pxsl_line="64" />
+                                    </Trigger>
+                                </Phase>
+                            </PostMovie>
+                        </Phase>
+                    </Path>
+                    <!-- path -->
+                        <!-- ,set _ VirtualSwitchDI Josh_LPDisabler -state=off -->
+                        <!-- ,talk   _               Josh001             Josh_QF02_NF            -brief_reward=5000          -brief_difficulty=hard           -->
+                </Phase>
+                <!-- ,checkpoint               AutoSave_CityMovie  Marker                  MayorOffice   -->
+            </Path>
+        </Phase>
+    </Quest>
+    <Quest
+         name="Sewers_EscortJoshToMarket"
+         parent="ACT2B_CityHall"
+         pxsl_line="70">
+        <Phase
+             type="talk"
+             name="_"
+             speaker="Josh001"
+             group="Josh_QF02_NF"
+             brief_reward="5000"
+             brief_difficulty="hard"
+             pxsl_line="71" />
+        <!-- ,checkpoint               AutoSave_CityMovie  Marker                  MayorOffice -->
+        <Phase
+             type="set state"
+             name="_"
+             desired_state="off"
+             pxsl_line="73">
+            <Trigger
+                 pxsl_line="73">
+                <QuestObject
+                     class="VirtualSwitchDI"
+                     name="Chatter_01_Switch"
+                     pxsl_line="73" />
+            </Trigger>
+        </Phase>
+    </Quest>
+    <Quest
+         name="__Sewers_ToMarket_Police"
+         parent="Sewers_EscortJoshToMarket"
+         glued="true"
+         pxsl_line="75">
+        <Phase
+             type="checkpoint"
+             name="AutoSave_CityMovie"
+             pxsl_line="76">
+            <Destination
+                 pxsl_line="76">
+                <QuestObject
+                     class="Marker"
+                     name="MayorOffice"
+                     pxsl_line="76" />
+            </Destination>
+        </Phase>
+        <Phase
+             type="go to"
+             name="_"
+             objective="&amp;Josh_QF01_Objective_C&amp;"
+             distance="2.0"
+             pxsl_line="77">
+            <Destination
+                 pxsl_line="77">
+                <QuestObject
+                     class="HumanAI"
+                     name="policeman013"
+                     pxsl_line="77" />
+            </Destination>
+        </Phase>
+        <Phase
+             type="sibling quests guard"
+             name="_"
+             required_siblings="1"
+             objective="&amp;Josh_QF01_Objective_D&amp;"
+             pxsl_line="78">
+            <!-- WARNING This phase will block the flow until at least given number -->
+            <!-- of this quest's direct siblings are accomplished. -->
+        </Phase>
+        <Phase
+             type="set state"
+             name="_"
+             desired_state="on"
+             pxsl_line="79">
+            <Trigger
+                 pxsl_line="79">
+                <QuestObject
+                     class="VirtualSwitchDI"
+                     name="VS_MarketPortal"
+                     pxsl_line="79" />
+            </Trigger>
+        </Phase>
+    </Quest>
+    <!-- quest Sewers_EscortJoshToMarket                   -parent=ACT2B_CityHall    -->
+        <!-- ,talk _                 policeman013 Policemanspawner003_USE         -brief_reward=1500     -follow=Policemanspawner003_InProgress     -obj=&Josh_QF01_Objective_B&      -brief_difficulty=very_easy   -->
+        <!-- ,checkpoint               AutoSave_CityMovie  SpawnPoint                  HubChapter_7_Spawn -->
+        <!-- ,bring _                Policeman013 -what=Powerup_Alcohol   -obj=&Josh_QF01_Objective& -->
+        <!-- ,talk << End_Of_CityHall_A >>                 policeman013 Policemanspawner003_Accomplished    -auto=true   -exp=1500 -->
+            <!-- ,debugpos SpawnPoint END_OF_CITYHALL -->
+        <!-- ,set    _               VirtualSwitchDI     VS_MarketPortal         -state=on  -->
+</QuestsDefinitions>
+<!-- vim: set et sw=4 ts=4: -->

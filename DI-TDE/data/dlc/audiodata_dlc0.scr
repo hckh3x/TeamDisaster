@@ -1,0 +1,133 @@
+!include("AudioScript.def")
+//!include("AudioProperties.scr")
+
+
+//////////////////////////////////////////////////////////////////
+//////////// DLC RYDER ///////////////////////////////////////////
+//////////////////////////////////////////////////////////////////
+AudioProc("rwhite")
+{
+    UnloadNotUsedBanks()
+
+    SetVariable("reverb_min_distance", "1.0")    // MunDee Estuvo aquí
+    SetVariable("reverb_max_distance", "7.0")    // MunDee Estuvo aquí
+
+    LoadDefaultBanks()
+
+    LoadAudioBanks("Speech_Ai_Chatter")
+    LoadAudioBanks("Common")
+    LoadAudioBanks("Common_stream")
+    LoadAudioBanks("Music")
+    LoadAudioBanks("Menu")
+    LoadAudioBanks("Menu_stream")
+
+}
+
+AudioProc("RWhite_City")
+{
+    UnloadNotUsedBanks()
+
+    LoadDefaultBanks()
+
+    LoadAudioBanks("Speech_Ai_Chatter")
+    LoadAudioBanks("Common")
+    LoadAudioBanks("Common_stream")
+    LoadAudioBanks("Music")
+    LoadAudioBanks("Menu")
+    LoadAudioBanks("Menu_stream")
+
+}
+
+AudioProc("RWhite_Jungle")
+{
+    UnloadNotUsedBanks()
+
+    LoadDefaultBanks()
+
+    LoadAudioBanks("Speech_Ai_Chatter")
+    LoadAudioBanks("Common")
+    LoadAudioBanks("Common_stream")
+    LoadAudioBanks("Music")
+    LoadAudioBanks("Menu")
+    LoadAudioBanks("Menu_stream")
+
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+// PROPERTIES
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+BusProperties(3)
+{
+    ReverbSendLevel(0.8)
+}
+
+BusProperties(4)
+{
+    ReverbSendLevel(0.8)
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+SoundGroup("Ak47_Shoot")
+{
+    Sound("AkOneShotSt_00")
+    Sound("AkOneShotSt_01")
+    Sound("AkOneShotSt_02")
+    Sound("AkOneShotSt_03")
+	
+	GroupProperties()
+    {
+       Volume(0.5)
+    }
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+SoundGroup("DesertEagle_Shoot")
+{
+    Sound("Desert_Eagle_Shot_00")
+    Sound("Desert_Eagle_Shot_01")
+    Sound("Desert_Eagle_Shot_02")
+	
+	GroupProperties()
+    {
+       Volume(0.6)
+    }
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+SoundGroup("New_DLC_Guns_Beretta_and_Shotgun")
+{
+    Sound("beretta_shoot_00")
+    Sound("beretta_shoot_01")
+    Sound("beretta_shoot_02")
+    Sound("Shotgun_SPAS12_st_00")
+    Sound("Shotgun_SPAS12_st_01")
+	Sound("Shotgun_SPAS12_st_02")
+    Sound("Shotgun_SPAS12_st_03")
+	
+	GroupProperties()
+    {
+       Volume(0.5)
+    }
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+SoundGroup("New_DLC_Guns_MINIGUN")
+{
+    Sound("minigun_shot_00")
+    Sound("minigun_shot_01")
+    Sound("minigun_shot_02")
+    Sound("minigun_shot_03")
+	
+	GroupProperties()
+    {
+       Volume(0.5)
+    }
+}
+
+
+

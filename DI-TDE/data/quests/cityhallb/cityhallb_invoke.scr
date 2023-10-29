@@ -1,0 +1,4 @@
+!QuestStage( s, s, s )
+
+QuestStage( "07x07  &ACT2B_BridgeSupplies_BackSewers_Name& (ACT2B_BridgeSupplies_BackSewers/ CityHall_B_Start )", "ACT2B_BridgeSupplies_BackSewers", " CityHall_B_Start " )
+QuestStage( "07x07s &ACT2B_KillMayor_Name& (ACT2B_KillMayor/ Kill Mayor )", "ACT2B_KillMayor", " Kill Mayor " )

@@ -1,0 +1,2 @@
+SeqTrack( "Open", "cash_register_b_anm.anm2", 0, 10, 30, 0, 0.5 )
+SeqTrack( "Close", "cash_register_b_anm.anm2", 10, 0, 30, 0, 0.5 )

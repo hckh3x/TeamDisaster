@@ -1,0 +1,37 @@
+!include("ai_data.def")
+!include("human_timing_events.def")
+!include("human_activities.def")
+!include("human_goals.def")
+
+SnapDist(0.8)    // MunDee Estuvo aquí
+StrongAttractor()
+ReleaseDist(1.2)    // MunDee Estuvo aquí
+SpecAnimsFreq(0.3)
+//InteractOnlyHead()
+Slot("", 1, IDLE_STAND, 1, 0.0,0.0,0.0,0.0, 0.0, 1.0,1.5)    // MunDee Estuvo aquí
+{
+	LockPosition()
+	PlayNPCRole("fighter")
+
+    AiTypeDataSet("human")
+    {	
+        Data("idle:standing:stand::::", -2, "M_NPC_Car_Fight_Off_Idle_01")
+        
+        Data("idle:standing:idle::::", -2, "M_NPC_Car_Fight_Off_Idle_01")
+        
+        Data("idle:standing:special::::", -2, "M_NPC_Car_Fight_Off_Attack_02")
+        Data("idle:standing:special::::", -2, "M_NPC_Car_Fight_Off_Attack_03")
+        Data("idle:standing:special::::", -2, "M_NPC_Car_Fight_Off_Attack_01")
+        
+        
+		Data("turn:standing:::left:45", -2, "M_NPC_Car_Fight_Off_Rot_Left90")
+		Data("turn:standing:::right:45", -2, "M_NPC_Car_Fight_Off_Rot_Right90")
+		Data("turn:standing:::left:90", -2, "M_NPC_Car_Fight_Off_Rot_Left90")
+		Data("turn:standing:::right:90", -2, "M_NPC_Car_Fight_Off_Rot_Right90")
+		Data("turn:standing:::left:180", -2, "M_NPC_Car_Fight_Off_Rot_Left180")
+		Data("turn:standing:::right:180", -2, "M_NPC_Car_Fight_Off_Rot_Left180")
+        
+        
+	}
+}
+

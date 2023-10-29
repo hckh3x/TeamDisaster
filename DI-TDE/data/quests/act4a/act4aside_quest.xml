@@ -1,0 +1,435 @@
+<?xml version="1.0"?>
+<QuestsDefinitions
+     level="ACT4A"
+     pxsl_line="2">
+    <Quest
+         name="__Use_Mine_001"
+         parent="ACT4B_TakeAfterWhite"
+         pxsl_line="3">
+        <Phase
+             type="use"
+             name="_"
+             desired_state="on"
+             show_locations="false"
+             pxsl_line="4">
+            <Trigger
+                 pxsl_line="4">
+                <QuestObject
+                     class="InvisibleSwitchDI"
+                     name="IS_Use_Mine_001"
+                     pxsl_line="4" />
+            </Trigger>
+        </Phase>
+        <Phase
+             type="AND"
+             name="_"
+             pxsl_line="5">
+            <Path
+                 pxsl_line="6">
+                <Phase
+                     type="set state"
+                     name="_"
+                     desired_state="on"
+                     pxsl_line="7">
+                    <Trigger
+                         pxsl_line="7">
+                        <QuestObject
+                             class="VirtualSwitchDI"
+                             name="VS_Use_Mine_001"
+                             pxsl_line="7" />
+                    </Trigger>
+                </Phase>
+                <Phase
+                     type="wait guard"
+                     name="_"
+                     time="5"
+                     pxsl_line="8" />
+                <Phase
+                     type="set state"
+                     name="_"
+                     desired_state="off"
+                     pxsl_line="9">
+                    <Trigger
+                         pxsl_line="9">
+                        <QuestObject
+                             class="VirtualSwitchDI"
+                             name="VS_Use_Mine_001"
+                             pxsl_line="9" />
+                    </Trigger>
+                </Phase>
+            </Path>
+            <Path
+                 pxsl_line="10">
+                <Phase
+                     type="set state"
+                     name="_"
+                     desired_state="on"
+                     pxsl_line="11">
+                    <Trigger
+                         pxsl_line="11">
+                        <QuestObject
+                             class="BombSwitchDI"
+                             name="BS_Use_Mine_001"
+                             pxsl_line="11" />
+                    </Trigger>
+                </Phase>
+            </Path>
+        </Phase>
+        <Phase
+             type="appear"
+             name="_"
+             mode="hide"
+             pxsl_line="12">
+            <Object
+                 pxsl_line="12">
+                <QuestObject
+                     class="ModelObject"
+                     name="Use_Mine_Objecte_001_A"
+                     pxsl_line="12" />
+            </Object>
+        </Phase>
+        <Phase
+             type="appear"
+             name="_"
+             mode="hide"
+             pxsl_line="13">
+            <Object
+                 pxsl_line="13">
+                <QuestObject
+                     class="ModelObject"
+                     name="Use_Mine_Objecte_001_B"
+                     pxsl_line="13" />
+            </Object>
+        </Phase>
+        <Phase
+             type="set state"
+             name="_"
+             desired_state="on"
+             pxsl_line="14">
+            <Trigger
+                 pxsl_line="14">
+                <QuestObject
+                     class="VirtualSwitchDI"
+                     name="VS_Use_Mine_001_B"
+                     pxsl_line="14" />
+            </Trigger>
+        </Phase>
+        <Phase
+             type="wait guard"
+             name="_"
+             time="10"
+             pxsl_line="15" />
+        <Phase
+             type="set state"
+             name="_"
+             desired_state="off"
+             pxsl_line="16">
+            <Trigger
+                 pxsl_line="16">
+                <QuestObject
+                     class="VirtualSwitchDI"
+                     name="VS_Use_Mine_001_B"
+                     pxsl_line="16" />
+            </Trigger>
+        </Phase>
+        <Phase
+             type="checkpoint"
+             name="BossFightSave"
+             pxsl_line="17">
+            <Destination
+                 pxsl_line="17">
+                <QuestObject
+                     class="SpawnPoint"
+                     name="act4a_prisonroof"
+                     pxsl_line="17" />
+            </Destination>
+        </Phase>
+    </Quest>
+    <Quest
+         name="__Use_Mine_002"
+         parent="ACT4B_TakeAfterWhite"
+         pxsl_line="19">
+        <Phase
+             type="use"
+             name="_"
+             desired_state="on"
+             show_locations="false"
+             pxsl_line="20">
+            <Trigger
+                 pxsl_line="20">
+                <QuestObject
+                     class="InvisibleSwitchDI"
+                     name="IS_Use_Mine_002"
+                     pxsl_line="20" />
+            </Trigger>
+        </Phase>
+        <Phase
+             type="AND"
+             name="_"
+             pxsl_line="21">
+            <Path
+                 pxsl_line="22">
+                <Phase
+                     type="set state"
+                     name="_"
+                     desired_state="on"
+                     pxsl_line="23">
+                    <Trigger
+                         pxsl_line="23">
+                        <QuestObject
+                             class="VirtualSwitchDI"
+                             name="VS_Use_Mine_002"
+                             pxsl_line="23" />
+                    </Trigger>
+                </Phase>
+                <Phase
+                     type="wait guard"
+                     name="_"
+                     time="5"
+                     pxsl_line="24" />
+                <Phase
+                     type="set state"
+                     name="_"
+                     desired_state="off"
+                     pxsl_line="25">
+                    <Trigger
+                         pxsl_line="25">
+                        <QuestObject
+                             class="VirtualSwitchDI"
+                             name="VS_Use_Mine_002"
+                             pxsl_line="25" />
+                    </Trigger>
+                </Phase>
+            </Path>
+            <Path
+                 pxsl_line="26">
+                <Phase
+                     type="set state"
+                     name="_"
+                     desired_state="on"
+                     pxsl_line="27">
+                    <Trigger
+                         pxsl_line="27">
+                        <QuestObject
+                             class="BombSwitchDI"
+                             name="BS_Use_Mine_002"
+                             pxsl_line="27" />
+                    </Trigger>
+                </Phase>
+            </Path>
+        </Phase>
+        <Phase
+             type="appear"
+             name="_"
+             mode="hide"
+             pxsl_line="28">
+            <Object
+                 pxsl_line="28">
+                <QuestObject
+                     class="ModelObject"
+                     name="Use_Mine_Objecte_002_A"
+                     pxsl_line="28" />
+            </Object>
+        </Phase>
+        <Phase
+             type="appear"
+             name="_"
+             mode="hide"
+             pxsl_line="29">
+            <Object
+                 pxsl_line="29">
+                <QuestObject
+                     class="ModelObject"
+                     name="Use_Mine_Objecte_002_B"
+                     pxsl_line="29" />
+            </Object>
+        </Phase>
+        <Phase
+             type="set state"
+             name="_"
+             desired_state="on"
+             pxsl_line="30">
+            <Trigger
+                 pxsl_line="30">
+                <QuestObject
+                     class="VirtualSwitchDI"
+                     name="VS_Use_Mine_002_B"
+                     pxsl_line="30" />
+            </Trigger>
+        </Phase>
+        <Phase
+             type="wait guard"
+             name="_"
+             time="10"
+             pxsl_line="31" />
+        <Phase
+             type="set state"
+             name="_"
+             desired_state="off"
+             pxsl_line="32">
+            <Trigger
+                 pxsl_line="32">
+                <QuestObject
+                     class="VirtualSwitchDI"
+                     name="VS_Use_Mine_002_B"
+                     pxsl_line="32" />
+            </Trigger>
+        </Phase>
+        <Phase
+             type="checkpoint"
+             name="BossFightSave"
+             pxsl_line="33">
+            <Destination
+                 pxsl_line="33">
+                <QuestObject
+                     class="SpawnPoint"
+                     name="act4a_prisonroof"
+                     pxsl_line="33" />
+            </Destination>
+        </Phase>
+    </Quest>
+    <Quest
+         name="__Use_Mine_003"
+         parent="ACT4B_TakeAfterWhite"
+         pxsl_line="35">
+        <Phase
+             type="use"
+             name="_"
+             desired_state="on"
+             show_locations="false"
+             pxsl_line="36">
+            <Trigger
+                 pxsl_line="36">
+                <QuestObject
+                     class="InvisibleSwitchDI"
+                     name="IS_Use_Mine_003"
+                     pxsl_line="36" />
+            </Trigger>
+        </Phase>
+        <Phase
+             type="AND"
+             name="_"
+             pxsl_line="37">
+            <Path
+                 pxsl_line="38">
+                <Phase
+                     type="set state"
+                     name="_"
+                     desired_state="on"
+                     pxsl_line="39">
+                    <Trigger
+                         pxsl_line="39">
+                        <QuestObject
+                             class="VirtualSwitchDI"
+                             name="VS_Use_Mine_003"
+                             pxsl_line="39" />
+                    </Trigger>
+                </Phase>
+                <Phase
+                     type="wait guard"
+                     name="_"
+                     time="5"
+                     pxsl_line="40" />
+                <Phase
+                     type="set state"
+                     name="_"
+                     desired_state="off"
+                     pxsl_line="41">
+                    <Trigger
+                         pxsl_line="41">
+                        <QuestObject
+                             class="VirtualSwitchDI"
+                             name="VS_Use_Mine_003"
+                             pxsl_line="41" />
+                    </Trigger>
+                </Phase>
+            </Path>
+            <Path
+                 pxsl_line="42">
+                <Phase
+                     type="set state"
+                     name="_"
+                     desired_state="on"
+                     pxsl_line="43">
+                    <Trigger
+                         pxsl_line="43">
+                        <QuestObject
+                             class="BombSwitchDI"
+                             name="BS_Use_Mine_003"
+                             pxsl_line="43" />
+                    </Trigger>
+                </Phase>
+            </Path>
+        </Phase>
+        <Phase
+             type="appear"
+             name="_"
+             mode="hide"
+             pxsl_line="44">
+            <Object
+                 pxsl_line="44">
+                <QuestObject
+                     class="ModelObject"
+                     name="Use_Mine_Objecte_003_A"
+                     pxsl_line="44" />
+            </Object>
+        </Phase>
+        <Phase
+             type="appear"
+             name="_"
+             mode="hide"
+             pxsl_line="45">
+            <Object
+                 pxsl_line="45">
+                <QuestObject
+                     class="ModelObject"
+                     name="Use_Mine_Objecte_003_B"
+                     pxsl_line="45" />
+            </Object>
+        </Phase>
+        <Phase
+             type="set state"
+             name="_"
+             desired_state="on"
+             pxsl_line="46">
+            <Trigger
+                 pxsl_line="46">
+                <QuestObject
+                     class="VirtualSwitchDI"
+                     name="VS_Use_Mine_003_B"
+                     pxsl_line="46" />
+            </Trigger>
+        </Phase>
+        <Phase
+             type="wait guard"
+             name="_"
+             time="10"
+             pxsl_line="47" />
+        <Phase
+             type="set state"
+             name="_"
+             desired_state="off"
+             pxsl_line="48">
+            <Trigger
+                 pxsl_line="48">
+                <QuestObject
+                     class="VirtualSwitchDI"
+                     name="VS_Use_Mine_003_B"
+                     pxsl_line="48" />
+            </Trigger>
+        </Phase>
+        <Phase
+             type="checkpoint"
+             name="BossFightSave"
+             pxsl_line="49">
+            <Destination
+                 pxsl_line="49">
+                <QuestObject
+                     class="SpawnPoint"
+                     name="act4a_prisonroof"
+                     pxsl_line="49" />
+            </Destination>
+        </Phase>
+    </Quest>
+</QuestsDefinitions>
+<!--  vim: set et sw=2 ts=2:  -->

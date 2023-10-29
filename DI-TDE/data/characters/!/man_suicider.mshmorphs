@@ -1,0 +1,15 @@
+export int SKIN = 1;
+export int MORPH = 1;
+export int HIDE = 1;
+
+sub morphs()
+{
+  version(2);
+  // node(name, lod_index, is_skinning, is_hiding, is_morphing, morph_offset_vertices);
+  node("suicider", 0, SKIN, HIDE, 0, 0);
+  node("suicider", 1, SKIN, HIDE, 0, 0);
+  node("suicider", 2, SKIN, HIDE, 0, 0);
+  node("suicider_damaged", 0, SKIN, 0, 0, 0);
+  node("suicider_damaged", 1, SKIN, 0, 0, 0);
+  total(0);
+}

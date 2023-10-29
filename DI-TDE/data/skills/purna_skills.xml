@@ -1,0 +1,217 @@
+<character_req value="purna_levels.xml">
+    <postfix id="Purna">
+        <skill id="KickFuryPoints" cat="Tree1" max_level="3" tier="1" desc_params="+15%;+30%;+45%">
+            <tier_req tier="0" cat="Tree1" value="1"/>
+            <effect id="FuryPointsAfterKickKillMul" change="0.15"/>
+        </skill>
+        <skill id="Volatile" cat="Tree1" max_level="3" tier="3" desc_params="-10%;-20%;-35%">
+            <tier_req tier="2" cat="Tree1" value="1"/>
+            <effect id="FuryPointsNeededToActivate" change="-0.1"/>
+        </skill>
+        <skill id="TeamSpirit1" cat="Tree1" max_level="1" tier="0">
+            <effect id="FuryUsage" change="0.17"/>
+            <effect id="FuryLevel" change="1"/>
+            <effect id="TeamDamageMod" change="0.10"/>
+            <effect id="TeamSpiritDistance" change="1200"/>
+            <effect id="TeamCriticalProbalityMod" change="0.1"/>
+            <effect id="TeamStaminaUsageReduce" change="-0.15"/>
+            <effect id="TeamHealthRegainFactor" change="0.25"/>
+            <effect id="TeamStaminaRegainFactor" change="0.25"/>
+            <effect id="FuryRange" change="15"/>    <!-- Modificado -->
+        </skill>
+        <skill id="TSDmgIncrased" cat="Tree1" max_level="3" tier="1" desc_params="+5%;+10%;+15%">
+            <tier_req tier="0" cat="Tree1" value="1"/>
+            <dyn_req req="fury"/>
+            <effect id="TeamDamageMod" change="0.05"/>
+        </skill>
+        <skill id="TeamSpirit2" cat="Tree1" max_level="1" tier="2">
+            <tier_req tier="1" cat="Tree1" value="3"/>
+            <effect id="FuryUsage" change="0"/>
+            <effect id="FuryLevel" change="1"/>
+            <effect id="TeamFurryPointsBoost" change="0.10"/>
+            <effect id="TeamDamageMod" change="0.10"/>
+            <effect id="TeamCriticalProbalityMod" change="0.1"/>
+            <effect id="TeamStaminaUsageReduce" change="-0.15"/>
+            <effect id="TeamHealthRegainFactor" change="0.25"/>
+            <effect id="TeamStaminaRegainFactor" change="0.25"/>
+            <effect id="FuryRange" change="5"/>    <!-- Modificado -->
+        </skill>
+        <skill id="ChanceToFireUpEnemy" cat="Tree1" max_level="3" tier="3" desc_params="5%;10%;15%">
+            <tier_req tier="2" cat="Tree1" value="1"/>
+            <dyn_req req="fury"/>
+            <effect id="BulletFiresUpEnemyChance" change="0.05"/>
+        </skill>
+        <skill id="TeamSpirit3" cat="Tree1" max_level="1" tier="4">
+            <tier_req tier="3" cat="Tree1" value="3"/>
+            <effect id="FuryUsage" change="0"/>
+            <effect id="FuryLevel" change="1"/>
+            <effect id="TeamFurryPointsBoost" change="0.10"/>
+            <effect id="TeamDamageMod" change="0.10"/>
+            <effect id="TeamCriticalProbalityMod" change="0.1"/>
+            <effect id="TeamStaminaUsageReduce" change="-0.15"/>
+            <effect id="TeamHealthRegainFactor" change="0.5"/>
+            <effect id="TeamStaminaRegainFactor" change="0.5"/>
+            <effect id="FuryRange" change="5"/>    <!-- Modificado -->
+        </skill>
+        <skill id="CraftedWeaponKillFuryPoints" cat="Tree1" max_level="3" tier="1" desc_params="+10%;+20%;+30%">
+            <tier_req tier="0" cat="Tree1" value="1"/>
+            <effect id="FuryPointsAfterCraftKillFactor" change="0.1"/>
+        </skill>
+        <skill id="GLShootKillFuryPts" cat="Tree1" max_level="3" tier="3" desc_params="+10%;+20%;+30%">
+            <tier_req tier="2" cat="Tree1" value="1"/>
+            <effect id="FuryPointsAfterShotKillMul" change="0.1"/>
+        </skill>
+        <skill id="KillGivesStamina" cat="Tree2" max_level="3" tier="1" desc_params="+10%;+20%;+30%">
+            <tier_req tier="0" cat="Tree2" value="1"/>
+            <effect id="AfterKillStaminaRegainFactor" change="1"/>
+        </skill>
+        <skill id="Feminist" cat="Tree2" max_level="3" tier="2" desc_params="+5%;+10%;+15%">
+            <tier_req tier="1" cat="Tree2" value="3"/>
+            <effect id="MaleDamageMul" change="0.05"/>
+        </skill>
+        <skill id="ElemetalDuration" cat="Tree2" max_level="3" tier="4" desc_params="+20%;+40%;+60%">
+            <tier_req tier="3" cat="Tree2" value="1"/>
+            <effect id="FireDamagePeriodMul" change="0.2"/>
+            <effect id="BleedingDamagePeriodMul" change="0.2"/>
+            <effect id="ElectricDamagePeriodMul" change="0.2"/>
+            <effect id="PoisonDamagePeriodMul" change="0.2"/>
+        </skill>
+        <skill id="CraftedWeaponDamage" cat="Tree2" max_level="3" tier="5" desc_params="+10%;+20%;+30%">
+            <tier_req tier="4" cat="Tree2" value="3"/>
+            <effect id="CraftedWpnDamageMul" change="0.1"/>
+        </skill>
+        <skill id="SharpApprentice" cat="Tree2" max_level="1" tier="0">
+            <effect id="SharpWeaponsSkill" change="1"/>
+            <effect id="CutDamageMul" change="0.05"/>
+            <effect id="MeeleCutStaminaUsageMul" change="-0.1"/>
+            <effect id="CutCriticalChance" change="0.01"/>
+        </skill>
+        <skill id="GLMeleeDmg" cat="Tree2" max_level="3" tier="1" desc_params="+5%;+10%;+15%">
+            <tier_req tier="0" cat="Tree2" value="1"/>
+            <effect id="MeeleDamageMul" change="0.05"/>
+        </skill>
+        <skill id="MeleeDurability" cat="Tree2" max_level="3" tier="2" desc_params="+10%;+20%;+30%">
+            <tier_req tier="1" cat="Tree2" value="3"/>
+            <effect id="MeleeWpnDurabilityMulReduce" change="-0.1"/>
+        </skill>
+        <skill id="FirearmsApprentice" cat="Tree2" max_level="1" tier="3">
+            <tier_req tier="2" cat="Tree2" value="3"/>
+            <effect id="FireWeaponsSkill" change="1"/>
+            <effect id="BulletReloadSpeed" change="-0.1"/>
+            <effect id="FirearmsMoveAccuracyReduce" change="-0.1"/>
+            <effect id="BulletCriticalChance" change="0.02"/>
+            <effect id="BulletAccuracyFactor" change="0.1"/>
+            <effect id="BulletRecoilFactor" change="0.05"/>
+            <effect id="GunslingerLevel" change="1"/>
+            <effect id="StomperSkillLevel" change="1"/>
+        </skill>
+        <skill id="ComboCriticalProb" cat="Tree2" max_level="3" tier="4" desc_params="+8%;+16%;+24%">
+            <tier_req tier="3" cat="Tree2" value="1"/>
+            <effect id="ComboCriticalProbBonus" change="0.08"/>
+        </skill>
+        <skill id="GLFirearmsReloadTime" cat="Tree2" max_level="3" tier="5" desc_params="-15%;-30%;-45%">
+            <tier_req tier="4" cat="Tree2" value="3"/>
+            <effect id="FirearmsPistolReloadTimeMul" change="-0.15"/>
+            <effect id="FirearmsRevolverReloadTimeMul" change="-0.15"/>
+            <effect id="FirearmsRifleReloadTimeMul" change="-0.15"/>
+            <effect id="FirearmsShotgunReloadTimeMul" change="-0.15"/>
+        </skill>
+        <skill id="FirearmsMaster" cat="Tree2" max_level="1" tier="6">
+            <tier_req tier="5" cat="Tree2" value="3"/>
+            <effect id="FireWeaponsSkill" change="1"/>
+            <effect id="BulletReloadSpeed" change="-0.05"/>
+            <effect id="FirearmsMoveAccuracyReduce" change="-0.1"/>
+            <effect id="BulletCriticalChance" change="0.03"/>
+            <effect id="BulletAccuracyFactor" change="0.05"/>
+            <effect id="BulletRecoilFactor" change="0.05"/>
+            <effect id="GunslingerLevel" change="1"/>
+            <effect id="StomperSkillLevel" change="1"/>
+        </skill>
+        <skill id="FightingWithGroupLessStamina" cat="Tree2" max_level="3" tier="1" desc_params="-10%;-20%;-30%">
+            <tier_req tier="0" cat="Tree2" value="1"/>
+            <effect id="StaminaDecMul" change="-0.10"/>
+        </skill>
+        <skill id="KickKillGivesStamina" cat="Tree2" max_level="3" tier="2" desc_params="+10%;+20%;+30%">
+            <tier_req tier="1" cat="Tree2" value="3"/>
+            <effect id="AfterKickKillStaminaRegainFactor" change="1"/>
+        </skill>
+        <skill id="GLFirearmsCritical" cat="Tree2" max_level="3" tier="4" desc_params="+1%;+2%;+3%">
+            <tier_req tier="3" cat="Tree2" value="1"/>
+            <effect id="FirearmsPistolCritChanceMul" change="0.01"/>
+            <effect id="FirearmsRevolverCritChanceMul" change="0.01"/>
+            <effect id="FirearmsRifleCritChanceMul" change="0.01"/>
+            <effect id="FirearmsShotgunCritChanceMul" change="0.01"/>
+        </skill>
+        <skill id="GLBulletPenetrations" cat="Tree2" max_level="3" tier="5" desc_params="17%;34%;51%">
+            <tier_req tier="4" cat="Tree2" value="3"/>
+            <effect id="BulletPenetrationChance" change="0.17"/>
+        </skill>
+        <skill id="CheeperReapair" cat="Tree3" max_level="3" tier="1" desc_params="-15%;-30%;-45%">
+            <tier_req tier="0" cat="Tree3" value="1"/>
+            <effect id="WeaponRepairPriceFactor" change="-0.15"/>
+        </skill>
+        <skill id="TeammateKillExpBigger" cat="Tree3" max_level="3" tier="2" desc_params="+60%;+120%;+180%">
+            <tier_req tier="1" cat="Tree3" value="3"/>
+            <effect id="AssistExperiensceMul" change="0.6"/>
+            <effect id="NearByExperiensceMul" change="0.6"/>
+        </skill>
+        <skill id="MoreCraftedAmmo" cat="Tree3" max_level="3" tier="4" desc_params="+25%;+50%;+75%">
+            <tier_req tier="3" cat="Tree3" value="1"/>
+            <effect id="MoreAmmoFromCrafting" change="0.25"/>
+        </skill>
+        <skill id="InstatnRevive" cat="Tree3" max_level="3" tier="5" desc_params="20%;40%;60%">
+            <tier_req tier="4" cat="Tree3" value="3"/>
+            <effect id="ReviveProb" change="0.2"/>
+        </skill>
+        <skill id="BoostAura1" cat="Tree3" max_level="1" tier="0">
+            <effect id="BoostAuraRange" change="5"/>    <!-- Modificado -->
+            <effect id="BoostAuraTeamFactor" change="0.15"/>
+        </skill>
+        <skill id="DeeperPockets" cat="Tree3" max_level="3" tier="1" desc_params="4;8;12">
+            <tier_req tier="0" cat="Tree3" value="1"/>
+            <effect id="InventorySize" change="4"/>
+        </skill>
+        <skill id="RVExtraStamina" cat="Tree3" max_level="3" tier="2" desc_params="+5%;+10%;+15%">
+            <tier_req tier="1" cat="Tree3" value="3"/>
+            <effect id="MaxStamina" change="0.05"/>
+        </skill>
+        <skill id="BoostAura2" cat="Tree3" max_level="1" tier="3">
+            <tier_req tier="2" cat="Tree3" value="3"/>
+            <effect id="BoostAuraRange" change="5"/>    <!-- Modificado -->
+            <effect id="BoostAuraTeamFactor" change="0.1"/>
+        </skill>
+        <skill id="ShorterConfusionTime" cat="Tree3" max_level="3" tier="4" desc_params="20%;40%;60%">
+            <tier_req tier="3" cat="Tree3" value="1"/>
+            <effect id="ConfusionProbNulify" change="0.2"/>
+        </skill>
+        <skill id="RVLoot" cat="Tree3" max_level="3" tier="5" desc_params="+5%;+10%;+15%">
+            <tier_req tier="4" cat="Tree3" value="3"/>
+            <effect id="TeamLootDropChance" change="0.05"/>
+            <effect id="LootItemWeightMod" change="0.05"/>
+        </skill>
+        <skill id="BoostAura3" cat="Tree3" max_level="1" tier="6">
+            <tier_req tier="5" cat="Tree3" value="3"/>
+            <effect id="BoostAuraRange" change="5"/>    <!-- Modificado -->
+            <effect id="BoostAuraTeamFactor" change="0.1"/>
+        </skill>
+        <skill id="RVTief" cat="Tree3" max_level="3" tier="1" desc_params="1;2;3">
+            <tier_req tier="0" cat="Tree3" value="1"/>
+            <effect id="LockpickLev" change="1"/>
+        </skill>
+        <skill id="CraftedWeaponsDurab" cat="Tree3" max_level="3" tier="2" desc_params="+10%;+20%;+30%">
+            <tier_req tier="1" cat="Tree3" value="3"/>
+            <effect id="CraftedWpnDurReduceMul" change="-0.1"/>
+        </skill>
+        <skill id="AmmoDrop" cat="Tree3" max_level="3" tier="4" desc_params="+25%;+50%;+75%">
+            <tier_req tier="3" cat="Tree3" value="1"/>
+            <effect id="LootAmmoWeightMod" change="0.25"/>
+        </skill>
+        <skill id="RVAmmoManiac" cat="Tree3" max_level="3" tier="5">
+            <tier_req tier="4" cat="Tree3" value="3"/>
+            <effect id="MaxAmmoPistol" change="10"/>
+            <effect id="MaxAmmoRifle" change="10"/>
+            <effect id="MaxAmmoShotgun" change="5"/>
+            <effect id="MaxAmmoSniper" change="5"/>
+        </skill>
+    </postfix>
+</character_req>

@@ -1,0 +1,63 @@
+//----- animacje z Shotgun SPAS12
+!include("human_timing_events.def")
+
+SeqTrackAlias( "FPP_Spas_StandNoise",           "FPP_ak47_StandNoise")
+SeqTrackAlias( "FPP_Spas_MoveForwardNoise",     "FPP_ak47_MoveForwardNoise")
+SeqTrackAlias( "FPP_Spas_MoveRightNoise",		"FPP_ak47_MoveForwardNoise")
+SeqTrackAlias( "FPP_Spas_MoveLeftNoise",		"FPP_ak47_MoveForwardNoise")
+SeqTrackAlias( "FPP_Spas_MoveBackwardNoise",	"FPP_ak47_MoveForwardNoise")
+
+
+// SPAS12 - podstawowe
+SeqTrack("FPP_SPAS_Pre_Reload", 				"M_FPP_Shotgun_Reload.anm2"			, 0, 32, 60, 1, 0.3)
+{
+	Event(2, EVENT_SHOTGUN_RELOAD_01)
+}
+SeqTrack("FPP_SPAS_Reload", 				"M_FPP_Shotgun_Reload.anm2"			, 32, 70, 60, 1, 0.3)
+{
+	Event(1, EVENT_SHOTGUN_RELOAD_02)
+}
+SeqTrack("FPP_SPAS_Post_Reload", 			"M_FPP_Shotgun_Reload.anm2"			, 70, 150, 60, 1, 0.3)
+{
+	Event(2, EVENT_SHOTGUN_RELOAD_04)
+	Event(22, EVENT_SHOTGUN_RELOAD_05)
+}
+
+SeqTrack("FPP_SPAS_Shot", 					"M_FPP_Shotgun.anm2"			, 14, 97, 60, 1, 0.3)
+{
+    Event(1, EVENT_APPLY_RANGED_DAMAGE)
+	Event(25, EVENT_SHOTGUN_RELOAD_03)
+}
+SeqTrackAlias("FPP_SPAS_ShotLast", "FPP_SPAS_Shot")
+
+
+SeqTrack("FPP_SPAS_Stand", 					"M_FPP_Shotgun.anm2"			, 0, 10, 60, 1, 0.3)
+SeqTrackAlias("FPP_SPAS_StandEmpty", "FPP_SPAS_Stand")
+				
+SeqTrack("FPP_SPAS_Aim_Stand", 					"M_FPP_Shotgun.anm2"			, 310, 320, 60, 1, 0.3)
+SeqTrackAlias("FPP_SPAS_Aim_StandEmpty","FPP_SPAS_Aim_Stand")
+
+SeqTrack("FPP_SPAS_Aim_Shot", 					"M_FPP_Shotgun.anm2"			, 324, 407, 60, 1, 0.3)
+{
+	Event(25, EVENT_SHOTGUN_RELOAD_03)
+}
+SeqTrackAlias("FPP_SPAS_Aim_ShotLast","FPP_SPAS_Aim_Shot")
+
+SeqTrack("FPP_SPAS_ShotEmpty", 				"M_FPP_Shotgun.anm2",              101, 151, 60, 1, 0.3)
+{
+	Event(22, EVENT_SHOTGUN_RELOAD_03)
+}
+SeqTrack("FPP_SPAS_Aim_ShotEmpty", 			"M_FPP_Shotgun.anm2",          411, 494, 60, 1, 0.3)
+{
+	Event(25, EVENT_SHOTGUN_RELOAD_03)
+}
+
+SeqTrack( "FPP_SPAS_Wall",             "M_FPP_Shotgun.anm2",          506, 516, 60, 1, 0.5) //pozycja
+
+//===================================== Jumping ============================================
+
+//SeqTrackAlias("FPP_SPAS_Jump_Pose", "FPP_AK47_Jump_Pose")
+
+
+
+

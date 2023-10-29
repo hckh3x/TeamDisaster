@@ -1,0 +1,850 @@
+//----- animacje Stick - Bron Jednoreczna
+
+SeqTrack("M_TPP_Stick_Walk_v01", 				"M_TPP_Stick_Walk_v01.anm2"			, 0, 60, 30, 1, 0.3)
+{
+	Event(11, VIS_EVENT_STEP_RIGHT)
+	Event(25, VIS_EVENT_STEP_LEFT)
+	Event(40, VIS_EVENT_STEP_RIGHT)
+	Event(56, VIS_EVENT_STEP_LEFT)
+}
+
+SeqTrack("M_TPP_Stick_Walk_v02", 				"M_TPP_Stick_Walk_v02.anm2"			, 0, 62, 30, 1, 0.3)
+{
+	Event(11, VIS_EVENT_STEP_LEFT)
+	Event(26, VIS_EVENT_STEP_RIGHT)
+	Event(42, VIS_EVENT_STEP_LEFT)
+	Event(57, VIS_EVENT_STEP_RIGHT)
+}
+
+
+SeqTrack("M_TPP_Stick_Walk_Backward_v01", 				"M_TPP_Stick_Walk_Backward_v01.anm2"			, 0, 163, 30, 1, 0.3)
+{
+	Event(12, VIS_EVENT_STEP_RIGHT)
+	Event(35, VIS_EVENT_STEP_LEFT)
+	Event(53, VIS_EVENT_STEP_RIGHT)
+	Event(75, VIS_EVENT_STEP_LEFT)
+	Event(94, VIS_EVENT_STEP_RIGHT)
+	Event(114, VIS_EVENT_STEP_LEFT)
+	Event(132, VIS_EVENT_STEP_RIGHT)
+	Event(155, VIS_EVENT_STEP_LEFT)
+}
+
+SeqTrack("M_TPP_Stick_Walk_Backward_v02", 				"M_TPP_Stick_Walk_Backward_v02.anm2"			, 0, 161, 30, 1, 0.3)
+{
+	Event(10, VIS_EVENT_STEP_RIGHT)
+	Event(36, VIS_EVENT_STEP_LEFT)
+	Event(55, VIS_EVENT_STEP_RIGHT)
+	Event(76, VIS_EVENT_STEP_LEFT)
+	Event(94, VIS_EVENT_STEP_RIGHT)
+	Event(114, VIS_EVENT_STEP_LEFT)
+	Event(132, VIS_EVENT_STEP_RIGHT)
+	Event(152, VIS_EVENT_STEP_LEFT)
+}
+
+SeqTrack("M_TPP_Stick_FastWalk_v01", 				"M_TPP_Stick_FastWalk_v01.anm2"			, 0, 57, 30, 1, 0.3)
+{
+	Event(12, VIS_EVENT_STEP_RIGHT)
+	Event(25, VIS_EVENT_STEP_LEFT)
+	Event(39, VIS_EVENT_STEP_RIGHT)
+	Event(54, VIS_EVENT_STEP_LEFT)
+}
+
+SeqTrack("M_TPP_Stick_Run_v01", 				"M_TPP_Stick_Run_v01.anm2"			, 0, 20, 30, 1, 0.3)
+{
+	Event(8, VIS_EVENT_STEP_RIGHT)
+	Event(18, VIS_EVENT_STEP_LEFT)
+}
+
+SeqTrack("M_TPP_Stick_Sprint_v01", 				"M_TPP_Stick_Sprint_v02.anm2"			, 0, 32, 30, 1, 0.3)
+{
+	Event(7, VIS_EVENT_STEP_LEFT)
+	Event(15, VIS_EVENT_STEP_RIGHT)
+	Event(24, VIS_EVENT_STEP_LEFT)
+	Event(31, VIS_EVENT_STEP_RIGHT)
+}
+
+
+SeqTrack("M_TPP_Stick_Walk_Left_v01", 				"M_TPP_Stick_Walk_Left_v01.anm2"			, 0, 176, 30, 1, 0.3)
+{
+	Event(10, VIS_EVENT_STEP_RIGHT)
+	Event(26, VIS_EVENT_STEP_LEFT)
+	Event(38, VIS_EVENT_STEP_RIGHT)
+	Event(54, VIS_EVENT_STEP_LEFT)
+	Event(68, VIS_EVENT_STEP_RIGHT)
+	Event(88, VIS_EVENT_STEP_LEFT)
+	Event(100, VIS_EVENT_STEP_RIGHT)
+	Event(116, VIS_EVENT_STEP_LEFT)
+	Event(129, VIS_EVENT_STEP_RIGHT)
+	Event(146, VIS_EVENT_STEP_LEFT)
+	Event(159, VIS_EVENT_STEP_RIGHT)
+	Event(175, VIS_EVENT_STEP_LEFT)
+}
+
+SeqTrack("M_TPP_Stick_Walk_Left_v02", 				"M_TPP_Stick_Walk_Left_v02.anm2"			, 0, 121, 30, 1, 0.3)
+{
+	Event(11, VIS_EVENT_STEP_LEFT)
+	Event(28, VIS_EVENT_STEP_RIGHT)
+	Event(41, VIS_EVENT_STEP_LEFT)
+	Event(57, VIS_EVENT_STEP_RIGHT)
+	Event(71, VIS_EVENT_STEP_LEFT)
+	Event(86, VIS_EVENT_STEP_RIGHT)
+	Event(100, VIS_EVENT_STEP_LEFT)
+	Event(116, VIS_EVENT_STEP_RIGHT)
+}
+
+
+SeqTrack("M_TPP_Stick_Walk_Right_v01", 				"M_TPP_Stick_Walk_Right_v01.anm2"			, 0, 162, 30, 1, 0.3)
+{
+	Event(11, VIS_EVENT_STEP_RIGHT)
+	Event(26, VIS_EVENT_STEP_LEFT)
+	Event(44, VIS_EVENT_STEP_RIGHT)
+	Event(60, VIS_EVENT_STEP_LEFT)
+	Event(77, VIS_EVENT_STEP_RIGHT)
+	Event(93, VIS_EVENT_STEP_LEFT)
+	Event(107, VIS_EVENT_STEP_RIGHT)
+	Event(126, VIS_EVENT_STEP_LEFT)
+	Event(142, VIS_EVENT_STEP_RIGHT)
+	Event(159, VIS_EVENT_STEP_LEFT)
+}
+
+SeqTrack("M_TPP_Stick_Walk_Right_v02", 				"M_TPP_Stick_Walk_Right_v02.anm2"			, 0, 98, 30, 1, 0.3)
+{
+	Event(13, VIS_EVENT_STEP_LEFT)
+	Event(28, VIS_EVENT_STEP_RIGHT)
+	Event(46, VIS_EVENT_STEP_LEFT)
+	Event(60, VIS_EVENT_STEP_RIGHT)
+	Event(78, VIS_EVENT_STEP_LEFT)
+	Event(92, VIS_EVENT_STEP_RIGHT)
+}
+
+
+SeqTrack("M_TPP_Stick_Walk_Right_v03", 				"M_TPP_Stick_Walk_Right_v03.anm2"			, 0, 121, 30, 1, 0.3)
+{
+	Event(13, VIS_EVENT_STEP_LEFT)
+	Event(30, VIS_EVENT_STEP_RIGHT)
+	Event(53, VIS_EVENT_STEP_LEFT)
+	Event(73, VIS_EVENT_STEP_RIGHT)
+	Event(93, VIS_EVENT_STEP_LEFT)
+	Event(111, VIS_EVENT_STEP_RIGHT)
+}
+
+
+SeqTrack("M_TPP_Stick_Trot_L", 		"M_TPP_Stick_Trot_L.anm2"	, 0, 62, 30, 1, 0.3)
+{
+	Event(10, VIS_EVENT_STEP_RIGHT)
+	Event(24, VIS_EVENT_STEP_LEFT)
+	Event(40, VIS_EVENT_STEP_RIGHT)
+	Event(54, VIS_EVENT_STEP_LEFT)
+}
+
+SeqTrack("M_TPP_Stick_Trot_R", 		"M_TPP_Stick_Trot_R.anm2"	, 0, 62, 30, 1, 0.3)
+{
+	Event(10, VIS_EVENT_STEP_LEFT)
+	Event(24, VIS_EVENT_STEP_RIGHT)
+	Event(40, VIS_EVENT_STEP_LEFT)
+	Event(54, VIS_EVENT_STEP_RIGHT)
+}
+
+SeqTrack("M_TPP_Stick_Trot_B", 		"M_TPP_Stick_Trot_B.anm2"	, 0, 77, 30, 1, 0.3)
+{
+	Event(10, VIS_EVENT_STEP_RIGHT)
+	Event(21, VIS_EVENT_STEP_LEFT)
+	Event(34, VIS_EVENT_STEP_RIGHT)
+	Event(47, VIS_EVENT_STEP_LEFT)
+	Event(58, VIS_EVENT_STEP_RIGHT)
+	Event(71, VIS_EVENT_STEP_LEFT)
+}
+
+SeqTrack("M_TPP_Stick_Trot_F", 		"M_TPP_Stick_Trot_F.anm2"	, 0, 43, 30, 1, 0.3)
+{
+	Event(11, VIS_EVENT_STEP_LEFT)
+	Event(22, VIS_EVENT_STEP_RIGHT)
+	Event(33, VIS_EVENT_STEP_LEFT)
+	Event(43, VIS_EVENT_STEP_RIGHT)
+}
+
+
+SeqTrack("TPP_Stick_Stand", 		 "M_TPP_Idle_Stick.anm2"			, 0, 753, 30, 1, 0.3)
+
+SeqTrackAlias( "TPP_Stick_WalkForward",		"M_TPP_Stick_Walk_v01")
+SeqTrackAlias( "TPP_Stick_TrotForward",		"M_TPP_Stick_Trot_F")
+SeqTrackAlias( "TPP_Stick_RunForward",		"M_TPP_Stick_Sprint_v01")//"M_TPP_Stick_Run_v01")
+//SeqTrackAlias( "TPP_Stick_SprintForward",	"M_TPP_Stick_Sprint_v01")
+
+SeqTrackAlias( "TPP_Stick_WalkBackward",	"M_TPP_Stick_Walk_Backward_v02")
+SeqTrackAlias( "TPP_Stick_TrotBackward",	"M_TPP_Stick_Trot_B")
+SeqTrackAlias( "TPP_Stick_RunBackward",		"TPP_Stick_RunBackwardL")
+
+SeqTrackAlias( "TPP_Stick_WalkLeft",		"M_TPP_Stick_Walk_Left_v02")
+SeqTrackAlias( "TPP_Stick_TrotLeft",		"M_TPP_Stick_Trot_L")
+SeqTrackAlias( "TPP_Stick_RunLeft",			"TPP_Stick_RunLeftL")
+
+SeqTrackAlias( "TPP_Stick_WalkRight",		"M_TPP_Stick_Walk_Right_v03")
+SeqTrackAlias( "TPP_Stick_TrotRight",		"M_TPP_Stick_Trot_R")
+SeqTrackAlias( "TPP_Stick_RunRight",		"TPP_Stick_TrotRight")
+
+
+
+
+
+
+
+// przekrecone biodra w lewo
+
+
+
+
+//SeqTrack("TPP_Stick_WalkForwardL", 			"M_TPP_Stick_FastWalkForwardL", 0, 57, 30, 1, 0.3)
+//SeqTrack("M_TPP_Stick_FastWalkForwardL", 	"M_TPP_Stick_FastWalkForwardL.anm2"		, 0, 57, 30, 1, 0.3)
+
+//SeqTrackAlias( "TPP_Stick_WalkForwardL",		"FPP_Stick_WalkForward")
+SeqTrack("TPP_Stick_WalkForwardR", 		            "M_TPP_Stick_WalkForward_L.anm2"		        , 0, 60, 30, 1, 0.3)
+{
+	Event(9, VIS_EVENT_STEP_RIGHT)
+	Event(23, VIS_EVENT_STEP_LEFT)
+	Event(38, VIS_EVENT_STEP_RIGHT)
+	Event(53, VIS_EVENT_STEP_LEFT)
+}
+//SeqTrackAlias( "TPP_Stick_TrotForwardL",		"FPP_Stick_TrotForward")
+SeqTrack("TPP_Stick_TrotForwardL", 			        "M_TPP_Unarmed_TrotForward_L.anm2"		        , 0, 43, 30, 1, 0.3)
+{
+	Event(9, VIS_EVENT_STEP_LEFT)
+	Event(21, VIS_EVENT_STEP_RIGHT)
+	Event(31, VIS_EVENT_STEP_LEFT)
+	Event(42, VIS_EVENT_STEP_RIGHT)
+}
+//SeqTrackAlias( "TPP_Stick_RunForwardL",			"FPP_Stick_RunForward")
+SeqTrack("TPP_Stick_RunForwardL", 			        "M_TPP_Unarmed_RunForward_L.anm2"		        , 0, 46, 30, 1, 0.3)
+{
+	Event(9, VIS_EVENT_STEP_LEFT)
+	Event(21, VIS_EVENT_STEP_RIGHT)
+	Event(32, VIS_EVENT_STEP_LEFT)
+	Event(44, VIS_EVENT_STEP_RIGHT)
+}
+//SeqTrackAlias( "TPP_Stick_SprintForwardL",		"TPP_Stick_SprintForward")
+
+//SeqTrackAlias( "TPP_Stick_WalkBackwardL",	"FPP_Stick_WalkBackward")
+SeqTrack("TPP_Stick_WalkBackwardR", 		            "M_TPP_Stick_WalkBackward_L.anm2"		        , 0, 163, 30, 1, 0.3)
+{
+	Event(12, VIS_EVENT_STEP_RIGHT)
+	Event(35, VIS_EVENT_STEP_LEFT)
+	Event(54, VIS_EVENT_STEP_RIGHT)
+	Event(74, VIS_EVENT_STEP_LEFT)
+	Event(94, VIS_EVENT_STEP_RIGHT)
+	Event(115, VIS_EVENT_STEP_LEFT)
+	Event(133, VIS_EVENT_STEP_RIGHT)
+	Event(156, VIS_EVENT_STEP_LEFT)
+}
+//SeqTrackAlias( "TPP_Stick_TrotBackwardL",	"FPP_Stick_TrotBackward")
+SeqTrack("TPP_Stick_TrotBackwardL", 			"M_TPP_Unarmed_TrotBackward_L.anm2"		        , 0, 77, 30, 1, 0.3)
+{
+	Event(9, VIS_EVENT_STEP_RIGHT)
+	Event(21, VIS_EVENT_STEP_LEFT)
+	Event(34, VIS_EVENT_STEP_RIGHT)
+	Event(47, VIS_EVENT_STEP_LEFT)
+	Event(58, VIS_EVENT_STEP_RIGHT)
+	Event(71, VIS_EVENT_STEP_LEFT)
+}
+//SeqTrackAlias( "TPP_Stick_RunBackwardL",		"FPP_Stick_RunBackward")
+SeqTrack("TPP_Stick_RunBackwardL", 			        "M_TPP_Unarmed_RunBackward_L.anm2"		        , 0, 26, 30, 1, 0.3)
+{
+	Event(7, VIS_EVENT_STEP_RIGHT)
+	Event(21, VIS_EVENT_STEP_LEFT)
+}
+
+//SeqTrackAlias( "TPP_Stick_WalkLeftL",		"FPP_Stick_WalkLeft")
+SeqTrack("TPP_Stick_WalkLeftL", 		            "M_TPP_Stick_WalkLeft_L.anm2"		        , 0, 121, 30, 1, 0.3)
+{
+	Event(14, VIS_EVENT_STEP_RIGHT)
+	Event(31, VIS_EVENT_STEP_LEFT)
+	Event(54, VIS_EVENT_STEP_RIGHT)
+	Event(71, VIS_EVENT_STEP_LEFT)
+	Event(94, VIS_EVENT_STEP_RIGHT)
+	Event(109, VIS_EVENT_STEP_LEFT)
+}
+//SeqTrackAlias( "TPP_Stick_TrotLeftL",		"FPP_Stick_TrotLeft")
+SeqTrack("TPP_Stick_TrotLeftL", 		            "M_TPP_Unarmed_TrotLeft_L.anm2"		        , 0, 75, 30, 1, 0.3)
+{
+	Event(7, VIS_EVENT_STEP_LEFT)
+	Event(23, VIS_EVENT_STEP_RIGHT)
+	Event(35, VIS_EVENT_STEP_LEFT)
+	Event(48, VIS_EVENT_STEP_RIGHT)
+	Event(62, VIS_EVENT_STEP_LEFT)
+	Event(72, VIS_EVENT_STEP_RIGHT)
+}
+//SeqTrackAlias( "TPP_Stick_RunLeftL",			"FPP_Stick_RunLeft")
+SeqTrack("TPP_Stick_RunLeftL", 			        "M_TPP_Unarmed_RunLeft_L.anm2"		 	       , 0, 15, 30, 1, 0.3)
+{
+	Event(4, VIS_EVENT_STEP_LEFT)
+	Event(11, VIS_EVENT_STEP_RIGHT)
+}
+
+//SeqTrackAlias( "TPP_Stick_WalkRightL",		"FPP_Stick_WalkRight")
+SeqTrack("TPP_Stick_WalkRightL", 		            "M_TPP_Stick_WalkRight_L.anm2"		        , 0, 98, 30, 1, 0.3)
+{
+	Event(12, VIS_EVENT_STEP_LEFT)
+	Event(28, VIS_EVENT_STEP_RIGHT)
+	Event(45, VIS_EVENT_STEP_LEFT)
+	Event(62, VIS_EVENT_STEP_RIGHT)
+	Event(77, VIS_EVENT_STEP_LEFT)
+	Event(92, VIS_EVENT_STEP_RIGHT)
+}
+//SeqTrackAlias( "TPP_Stick_TrotRightL",		"FPP_Stick_TrotRight")
+SeqTrack("TPP_Stick_TrotRightL", 		            "M_TPP_Unarmed_TrotRight_L.anm2"		        , 0, 62, 30, 1, 0.3)
+{
+	Event(9, VIS_EVENT_STEP_LEFT)
+	Event(25, VIS_EVENT_STEP_RIGHT)
+	Event(40, VIS_EVENT_STEP_LEFT)
+	Event(55, VIS_EVENT_STEP_RIGHT)
+}
+//SeqTrackAlias( "TPP_Stick_RunRightL",		"FPP_Stick_RunRight")
+SeqTrack("TPP_Stick_RunRightL", 			        "M_TPP_Unarmed_RunRight_L.anm2"		  	      , 0, 17, 30, 1, 0.3)
+{
+	Event(8, VIS_EVENT_STEP_LEFT)
+	Event(16, VIS_EVENT_STEP_RIGHT)
+}
+
+
+
+
+
+// przekrecone biodra w prawo
+
+
+
+
+//SeqTrackAlias( "TPP_Stick_WalkForwardR",		"FPP_Stick_WalkForward")
+SeqTrack("TPP_Stick_WalkForwardL", 		            "M_TPP_Stick_WalkForward_R.anm2"		        , 0, 60, 30, 1, 0.3)
+{
+	Event(9, VIS_EVENT_STEP_RIGHT)
+	Event(23, VIS_EVENT_STEP_LEFT)
+	Event(38, VIS_EVENT_STEP_RIGHT)
+	Event(53, VIS_EVENT_STEP_LEFT)
+}
+//SeqTrackAlias( "TPP_Stick_TrotForwardR",		"FPP_Stick_TrotForward")
+SeqTrack("TPP_Stick_TrotForwardR", 			        "M_TPP_Unarmed_TrotForward_R.anm2"		        , 0, 43, 30, 1, 0.3)
+{
+	Event(9, VIS_EVENT_STEP_LEFT)
+	Event(21, VIS_EVENT_STEP_RIGHT)
+	Event(31, VIS_EVENT_STEP_LEFT)
+	Event(42, VIS_EVENT_STEP_RIGHT)
+}
+//SeqTrackAlias( "TPP_Stick_RunForwardR",		"FPP_Stick_RunForward")
+SeqTrack("TPP_Stick_RunForwardR", 			        "M_TPP_Unarmed_RunForward_R.anm2"		        , 0, 46, 30, 1, 0.3)
+{
+	Event(9, VIS_EVENT_STEP_LEFT)
+	Event(21, VIS_EVENT_STEP_RIGHT)
+	Event(32, VIS_EVENT_STEP_LEFT)
+	Event(44, VIS_EVENT_STEP_RIGHT)
+}
+//SeqTrackAlias( "TPP_Stick_SprintForwardR",	"TPP_Stick_SprintForward")
+
+//SeqTrackAlias( "TPP_Stick_WalkBackwardR",	"FPP_Stick_WalkBackward")
+SeqTrack("TPP_Stick_WalkBackwardL", 		            "M_TPP_Stick_WalkBackward_R.anm2"		        , 0, 163, 30, 1, 0.3)
+{
+	Event(12, VIS_EVENT_STEP_RIGHT)
+	Event(35, VIS_EVENT_STEP_LEFT)
+	Event(54, VIS_EVENT_STEP_RIGHT)
+	Event(74, VIS_EVENT_STEP_LEFT)
+	Event(94, VIS_EVENT_STEP_RIGHT)
+	Event(115, VIS_EVENT_STEP_LEFT)
+	Event(133, VIS_EVENT_STEP_RIGHT)
+	Event(156, VIS_EVENT_STEP_LEFT)
+}
+//SeqTrackAlias( "TPP_Stick_TrotBackwardR",	"FPP_Stick_TrotBackward")
+SeqTrack("TPP_Stick_TrotBackwardR", 			"M_TPP_Unarmed_TrotBackward_R.anm2"		        , 0, 77, 30, 1, 0.3)
+{
+	Event(9, VIS_EVENT_STEP_RIGHT)
+	Event(21, VIS_EVENT_STEP_LEFT)
+	Event(34, VIS_EVENT_STEP_RIGHT)
+	Event(47, VIS_EVENT_STEP_LEFT)
+	Event(58, VIS_EVENT_STEP_RIGHT)
+	Event(71, VIS_EVENT_STEP_LEFT)
+}
+//SeqTrackAlias( "TPP_Stick_RunBackwardR",		"FPP_Stick_RunBackward")
+SeqTrack("TPP_Stick_RunBackwardR", 			        "M_TPP_Unarmed_RunBackward_R.anm2"		        , 0, 26, 30, 1, 0.3)
+{
+	Event(7, VIS_EVENT_STEP_RIGHT)
+	Event(21, VIS_EVENT_STEP_LEFT)
+}
+
+//SeqTrackAlias( "TPP_Stick_WalkLeftR",		"FPP_Stick_WalkLeft")
+SeqTrack("TPP_Stick_WalkLeftR", 		            "M_TPP_Stick_WalkLeft_R.anm2"		        , 0, 121, 30, 1, 0.3)
+{
+	Event(14, VIS_EVENT_STEP_RIGHT)
+	Event(31, VIS_EVENT_STEP_LEFT)
+	Event(54, VIS_EVENT_STEP_RIGHT)
+	Event(71, VIS_EVENT_STEP_LEFT)
+	Event(94, VIS_EVENT_STEP_RIGHT)
+	Event(109, VIS_EVENT_STEP_LEFT)
+}
+//SeqTrackAlias( "TPP_Stick_TrotLeftR",		"FPP_Stick_TrotLeft")
+SeqTrack("TPP_Stick_TrotLeftR", 		            "M_TPP_Unarmed_TrotLeft_R.anm2"		        , 0, 75, 30, 1, 0.3)
+{
+	Event(7, VIS_EVENT_STEP_LEFT)
+	Event(23, VIS_EVENT_STEP_RIGHT)
+	Event(35, VIS_EVENT_STEP_LEFT)
+	Event(48, VIS_EVENT_STEP_RIGHT)
+	Event(62, VIS_EVENT_STEP_LEFT)
+	Event(72, VIS_EVENT_STEP_RIGHT)
+}
+//SeqTrackAlias( "TPP_Stick_RunLeftR",			"FPP_Stick_RunLeft")
+SeqTrack("TPP_Stick_RunLeftR", 			        "M_TPP_Unarmed_RunLeft_R.anm2"		 	       , 0, 15, 30, 1, 0.3)
+{
+	Event(4, VIS_EVENT_STEP_LEFT)
+	Event(11, VIS_EVENT_STEP_RIGHT)
+}
+
+//SeqTrackAlias( "TPP_Stick_WalkRightR",		"FPP_Stick_WalkRight")
+SeqTrack("TPP_Stick_WalkRightR", 		            "M_TPP_Stick_WalkRight_R.anm2"		        , 0, 98, 30, 1, 0.3)
+{
+	Event(12, VIS_EVENT_STEP_LEFT)
+	Event(28, VIS_EVENT_STEP_RIGHT)
+	Event(45, VIS_EVENT_STEP_LEFT)
+	Event(62, VIS_EVENT_STEP_RIGHT)
+	Event(77, VIS_EVENT_STEP_LEFT)
+	Event(92, VIS_EVENT_STEP_RIGHT)
+}
+//SeqTrackAlias( "TPP_Stick_TrotRightR",		"FPP_Stick_TrotRight")
+SeqTrack("TPP_Stick_TrotRightR", 		            "M_TPP_Unarmed_TrotRight_R.anm2"		        , 0, 62, 30, 1, 0.3)
+{
+	Event(9, VIS_EVENT_STEP_LEFT)
+	Event(25, VIS_EVENT_STEP_RIGHT)
+	Event(40, VIS_EVENT_STEP_LEFT)
+	Event(55, VIS_EVENT_STEP_RIGHT)
+}
+//SeqTrackAlias( "TPP_Stick_RunRightR",		"FPP_Stick_RunRight")
+SeqTrack("TPP_Stick_RunRightR", 			        "M_TPP_Unarmed_RunRight_R.anm2"		  	      , 0, 17, 30, 1, 0.3)
+{
+	Event(8, VIS_EVENT_STEP_LEFT)
+	Event(16, VIS_EVENT_STEP_RIGHT)
+}
+
+
+
+
+
+// --- animacje Stick - Bron opuszczona ---
+
+SeqTrack("M_TPP_Stick_nocombat_FastWalk_Start_F", 		"M_TPP_Stick_nocombat_FastWalk_Start_F.anm2"		, 0, 46, 30, 1, 0.3)
+{
+	Event(28, VIS_EVENT_STEP_RIGHT)
+	Event(41, VIS_EVENT_STEP_LEFT)
+}
+
+SeqTrack("M_TPP_Stick_nocombat_FastWalk_Stop_F", 		"M_TPP_Stick_nocombat_FastWalk_Stop_F.anm2"		, 0, 44, 30, 1, 0.3)
+{
+	Event(9, VIS_EVENT_STEP_RIGHT)
+	Event(25, VIS_EVENT_STEP_LEFT)
+	Event(36, VIS_EVENT_STEP_RIGHT)
+}
+
+
+SeqTrack("M_TPP_Stick_nocombat_FastWalk_Loop", 			"M_TPP_Stick_nocombat_FastWalk_Loop.anm2"		, 0, 56, 30, 1, 0.3)
+{
+	Event(9, VIS_EVENT_STEP_RIGHT)
+	Event(22, VIS_EVENT_STEP_LEFT)
+	Event(36, VIS_EVENT_STEP_RIGHT)
+	Event(50, VIS_EVENT_STEP_LEFT)
+}
+
+SeqTrack("M_TPP_Stick_nocombat_FastWalk_Start_B", 		"M_TPP_Stick_nocombat_FastWalk_Start_B.anm2"		, 0, 47, 30, 1, 0.3)
+{
+	Event(17, VIS_EVENT_STEP_LEFT)
+	Event(29, VIS_EVENT_STEP_RIGHT)
+	Event(42, VIS_EVENT_STEP_LEFT)
+}
+
+SeqTrack("M_TPP_Stick_nocombat_FastWalk_Stop_B", 		"M_TPP_Stick_nocombat_FastWalk_Stop_B.anm2"		, 0, 65, 30, 1, 0.3)
+{
+	Event(10, VIS_EVENT_STEP_RIGHT)
+	Event(23, VIS_EVENT_STEP_LEFT)
+	Event(36, VIS_EVENT_STEP_RIGHT)
+	Event(51, VIS_EVENT_STEP_LEFT)
+	Event(63, VIS_EVENT_STEP_RIGHT)
+}
+
+SeqTrack("M_TPP_Stick_nocombat_FastWalk_Start_R", 		"M_TPP_Stick_nocombat_FastWalk_Start_R.anm2"		, 0, 78, 30, 1, 0.3)
+{
+	Event(30, VIS_EVENT_STEP_RIGHT)
+	Event(46, VIS_EVENT_STEP_LEFT)
+	Event(59, VIS_EVENT_STEP_RIGHT)
+	Event(74, VIS_EVENT_STEP_LEFT)
+}
+
+SeqTrack("M_TPP_Stick_nocombat_FastWalk_Stop_R", 		"M_TPP_Stick_nocombat_FastWalk_Stop_R.anm2"		, 0, 90, 30, 1, 0.3)
+{
+	Event(9, VIS_EVENT_STEP_RIGHT)
+	Event(24, VIS_EVENT_STEP_LEFT)
+	Event(38, VIS_EVENT_STEP_RIGHT)
+	Event(53, VIS_EVENT_STEP_LEFT)
+	Event(68, VIS_EVENT_STEP_RIGHT)
+	Event(80, VIS_EVENT_STEP_LEFT)
+}
+
+SeqTrack("M_TPP_Stick_nocombat_FastWalk_Start_L", 		"M_TPP_Stick_nocombat_FastWalk_Start_L.anm2"		, 0, 53, 30, 1, 0.3)
+{
+	Event(20, VIS_EVENT_STEP_LEFT)
+	Event(34, VIS_EVENT_STEP_RIGHT)
+	Event(48, VIS_EVENT_STEP_LEFT)
+}
+
+
+SeqTrack("M_TPP_Stick_nocombat_FastWalk_Stop_L", 		"M_TPP_Stick_nocombat_FastWalk_Stop_L.anm2"		, 0, 97, 30, 1, 0.3)
+{
+	Event(9, VIS_EVENT_STEP_RIGHT)
+	Event(24, VIS_EVENT_STEP_LEFT)
+	Event(38, VIS_EVENT_STEP_RIGHT)
+	Event(54, VIS_EVENT_STEP_LEFT)
+	Event(70, VIS_EVENT_STEP_RIGHT)
+	Event(84, VIS_EVENT_STEP_LEFT)
+}
+
+
+SeqTrack("M_TPP_Stick_nocombat_Walk_v01", 		"M_TPP_Stick_nocombat_Walk_v01.anm2"		, 0, 106, 30, 1, 0.3)
+{
+	Event(12, VIS_EVENT_STEP_RIGHT)
+	Event(29, VIS_EVENT_STEP_LEFT)
+	Event(47, VIS_EVENT_STEP_RIGHT)
+	Event(65, VIS_EVENT_STEP_LEFT)
+	Event(82, VIS_EVENT_STEP_RIGHT)
+	Event(101, VIS_EVENT_STEP_LEFT)
+}
+
+SeqTrack("M_TPP_Stick_nocombat_Walk_v02", 		"M_TPP_Stick_nocombat_Walk_v02.anm2"		, 0, 106, 30, 1, 0.3)
+{
+	Event(12, VIS_EVENT_STEP_LEFT)
+	Event(30, VIS_EVENT_STEP_RIGHT)
+	Event(48, VIS_EVENT_STEP_LEFT)
+	Event(65, VIS_EVENT_STEP_RIGHT)
+	Event(83, VIS_EVENT_STEP_LEFT)
+	Event(101, VIS_EVENT_STEP_RIGHT)
+}
+
+SeqTrack("M_TPP_Stick_nocombat_Stand_Turn_180_L", 	"M_TPP_Stick_nocombat_Stand_Turn_180_L.anm2"	, 0, 70, 30, 1, 0.3)
+{
+	Event(23, VIS_EVENT_STEP_RIGHT)
+	Event(44, VIS_EVENT_STEP_LEFT)
+	Event(61, VIS_EVENT_STEP_RIGHT)
+}
+
+SeqTrack("M_TPP_Stick_nocombat_Stand_Turn_180_R", 	"M_TPP_Stick_nocombat_Stand_Turn_180_R.anm2"	, 0, 85, 30, 1, 0.3)
+{
+	Event(20, VIS_EVENT_STEP_LEFT)
+	Event(37, VIS_EVENT_STEP_RIGHT)
+	Event(57, VIS_EVENT_STEP_LEFT)
+	Event(75, VIS_EVENT_STEP_RIGHT)
+}
+
+SeqTrack("M_TPP_Stick_nocombat_Walk_Start_B", 		"M_TPP_Stick_nocombat_Walk_Start_B.anm2"		, 0, 83, 30, 1, 0.3)
+{
+	Event(29, VIS_EVENT_STEP_LEFT)
+	Event(48, VIS_EVENT_STEP_RIGHT)
+	Event(63, VIS_EVENT_STEP_LEFT)
+	Event(79, VIS_EVENT_STEP_RIGHT)
+}
+
+SeqTrack("M_TPP_Stick_nocombat_Walk_Start_B_v02", 	"M_TPP_Stick_nocombat_Walk_Start_B_v02.anm2"	, 0, 71, 30, 1, 0.3)
+{
+	Event(17, VIS_EVENT_STEP_LEFT)
+	Event(35, VIS_EVENT_STEP_RIGHT)
+	Event(51, VIS_EVENT_STEP_LEFT)
+	Event(67, VIS_EVENT_STEP_RIGHT)
+}
+
+
+SeqTrack("M_TPP_Stick_nocombat_Walk_Start_F", 		"M_TPP_Stick_nocombat_Walk_Start_F.anm2"		, 0, 72, 30, 1, 0.3)
+{
+	Event(34, VIS_EVENT_STEP_RIGHT)
+	Event(52, VIS_EVENT_STEP_LEFT)
+	Event(67, VIS_EVENT_STEP_RIGHT)
+}
+
+SeqTrack("M_TPP_Stick_nocombat_Walk_Start_R", 		"M_TPP_Stick_nocombat_Walk_Start_R.anm2"		, 0, 77, 30, 1, 0.3)
+{
+	Event(14, VIS_EVENT_STEP_LEFT)
+	Event(34, VIS_EVENT_STEP_RIGHT)
+	Event(53, VIS_EVENT_STEP_LEFT)
+	Event(70, VIS_EVENT_STEP_RIGHT)
+}
+
+
+SeqTrack("M_TPP_Stick_nocombat_Walk_Start_L", 		"M_TPP_Stick_nocombat_Walk_Start_L.anm2"		, 0, 88, 30, 1, 0.3)
+{
+	Event(26, VIS_EVENT_STEP_LEFT)
+	Event(47, VIS_EVENT_STEP_RIGHT)
+	Event(65, VIS_EVENT_STEP_LEFT)
+	Event(82, VIS_EVENT_STEP_RIGHT)
+}
+
+
+SeqTrack("M_TPP_Stick_nocombat_Walk_Stop_L", 		"M_TPP_Stick_nocombat_Walk_Stop_L.anm2"		, 0, 87, 30, 1, 0.3)
+{
+	Event(13, VIS_EVENT_STEP_LEFT)
+	Event(30, VIS_EVENT_STEP_RIGHT)
+	Event(49, VIS_EVENT_STEP_LEFT)
+	Event(67, VIS_EVENT_STEP_RIGHT)
+	Event(78, VIS_EVENT_STEP_LEFT)
+}
+
+SeqTrack("M_TPP_Stick_nocombat_Walk_Stop_R", 		"M_TPP_Stick_nocombat_Walk_Stop_R.anm2"		, 0, 82, 30, 1, 0.3)
+{
+	Event(14, VIS_EVENT_STEP_LEFT)
+	Event(32, VIS_EVENT_STEP_RIGHT)
+	Event(49, VIS_EVENT_STEP_LEFT)
+	Event(69, VIS_EVENT_STEP_RIGHT)
+}
+
+SeqTrack("M_TPP_Stick_nocombat_Walk_Stop_B", 		"M_TPP_Stick_nocombat_Walk_Stop_B.anm2"		, 0, 95, 30, 1, 0.3)
+{
+	Event(11, VIS_EVENT_STEP_LEFT)
+	Event(28, VIS_EVENT_STEP_RIGHT)
+	Event(44, VIS_EVENT_STEP_LEFT)
+	Event(58, VIS_EVENT_STEP_RIGHT)
+	Event(75, VIS_EVENT_STEP_LEFT)
+	Event(91, VIS_EVENT_STEP_RIGHT)
+}
+
+SeqTrack("M_TPP_Stick_nocombat_Walk_Stop_B_v02", 	"M_TPP_Stick_nocombat_Walk_Stop_B_v02.anm2"	, 0, 100, 30, 1, 0.3)
+{
+	Event(12, VIS_EVENT_STEP_RIGHT)
+	Event(28, VIS_EVENT_STEP_LEFT)
+	Event(44, VIS_EVENT_STEP_RIGHT)
+	Event(59, VIS_EVENT_STEP_LEFT)
+	Event(80, VIS_EVENT_STEP_RIGHT)
+	Event(91, VIS_EVENT_STEP_LEFT)
+}
+
+SeqTrack("M_TPP_Stick_nocombat_Walk_Stop_F", 		"M_TPP_Stick_nocombat_Walk_Stop_F.anm2"		, 0, 70, 30, 1, 0.3)
+{
+	Event(11, VIS_EVENT_STEP_LEFT)
+	Event(27, VIS_EVENT_STEP_RIGHT)
+	Event(44, VIS_EVENT_STEP_LEFT)
+	Event(55, VIS_EVENT_STEP_RIGHT)
+}
+
+
+SeqTrack("M_TPP_Stick_nocombat_Walk_Turn_90_L", 	"M_TPP_Stick_nocombat_Walk_Turn_90_L.anm2"	, 0, 95, 30, 1, 0.3)
+SeqTrack("M_TPP_Stick_nocombat_Walk_Turn_90_R", 	"M_TPP_Stick_nocombat_Walk_Turn_90_R.anm2"	, 0, 109, 30, 1, 0.3)
+SeqTrack("M_TPP_Stick_nocombat_Walk_Turn_180_L", 	"M_TPP_Stick_nocombat_Walk_Turn_180_L.anm2"	, 0, 114, 30, 1, 0.3)
+SeqTrack("M_TPP_Stick_nocombat_Walk_Turn_180_R", 	"M_TPP_Stick_nocombat_Walk_Turn_180_R.anm2"	, 0, 143, 30, 1, 0.3)
+
+
+SeqTrack("M_TPP_Stick_nocombat_Trot_L", 		"M_TPP_Stick_nocombat_Trot_L.anm2"	, 0, 75, 30, 1, 0.3)
+{
+	Event(11, VIS_EVENT_STEP_LEFT)
+	Event(24, VIS_EVENT_STEP_RIGHT)
+	Event(36, VIS_EVENT_STEP_LEFT)
+	Event(48, VIS_EVENT_STEP_RIGHT)
+	Event(60, VIS_EVENT_STEP_LEFT)
+	Event(72, VIS_EVENT_STEP_RIGHT)
+}
+
+SeqTrack("M_TPP_Stick_nocombat_Trot_R", 		"M_TPP_Stick_nocombat_Trot_R.anm2"	, 0, 62, 30, 1, 0.3)
+{
+	Event(10, VIS_EVENT_STEP_RIGHT)
+	Event(21, VIS_EVENT_STEP_LEFT)
+	Event(34, VIS_EVENT_STEP_RIGHT)
+	Event(47, VIS_EVENT_STEP_LEFT)
+	Event(58, VIS_EVENT_STEP_RIGHT)
+	Event(71, VIS_EVENT_STEP_LEFT)
+}
+
+SeqTrack("M_TPP_Stick_nocombat_Trot_B", 		"M_TPP_Stick_nocombat_Trot_B.anm2"	, 0, 77, 30, 1, 0.3)
+{
+	Event(10, VIS_EVENT_STEP_RIGHT)
+	Event(21, VIS_EVENT_STEP_LEFT)
+	Event(34, VIS_EVENT_STEP_RIGHT)
+	Event(47, VIS_EVENT_STEP_LEFT)
+	Event(58, VIS_EVENT_STEP_RIGHT)
+	Event(71, VIS_EVENT_STEP_LEFT)
+}
+
+SeqTrack("M_TPP_Stick_nocombat_Trot_F", 		"M_TPP_Stick_nocombat_Trot_F.anm2"	, 0, 43, 30, 1, 0.3)
+{
+	Event(11, VIS_EVENT_STEP_LEFT)
+	Event(22, VIS_EVENT_STEP_RIGHT)
+	Event(33, VIS_EVENT_STEP_LEFT)
+	Event(43, VIS_EVENT_STEP_RIGHT)
+}
+
+
+SeqTrack("M_TPP_Stick_nocombat_Walk_Right", 		"M_TPP_Stick_nocombat_Walk_Right.anm2"		, 0, 76, 30, 1, 0.3)
+{
+	Event(10, VIS_EVENT_STEP_RIGHT)
+	Event(30, VIS_EVENT_STEP_LEFT)
+	Event(48, VIS_EVENT_STEP_RIGHT)
+	Event(68, VIS_EVENT_STEP_LEFT)
+}
+
+SeqTrack("M_TPP_Stick_nocombat_Walk_Left", 		"M_TPP_Stick_nocombat_Walk_Left.anm2"		, 0, 121, 30, 1, 0.3)
+{
+	Event(11, VIS_EVENT_STEP_LEFT)
+	Event(28, VIS_EVENT_STEP_RIGHT)
+	Event(41, VIS_EVENT_STEP_LEFT)
+	Event(57, VIS_EVENT_STEP_RIGHT)
+	Event(71, VIS_EVENT_STEP_LEFT)
+	Event(86, VIS_EVENT_STEP_RIGHT)
+	Event(100, VIS_EVENT_STEP_LEFT)
+	Event(116, VIS_EVENT_STEP_RIGHT)
+}
+
+
+
+
+
+//Pozy
+SeqTrack("TPP_Stick_Melee_Stand", 				"M_TPP_Stick_Melee_Stand.anm2"			, 0, 123, 30, 1, 0.3)
+SeqTrack("TPP_Stick_Melee_Stand2", 				"M_TPP_Stick_Melee_Stand2.anm2"			, 0, 170, 30, 1, 0.3)
+SeqTrack("TPP_Stick_Melee_Calm", 				"M_TPP_Stick_Melee_Calm.anm2"			, 0, 123, 30, 1, 0.3)
+
+SeqTrack("TPP_Stick_Melee_Stand_DR", 				"M_TPP_Stick_Melee_Stand_DR.anm2"		, 0, 123, 30, 1, 0.3)
+SeqTrack("TPP_Stick_Melee_Stand_DL", 				"M_TPP_Stick_Melee_Stand_DL.anm2"		, 0, 123, 30, 1, 0.3)
+SeqTrack("TPP_Stick_Melee_Stand_L", 				"M_TPP_Stick_Melee_Stand_L.anm2"			, 0, 123, 30, 1, 0.3)
+SeqTrack("TPP_Stick_Melee_Stand_R", 				"M_TPP_Stick_Melee_Stand_R.anm2"			, 0, 123, 30, 1, 0.3)
+SeqTrack("TPP_Stick_Melee_Stand_U", 				"M_TPP_Stick_Melee_Stand_U.anm2"			, 0, 123, 30, 1, 0.3)
+
+// ataki
+SeqTrack("TPP_Stick_Melee_Attack_DLR", 			"M_TPP_Stick_Melee_Attack_DLR.anm2"		, 0, 30, 30, 1, 0.3)
+{
+    Event(11, EVENT_APPLY_DAMAGE_UP)
+}
+SeqTrackAlias("TPP_Stick_Melee_Attack_DLU", 	"TPP_Stick_Melee_Attack_DLR")
+SeqTrackAlias("TPP_Stick_Melee_Attack_DRU", 	"TPP_Stick_Melee_Attack_DLR")
+
+/*SeqTrack("TPP_Stick_Melee_Attack_DLU", 			"M_TPP_Stick_Melee_Attack_DLU.anm2"		, 0, 30, 30, 1, 0.3)
+{
+    Event(10, EVENT_APPLY_DAMAGE_UP)
+}
+SeqTrack("TPP_Stick_Melee_Attack_DRU", 			"M_TPP_Stick_Melee_Attack_DRU.anm2"		, 0, 35, 30, 1, 0.3)
+{
+    Event(16, EVENT_APPLY_DAMAGE_UP)
+}*/
+
+SeqTrack("TPP_Stick_Melee_Attack_RL", 			"M_TPP_Stick_Melee_Attack_RL.anm2"		, 0, 30, 30, 1, 0.3)
+{
+    Event(13, EVENT_APPLY_DAMAGE_LEFT)
+}
+
+SeqTrackAlias("TPP_Stick_Melee_Attack_DRL", 	"TPP_Stick_Melee_Attack_RL")
+SeqTrackAlias("TPP_Stick_Melee_Attack_RDL", 	"TPP_Stick_Melee_Attack_RL")
+
+/*SeqTrack("TPP_Stick_Melee_Attack_DRL", 			"M_TPP_Stick_Melee_Attack_DRL.anm2"		, 0, 28, 30, 1, 0.3)
+
+{
+    Event(11, EVENT_APPLY_DAMAGE_LEFT)
+}
+SeqTrack("TPP_Stick_Melee_Attack_RDL", 			"M_TPP_Stick_Melee_Attack_RDL.anm2"		, 0, 30, 30, 1, 0.3)
+{
+    Event(12, EVENT_APPLY_DAMAGE_LEFT)
+}*/
+
+SeqTrack("TPP_Stick_Melee_Attack_LR", 			"M_TPP_Stick_Melee_Attack_LR.anm2"		, 0, 30, 30, 1, 0.3)
+{
+    Event(10, EVENT_APPLY_DAMAGE_RIGHT)
+}
+SeqTrackAlias("TPP_Stick_Melee_Attack_LDR", 	"TPP_Stick_Melee_Attack_LR")
+
+/*SeqTrack("TPP_Stick_Melee_Attack_LDR", 			"M_TPP_Stick_Melee_Attack_LDR.anm2"		, 0, 30, 30, 1, 0.3)
+{
+    Event(11, EVENT_APPLY_DAMAGE_RIGHT)
+}*/
+
+SeqTrack("TPP_Stick_Melee_Attack_UDL", 			"M_TPP_Stick_Melee_Attack_UDL.anm2"		, 0, 30, 30, 1, 0.3)
+{
+    Event(10, EVENT_APPLY_DAMAGE_DOWN)
+}
+
+SeqTrackAlias("TPP_Stick_Melee_Attack_UDR", 	"TPP_Stick_Melee_Attack_UDL")
+
+/*SeqTrack("TPP_Stick_Melee_Attack_UDR", 			"M_TPP_Stick_Melee_Attack_UDR.anm2"		, 0, 30, 30, 1, 0.3)
+{
+    Event(14, EVENT_APPLY_DAMAGE_DOWN)
+}*/
+
+SeqTrackAlias("TPP_Stick_Melee_Attack_RDR", 	"TPP_Stick_Melee_Attack_RDL")
+SeqTrackAlias("TPP_Stick_Melee_Attack_LDL", 	"TPP_Stick_Melee_Attack_LDR")
+SeqTrackAlias("TPP_Stick_Melee_Attack_DLL", 	"TPP_Stick_Melee_Attack_DRL")
+SeqTrackAlias("TPP_Stick_Melee_Attack_DRR", 	"TPP_Stick_Melee_Attack_DLR")
+
+
+
+
+SeqTrack("TPP_Stick_Melee_Attack_RU", 			"M_TPP_Stick_Melee_Attack_RU.anm2"		, 0, 40, 30, 1, 0.3)
+SeqTrack("TPP_Stick_Melee_Attack_LU", 			"M_TPP_Stick_Melee_Attack_LU.anm2"		, 0, 40, 30, 1, 0.3)
+SeqTrack("TPP_Stick_Melee_Attack_UL", 			"M_TPP_Stick_Melee_Attack_UL.anm2"		, 0, 45, 30, 1, 0.3)
+SeqTrack("TPP_Stick_Melee_Attack_UR", 			"M_TPP_Stick_Melee_Attack_UR.anm2"		, 0, 45, 30, 1, 0.3)
+
+
+
+// animacja od pasa w gore
+
+/*SeqTrack("TPP_Stick_Melee_Attack_DLR_nobip", 		"M_TPP_Stick_Melee_Attack_DLR_nobip.anm2"		, 0, 40, 30, 1, 0.3)
+SeqTrack("TPP_Stick_Melee_Attack_DLU_nobip", 		"M_TPP_Stick_Melee_Attack_DLU_nobip.anm2"		, 0, 40, 30, 1, 0.3)
+SeqTrack("TPP_Stick_Melee_Attack_DRL_nobip", 		"M_TPP_Stick_Melee_Attack_DRL_nobip.anm2"		, 0, 44, 30, 1, 0.3)
+SeqTrack("TPP_Stick_Melee_Attack_DRU_nobip", 		"M_TPP_Stick_Melee_Attack_DRU_nobip.anm2"		, 0, 45, 30, 1, 0.3)
+SeqTrack("TPP_Stick_Melee_Attack_LDR_nobip", 		"M_TPP_Stick_Melee_Attack_LDR_nobip.anm2"		, 0, 40, 30, 1, 0.3)
+SeqTrack("TPP_Stick_Melee_Attack_LR_nobip", 		"M_TPP_Stick_Melee_Attack_LR_nobip.anm2"			, 0, 45, 30, 1, 0.3)
+SeqTrack("TPP_Stick_Melee_Attack_LU_nobip", 		"M_TPP_Stick_Melee_Attack_LU_nobip.anm2"			, 0, 40, 30, 1, 0.3)
+SeqTrack("TPP_Stick_Melee_Attack_RDL_nobip", 		"M_TPP_Stick_Melee_Attack_RDL_nobip.anm2"		, 0, 44, 30, 1, 0.3)
+SeqTrack("TPP_Stick_Melee_Attack_RL_nobip", 		"M_TPP_Stick_Melee_Attack_RL_nobip.anm2"			, 0, 45, 30, 1, 0.3)
+SeqTrack("TPP_Stick_Melee_Attack_RU_nobip", 		"M_TPP_Stick_Melee_Attack_RU_nobip.anm2"			, 0, 40, 30, 1, 0.3)
+SeqTrack("TPP_Stick_Melee_Attack_UDL_nobip", 		"M_TPP_Stick_Melee_Attack_UDL_nobip.anm2"		, 0, 40, 30, 1, 0.3)
+SeqTrack("TPP_Stick_Melee_Attack_UDR_nobip", 		"M_TPP_Stick_Melee_Attack_UDR_nobip.anm2"		, 0, 37, 30, 1, 0.3)
+SeqTrack("TPP_Stick_Melee_Attack_UL_nobip", 		"M_TPP_Stick_Melee_Attack_UL_nobip.anm2"			, 0, 45, 30, 1, 0.3)
+SeqTrack("TPP_Stick_Melee_Attack_UR_nobip", 		"M_TPP_Stick_Melee_Attack_UR_nobip.anm2"			, 0, 45, 30, 1, 0.3)*/
+
+
+//===================================== Fight Trigger============================================
+
+SeqTrack("TPP_Stick_Melee_Attack_RL_Begin", 			"M_TPP_Stick_Melee_Attack_RL.anm2"		, 0, 8, 60, 1, 0.3)
+SeqTrack("TPP_Stick_Melee_Attack_RL_Empty", 			"M_TPP_Stick_Melee_Attack_RL.anm2"		, 8, 18, 45, 1, 0.3)
+SeqTrack("TPP_Stick_Melee_Attack_RL_Empty_Rest",		"M_TPP_Stick_Melee_Attack_RL.anm2"		, 18, 30, 20, 1, 0.3)
+
+SeqTrack("TPP_Stick_Melee_Attack_LR_Begin", 			"M_TPP_Stick_Melee_Attack_LR.anm2"		, 0, 8, 60, 1, 0.3)
+SeqTrack("TPP_Stick_Melee_Attack_LR_Empty", 			"M_TPP_Stick_Melee_Attack_LR.anm2"		, 8, 18, 45, 1, 0.3)
+SeqTrack("TPP_Stick_Melee_Attack_LR_Empty_Rest",		"M_TPP_Stick_Melee_Attack_LR.anm2"		, 18, 30, 20, 1, 0.3)
+
+SeqTrack("TPP_Stick_Melee_Attack_RL_Begin_Run", 		    "M_TPP_Stick_Melee_Attack_RL_Run.anm2", 		0,  8,   60, 1, 0.3)
+SeqTrack("TPP_Stick_Melee_Attack_RL_Empty_Run", 		    "M_TPP_Stick_Melee_Attack_RL_Run.anm2", 		8,  18,   45, 1, 0.3)
+SeqTrack("TPP_Stick_Melee_Attack_RL_Empty_Rest_Run", 		    "M_TPP_Stick_Melee_Attack_RL_Run.anm2", 		18,  30,   30, 1, 0.3)
+
+SeqTrack("TPP_Stick_Melee_Attack_LR_Begin_Run", 		    "M_TPP_Stick_Melee_Attack_LR_Run.anm2", 		0,  8,   60, 1, 0.3)
+SeqTrack("TPP_Stick_Melee_Attack_LR_Empty_Run", 		    "M_TPP_Stick_Melee_Attack_LR_Run.anm2", 		8,  18,   45, 1, 0.3)
+SeqTrack("TPP_Stick_Melee_Attack_LR_Empty_Rest_Run", 		    "M_TPP_Stick_Melee_Attack_LR_Run.anm2", 		18,  30,   30, 1, 0.3)
+
+SeqTrack("TPP_Stick_Melee_Attack_UD_Begin", 			"M_TPP_Stick_Melee_Attack_UDL.anm2"		, 0, 8, 60, 1, 0.3)
+SeqTrack("TPP_Stick_Melee_Attack_UD_Empty", 			"M_TPP_Stick_Melee_Attack_UDL.anm2"		, 8, 18, 45, 1, 0.3)
+SeqTrack("TPP_Stick_Melee_Attack_UD_Empty_Rest",		"M_TPP_Stick_Melee_Attack_UDL.anm2"		, 18, 30, 20, 1, 0.3)
+
+SeqTrack("TPP_Stick_Melee_Attack_DU_Begin", 			"M_TPP_Stick_Melee_Attack_DLR.anm2"		, 0, 8, 60, 1, 0.3)
+SeqTrack("TPP_Stick_Melee_Attack_DU_Empty", 			"M_TPP_Stick_Melee_Attack_DLR.anm2"		, 8, 18, 45, 1, 0.3)
+SeqTrack("TPP_Stick_Melee_Attack_DU_Empty_Rest",		"M_TPP_Stick_Melee_Attack_DLR.anm2"		, 18, 30, 20, 1, 0.3)
+
+SeqTrackAlias("TPP_Stick_Melee_Attack_RL_Hit",		 	"TPP_Stick_Melee_Attack_RL_Empty")
+SeqTrackAlias("TPP_Stick_Melee_Attack_RL_Hit_rest", 	"TPP_Stick_Melee_Attack_RL_Empty_Rest")
+
+SeqTrackAlias("TPP_Stick_Melee_Attack_LR_Hit",		 	"TPP_Stick_Melee_Attack_LR_Empty")
+SeqTrackAlias("TPP_Stick_Melee_Attack_LR_Hit_Rest", 	"TPP_Stick_Melee_Attack_LR_Empty_Rest")
+
+SeqTrack("TPP_Stick_Melee_Throw_Aim", 			"M_TPP_Universal_Throwing.anm2"		, 33, 93, 10, 1, 0.3)
+SeqTrack("TPP_Stick_Melee_Throw", 			"M_TPP_Universal_Throwing.anm2"		, 0, 30, 30, 1, 0.3)
+{
+	Event(7, PUNCH_HIT)	
+}
+
+SeqTrackAlias("TPP_Stick_Melee_LR_Stab", 	"TPP_Stick_Melee_Attack_LR_Empty")
+SeqTrackAlias("TPP_Stick_Melee_LR_Stab_Rest", "TPP_Stick_Melee_Attack_LR_Empty_Rest")
+
+SeqTrackAlias("TPP_Stick_Melee_RL_Stab", 	"TPP_Stick_Melee_Attack_RL_Empty")
+SeqTrackAlias("TPP_Stick_Melee_RL_Stab_Rest", "TPP_Stick_Melee_Attack_RL_Empty_Rest")
+
+SeqTrack("TPP_Stick_Melee_Attack_UD_Hit", 			"TPP_Stick_Melee_Finisher.anm2",			0, 31, 30, 1, 0.5)
+
+//SeqTrack("TPP_Stick_Melee_Attack_DJ_Begin", 			"M_TPP_Stick_Deadly_Jump2_Hit.anm2"		, 10, 15, 30, 1, 0.3)
+SeqTrack("TPP_Stick_Melee_Attack_DJ_Empty",		"M_TPP_Stick_Deadly_Jump3_Hit.anm2"		, 10, 30, 30, 1, 0.3)
+//SeqTrack("TPP_Stick_Melee_Attack_DJ_Empty_Rest",		"M_TPP_Stick_Deadly_Jump2_Hit.anm2"		, 25, 30, 15, 1, 0.3)
+
+SeqTrack("TPP_Stick_Melee_Attack_DJ_Begin", 		     "M_TPP_Stick_Jump_Kick_Empty_Pose.anm2"	        , 0, 10, 30, 1, 0.3)
+SeqTrack("TPP_Stick_Jump_Pose", 		     "M_TPP_Stick_Jump_Kick_Empty.anm2"	        , 16, 49, 30, 1, 0.3)
+SeqTrack("TPP_Stick_KickAir", 		    "M_TPP_Stick_Jump_Kick_Hit.anm2", 		23,  49,   30, 1, 0.3)

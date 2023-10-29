@@ -1,0 +1,250 @@
+// data for infected melee fighter
+
+////////////////////////////////////////////// DATA ///////////////////////////////////////////////
+
+//###############
+//#### DYING ####
+//###############
+//## die:is_standing:is_decapitated:direction
+//###############
+
+Data("die:standing::::decapitated:::", -2, "fighter_decapitated_1")
+Data("die:standing::::decapitated:::", -2, "fighter_decapitated_2")
+Data("die:standing::::decapitated:::", -2, "fighter_decapitated_3")
+
+//##############
+//#### IDLE ####
+//##############
+//## idle:pose:idle_type:item_type:scare_level:is_idle_prepare:is_idle_finish
+//##############
+
+Data("idle:standing:special::::", -2, "fighter_idle")
+
+//Data("idle:standing:confused::::", -2, "fighter_hit_reaction1")
+//Data("idle:standing:confused::::", -2, "fighter_hit_reaction2")
+
+//################
+//#### ATTACK ####
+//################
+//## attack:is_standing:item_type:attack_type:attack_dir:attack_range:is_defending_head:is_holding
+//################
+
+Data("attack:standing::arm_strike_combo::::", -2, "fighter_attack_combo1")
+Data("attack:standing::arm_strike_combo::::", -2, "fighter_attack_combo2")
+Data("attack:standing::arm_strike_combo::::", -2, "fighter_attack_combo3")
+Data("attack:standing::arm_strike_combo::::", -2, "fighter_attack_combo4")
+Data("attack:standing::arm_strike_combo::::", -2, "fighter_attack_combo5")
+Data("attack:standing::arm_strike_combo::::", -2, "fighter_attack_combo6")
+Data("attack:standing::arm_strike_combo::::", -2, "fighter_attack_combo7")
+Data("attack:standing::arm_strike_combo::::", -2, "fighter_attack_combo8")
+Data("attack:standing::arm_strike_combo::::", -2, "fighter_attack_both_hands_from_above1")
+
+Data("attack:standing::right_arm_strike::::", -2, "fighter_attack_front")
+Data("attack:standing::right_arm_strike::::", -2, "fighter_attack_right_hand_deep_up")
+Data("attack:standing::right_arm_strike::::", -2, "fighter_attack_right_hand_down")
+Data("attack:standing::right_arm_strike::::", -2, "fighter_attack_right_hand_up")
+
+// dodane zeby zaslonic atak z infecteda!
+Data("attack:standing::left_arm_strike::::", -2, "fighter_attack_front")
+Data("attack:standing::left_arm_strike::::", -2, "fighter_attack_right_hand_deep_up")
+Data("attack:standing::left_arm_strike::::", -2, "fighter_attack_right_hand_down")
+Data("attack:standing::left_arm_strike::::", -2, "fighter_attack_right_hand_up")
+Data("attack:standing::left_arm_strike::::", -2, "fighter_attack_front")
+
+Data("attack:standing::strike_from_stand::2m::", -2, "fighter_attack_ranged_stand_2m_1")
+Data("attack:standing::strike_from_stand::2m::", -2, "fighter_attack_ranged_stand_2m_2")
+Data("attack:standing::strike_from_stand::2m::", -2, "fighter_attack_ranged_stand_2m_3")
+Data("attack:standing::strike_from_stand::2m::", -2, "fighter_attack_ranged_stand_3m")
+Data("attack:standing::strike_from_stand::2m::", -2, "fighter_attack_ranged_stand_3m_1")
+Data("attack:standing::strike_from_stand::2m::", -2, "fighter_attack_ranged_stand_4m_01")
+Data("attack:standing::strike_from_stand::2m::", -2, "fighter_attack_ranged_stand_4m_02")
+
+Data("attack:standing::attack_from_move::2m::", -2, "fighter_attack_ranged_move_2m_1")
+Data("attack:standing::attack_from_move::2m::", -2, "fighter_attack_ranged_move_2m_2")
+Data("attack:standing::attack_from_move::2m::", -2, "fighter_attack_ranged_move_3m_01")
+Data("attack:standing::attack_from_move::2m::", -2, "fighter_attack_ranged_move_3m_02")
+Data("attack:standing::attack_from_move::2m::", -2, "fighter_attack_ranged_move_3m_03")
+Data("attack:standing::attack_from_move::2m::", -2, "fighter_attack_ranged_move_4m_01")
+
+Data("attack:standing::taunt::::", -2, "fighter_taunt_01")
+Data("attack:standing::taunt::::", -2, "fighter_taunt_02")
+
+//##################
+//#### MOVEMENT ####
+//##################
+//## movement:is_standing:movement_type:alarm_level:item_type:is_left_leg_crippled:is_right_leg_crippled:ram_type
+//##################
+
+Data("movement:standing:walk:::::", -2, "fighter_walk_loop")
+Data("movement:standing:trot:::::", -2, "fighter_walk_loop")
+//Data("movement:standing:run:::::", -2, "fighter_run_loop")
+//Data("movement:standing:sprint:::::", -2, "fighter_run_loop")
+Data("movement:standing:run:::::", -2, "mzi_upset_sprint")
+Data("movement:standing:sprint:::::", -2, "mzi_upset_sprint")
+
+Data("movement:standing:climb:::::", -2, "fighter_upset_climb_01")
+Data("movement:standing:jump_down:::::", -2, "fighter_upset_jump_down_01")
+
+Data("movement:standing:jump_over_high:::::", -2, "fighter_upset_jump_over_high_01")
+Data("movement:standing:jump_over_high:::::", -2, "fighter_upset_jump_over_high_02")
+Data("movement:standing:jump_over_high:::::", -2, "fighter_upset_jump_over_high_03")
+
+Data("movement:standing:jump_over_low_high:::::", -2, "fighter_upset_jump_over_low_01")
+
+Data("movement:standing:jump_over_low:::::", -2, "fighter_upset_jump_over_low_01")
+Data("movement:standing:jump_over_low:::::", -2, "mzi_upset_jump_over_low_02")
+
+//##################
+//##### DODGE #####
+//##################
+//## dodge:pose:item_type:type
+//##################
+
+Data("dodge:standing::right", -2, "fighter_dodge_right_combo")
+Data("dodge:standing::", -2, "fighter_dodge_down_combo")
+Data("dodge:standing::left", -2, "fighter_dodge_counter_left1")
+Data("dodge:standing::left", -2, "fighter_dodge_counter_left2")
+Data("dodge:standing::left", -2, "fighter_dodge_counter_left_kick")
+Data("dodge:standing::right", -2, "fighter_dodge_counter_right1")
+Data("dodge:standing::right", -2, "fighter_dodge_counter_right_kick")
+Data("dodge:standing::", -2, "fighter_dodge_counter_back1")
+Data("dodge:standing::", -2, "fighter_dodge_counter_back2")
+Data("dodge:standing::", -2, "fighter_dodge_counter_back3")
+Data("dodge:standing::", -2, "fighter_dodge_counter_down1")
+Data("dodge:standing::", -2, "fighter_dodge_counter_back_kick")
+
+//###############
+//#### START ####
+//###############
+//## start:is_standing:alarm_level:item_type:movement_type:angle:direction
+//##############
+
+Data("start:standing:::walk:90:left", -2, "fighter_walk_start_left")
+Data("start:standing:::walk:90:right", -2, "fighter_walk_start_right")
+Data("start:standing:::walk:0:", -2, "fighter_walk_start_front")
+Data("start:standing:::walk:180:left", -2, "fighter_walk_back_left")
+Data("start:standing:::walk:180:right", -2, "fighter_walk_back_right")
+
+Data("start:standing::::90:left", -2, "mzi_upset_sprint_start90l_lleg")
+Data("start:standing::::90:left", -2, "mzi_upset_sprint_start90l_rleg")
+Data("start:standing::::90:right", -2, "mzi_upset_sprint_start90r_lleg")
+Data("start:standing::::0:", -2, "mzi_upset_sprint_startf_lleg")
+Data("start:standing::::0:", -2, "mzi_upset_sprint_startf_rleg")
+Data("start:standing::::180:left", -2, "mzi_upset_sprint_start180l_lleg")
+Data("start:standing::::180:left", -2, "mzi_upset_sprint_start180l_rleg")
+Data("start:standing::::180:right", -2, "mzi_upset_sprint_start180r_lleg")
+Data("start:standing::::180:right", -2, "mzi_upset_sprint_start180r_rleg")
+
+//##############
+//#### STOP ####
+//##############
+//## stop:is_standing:alarm_level:item_type:movement_type:angle:direction:sudden
+//##############
+
+Data("stop:standing::::0::false", -2, "fighter_run_front_stop")
+
+//#######################
+//#### HIT REACTIONS ####
+//#######################
+//## hit_reaction:pose:hit_reaction:item_type:damage_type:attacker_pos:body_part:direction:severity
+//#######################
+
+Data("hit_reaction:standing:pain::chainsaw::::", -2, "MZ_chainsow_death_loopB")
+Data("hit_reaction:standing:counter_attack::chainsaw::::", -2, "MZ_chainsow_death_loopB")
+
+Data("hit_reaction:standing:counter_attack::all:rear:::", -2, "fighter_hit_reaction_counter_back")
+Data("hit_reaction:standing:counter_attack::all:rear:::", -2, "fighter_hit_reaction_counter_back_norotate")
+
+//Data("hit_reaction:standing:counter_attack::all:::forward:", -2, "fighter_hit_reaction_counter_back")
+//Data("hit_reaction:standing:counter_attack::all:::forward:", -2, "fighter_hit_reaction_counter_back_norotate")
+
+//Data("hit_reaction:standing:pain::all:rear:::", -2, "fighter_hit_reaction_counter_back")
+//Data("hit_reaction:standing:pain::all:rear:::", -2, "fighter_hit_reaction_counter_back_norotate")
+
+//Data("hit_reaction:standing:pain::all:::forward:", -2, "fighter_hit_reaction_counter_back")
+//Data("hit_reaction:standing:pain::all:::forward:", -2, "fighter_hit_reaction_counter_back_norotate")
+
+Data("hit_reaction:standing:counter_attack::all:::backward:heavy", -2, "fighter_hit_reaction_counter_2_back_slap")
+Data("hit_reaction:standing:counter_attack::all:::backward:heavy", -2, "fighter_hit_reaction_counter_2_back_kick")
+Data("hit_reaction:standing:counter_attack::all:::backward:heavy", -2, "fighter_hit_reaction_anger_back")
+
+//Data("hit_reaction:standing:pain::all:::backward:", -2, "fighter_hit_reaction_counter_2_back_slap")
+//Data("hit_reaction:standing:pain::all:::backward:", -2, "fighter_hit_reaction_counter_2_back_kick")
+//Data("hit_reaction:standing:pain::all:::backward:", -2, "fighter_hit_reaction_anger_back")
+
+Data("hit_reaction:standing:counter_attack::all:::right:heavy", -2, "fighter_hit_reaction_anger_left")
+//Data("hit_reaction:standing:pain::all:::right:", -2, "fighter_hit_reaction_anger_left")
+
+Data("hit_reaction:standing:counter_attack::all:::left:heavy", -2, "fighter_hit_reaction_anger_right")
+//Data("hit_reaction:standing:pain::all:::left:", -2, "fighter_hit_reaction_anger_right")
+
+Data("hit_reaction:standing:counter_attack::all::torso:backward:heavy", -2, "fighter_hit_reaction_anger_low")
+//Data("hit_reaction:standing:pain::all::legs:backward:", -2, "fighter_hit_reaction_anger_low")
+
+Data("hit_reaction:standing:counter_attack::all:::backward:heavy", -2, "fighter_hit_reaction_counter_heavy_back")
+Data("hit_reaction:standing:counter_attack::all:::left:heavy", -2, "fighter_hit_reaction_counter_heavy_left")
+Data("hit_reaction:standing:counter_attack::all:::right:heavy", -2, "fighter_hit_reaction_counter_heavy_right")
+
+Data("hit_reaction:standing:counter_attack::all::torso:backward:", -2, "fighter_hit_reaction_counter_2_back_kick")
+Data("hit_reaction:standing:counter_attack::all::legs:backward:", -2, "fighter_hit_reaction_counter_2_back_kick")
+
+Data("hit_reaction:standing:counter_attack::all:::backward:", -2, "fighter_hit_reaction_counter_2_back_slap")
+
+Data("hit_reaction:standing:counter_attack::all:::right:", -2, "fighter_hit_reaction_counter_2_left_hook")
+Data("hit_reaction:standing:counter_attack::all:::right:", -2, "fighter_hit_reaction_counter_2_left_kick")
+Data("hit_reaction:standing:counter_attack::all:::right:", -2, "fighter_hit_reaction_counter_2_left_punch")
+
+Data("hit_reaction:standing:counter_attack::all:::left:", -2, "fighter_hit_reaction_counter_2_right_hook")
+Data("hit_reaction:standing:counter_attack::all:::left:", -2, "fighter_hit_reaction_counter_2_right_slap")
+
+Data("hit_reaction:standing:counter_attack::all:::down:", -2, "fighter_hit_reaction_down_counter_1")
+Data("hit_reaction:standing:counter_attack::all:::down:", -2, "fighter_hit_reaction_down_counter_2")
+
+Data("hit_reaction:standing:counter_attack::all:::backward:light", -2, "fighter_hit_reaction_counter_light_back1")
+Data("hit_reaction:standing:counter_attack::all:::backward:light", -2, "fighter_hit_reaction_counter_light_back2")
+Data("hit_reaction:standing:counter_attack::all:::right:light", -2, "fighter_hit_reaction_counter_light_left")
+Data("hit_reaction:standing:counter_attack::all:::left:light", -2, "fighter_hit_reaction_counter_light_right")
+
+//Data("hit_reaction:standing:confusion::all::::", -2, "fighter_hit_reaction1")
+//Data("hit_reaction:standing:confusion::all::::", -2, "fighter_hit_reaction2")
+
+Data("hit_reaction:standing:pain::all:rear:::", -2, "mzi_stand_hitreaction_back_v03")
+Data("hit_reaction:standing:pain::all:rear:::", -2, "mzi_stand_hitreaction_back_v04")
+Data("hit_reaction:standing:pain::all:::forward:light", -2, "mzi_hit_reaction_mild_front01")
+
+Data("hit_reaction:standing:pain::all:::forward:", -2, "mzi_stand_hitreaction_back_v03")
+Data("hit_reaction:standing:pain::all:::forward:", -2, "mzi_stand_hitreaction_back_v04")
+Data("hit_reaction:standing:pain::all:::forward:light", -2, "mzi_hit_reaction_mild_front01")
+
+Data("hit_reaction:standing:pain::all:::up:heavy", -2, "mzi_stand_hitreaction_head_back_strong_01")
+Data("hit_reaction:standing:pain::all:::up:heavy", -2, "mzi_stand_hitreaction_head_back_strong_02")
+Data("hit_reaction:standing:pain::all:::down:heavy", -2, "mzi_stand_hitreaction_head_down_medium_01")
+Data("hit_reaction:standing:pain::all:::down:heavy", -2, "mzi_stand_hitreaction_head_down_medium_02")
+Data("hit_reaction:standing:pain::all:::left:heavy", -2, "mzi_stand_hitreaction_head_back_strong_01")
+Data("hit_reaction:standing:pain::all:::right:heavy", -2, "mzi_stand_hitreaction_head_back_strong_02")
+Data("hit_reaction:standing:pain::all:::backward:heavy", -2, "mzi_stand_hitreaction_head_back_strong_01")
+Data("hit_reaction:standing:pain::all:::backward:heavy", -2, "mzi_stand_hitreaction_head_back_strong_02")
+
+Data("hit_reaction:standing:pain::all:::up:medium", -2, "mzi_stand_hitreaction_head_left_medium_01")
+Data("hit_reaction:standing:pain::all:::up:medium", -2, "mzi_stand_hitreaction_head_left_medium_02")
+Data("hit_reaction:standing:pain::all:::up:medium", -2, "mzi_stand_hitreaction_head_right_medium_01")
+Data("hit_reaction:standing:pain::all:::up:medium", -2, "mzi_stand_hitreaction_head_right_medium_02")
+Data("hit_reaction:standing:pain::all:::down:medium", -2, "mzi_stand_hitreaction_head_down_medium_01")
+Data("hit_reaction:standing:pain::all:::down:medium", -2, "mzi_stand_hitreaction_head_down_medium_02")
+Data("hit_reaction:standing:pain::all:::left:medium", -2, "mzi_stand_hitreaction_head_left_medium_01")
+Data("hit_reaction:standing:pain::all:::left:medium", -2, "mzi_stand_hitreaction_head_left_medium_02")
+Data("hit_reaction:standing:pain::all:::right:medium", -2, "mzi_stand_hitreaction_head_right_medium_01")
+Data("hit_reaction:standing:pain::all:::right:medium", -2, "mzi_stand_hitreaction_head_right_medium_02")
+Data("hit_reaction:standing:pain::all:::backward:medium", -2, "mzi_stand_hitreaction_head_left_medium_01")
+Data("hit_reaction:standing:pain::all:::backward:medium", -2, "mzi_stand_hitreaction_head_left_medium_02")
+Data("hit_reaction:standing:pain::all:::backward:medium", -2, "mzi_stand_hitreaction_head_right_medium_01")
+Data("hit_reaction:standing:pain::all:::backward:medium", -2, "mzi_stand_hitreaction_head_right_medium_02")
+
+Data("hit_reaction:standing:pain::all:::up:light", -2, "mzi_hit_reaction_mild_front01")
+Data("hit_reaction:standing:pain::all:::down:light", -2, "mzi_hit_reaction_mild_back01")
+Data("hit_reaction:standing:pain::all:::left:light", -2, "mzi_hit_reaction_mild_left01")
+Data("hit_reaction:standing:pain::all:::left:light", -2, "mzi_hit_reaction_mild_left02")
+Data("hit_reaction:standing:pain::all:::right:light", -2, "mzi_hit_reaction_mild_right01")
+Data("hit_reaction:standing:pain::all:::right:light", -2, "mzi_hit_reaction_mild_right02")
+Data("hit_reaction:standing:pain::all:::right:light", -2, "mzi_hit_reaction_mild_right03")
+Data("hit_reaction:standing:pain::all:::backward:light", -2, "mzi_hit_reaction_mild_front01")

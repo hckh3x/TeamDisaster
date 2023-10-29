@@ -1,0 +1,17 @@
+!include("human_timing_events.def")
+
+////Keep this synchronized with EZombieTimingEvent enum!
+$EVENT_PULL_OUT_WEAPON                  (i, 101)
+$EVENT_CLENCH_CHECK_START               (i, 102)
+$EVENT_CLENCH_CHECK_END                 (i, 103)
+$EVENT_GRAB_CHECK_START                 (i, 104)
+$EVENT_GRAB_CHECK_END                   (i, 105)
+$EVENT_BERSERKER_ATTACK                 (i, 106)
+$EVENT_KNOCKED_DOWN                     (i, 107)
+$EVENT_CAN_BREAK_ATTACK                 (i, 108)
+$EVENT_CANNOT_ATTACK                    (i, 109)
+$EVENT_FORCE_EXECUTE_BERSERKER_ATTACK   (i, 112)
+$EVENT_START_RAM						(i, 113)
+$EVENT_STOP_RAM							(i, 114)
+$EVENT_TAKE_STAMINA                     (i, 115)
+$EVENT_IDLE_CORPSE_EATING               (i, 116)

@@ -1,0 +1,128 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////
+// Fizyka Single - ustawienia domyslne
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+!include("../Include/ODEPhysicsSingle.def")
+
+//-------------------------------------------------------------------------------------------------
+PhysicsParams()
+{
+    SetVelsGate(0.0, 0)    // MunDee Estuvo aquí
+    SetWaterFloat(0.06)
+    SetAutoDisableVels(0.08, 0.2, 1.5)    // MunDee Estuvo aquí
+    SetAbsorbers(0.05, 0.05)
+    SetMaxVels(100.0, 20)    // MunDee Estuvo aquí
+    SetMaxWatchingTime(0.8)
+    SynchroInterpolation(1)
+    AllowDepthCompression(1)
+}
+
+//-------------------------------------------------------------------------------------------------
+ContactParams("Terrain")
+{
+    ZeroFlags()
+    Mu(5)                  
+    
+    //SetModeFlag("dContactSoftERP")
+    //SetModeFlag("dContactSoftCFM")
+    //SoftERP(0.35) 
+    //SoftCFM(0.0001)
+
+    Ignore(0)
+}
+
+//-------------------------------------------------------------------------------------------------
+ContactParams("SimpleObjects")
+{
+    ZeroFlags()
+    Mu(5)                  
+    
+    //SetModeFlag("dContactSoftERP")
+    //SetModeFlag("dContactSoftCFM")
+    //SoftERP(0.25) 
+    //SoftCFM(0.00001)
+
+    Ignore(0)
+}
+
+//-------------------------------------------------------------------------------------------------
+ContactParams("NonODEObjects")
+{
+    ZeroFlags()
+    Mu(5)                  
+    
+    SetModeFlag("dContactSoftERP")
+    SetModeFlag("dContactSoftCFM")
+    SoftERP(0.35) 
+    SoftCFM(0.00001)
+    
+    Ignore(0)
+}
+
+//-------------------------------------------------------------------------------------------------
+ContactParams("ODEObjects")
+{
+    ZeroFlags()
+    Mu(0.0001)                  
+    
+    SetModeFlag("dContactSoftERP")
+    SetModeFlag("dContactSoftCFM")
+    SoftERP(0.35) 
+    SoftCFM(0.00001)
+    
+    Ignore(0)
+}
+
+//-------------------------------------------------------------------------------------------------
+ContactParams("Water")
+{
+    ZeroFlags()
+    Mu(0.1)                  
+    
+    //SetModeFlag("dContactSoftERP")
+    //SetModeFlag("dContactSoftCFM")
+    //SoftERP(0.25) 
+    //SoftCFM(0.0000001)
+
+    Ignore(0)
+}
+
+//-------------------------------------------------------------------------------------------------
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+/* DIDE CollisionSoundsParams()
+{
+    SetFreqMinMax(0.7, 1.2)
+    SetInterval(0.08)
+
+    SetHitMinVolumeLinVel(1.5)    // MunDee Estuvo aquí
+    SetHitMaxVolumeLinVel(7.0)    // MunDee Estuvo aquí
+
+    SetFrictionMinVolumeLinVel(20.0)    // MunDee Estuvo aquí
+    SetFrictionMaxVolumeLinVel(50.0)    // MunDee Estuvo aquí
+    SetFrictionDotThreshold(0.04)
+    
+    HitSoundLightHeavyMassThreshold(20.0)
+    
+    HitDefaultSound("zombie_part_fall_XX.wav", "zombie_part_fall_XX.wav") 
+    HitSound(SRF_WATER,      "hit_water_XX.wav",   "hit_big_water_XX.wav")
+} */
+
+//-------------------------------------------------------------------------------------------------
+/* DIDE CollisionFX()
+{
+    ClearFXs()
+
+    AddHitFX(SRF_WATER,    "hit_water",1.5,  10)    // MunDee Estuvo aquí
+    AddHitFX(SRF_WATER,    "OneWaterRing",1.2,  2)    // MunDee Estuvo aquí
+    AddHitFX(SRF_GRASS,    "hit_ground",1.5,  10)    // MunDee Estuvo aquí
+    AddHitFX(SRF_GROUND,   "hit_ground",1.5,  10)    // MunDee Estuvo aquí
+    AddHitFX(SRF_SAND,     "hit_ground",1.5,  10)    // MunDee Estuvo aquí
+    AddHitFX(SRF_TARMAC,   "hit_ground",1.5,  10)    // MunDee Estuvo aquí
+    AddHitFX(SRF_MUD,      "hit_mud",1.5,  10)    // MunDee Estuvo aquí
+    AddHitFX(SRF_GRAVEL,   "hit_ground",1.5,  10)    // MunDee Estuvo aquí
+} */
+
+
+

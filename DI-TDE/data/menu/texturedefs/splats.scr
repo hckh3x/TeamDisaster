@@ -1,0 +1,22 @@
+//--------- File generated automatically by TextureMergeTool ----------//
+// Generated: Mon Apr 26 14:40:56 2010
+
+//WARNING: do not add anything manually because any changes will be lost when this file will be generated again!
+//WARNING: please do not add any comments because they will be lost!
+//WARNING: do not modify (unless you know what are you doing)!
+
+!Texture(s, i, i) //texture file/ filename, width, height
+!HiddenInEditor(i) //if present, texture won't be visible in UIEditor combobox
+!Rect(s, i, i, i, i) //texture part / name, left, top, right, bottom (in pixels)
+!RectWithCorner(s, i, i, i, i, i, i) //texture part / name, left, top, right, bottom, corner width, corner height (in pixels)
+!Whole(s)
+
+Texture("splats.dds", 512, 512)
+{
+    Rect("splat_objective",   0,   0, 493,  59) // 493x 59
+    Rect("splat_needs"    ,   0,  59, 189, 195) // 189x136
+    Rect("splat_window"   , 189,  59, 410, 169) // 221x110
+    Rect("splat_character",   0, 195, 185, 293) // 185x 98
+    Rect("splat_players"  ,   0, 293,  89, 489) //  89x196
+    Rect("splat_item"     , 189, 169, 354, 274) // 165x105
+}

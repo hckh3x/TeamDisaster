@@ -1,0 +1,153 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////
+// Fizyka walk dla zyjacego Rammera
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+!include("../include/ODEPhysicsWalkFly.def")
+
+//-------------------------------------------------------------------------------------------------
+PhysicsParams()
+{
+    SetPhysicsSurfaceID(SRF_FLESH)
+    SetVelsGate(0.0, 0)    // MunDee Estuvo aquí
+    SetWaterFloat(-1)
+    SetAutoDisableVels(0.0, 0, 0)    // MunDee Estuvo aquí
+    SetAbsorbers(0, 0)
+    SetMaxVels(40.0, 10)    // MunDee Estuvo aquí
+    SetExtraGravity(0,-7.0, 0)    // MunDee Estuvo aquí
+    EnableMassPoint(1)
+    SynchroInterpolation(1)
+    CollisionDamageToMeMul(0, 0)
+    CollisionDamageToMeSpeedThreshold(15.0,15.0)    // MunDee Estuvo aquí
+    AllowContinuousCollisions(0, 0)
+    QuickStepNumIterations(5)
+    
+    CollisionSfx(0, 0)
+}
+
+//-------------------------------------------------------------------------------------------------
+PhysicsWalkParams()
+{
+    Mass(100)
+    
+    MaxGroundDEGToWalk(50)
+    MaxGroundDEGToJump(45)
+    MaxGroundDEGToBreak(60)
+    WalkAcceleration(10000.0)    // MunDee Estuvo aquí
+    WalkDeceleration(10000.0)    // MunDee Estuvo aquí
+    StairHeight(0.4)     // MunDee Estuvo aquí
+    AirControlFactor(1)
+    PotencyFactor(0.2)
+    MaxClimbSpeed(2.0)    // MunDee Estuvo aquí
+    ClimbMaxLookAroundAngleDEG(180)
+    Shape("YEllipsoid")
+
+    // AddHelperGeom("Bip01 head", "Bip01 head", "sphere", [12, 12, 12])
+}
+
+//-------------------------------------------------------------------------------------------------
+ContactParams("Terrain")
+{
+    ZeroFlags()
+    Mu(8)
+    SetModeFlag("dContactFDir1")
+    
+    //SetModeFlag("dContactSoftERP")
+    //SetModeFlag("dContactSoftCFM")
+    //SoftERP(0.35) 
+    //SoftCFM(0.0000001)
+
+    Ignore(0)
+}
+
+//-------------------------------------------------------------------------------------------------
+ContactParams("SimpleObjects")
+{
+    ZeroFlags()
+    Mu(8)                  
+    
+    //SetModeFlag("dContactSlip1")
+    //SetModeFlag("dContactSlip2")
+    //Slip1(1)                            
+    //Slip2(1)                
+
+    //SetModeFlag("dContactSoftERP")
+    //SetModeFlag("dContactSoftCFM")
+    //SoftERP(0.35) 
+    //SoftCFM(0.0000001)
+
+    Ignore(0)
+}
+
+//-------------------------------------------------------------------------------------------------
+ContactParams("NonODEObjects")
+{
+    ZeroFlags()
+    ZeroFlags()
+    Mu(8)                  
+    SetModeFlag("dContactFDir1")
+    
+    //SetModeFlag("dContactSoftERP")
+    //SetModeFlag("dContactSoftCFM")
+    //SoftERP(0.35) 
+    //SoftCFM(0.00000001)
+
+    Ignore(0)
+}
+
+//-------------------------------------------------------------------------------------------------
+ContactParams("ODEObjects")
+{
+    ZeroFlags()
+    Mu(8)                  
+    
+    //SetModeFlag("dContactSlip1")
+    //SetModeFlag("dContactSlip2")
+    //Slip1(1000)                             
+    //Slip2(1000)             
+
+    //SetModeFlag("dContactSoftERP")
+    //SetModeFlag("dContactSoftCFM")
+    //SoftERP(0.35) 
+    //SoftCFM(0.0000001)
+
+    Ignore(0)
+}
+
+//-------------------------------------------------------------------------------------------------
+ContactParams("Water")
+{
+    ZeroFlags()
+    Mu(8)                  
+    
+    //SetModeFlag("dContactSlip1")
+    //SetModeFlag("dContactSlip2")
+    //Slip1(1)                            
+    //Slip2(1)                
+
+    //SetModeFlag("dContactSoftERP")
+    //SetModeFlag("dContactSoftCFM")
+    //SoftERP(0.25) 
+    //SoftCFM(0.0001)
+
+    Ignore(0)
+}
+
+//-------------------------------------------------------------------------------------------------
+
+
+//-------------------------------------------------------------------------------------------------
+/* DIDE CollisionSoundsParams()
+{
+    SetFreqMinMax(0.8, 1.2)
+    SetInterval(0.1)
+
+    SetHitMinVolumeLinVel(4.0)    // MunDee Estuvo aquí
+    SetHitMaxVolumeLinVel(6.0)    // MunDee Estuvo aquí
+
+    SetFrictionMinVolumeLinVel(0.0)    // MunDee Estuvo aquí
+    SetFrictionMaxVolumeLinVel(20.0)    // MunDee Estuvo aquí
+    SetFrictionDotThreshold(0.04)
+    
+    HitDefaultSound("", "")
+} */
+

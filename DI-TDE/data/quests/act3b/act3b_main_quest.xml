@@ -1,0 +1,4547 @@
+<?xml version="1.0"?>
+<QuestsDefinitions
+     level="ACT3B"
+     pxsl_line="3">
+    <Quest
+         name="ACT3B_Lab1"
+         parent="ACT3A_GoToTheLab"
+         reward="3000"
+         glued="true"
+         new_chapter="true"
+         pxsl_line="4">
+        <Phase
+             type="AND"
+             name="ACT3BStart"
+             objective="&amp;ACT3B_Lab1_Objective&amp;"
+             pxsl_line="5">
+            <Path
+                 pxsl_line="6">
+                <Phase
+                     type="go to"
+                     name="_"
+                     distance="66.6"
+                     pxsl_line="7">
+                    <Destination
+                         pxsl_line="7">
+                        <QuestObject
+                             class="Marker"
+                             name="act3b_logic::Loc_Boat2"
+                             pxsl_line="7" />
+                    </Destination>
+                </Phase>
+                <Phase
+                     type="appear"
+                     name="StartCleaning"
+                     mode="hide"
+                     pxsl_line="8">
+                    <Object
+                         pxsl_line="9">
+                        <QuestObject
+                             class="ModelObject"
+                             name="Lab_CageDoor_000opened"
+                             pxsl_line="9" />
+                    </Object>
+                    <Object
+                         pxsl_line="10">
+                        <QuestObject
+                             class="ModelObject"
+                             name="Lab_CageDoor_001opened"
+                             pxsl_line="10" />
+                    </Object>
+                    <Object
+                         pxsl_line="11">
+                        <QuestObject
+                             class="ModelObject"
+                             name="Lab_CageDoor_002opened"
+                             pxsl_line="11" />
+                    </Object>
+                    <Object
+                         pxsl_line="12">
+                        <QuestObject
+                             class="ModelObject"
+                             name="Lab_CageDoor_003opened"
+                             pxsl_line="12" />
+                    </Object>
+                    <Object
+                         pxsl_line="13">
+                        <QuestObject
+                             class="ModelObject"
+                             name="Scientist003_commode_Calm"
+                             pxsl_line="13" />
+                    </Object>
+                    <Object
+                         pxsl_line="14">
+                        <QuestObject
+                             class="AIDeadBodySpawnBoxAuto"
+                             name="DeadBody_RescueYerema_001"
+                             pxsl_line="14" />
+                    </Object>
+                    <Object
+                         pxsl_line="15">
+                        <QuestObject
+                             class="AIDeadBodySpawnBoxAuto"
+                             name="DeadBody_RescueYerema_002"
+                             pxsl_line="15" />
+                    </Object>
+                    <Object
+                         pxsl_line="16">
+                        <QuestObject
+                             class="AIDeadBodySpawnBoxAuto"
+                             name="DeadBody_RescueYerema_003"
+                             pxsl_line="16" />
+                    </Object>
+                    <Object
+                         pxsl_line="17">
+                        <QuestObject
+                             class="QuestInventoryItemDI"
+                             name="act3b_logic::item_Antidote"
+                             pxsl_line="17" />
+                    </Object>
+                    <Object
+                         pxsl_line="18">
+                        <QuestObject
+                             class="QuestInventoryItemDI"
+                             name="act3b_logic::Scientist005_Food_001"
+                             pxsl_line="18" />
+                    </Object>
+                    <Object
+                         pxsl_line="19">
+                        <QuestObject
+                             class="QuestInventoryItemDI"
+                             name="act3b_logic::Scientist005_Food_002"
+                             pxsl_line="19" />
+                    </Object>
+                    <Object
+                         pxsl_line="20">
+                        <QuestObject
+                             class="ModelObject"
+                             name="act3b_logic::Door_Lab_001_destr"
+                             pxsl_line="20" />
+                    </Object>
+                    <Object
+                         pxsl_line="21">
+                        <QuestObject
+                             class="ModelObject"
+                             name="act3b_logic::door_QF01_Lab_Doors_First_A_dest"
+                             pxsl_line="21" />
+                    </Object>
+                    <Object
+                         pxsl_line="22">
+                        <QuestObject
+                             class="ModelObject"
+                             name="act3b_logic::door_QF01_Lab_Doors_First_B_dest"
+                             pxsl_line="22" />
+                    </Object>
+                    <Object
+                         pxsl_line="23">
+                        <QuestObject
+                             class="ModelObject"
+                             name="Door_West_dest"
+                             pxsl_line="23" />
+                    </Object>
+                    <Object
+                         pxsl_line="24">
+                        <QuestObject
+                             class="ModelObject"
+                             name="Door_Lab_DressingRoom_001_dest"
+                             pxsl_line="24" />
+                    </Object>
+                    <Object
+                         pxsl_line="25">
+                        <QuestObject
+                             class="NavMeshDynamicObject"
+                             name="Door_Lab_DressingRoom_002_dest"
+                             pxsl_line="25" />
+                    </Object>
+                    <Object
+                         pxsl_line="26">
+                        <QuestObject
+                             class="NavMeshDynamicObject"
+                             name="door_Lab_Hallway_A_dest"
+                             pxsl_line="26" />
+                    </Object>
+                    <Object
+                         pxsl_line="27">
+                        <QuestObject
+                             class="NavMeshDynamicObject"
+                             name="door_Lab_Hallway_B_dest"
+                             pxsl_line="27" />
+                    </Object>
+                    <Object
+                         pxsl_line="28">
+                        <QuestObject
+                             class="ModelObject"
+                             name="act3b_logic::broken_glass_001"
+                             pxsl_line="28" />
+                    </Object>
+                    <Object
+                         pxsl_line="29">
+                        <QuestObject
+                             class="ModelObject"
+                             name="act3b_logic::broken_glass_002"
+                             pxsl_line="29" />
+                    </Object>
+                    <Object
+                         pxsl_line="30">
+                        <QuestObject
+                             class="ModelObject"
+                             name="act3b_logic::broken_glass_003"
+                             pxsl_line="30" />
+                    </Object>
+                    <Object
+                         pxsl_line="31">
+                        <QuestObject
+                             class="ModelObject"
+                             name="act3b_logic::broken_glass_004"
+                             pxsl_line="31" />
+                    </Object>
+                    <Object
+                         pxsl_line="32">
+                        <QuestObject
+                             class="PhysicalSwitchDI"
+                             name="act3b_logic::act3b_lab_camp_gate_auto_A"
+                             pxsl_line="32" />
+                    </Object>
+                    <Object
+                         pxsl_line="33">
+                        <QuestObject
+                             class="PhysicalSwitchDI"
+                             name="act3b_logic::act3b_lab_camp_gate_auto_B"
+                             pxsl_line="33" />
+                    </Object>
+                    <!-- ,o AIDeadBodySpawnBoxAuto act3b_logic::Scientist005_Dead -->
+                </Phase>
+                <Phase
+                     type="set state"
+                     name="Quest Hub Boat on"
+                     desired_state="on"
+                     pxsl_line="35">
+                    <Trigger
+                         pxsl_line="35">
+                        <QuestObject
+                             class="VirtualSwitchDI"
+                             name="act3b_logic::Quest_hub_boat"
+                             pxsl_line="35" />
+                    </Trigger>
+                </Phase>
+                <Phase
+                     type="set state"
+                     name="_"
+                     desired_state="on"
+                     pxsl_line="36">
+                    <Trigger
+                         pxsl_line="36">
+                        <QuestObject
+                             class="VirtualSwitchDI"
+                             name="vs_Zombie_FromBayToLab"
+                             pxsl_line="36" />
+                    </Trigger>
+                </Phase>
+                <Phase
+                     type="set state"
+                     name="_"
+                     desired_state="on"
+                     pxsl_line="37">
+                    <Trigger
+                         pxsl_line="37">
+                        <QuestObject
+                             class="VirtualSwitchDI"
+                             name="vs_Lab_SafeZone"
+                             pxsl_line="37" />
+                    </Trigger>
+                </Phase>
+                <Phase
+                     type="unlock hub"
+                     name="_"
+                     hub="HubChapter_12"
+                     pxsl_line="38" />
+                <Phase
+                     type="set state"
+                     name="_"
+                     desired_state="on"
+                     pxsl_line="39">
+                    <Trigger
+                         pxsl_line="39">
+                        <QuestObject
+                             class="VirtualSwitchDI"
+                             name="VS_Music_Fight"
+                             pxsl_line="39" />
+                    </Trigger>
+                </Phase>
+                <Phase
+                     type="set state"
+                     name="_"
+                     desired_state="on"
+                     pxsl_line="40">
+                    <Trigger
+                         pxsl_line="40">
+                        <QuestObject
+                             class="VirtualSwitchDI"
+                             name="VS_Music_Entering_Laboratory"
+                             pxsl_line="40" />
+                    </Trigger>
+                </Phase>
+                <Phase
+                     type="set state"
+                     name="_"
+                     desired_state="on"
+                     pxsl_line="41">
+                    <Trigger
+                         pxsl_line="41">
+                        <QuestObject
+                             class="VirtualSwitchDI"
+                             name="vs_DeadBodies_Lab_Enternance_001"
+                             pxsl_line="41" />
+                    </Trigger>
+                </Phase>
+                <!-- ,enable _ PlayableAreaController area_WayToTheLab -->
+                <Phase
+                     type="set dialog"
+                     name="NF West"
+                     speaker="West"
+                     group="West_Q0_NF"
+                     pxsl_line="43" />
+                <!-- ,dialog <<NF Technican>>                ScientistTechnican  ScientistTechnican_Q1_NF -->
+                <Phase
+                     type="go to"
+                     name="Investigate Lab - start"
+                     distance="200.0"
+                     pxsl_line="45">
+                    <Destination
+                         pxsl_line="45">
+                        <QuestObject
+                             class="SpawnPoint"
+                             name="act3b_logic::MapStart"
+                             pxsl_line="45" />
+                    </Destination>
+                    <DebugPlayerPosition
+                         pxsl_line="46">
+                        <QuestObject
+                             class="SpawnPoint"
+                             name="act3b_logic::MapStart"
+                             pxsl_line="46" />
+                    </DebugPlayerPosition>
+                </Phase>
+                <Phase
+                     type="checkpoint"
+                     name="AutoSave001"
+                     pxsl_line="47">
+                    <Destination
+                         pxsl_line="47">
+                        <QuestObject
+                             class="SpawnPoint"
+                             name="act3b_logic::MapStart"
+                             pxsl_line="47" />
+                    </Destination>
+                </Phase>
+                <Phase
+                     type="talk"
+                     name="_"
+                     speaker="Mowen"
+                     group="Nkono_M_B"
+                     show_locations="false"
+                     auto_start="true"
+                     pxsl_line="48" />
+                <Phase
+                     type="talk"
+                     name="_"
+                     speaker="Jin"
+                     group="Jin_QF10_NF"
+                     show_locations="false"
+                     auto_start="true"
+                     pxsl_line="49" />
+                <Phase
+                     type="AND"
+                     name="_"
+                     pxsl_line="50">
+                    <Path
+                         pxsl_line="51">
+                        <Phase
+                             type="go to"
+                             name="_"
+                             distance="10.0"
+                             show_locations="false"
+                             pxsl_line="52">
+                            <Destination
+                                 pxsl_line="52">
+                                <QuestObject
+                                     class="Marker"
+                                     name="act3b_logic::loc_EnteringLabGates"
+                                     pxsl_line="52" />
+                            </Destination>
+                        </Phase>
+                        <Phase
+                             type="talk"
+                             name="_"
+                             speaker="voice2d"
+                             group="Intercom001_QF00_NF_2D_A"
+                             auto_start="true"
+                             pxsl_line="53" />
+                    </Path>
+                    <Path
+                         pxsl_line="54">
+                        <Phase
+                             type="go to"
+                             name="_"
+                             distance="8.0"
+                             pxsl_line="55">
+                            <Destination
+                                 pxsl_line="55">
+                                <QuestObject
+                                     class="Marker"
+                                     name="act3b_logic::Laboratory_doors"
+                                     pxsl_line="55" />
+                            </Destination>
+                        </Phase>
+                    </Path>
+                </Phase>
+                <Phase
+                     type="talk"
+                     name="_"
+                     speaker="voice2d"
+                     group="Intercom001_QF00_NF_2D_C"
+                     auto_start="true"
+                     pxsl_line="56" />
+                <Phase
+                     type="set state"
+                     name="_"
+                     desired_state="off"
+                     pxsl_line="57">
+                    <Trigger
+                         pxsl_line="57">
+                        <QuestObject
+                             class="VirtualSwitchDI"
+                             name="act3b_logic::switch_lab_attractors"
+                             pxsl_line="57" />
+                    </Trigger>
+                </Phase>
+                <Phase
+                     type="kill"
+                     name="_"
+                     pxsl_line="58">
+                    <Spawner
+                         pxsl_line="58">
+                        <QuestObject
+                             class="AISpawnBoxNumber"
+                             name="act3b_logic::LabZombieMainEnternance"
+                             pxsl_line="58" />
+                    </Spawner>
+                </Phase>
+                <Phase
+                     type="talk"
+                     name="_"
+                     speaker="voice2d"
+                     group="Intercom001_QF00_NF_2D_D"
+                     auto_start="true"
+                     pxsl_line="59" />
+                <Phase
+                     type="unlock hub"
+                     name="_"
+                     hub="HubChapter_13_14_15"
+                     pxsl_line="60" />
+                <Phase
+                     type="appear"
+                     name="_"
+                     mode="show"
+                     pxsl_line="61">
+                    <Object
+                         pxsl_line="61">
+                        <QuestObject
+                             class="HumanAI"
+                             name="JoelDirt"
+                             pxsl_line="61" />
+                    </Object>
+                </Phase>
+                <Phase
+                     type="set lifeplace"
+                     name="_"
+                     desired_state="on"
+                     pxsl_line="62">
+                    <LifePlace
+                         pxsl_line="62">
+                        <QuestObject
+                             class="NPCLifePlace"
+                             name="LP_Joel_001"
+                             pxsl_line="62" />
+                    </LifePlace>
+                </Phase>
+                <Phase
+                     type="set state"
+                     name="unlock gates"
+                     desired_state="on"
+                     pxsl_line="63">
+                    <Trigger
+                         pxsl_line="63">
+                        <QuestObject
+                             class="VirtualSwitchDI"
+                             name="act3b_logic::switch_lab_gates"
+                             pxsl_line="63" />
+                    </Trigger>
+                </Phase>
+                <Phase
+                     type="set state"
+                     name="_"
+                     desired_state="off"
+                     pxsl_line="64">
+                    <Trigger
+                         pxsl_line="64">
+                        <QuestObject
+                             class="VirtualSwitchDI"
+                             name="VS_Music_Fight"
+                             pxsl_line="64" />
+                    </Trigger>
+                </Phase>
+                <Phase
+                     type="set state"
+                     name="_"
+                     desired_state="off"
+                     pxsl_line="65">
+                    <Trigger
+                         pxsl_line="65">
+                        <QuestObject
+                             class="VirtualSwitchDI"
+                             name="VS_Music_Entering_Laboratory"
+                             pxsl_line="65" />
+                    </Trigger>
+                </Phase>
+                <Phase
+                     type="set state"
+                     name="_"
+                     desired_state="on"
+                     pxsl_line="66">
+                    <Trigger
+                         pxsl_line="66">
+                        <QuestObject
+                             class="VirtualSwitchDI"
+                             name="VS_Music_Hub_Laboratory"
+                             pxsl_line="66" />
+                    </Trigger>
+                </Phase>
+                <Phase
+                     type="set state"
+                     name="_"
+                     desired_state="on"
+                     pxsl_line="67">
+                    <Trigger
+                         pxsl_line="67">
+                        <QuestObject
+                             class="VirtualSwitchDI"
+                             name="act3b_logic::vs_chatter_001"
+                             pxsl_line="67" />
+                    </Trigger>
+                </Phase>
+                <Phase
+                     type="go to"
+                     name="_"
+                     distance="4.5"
+                     pxsl_line="68">
+                    <Destination
+                         pxsl_line="68">
+                        <QuestObject
+                             class="Marker"
+                             name="act3b_logic::m_ScientistTechnican_NearDoor"
+                             pxsl_line="68" />
+                    </Destination>
+                </Phase>
+                <Phase
+                     type="talk"
+                     name="_"
+                     speaker="ScientistTechnican"
+                     group="ScientistTechnican_Q0_NF"
+                     show_locations="false"
+                     auto_start="true"
+                     pxsl_line="69" />
+                <Phase
+                     type="set state"
+                     name="_"
+                     desired_state="off"
+                     pxsl_line="70">
+                    <Trigger
+                         pxsl_line="70">
+                        <QuestObject
+                             class="VirtualSwitchDI"
+                             name="act3b_logic::vs_chatter_001"
+                             pxsl_line="70" />
+                    </Trigger>
+                </Phase>
+                <Phase
+                     type="AND"
+                     name="_"
+                     pxsl_line="71">
+                    <Path
+                         pxsl_line="72">
+                        <Phase
+                             type="go to"
+                             name="_"
+                             distance="4.5"
+                             pxsl_line="73">
+                            <Destination
+                                 pxsl_line="73">
+                                <QuestObject
+                                     class="Marker"
+                                     name="act3b_logic::Loc_Lab_West"
+                                     pxsl_line="73" />
+                            </Destination>
+                        </Phase>
+                        <Phase
+                             type="talk"
+                             name="Investigate lab - Talk with West"
+                             speaker="West"
+                             group="West_Q0_NF"
+                             following_group="West_Q0_InProgress"
+                             pxsl_line="74">
+                            <DebugPlayerPosition
+                                 pxsl_line="75">
+                                <QuestObject
+                                     class="SpawnPoint"
+                                     name="act3b_logic::debugpos_Lab_int"
+                                     pxsl_line="75" />
+                            </DebugPlayerPosition>
+                        </Phase>
+                    </Path>
+                    <Path
+                         pxsl_line="76">
+                        <Phase
+                             type="go to"
+                             name="_"
+                             distance="2.5"
+                             show_locations="false"
+                             pxsl_line="77">
+                            <Destination
+                                 pxsl_line="77">
+                                <QuestObject
+                                     class="Marker"
+                                     name="act3b_logic::Loc_Lab_Bob_Chat"
+                                     pxsl_line="77" />
+                            </Destination>
+                        </Phase>
+                        <Phase
+                             type="talk"
+                             name="_"
+                             speaker="Scientist001"
+                             group="Scientist001_QF00_NF"
+                             show_locations="false"
+                             auto_start="true"
+                             pxsl_line="78" />
+                    </Path>
+                </Phase>
+                <!-- ,set-lp _ NPCLifePlace act3b_logic::LP_DoResearch_West_Working -state=off -->
+                <!-- ,set-lp _ NPCLifePlace act3b_logic::LP_DoResearch_West_Talking -state=on -->
+                <Phase
+                     type="movie"
+                     name="_"
+                     movie="movie_bloodsample"
+                     pxsl_line="81">
+                    <PostMovie
+                         pxsl_line="82">
+                        <Phase
+                             type="move ai"
+                             name="_"
+                             teleport="true"
+                             pxsl_line="83">
+                            <Destination
+                                 pxsl_line="83">
+                                <QuestObject
+                                     class="Marker"
+                                     name="act3b_logic::m_Scientist001_pos"
+                                     pxsl_line="83" />
+                            </Destination>
+                            <AI
+                                 pxsl_line="84">
+                                <QuestObject
+                                     class="HumanAI"
+                                     name="act3b_logic::Scientist001"
+                                     pxsl_line="84" />
+                            </AI>
+                        </Phase>
+                    </PostMovie>
+                </Phase>
+                <!-- cos powinno sie chyba tutaj stac  -->
+                <Phase
+                     type="appear"
+                     name="StartCleaning"
+                     mode="hide"
+                     pxsl_line="86">
+                    <Object
+                         pxsl_line="87">
+                        <QuestObject
+                             class="HumanAI"
+                             name="act3b_logic::SQ_M_01_Monroe"
+                             pxsl_line="87" />
+                    </Object>
+                    <Object
+                         pxsl_line="88">
+                        <QuestObject
+                             class="HumanAI"
+                             name="act3b_logic::SQ_N_01_Nguyen"
+                             pxsl_line="88" />
+                    </Object>
+                    <Object
+                         pxsl_line="89">
+                        <QuestObject
+                             class="HumanAI"
+                             name="act3b_logic::SQ_L_01_Lachance"
+                             pxsl_line="89" />
+                    </Object>
+                </Phase>
+                <Phase
+                     type="set state"
+                     name="_"
+                     desired_state="off"
+                     pxsl_line="90">
+                    <Trigger
+                         pxsl_line="90">
+                        <QuestObject
+                             class="VirtualSwitchDI"
+                             name="act3b_logic::act3b_lab_willie_barrier"
+                             pxsl_line="90" />
+                    </Trigger>
+                </Phase>
+                <Phase
+                     type="move ai"
+                     name="_"
+                     teleport="true"
+                     pxsl_line="91">
+                    <Destination
+                         pxsl_line="91">
+                        <QuestObject
+                             class="Marker"
+                             name="act3b_logic::m_ScientistTechnican_NearDesk"
+                             pxsl_line="91" />
+                    </Destination>
+                    <AI
+                         pxsl_line="92">
+                        <QuestObject
+                             class="HumanAI"
+                             name="act3b_logic::ScientistTechnican"
+                             pxsl_line="92" />
+                    </AI>
+                </Phase>
+                <Phase
+                     type="talk"
+                     name="_"
+                     speaker="West"
+                     group="West_Q0_Accomplished"
+                     show_locations="false"
+                     auto_start="true"
+                     gather_radius="3"
+                     pxsl_line="93" />
+                <Phase
+                     type="set reward"
+                     name="_"
+                     speaker="West"
+                     item="Cash_CashGreen"
+                     count="170"
+                     pxsl_line="94" />
+                <!-- ,set-lp _ NPCLifePlace act3b_logic::LP_DoResearch_West_Talking -state=off -->
+                <!-- ,set-lp _ NPCLifePlace act3b_logic::LP_DoResearch_West_Working -state=on -->
+                <Phase
+                     type="set dialog"
+                     name="NF Scientist001"
+                     speaker="Scientist001"
+                     group="Scientist001_Q1_NF"
+                     pxsl_line="97" />
+                <Phase
+                     type="set state"
+                     name="_"
+                     desired_state="off"
+                     pxsl_line="98">
+                    <Trigger
+                         pxsl_line="98">
+                        <QuestObject
+                             class="VirtualSwitchDI"
+                             name="vs_DeadBodies_Lab_Enternance_001"
+                             pxsl_line="98" />
+                    </Trigger>
+                </Phase>
+                <Phase
+                     type="set state"
+                     name="_"
+                     desired_state="off"
+                     pxsl_line="99">
+                    <Trigger
+                         pxsl_line="99">
+                        <QuestObject
+                             class="VirtualSwitchDI"
+                             name="vs_Zombie_FromBayToLab"
+                             pxsl_line="99" />
+                    </Trigger>
+                </Phase>
+                <Phase
+                     type="set state"
+                     name="Quest Hub Lab on"
+                     desired_state="on"
+                     pxsl_line="100">
+                    <Trigger
+                         pxsl_line="100">
+                        <QuestObject
+                             class="VirtualSwitchDI"
+                             name="act3b_logic::Quest_hub_laboratory"
+                             pxsl_line="100" />
+                    </Trigger>
+                </Phase>
+                <Phase
+                     type="set state"
+                     name="_"
+                     desired_state="on"
+                     pxsl_line="101">
+                    <Trigger
+                         pxsl_line="101">
+                        <QuestObject
+                             class="VirtualSwitchDI"
+                             name="vs_Zombie_AfterEnteringLab"
+                             pxsl_line="101" />
+                    </Trigger>
+                </Phase>
+                <!-- ,set _ PlayableAreaController area_WayToTheLab -state=off -->
+                <!-- ,disable _ PlayableAreaController area_WayToTheLab -->
+                <Phase
+                     type="checkpoint"
+                     name="AutoSave002"
+                     pxsl_line="104">
+                    <Destination
+                         pxsl_line="104">
+                        <QuestObject
+                             class="SpawnPoint"
+                             name="act3b_logic::debugpos_Lab"
+                             pxsl_line="104" />
+                    </Destination>
+                </Phase>
+            </Path>
+        </Phase>
+    </Quest>
+    <Quest
+         name="ACT3B_West_research_001"
+         parent="ACT3B_Lab1"
+         quest_giver="West"
+         pxsl_line="106">
+        <Phase
+             type="sibling quests guard"
+             name="unlock next West quests"
+             required_siblings="2"
+             objective="&amp;ACT3B_WestPeople_Objective&amp;"
+             pxsl_line="107">
+            <!-- WARNING This phase will block the flow until at least given number -->
+            <!-- of this quest's direct siblings are accomplished. -->
+        </Phase>
+        <Phase
+             type="set state"
+             name="_"
+             desired_state="on"
+             pxsl_line="108">
+            <Trigger
+                 pxsl_line="108">
+                <QuestObject
+                     class="VirtualSwitchDI"
+                     name="act3b_logic::VS_QF01_Lab_Doors_First"
+                     pxsl_line="108" />
+            </Trigger>
+        </Phase>
+        <Phase
+             type="set state"
+             name="_"
+             desired_state="on"
+             pxsl_line="109">
+            <Trigger
+                 pxsl_line="109">
+                <QuestObject
+                     class="VirtualSwitchDI"
+                     name="act3b_logic::VS_QF01_Lab_Doors_Second"
+                     pxsl_line="109" />
+            </Trigger>
+        </Phase>
+        <Phase
+             type="set state"
+             name="_"
+             desired_state="on"
+             pxsl_line="110">
+            <Trigger
+                 pxsl_line="110">
+                <QuestObject
+                     class="VirtualSwitchDI"
+                     name="act3b_logic::VS_YeremaEscort_FenceGate"
+                     pxsl_line="110" />
+            </Trigger>
+        </Phase>
+        <!-- ,checkpoint AutoSave003 SpawnPoint act3b_logic::debugpos_Lab_int -->
+        <!-- ,set-lp _ NPCLifePlace act3b_logic::LP_DoResearch_West_Working -state=off -->
+        <!-- ,set-lp _ NPCLifePlace act3b_logic::LP_DoResearch_West_Talking -state=on -->
+        <Phase
+             type="move ai"
+             name="_"
+             teleport="false"
+             pxsl_line="114">
+            <Destination
+                 pxsl_line="114">
+                <QuestObject
+                     class="Marker"
+                     name="act3b_logic::m_QF01_BoB_NearFrank"
+                     pxsl_line="114" />
+            </Destination>
+            <AI
+                 pxsl_line="115">
+                <QuestObject
+                     class="HumanAI"
+                     name="act3b_logic::Scientist001"
+                     pxsl_line="115" />
+            </AI>
+        </Phase>
+        <Phase
+             type="set dialog"
+             name="_"
+             speaker="Scientist001"
+             pxsl_line="116" />
+        <Phase
+             type="AND"
+             name="_"
+             objective="&amp;ACT3B_WestTalkTo_Objective&amp;"
+             pxsl_line="117">
+            <Path
+                 pxsl_line="117">
+                <Phase
+                     type="wait guard"
+                     name="_"
+                     time="2"
+                     pxsl_line="118" />
+                <Phase
+                     type="talk"
+                     name="Natives Blood - Talk with West - Start"
+                     speaker="West"
+                     group="West_Q1_NF"
+                     brief_reward="7500"
+                     brief_difficulty="hard"
+                     following_group="West_Q1_InProgress"
+                     gather_radius="3"
+                     pxsl_line="119">
+                    <DebugPlayerPosition
+                         pxsl_line="120">
+                        <QuestObject
+                             class="SpawnPoint"
+                             name="act3b_logic::debugpos_Lab_int"
+                             pxsl_line="120" />
+                    </DebugPlayerPosition>
+                </Phase>
+            </Path>
+        </Phase>
+        <!-- ,set-lp _ NPCLifePlace act3b_logic::LP_DoResearch_West_Talking -state=off -->
+        <!-- ,set-lp _ NPCLifePlace act3b_logic::LP_DoResearch_West_Working -state=on -->
+        <!-- ,dialog <<NF Scientist001>>                     Scientist001                              -group=Scientist001_Q2_NF -->
+    </Quest>
+    <Quest
+         name="ACT3B_WestNatives_001"
+         parent="ACT3B_West_research_001"
+         quest_giver="West"
+         new_chapter="true"
+         pxsl_line="125">
+        <Phase
+             type="checkpoint"
+             name="AutoSave003"
+             pxsl_line="126">
+            <Destination
+                 pxsl_line="126">
+                <QuestObject
+                     class="SpawnPoint"
+                     name="act3b_logic::debugpos_Lab_int"
+                     pxsl_line="126" />
+            </Destination>
+        </Phase>
+        <Phase
+             type="AND"
+             name="_"
+             objective="&amp;ACT3B_WestNatives_Objective&amp;"
+             pxsl_line="127">
+            <Path
+                 pxsl_line="127">
+                <Phase
+                     type="appear"
+                     name="_"
+                     mode="hide"
+                     pxsl_line="128">
+                    <Object
+                         pxsl_line="129">
+                        <QuestObject
+                             class="ModelObject"
+                             name="act3b_logic::act3b_lab_camp_gate_fake_A"
+                             pxsl_line="129" />
+                    </Object>
+                    <Object
+                         pxsl_line="130">
+                        <QuestObject
+                             class="ModelObject"
+                             name="act3b_logic::act3b_lab_camp_gate_fake_B"
+                             pxsl_line="130" />
+                    </Object>
+                </Phase>
+                <Phase
+                     type="appear"
+                     name="_"
+                     mode="show"
+                     pxsl_line="131">
+                    <Object
+                         pxsl_line="132">
+                        <QuestObject
+                             class="PhysicalSwitchDI"
+                             name="act3b_logic::act3b_lab_camp_gate_auto_A"
+                             pxsl_line="132" />
+                    </Object>
+                    <Object
+                         pxsl_line="133">
+                        <QuestObject
+                             class="PhysicalSwitchDI"
+                             name="act3b_logic::act3b_lab_camp_gate_auto_B"
+                             pxsl_line="133" />
+                    </Object>
+                </Phase>
+                <!-- ,set _ VirtualSwitchDI act3b_logic::act3b_lab_camp_gate_locker -state=on -->
+                <!-- ,set _ DoorDI act3b_logic::act3b_lab_camp_gate_A -state=opened -->
+                <!-- ,set _ DoorDI act3b_logic::act3b_lab_camp_gate_B -state=opened -->
+                <!-- ,set _ VirtualSwitchDI                       act3b_logic::vs_Zombie_FromLabBarracksToOpeCave          -state=on -->
+                <!-- ,set _ VirtualSwitchDI                       act3b_logic::vs_Zombie_FromOpeCaveToLabBarracks          -state=off -->
+                <Phase
+                     type="set state"
+                     name="_"
+                     desired_state="on"
+                     pxsl_line="139">
+                    <Trigger
+                         pxsl_line="139">
+                        <QuestObject
+                             class="VirtualSwitchDI"
+                             name="act3b_logic::Ope_cave_arena_barriers"
+                             pxsl_line="139" />
+                    </Trigger>
+                </Phase>
+                <Phase
+                     type="set state"
+                     name="_"
+                     desired_state="off"
+                     pxsl_line="140">
+                    <Trigger
+                         pxsl_line="140">
+                        <QuestObject
+                             class="VirtualSwitchDI"
+                             name="act3b_logic::Ope_cave_arena_barriers"
+                             pxsl_line="140" />
+                    </Trigger>
+                </Phase>
+                <Phase
+                     type="go to"
+                     name="Natives Blood - Alternative way to Ope's camp"
+                     distance="30"
+                     pxsl_line="141">
+                    <Destination
+                         pxsl_line="141">
+                        <QuestObject
+                             class="Marker"
+                             name="act3b_logic::m_CampGate"
+                             pxsl_line="141" />
+                    </Destination>
+                    <DebugPlayerPosition
+                         pxsl_line="142">
+                        <QuestObject
+                             class="Marker"
+                             name="act3b_logic::loc_Ope_cave_gate"
+                             pxsl_line="142" />
+                    </DebugPlayerPosition>
+                </Phase>
+                <Phase
+                     type="go to"
+                     name="_"
+                     distance="30.0"
+                     pxsl_line="143">
+                    <Destination
+                         pxsl_line="143">
+                        <QuestObject
+                             class="Marker"
+                             name="act3b_logic::m_CaveGate"
+                             pxsl_line="143" />
+                    </Destination>
+                </Phase>
+                <Phase
+                     type="checkpoint"
+                     name="AutoSave003"
+                     pxsl_line="144">
+                    <Destination
+                         pxsl_line="144">
+                        <QuestObject
+                             class="SpawnPoint"
+                             name="act3b_logic::SP_OpesCaveGate"
+                             pxsl_line="144" />
+                    </Destination>
+                </Phase>
+                <Phase
+                     type="set state"
+                     name="_"
+                     desired_state="on"
+                     pxsl_line="145">
+                    <Trigger
+                         pxsl_line="145">
+                        <QuestObject
+                             class="VirtualSwitchDI"
+                             name="act3b_logic::VS_QF01_Lab_Doors_Scientist003"
+                             pxsl_line="145" />
+                    </Trigger>
+                </Phase>
+                <Phase
+                     type="appear"
+                     name="_"
+                     mode="hide"
+                     pxsl_line="146">
+                    <Object
+                         pxsl_line="146">
+                        <QuestObject
+                             class="ModelObject"
+                             name="Scientist003_commode_Fight"
+                             pxsl_line="146" />
+                    </Object>
+                </Phase>
+                <Phase
+                     type="appear"
+                     name="_"
+                     mode="show"
+                     pxsl_line="147">
+                    <Object
+                         pxsl_line="147">
+                        <QuestObject
+                             class="ModelObject"
+                             name="Scientist003_commode_Calm"
+                             pxsl_line="147" />
+                    </Object>
+                </Phase>
+                <Phase
+                     type="appear"
+                     name="_"
+                     mode="hide"
+                     pxsl_line="148">
+                    <Object
+                         pxsl_line="148">
+                        <QuestObject
+                             class="HumanAI"
+                             name="act3b_logic::Scientist003"
+                             pxsl_line="148" />
+                    </Object>
+                </Phase>
+                <Phase
+                     type="appear"
+                     name="_"
+                     mode="hide"
+                     pxsl_line="149">
+                    <Object
+                         pxsl_line="150">
+                        <QuestObject
+                             class="AIDeadBodySpawnBoxAuto"
+                             name="DeadBody_Lab_Entrance_001"
+                             pxsl_line="150" />
+                    </Object>
+                    <Object
+                         pxsl_line="151">
+                        <QuestObject
+                             class="AIDeadBodySpawnBoxAuto"
+                             name="DeadBody_Lab_Entrance_002"
+                             pxsl_line="151" />
+                    </Object>
+                    <Object
+                         pxsl_line="152">
+                        <QuestObject
+                             class="AIDeadBodySpawnBoxAuto"
+                             name="DeadBody_Lab_Entrance_003"
+                             pxsl_line="152" />
+                    </Object>
+                </Phase>
+                <Phase
+                     type="move ai"
+                     name="_"
+                     teleport="true"
+                     pxsl_line="153">
+                    <Destination
+                         pxsl_line="153">
+                        <QuestObject
+                             class="Marker"
+                             name="act3b_logic::m_Scientist003_Working"
+                             pxsl_line="153" />
+                    </Destination>
+                    <AI
+                         pxsl_line="154">
+                        <QuestObject
+                             class="HumanAI"
+                             name="act3b_logic::Scientist003"
+                             pxsl_line="154" />
+                    </AI>
+                </Phase>
+                <Phase
+                     type="appear"
+                     name="_"
+                     mode="show"
+                     pxsl_line="155">
+                    <Object
+                         pxsl_line="155">
+                        <QuestObject
+                             class="HumanAI"
+                             name="act3b_logic::Scientist003"
+                             pxsl_line="155" />
+                    </Object>
+                </Phase>
+                <Phase
+                     type="set state"
+                     name="_"
+                     desired_state="on"
+                     pxsl_line="156">
+                    <Trigger
+                         pxsl_line="156">
+                        <QuestObject
+                             class="VirtualSwitchDI"
+                             name="act3b_logic::vs_chatter_002"
+                             pxsl_line="156" />
+                    </Trigger>
+                </Phase>
+            </Path>
+        </Phase>
+        <Phase
+             type="AND"
+             name="_"
+             objective="&amp;ACT3B_WestNatives_Objective_A&amp;"
+             pxsl_line="157">
+            <Path
+                 pxsl_line="157">
+                <Phase
+                     type="OR"
+                     name="_"
+                     pxsl_line="158">
+                    <Path
+                         pxsl_line="159">
+                        <Phase
+                             type="go to"
+                             name="_"
+                             distance="7.5"
+                             show_locations="false"
+                             pxsl_line="160">
+                            <Destination
+                                 pxsl_line="160">
+                                <QuestObject
+                                     class="Marker"
+                                     name="act3b_logic::m_CaveGate"
+                                     pxsl_line="160" />
+                            </Destination>
+                        </Phase>
+                        <Phase
+                             type="talk"
+                             name="_"
+                             speaker="Warrior"
+                             group="Warrior_QF01_NF"
+                             show_locations="false"
+                             auto_start="true"
+                             pxsl_line="161" />
+                        <Phase
+                             type="set dialog"
+                             name="_"
+                             speaker="Warrior"
+                             group="Warrior_QF01_NF"
+                             pxsl_line="162" />
+                        <Phase
+                             type="go to"
+                             name="_"
+                             distance="12.5"
+                             show_locations="false"
+                             pxsl_line="163">
+                            <Destination
+                                 pxsl_line="163">
+                                <QuestObject
+                                     class="Marker"
+                                     name="act3b_logic::m_OpeCave_SecretPassage_001"
+                                     pxsl_line="163" />
+                            </Destination>
+                        </Phase>
+                    </Path>
+                    <Path
+                         pxsl_line="164">
+                        <Phase
+                             type="go to"
+                             name="_"
+                             distance="12.5"
+                             show_locations="false"
+                             pxsl_line="165">
+                            <Destination
+                                 pxsl_line="165">
+                                <QuestObject
+                                     class="Marker"
+                                     name="act3b_logic::m_OpeCave_SecretPassage_001"
+                                     pxsl_line="165" />
+                            </Destination>
+                        </Phase>
+                    </Path>
+                    <SpecificLocation
+                         pxsl_line="166">
+                        <QuestObject
+                             class="ZoneVCylinder"
+                             name="ACT3B_Zone_NativesCamp"
+                             pxsl_line="166" />
+                    </SpecificLocation>
+                </Phase>
+                <Phase
+                     type="set state"
+                     name="_"
+                     desired_state="off"
+                     pxsl_line="167">
+                    <Trigger
+                         pxsl_line="167">
+                        <QuestObject
+                             class="VirtualSwitchDI"
+                             name="act3b_logic::vs_chatter_002"
+                             pxsl_line="167" />
+                    </Trigger>
+                </Phase>
+                <Phase
+                     type="go to"
+                     name="Natives Blood - Ope's Test"
+                     distance="5.0"
+                     show_locations="false"
+                     pxsl_line="168">
+                    <Destination
+                         pxsl_line="168">
+                        <QuestObject
+                             class="Marker"
+                             name="act3b_logic::m_OpeCave_SecretPassage_002"
+                             pxsl_line="168" />
+                    </Destination>
+                    <DebugPlayerPosition
+                         pxsl_line="169">
+                        <QuestObject
+                             class="SpawnPoint"
+                             name="cave_before"
+                             pxsl_line="169" />
+                    </DebugPlayerPosition>
+                    <SpecificLocation
+                         pxsl_line="170">
+                        <QuestObject
+                             class="ZoneVCylinder"
+                             name="ACT3B_Zone_NativesCamp"
+                             pxsl_line="170" />
+                    </SpecificLocation>
+                </Phase>
+                <!-- ,set _ VirtualSwitchDI act3b_logic::VS_Sounds_Natives -state=on -->
+            </Path>
+        </Phase>
+        <Phase
+             type="AND"
+             name="_"
+             objective="&amp;ACT3B_WestNatives_Objective_B&amp;"
+             pxsl_line="172">
+            <Path
+                 pxsl_line="172">
+                <Phase
+                     type="AND"
+                     name="_"
+                     pxsl_line="173">
+                    <Path
+                         pxsl_line="174">
+                        <Phase
+                             type="talk"
+                             name="_"
+                             speaker="voice2d"
+                             group="Ope_QF00_NF"
+                             show_locations="false"
+                             auto_start="true"
+                             following_group="Ope_QF00_InProgress"
+                             pxsl_line="175" />
+                        <!-- ,talk _ voice2d  OpeSpeaker_001       -auto=true -show=false -->
+                    </Path>
+                    <Path
+                         pxsl_line="177">
+                        <Phase
+                             type="gather players guard"
+                             name="_"
+                             distance="10.0"
+                             pxsl_line="178">
+                            <Destination
+                                 pxsl_line="178">
+                                <QuestObject
+                                     class="Marker"
+                                     name="act3b_logic::loc_Ope_cave"
+                                     pxsl_line="178" />
+                            </Destination>
+                        </Phase>
+                        <Phase
+                             type="set state"
+                             name="_"
+                             desired_state="on"
+                             pxsl_line="179">
+                            <Trigger
+                                 pxsl_line="179">
+                                <QuestObject
+                                     class="VirtualSwitchDI"
+                                     name="act3b_logic::Ope_cave_arena_barriers"
+                                     pxsl_line="179" />
+                            </Trigger>
+                        </Phase>
+                        <Phase
+                             type="set state"
+                             name="_"
+                             desired_state="on"
+                             pxsl_line="180">
+                            <Trigger
+                                 pxsl_line="180">
+                                <QuestObject
+                                     class="VirtualSwitchDI"
+                                     name="VS_Music_Fight_ope"
+                                     pxsl_line="180" />
+                            </Trigger>
+                        </Phase>
+                    </Path>
+                </Phase>
+                <Phase
+                     type="checkpoint"
+                     name="AutoSave004"
+                     pxsl_line="181">
+                    <Destination
+                         pxsl_line="181">
+                        <QuestObject
+                             class="SpawnPoint"
+                             name="cave"
+                             pxsl_line="181" />
+                    </Destination>
+                </Phase>
+                <!-- ,movie _                                      Movie_Ope -->
+                <!-- ,checkpoint AutoSave005 SpawnPoint cave -->
+                <Phase
+                     type="set dialog"
+                     name="_"
+                     speaker="Warrior"
+                     pxsl_line="184" />
+            </Path>
+        </Phase>
+        <Phase
+             type="AND"
+             name="_"
+             objective="&amp;ACT3B_OpeFight_Objective&amp;"
+             pxsl_line="185">
+            <Path
+                 pxsl_line="185">
+                <Phase
+                     type="AND"
+                     name="_"
+                     pxsl_line="186">
+                    <Path
+                         pxsl_line="187">
+                        <Phase
+                             type="talk"
+                             name="_"
+                             speaker="voice2d"
+                             group="Ope_QF00_NF_001"
+                             show_locations="false"
+                             auto_start="true"
+                             pxsl_line="188" />
+                    </Path>
+                    <Path
+                         pxsl_line="189">
+                        <Phase
+                             type="movie"
+                             name="_"
+                             movie="mov_zombie_cave_gate_A"
+                             pxsl_line="190" />
+                        <Phase
+                             type="set state"
+                             name="_"
+                             desired_state="on"
+                             pxsl_line="191">
+                            <Trigger
+                                 pxsl_line="191">
+                                <QuestObject
+                                     class="VirtualSwitchDI"
+                                     name="act3b_logic::vs_zombies_holy_Ope_001"
+                                     pxsl_line="191" />
+                            </Trigger>
+                        </Phase>
+                        <Phase
+                             type="kill"
+                             name="_"
+                             show_locations="false"
+                             pxsl_line="192">
+                            <Spawner
+                                 pxsl_line="192">
+                                <QuestObject
+                                     class="AISpawnBoxWaves"
+                                     name="act3b_logic::zombies_holy_Ope_001"
+                                     pxsl_line="192" />
+                            </Spawner>
+                        </Phase>
+                    </Path>
+                </Phase>
+                <Phase
+                     type="AND"
+                     name="_"
+                     pxsl_line="193">
+                    <Path
+                         pxsl_line="194">
+                        <Phase
+                             type="talk"
+                             name="_"
+                             speaker="voice2d"
+                             group="Ope_QF00_NF_002"
+                             show_locations="false"
+                             auto_start="true"
+                             pxsl_line="195" />
+                    </Path>
+                    <Path
+                         pxsl_line="196">
+                        <Phase
+                             type="movie"
+                             name="_"
+                             movie="mov_zombie_cave_gate_C"
+                             pxsl_line="197" />
+                        <Phase
+                             type="set state"
+                             name="_"
+                             desired_state="on"
+                             pxsl_line="198">
+                            <Trigger
+                                 pxsl_line="198">
+                                <QuestObject
+                                     class="VirtualSwitchDI"
+                                     name="act3b_logic::vs_zombies_holy_Ope_002"
+                                     pxsl_line="198" />
+                            </Trigger>
+                        </Phase>
+                        <Phase
+                             type="AND"
+                             name="_"
+                             pxsl_line="199">
+                            <Path
+                                 pxsl_line="200">
+                                <Phase
+                                     type="kill"
+                                     name="_"
+                                     show_locations="false"
+                                     pxsl_line="201">
+                                    <Spawner
+                                         pxsl_line="201">
+                                        <QuestObject
+                                             class="AISpawnBoxWaves"
+                                             name="act3b_logic::zombies_holy_Ope_002"
+                                             pxsl_line="201" />
+                                    </Spawner>
+                                </Phase>
+                            </Path>
+                            <Path
+                                 pxsl_line="202">
+                                <Phase
+                                     type="kill"
+                                     name="_"
+                                     show_locations="false"
+                                     pxsl_line="203">
+                                    <Spawner
+                                         pxsl_line="203">
+                                        <QuestObject
+                                             class="AISpawnBoxWaves"
+                                             name="act3b_logic::zombies_holy_Ope_003"
+                                             pxsl_line="203" />
+                                    </Spawner>
+                                </Phase>
+                            </Path>
+                        </Phase>
+                    </Path>
+                </Phase>
+                <Phase
+                     type="AND"
+                     name="_"
+                     pxsl_line="204">
+                    <Path
+                         pxsl_line="205">
+                        <Phase
+                             type="talk"
+                             name="_"
+                             speaker="voice2d"
+                             group="Ope_QF00_NF_003"
+                             show_locations="false"
+                             auto_start="true"
+                             pxsl_line="206" />
+                    </Path>
+                    <Path
+                         pxsl_line="207">
+                        <Phase
+                             type="set state"
+                             name="_"
+                             desired_state="on"
+                             pxsl_line="208">
+                            <Trigger
+                                 pxsl_line="208">
+                                <QuestObject
+                                     class="VirtualSwitchDI"
+                                     name="act3b_logic::vs_zombies_holy_Ope_003"
+                                     pxsl_line="208" />
+                            </Trigger>
+                        </Phase>
+                        <Phase
+                             type="set state"
+                             name="_"
+                             desired_state="on"
+                             pxsl_line="209">
+                            <Trigger
+                                 pxsl_line="209">
+                                <QuestObject
+                                     class="VirtualSwitchDI"
+                                     name="act3b_logic::vs_zombies_holy_Ope_004"
+                                     pxsl_line="209" />
+                            </Trigger>
+                        </Phase>
+                        <Phase
+                             type="set state"
+                             name="_"
+                             desired_state="on"
+                             pxsl_line="210">
+                            <Trigger
+                                 pxsl_line="210">
+                                <QuestObject
+                                     class="VirtualSwitchDI"
+                                     name="act3b_logic::act3b_ope_cave_special_Zombie_Fx"
+                                     pxsl_line="210" />
+                            </Trigger>
+                        </Phase>
+                        <Phase
+                             type="AND"
+                             name="_"
+                             pxsl_line="211">
+                            <Path
+                                 pxsl_line="212">
+                                <Phase
+                                     type="kill"
+                                     name="_"
+                                     show_locations="false"
+                                     pxsl_line="213">
+                                    <Spawner
+                                         pxsl_line="213">
+                                        <QuestObject
+                                             class="AISpawnBoxWaves"
+                                             name="act3b_logic::zombies_holy_Ope_004"
+                                             pxsl_line="213" />
+                                    </Spawner>
+                                </Phase>
+                            </Path>
+                            <Path
+                                 pxsl_line="214">
+                                <Phase
+                                     type="kill"
+                                     name="_"
+                                     show_locations="false"
+                                     pxsl_line="215">
+                                    <Spawner
+                                         pxsl_line="215">
+                                        <QuestObject
+                                             class="AISpawnBoxWaves"
+                                             name="act3b_logic::zombies_holy_Ope_005"
+                                             pxsl_line="215" />
+                                    </Spawner>
+                                </Phase>
+                            </Path>
+                        </Phase>
+                        <Phase
+                             type="set state"
+                             name="_"
+                             desired_state="off"
+                             pxsl_line="216">
+                            <Trigger
+                                 pxsl_line="216">
+                                <QuestObject
+                                     class="VirtualSwitchDI"
+                                     name="act3b_logic::act3b_ope_cave_special_Zombie_Fx"
+                                     pxsl_line="216" />
+                            </Trigger>
+                        </Phase>
+                    </Path>
+                </Phase>
+                <!-- ,set _ VirtualSwitchDI act3b_logic::VS_Sounds_Natives -state=off -->
+                <Phase
+                     type="AND"
+                     name="Natives Blood - Ope's Arena Test Boss"
+                     pxsl_line="218">
+                    <Path
+                         pxsl_line="219">
+                        <Phase
+                             type="talk"
+                             name="_"
+                             speaker="voice2d"
+                             group="Ope_QF00_Accomplished"
+                             show_locations="false"
+                             auto_start="true"
+                             pxsl_line="220" />
+                        <Phase
+                             type="talk"
+                             name="_"
+                             speaker="voice2d"
+                             group="Ope_QF01_NF"
+                             show_locations="false"
+                             auto_start="true"
+                             following_group="Ope_QF01_InProgress"
+                             pxsl_line="221" />
+                    </Path>
+                    <Path
+                         pxsl_line="222">
+                        <Phase
+                             type="movie"
+                             name="_"
+                             movie="mov_zombie_cave_gate_B"
+                             pxsl_line="223" />
+                        <Phase
+                             type="set state"
+                             name="_"
+                             desired_state="on"
+                             pxsl_line="224">
+                            <Trigger
+                                 pxsl_line="224">
+                                <QuestObject
+                                     class="VirtualSwitchDI"
+                                     name="act3b_logic::VS_Ope_Boss_RoarSound"
+                                     pxsl_line="224" />
+                            </Trigger>
+                        </Phase>
+                    </Path>
+                    <DebugPlayerPosition
+                         pxsl_line="225">
+                        <QuestObject
+                             class="Marker"
+                             name="act3b_logic::loc_Ope_cave"
+                             pxsl_line="225" />
+                    </DebugPlayerPosition>
+                </Phase>
+                <Phase
+                     type="movie"
+                     name="_"
+                     movie="Movie_Ope_Before_big_warrior"
+                     pxsl_line="226">
+                    <PostMovie
+                         pxsl_line="227">
+                        <Phase
+                             type="set state"
+                             name="_"
+                             desired_state="on"
+                             pxsl_line="228">
+                            <Trigger
+                                 pxsl_line="228">
+                                <QuestObject
+                                     class="VirtualSwitchDI"
+                                     name="act3b_logic::VS_OpeWarior"
+                                     pxsl_line="228" />
+                            </Trigger>
+                        </Phase>
+                        <Phase
+                             type="move ai"
+                             name="_"
+                             teleport="true"
+                             pxsl_line="229">
+                            <Destination
+                                 pxsl_line="229">
+                                <QuestObject
+                                     class="Marker"
+                                     name="act3b_logic::Warrior_move"
+                                     pxsl_line="229" />
+                            </Destination>
+                            <AI
+                                 pxsl_line="230">
+                                <QuestObject
+                                     class="HumanAI"
+                                     name="act3b_logic::Warrior"
+                                     pxsl_line="230" />
+                            </AI>
+                        </Phase>
+                    </PostMovie>
+                </Phase>
+                <Phase
+                     type="AND"
+                     name="Big warrior fight"
+                     pxsl_line="231">
+                    <Path
+                         pxsl_line="232">
+                        <Phase
+                             type="kill"
+                             name="_"
+                             show_locations="false"
+                             pxsl_line="233">
+                            <Spawner
+                                 pxsl_line="233">
+                                <QuestObject
+                                     class="AISpawnBoxWaves"
+                                     name="act3b_logic::zombies_holy_Ope_006"
+                                     pxsl_line="233" />
+                            </Spawner>
+                        </Phase>
+                    </Path>
+                    <Path
+                         pxsl_line="234">
+                        <Phase
+                             type="kill"
+                             name="_"
+                             show_locations="false"
+                             pxsl_line="235">
+                            <Spawner
+                                 pxsl_line="235">
+                                <QuestObject
+                                     class="AISpawnBoxWaves"
+                                     name="act3b_logic::zombies_holy_Ope_007"
+                                     pxsl_line="235" />
+                            </Spawner>
+                        </Phase>
+                    </Path>
+                    <Path
+                         pxsl_line="236">
+                        <Phase
+                             type="kill"
+                             name="_"
+                             show_locations="false"
+                             pxsl_line="237">
+                            <Spawner
+                                 pxsl_line="237">
+                                <QuestObject
+                                     class="AISpawnBoxNumber"
+                                     name="act3b_logic::Ope_warrior"
+                                     pxsl_line="237" />
+                            </Spawner>
+                        </Phase>
+                    </Path>
+                </Phase>
+                <!-- ,checkpoint AutoSave004 SpawnPoint cave -->
+            </Path>
+        </Phase>
+    </Quest>
+    <Quest
+         name="ACT3B_WestNatives_002"
+         reward="7500"
+         parent="ACT3B_WestNatives_001"
+         glued="true"
+         pxsl_line="240">
+        <Phase
+             type="AND"
+             name="_"
+             objective="&amp;ACT3B_WestBloodSamples_Objective_A&amp;"
+             pxsl_line="241">
+            <Path
+                 pxsl_line="241">
+                <Phase
+                     type="checkpoint"
+                     name="AutoSave004"
+                     pxsl_line="242">
+                    <Destination
+                         pxsl_line="242">
+                        <QuestObject
+                             class="SpawnPoint"
+                             name="cave"
+                             pxsl_line="242" />
+                    </Destination>
+                </Phase>
+                <Phase
+                     type="AND"
+                     name="Natives Blood - Ope's Test Complete"
+                     pxsl_line="243">
+                    <Path
+                         pxsl_line="244">
+                        <Phase
+                             type="take item"
+                             name="blood samples"
+                             pxsl_line="245">
+                            <Item
+                                 pxsl_line="245">
+                                <QuestObject
+                                     class="QuestInventoryItemDI"
+                                     name="act3b_logic::blood_sample"
+                                     pxsl_line="245" />
+                            </Item>
+                        </Phase>
+                    </Path>
+                    <Path
+                         pxsl_line="246">
+                        <Phase
+                             type="set state"
+                             name="_"
+                             desired_state="off"
+                             pxsl_line="247">
+                            <Trigger
+                                 pxsl_line="247">
+                                <QuestObject
+                                     class="VirtualSwitchDI"
+                                     name="VS_Music_Fight_ope"
+                                     pxsl_line="247" />
+                            </Trigger>
+                        </Phase>
+                        <Phase
+                             type="talk"
+                             name="_"
+                             speaker="voice2d"
+                             group="Ope_QF01_Accomplished"
+                             show_locations="false"
+                             auto_start="true"
+                             pxsl_line="248" />
+                        <Phase
+                             type="set lifeplace"
+                             name="_"
+                             desired_state="off"
+                             pxsl_line="249">
+                            <LifePlace
+                                 pxsl_line="249">
+                                <QuestObject
+                                     class="NPCLifePlace"
+                                     name="act3b_logic::LP_Ope_In_Cave"
+                                     pxsl_line="249" />
+                            </LifePlace>
+                        </Phase>
+                    </Path>
+                    <DebugPlayerPosition
+                         pxsl_line="250">
+                        <QuestObject
+                             class="Marker"
+                             name="act3b_logic::loc_Ope_cave"
+                             pxsl_line="250" />
+                    </DebugPlayerPosition>
+                </Phase>
+                <Phase
+                     type="appear"
+                     name="ShowScientist"
+                     mode="show"
+                     pxsl_line="251">
+                    <Object
+                         pxsl_line="252">
+                        <QuestObject
+                             class="HumanAI"
+                             name="act3b_logic::SQ_L_01_Lachance"
+                             pxsl_line="252" />
+                    </Object>
+                    <Object
+                         pxsl_line="253">
+                        <QuestObject
+                             class="HumanAI"
+                             name="act3b_logic::SQ_C_01_Connor"
+                             pxsl_line="253" />
+                    </Object>
+                    <Object
+                         pxsl_line="254">
+                        <QuestObject
+                             class="HumanAI"
+                             name="act3b_logic::SQ_M_01_Monroe"
+                             pxsl_line="254" />
+                    </Object>
+                    <Object
+                         pxsl_line="255">
+                        <QuestObject
+                             class="HumanAI"
+                             name="act3b_logic::SQ_N_01_Nguyen"
+                             pxsl_line="255" />
+                    </Object>
+                    <Object
+                         pxsl_line="256">
+                        <QuestObject
+                             class="HumanAI"
+                             name="act3b_logic::Scientist004"
+                             pxsl_line="256" />
+                    </Object>
+                </Phase>
+                <Phase
+                     type="set lifeplace"
+                     name="_"
+                     desired_state="on"
+                     pxsl_line="257">
+                    <LifePlace
+                         pxsl_line="257">
+                        <QuestObject
+                             class="NPCLifePlace"
+                             name="act3b_logic::LP_Monroe_sit"
+                             pxsl_line="257" />
+                    </LifePlace>
+                </Phase>
+            </Path>
+        </Phase>
+        <Phase
+             type="AND"
+             name="_"
+             objective="&amp;ACT3B_WestBloodSamples_Objective_B&amp;"
+             pxsl_line="258">
+            <Path
+                 pxsl_line="258">
+                <Phase
+                     type="movie"
+                     name="_"
+                     movie="mov_cave_ladder_gate"
+                     pxsl_line="259" />
+                <Phase
+                     type="movie"
+                     name="cave gate"
+                     movie="movie_OpesGate"
+                     pxsl_line="260" />
+                <Phase
+                     type="set state"
+                     name="barriers off"
+                     desired_state="off"
+                     pxsl_line="261">
+                    <Trigger
+                         pxsl_line="261">
+                        <QuestObject
+                             class="VirtualSwitchDI"
+                             name="act3b_logic::Ope_cave_barriers"
+                             pxsl_line="261" />
+                    </Trigger>
+                </Phase>
+                <!-- ,set _                        VirtualSwitchDI    act3b_logic::vs_Ope_SafeZone        -state=off  -->
+                <Phase
+                     type="set state"
+                     name="_"
+                     desired_state="off"
+                     pxsl_line="263">
+                    <Trigger
+                         pxsl_line="263">
+                        <QuestObject
+                             class="VirtualSwitchDI"
+                             name="act3b_logic::Ope_cave_arena_barriers"
+                             pxsl_line="263" />
+                    </Trigger>
+                </Phase>
+                <!-- ,set _ VirtualSwitchDI                       act3b_logic::vs_Zombie_FromLabBarracksToOpeCave          -state=off -->
+                <!-- ,set _ VirtualSwitchDI                       act3b_logic::vs_Zombie_FromOpeCaveToLabBarracks          -state=on -->
+                <!-- ,teleport _                     Marker       act3b_logic::Loc_Lab_interior001  -->
+                <!--     ,ai HumanAI                              Scientist004 -->
+                <!-- ,set-lp _ NPCLifePlace act3b_logic::LP_DoResearch_West_Working -state=off -->
+                <!-- ,set-lp _ NPCLifePlace act3b_logic::LP_DoResearch_West_Talking -state=on -->
+                <Phase
+                     type="set dialog"
+                     name="_"
+                     speaker="Ope"
+                     group="Ope_QF00_Accomplished_02"
+                     pxsl_line="270" />
+                <Phase
+                     type="unlock hub"
+                     name="_"
+                     hub="FastTravel_OpeCave"
+                     pxsl_line="271" />
+                <Phase
+                     type="checkpoint"
+                     name="AutoSave005"
+                     pxsl_line="272">
+                    <Destination
+                         pxsl_line="272">
+                        <QuestObject
+                             class="SpawnPoint"
+                             name="cave"
+                             pxsl_line="272" />
+                    </Destination>
+                </Phase>
+                <Phase
+                     type="talk"
+                     name="Natives Blood - Take blood sample to West"
+                     speaker="West"
+                     group="West_Q1_Accomplished"
+                     pxsl_line="273">
+                    <DebugPlayerPosition
+                         pxsl_line="274">
+                        <QuestObject
+                             class="SpawnPoint"
+                             name="act3b_logic::debugpos_Lab"
+                             pxsl_line="274" />
+                    </DebugPlayerPosition>
+                </Phase>
+                <Phase
+                     type="set reward"
+                     name="_"
+                     speaker="West"
+                     item="Melee_ReaperGen"
+                     item_color="1"
+                     pxsl_line="275" />
+                <Phase
+                     type="set dialog"
+                     name="_"
+                     speaker="Ope"
+                     pxsl_line="276" />
+                <!-- ,set-lp _ NPCLifePlace act3b_logic::LP_DoResearch_West_Talking -state=off -->
+                <!-- ,set-lp _ NPCLifePlace act3b_logic::LP_DoResearch_West_Working -state=on -->
+                <Phase
+                     type="checkpoint"
+                     name="AutoSave007"
+                     pxsl_line="279">
+                    <Destination
+                         pxsl_line="279">
+                        <QuestObject
+                             class="SpawnPoint"
+                             name="act3b_logic::debugpos_Lab_int"
+                             pxsl_line="279" />
+                    </Destination>
+                </Phase>
+            </Path>
+        </Phase>
+    </Quest>
+    <Quest
+         name="ACT3B_West_research_002"
+         parent="ACT3B_WestNatives_002"
+         quest_giver="West"
+         pxsl_line="281">
+        <Phase
+             type="sibling quests guard"
+             name="unlock next West quests"
+             required_siblings="2"
+             objective="&amp;ACT3B_WestPeople_Objective&amp;"
+             pxsl_line="282">
+            <!-- WARNING This phase will block the flow until at least given number -->
+            <!-- of this quest's direct siblings are accomplished. -->
+        </Phase>
+        <!-- ,checkpoint AutoSave003 SpawnPoint act3b_logic::debugpos_Lab_int -->
+        <!-- ,set-lp _ NPCLifePlace act3b_logic::LP_DoResearch_West_Working -state=off -->
+        <!-- ,set-lp _ NPCLifePlace act3b_logic::LP_DoResearch_West_Talking -state=on -->
+        <Phase
+             type="AND"
+             name="_"
+             objective="&amp;ACT3B_WestTalkTo_Objective&amp;"
+             pxsl_line="286">
+            <Path
+                 pxsl_line="286">
+                <Phase
+                     type="wait guard"
+                     name="_"
+                     time="2"
+                     pxsl_line="287" />
+                <Phase
+                     type="talk"
+                     name="True Blood - Talk with West"
+                     speaker="West"
+                     group="West_Q6_NF"
+                     brief_reward="8500"
+                     brief_difficulty="very_hard"
+                     following_group="West_Q6_InProgress"
+                     gather_radius="3"
+                     pxsl_line="288">
+                    <DebugPlayerPosition
+                         pxsl_line="289">
+                        <QuestObject
+                             class="SpawnPoint"
+                             name="act3b_logic::debugpos_Lab"
+                             pxsl_line="289" />
+                    </DebugPlayerPosition>
+                </Phase>
+                <Phase
+                     type="talk"
+                     name="_"
+                     speaker="Voice"
+                     group="VoiceRadio_QF01_A"
+                     show_locations="false"
+                     auto_start="true"
+                     pxsl_line="290" />
+                <Phase
+                     type="set reward"
+                     name="_"
+                     speaker="West"
+                     item="Cash_CashBlue"
+                     count="350"
+                     pxsl_line="291" />
+            </Path>
+        </Phase>
+        <!-- ,set-lp _ NPCLifePlace act3b_logic::LP_DoResearch_West_Talking -state=off -->
+        <!-- ,set-lp _ NPCLifePlace act3b_logic::LP_DoResearch_West_Working -state=off -->
+    </Quest>
+    <Quest
+         name="ACT3B_Opes_Help"
+         parent="ACT3B_West_research_002"
+         new_chapter="true"
+         quest_giver="West"
+         pxsl_line="295">
+        <!-- ,set _ VirtualSwitchDI                       act3b_logic::vs_Zombie_FromLabBarracksToOpeCave          -state=on -->
+        <!-- ,set _ VirtualSwitchDI                       act3b_logic::vs_Zombie_FromOpeCaveToLabBarracks          -state=on -->
+        <Phase
+             type="checkpoint"
+             name="AutoSave008"
+             pxsl_line="298">
+            <Destination
+                 pxsl_line="298">
+                <QuestObject
+                     class="SpawnPoint"
+                     name="act3b_logic::debugpos_Lab_int"
+                     pxsl_line="298" />
+            </Destination>
+        </Phase>
+        <Phase
+             type="talk"
+             name="True Blood - Take Ope to the boat"
+             objective="&amp;ACT3B_AnotherBlood_Objective&amp;"
+             speaker="Ope"
+             group="Ope_Q5_NF"
+             gather_radius="3"
+             pxsl_line="299">
+            <DebugPlayerPosition
+                 pxsl_line="300">
+                <QuestObject
+                     class="Marker"
+                     name="act3b_logic::loc_Ope_cave"
+                     pxsl_line="300" />
+            </DebugPlayerPosition>
+        </Phase>
+        <!-- ,checkpoint AutoSave008 SpawnPoint cave_near_ope -->
+    </Quest>
+    <Quest
+         name="__ACT3B_OpeCatacombs"
+         parent="ACT3B_Opes_Help"
+         glued="true"
+         pxsl_line="303">
+        <Phase
+             type="checkpoint"
+             name="AutoSave008"
+             pxsl_line="304">
+            <Destination
+                 pxsl_line="304">
+                <QuestObject
+                     class="SpawnPoint"
+                     name="cave_near_ope"
+                     pxsl_line="304" />
+            </Destination>
+        </Phase>
+        <Phase
+             type="AND"
+             name="To The Sacred Place"
+             objective="&amp;ACT3B_OpeCatacombs_Objective_A&amp;"
+             pxsl_line="305">
+            <Path
+                 pxsl_line="305">
+                <!-- ,appear _                            MapPortal ACT3B_Boat_ACT3A          -mode=hide -->
+                <!-- ,appear _                            MapPortal ACT3B_Boat_ACT3C          -mode=show -->
+                <!-- ,set _ VirtualSwitchDI                       act3b_logic::vs_Zombie_FromLabBarracksToOpeCave          -state=off -->
+                <!-- ,set _ VirtualSwitchDI                       act3b_logic::vs_Zombie_FromOpeCaveToLabBarracks          -state=off -->
+                <!-- ,set _ VirtualSwitchDI                       act3b_logic::VS_YeremaEscort_FenceGate                   -state=on -->
+                <Phase
+                     type="set state"
+                     name="_"
+                     desired_state="on"
+                     pxsl_line="311">
+                    <Trigger
+                         pxsl_line="311">
+                        <QuestObject
+                             class="VirtualSwitchDI"
+                             name="act3b_logic::VS_BackDoor_Lab_001"
+                             pxsl_line="311" />
+                    </Trigger>
+                </Phase>
+                <Phase
+                     type="set state"
+                     name="_"
+                     desired_state="on"
+                     pxsl_line="312">
+                    <Trigger
+                         pxsl_line="312">
+                        <QuestObject
+                             class="VirtualSwitchDI"
+                             name="vs_Zombie_Ope_Escort"
+                             pxsl_line="312" />
+                    </Trigger>
+                </Phase>
+                <Phase
+                     type="set state"
+                     name="_"
+                     desired_state="opened"
+                     pxsl_line="313">
+                    <Trigger
+                         pxsl_line="313">
+                        <QuestObject
+                             class="DoorDI"
+                             name="act3b_logic::door_Yerema_FenceGate"
+                             pxsl_line="313" />
+                    </Trigger>
+                </Phase>
+                <Phase
+                     type="set state"
+                     name="portal act3a off"
+                     desired_state="off"
+                     pxsl_line="314">
+                    <Trigger
+                         pxsl_line="314">
+                        <QuestObject
+                             class="VirtualSwitchDI"
+                             name="act3b_logic::switch_boat_portal_act3a"
+                             pxsl_line="314" />
+                    </Trigger>
+                </Phase>
+                <Phase
+                     type="WATCH"
+                     name="don't let Ope die"
+                     pxsl_line="315">
+                    <Path
+                         pxsl_line="315">
+                        <Phase
+                             type="AND"
+                             name="_"
+                             pxsl_line="316">
+                            <Path
+                                 pxsl_line="317">
+                                <Phase
+                                     type="wait guard"
+                                     name="_"
+                                     time="10"
+                                     pxsl_line="318" />
+                                <Phase
+                                     type="set dialog"
+                                     name="_"
+                                     speaker="Ope"
+                                     group="Ope_Q5_Escort_Part1"
+                                     pxsl_line="319" />
+                            </Path>
+                            <Path
+                                 pxsl_line="320">
+                                <Phase
+                                     type="escort"
+                                     name="_"
+                                     distance="0.8"
+                                     move_style="walk"
+                                     pxsl_line="321">
+                                    <Destination
+                                         pxsl_line="321">
+                                        <QuestObject
+                                             class="Marker"
+                                             name="act3b_logic::loc_Ope_001"
+                                             pxsl_line="321" />
+                                    </Destination>
+                                    <AI
+                                         pxsl_line="322">
+                                        <QuestObject
+                                             class="HumanAI"
+                                             name="act3b_logic::Ope"
+                                             pxsl_line="322" />
+                                    </AI>
+                                    <Node
+                                         pxsl_line="323">
+                                        <QuestObject
+                                             class="AINode"
+                                             name="act3b_logic::ain_Ope_001"
+                                             pxsl_line="323" />
+                                    </Node>
+                                </Phase>
+                            </Path>
+                            <Path
+                                 pxsl_line="324">
+                                <Phase
+                                     type="set state"
+                                     name="_"
+                                     desired_state="opened"
+                                     pxsl_line="325">
+                                    <Trigger
+                                         pxsl_line="325">
+                                        <QuestObject
+                                             class="DoorDI"
+                                             name="Bay_door_001"
+                                             pxsl_line="325" />
+                                    </Trigger>
+                                </Phase>
+                                <Phase
+                                     type="set state"
+                                     name="_"
+                                     desired_state="opened"
+                                     pxsl_line="326">
+                                    <Trigger
+                                         pxsl_line="326">
+                                        <QuestObject
+                                             class="DoorDI"
+                                             name="Bay_door_002"
+                                             pxsl_line="326" />
+                                    </Trigger>
+                                </Phase>
+                            </Path>
+                        </Phase>
+                    </Path>
+                    <Fallback
+                         pxsl_line="315">
+                        <Phase
+                             type="actor dead guard"
+                             name="don't let Ope die"
+                             pxsl_line="315">
+                            <AI
+                                 pxsl_line="315">
+                                <QuestObject
+                                     class="HumanAI"
+                                     name="act3b_logic::Ope"
+                                     pxsl_line="315" />
+                            </AI>
+                        </Phase>
+                        <Phase
+                             type="game over failer"
+                             name="don't let Ope die"
+                             pxsl_line="315" />
+                    </Fallback>
+                </Phase>
+                <Phase
+                     type="WATCH"
+                     name="don't let Ope die"
+                     pxsl_line="327">
+                    <Path
+                         pxsl_line="327">
+                        <Phase
+                             type="checkpoint"
+                             name="cp_ope"
+                             pxsl_line="328">
+                            <Destination
+                                 pxsl_line="328">
+                                <QuestObject
+                                     class="SpawnPoint"
+                                     name="act3b_logic::SP_Escort_Ope_001"
+                                     pxsl_line="328" />
+                            </Destination>
+                        </Phase>
+                        <Phase
+                             type="AND"
+                             name="_"
+                             pxsl_line="329">
+                            <Path
+                                 pxsl_line="330">
+                                <Phase
+                                     type="kill"
+                                     name="_"
+                                     pxsl_line="331">
+                                    <Spawner
+                                         pxsl_line="331">
+                                        <QuestObject
+                                             class="AISpawnBoxNumber"
+                                             name="spawner_OpeToTheBoat_001"
+                                             pxsl_line="331" />
+                                    </Spawner>
+                                </Phase>
+                            </Path>
+                            <Path
+                                 pxsl_line="332">
+                                <Phase
+                                     type="talk"
+                                     name="_"
+                                     speaker="Ope"
+                                     group="Ope_Q5_Escort_Stop1"
+                                     auto_start="true"
+                                     pxsl_line="333" />
+                            </Path>
+                        </Phase>
+                        <Phase
+                             type="AND"
+                             name="_"
+                             pxsl_line="334">
+                            <Path
+                                 pxsl_line="335">
+                                <Phase
+                                     type="wait guard"
+                                     name="_"
+                                     time="5"
+                                     pxsl_line="336" />
+                                <Phase
+                                     type="set dialog"
+                                     name="_"
+                                     speaker="Ope"
+                                     group="Ope_Q5_Escort_Part2"
+                                     pxsl_line="337" />
+                            </Path>
+                        </Phase>
+                        <Phase
+                             type="escort"
+                             name="_"
+                             distance="0.8"
+                             move_style="walk"
+                             pxsl_line="338">
+                            <Destination
+                                 pxsl_line="338">
+                                <QuestObject
+                                     class="Marker"
+                                     name="act3b_logic::loc_Ope_002"
+                                     pxsl_line="338" />
+                            </Destination>
+                            <AI
+                                 pxsl_line="339">
+                                <QuestObject
+                                     class="HumanAI"
+                                     name="act3b_logic::Ope"
+                                     pxsl_line="339" />
+                            </AI>
+                            <Node
+                                 pxsl_line="340">
+                                <QuestObject
+                                     class="AINode"
+                                     name="act3b_logic::ain_Ope_002"
+                                     pxsl_line="340" />
+                            </Node>
+                        </Phase>
+                    </Path>
+                    <Fallback
+                         pxsl_line="327">
+                        <Phase
+                             type="actor dead guard"
+                             name="don't let Ope die"
+                             pxsl_line="327">
+                            <AI
+                                 pxsl_line="327">
+                                <QuestObject
+                                     class="HumanAI"
+                                     name="act3b_logic::Ope"
+                                     pxsl_line="327" />
+                            </AI>
+                        </Phase>
+                        <Phase
+                             type="game over failer"
+                             name="don't let Ope die"
+                             pxsl_line="327" />
+                    </Fallback>
+                </Phase>
+                <Phase
+                     type="WATCH"
+                     name="don't let Ope die"
+                     pxsl_line="341">
+                    <Path
+                         pxsl_line="341">
+                        <Phase
+                             type="checkpoint"
+                             name="cp_ope"
+                             pxsl_line="342">
+                            <Destination
+                                 pxsl_line="342">
+                                <QuestObject
+                                     class="SpawnPoint"
+                                     name="act3b_logic::SP_Escort_Ope_002"
+                                     pxsl_line="342" />
+                            </Destination>
+                        </Phase>
+                        <Phase
+                             type="AND"
+                             name="_"
+                             pxsl_line="343">
+                            <Path
+                                 pxsl_line="344">
+                                <Phase
+                                     type="kill"
+                                     name="_"
+                                     pxsl_line="345">
+                                    <Spawner
+                                         pxsl_line="345">
+                                        <QuestObject
+                                             class="AISpawnBoxNumber"
+                                             name="spawner_OpeToTheBoat_002"
+                                             pxsl_line="345" />
+                                    </Spawner>
+                                </Phase>
+                            </Path>
+                            <Path
+                                 pxsl_line="346">
+                                <Phase
+                                     type="talk"
+                                     name="_"
+                                     speaker="Ope"
+                                     group="Ope_Q5_Escort_Stop2"
+                                     auto_start="true"
+                                     pxsl_line="347" />
+                            </Path>
+                        </Phase>
+                        <Phase
+                             type="AND"
+                             name="_"
+                             pxsl_line="348">
+                            <Path
+                                 pxsl_line="349">
+                                <Phase
+                                     type="wait guard"
+                                     name="_"
+                                     time="5"
+                                     pxsl_line="350" />
+                                <Phase
+                                     type="set dialog"
+                                     name="_"
+                                     speaker="Ope"
+                                     group="Ope_Q5_Escort_Part3"
+                                     pxsl_line="351" />
+                            </Path>
+                            <Path
+                                 pxsl_line="352">
+                                <Phase
+                                     type="escort"
+                                     name="_"
+                                     distance="0.8"
+                                     move_style="walk"
+                                     pxsl_line="353">
+                                    <Destination
+                                         pxsl_line="353">
+                                        <QuestObject
+                                             class="Marker"
+                                             name="act3b_logic::loc_Ope_003"
+                                             pxsl_line="353" />
+                                    </Destination>
+                                    <AI
+                                         pxsl_line="354">
+                                        <QuestObject
+                                             class="HumanAI"
+                                             name="act3b_logic::Ope"
+                                             pxsl_line="354" />
+                                    </AI>
+                                    <Node
+                                         pxsl_line="355">
+                                        <QuestObject
+                                             class="AINode"
+                                             name="act3b_logic::ain_Ope_003"
+                                             pxsl_line="355" />
+                                    </Node>
+                                </Phase>
+                            </Path>
+                        </Phase>
+                    </Path>
+                    <Fallback
+                         pxsl_line="341">
+                        <Phase
+                             type="actor dead guard"
+                             name="don't let Ope die"
+                             pxsl_line="341">
+                            <AI
+                                 pxsl_line="341">
+                                <QuestObject
+                                     class="HumanAI"
+                                     name="act3b_logic::Ope"
+                                     pxsl_line="341" />
+                            </AI>
+                        </Phase>
+                        <Phase
+                             type="game over failer"
+                             name="don't let Ope die"
+                             pxsl_line="341" />
+                    </Fallback>
+                </Phase>
+                <Phase
+                     type="WATCH"
+                     name="don't let Ope die"
+                     pxsl_line="356">
+                    <Path
+                         pxsl_line="356">
+                        <Phase
+                             type="checkpoint"
+                             name="cp_ope"
+                             pxsl_line="357">
+                            <Destination
+                                 pxsl_line="357">
+                                <QuestObject
+                                     class="SpawnPoint"
+                                     name="act3b_logic::SP_Escort_Ope_003"
+                                     pxsl_line="357" />
+                            </Destination>
+                        </Phase>
+                        <Phase
+                             type="AND"
+                             name="_"
+                             pxsl_line="358">
+                            <Path
+                                 pxsl_line="359">
+                                <Phase
+                                     type="kill"
+                                     name="_"
+                                     pxsl_line="360">
+                                    <Spawner
+                                         pxsl_line="361">
+                                        <QuestObject
+                                             class="AISpawnBoxNumber"
+                                             name="spawner_OpeToTheBoat_003"
+                                             pxsl_line="361" />
+                                    </Spawner>
+                                    <Spawner
+                                         pxsl_line="362">
+                                        <QuestObject
+                                             class="AISpawnBoxNumber"
+                                             name="spawner_OpeToTheBoat_004"
+                                             pxsl_line="362" />
+                                    </Spawner>
+                                </Phase>
+                            </Path>
+                            <Path
+                                 pxsl_line="363">
+                                <Phase
+                                     type="talk"
+                                     name="_"
+                                     speaker="Ope"
+                                     group="Ope_Q5_Escort_Stop3"
+                                     auto_start="true"
+                                     pxsl_line="364" />
+                            </Path>
+                        </Phase>
+                        <!-- ,dialog _ Ope Ope_Q5_Escort_Part4                            -->
+                        <Phase
+                             type="escort"
+                             name="_"
+                             distance="0.8"
+                             move_style="walk"
+                             pxsl_line="367">
+                            <Destination
+                                 pxsl_line="367">
+                                <QuestObject
+                                     class="Marker"
+                                     name="act3b_logic::Loc_Boat"
+                                     pxsl_line="367" />
+                            </Destination>
+                            <AI
+                                 pxsl_line="368">
+                                <QuestObject
+                                     class="HumanAI"
+                                     name="act3b_logic::Ope"
+                                     pxsl_line="368" />
+                            </AI>
+                            <Node
+                                 pxsl_line="369">
+                                <QuestObject
+                                     class="AINode"
+                                     name="act3b_logic::ain_Ope_004"
+                                     pxsl_line="369" />
+                            </Node>
+                        </Phase>
+                    </Path>
+                    <Fallback
+                         pxsl_line="356">
+                        <Phase
+                             type="actor dead guard"
+                             name="don't let Ope die"
+                             pxsl_line="356">
+                            <AI
+                                 pxsl_line="356">
+                                <QuestObject
+                                     class="HumanAI"
+                                     name="act3b_logic::Ope"
+                                     pxsl_line="356" />
+                            </AI>
+                        </Phase>
+                        <Phase
+                             type="game over failer"
+                             name="don't let Ope die"
+                             pxsl_line="356" />
+                    </Fallback>
+                </Phase>
+                <Phase
+                     type="checkpoint"
+                     name="cp_ope"
+                     pxsl_line="370">
+                    <Destination
+                         pxsl_line="370">
+                        <QuestObject
+                             class="SpawnPoint"
+                             name="act3b_logic::MapStart"
+                             pxsl_line="370" />
+                    </Destination>
+                </Phase>
+                <Phase
+                     type="talk"
+                     name="True Blood - Swim to the catacombs"
+                     speaker="voice2d"
+                     group="VoiceRadio_QF01_B"
+                     show_locations="false"
+                     auto_start="true"
+                     pxsl_line="371">
+                    <DebugPlayerPosition
+                         pxsl_line="372">
+                        <QuestObject
+                             class="SpawnPoint"
+                             name="act3b_logic::MapStart"
+                             pxsl_line="372" />
+                    </DebugPlayerPosition>
+                </Phase>
+                <Phase
+                     type="set state"
+                     name="_"
+                     desired_state="off"
+                     pxsl_line="373">
+                    <Trigger
+                         pxsl_line="373">
+                        <QuestObject
+                             class="VirtualSwitchDI"
+                             name="vs_Zombie_Ope_Escort"
+                             pxsl_line="373" />
+                    </Trigger>
+                </Phase>
+                <!-- ,set <<portal act3a off>>   VirtualSwitchDI act3b_logic::take    -state=off -->
+                <Phase
+                     type="set state"
+                     name="portal act3c on"
+                     desired_state="on"
+                     pxsl_line="375">
+                    <Trigger
+                         pxsl_line="375">
+                        <QuestObject
+                             class="VirtualSwitchDI"
+                             name="act3b_logic::switch_boat_portal_act3c"
+                             pxsl_line="375" />
+                    </Trigger>
+                </Phase>
+            </Path>
+        </Phase>
+    </Quest>
+    <Quest
+         name="ACT3B_SacredPlace"
+         reward="8500"
+         parent="ACT3C_SacredPlace"
+         glued="true"
+         pxsl_line="377">
+        <Phase
+             type="AND"
+             name="_"
+             objective="&amp;ACT3B_SacredPlace_Objective_A&amp;"
+             pxsl_line="378">
+            <Path
+                 pxsl_line="378">
+                <Phase
+                     type="checkpoint"
+                     name="cp_ope1"
+                     pxsl_line="379">
+                    <Destination
+                         pxsl_line="379">
+                        <QuestObject
+                             class="SpawnPoint"
+                             name="act3b_logic::MapStart"
+                             pxsl_line="379" />
+                    </Destination>
+                </Phase>
+                <Phase
+                     type="go to"
+                     name="_"
+                     distance="66.6"
+                     pxsl_line="380">
+                    <Destination
+                         pxsl_line="380">
+                        <QuestObject
+                             class="SpawnPoint"
+                             name="act3b_logic::MapStart"
+                             pxsl_line="380" />
+                    </Destination>
+                </Phase>
+                <Phase
+                     type="appear"
+                     name="StartCleaning"
+                     mode="hide"
+                     pxsl_line="381">
+                    <Object
+                         pxsl_line="382">
+                        <QuestObject
+                             class="HumanAI"
+                             name="act3b_logic::Ope"
+                             pxsl_line="382" />
+                    </Object>
+                </Phase>
+                <!--    ,o MapPortal ACT3B_Boat_ACT3C -->
+                <Phase
+                     type="appear"
+                     name="StartAppear"
+                     mode="show"
+                     pxsl_line="384">
+                    <Object
+                         pxsl_line="385">
+                        <QuestObject
+                             class="HumanAI"
+                             name="act3b_logic::Yerema"
+                             pxsl_line="385" />
+                    </Object>
+                </Phase>
+                <!--  ,o MapPortal ACT3B_Boat_ACT3A -->
+                <Phase
+                     type="set state"
+                     name="portal act3a on"
+                     desired_state="on"
+                     pxsl_line="387">
+                    <Trigger
+                         pxsl_line="387">
+                        <QuestObject
+                             class="VirtualSwitchDI"
+                             name="act3b_logic::switch_boat_portal_act3a"
+                             pxsl_line="387" />
+                    </Trigger>
+                </Phase>
+                <Phase
+                     type="set state"
+                     name="portal act3c off"
+                     desired_state="off"
+                     pxsl_line="388">
+                    <Trigger
+                         pxsl_line="388">
+                        <QuestObject
+                             class="VirtualSwitchDI"
+                             name="act3b_logic::switch_boat_portal_act3c"
+                             pxsl_line="388" />
+                    </Trigger>
+                </Phase>
+                <Phase
+                     type="set state"
+                     name="_"
+                     desired_state="on"
+                     pxsl_line="389">
+                    <Trigger
+                         pxsl_line="389">
+                        <QuestObject
+                             class="VirtualSwitchDI"
+                             name="vs_EscortYerema_Zombie_Special"
+                             pxsl_line="389" />
+                    </Trigger>
+                </Phase>
+                <Phase
+                     type="set dialog"
+                     name="Mummie sample - Escort Yerema to the Lab"
+                     speaker="Yerema"
+                     group="Yerema_QF00_NF_A"
+                     pxsl_line="390">
+                    <DebugPlayerPosition
+                         pxsl_line="391">
+                        <QuestObject
+                             class="SpawnPoint"
+                             name="act3b_logic::MapStart"
+                             pxsl_line="391" />
+                    </DebugPlayerPosition>
+                </Phase>
+                <!-- dialogi Mowen -->
+                <Phase
+                     type="checkpoint"
+                     name="Save"
+                     pxsl_line="393">
+                    <Destination
+                         pxsl_line="393">
+                        <QuestObject
+                             class="SpawnPoint"
+                             name="act3b_logic::MapStart"
+                             pxsl_line="393" />
+                    </Destination>
+                </Phase>
+            </Path>
+        </Phase>
+        <Phase
+             type="AND"
+             name="_"
+             objective="&amp;ACT3B_SacredPlace_Objective_B&amp;"
+             pxsl_line="394">
+            <Path
+                 pxsl_line="394">
+                <Phase
+                     type="WATCH"
+                     name="don't let Yerema die"
+                     pxsl_line="395">
+                    <Path
+                         pxsl_line="395">
+                        <Phase
+                             type="escort"
+                             name="back with Yerema001"
+                             distance="0.8"
+                             move_style="walk"
+                             pxsl_line="396">
+                            <Destination
+                                 pxsl_line="396">
+                                <QuestObject
+                                     class="Marker"
+                                     name="act3b_logic::loc_Yerema_001"
+                                     pxsl_line="396" />
+                            </Destination>
+                            <AI
+                                 pxsl_line="397">
+                                <QuestObject
+                                     class="HumanAI"
+                                     name="act3b_logic::Yerema"
+                                     pxsl_line="397" />
+                            </AI>
+                            <Node
+                                 pxsl_line="398">
+                                <QuestObject
+                                     class="AINode"
+                                     name="act3b_logic::ain_Yerema_001"
+                                     pxsl_line="398" />
+                            </Node>
+                        </Phase>
+                    </Path>
+                    <Fallback
+                         pxsl_line="395">
+                        <Phase
+                             type="actor dead guard"
+                             name="don't let Yerema die"
+                             pxsl_line="395">
+                            <AI
+                                 pxsl_line="395">
+                                <QuestObject
+                                     class="HumanAI"
+                                     name="act3b_logic::Yerema"
+                                     pxsl_line="395" />
+                            </AI>
+                        </Phase>
+                        <Phase
+                             type="game over failer"
+                             name="don't let Yerema die"
+                             pxsl_line="395" />
+                    </Fallback>
+                </Phase>
+                <Phase
+                     type="WATCH"
+                     name="don't let Yerema die"
+                     pxsl_line="399">
+                    <Path
+                         pxsl_line="399">
+                        <Phase
+                             type="AND"
+                             name="_"
+                             pxsl_line="400">
+                            <Path
+                                 pxsl_line="401">
+                                <Phase
+                                     type="talk"
+                                     name="_"
+                                     speaker="Yerema"
+                                     group="Yerema_QF00_InProgress_001"
+                                     show_locations="false"
+                                     auto_start="true"
+                                     pxsl_line="402" />
+                            </Path>
+                            <Path
+                                 pxsl_line="403">
+                                <Phase
+                                     type="kill"
+                                     name="_"
+                                     pxsl_line="404">
+                                    <Spawner
+                                         pxsl_line="405">
+                                        <QuestObject
+                                             class="AISpawnBoxNumber"
+                                             name="spawner_YeremasEscrot_001A"
+                                             pxsl_line="405" />
+                                    </Spawner>
+                                    <Spawner
+                                         pxsl_line="406">
+                                        <QuestObject
+                                             class="AISpawnBoxNumber"
+                                             name="spawner_YeremasEscrot_001B"
+                                             pxsl_line="406" />
+                                    </Spawner>
+                                </Phase>
+                            </Path>
+                        </Phase>
+                        <Phase
+                             type="checkpoint"
+                             name="Save"
+                             pxsl_line="407">
+                            <Destination
+                                 pxsl_line="407">
+                                <QuestObject
+                                     class="SpawnPoint"
+                                     name="act3b_logic::SP_Escort_Yerema_001"
+                                     pxsl_line="407" />
+                            </Destination>
+                        </Phase>
+                        <Phase
+                             type="escort"
+                             name="back with Yerema001B"
+                             distance="0.8"
+                             move_style="walk"
+                             pxsl_line="408">
+                            <Destination
+                                 pxsl_line="408">
+                                <QuestObject
+                                     class="Marker"
+                                     name="act3b_logic::loc_Yerema_001B"
+                                     pxsl_line="408" />
+                            </Destination>
+                            <AI
+                                 pxsl_line="409">
+                                <QuestObject
+                                     class="HumanAI"
+                                     name="act3b_logic::Yerema"
+                                     pxsl_line="409" />
+                            </AI>
+                            <Node
+                                 pxsl_line="410">
+                                <QuestObject
+                                     class="AINode"
+                                     name="act3b_logic::ain_Yerema_002B"
+                                     pxsl_line="410" />
+                            </Node>
+                        </Phase>
+                    </Path>
+                    <Fallback
+                         pxsl_line="399">
+                        <Phase
+                             type="actor dead guard"
+                             name="don't let Yerema die"
+                             pxsl_line="399">
+                            <AI
+                                 pxsl_line="399">
+                                <QuestObject
+                                     class="HumanAI"
+                                     name="act3b_logic::Yerema"
+                                     pxsl_line="399" />
+                            </AI>
+                        </Phase>
+                        <Phase
+                             type="game over failer"
+                             name="don't let Yerema die"
+                             pxsl_line="399" />
+                    </Fallback>
+                </Phase>
+                <Phase
+                     type="WATCH"
+                     name="don't let Yerema die"
+                     pxsl_line="411">
+                    <Path
+                         pxsl_line="411">
+                        <Phase
+                             type="AND"
+                             name="_"
+                             pxsl_line="412">
+                            <Path
+                                 pxsl_line="413">
+                                <Phase
+                                     type="talk"
+                                     name="_"
+                                     speaker="Yerema"
+                                     group="Yerema_QF00_InProgress_002"
+                                     show_locations="false"
+                                     auto_start="true"
+                                     pxsl_line="414" />
+                            </Path>
+                            <Path
+                                 pxsl_line="415">
+                                <Phase
+                                     type="kill"
+                                     name="_"
+                                     pxsl_line="416">
+                                    <Spawner
+                                         pxsl_line="417">
+                                        <QuestObject
+                                             class="AISpawnBoxWaves"
+                                             name="spawner_YeremasEscrot_001B_A"
+                                             pxsl_line="417" />
+                                    </Spawner>
+                                    <Spawner
+                                         pxsl_line="418">
+                                        <QuestObject
+                                             class="AISpawnBoxWaves"
+                                             name="spawner_YeremasEscrot_001B_B"
+                                             pxsl_line="418" />
+                                    </Spawner>
+                                </Phase>
+                            </Path>
+                        </Phase>
+                        <Phase
+                             type="checkpoint"
+                             name="Save"
+                             pxsl_line="419">
+                            <Destination
+                                 pxsl_line="419">
+                                <QuestObject
+                                     class="SpawnPoint"
+                                     name="act3b_logic::SP_Escort_Yerema_001B"
+                                     pxsl_line="419" />
+                            </Destination>
+                        </Phase>
+                        <Phase
+                             type="escort"
+                             name="back with Yerema002"
+                             distance="0.8"
+                             move_style="walk"
+                             pxsl_line="420">
+                            <Destination
+                                 pxsl_line="420">
+                                <QuestObject
+                                     class="Marker"
+                                     name="act3b_logic::loc_Yerema_002"
+                                     pxsl_line="420" />
+                            </Destination>
+                            <AI
+                                 pxsl_line="421">
+                                <QuestObject
+                                     class="HumanAI"
+                                     name="act3b_logic::Yerema"
+                                     pxsl_line="421" />
+                            </AI>
+                            <Node
+                                 pxsl_line="422">
+                                <QuestObject
+                                     class="AINode"
+                                     name="act3b_logic::ain_Yerema_002"
+                                     pxsl_line="422" />
+                            </Node>
+                        </Phase>
+                    </Path>
+                    <Fallback
+                         pxsl_line="411">
+                        <Phase
+                             type="actor dead guard"
+                             name="don't let Yerema die"
+                             pxsl_line="411">
+                            <AI
+                                 pxsl_line="411">
+                                <QuestObject
+                                     class="HumanAI"
+                                     name="act3b_logic::Yerema"
+                                     pxsl_line="411" />
+                            </AI>
+                        </Phase>
+                        <Phase
+                             type="game over failer"
+                             name="don't let Yerema die"
+                             pxsl_line="411" />
+                    </Fallback>
+                </Phase>
+                <Phase
+                     type="WATCH"
+                     name="don't let Yerema die"
+                     pxsl_line="423">
+                    <Path
+                         pxsl_line="423">
+                        <Phase
+                             type="AND"
+                             name="_"
+                             pxsl_line="424">
+                            <Path
+                                 pxsl_line="425">
+                                <Phase
+                                     type="talk"
+                                     name="_"
+                                     speaker="Yerema"
+                                     group="Yerema_QF00_InProgress_003"
+                                     show_locations="false"
+                                     auto_start="true"
+                                     pxsl_line="426" />
+                            </Path>
+                            <Path
+                                 pxsl_line="427">
+                                <Phase
+                                     type="kill"
+                                     name="_"
+                                     pxsl_line="428">
+                                    <Spawner
+                                         pxsl_line="429">
+                                        <QuestObject
+                                             class="AISpawnBoxNumber"
+                                             name="spawner_YeremasEscrot_002_A"
+                                             pxsl_line="429" />
+                                    </Spawner>
+                                    <Spawner
+                                         pxsl_line="430">
+                                        <QuestObject
+                                             class="AISpawnBoxNumber"
+                                             name="spawner_YeremasEscrot_002_B"
+                                             pxsl_line="430" />
+                                    </Spawner>
+                                </Phase>
+                            </Path>
+                        </Phase>
+                        <Phase
+                             type="checkpoint"
+                             name="Save"
+                             pxsl_line="431">
+                            <Destination
+                                 pxsl_line="431">
+                                <QuestObject
+                                     class="SpawnPoint"
+                                     name="act3b_logic::SP_Escort_Yerema_002"
+                                     pxsl_line="431" />
+                            </Destination>
+                        </Phase>
+                        <Phase
+                             type="set dialog"
+                             name="_"
+                             speaker="Yerema"
+                             group="Yerema_QF00_NF_B"
+                             pxsl_line="432" />
+                        <Phase
+                             type="escort"
+                             name="back with Yerema003"
+                             distance="0.8"
+                             move_style="walk"
+                             pxsl_line="433">
+                            <Destination
+                                 pxsl_line="433">
+                                <QuestObject
+                                     class="Marker"
+                                     name="act3b_logic::loc_Yerema_003"
+                                     pxsl_line="433" />
+                            </Destination>
+                            <AI
+                                 pxsl_line="434">
+                                <QuestObject
+                                     class="HumanAI"
+                                     name="act3b_logic::Yerema"
+                                     pxsl_line="434" />
+                            </AI>
+                            <Node
+                                 pxsl_line="435">
+                                <QuestObject
+                                     class="AINode"
+                                     name="act3b_logic::ain_Yerema_003"
+                                     pxsl_line="435" />
+                            </Node>
+                        </Phase>
+                    </Path>
+                    <Fallback
+                         pxsl_line="423">
+                        <Phase
+                             type="actor dead guard"
+                             name="don't let Yerema die"
+                             pxsl_line="423">
+                            <AI
+                                 pxsl_line="423">
+                                <QuestObject
+                                     class="HumanAI"
+                                     name="act3b_logic::Yerema"
+                                     pxsl_line="423" />
+                            </AI>
+                        </Phase>
+                        <Phase
+                             type="game over failer"
+                             name="don't let Yerema die"
+                             pxsl_line="423" />
+                    </Fallback>
+                </Phase>
+                <Phase
+                     type="WATCH"
+                     name="don't let Yerema die"
+                     pxsl_line="436">
+                    <Path
+                         pxsl_line="436">
+                        <Phase
+                             type="AND"
+                             name="_"
+                             pxsl_line="437">
+                            <Path
+                                 pxsl_line="438">
+                                <Phase
+                                     type="talk"
+                                     name="_"
+                                     speaker="Yerema"
+                                     group="Yerema_QF00_InProgress_004"
+                                     show_locations="false"
+                                     auto_start="true"
+                                     pxsl_line="439" />
+                            </Path>
+                            <Path
+                                 pxsl_line="440">
+                                <Phase
+                                     type="kill"
+                                     name="_"
+                                     pxsl_line="441">
+                                    <Spawner
+                                         pxsl_line="441">
+                                        <QuestObject
+                                             class="AISpawnBoxNumber"
+                                             name="spawner_YeremasEscZ"
+                                             pxsl_line="441" />
+                                    </Spawner>
+                                </Phase>
+                            </Path>
+                        </Phase>
+                        <Phase
+                             type="checkpoint"
+                             name="Save"
+                             pxsl_line="442">
+                            <Destination
+                                 pxsl_line="442">
+                                <QuestObject
+                                     class="SpawnPoint"
+                                     name="act3b_logic::SP_Escort_Yerema_003"
+                                     pxsl_line="442" />
+                            </Destination>
+                        </Phase>
+                        <Phase
+                             type="set dialog"
+                             name="_"
+                             speaker="Yerema"
+                             group="Yerema_QF00_NF_C"
+                             pxsl_line="443" />
+                        <Phase
+                             type="escort"
+                             name="back with Yerema004"
+                             distance="0.8"
+                             move_style="walk"
+                             pxsl_line="444">
+                            <Destination
+                                 pxsl_line="444">
+                                <QuestObject
+                                     class="Marker"
+                                     name="act3b_logic::loc_Yerema_004"
+                                     pxsl_line="444" />
+                            </Destination>
+                            <AI
+                                 pxsl_line="445">
+                                <QuestObject
+                                     class="HumanAI"
+                                     name="act3b_logic::Yerema"
+                                     pxsl_line="445" />
+                            </AI>
+                            <Node
+                                 pxsl_line="446">
+                                <QuestObject
+                                     class="AINode"
+                                     name="act3b_logic::ain_Yerema_004"
+                                     pxsl_line="446" />
+                            </Node>
+                        </Phase>
+                    </Path>
+                    <Fallback
+                         pxsl_line="436">
+                        <Phase
+                             type="actor dead guard"
+                             name="don't let Yerema die"
+                             pxsl_line="436">
+                            <AI
+                                 pxsl_line="436">
+                                <QuestObject
+                                     class="HumanAI"
+                                     name="act3b_logic::Yerema"
+                                     pxsl_line="436" />
+                            </AI>
+                        </Phase>
+                        <Phase
+                             type="game over failer"
+                             name="don't let Yerema die"
+                             pxsl_line="436" />
+                    </Fallback>
+                </Phase>
+                <Phase
+                     type="WATCH"
+                     name="don't let Yerema die"
+                     pxsl_line="447">
+                    <Path
+                         pxsl_line="447">
+                        <Phase
+                             type="checkpoint"
+                             name="Save"
+                             pxsl_line="448">
+                            <Destination
+                                 pxsl_line="448">
+                                <QuestObject
+                                     class="SpawnPoint"
+                                     name="act3b_logic::SP_Escort_Yerema_004"
+                                     pxsl_line="448" />
+                            </Destination>
+                        </Phase>
+                        <Phase
+                             type="AND"
+                             name="_"
+                             pxsl_line="449">
+                            <Path
+                                 pxsl_line="450">
+                                <Phase
+                                     type="set dialog"
+                                     name="_"
+                                     speaker="Yerema"
+                                     pxsl_line="451" />
+                                <Phase
+                                     type="wait guard"
+                                     name="_"
+                                     time="3"
+                                     pxsl_line="452" />
+                                <Phase
+                                     type="talk"
+                                     name="_"
+                                     speaker="Yerema"
+                                     group="Yerema_QF00_InProgress_005"
+                                     show_locations="false"
+                                     auto_start="true"
+                                     pxsl_line="453" />
+                            </Path>
+                            <Path
+                                 pxsl_line="454">
+                                <Phase
+                                     type="escort"
+                                     name="back with Yerema005"
+                                     distance="0.8"
+                                     move_style="walk"
+                                     pxsl_line="455">
+                                    <Destination
+                                         pxsl_line="455">
+                                        <QuestObject
+                                             class="Marker"
+                                             name="act3b_logic::Loc_Lab_Yerema"
+                                             pxsl_line="455" />
+                                    </Destination>
+                                    <AI
+                                         pxsl_line="456">
+                                        <QuestObject
+                                             class="HumanAI"
+                                             name="act3b_logic::Yerema"
+                                             pxsl_line="456" />
+                                    </AI>
+                                    <Node
+                                         pxsl_line="457">
+                                        <QuestObject
+                                             class="AINode"
+                                             name="act3b_logic::ain_Lab_Yerema"
+                                             pxsl_line="457" />
+                                    </Node>
+                                </Phase>
+                            </Path>
+                        </Phase>
+                        <Phase
+                             type="talk"
+                             name="_"
+                             speaker="Yerema"
+                             group="Yerema_QF00_InProgress_006"
+                             show_locations="false"
+                             auto_start="true"
+                             pxsl_line="458" />
+                    </Path>
+                    <Fallback
+                         pxsl_line="447">
+                        <Phase
+                             type="actor dead guard"
+                             name="don't let Yerema die"
+                             pxsl_line="447">
+                            <AI
+                                 pxsl_line="447">
+                                <QuestObject
+                                     class="HumanAI"
+                                     name="act3b_logic::Yerema"
+                                     pxsl_line="447" />
+                            </AI>
+                        </Phase>
+                        <Phase
+                             type="game over failer"
+                             name="don't let Yerema die"
+                             pxsl_line="447" />
+                    </Fallback>
+                </Phase>
+                <!-- ,set-lp _ NPCLifePlace act3b_logic::LP_DoResearch_West_Working -state=off -->
+                <!-- ,set-lp _ NPCLifePlace act3b_logic::LP_DoResearch_West_Talking -state=on -->
+                <Phase
+                     type="talk"
+                     name="Mummie sample - Talk with West"
+                     speaker="West"
+                     group="West_Q6_Accomplished"
+                     gather_radius="3"
+                     pxsl_line="461">
+                    <DebugPlayerPosition
+                         pxsl_line="462">
+                        <QuestObject
+                             class="SpawnPoint"
+                             name="act3b_logic::debugpos_Lab"
+                             pxsl_line="462" />
+                    </DebugPlayerPosition>
+                </Phase>
+                <Phase
+                     type="set state"
+                     name="_"
+                     desired_state="off"
+                     pxsl_line="463">
+                    <Trigger
+                         pxsl_line="463">
+                        <QuestObject
+                             class="VirtualSwitchDI"
+                             name="vs_EscortYerema_Zombie_Special"
+                             pxsl_line="463" />
+                    </Trigger>
+                </Phase>
+                <Phase
+                     type="checkpoint"
+                     name="AutoSave009"
+                     pxsl_line="464">
+                    <Destination
+                         pxsl_line="464">
+                        <QuestObject
+                             class="SpawnPoint"
+                             name="act3b_logic::debugpos_Lab"
+                             pxsl_line="464" />
+                    </Destination>
+                </Phase>
+                <Phase
+                     type="talk"
+                     name="VoiceRadio03"
+                     speaker="Voice"
+                     group="VoiceRadio_QF01_C"
+                     show_locations="false"
+                     auto_start="true"
+                     pxsl_line="465" />
+            </Path>
+        </Phase>
+    </Quest>
+    <Quest
+         name="ACT3B_VoiceTalkToMowen"
+         parent="ACT3B_SacredPlace"
+         quest_giver="Voice"
+         pxsl_line="467">
+        <Phase
+             type="AND"
+             name="_"
+             objective="&amp;ACT3B_VoiceTalkToMowen_Objective&amp;"
+             pxsl_line="468">
+            <Path
+                 pxsl_line="468">
+                <!-- ,appear _                             MapPortal ACT3B_Boat_ACT3A          -mode=hide -->
+                <!-- ,appear _                             MapPortal ACT3B_Boat_ACT2B          -mode=show -->
+                <Phase
+                     type="set state"
+                     name="portal act3a off"
+                     desired_state="off"
+                     pxsl_line="471">
+                    <Trigger
+                         pxsl_line="471">
+                        <QuestObject
+                             class="VirtualSwitchDI"
+                             name="act3b_logic::switch_boat_portal_act3a"
+                             pxsl_line="471" />
+                    </Trigger>
+                </Phase>
+                <Phase
+                     type="set lifeplace"
+                     name="_"
+                     desired_state="off"
+                     pxsl_line="472">
+                    <LifePlace
+                         pxsl_line="472">
+                        <QuestObject
+                             class="NPCLifePlace"
+                             name="act3b_logic::LP_Mowen_Boat_001"
+                             pxsl_line="472" />
+                    </LifePlace>
+                </Phase>
+                <Phase
+                     type="set lifeplace"
+                     name="_"
+                     desired_state="off"
+                     pxsl_line="473">
+                    <LifePlace
+                         pxsl_line="473">
+                        <QuestObject
+                             class="NPCLifePlace"
+                             name="act3b_logic::LP_Mowen_Boat_002"
+                             pxsl_line="473" />
+                    </LifePlace>
+                </Phase>
+                <Phase
+                     type="set lifeplace"
+                     name="_"
+                     desired_state="off"
+                     pxsl_line="474">
+                    <LifePlace
+                         pxsl_line="474">
+                        <QuestObject
+                             class="NPCLifePlace"
+                             name="act3b_logic::LP_Mowen_Boat_003"
+                             pxsl_line="474" />
+                    </LifePlace>
+                </Phase>
+                <Phase
+                     type="talk"
+                     name="Prison trip preparation - Talk with Mowen "
+                     speaker="Mowen"
+                     group="Mowen_Q4_NF"
+                     gather_radius="3"
+                     pxsl_line="475">
+                    <DebugPlayerPosition
+                         pxsl_line="476">
+                        <QuestObject
+                             class="SpawnPoint"
+                             name="act3b_logic::MapStart"
+                             pxsl_line="476" />
+                    </DebugPlayerPosition>
+                </Phase>
+                <Phase
+                     type="set dialog"
+                     name="_"
+                     speaker="Mowen"
+                     pxsl_line="477" />
+                <Phase
+                     type="set state"
+                     name="portal act2b on"
+                     desired_state="on"
+                     pxsl_line="478">
+                    <Trigger
+                         pxsl_line="478">
+                        <QuestObject
+                             class="VirtualSwitchDI"
+                             name="act3b_logic::switch_boat_portal_act2b"
+                             pxsl_line="478" />
+                    </Trigger>
+                </Phase>
+                <Phase
+                     type="checkpoint"
+                     name="AutoSave004"
+                     pxsl_line="479">
+                    <Destination
+                         pxsl_line="479">
+                        <QuestObject
+                             class="SpawnPoint"
+                             name="act3b_logic::MapStart"
+                             pxsl_line="479" />
+                    </Destination>
+                </Phase>
+            </Path>
+        </Phase>
+    </Quest>
+    <Quest
+         name="ACT3B_BackToLab"
+         parent="ACT1A_BackToLab"
+         new_map="true"
+         pxsl_line="481">
+        <Phase
+             type="AND"
+             name="_"
+             objective="&amp;ACT1A_BackToLab_Objective_A&amp;"
+             pxsl_line="482">
+            <Path
+                 pxsl_line="482">
+                <Phase
+                     type="appear"
+                     name="StartCleaning"
+                     mode="hide"
+                     pxsl_line="483">
+                    <Object
+                         pxsl_line="484">
+                        <QuestObject
+                             class="HumanAI"
+                             name="act3b_logic::Scientist001"
+                             pxsl_line="484" />
+                    </Object>
+                    <Object
+                         pxsl_line="485">
+                        <QuestObject
+                             class="HumanAI"
+                             name="act3b_logic::Scientist003"
+                             pxsl_line="485" />
+                    </Object>
+                    <Object
+                         pxsl_line="486">
+                        <QuestObject
+                             class="HumanAI"
+                             name="act3b_logic::Scientist004"
+                             pxsl_line="486" />
+                    </Object>
+                    <Object
+                         pxsl_line="487">
+                        <QuestObject
+                             class="HumanAI"
+                             name="act3b_logic::ScientistTechnican"
+                             pxsl_line="487" />
+                    </Object>
+                    <Object
+                         pxsl_line="488">
+                        <QuestObject
+                             class="HumanAI"
+                             name="act3b_logic::SQ_L_01_Lachance"
+                             pxsl_line="488" />
+                    </Object>
+                    <Object
+                         pxsl_line="489">
+                        <QuestObject
+                             class="HumanAI"
+                             name="act3b_logic::SQ_C_01_Connor"
+                             pxsl_line="489" />
+                    </Object>
+                    <Object
+                         pxsl_line="490">
+                        <QuestObject
+                             class="HumanAI"
+                             name="act3b_logic::SQ_M_01_Monroe"
+                             pxsl_line="490" />
+                    </Object>
+                    <Object
+                         pxsl_line="491">
+                        <QuestObject
+                             class="HumanAI"
+                             name="act3b_logic::SQ_N_01_Nguyen"
+                             pxsl_line="491" />
+                    </Object>
+                    <Object
+                         pxsl_line="492">
+                        <QuestObject
+                             class="HumanAI"
+                             name="JoelDirt"
+                             pxsl_line="492" />
+                    </Object>
+                    <Object
+                         pxsl_line="493">
+                        <QuestObject
+                             class="DoorDI"
+                             name="act3b_logic::Door_Lab_001"
+                             pxsl_line="493" />
+                    </Object>
+                    <Object
+                         pxsl_line="494">
+                        <QuestObject
+                             class="DoorDI"
+                             name="Door_West"
+                             pxsl_line="494" />
+                    </Object>
+                    <Object
+                         pxsl_line="495">
+                        <QuestObject
+                             class="DoorDI"
+                             name="act3b_logic::door_QF01_Lab_Doors_First_B"
+                             pxsl_line="495" />
+                    </Object>
+                    <Object
+                         pxsl_line="496">
+                        <QuestObject
+                             class="DoorDI"
+                             name="act3b_logic::door_QF01_Lab_Doors_First_A"
+                             pxsl_line="496" />
+                    </Object>
+                    <Object
+                         pxsl_line="497">
+                        <QuestObject
+                             class="DoorDI"
+                             name="Door_Lab_DressingRoom_001"
+                             pxsl_line="497" />
+                    </Object>
+                    <Object
+                         pxsl_line="498">
+                        <QuestObject
+                             class="DoorDI"
+                             name="Door_Lab_DressingRoom_002"
+                             pxsl_line="498" />
+                    </Object>
+                    <Object
+                         pxsl_line="499">
+                        <QuestObject
+                             class="DoorDI"
+                             name="door_Lab_Hallway_A"
+                             pxsl_line="499" />
+                    </Object>
+                    <Object
+                         pxsl_line="500">
+                        <QuestObject
+                             class="DoorDI"
+                             name="door_Lab_Hallway_B"
+                             pxsl_line="500" />
+                    </Object>
+                    <Object
+                         pxsl_line="501">
+                        <QuestObject
+                             class="ActorDI"
+                             name="Lab_CageZOmbies_000"
+                             pxsl_line="501" />
+                    </Object>
+                    <Object
+                         pxsl_line="502">
+                        <QuestObject
+                             class="ActorDI"
+                             name="Lab_CageZOmbies_001"
+                             pxsl_line="502" />
+                    </Object>
+                    <Object
+                         pxsl_line="503">
+                        <QuestObject
+                             class="ActorDI"
+                             name="Lab_CageZOmbies_002"
+                             pxsl_line="503" />
+                    </Object>
+                    <Object
+                         pxsl_line="504">
+                        <QuestObject
+                             class="ActorDI"
+                             name="Lab_CageZOmbies_003"
+                             pxsl_line="504" />
+                    </Object>
+                    <Object
+                         pxsl_line="505">
+                        <QuestObject
+                             class="ModelObject"
+                             name="Lab_CageDoor_000"
+                             pxsl_line="505" />
+                    </Object>
+                    <Object
+                         pxsl_line="506">
+                        <QuestObject
+                             class="ModelObject"
+                             name="Lab_CageDoor_001"
+                             pxsl_line="506" />
+                    </Object>
+                    <Object
+                         pxsl_line="507">
+                        <QuestObject
+                             class="ModelObject"
+                             name="Lab_CageDoor_002"
+                             pxsl_line="507" />
+                    </Object>
+                    <Object
+                         pxsl_line="508">
+                        <QuestObject
+                             class="ModelObject"
+                             name="Lab_CageDoor_003"
+                             pxsl_line="508" />
+                    </Object>
+                </Phase>
+                <Phase
+                     type="appear"
+                     name="StartAppear"
+                     mode="show"
+                     pxsl_line="509">
+                    <Object
+                         pxsl_line="510">
+                        <QuestObject
+                             class="ModelObject"
+                             name="Lab_CageDoor_000opened"
+                             pxsl_line="510" />
+                    </Object>
+                    <Object
+                         pxsl_line="511">
+                        <QuestObject
+                             class="ModelObject"
+                             name="Lab_CageDoor_001opened"
+                             pxsl_line="511" />
+                    </Object>
+                    <Object
+                         pxsl_line="512">
+                        <QuestObject
+                             class="ModelObject"
+                             name="Lab_CageDoor_002opened"
+                             pxsl_line="512" />
+                    </Object>
+                    <Object
+                         pxsl_line="513">
+                        <QuestObject
+                             class="ModelObject"
+                             name="Lab_CageDoor_003opened"
+                             pxsl_line="513" />
+                    </Object>
+                    <Object
+                         pxsl_line="514">
+                        <QuestObject
+                             class="AIDeadBodySpawnBoxAuto"
+                             name="DeadBody_RescueYerema_001"
+                             pxsl_line="514" />
+                    </Object>
+                    <Object
+                         pxsl_line="515">
+                        <QuestObject
+                             class="AIDeadBodySpawnBoxAuto"
+                             name="DeadBody_RescueYerema_002"
+                             pxsl_line="515" />
+                    </Object>
+                    <Object
+                         pxsl_line="516">
+                        <QuestObject
+                             class="AIDeadBodySpawnBoxAuto"
+                             name="DeadBody_RescueYerema_003"
+                             pxsl_line="516" />
+                    </Object>
+                    <Object
+                         pxsl_line="517">
+                        <QuestObject
+                             class="QuestInventoryItemDI"
+                             name="act3b_logic::item_Antidote"
+                             pxsl_line="517" />
+                    </Object>
+                    <Object
+                         pxsl_line="518">
+                        <QuestObject
+                             class="ModelObject"
+                             name="act3b_logic::Door_Lab_001_destr"
+                             pxsl_line="518" />
+                    </Object>
+                    <Object
+                         pxsl_line="519">
+                        <QuestObject
+                             class="ModelObject"
+                             name="Door_West_dest"
+                             pxsl_line="519" />
+                    </Object>
+                    <Object
+                         pxsl_line="520">
+                        <QuestObject
+                             class="ModelObject"
+                             name="act3b_logic::door_QF01_Lab_Doors_First_A_dest"
+                             pxsl_line="520" />
+                    </Object>
+                    <Object
+                         pxsl_line="521">
+                        <QuestObject
+                             class="ModelObject"
+                             name="act3b_logic::door_QF01_Lab_Doors_First_B_dest"
+                             pxsl_line="521" />
+                    </Object>
+                    <Object
+                         pxsl_line="522">
+                        <QuestObject
+                             class="ModelObject"
+                             name="Door_Lab_DressingRoom_001_dest"
+                             pxsl_line="522" />
+                    </Object>
+                    <Object
+                         pxsl_line="523">
+                        <QuestObject
+                             class="NavMeshDynamicObject"
+                             name="Door_Lab_DressingRoom_002_dest"
+                             pxsl_line="523" />
+                    </Object>
+                    <Object
+                         pxsl_line="524">
+                        <QuestObject
+                             class="NavMeshDynamicObject"
+                             name="door_Lab_Hallway_A_dest"
+                             pxsl_line="524" />
+                    </Object>
+                    <Object
+                         pxsl_line="525">
+                        <QuestObject
+                             class="NavMeshDynamicObject"
+                             name="door_Lab_Hallway_B_dest"
+                             pxsl_line="525" />
+                    </Object>
+                    <Object
+                         pxsl_line="526">
+                        <QuestObject
+                             class="ModelObject"
+                             name="act3b_logic::broken_glass_001"
+                             pxsl_line="526" />
+                    </Object>
+                    <Object
+                         pxsl_line="527">
+                        <QuestObject
+                             class="ModelObject"
+                             name="act3b_logic::broken_glass_002"
+                             pxsl_line="527" />
+                    </Object>
+                    <Object
+                         pxsl_line="528">
+                        <QuestObject
+                             class="ModelObject"
+                             name="act3b_logic::broken_glass_003"
+                             pxsl_line="528" />
+                    </Object>
+                    <Object
+                         pxsl_line="529">
+                        <QuestObject
+                             class="ModelObject"
+                             name="act3b_logic::broken_glass_004"
+                             pxsl_line="529" />
+                    </Object>
+                </Phase>
+                <!--  ,o MapPortal ACT3B_Boat_ACT3A -->
+                <Phase
+                     type="set state"
+                     name="_"
+                     desired_state="off"
+                     pxsl_line="531">
+                    <Trigger
+                         pxsl_line="531">
+                        <QuestObject
+                             class="VirtualSwitchDI"
+                             name="LabZombies"
+                             pxsl_line="531" />
+                    </Trigger>
+                </Phase>
+                <Phase
+                     type="set state"
+                     name="portal act2b off"
+                     desired_state="off"
+                     pxsl_line="532">
+                    <Trigger
+                         pxsl_line="532">
+                        <QuestObject
+                             class="VirtualSwitchDI"
+                             name="act3b_logic::switch_boat_portal_act2b"
+                             pxsl_line="532" />
+                    </Trigger>
+                </Phase>
+                <Phase
+                     type="set state"
+                     name="portal act3a on"
+                     desired_state="on"
+                     pxsl_line="533">
+                    <Trigger
+                         pxsl_line="533">
+                        <QuestObject
+                             class="VirtualSwitchDI"
+                             name="act3b_logic::switch_boat_portal_act3a"
+                             pxsl_line="533" />
+                    </Trigger>
+                </Phase>
+                <Phase
+                     type="set state"
+                     name="Quest Hub Lab off"
+                     desired_state="off"
+                     pxsl_line="534">
+                    <Trigger
+                         pxsl_line="534">
+                        <QuestObject
+                             class="VirtualSwitchDI"
+                             name="act3b_logic::Quest_hub_laboratory"
+                             pxsl_line="534" />
+                    </Trigger>
+                </Phase>
+                <Phase
+                     type="set state"
+                     name="_"
+                     desired_state="on"
+                     pxsl_line="535">
+                    <Trigger
+                         pxsl_line="535">
+                        <QuestObject
+                             class="VirtualSwitchDI"
+                             name="vs_Zombie_Yerema_Rescue"
+                             pxsl_line="535" />
+                    </Trigger>
+                </Phase>
+                <Phase
+                     type="set state"
+                     name="_"
+                     desired_state="off"
+                     pxsl_line="536">
+                    <Trigger
+                         pxsl_line="536">
+                        <QuestObject
+                             class="VirtualSwitchDI"
+                             name="vs_Lab_SafeZone"
+                             pxsl_line="536" />
+                    </Trigger>
+                </Phase>
+                <Phase
+                     type="set state"
+                     name="_"
+                     desired_state="off"
+                     pxsl_line="537">
+                    <Trigger
+                         pxsl_line="537">
+                        <QuestObject
+                             class="VirtualSwitchDI"
+                             name="vs_Lab_SafeZone_part2"
+                             pxsl_line="537" />
+                    </Trigger>
+                </Phase>
+                <!-- ,set _ DoorDI Door_West -state=opened -->
+                <!-- ,set _ DoorDI act3b_logic::door_QF01_Lab_Doors_First_B -state=opened -->
+                <!-- ,set _ DoorDI act3b_logic::door_QF01_Lab_Doors_First_A -state=opened -->
+                <!-- ,set _ DoorDI act3b_logic::Door_Lab_001 -state=opened -->
+                <Phase
+                     type="set lifeplace"
+                     name="_"
+                     desired_state="on"
+                     pxsl_line="543">
+                    <LifePlace
+                         pxsl_line="543">
+                        <QuestObject
+                             class="NPCLifePlace"
+                             name="act3b_logic::LP_Mowen_Boat_001"
+                             pxsl_line="543" />
+                    </LifePlace>
+                </Phase>
+                <Phase
+                     type="set lifeplace"
+                     name="_"
+                     desired_state="on"
+                     pxsl_line="544">
+                    <LifePlace
+                         pxsl_line="544">
+                        <QuestObject
+                             class="NPCLifePlace"
+                             name="act3b_logic::LP_Mowen_Boat_002"
+                             pxsl_line="544" />
+                    </LifePlace>
+                </Phase>
+                <Phase
+                     type="set lifeplace"
+                     name="_"
+                     desired_state="on"
+                     pxsl_line="545">
+                    <LifePlace
+                         pxsl_line="545">
+                        <QuestObject
+                             class="NPCLifePlace"
+                             name="act3b_logic::LP_Mowen_Boat_003"
+                             pxsl_line="545" />
+                    </LifePlace>
+                </Phase>
+                <Phase
+                     type="appear"
+                     name="_"
+                     mode="hide"
+                     pxsl_line="546">
+                    <Object
+                         pxsl_line="546">
+                        <QuestObject
+                             class="HumanAI"
+                             name="act3b_logic::West"
+                             pxsl_line="546" />
+                    </Object>
+                </Phase>
+                <Phase
+                     type="move ai"
+                     name="_"
+                     teleport="true"
+                     pxsl_line="547">
+                    <Destination
+                         pxsl_line="547">
+                        <QuestObject
+                             class="Marker"
+                             name="act3b_logic::Loc_Lab_Yerema_Hide"
+                             pxsl_line="547" />
+                    </Destination>
+                    <AI
+                         pxsl_line="548">
+                        <QuestObject
+                             class="HumanAI"
+                             name="act3b_logic::Yerema"
+                             pxsl_line="548" />
+                    </AI>
+                </Phase>
+                <Phase
+                     type="appear"
+                     name="_"
+                     mode="show"
+                     pxsl_line="549">
+                    <Object
+                         pxsl_line="549">
+                        <QuestObject
+                             class="HumanAI"
+                             name="act3b_logic::Yerema"
+                             pxsl_line="549" />
+                    </Object>
+                </Phase>
+                <Phase
+                     type="checkpoint"
+                     name="AutoSave010"
+                     pxsl_line="550">
+                    <Destination
+                         pxsl_line="550">
+                        <QuestObject
+                             class="SpawnPoint"
+                             name="act3b_logic::MapStart"
+                             pxsl_line="550" />
+                    </Destination>
+                </Phase>
+                <Phase
+                     type="go to"
+                     name="Rescue Yerema"
+                     distance="2.5"
+                     pxsl_line="551">
+                    <Destination
+                         pxsl_line="551">
+                        <QuestObject
+                             class="Marker"
+                             name="act3b_logic::Loc_Lab_end"
+                             pxsl_line="551" />
+                    </Destination>
+                    <DebugPlayerPosition
+                         pxsl_line="552">
+                        <QuestObject
+                             class="SpawnPoint"
+                             name="act3b_logic::MapStart"
+                             pxsl_line="552" />
+                    </DebugPlayerPosition>
+                </Phase>
+                <Phase
+                     type="set dialog"
+                     name="_"
+                     speaker="Yerema"
+                     group="Yerema_QF01_NF_001"
+                     pxsl_line="553" />
+                <Phase
+                     type="checkpoint"
+                     name="AutoSave011"
+                     pxsl_line="554">
+                    <Destination
+                         pxsl_line="554">
+                        <QuestObject
+                             class="SpawnPoint"
+                             name="act3b_logic::MapStart"
+                             pxsl_line="554" />
+                    </Destination>
+                </Phase>
+            </Path>
+        </Phase>
+        <Phase
+             type="AND"
+             name="_"
+             objective="&amp;ACT1A_BackToLab_Objective_B&amp;"
+             pxsl_line="555">
+            <Path
+                 pxsl_line="555">
+                <Phase
+                     type="set state"
+                     name="_"
+                     desired_state="off"
+                     pxsl_line="556">
+                    <Trigger
+                         pxsl_line="556">
+                        <QuestObject
+                             class="VirtualSwitchDI"
+                             name="VS_Music_Hub_Laboratory"
+                             pxsl_line="556" />
+                    </Trigger>
+                </Phase>
+                <Phase
+                     type="set state"
+                     name="_"
+                     desired_state="on"
+                     pxsl_line="557">
+                    <Trigger
+                         pxsl_line="557">
+                        <QuestObject
+                             class="VirtualSwitchDI"
+                             name="VS_Music_Fight"
+                             pxsl_line="557" />
+                    </Trigger>
+                </Phase>
+                <Phase
+                     type="kill"
+                     name="_"
+                     pxsl_line="558">
+                    <Spawner
+                         pxsl_line="559">
+                        <QuestObject
+                             class="AISpawnBoxNumber"
+                             name="act3b_logic::West_zombie001"
+                             pxsl_line="559" />
+                    </Spawner>
+                    <Spawner
+                         pxsl_line="560">
+                        <QuestObject
+                             class="AISpawnBoxNumber"
+                             name="act3b_logic::West_zombie002"
+                             pxsl_line="560" />
+                    </Spawner>
+                </Phase>
+                <!--    ,spawner    AISpawnBoxNumber act3b_logic::West_zombie003 -->
+                <Phase
+                     type="set state"
+                     name="_"
+                     desired_state="off"
+                     pxsl_line="562">
+                    <Trigger
+                         pxsl_line="562">
+                        <QuestObject
+                             class="VirtualSwitchDI"
+                             name="VS_Music_Fight"
+                             pxsl_line="562" />
+                    </Trigger>
+                </Phase>
+                <Phase
+                     type="set dialog"
+                     name="_"
+                     speaker="Yerema"
+                     group="Yerema_QF01_NF_002"
+                     pxsl_line="563" />
+                <Phase
+                     type="checkpoint"
+                     name="AutoSave012"
+                     pxsl_line="564">
+                    <Destination
+                         pxsl_line="564">
+                        <QuestObject
+                             class="SpawnPoint"
+                             name="act3b_logic::debugpos_Lab_int"
+                             pxsl_line="564" />
+                    </Destination>
+                </Phase>
+            </Path>
+        </Phase>
+        <Phase
+             type="AND"
+             name="_"
+             objective="&amp;act3b_use_releaseY&amp;"
+             pxsl_line="565">
+            <Path
+                 pxsl_line="565">
+                <Phase
+                     type="use"
+                     name="_"
+                     desired_state="on"
+                     pxsl_line="566">
+                    <Trigger
+                         pxsl_line="566">
+                        <QuestObject
+                             class="PhysicalSwitchDI"
+                             name="act3b_logic::switch_YeremaCage"
+                             pxsl_line="566" />
+                    </Trigger>
+                </Phase>
+                <Phase
+                     type="set state"
+                     name="_"
+                     desired_state="off"
+                     pxsl_line="567">
+                    <Trigger
+                         pxsl_line="567">
+                        <QuestObject
+                             class="VirtualSwitchDI"
+                             name="vs_Zombie_Yerema_Rescue"
+                             pxsl_line="567" />
+                    </Trigger>
+                </Phase>
+                <Phase
+                     type="set state"
+                     name="_"
+                     desired_state="on"
+                     pxsl_line="568">
+                    <Trigger
+                         pxsl_line="568">
+                        <QuestObject
+                             class="VirtualSwitchDI"
+                             name="vs_Lab_SafeZone"
+                             pxsl_line="568" />
+                    </Trigger>
+                </Phase>
+                <Phase
+                     type="set state"
+                     name="_"
+                     desired_state="on"
+                     pxsl_line="569">
+                    <Trigger
+                         pxsl_line="569">
+                        <QuestObject
+                             class="VirtualSwitchDI"
+                             name="vs_Lab_SafeZone_part2"
+                             pxsl_line="569" />
+                    </Trigger>
+                </Phase>
+                <Phase
+                     type="movie"
+                     name="_"
+                     movie="Movie_cage_gate"
+                     pxsl_line="570" />
+                <Phase
+                     type="move ai"
+                     name="_"
+                     teleport="false"
+                     pxsl_line="571">
+                    <Destination
+                         pxsl_line="571">
+                        <QuestObject
+                             class="Marker"
+                             name="act3b_logic::Loc_Lab_Yerema_out"
+                             pxsl_line="571" />
+                    </Destination>
+                    <AI
+                         pxsl_line="572">
+                        <QuestObject
+                             class="HumanAI"
+                             name="act3b_logic::Yerema"
+                             pxsl_line="572" />
+                    </AI>
+                </Phase>
+                <Phase
+                     type="talk"
+                     name="_"
+                     speaker="Yerema"
+                     group="Yerema_QF01_NF"
+                     show_locations="false"
+                     auto_start="true"
+                     pxsl_line="573" />
+                <Phase
+                     type="talk"
+                     name="_"
+                     speaker="Yerema"
+                     group="Yerema_QF01_Accomplished"
+                     gather_radius="3"
+                     pxsl_line="574" />
+                <Phase
+                     type="talk"
+                     name="_"
+                     speaker="Voice"
+                     group="VoiceRadio_QF01_NF"
+                     show_locations="false"
+                     auto_start="true"
+                     pxsl_line="575" />
+                <Phase
+                     type="checkpoint"
+                     name="AutoSave012"
+                     pxsl_line="576">
+                    <Destination
+                         pxsl_line="576">
+                        <QuestObject
+                             class="SpawnPoint"
+                             name="act3b_logic::debugpos_Lab_int"
+                             pxsl_line="576" />
+                    </Destination>
+                </Phase>
+            </Path>
+        </Phase>
+        <Phase
+             type="AND"
+             name="_"
+             objective="&amp;ACT1A_BackToLab_Objective_C&amp;"
+             pxsl_line="577">
+            <Path
+                 pxsl_line="577">
+                <Phase
+                     type="take item"
+                     name="Rescue Yerema - Find Antidote"
+                     show_locations="false"
+                     pxsl_line="578">
+                    <Item
+                         pxsl_line="578">
+                        <QuestObject
+                             class="QuestInventoryItemDI"
+                             name="act3b_logic::item_Antidote"
+                             pxsl_line="578" />
+                    </Item>
+                    <SpecificLocation
+                         pxsl_line="579">
+                        <QuestObject
+                             class="ZoneBox"
+                             name="ACT3B_Zone_WestRoom"
+                             pxsl_line="579" />
+                    </SpecificLocation>
+                    <DebugPlayerPosition
+                         pxsl_line="580">
+                        <QuestObject
+                             class="SpawnPoint"
+                             name="act3b_logic::debugpos_Lab"
+                             pxsl_line="580" />
+                    </DebugPlayerPosition>
+                </Phase>
+                <Phase
+                     type="set state"
+                     name="_"
+                     desired_state="on"
+                     pxsl_line="581">
+                    <Trigger
+                         pxsl_line="581">
+                        <QuestObject
+                             class="VirtualSwitchDI"
+                             name="act3b_logic::VS_PointOfNoReturn_001"
+                             pxsl_line="581" />
+                    </Trigger>
+                </Phase>
+                <Phase
+                     type="use"
+                     name="_"
+                     desired_state="on"
+                     pxsl_line="582">
+                    <Trigger
+                         pxsl_line="582">
+                        <QuestObject
+                             class="InvisibleSwitchDI"
+                             name="act3b_logic::PS_PointOfNoReturn_001"
+                             pxsl_line="582" />
+                    </Trigger>
+                </Phase>
+                <Phase
+                     type="set state"
+                     name="_"
+                     desired_state="off"
+                     pxsl_line="583">
+                    <Trigger
+                         pxsl_line="583">
+                        <QuestObject
+                             class="VirtualSwitchDI"
+                             name="act3b_logic::VS_PointOfNoReturn_001"
+                             pxsl_line="583" />
+                    </Trigger>
+                </Phase>
+                <Phase
+                     type="talk"
+                     name="_"
+                     speaker="Voice"
+                     group="VoiceRadio_QF01_Accomplished"
+                     show_locations="false"
+                     auto_start="true"
+                     pxsl_line="584" />
+                <!-- ,goto _ Marker act3b_logic::Loc_Lab_end -distance=2.5 -obj=&ACT1A_BackToLab_Objective_D& -->
+            </Path>
+        </Phase>
+        <Phase
+             type="is_content_available"
+             required_map="act4b"
+             pxsl_line="587" />
+        <Phase
+             type="movie"
+             name="ACT3B – CINEMATIC - GO TO THE PRISON"
+             movie="CIN08"
+             pxsl_line="588">
+            <DebugPlayerPosition
+                 pxsl_line="589">
+                <QuestObject
+                     class="SpawnPoint"
+                     name="act3b_logic::debugpos_Lab"
+                     pxsl_line="589" />
+            </DebugPlayerPosition>
+        </Phase>
+        <Phase
+             type="movie"
+             name="Start ACT4 info"
+             movie="CIN_ACT4"
+             pxsl_line="590" />
+        <!-- ,BLOCK _                                                                     -obj=&ACT1A_BackToLab_Objective_D&                                   -->
+            <!-- ,appear _                             MapPortal ACT3B_Boat_ACT3A           -mode=hide -->
+            <!-- ,appear _                             MapPortal ACT3B_Boat_ACT4A           -mode=show -->
+            <!-- ,set <<portal act3a off>>   VirtualSwitchDI act3b_logic::switch_boat_portal_act3a    -state=off -->
+            <!-- ,escort _                             Marker act3b_logic::loc_Yerema02_001              -distance=0.8 -->
+                <!--   ,escortee HumanAI act3b_logic::Yerema -->
+                <!-- ,escort _                             Marker act3b_logic::loc_Yerema02_002              -distance=0.8 -->
+                    <!--   ,escortee HumanAI act3b_logic::Yerema -->
+                <!-- ,escort _                             Marker act3b_logic::loc_Yerema02_003              -distance=0.8 -->
+                    <!--  ,escortee HumanAI act3b_logic::Yerema -->
+                <!-- ,escort _                             Marker act3b_logic::Loc_Boat2                     -distance=0.8 -->
+                    <!-- ,escortee HumanAI act3b_logic::Yerema -->
+                    <!-- ,debugpos SpawnPoint act3b_logic::MapStart -->
+                <!-- ,set <<portal act4a on>>    VirtualSwitchDI act3b_logic::switch_boat_portal_act4a      -state=on -->
+    </Quest>
+</QuestsDefinitions>
+<!-- vim: set et sw=4 ts=4: -->

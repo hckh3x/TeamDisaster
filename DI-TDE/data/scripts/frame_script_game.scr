@@ -1,0 +1,600 @@
+
+import "frame_script_def.scr"
+
+sub weather_modify()
+{
+	extern float f_pp_game_weather;
+	Set("f_pp_game_weather", f_pp_game_weather );
+}
+
+sub game_modify()
+{
+    extern float TIME;
+	extern float f_game_oculus_enable;
+	float oculus_enable = clamp(f_game_oculus_enable);
+	float oculus_enable_inv = 1.0 - oculus_enable;
+
+	extern float f_player_blur_on_screamer_attack;
+	extern float f_game_player_health;
+	extern float f_game_player_heartbeat;
+	extern float f_game_player_drunk;
+	extern float f_game_player_drunk_prv_copy;
+	extern float f_game_player_alcohol;
+    extern float f_game_player_tank;
+	extern float f_game_screamer_effect;
+	extern float f_game_screamer_effect_prv_copy;
+	extern float f_game_player_screamer;
+	extern float f_movie_screamer;
+	extern float f_game_contrast;
+	extern float f_game_player_aim;
+	extern float f_game_player_aim_far;
+	extern float f_game_player_aim_near;
+	extern float f_game_player_aim_near_max;
+	extern float f_game_player_aim_near_min;
+	extern float f_game_player_grenadierprojectileeffect;
+	extern float f_game_player_lowstamina;
+	extern float f_game_vehicle_collision;
+	extern float f_game_vehicle_speed_power;
+	extern float f_game_zombie_grab;
+	extern float f_game_player_underwater;
+	
+	float f_player_blur_on_screamer_attack = clamp(f_player_blur_on_screamer_attack * 0.5);
+	float f_game_player_health = clamp(f_game_player_health);
+	float f_game_player_heartbeat = clamp(f_game_player_heartbeat);
+	float f_game_player_drunk = clamp(f_game_player_drunk);
+	float f_game_player_drunk_prv_copy = clamp(f_game_player_drunk_prv_copy);
+	float f_game_player_drunk_inv = 1.0/max(f_game_player_drunk, f_div_delta);
+	float f_game_player_alcohol = clamp(f_game_player_alcohol);
+	float f_game_player_tank = clamp(f_game_player_tank);
+	float f_game_contrast = clamp(f_game_contrast);
+	float f_game_player_aim = clamp(f_game_player_aim);
+	float f_game_player_aim_inv = 1.0 / max(f_game_player_aim, f_div_delta);
+    float f_game_player_aim_far = max(1., f_game_player_aim_far);
+	float f_game_player_grenadierprojectileeffect = clamp(f_game_player_grenadierprojectileeffect);
+	float f_game_player_lowstamina = clamp(f_game_player_lowstamina);
+	float f_game_lowstamina_inv = 1.0/max(f_game_player_lowstamina, f_div_delta);
+	float f_game_vehicle_collision = clamp(f_game_vehicle_collision);
+	float f_game_vehicle_speed_power = clamp(f_game_vehicle_speed_power);
+	float f_game_vehicle_speed_power_inv = 1.0/max(f_game_vehicle_speed_power, f_div_delta);
+	float f_game_zombie_grab = clamp(f_game_zombie_grab);
+	float f_game_zombie_grab_inv = 1.0/max(f_game_zombie_grab, f_div_delta);
+	float f_game_player_underwater = clamp(f_game_player_underwater);
+	
+	
+	extern float f_game_player_fatigue;
+	extern float f_game_player_state_exhausted;
+	float exhausted = clamp(f_game_player_state_exhausted);
+	float exhausted = max(exhausted, clamp(f_game_player_fatigue));
+	float exhausted_inv = 1.0 - exhausted;
+	float exhausted_1by = 1.0 / max(exhausted, f_div_delta);
+
+	extern float f_game_player_pounced;
+	extern float f_game_player_state_dazed;
+	float dazed = clamp(f_game_player_state_dazed);
+	float dazed = max(dazed, clamp(max(f_game_player_screamer * 0.5, f_movie_screamer)));
+	float dazed = max(dazed, clamp(f_game_player_pounced));
+	float dazed_inv = 1.0 - dazed;
+	
+	extern float f_game_player_toxic;
+	extern float f_map_player_toxic;
+	extern float f_game_player_infection;
+	extern float f_movie_infection;
+	extern float f_game_player_state_poisoned;
+	extern float f_movie_toxic;
+
+	
+	float poisoned = clamp(f_game_player_state_poisoned);
+	float poisoned = max(poisoned, clamp(f_game_player_toxic ));
+	float poisoned = max(poisoned, clamp(f_map_player_toxic));
+	float poisoned = max(poisoned, clamp(max(f_game_player_infection, f_movie_infection)));
+	float poisoned = max(poisoned, clamp(f_movie_toxic));
+	float poisoned_inv = 1.0 - poisoned;
+	float poisoned_1by = 1.0 / max(poisoned, f_div_delta);
+	
+	// float poisoned = 0.01;
+	
+
+    extern float f_game_player_guts;
+	extern float f_game_player_state_disguised;
+	float disguised = clamp(f_game_player_state_disguised);
+	float disguised = max(disguised, clamp(f_game_player_guts));
+	// float disguised_inv = 1.0 - disguised;
+
+    extern float f_game_player_knockdown;
+    extern float f_game_player_knockdown_lowhealth;
+    float knockdown = clamp(max(f_game_player_knockdown, f_game_player_knockdown_lowhealth));
+
+	
+	extern float f_game_player_cth;
+	float cth = clamp(f_game_player_cth);
+	
+	extern float f_game_player_duv;
+	float duv = clamp(f_game_player_duv);
+
+	extern float f_game_player_buv;
+	float buv = clamp(f_game_player_buv);
+
+	extern float f_game_player_gre;
+	float gre = clamp(f_game_player_gre);
+
+	extern float f_game_player_hunter_drained;
+	float hunter_drained = clamp(f_game_player_hunter_drained);
+	
+    extern float f_game_player_explosion;
+	extern float f_game_player_state_collided;
+	float collided = clamp(f_game_player_state_collided);
+	float collided = max(collided, clamp(f_game_player_explosion) * 0.5);
+	float collided_inv = 1.0 - collided;
+
+	extern float f_game_player_fury_dof;
+	float fury_dof = clamp(f_game_player_fury_dof);
+	float fury_dof_inv = 1.0 - fury_dof;
+	
+	extern float f_game_player_state_melee;
+	float melee = clamp(f_game_player_state_melee);
+	float melee = max(melee, fury_dof);
+	float melee_1by = 1.0 / max(melee, f_div_delta);
+
+	extern float f_game_player_fury_dof_far;
+	extern float f_game_player_state_melee_distance;
+	float melee_distance = f_game_player_state_melee_distance * fury_dof_inv + f_game_player_fury_dof_far * fury_dof;
+
+	extern float f_game_player_night_level_gain;
+	float night_level_gain = clamp(f_game_player_night_level_gain);
+	float night_level_gain_inv = 1.0 - night_level_gain;
+
+	extern float f_game_noire;
+	float noire = pow(clamp(f_game_noire), 2.2);
+	float noire_inv = 1.0 - noire;
+
+	extern float f_game_noire_red;
+	float noire_red = clamp(f_game_noire_red);
+	float noire_red_inv = 1.0 - noire_red;
+
+	extern float f_game_zombie_killed;
+	float zombie_killed = clamp(f_game_zombie_killed);
+	float zombie_killed_inv = 1.0 - zombie_killed;
+
+	extern float f_game_zombie_killed_gamma;
+
+    extern float f_game_dialog;
+    float dialog = clamp(f_game_dialog);
+	float dialog_1by = 1.0 / max(dialog, f_div_delta);
+
+	extern float f_menu_blur;
+	float menu_blur = clamp(f_menu_blur);
+	
+	extern float f_game_dialog_distance;
+	float dialog_distance = f_game_dialog_distance;
+
+	extern float f_game_dialog_distance_far;
+	float dialog_distance_far = f_game_dialog_distance_far;
+
+    extern float f_game_player_damage;
+	extern float f_movie_damage;
+    float damage = max(clamp(f_game_player_damage), clamp(f_movie_damage));
+
+	extern float f_game_player_damage_motion_blur;
+	float damage_motion_blur = clamp(f_game_player_damage_motion_blur);
+
+	extern float f_game_player_damage_prv_copy;
+	float damage_prv_copy = clamp(f_game_player_damage_prv_copy);
+
+	extern float f_game_player_sprint;
+    float sprint = clamp(f_game_player_sprint);
+	float sprint = sprint * oculus_enable_inv;
+
+	extern float f_game_player_flashbang_prv_copy;
+	float flashbang_prv_copy = clamp(f_game_player_flashbang_prv_copy);
+	float flashbang_prv_copy_inv = 1.0 - flashbang_prv_copy;
+
+	extern float f_pp_game_player_flashbang_time;
+	float flashbang_time = pow(f_pp_game_player_flashbang_time / 4.0, 8.0); // / 4.0 = mid point (time) of whole effect (logic_script_game.scr = 6)
+
+	extern float f_game_player_flash;
+	float flash = clamp(f_game_player_flash);
+	float flash_inv = 1.0 - flash;
+	
+    extern float f_lockpicking_minigame;
+    extern float f_ui_ingame_blur;
+    extern float f_menu_desaturate;
+
+    // aberration - zombie bite
+    extern float f_pp_aberration_scale;
+    extern float f_pp_aberration_speed;
+    extern float f_pp_aberration_strength;
+
+	float aberration_scale = f_pp_aberration_scale;
+    float aberration_speed = f_pp_aberration_speed;
+    float aberration_strength = f_pp_aberration_strength;
+	
+	float aberration_scale = max(aberration_scale, 0.05 * dazed);
+    float aberration_speed = max(aberration_speed, 20.0 * clamp(dazed * 100000.0));   // MunDee Estuvo aquí
+    float aberration_strength = max(aberration_strength, 0.75 * dazed);
+
+	float aberration_scale = max(aberration_scale, f_game_screamer_effect * 0.02 );
+    float aberration_speed = max(aberration_speed,f_game_screamer_effect * 10.0 );
+    float aberration_strength =  max(aberration_strength, f_game_screamer_effect * 1);
+	
+	float aberration_scale = max(aberration_scale, 0.025 * f_game_vehicle_collision );
+    float aberration_speed = max(aberration_speed,f_game_vehicle_collision * 20.0 );
+    float aberration_strength =  max(aberration_strength, f_game_vehicle_collision * 0.6);
+
+    Set("f_pp_aberration_scale", aberration_scale);
+    Set("f_pp_aberration_speed", aberration_speed);
+    Set("f_pp_aberration_strength", aberration_strength);
+
+    // shake - zombie bite
+    extern float f_pp_shake_scale;
+    extern float f_pp_shake_speed;
+    extern float f_pp_shake_strength;
+
+    float f_pp_shake_scale = max(f_pp_shake_scale, 0.05 * collided);
+	float f_pp_shake_strength = max(f_pp_shake_strength, 0.05 * collided);
+	float f_pp_shake_speed = max(f_pp_shake_speed, collided * collided * 4.0);
+	
+	float f_pp_shake_scale = max(f_pp_shake_scale, 0.1 * f_game_player_tank);
+    float f_pp_shake_strength = max(f_pp_shake_strength, 1.0 * f_game_player_tank);
+	
+	float f_pp_shake_scale = max(f_pp_shake_scale, 0.5 * f_game_player_drunk);
+    float f_pp_shake_strength = max(f_pp_shake_strength, 0.5 * f_game_player_drunk);
+	
+	float f_pp_shake_scale = max(f_pp_shake_scale, 0.3 * f_player_blur_on_screamer_attack);
+    float f_pp_shake_strength = max(f_pp_shake_strength, 0.7 * f_player_blur_on_screamer_attack);
+
+    Set("f_pp_shake_scale", f_pp_shake_scale);
+    Set("f_pp_shake_speed", f_pp_shake_speed);
+    Set("f_pp_shake_strength", f_pp_shake_strength);
+
+    //blur
+    extern float f_pp_blur;
+	float f_pp_blur = max(f_pp_blur, f_lockpicking_minigame);
+	float f_pp_blur = max(f_pp_blur, collided);
+	float f_pp_blur = max(f_pp_blur, dazed);
+	float f_pp_blur = max(f_pp_blur, noire * 0.175);
+	float f_pp_blur = max(f_pp_blur, f_ui_ingame_blur * 0.9);
+    float f_pp_blur = max(f_pp_blur, knockdown);
+	float f_pp_blur = max(f_pp_blur, damage * 0.2);
+	float f_pp_blur = max(f_pp_blur, f_player_blur_on_screamer_attack );
+	float f_pp_blur = max(f_pp_blur, f_game_player_grenadierprojectileeffect);
+	float f_pp_blur = max(f_pp_blur, f_game_vehicle_collision);
+	float f_pp_blur = max(f_pp_blur, menu_blur);
+	float f_pp_blur = max(f_pp_blur, f_game_player_underwater * 1.0);
+    Set("f_pp_blur", f_pp_blur);
+
+    //DOF
+    extern float f_pp_blur_near;
+    extern float f_pp_blur_near_min;
+    extern float f_pp_blur_near_max;
+    extern float f_pp_blur_far_min;
+    extern float f_pp_blur_far_max;
+    extern float f_pp_blur_far;
+
+	//fight (melee, grab)
+    float f_pp_blur_far_min = min(f_pp_blur_far_min, melee_1by * melee_distance * 0.75);
+    float f_pp_blur_far_max = min(f_pp_blur_far_max, melee_1by * melee_distance);
+    float f_pp_blur_far = max(f_pp_blur_far, melee);
+
+    //DOF - dialog
+    float f_pp_blur_far_min = min(f_pp_blur_far_min, dialog_1by * f_game_dialog_distance);
+    float f_pp_blur_far_max = min(f_pp_blur_far_max, dialog_1by * f_game_dialog_distance_far);
+    float f_pp_blur_far = max(f_pp_blur_far, dialog);
+
+    float f_pp_blur_far_min = min(f_pp_blur_far_min, poisoned_1by * 5.0);
+    float f_pp_blur_far_max = min(f_pp_blur_far_max, poisoned_1by * 20.0);
+    float f_pp_blur_far = max(f_pp_blur_far, poisoned * 0.75);
+
+    float f_pp_blur_far = max(f_pp_blur_far, f_player_blur_on_screamer_attack);
+	
+    float f_pp_blur_far_min = min(f_pp_blur_far_min, f_game_player_drunk_inv * 2.50);
+	float f_pp_blur_far_max = min(f_pp_blur_far_max, f_game_player_drunk_inv * 20.0);
+    float f_pp_blur_far = max(f_pp_blur_far, f_game_player_drunk * 0.8); 
+	
+	float f_pp_blur_near = max(f_pp_blur_near, f_game_player_aim * 0.25);
+    float f_pp_blur_near_min = max(f_pp_blur_near_min, f_game_player_aim * max(f_game_player_aim_near * 0.5, f_game_player_aim_near_min));
+    float f_pp_blur_near_max = max(f_pp_blur_near_max, f_game_player_aim * max(f_game_player_aim_near, f_game_player_aim_near_max));
+    float f_pp_blur_far_min = min(f_pp_blur_far_min, f_game_player_aim_inv * f_game_player_aim_far);
+    float f_pp_blur_far_max = min(f_pp_blur_far_max, f_game_player_aim_inv * f_game_player_aim_far * 2.0);
+    float f_pp_blur_far = max(f_pp_blur_far, f_game_player_aim * 0.25);
+	
+	float f_pp_blur_near = max(f_pp_blur_near, 0.2 * f_game_player_lowstamina);
+    float f_pp_blur_near_min = max(f_pp_blur_near_min, f_game_player_lowstamina * 0.0);
+    float f_pp_blur_near_max = max(f_pp_blur_near_max, f_game_player_lowstamina * 5.50); 
+    float f_pp_blur_far_min = min(f_pp_blur_far_min, f_game_lowstamina_inv * 5.50);
+    float f_pp_blur_far_max = min(f_pp_blur_far_max, f_game_lowstamina_inv * 30.0);
+    float f_pp_blur_far = max(f_pp_blur_far, 0.8 * f_game_player_lowstamina);
+	
+	float f_pp_blur_near = max(f_pp_blur_near, f_game_vehicle_speed_power * 0.2);
+    float f_pp_blur_near_min = max(f_pp_blur_near_min, f_game_vehicle_speed_power * 0.0);
+    float f_pp_blur_near_max = max(f_pp_blur_near_max, f_game_vehicle_speed_power * 10.00);
+    float f_pp_blur_far_min = min(f_pp_blur_far_min, f_game_vehicle_speed_power_inv * 150.00);
+    float f_pp_blur_far_max = min(f_pp_blur_far_max, f_game_vehicle_speed_power_inv * 1000.0);
+    float f_pp_blur_far = max(f_pp_blur_far, f_game_vehicle_speed_power * 0.5 );
+	
+	float f_pp_blur_near = max(f_pp_blur_near, f_game_zombie_grab * 0.25);
+    float f_pp_blur_near_min = max(f_pp_blur_near_min, f_game_zombie_grab * 1.00);
+    float f_pp_blur_near_max = max(f_pp_blur_near_max, f_game_zombie_grab * 1.00); 
+    float f_pp_blur_far_min = min(f_pp_blur_far_min, f_game_zombie_grab_inv * 3.00);
+    float f_pp_blur_far_max = min(f_pp_blur_far_max, f_game_zombie_grab_inv * 8.00);
+    float f_pp_blur_far = max(f_pp_blur_far, f_game_zombie_grab * 0.25);
+    //DOF - set variables and disable in oculus rift mode
+    Set("f_pp_blur_near", f_pp_blur_near * oculus_enable_inv);
+    Set("f_pp_blur_near_min", f_pp_blur_near_min * oculus_enable_inv);
+    Set("f_pp_blur_near_max", f_pp_blur_near_max * oculus_enable_inv);
+    Set("f_pp_blur_far_min", f_pp_blur_far_min * oculus_enable_inv);
+    Set("f_pp_blur_far_max", f_pp_blur_far_max * oculus_enable_inv);
+    Set("f_pp_blur_far", f_pp_blur_far * oculus_enable_inv);
+
+	//motion blur copy
+	extern float f_pp_prv_copy;
+	float prv_copy = f_pp_prv_copy;
+	float prv_copy = max(prv_copy, f_game_player_drunk_prv_copy);
+	float prv_copy = max(prv_copy, flashbang_prv_copy);
+	float prv_copy = max(prv_copy, damage_prv_copy);
+	float prv_copy = max(prv_copy, poisoned);
+	float prv_copy = max(prv_copy, f_game_player_drunk);
+	float prv_copy = max(prv_copy, f_game_player_underwater);
+	float prv_copy = max(prv_copy, f_game_screamer_effect_prv_copy);
+	Set("f_pp_prv_copy", prv_copy);
+
+	extern float f_pp_prv_add;
+	float prv_add = f_pp_prv_add;
+	float prv_add = max(prv_add, flashbang_time * flashbang_prv_copy_inv);
+	float prv_add = max(prv_add, damage_motion_blur * 0.1);
+	
+	Set("f_pp_prv_add", prv_add);
+
+    //motion blur
+    extern float f_prv_lrp;
+	float f_prv_lrp = max(f_prv_lrp, poisoned * 0.65);
+	float f_prv_lrp = max(f_prv_lrp, f_game_player_drunk * 0.9);
+	float f_prv_lrp = max(f_prv_lrp, f_game_player_underwater * 0.7);
+	
+	Set("f_pp_prv_lrp", f_prv_lrp);
+
+	extern float f_pp_overlay_effect_3; //lockpick
+	float overlay_effect_3 = f_pp_overlay_effect_3;
+	float overlay_effect_3 = max(overlay_effect_3, f_lockpicking_minigame);
+	Set("f_pp_overlay_effect_3", overlay_effect_3);
+
+	extern float f_pp_overlay_effect_5; //exhausted
+	float overlay_effect_5 = f_pp_overlay_effect_5;
+	float overlay_effect_5 = max(overlay_effect_5, pow(exhausted, 0.25));
+
+	Set("f_pp_overlay_effect_5", overlay_effect_5);
+
+	float noire_desaturate = noire * 0.85;
+	extern float f_pp_saturation;
+	float saturation = f_pp_saturation;
+	float saturation = min(saturation, 1.0 - noire_desaturate * noire_red_inv);
+	Set("f_pp_saturation", saturation);
+
+    //desaturation
+    extern float f_pp_desaturate;
+	float f_fury_desaturate = f_game_player_tank;
+	float f_fury_desaturate_inv = 1.0 - f_fury_desaturate;
+	
+	// float f_pp_desaturate = max(f_pp_desaturate, injured_desaturate);
+	float f_pp_desaturate = max(f_pp_desaturate, collided * 0.5);
+	float f_pp_desaturate = max(f_pp_desaturate, f_menu_desaturate);
+	float f_pp_desaturate = max(f_pp_desaturate, noire_desaturate * noire_red);
+	float f_pp_desaturate = max(f_pp_desaturate, f_lockpicking_minigame);
+	float f_pp_desaturate = max(f_pp_desaturate, f_game_player_grenadierprojectileeffect * 0.4);
+	float f_pp_desaturate = max(f_pp_desaturate, damage * 0.5);
+	float f_pp_desaturate = max(f_pp_desaturate, cth * 0.5);
+	float f_pp_desaturate = max(f_pp_desaturate, duv * 0.5);
+	float f_pp_desaturate = max(f_pp_desaturate, gre * 0.5);
+	float f_pp_desaturate = max(f_pp_desaturate, f_fury_desaturate);	
+
+	
+    Set("f_pp_desaturate", f_pp_desaturate);
+
+	extern vec3 v_pp_desaturate_factor_mask;
+	extern vec3 v_pp_desaturate_tint;
+	extern vec3 v_pp_desaturate_tint_masked;
+
+	vec3 v_pp_desaturate_factor_mask = v_pp_desaturate_factor_mask * noire_inv + [10.0, -10.0, -10.0] * noire;
+	vec3 v_pp_desaturate_tint = v_pp_desaturate_tint * noire_inv + [1.0, 1.0, 1.0] * noire;
+	vec3 v_pp_desaturate_tint_masked = v_pp_desaturate_tint_masked * noire_inv + [1.0, 1.0, 1.0] * noire;
+
+    vec3 v_pp_desaturate_factor_mask = v_pp_desaturate_factor_mask * f_fury_desaturate_inv + [550.0, -1800.0, -1800.0] * f_fury_desaturate;
+	vec3 v_pp_desaturate_tint = v_pp_desaturate_tint * f_fury_desaturate_inv + [1.1, 1.1, 1.1] * f_fury_desaturate;
+	vec3 v_pp_desaturate_tint_masked = v_pp_desaturate_tint_masked * f_fury_desaturate_inv + [2.0, 0.0, 0.0] * f_fury_desaturate;
+	
+	Set("v_pp_desaturate_factor_mask", v_pp_desaturate_factor_mask);
+    Set("v_pp_desaturate_tint", v_pp_desaturate_tint);
+    Set("v_pp_desaturate_tint_masked", v_pp_desaturate_tint_masked);
+
+    //Blur radial mask
+    extern float f_pp_blur_mask_radial_bias;
+    extern float f_pp_blur_mask_radial_scale;
+    extern float f_pp_blur_mask_radial_opacity;
+
+    float f_pp_blur_mask_radial_bias = min(f_pp_blur_mask_radial_bias, -sprint * 1.0);
+    float f_pp_blur_mask_radial_scale = max(f_pp_blur_mask_radial_scale, sprint * 2.0);
+    float f_pp_blur_mask_radial_opacity = max(f_pp_blur_mask_radial_opacity, sprint);
+
+	float f_pp_blur_mask_radial_bias = max(f_pp_blur_mask_radial_bias, exhausted * 0.0);
+	float f_pp_blur_mask_radial_scale = max(f_pp_blur_mask_radial_scale, exhausted * 1.0);
+	float f_pp_blur_mask_radial_opacity = max(f_pp_blur_mask_radial_opacity, exhausted * 1.0);
+	
+    float f_pp_blur_mask_radial_opacity = max(f_pp_blur_mask_radial_opacity, clamp(1.0 - f_game_player_health));
+
+    Set("f_pp_blur_mask_radial_bias", f_pp_blur_mask_radial_bias);
+    Set("f_pp_blur_mask_radial_scale", f_pp_blur_mask_radial_scale);
+    Set("f_pp_blur_mask_radial_opacity", f_pp_blur_mask_radial_opacity);
+
+    //Radial blur
+    extern float f_pp_blur_radial_mask_scale;
+    extern float f_pp_blur_radial_mask_opacity;
+    extern float f_pp_blur_radial_power;
+    extern float f_pp_blur_radial_range;
+    extern float f_pp_blur_radial_center_x;
+    extern float f_pp_blur_radial_center_y;
+    extern float f_pp_blur_radial_mask_bias;
+
+	float f_pp_blur_radial_mask_scale = max(f_pp_blur_radial_mask_scale, sprint);
+    float f_pp_blur_radial_power = max(f_pp_blur_radial_power, sprint);
+    float f_pp_blur_radial_range = max(f_pp_blur_radial_range, sprint * 0.2);
+
+	float f_pp_blur_radial_mask_scale = max(f_pp_blur_radial_mask_scale, poisoned * 1.0);
+	float f_pp_blur_radial_mask_opacity = max(f_pp_blur_radial_mask_opacity, poisoned * clamp(sin(TIME * 3.23) * 0.5 + 0.5));	
+	float f_pp_blur_radial_power = max(f_pp_blur_radial_power, poisoned * 0.5);
+	float f_pp_blur_radial_range = max(f_pp_blur_radial_range, poisoned * 0.5);
+	float f_pp_blur_radial_center_x = f_pp_blur_radial_center_x + sin(TIME * 0.73) * poisoned * 0.4;
+	float f_pp_blur_radial_center_y = f_pp_blur_radial_center_y + sin(TIME * 1.37) * poisoned * 0.4;
+	
+	float f_pp_blur_radial_mask_opacity = max(f_pp_blur_radial_mask_opacity, f_game_player_tank * 0.1);
+	float f_pp_blur_radial_mask_bias = max(f_pp_blur_radial_mask_bias, f_game_player_tank * 0.2);
+	float f_pp_blur_radial_mask_scale = max(f_pp_blur_radial_mask_scale, f_game_player_tank * 0.1);
+	float f_pp_blur_radial_power = max(f_pp_blur_radial_power, f_game_player_tank * 0.8);
+	float f_pp_blur_radial_range = max(f_pp_blur_radial_range, f_game_player_tank * 0.5);
+	
+	float f_screamer_radial_center_x = 0.5 + sin(16.51 * TIME + 0.3) * 0.031 + cos(24.73 * TIME + 0.9) * 0.031;
+    float f_screamer_radial_center_y = 0.5 + sin(18.51 * TIME + 0.1) * 0.031 + cos(23.13 * TIME + 0.6) * 0.031;
+	
+	float f_pp_blur_radial_mask_scale = max(f_pp_blur_radial_mask_scale, f_game_screamer_effect * 1);
+	float f_pp_blur_radial_mask_opacity = max(f_pp_blur_radial_mask_opacity, f_game_screamer_effect * 0.2);	
+	float f_pp_blur_radial_power = max(f_pp_blur_radial_power, f_game_screamer_effect );
+	float f_pp_blur_radial_range = max(f_pp_blur_radial_range, f_game_screamer_effect );
+	float f_pp_blur_radial_center_x = f_pp_blur_radial_center_x * (1.0 - f_game_screamer_effect) + f_game_screamer_effect * f_screamer_radial_center_x;
+	float f_pp_blur_radial_center_y = f_pp_blur_radial_center_y * (1.0 - f_game_screamer_effect) + f_game_screamer_effect * f_screamer_radial_center_y;
+
+	float f_game_player_underwater_center_x = 0.5 + sin(1.31 * TIME + 0.3) * 0.031 + cos(1.23 * TIME + 0.9) * 0.1;
+    float f_game_player_underwater_center_y = 0.5 + sin(1.51 * TIME + 0.1) * 0.031 + cos(1.13 * TIME + 0.6) * 0.1;
+	
+	float f_pp_blur_radial_mask_scale = max(f_pp_blur_radial_mask_scale, f_game_player_underwater * 100);
+	float f_pp_blur_radial_mask_opacity = max(f_pp_blur_radial_mask_opacity, f_game_player_underwater );	
+	float f_pp_blur_radial_power = max(f_pp_blur_radial_power, f_game_player_underwater );
+	float f_pp_blur_radial_range = max(f_pp_blur_radial_range, f_game_player_underwater  );
+	float f_pp_blur_radial_center_x = f_pp_blur_radial_center_x * (1.0 - f_game_player_underwater) + f_game_player_underwater * f_game_player_underwater_center_x;
+	float f_pp_blur_radial_center_y = f_pp_blur_radial_center_y * (1.0 - f_game_player_underwater) + f_game_player_underwater * f_game_player_underwater_center_y;
+	
+	Set("f_pp_blur_radial_mask_scale", f_pp_blur_radial_mask_scale);
+	Set("f_pp_blur_radial_mask_opacity", f_pp_blur_radial_mask_opacity);
+    Set("f_pp_blur_radial_power", f_pp_blur_radial_power);
+    Set("f_pp_blur_radial_range", f_pp_blur_radial_range);
+    Set("f_pp_blur_radial_center_x", f_pp_blur_radial_center_x);
+    Set("f_pp_blur_radial_center_y", f_pp_blur_radial_center_y);
+	Set("f_pp_blur_radial_mask_bias", f_pp_blur_radial_mask_bias);
+
+    //Luminance PreMultiply
+    extern float f_pp_lum_pm;
+    extern vec3 v_pp_lum_pm_factors;
+    extern float f_pp_lum_pm_weights_factor;
+
+	float f_pp_lum_pm = max(f_pp_lum_pm, flash * 0.8);
+    vec3 v_pp_lum_pm_factors = [1.0, 1.0, 1.0] * flash + v_pp_lum_pm_factors * flash_inv;
+    float f_pp_lum_pm_weights_factor = 10.0 * flash + f_pp_lum_pm_weights_factor * flash_inv;
+	
+    float f_pp_lum_pm = max(f_pp_lum_pm, f_game_player_alcohol);
+    vec3 v_pp_lum_pm_factors = [1.3, 1.3, 1.3] * f_game_player_alcohol + v_pp_lum_pm_factors * (1.0 - f_game_player_alcohol);
+    float f_pp_lum_pm_weights_factor = 1.5 * f_game_player_alcohol + f_pp_lum_pm_weights_factor * (1.0 - f_game_player_alcohol); 	
+	
+	float f_pp_lum_pm = max(f_pp_lum_pm, f_game_player_drunk);
+    vec3 v_pp_lum_pm_factors = [1.0, 1.0, 1.0] * f_game_player_drunk + v_pp_lum_pm_factors * (1.0 - f_game_player_drunk);
+    float f_pp_lum_pm_weights_factor = 4.0 * f_game_player_drunk + f_pp_lum_pm_weights_factor * (1.0 - f_game_player_drunk);
+	
+	float f_pp_lum_pm = max(f_pp_lum_pm, f_game_player_grenadierprojectileeffect * 0.82);
+    vec3 v_pp_lum_pm_factors = [70.0, 10.0, 10.0] * f_game_player_grenadierprojectileeffect + v_pp_lum_pm_factors * (1.0 - f_game_player_grenadierprojectileeffect);
+    float f_pp_lum_pm_weights_factor = 0.35 * f_game_player_grenadierprojectileeffect + f_pp_lum_pm_weights_factor * (1.0 - f_game_player_grenadierprojectileeffect);
+	
+	float f_pp_lum_pm = max(f_pp_lum_pm, f_game_contrast * 0.82);
+    vec3 v_pp_lum_pm_factors = [15.0, 15.0, 15.0] * f_game_contrast + v_pp_lum_pm_factors * (1.0 - f_game_contrast);
+    float f_pp_lum_pm_weights_factor = 2.0 * f_game_contrast + f_pp_lum_pm_weights_factor * (1.0 - f_game_contrast);
+	
+	float f_pp_lum_pm = max(f_pp_lum_pm, f_game_player_underwater);
+    vec3 v_pp_lum_pm_factors = [1.0, 1.0, 1.0] * f_game_player_underwater + v_pp_lum_pm_factors * (1.0 - f_game_player_underwater);
+    float f_pp_lum_pm_weights_factor = 2.0 * f_game_player_underwater + f_pp_lum_pm_weights_factor * (1.0 - f_game_player_underwater);
+	
+    Set("f_pp_lum_pm", f_pp_lum_pm);
+    Set("v_pp_lum_pm_factors", v_pp_lum_pm_factors);
+    Set("f_pp_lum_pm_weights_factor", f_pp_lum_pm_weights_factor);
+
+	extern vec4 v_game_player_blood;
+	Set("f_pp_game_player_blood", max(max(max(v_game_player_blood.x, v_game_player_blood.y), v_game_player_blood.z), v_game_player_blood.w));
+
+	extern vec4 v_game_player_blood_hit;
+	Set("f_pp_game_player_blood_hit", max(max(max(v_game_player_blood_hit.x, v_game_player_blood_hit.y), v_game_player_blood_hit.z), v_game_player_blood_hit.w));
+
+	extern vec3 v_pp_levels_rgb_in_black;
+	extern vec3 v_pp_levels_rgb_in_gamma;
+	extern vec3 v_pp_levels_rgb_in_white;
+	extern vec3 v_pp_levels_rgb_out_black;
+	extern vec3 v_pp_levels_rgb_out_white;
+	extern float f_pp_levels;
+
+	vec3 levels_in_black = v_pp_levels_rgb_in_black;
+	vec3 levels_in_gamma = v_pp_levels_rgb_in_gamma;
+	vec3 levels_in_white = v_pp_levels_rgb_in_white;
+	vec3 levels_out_black = v_pp_levels_rgb_out_black;
+	vec3 levels_out_white = v_pp_levels_rgb_out_white;
+	float levels = f_pp_levels;
+
+	vec3 levels_in_gamma = levels_in_gamma * night_level_gain_inv + 1.15 * night_level_gain;
+	float levels = levels * night_level_gain_inv + night_level_gain; // * 1.0
+
+	vec3 levels_in_gamma = levels_in_gamma * zombie_killed_inv + f_game_zombie_killed_gamma * zombie_killed;
+	float levels = levels * zombie_killed_inv + zombie_killed; // * 1.0
+
+	Set("v_pp_levels_rgb_in_black", levels_in_black);
+	Set("v_pp_levels_rgb_in_gamma", levels_in_gamma);
+	Set("v_pp_levels_rgb_in_white", levels_in_white);
+	Set("v_pp_levels_rgb_out_black", levels_out_black);
+	Set("v_pp_levels_rgb_out_white", levels_out_white);
+	Set("f_pp_levels", levels);
+
+	extern float f_pp_filmgrain_8;
+	extern float f_pp_filmgrain_8_color;
+	extern float f_pp_filmgrain_8_speed;
+
+	float filmgrain_8 = f_pp_filmgrain_8;
+	float filmgrain_8_color = f_pp_filmgrain_8_color;
+	float filmgrain_8_speed = f_pp_filmgrain_8_speed;
+
+	Set("f_pp_filmgrain_8", filmgrain_8);
+	Set("f_pp_filmgrain_8_color", filmgrain_8_color);
+	Set("f_pp_filmgrain_8_speed", filmgrain_8_speed);
+
+
+	Set("f_pp_curves_effect_1_v", 132.0);
+	Set("f_pp_curves_effect_1", disguised);	
+
+	
+	Set("f_pp_curves_effect_2_v", 133.0);
+	Set("f_pp_curves_effect_2", poisoned);	
+
+	Set("f_pp_curves_effect_4_v", 135.0); //obsolete
+	Set("f_pp_curves_effect_4", duv);	
+
+	Set("f_pp_curves_effect_5_v", 142.0);
+	Set("f_pp_curves_effect_5", buv);	
+
+	Set("f_pp_curves_effect_6_v", 141.0);
+	Set("f_pp_curves_effect_6", gre);	
+	
+	Set("f_pp_curves_effect_7_v", 131.0);
+	Set("f_pp_curves_effect_7", damage);
+	
+	Set("f_pp_curves_effect_8_v", 143.0);
+	Set("f_pp_curves_effect_8", hunter_drained);
+    
+	Set("f_pp_curves_effect_1_v", 207.0);
+	Set("f_pp_curves_effect_1", f_game_player_underwater);	
+	
+    // Handle inverted fade_pp
+    extern float f_fade_pp_inverted;
+    extern float f_pp_fade_pp;
+    Set("f_pp_fade_pp", 1.0 - f_fade_pp_inverted);
+}
+
+sub game_set()
+{
+	extern float f_pp_game_player_blood;
+	extern float f_pp_game_player_blood_hit;
+	extern float f_pp_blur_on;
+	float f_pp_blur_on = max(f_pp_blur_on, f_pp_game_player_blood);
+	float f_pp_blur_on = max(f_pp_blur_on, f_pp_game_player_blood_hit);
+	Set("f_pp_blur_on", f_pp_blur_on);
+}
+

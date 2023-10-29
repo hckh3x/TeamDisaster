@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<speakers>
+	<speaker name="Kaley">
+		<group name="Kaley_Q1_NF" time_btw_series="188.000000">
+			<state type="near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Kaley_Q1_Near_01"/>
+				</dialog>
+				<dialog>
+					<line id="Kaley_Q1_Near_02"/>
+				</dialog>
+				<dialog>
+					<line id="Kaley_Q1_Near_03"/>
+				</dialog>
+			</state>
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Kaley_Q1_Use"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="Alicia">
+		<group name="Alicia_Q1_Accomplished">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Alicia_Q1_Accomplished"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Alicia_Q1_InProgress" time_btw_series="188.000000">
+			<state type="near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Alicia_Q1_InProgress_01"/>
+				</dialog>
+				<dialog>
+					<line id="Alicia_Q1_InProgress_02"/>
+				</dialog>
+				<dialog>
+					<line id="Alicia_Q1_InProgress_03"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="Haus">
+		<group name="Haus_Q1_NF" time_btw_series="188.000000">
+			<state type="near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Haus_Q1_Near_01"/>
+				</dialog>
+				<dialog>
+					<line id="Haus_Q1_Near_02"/>
+				</dialog>
+				<dialog>
+					<line id="Haus_Q1_Near_03"/>
+				</dialog>
+			</state>
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Haus_Q1_Use"/>
+					<decision>
+						<choice>
+							<speech>&amp;DialogSystem_Yes&amp;</speech>
+							<audiofile/>
+							<line id="Haus_Q1_Agree"/>
+						</choice>
+						<main-choice>
+							<speech>&amp;DialogSystem_No&amp;</speech>
+							<audiofile/>
+						</main-choice>
+					</decision>
+					<line id="Haus_Q1_Disagree"/>
+				</dialog>
+			</state>
+			<state type="use_second" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Haus_Q1_Use_Second"/>
+					<decision>
+						<choice>
+							<speech>&amp;DialogSystem_Yes&amp;</speech>
+							<audiofile/>
+							<line id="Haus_Q1_Agree"/>
+						</choice>
+						<main-choice>
+							<speech>&amp;DialogSystem_No&amp;</speech>
+							<audiofile/>
+						</main-choice>
+					</decision>
+					<line id="Haus_Q1_Disagree"/>
+				</dialog>
+			</state>
+			<state type="quest_brief" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Haus_Q1_Name"/>
+				</dialog>
+				<dialog>
+					<line id="Haus_Q1_PaperLine"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Haus_Q1_InProgress" time_btw_series="188.000000">
+			<state type="near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Haus_Q1_InProgress_01"/>
+				</dialog>
+				<dialog>
+					<line id="Haus_Q1_InProgress_02"/>
+				</dialog>
+				<dialog>
+					<line id="Haus_Q1_InProgress_03"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Haus_Q1_Accomplished">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Haus_Q1_Accomplished"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="Nick">
+		<group name="Nick_Q2_NF" time_btw_series="188.000000">
+			<state type="near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Nick_Q2_Near_01"/>
+				</dialog>
+				<dialog>
+					<line id="Nick_Q2_Near_02"/>
+				</dialog>
+				<dialog>
+					<line id="Nick_Q2_Near_03"/>
+				</dialog>
+			</state>
+			<state type="near_to_middle" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Nick_Q2_NearToMiddle"/>
+				</dialog>
+			</state>
+			<state type="middle_to_near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Nick_Q2_MiddleToNear"/>
+				</dialog>
+			</state>
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Nick_Q2_Use_A"/>
+					<line id="Nick_Q2_Use_B"/>
+					<decision>
+						<choice>
+							<speech>&amp;DialogSystem_Yes&amp;</speech>
+							<audiofile/>
+							<line id="Nick_Q2_Agree_A"/>
+							<line id="Nick_Q2_Agree_B"/>
+						</choice>
+						<main-choice>
+							<speech>&amp;DialogSystem_No&amp;</speech>
+							<audiofile/>
+						</main-choice>
+					</decision>
+					<line id="Nick_Q2_Disagree"/>
+				</dialog>
+			</state>
+			<state type="use_second" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Nick_Q2_UseSecond"/>
+					<decision>
+						<choice>
+							<speech>&amp;DialogSystem_Yes&amp;</speech>
+							<audiofile/>
+							<line id="Nick_Q2_Agree_A"/>
+							<line id="Nick_Q2_Agree_B"/>
+						</choice>
+						<main-choice>
+							<speech>&amp;DialogSystem_No&amp;</speech>
+							<audiofile/>
+						</main-choice>
+					</decision>
+					<line id="Nick_Q2_Disagree"/>
+				</dialog>
+			</state>
+			<state type="quest_brief" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Nick_Q2_Name"/>
+				</dialog>
+				<dialog>
+					<line id="Nick_Q2_PaperLine"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Nick_Q2_InProgress" time_btw_series="188.000000">
+			<state type="near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Nick_Q2_InProgress_01"/>
+				</dialog>
+				<dialog>
+					<line id="Nick_Q2_InProgress_02"/>
+				</dialog>
+				<dialog>
+					<line id="Nick_Q2_InProgress_03"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Nick_Q2_Accomplished">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Nick_Q2_Accomplished_A"/>
+					<line id="Nick_Q2_Accomplished_B"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Nick_Q1_Accomplished">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Nick_Q1_Accomplished"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="Patrick">
+		<group name="Patrick_Q0_NF" time_btw_series="188.000000">
+			<state type="near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Patrick_Q0_Near_01"/>
+				</dialog>
+				<dialog>
+					<line id="Patrick_Q0_Near_02"/>
+				</dialog>
+			</state>
+			<state type="near_to_middle" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Patrick_Q0_NearToMiddle"/>
+				</dialog>
+			</state>
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Patrick_Q0_Use_A"/>
+					<line id="Patrick_Q0_Use_B"/>
+					<decision>
+						<choice>
+							<speech>&amp;DialogSystem_Yes&amp;</speech>
+							<audiofile/>
+							<line id="Patrick_Q0_Agree"/>
+						</choice>
+						<main-choice>
+							<speech>&amp;DialogSystem_No&amp;</speech>
+							<audiofile/>
+						</main-choice>
+					</decision>
+					<line id="Patrick_Q0_Disagree"/>
+				</dialog>
+			</state>
+			<state type="use_second" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Patrick_Q0_UseSecond"/>
+					<decision>
+						<choice>
+							<speech>&amp;DialogSystem_Yes&amp;</speech>
+							<audiofile/>
+							<line id="Patrick_Q0_Agree"/>
+						</choice>
+						<main-choice>
+							<speech>&amp;DialogSystem_No&amp;</speech>
+							<audiofile/>
+						</main-choice>
+					</decision>
+					<line id="Patrick_Q0_Disagree"/>
+				</dialog>
+			</state>
+			<state type="quest_brief" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Patrick_Q1_Name"/>
+				</dialog>
+				<dialog>
+					<line id="Patrick_Q1_PaperLine"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Patrick_Q1_Accomplished">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Patrick_Q1_Accomplished"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+</speakers>
+

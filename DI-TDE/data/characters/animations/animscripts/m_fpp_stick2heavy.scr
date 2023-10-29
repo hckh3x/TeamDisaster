@@ -1,0 +1,144 @@
+SeqTrackAlias("FPP_Stick2Heavy_Stand", "FPP_Stick2_Stand")
+
+//===================================== M_FPP_Stick2Heavy_Melee ============================================
+
+//SeqTrackAlias("FPP_Stick2Heavy_MoveForwardNoise", "FPP_Stick2_MoveForwardNoise")
+//SeqTrackAlias("FPP_Stick2Heavy_MoveLeftNoise", "FPP_Stick2_MoveLeftNoise")
+//SeqTrackAlias("FPP_Stick2Heavy_MoveRightNoise", "FPP_Stick2_MoveRightNoise")
+//SeqTrackAlias("FPP_Stick2Heavy_MoveBackwardNoise", "FPP_Stick2_MoveBackwardNoise")
+
+
+SeqTrack("FPP_Stick2Heavy_Melee_CirclePos",  "M_FPP_Stick2Heavy_Melee.anm2",				0, 360, 30, 1, 0.3)
+SeqTrackAlias("FPP_Stick2Heavy_Melee_CenterPos",  "FPP_Stick2_Melee_Stand_center_open")
+SeqTrackAlias("FPP_Stick2Heavy_Melee_Stand_center_open",  "FPP_Stick2_Melee_Stand_center_open")
+SeqTrackAlias("FPP_Stick2Heavy_Melee_StandPos",   "FPP_Stick2_Melee_Stand")
+SeqTrackAlias("FPP_Stick2Heavy_Melee_Stand",    "FPP_Stick2_Melee_Stand")
+
+SeqTrackAlias("FPP_Stick2Heavy_Melee_PositionsSlow", "FPP_Stick2_Melee_PositionsSlow")
+SeqTrackAlias("FPP_Stick2Heavy_Melee_Positions",	"FPP_Stick2_Melee_Positions")
+
+
+
+SeqTrackAlias("FPP_Stick2Heavy_Melee_AttackLR", "FPP_Stick2_Melee_AttackLR")
+SeqTrackAlias("FPP_Stick2Heavy_Melee_AttackRL", "FPP_Stick2_Melee_AttackRL")
+SeqTrackAlias("FPP_Stick2Heavy_Melee_AttackUD", "FPP_Stick2_Melee_AttackUD")
+SeqTrackAlias("FPP_Stick2Heavy_Melee_AttackDU", "FPP_Stick2_Melee_AttackDU")
+SeqTrackAlias("FPP_Stick2Heavy_Melee_AttackDLUR", "FPP_Stick2_Melee_AttackDLUR")
+SeqTrackAlias("FPP_Stick2Heavy_Melee_AttackURDL", "FPP_Stick2_Melee_AttackURDL")
+SeqTrackAlias("FPP_Stick2Heavy_Melee_AttackDRUL", "FPP_Stick2_Melee_AttackDRUL")
+SeqTrackAlias("FPP_Stick2Heavy_Melee_AttackULDR", "FPP_Stick2_Melee_AttackULDR")
+
+
+SeqTrack("FPP_Stick2Heavy_Melee_Attack_RL_Hit",			"M_FPP_Stick2_Heavy.anm2",				10, 40, 30, 1, 0.3)
+{
+	Event(21, PUNCH_HIT)	
+}
+SeqTrack("FPP_Stick2Heavy_Melee_Attack_LR_Hit",			"M_FPP_Stick2_Heavy.anm2",				81, 111, 30, 1, 0.3)
+{
+	Event(22, PUNCH_HIT)	
+}
+SeqTrack("FPP_Stick2Heavy_Melee_Attack_RL_Hit_Rest",			"M_FPP_Stick2_Heavy.anm2",				40, 69, 30, 1, 0.3)
+SeqTrack("FPP_Stick2Heavy_Melee_Attack_LR_Hit_Rest",			"M_FPP_Stick2_Heavy.anm2",				111, 140, 30, 1, 0.3)
+
+SeqTrack("FPP_Stick2Heavy_Melee_Attack_UL_Empty", 		"M_FPP_Stick2_Strong_Hit_DU.anm2", 		53, 86, 30, 1, 0.3)
+{
+	Event(15, PUNCH_HIT)	
+}
+SeqTrack("FPP_Stick2Heavy_Melee_Attack_UL_Empty_Rest", 		"M_FPP_Stick2_Strong_Hit_DU.anm2"	, 86, 103, 30, 1, 0.3)
+
+SeqTrack("FPP_Stick2Heavy_Melee_Attack_UR_Empty", 		"M_FPP_Stick2_Strong_Hit_DU.anm2", 		0, 38, 30, 1, 0.3)
+{
+	Event(15, PUNCH_HIT)	
+}
+SeqTrack("FPP_Stick2Heavy_Melee_Attack_UR_Empty_Rest", 		"M_FPP_Stick2_Strong_Hit_DU.anm2"	, 38, 50, 30, 1, 0.3)
+
+SeqTrack("FPP_Stick2Heavy_Melee_Attack_RL_Begin",			"M_FPP_Stick2_Strong_Hit.anm2", 		0, 8, 30, 1, 0.3)
+SeqTrack("FPP_Stick2Heavy_Melee_Attack_RL_Empty",			"M_FPP_Stick2_Strong_Hit.anm2", 		8, 57, 30, 1, 0.3)
+{
+	Event(17, PUNCH_HIT)	
+}
+SeqTrack("FPP_Stick2Heavy_Melee_Attack_RL_Empty_Rest",			"M_FPP_Stick2_Strong_Hit.anm2",				57, 67, 20, 1, 0.3)
+
+SeqTrack("FPP_Stick2Heavy_Melee_Attack_LR_Begin",			"M_FPP_Stick2_Strong_Hit.anm2", 		58, 66, 30, 1, 0.3)
+SeqTrack("FPP_Stick2Heavy_Melee_Attack_LR_Empty",			"M_FPP_Stick2_Strong_Hit.anm2", 		66, 110, 30, 1, 0.3)
+{
+	Event(16, PUNCH_HIT)	
+}
+SeqTrack("FPP_Stick2Heavy_Melee_Attack_LR_Empty_Rest",			"M_FPP_Stick2_Strong_Hit.anm2",				110, 120, 30, 1, 0.3)
+
+SeqTrackAlias("FPP_Stick2Heavy_Melee_Attack_DU_Begin",  "FPP_Stick2Heavy_Melee_Attack_RL_Begin")
+SeqTrackAlias("FPP_Stick2Heavy_Melee_Attack_DU_Empty",  "FPP_Stick2Heavy_Melee_Attack_RL_Empty")
+SeqTrackAlias("FPP_Stick2Heavy_Melee_Attack_DU_Empty_Rest",  "FPP_Stick2Heavy_Melee_Attack_RL_Empty_Rest")
+
+SeqTrackAlias("FPP_Stick2Heavy_Melee_Attack_UD_Begin",  "FPP_Stick2Heavy_Melee_Attack_LR_Begin")
+SeqTrackAlias("FPP_Stick2Heavy_Melee_Attack_UD_Empty",  "FPP_Stick2Heavy_Melee_Attack_LR_Empty")
+SeqTrackAlias("FPP_Stick2Heavy_Melee_Attack_UD_Empty_Rest",  "FPP_Stick2Heavy_Melee_Attack_LR_Empty_Rest")
+
+SeqTrackAlias("FPP_Stick2Heavy_Melee_Attack_DU_Hit",  "FPP_Stick2_Melee_Attack_DU_Hit")
+SeqTrackAlias("FPP_Stick2Heavy_Melee_Attack_DU_Hit_Rest",  "FPP_Stick2_Melee_Attack_DU_Hit_Rest")
+
+SeqTrackAlias("FPP_Stick2Heavy_Melee_Attack_UD_Hit","FPP_Stick2_Melee_Attack_UD_Hit")
+
+SeqTrackAlias("FPP_Stick2Heavy_Melee_Attack_Exhausted", "FPP_Stick2_Melee_Attack_Exhausted")
+SeqTrackAlias("FPP_Stick2Heavy_Melee_Attack_Exhausted_Idle", "FPP_Stick2_Melee_Attack_Exhausted_Idle")
+
+SeqTrackAlias("FPP_Stick2Heavy_Vigilent0", "FPP_Stick2_Vigilent0")
+SeqTrackAlias("FPP_Stick2Heavy_Vigilent1", "FPP_Stick2_Vigilent1")
+SeqTrackAlias("FPP_Stick2Heavy_Vigilent2", "FPP_Stick2_Vigilent2")
+
+SeqTrackAlias("FPP_Stick2Heavy_Defensive0", "FPP_Stick2_Defensive0")
+SeqTrackAlias("FPP_Stick2Heavy_Defensive1", "FPP_Stick2_Defensive1")
+SeqTrackAlias("FPP_Stick2Heavy_Defensive2", "FPP_Stick2_Defensive2")
+
+SeqTrackAlias("FPP_Stick2Heavy_Melee_Throw_Aim", "FPP_Stick2_Melee_Throw_Aim")
+SeqTrackAlias("FPP_Stick2Heavy_Melee_Throw", "FPP_Stick2_Melee_Throw")
+//w trakcie robienia
+SeqTrackAlias("FPP_Stick2Heavy_Crafted", "FPP_Stick2_Crafted")
+
+//SeqTrackAlias("FPP_Stick2Heavy_Jump_Pose", "FPP_Stick2_Jump_Pose")
+
+SeqTrackAlias("FPP_Stick2Heavy_Wall", "FPP_Stick2_Wall")
+
+SeqTrackAlias("FPP_Stick2Heavy_Melee_LR_Stab_Rest", "FPP_Stick2Heavy_Melee_Attack_RL_Empty_Rest")
+
+SeqTrack("FPP_Stick2Heavy_Melee_RL_Stab_Rest",			"M_FPP_Stick2_Stab_01.anm2", 		62, 72, 30, 1, 0.3)
+
+SeqTrack( "FPP_Stick2Heavy_Melee_LR_Stab",			"M_FPP_Stick2_Stab_01.anm2"	, 21, 40, 30, 1, 0.3)
+{
+	Event(8, PUNCH_HIT)
+}
+
+SeqTrack( "FPP_Stick2Heavy_Melee_RL_Stab",			"M_FPP_Stick2_Stab_01.anm2"	, 43, 62, 30, 1, 0.3)
+{
+	Event(9, PUNCH_HIT)
+}
+
+//////////////////// NOT USED ////////////////////////////////////////
+
+//SeqTrack( "FPP_Stick2Heavy_Stand",             "M_FPP_Stick2_Melee_ALL.anm2",          931, 1130, 30, 1, 0.5) //pozycja
+//SeqTrack( "FPP_Stick2_Calm",             "M_FPP_Stick2_Idle_Calm.anm2",          0, 432, 30, 1, 0.5) //pozycja
+//SeqTrack( "FPP_Stick2_Vigilent",             "M_FPP_Stick2_Idle_Alert_01.anm2",          0, 422, 30, 1, 0.5) //pozycja
+
+//SeqTrack("FPP_Stick2Heavy_Melee_Attack_UD_Hit", 		"M_FPP_Stick2Heavy_Melee.anm2",				1053, 1108, 30, 1, 0.3)
+//SeqTrack("FPP_Stick2Heavy_Melee_Attack_DU_Hit", 		"M_FPP_Stick2Heavy_Melee.anm2",				1111, 1166, 30, 1, 0.3)
+//SeqTrack("FPP_Stick2Heavy_Melee_Attack_DLUR_Hit",		"M_FPP_Stick2Heavy_Melee.anm2",				995, 1050, 30, 1, 0.3)
+//SeqTrack("FPP_Stick2Heavy_Melee_Attack_URDL_Hit",		"M_FPP_Stick2Heavy_Melee.anm2",				937, 992, 30, 1, 0.3)
+//SeqTrack("FPP_Stick2Heavy_Melee_Attack_DRUL_Hit",		"M_FPP_Stick2Heavy_Melee.anm2",				1227, 1282, 30, 1, 0.3)
+//SeqTrack("FPP_Stick2Heavy_Melee_Attack_ULDR_Hit",		"M_FPP_Stick2Heavy_Melee.anm2",				1169, 1224, 30, 1, 0.3)
+
+//SeqTrack("FPP_Stick2Heavy_Melee_Attack_RL_Empty",			"M_FPP_Stick2Heavy_Melee.anm2",				363, 418, 30, 1, 0.3)
+//SeqTrack("FPP_Stick2Heavy_Melee_Attack_LR_Empty",			"M_FPP_Stick2Heavy_Melee.anm2",				419, 474, 30, 1, 0.3)
+
+//Animacje HIT
+//SeqTrack("ATEMP",			"M_FPP_Stick2_Heavy.anm2",				0, 150, 30, 1, 0.3)
+/*
+SeqTrack("FPP_Stick2Heavy_Melee_AttackLR", 			"M_FPP_Stick2Heavy_Melee.anm2",				419, 474, 30, 1, 0.3)
+SeqTrack("FPP_Stick2Heavy_Melee_AttackRL", 			"M_FPP_Stick2Heavy_Melee.anm2",				363, 418, 30, 1, 0.3)
+SeqTrack("FPP_Stick2Heavy_Melee_AttackUD", 			"M_FPP_Stick2Heavy_Melee.anm2",				591, 646, 30, 1, 0.3)
+SeqTrack("FPP_Stick2Heavy_Melee_AttackDU", 			"M_FPP_Stick2Heavy_Melee.anm2",				647, 702, 30, 1, 0.3)
+SeqTrack("FPP_Stick2Heavy_Melee_AttackDLUR", 			"M_FPP_Stick2Heavy_Melee.anm2",				533, 588, 30, 1, 0.3)
+SeqTrack("FPP_Stick2Heavy_Melee_AttackURDL", 			"M_FPP_Stick2Heavy_Melee.anm2",				477, 532, 30, 1, 0.3)
+SeqTrack("FPP_Stick2Heavy_Melee_AttackDRUL", 			"M_FPP_Stick2Heavy_Melee.anm2",				763, 818, 30, 1, 0.3)
+SeqTrack("FPP_Stick2Heavy_Melee_AttackULDR", 			"M_FPP_Stick2Heavy_Melee.anm2",				705, 760, 30, 1, 0.3)
+//SeqTrack("FPP_Stick2Heavy_Melee_ALL",    "M_FPP_Stick2Heavy_Melee.anm2",      0, 818, 30, 1, 0.5) // testowo cala seq - bez Hit
+*/

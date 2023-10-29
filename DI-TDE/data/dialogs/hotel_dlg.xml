@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<speakers>
+	<speaker name="Survivor001_Prologue">
+		<group name="Survivor001_Prologue_NF">
+			<state type="near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line>
+						<speech>&amp;Survivor001_Prologue_near_01&amp;</speech>
+						<audiofile>data/sounds/temp/NPC_01.ogg</audiofile>
+					</line>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="Survivor002_Prologue">
+		<group name="Survivor002_Prologue_NF">
+			<state type="near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line>
+						<speech>&amp;Survivor002_Prologue_near_01&amp;</speech>
+						<audiofile>data/sounds/human/chatter/idletalk/female01/kimcompeau_npc_idletalk_04.ogg</audiofile>
+					</line>
+				</dialog>
+				<dialog>
+					<line>
+						<speech>&amp;Survivor002_Prologue_near_02&amp;</speech>
+						<audiofile>data/sounds/human/chatter/idletalk/female01/kimcompeau_npc_idletalk_04.ogg</audiofile>
+					</line>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="Survivor005_Prologue">
+		<group name="Survivor005_Prologue_NF">
+			<state type="near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line>
+						<speech>&amp;Survivor005_Prologue_near_01&amp;</speech>
+						<audiofile>data/sounds/temp/NPC_D_02.ogg</audiofile>
+					</line>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="DummySpeakerVoice">
+		<group name="Voice_001" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Voice_Prologue_001"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Voice_002" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Voice_Prologue_002"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Voice_003" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Voice_Prologue_003"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Voice_004" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Voice_Prologue_004"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Voice_005" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Voice_Prologue_005"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Voice_006" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Voice_Prologue_006"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Voice_007" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Voice_Prologue_007"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Voice_009" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Voice_Prologue_009"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Voice_010" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Voice_Prologue_010"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Voice_011" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Voice_Prologue_011"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Voice_012" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Voice_Prologue_012"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Voice_013" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Voice_Prologue_013"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Voice_014" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Voice_Prologue_014"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Voice_016" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Voice_Prologue_016"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Voice_017" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Voice_Prologue_017"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Voice_018" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Voice_Prologue_018"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Voice_019" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Voice_Prologue_019"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Voice_020" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Voice_Prologue_020"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Voice_022" voice_2d="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Voice_Prologue_022"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+</speakers>
+

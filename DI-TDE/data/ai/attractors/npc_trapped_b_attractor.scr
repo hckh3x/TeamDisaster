@@ -1,0 +1,30 @@
+!include("ai_data.def")
+!include("human_timing_events.def")
+!include("human_activities.def")
+!include("human_goals.def")
+
+SnapDist(0.8)    // MunDee Estuvo aquí
+StrongAttractor()
+ReleaseDist(6.5)    // MunDee Estuvo aquí
+InteractOnce()
+Invisible()
+Slot("", 1, IDLE_STAND, 1,0.0,0.0,0.0, 0.0, 0.0, 1.0,1.5)    // MunDee Estuvo aquí
+{
+    InteractionDistance(50.0)    // MunDee Estuvo aquí
+	//CanMoveOnAnimation()
+	LockPosition()
+
+
+
+    AiTypeDataSet("human")
+    {	
+        Data("idle:standing:stand::::", -2, "m_npc_human_crawl_loop_02")
+        Data("idle:standing:idle::::", -2, "m_npc_human_crawl_loop_02")
+        Data("idle:standing:to_interact::::", -2, "m_npc_human_crawl_02")
+        Data("idle:standing:interact::::", -2, "design_c_idle_stand")
+        Data("turn:standing:::left:45", 0, "")
+		Data("turn:standing:::right:45", 0, "")
+
+	}
+}
+

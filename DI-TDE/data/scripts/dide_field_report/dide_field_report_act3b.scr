@@ -1,0 +1,35 @@
+sub act3b() {
+OnMap("act3b", "NPCLifePlace", "", "20720", "2621", "9088"){Field("m_PlaceType", 26);}
+OnMap("act3b", "NPCLifePlace", "lp_Mowen_Boat_001", "20771", "2628", "8816"){Field("m_PlaceType", 59);}
+OnMap("act3b", "NPCLifePlace", "lp_Mowen_Boat_003", "20580", "2632", "8655"){Field("m_PlaceType", 59);}
+OnMap("act3b", "NPCLifePlace", "lp_Mowen_Boat_002", "20887", "2625", "9222"){Field("m_PlaceType", 59);}
+OnMap("act3b", "AIBaseSpawnBox", "zombies_holy_Ope_001", "6573", "5601", "25824"){Field("m_AILocation", 8);}
+OnMap("act3b", "AIBaseSpawnBox", "zombies_holy_Ope_003", "6590", "5605", "25811"){Field("m_AILocation", 8);}
+OnMap("act3b", "AIBaseSpawnBox", "zombies_holy_Ope_005", "6557", "5601", "25831"){Field("m_AILocation", 8);}
+OnMap("act3b", "AIBaseSpawnBox", "zombies_holy_Ope_007", "6551", "5601", "25822"){Field("m_AILocation", 8);}
+OnMap("act3b", "NPCLifePlace", "", "30532", "7306", "25727"){Field("m_PlaceType", 2);}
+OnMap("act3b", "NPCLifePlace", "LP_NearIntercom_Scientist002", "31167", "7306", "25693"){Field("m_PlaceType", 2);}
+OnMap("act3b", "NPCLifePlace", "", "32213", "7306", "25561"){Field("m_PlaceType", 65);}
+OnMap("act3b", "NPCLifePlace", "", "32445", "7306", "25417"){Field("m_PlaceType", 2);}
+OnMap("act3b", "NPCLifePlace", "", "30916", "7306", "26171"){Field("m_PlaceType", 19);}
+OnMap("act3b", "NPCLifePlace", "", "31291", "7306", "26149"){Field("m_PlaceType", 71);}
+OnMap("act3b", "NPCLifePlace", "lp_Monroe_sit", "31515", "7306", "25963"){Field("m_PlaceType", 25);}
+OnMap("act3b", "NPCLifePlace", "", "30310", "7307", "27132"){Field("m_PlaceType", 26);}
+OnMap("act3b", "NPCLifePlace", "", "31930", "7306", "26811"){Field("m_PlaceType", 16);}
+OnMap("act3b", "NPCLifePlace", "", "32117", "7306", "27186"){Field("m_PlaceType", 16);}
+OnMap("act3b", "NPCLifePlace", "LP_NearIntercom_Scientist001", "31667", "7303", "26803"){Field("m_PlaceType", 20);}
+OnMap("act3b", "NPCLifePlace", "LP_Scientist001", "31662", "7306", "27154"){Field("m_PlaceType", 22);}
+OnMap("act3b", "NPCLifePlace", "", "32441", "7306", "27114"){Field("m_PlaceType", 25);}
+OnMap("act3b", "NPCLifePlace", "", "8359", "5592", "27527"){Field("m_PlaceType", 1);}
+OnMap("act3b", "NPCLifePlace", "", "31543", "7307", "27319"){Field("m_PlaceType", 23);}
+OnMap("act3b", "NPCLifePlace", "", "31748", "7306", "27712"){Field("m_PlaceType", 16);}
+OnMap("act3b", "NPCLifePlace", "LP_DoResearch_West_Talking", "32170", "7310", "27835"){Field("m_PlaceType", 70);}
+OnMap("act3b", "AIBaseSpawnBox", "zombies_holy_Ope_002", "7627", "5637", "28724"){Field("m_AILocation", 8);}
+OnMap("act3b", "AIBaseSpawnBox", "zombies_holy_Ope_006", "7637", "5595", "28776"){Field("m_AILocation", 8);}
+OnMap("act3b", "AIBaseSpawnBox", "zombies_holy_Ope_004", "7638", "5595", "28836"){Field("m_AILocation", 8);}
+OnMap("act3b", "NPCLifePlace", "", "31001", "7346", "30674"){Field("m_PlaceType", 26);}
+OnMap("act3b", "NPCLifePlace", "LP_Scientist005", "25089", "11078", "40203"){Field("m_PlaceType", 2);}
+OnMap("act3b", "NPCLifePlace", "Connor_Dying", "29018", "11033", "40021"){Field("m_PlaceType", 11);}
+OnMap("act3b", "NPCLifePlace", "Connor_Dead", "29018", "11033", "40021"){Field("m_PlaceType", 80);}
+
+}

@@ -1,0 +1,1263 @@
+<?xml version="1.0"?>
+<QuestsDefinitions
+     level="PoliceStation"
+     pxsl_line="3">
+    <Quest
+         name="PoliceStation_JinRescue"
+         parent="Sewers_GoToPoliceStation"
+         glued="true"
+         pxsl_line="4">
+        <Phase
+             type="go to"
+             name=" PoliceStation_MapStart"
+             objective="&amp;PoliceStation_JinRescue_Objective_001&amp;"
+             distance="30.0"
+             leading_portal="Sewers_PoliceStation_Start"
+             pxsl_line="5">
+            <Destination
+                 pxsl_line="5">
+                <QuestObject
+                     class="SpawnPoint"
+                     name="MapStart"
+                     pxsl_line="5" />
+            </Destination>
+            <DebugPlayerPosition
+                 pxsl_line="6">
+                <QuestObject
+                     class="SpawnPoint"
+                     name="MapStart"
+                     pxsl_line="6" />
+            </DebugPlayerPosition>
+        </Phase>
+        <Phase
+             type="checkpoint"
+             name="PS_autosave_01"
+             pxsl_line="7">
+            <Destination
+                 pxsl_line="7">
+                <QuestObject
+                     class="SpawnPoint"
+                     name="MapStart"
+                     pxsl_line="7" />
+            </Destination>
+        </Phase>
+        <Phase
+             type="set state"
+             name="_"
+             desired_state="off"
+             pxsl_line="8">
+            <Trigger
+                 pxsl_line="8">
+                <QuestObject
+                     class="VirtualSwitchDI"
+                     name="PS_PortalActivator"
+                     pxsl_line="8" />
+            </Trigger>
+        </Phase>
+        <Phase
+             type="AND"
+             name="_"
+             objective="&amp;PoliceStation_JinRescue_Objective_A1&amp;"
+             pxsl_line="9">
+            <Path
+                 pxsl_line="9">
+                <Phase
+                     type="go to"
+                     name="_"
+                     distance="1.5"
+                     pxsl_line="10">
+                    <Destination
+                         pxsl_line="10">
+                        <QuestObject
+                             class="Marker"
+                             name="Find_Jin1"
+                             pxsl_line="10" />
+                    </Destination>
+                </Phase>
+                <Phase
+                     type="go to"
+                     name=" PoliceStation_FightPunks"
+                     distance="5.0"
+                     pxsl_line="11">
+                    <Destination
+                         pxsl_line="11">
+                        <QuestObject
+                             class="Marker"
+                             name="PoliceStationInitiation"
+                             pxsl_line="11" />
+                    </Destination>
+                    <DebugPlayerPosition
+                         pxsl_line="12">
+                        <QuestObject
+                             class="SpawnPoint"
+                             name="loc_MainHall_save"
+                             pxsl_line="12" />
+                    </DebugPlayerPosition>
+                </Phase>
+                <Phase
+                     type="appear"
+                     name="_"
+                     mode="show"
+                     pxsl_line="13">
+                    <Object
+                         pxsl_line="13">
+                        <QuestObject
+                             class="HumanAI"
+                             name="ArmoryPunk"
+                             pxsl_line="13" />
+                    </Object>
+                </Phase>
+                <!-- ,goto _ Marker PoliceStationInitiation  -distance=2.8 -->
+                <Phase
+                     type="use"
+                     name="_"
+                     desired_state="opened"
+                     pxsl_line="15">
+                    <Trigger
+                         pxsl_line="15">
+                        <QuestObject
+                             class="DoorDI"
+                             name="Door_Inintiation"
+                             pxsl_line="15" />
+                    </Trigger>
+                </Phase>
+                <Phase
+                     type="AND"
+                     name="_"
+                     objective="&amp;PoliceStation_JinRescue_Objective_A3&amp;"
+                     pxsl_line="16">
+                    <Path
+                         pxsl_line="16">
+                        <Phase
+                             type="set state"
+                             name="_"
+                             desired_state="off"
+                             pxsl_line="17">
+                            <Trigger
+                                 pxsl_line="17">
+                                <QuestObject
+                                     class="VirtualSwitchDI"
+                                     name="Music_Calm"
+                                     pxsl_line="17" />
+                            </Trigger>
+                        </Phase>
+                        <Phase
+                             type="set state"
+                             name="_"
+                             desired_state="on"
+                             pxsl_line="18">
+                            <Trigger
+                                 pxsl_line="18">
+                                <QuestObject
+                                     class="VirtualSwitchDI"
+                                     name="Music_Fight"
+                                     pxsl_line="18" />
+                            </Trigger>
+                        </Phase>
+                        <Phase
+                             type="AND"
+                             name="_"
+                             pxsl_line="19">
+                            <Path
+                                 pxsl_line="20">
+                                <Phase
+                                     type="wait guard"
+                                     name="_"
+                                     time="0.3"
+                                     pxsl_line="21" />
+                                <Phase
+                                     type="move ai"
+                                     name="_"
+                                     teleport="false"
+                                     pxsl_line="22">
+                                    <Destination
+                                         pxsl_line="22">
+                                        <QuestObject
+                                             class="Marker"
+                                             name="ArmoryPunk"
+                                             pxsl_line="22" />
+                                    </Destination>
+                                    <AI
+                                         pxsl_line="23">
+                                        <QuestObject
+                                             class="HumanAI"
+                                             name="ArmoryPunk"
+                                             pxsl_line="23" />
+                                    </AI>
+                                </Phase>
+                                <Phase
+                                     type="appear"
+                                     name="_"
+                                     mode="hide"
+                                     pxsl_line="24">
+                                    <Object
+                                         pxsl_line="24">
+                                        <QuestObject
+                                             class="HumanAI"
+                                             name="ArmoryPunk"
+                                             pxsl_line="24" />
+                                    </Object>
+                                </Phase>
+                                <Phase
+                                     type="kill"
+                                     name="_"
+                                     pxsl_line="25">
+                                    <Spawner
+                                         pxsl_line="26">
+                                        <QuestObject
+                                             class="AISpawnBoxCompound"
+                                             name="InititationBandit"
+                                             pxsl_line="26" />
+                                    </Spawner>
+                                    <Spawner
+                                         pxsl_line="27">
+                                        <QuestObject
+                                             class="AISpawnBoxDirectional"
+                                             name="AtriumBandits"
+                                             pxsl_line="27" />
+                                    </Spawner>
+                                </Phase>
+                            </Path>
+                            <Path
+                                 pxsl_line="28">
+                                <Phase
+                                     type="wait guard"
+                                     name="_"
+                                     time="0.3"
+                                     pxsl_line="29" />
+                                <Phase
+                                     type="talk"
+                                     name="_"
+                                     speaker="MarketRunner001"
+                                     group="PunkInitiation_NF"
+                                     show_locations="false"
+                                     auto_start="true"
+                                     pxsl_line="30" />
+                            </Path>
+                        </Phase>
+                        <Phase
+                             type="set state"
+                             name="_"
+                             desired_state="on"
+                             pxsl_line="31">
+                            <Trigger
+                                 pxsl_line="31">
+                                <QuestObject
+                                     class="VirtualSwitchDI"
+                                     name="Reception_Door_Activator"
+                                     pxsl_line="31" />
+                            </Trigger>
+                        </Phase>
+                        <Phase
+                             type="checkpoint"
+                             name="_"
+                             pxsl_line="32">
+                            <Destination
+                                 pxsl_line="32">
+                                <QuestObject
+                                     class="SpawnPoint"
+                                     name="loc_MainHall_save"
+                                     pxsl_line="32" />
+                            </Destination>
+                        </Phase>
+                        <Phase
+                             type="go to"
+                             name="_"
+                             distance="2.5"
+                             pxsl_line="33">
+                            <Destination
+                                 pxsl_line="33">
+                                <QuestObject
+                                     class="Marker"
+                                     name="loc_Stairs"
+                                     pxsl_line="33" />
+                            </Destination>
+                        </Phase>
+                        <Phase
+                             type="kill"
+                             name="_"
+                             pxsl_line="34">
+                            <Spawner
+                                 pxsl_line="35">
+                                <QuestObject
+                                     class="AISpawnBoxDirectional"
+                                     name="Atrium_Enemies02"
+                                     pxsl_line="35" />
+                            </Spawner>
+                            <Spawner
+                                 pxsl_line="36">
+                                <QuestObject
+                                     class="AISpawnBoxDirectional"
+                                     name="Atrium_Enemies03"
+                                     pxsl_line="36" />
+                            </Spawner>
+                        </Phase>
+                        <Phase
+                             type="checkpoint"
+                             name="_"
+                             pxsl_line="37">
+                            <Destination
+                                 pxsl_line="37">
+                                <QuestObject
+                                     class="SpawnPoint"
+                                     name="checkpoint_FinalFight"
+                                     pxsl_line="37" />
+                            </Destination>
+                        </Phase>
+                        <Phase
+                             type="set state"
+                             name="_"
+                             desired_state="on"
+                             pxsl_line="38">
+                            <Trigger
+                                 pxsl_line="38">
+                                <QuestObject
+                                     class="VirtualSwitchDI"
+                                     name="Detectives_office_door"
+                                     pxsl_line="38" />
+                            </Trigger>
+                        </Phase>
+                        <Phase
+                             type="set dialog"
+                             name="_"
+                             speaker="Jin"
+                             pxsl_line="39" />
+                        <Phase
+                             type="kill"
+                             name="_"
+                             pxsl_line="40">
+                            <Spawner
+                                 pxsl_line="41">
+                                <QuestObject
+                                     class="AISpawnBoxCompound"
+                                     name="FinalFight2"
+                                     pxsl_line="41" />
+                            </Spawner>
+                            <Spawner
+                                 pxsl_line="42">
+                                <QuestObject
+                                     class="AISpawnBoxCompound"
+                                     name="FinalFight1"
+                                     pxsl_line="42" />
+                            </Spawner>
+                            <Spawner
+                                 pxsl_line="43">
+                                <QuestObject
+                                     class="AISpawnBoxCompound"
+                                     name="FinalFight3"
+                                     pxsl_line="43" />
+                            </Spawner>
+                            <Spawner
+                                 pxsl_line="44">
+                                <QuestObject
+                                     class="AISpawnBoxDirectional"
+                                     name="FinalFight4"
+                                     pxsl_line="44" />
+                            </Spawner>
+                        </Phase>
+                        <!-- wylaczam chatter boxa -->
+                        <Phase
+                             type="set state"
+                             name="_"
+                             desired_state="off"
+                             pxsl_line="46">
+                            <Trigger
+                                 pxsl_line="46">
+                                <QuestObject
+                                     class="VirtualSwitchDI"
+                                     name="Chatter_01_Switch"
+                                     pxsl_line="46" />
+                            </Trigger>
+                        </Phase>
+                    </Path>
+                </Phase>
+                <Phase
+                     type="checkpoint"
+                     name="_"
+                     pxsl_line="47">
+                    <Destination
+                         pxsl_line="47">
+                        <QuestObject
+                             class="SpawnPoint"
+                             name="JinRescue"
+                             pxsl_line="47" />
+                    </Destination>
+                </Phase>
+                <Phase
+                     type="is_content_available"
+                     required_map="act2a"
+                     pxsl_line="48" />
+                <Phase
+                     type="set state"
+                     name="_"
+                     desired_state="off"
+                     pxsl_line="49">
+                    <Trigger
+                         pxsl_line="49">
+                        <QuestObject
+                             class="VirtualSwitchDI"
+                             name="Music_Fight"
+                             pxsl_line="49" />
+                    </Trigger>
+                </Phase>
+                <Phase
+                     type="set state"
+                     name="_"
+                     desired_state="on"
+                     pxsl_line="50">
+                    <Trigger
+                         pxsl_line="50">
+                        <QuestObject
+                             class="VirtualSwitchDI"
+                             name="Music_Calm"
+                             pxsl_line="50" />
+                    </Trigger>
+                </Phase>
+                <Phase
+                     type="use"
+                     name=" End Of PoliceStation "
+                     desired_state="on"
+                     pxsl_line="51">
+                    <Trigger
+                         pxsl_line="51">
+                        <QuestObject
+                             class="InvisibleSwitchDI"
+                             name="DoorToJinOpen"
+                             pxsl_line="51" />
+                    </Trigger>
+                    <DebugPlayerPosition
+                         pxsl_line="52">
+                        <QuestObject
+                             class="SpawnPoint"
+                             name="JinRescue"
+                             pxsl_line="52" />
+                    </DebugPlayerPosition>
+                </Phase>
+                <Phase
+                     type="movie"
+                     name="CINEMATIC - JIN RESCUE"
+                     movie="Movie_JinRescue06"
+                     pxsl_line="53">
+                    <DebugPlayerPosition
+                         pxsl_line="54">
+                        <QuestObject
+                             class="SpawnPoint"
+                             name="JinRescue"
+                             pxsl_line="54" />
+                    </DebugPlayerPosition>
+                    <PostMovie
+                         pxsl_line="55">
+                        <Phase
+                             type="unlock hub"
+                             name="_"
+                             hub="Hub_PS_Start"
+                             pxsl_line="56" />
+                        <!-- wlaczamy portal do PS -->
+                        <Phase
+                             type="set state"
+                             name="_"
+                             desired_state="on"
+                             pxsl_line="58">
+                            <Trigger
+                                 pxsl_line="58">
+                                <QuestObject
+                                     class="VirtualSwitchDI"
+                                     name="PS_PortalActivator"
+                                     pxsl_line="58" />
+                            </Trigger>
+                        </Phase>
+                        <!-- wlaczamy drzwi na skroty do questa Tim_Q1 -->
+                        <Phase
+                             type="set state"
+                             name="_"
+                             desired_state="on"
+                             pxsl_line="60">
+                            <Trigger
+                                 pxsl_line="60">
+                                <QuestObject
+                                     class="VirtualSwitchDI"
+                                     name="DoorsToDocuments"
+                                     pxsl_line="60" />
+                            </Trigger>
+                        </Phase>
+                        <Phase
+                             type="set state"
+                             name="_"
+                             desired_state="off"
+                             pxsl_line="61">
+                            <Trigger
+                                 pxsl_line="61">
+                                <QuestObject
+                                     class="VirtualSwitchDI"
+                                     name="ALL_PUNKS_DEACTIVATOR"
+                                     pxsl_line="61" />
+                            </Trigger>
+                        </Phase>
+                    </PostMovie>
+                </Phase>
+            </Path>
+        </Phase>
+    </Quest>
+    <!-- quest __PoliceStation_PunkInitiation  -parent=Sewers_GoToPoliceStation -->
+        <!-- ,goto _ Marker PoliceStationInitiation -show=false -distance=5.0       -->
+        <!-- ,show _ HumanAI ArmoryPunk -->
+        <!-- ,goto _ Marker PoliceStationInitiation -show=false -distance=3.0 -->
+        <!-- ,set _ VirtualSwitchDI Music_Calm -state=off        -show=false -->
+        <!-- ,set _ VirtualSwitchDI Music_Fight -state=on        -show=false -->
+        <!-- ,AND _ -->
+            <!-- path -->
+                <!-- ,wait _ 0.3                                 -show=false -->
+                <!-- ,move _ Marker ArmoryPunk -distance=1.0     -show=false -->
+                    <!-- ,ai HumanAI ArmoryPunk -->
+                <!-- ,set _ VirtualSwitchDI ArmoryPunk_Activator -state=on -->
+                <!-- ,hide _ HumanAI ArmoryPunk -->
+                <!-- ,kill _ AISpawnBoxCompound  InititationBandit   -show=false -->
+            <!-- path                 -->
+                <!-- ,wait _ 0.3                     -show=false -->
+                <!-- ,talk _ MarketRunner001 PunkInitiation_NF -auto=true    -show=false -->
+    <!-- ============================================ SIDE QUESTS ============================================ -->
+    <!-- Let prisoner out of the cell. -->
+    <Quest
+         name="Reza_Q1"
+         reward="3000"
+         parent="Sewers_GoToPoliceStation"
+         pxsl_line="89">
+        <Phase
+             type="set state"
+             name="_"
+             desired_state="off"
+             pxsl_line="90">
+            <Trigger
+                 pxsl_line="90">
+                <QuestObject
+                     class="VirtualSwitchDI"
+                     name="SecurityDoor"
+                     pxsl_line="90" />
+            </Trigger>
+        </Phase>
+        <Phase
+             type="appear"
+             name="_"
+             mode="hide"
+             pxsl_line="91">
+            <Object
+                 pxsl_line="91">
+                <QuestObject
+                     class="ModelObject"
+                     name="Security_GreenKey"
+                     pxsl_line="91" />
+            </Object>
+        </Phase>
+        <Phase
+             type="go to"
+             name="_"
+             distance="20.0"
+             show_locations="false"
+             pxsl_line="92">
+            <Destination
+                 pxsl_line="92">
+                <QuestObject
+                     class="SpawnPoint"
+                     name="MapStart"
+                     pxsl_line="92" />
+            </Destination>
+        </Phase>
+        <Phase
+             type="appear"
+             name="Reza"
+             mode="show"
+             pxsl_line="93">
+            <Object
+                 pxsl_line="93">
+                <QuestObject
+                     class="HumanAI"
+                     name="Reza"
+                     pxsl_line="93" />
+            </Object>
+        </Phase>
+        <Phase
+             type="talk"
+             name="Reza_Q1_Opening cells_Start"
+             speaker="Reza"
+             group="Reza_Q1_NF"
+             brief_reward="3000"
+             brief_difficulty="easy"
+             show_locations="false"
+             brief_item="&amp;Melee_PoliceBatonGen_N&amp;"
+             brief_item_color="1"
+             pxsl_line="94">
+            <DebugPlayerPosition
+                 pxsl_line="95">
+                <QuestObject
+                     class="Marker"
+                     name="loc_SecurityRoom"
+                     pxsl_line="95" />
+            </DebugPlayerPosition>
+        </Phase>
+        <Phase
+             type="checkpoint"
+             name="_"
+             pxsl_line="96">
+            <Destination
+                 pxsl_line="96">
+                <QuestObject
+                     class="SpawnPoint"
+                     name="loc_SecurityRoom_save"
+                     pxsl_line="96" />
+            </Destination>
+        </Phase>
+        <Phase
+             type="use"
+             name="Reza_Q1_Opening cells_"
+             desired_state="on"
+             objective="&amp;Reza_Q1_Objective&amp;"
+             pxsl_line="97">
+            <Trigger
+                 pxsl_line="97">
+                <QuestObject
+                     class="PhysicalSwitchDI"
+                     name="Reza_Q1_OpenCells"
+                     pxsl_line="97" />
+            </Trigger>
+            <DebugPlayerPosition
+                 pxsl_line="98">
+                <QuestObject
+                     class="Marker"
+                     name="loc_SecurityRoom"
+                     pxsl_line="98" />
+            </DebugPlayerPosition>
+        </Phase>
+        <Phase
+             type="appear"
+             name="_"
+             mode="show"
+             pxsl_line="99">
+            <Object
+                 pxsl_line="99">
+                <QuestObject
+                     class="ModelObject"
+                     name="Security_GreenKey"
+                     pxsl_line="99" />
+            </Object>
+        </Phase>
+        <Phase
+             type="appear"
+             name="_"
+             mode="hide"
+             pxsl_line="100">
+            <Object
+                 pxsl_line="100">
+                <QuestObject
+                     class="ModelObject"
+                     name="Security_RedKey"
+                     pxsl_line="100" />
+            </Object>
+        </Phase>
+        <Phase
+             type="set state"
+             name="_"
+             desired_state="on"
+             pxsl_line="101">
+            <Trigger
+                 pxsl_line="101">
+                <QuestObject
+                     class="VirtualSwitchDI"
+                     name="SecurityDoor"
+                     pxsl_line="101" />
+            </Trigger>
+        </Phase>
+        <Phase
+             type="set state"
+             name="_"
+             desired_state="off"
+             pxsl_line="102">
+            <Trigger
+                 pxsl_line="102">
+                <QuestObject
+                     class="VirtualSwitchDI"
+                     name="SecurityDoor_Locked"
+                     pxsl_line="102" />
+            </Trigger>
+        </Phase>
+        <Phase
+             type="AND"
+             name="_"
+             pxsl_line="103">
+            <!-- path -->
+                <!-- ,set _ PhysicalSwitchDI door_cell001 -state=on -->
+            <Path
+                 pxsl_line="106">
+                <Phase
+                     type="set state"
+                     name="_"
+                     desired_state="on"
+                     pxsl_line="107">
+                    <Trigger
+                         pxsl_line="107">
+                        <QuestObject
+                             class="PhysicalSwitchDI"
+                             name="door_cell002"
+                             pxsl_line="107" />
+                    </Trigger>
+                </Phase>
+            </Path>
+            <Path
+                 pxsl_line="108">
+                <Phase
+                     type="set state"
+                     name="_"
+                     desired_state="on"
+                     pxsl_line="109">
+                    <Trigger
+                         pxsl_line="109">
+                        <QuestObject
+                             class="PhysicalSwitchDI"
+                             name="door_cell003"
+                             pxsl_line="109" />
+                    </Trigger>
+                </Phase>
+            </Path>
+            <Path
+                 pxsl_line="110">
+                <Phase
+                     type="set state"
+                     name="_"
+                     desired_state="on"
+                     pxsl_line="111">
+                    <Trigger
+                         pxsl_line="111">
+                        <QuestObject
+                             class="PhysicalSwitchDI"
+                             name="door_cell004"
+                             pxsl_line="111" />
+                    </Trigger>
+                </Phase>
+            </Path>
+            <Path
+                 pxsl_line="112">
+                <Phase
+                     type="set state"
+                     name="_"
+                     desired_state="on"
+                     pxsl_line="113">
+                    <Trigger
+                         pxsl_line="113">
+                        <QuestObject
+                             class="PhysicalSwitchDI"
+                             name="door_cell005"
+                             pxsl_line="113" />
+                    </Trigger>
+                </Phase>
+            </Path>
+            <Path
+                 pxsl_line="114">
+                <Phase
+                     type="set state"
+                     name="_"
+                     desired_state="on"
+                     pxsl_line="115">
+                    <Trigger
+                         pxsl_line="115">
+                        <QuestObject
+                             class="PhysicalSwitchDI"
+                             name="door_cell006"
+                             pxsl_line="115" />
+                    </Trigger>
+                </Phase>
+            </Path>
+            <Path
+                 pxsl_line="116">
+                <Phase
+                     type="set lifeplace"
+                     name="_"
+                     desired_state="off"
+                     pxsl_line="117">
+                    <LifePlace
+                         pxsl_line="117">
+                        <QuestObject
+                             class="NPCLifePlace"
+                             name="Reza_Q1_LifePlace"
+                             pxsl_line="117" />
+                    </LifePlace>
+                </Phase>
+                <Phase
+                     type="set state"
+                     name="_"
+                     desired_state="on"
+                     pxsl_line="118">
+                    <Trigger
+                         pxsl_line="118">
+                        <QuestObject
+                             class="PhysicalSwitchDI"
+                             name="door_cell011"
+                             pxsl_line="118" />
+                    </Trigger>
+                </Phase>
+            </Path>
+            <Path
+                 pxsl_line="119">
+                <Phase
+                     type="set state"
+                     name="_"
+                     desired_state="on"
+                     pxsl_line="120">
+                    <Trigger
+                         pxsl_line="120">
+                        <QuestObject
+                             class="PhysicalSwitchDI"
+                             name="door_cell008"
+                             pxsl_line="120" />
+                    </Trigger>
+                </Phase>
+            </Path>
+            <Path
+                 pxsl_line="121">
+                <Phase
+                     type="set state"
+                     name="_"
+                     desired_state="on"
+                     pxsl_line="122">
+                    <Trigger
+                         pxsl_line="122">
+                        <QuestObject
+                             class="PhysicalSwitchDI"
+                             name="door_cell009"
+                             pxsl_line="122" />
+                    </Trigger>
+                </Phase>
+            </Path>
+            <Path
+                 pxsl_line="123">
+                <Phase
+                     type="set state"
+                     name="_"
+                     desired_state="on"
+                     pxsl_line="124">
+                    <Trigger
+                         pxsl_line="124">
+                        <QuestObject
+                             class="PhysicalSwitchDI"
+                             name="door_cell010"
+                             pxsl_line="124" />
+                    </Trigger>
+                </Phase>
+            </Path>
+            <Path
+                 pxsl_line="125">
+                <Phase
+                     type="set state"
+                     name="_"
+                     desired_state="on"
+                     pxsl_line="126">
+                    <Trigger
+                         pxsl_line="126">
+                        <QuestObject
+                             class="PhysicalSwitchDI"
+                             name="door_cell007"
+                             pxsl_line="126" />
+                    </Trigger>
+                </Phase>
+            </Path>
+            <Path
+                 pxsl_line="127">
+                <Phase
+                     type="set state"
+                     name="_"
+                     desired_state="on"
+                     pxsl_line="128">
+                    <Trigger
+                         pxsl_line="128">
+                        <QuestObject
+                             class="PhysicalSwitchDI"
+                             name="door_cell012"
+                             pxsl_line="128" />
+                    </Trigger>
+                </Phase>
+            </Path>
+        </Phase>
+        <Phase
+             type="talk"
+             name="Reza_Q1_Opening cells_End"
+             objective="&amp;Reza_Q1_Objective_B&amp;"
+             speaker="Reza"
+             group="Reza_Q1_Accomplished"
+             pxsl_line="129">
+            <DebugPlayerPosition
+                 pxsl_line="130">
+                <QuestObject
+                     class="Marker"
+                     name="loc_SecurityRoom"
+                     pxsl_line="130" />
+            </DebugPlayerPosition>
+        </Phase>
+        <Phase
+             type="set reward"
+             name=" Melee_PoliceBatonGen "
+             speaker="Reza"
+             item="Melee_PoliceBatonGen"
+             item_color="1"
+             pxsl_line="131" />
+        <Phase
+             type="checkpoint"
+             name="_"
+             pxsl_line="132">
+            <Destination
+                 pxsl_line="132">
+                <QuestObject
+                     class="SpawnPoint"
+                     name="loc_SecurityRoom_save"
+                     pxsl_line="132" />
+            </Destination>
+        </Phase>
+    </Quest>
+    <Quest
+         name="__Reza_Q1_Hide"
+         parent="Reza_Q1"
+         pxsl_line="134">
+        <Phase
+             type="gather players guard"
+             name="_"
+             distance="-35.0"
+             show_locations="false"
+             pxsl_line="135">
+            <Destination
+                 pxsl_line="135">
+                <QuestObject
+                     class="Marker"
+                     name="UnlockCells2"
+                     pxsl_line="135" />
+            </Destination>
+        </Phase>
+        <!-- ,set _          VirtualSwitchDI Reza_door_switch    -state=on       -show=false -->
+        <!-- ,move   _       Marker      Reza_Stop1  -distance=1.5   -show=false -->
+            <!-- ,ai         HumanAI     Reza -->
+                <!-- ,start  AIEscortNode Reza_Gone -->
+        <!-- ,set    _       DoorDI      Reza_Door   -state=closed       -show=false -->
+        <!-- ,set    _       DoorDI      Reza_Door   -state=locked      -show=false -->
+        <Phase
+             type="appear"
+             name="_"
+             mode="hide"
+             pxsl_line="143">
+            <Object
+                 pxsl_line="143">
+                <QuestObject
+                     class="HumanAI"
+                     name="Reza"
+                     pxsl_line="143" />
+            </Object>
+        </Phase>
+    </Quest>
+    <!-- Get data disc for Patrick. -->
+    <Quest
+         name="Patrick_Q1_BillDead"
+         parent="Patrick_Q1"
+         glued="true"
+         reward="0"
+         pxsl_line="146">
+        <Phase
+             type="AND"
+             name="_"
+             objective="&amp;Patrick_Q1_Objective_A&amp;"
+             pxsl_line="147">
+            <Path
+                 pxsl_line="147">
+                <Phase
+                     type="go to"
+                     name=" Patrick_Q1_BillDead_Start"
+                     distance="40.0"
+                     leading_portal="ACT2A_Slums_PoliceStation"
+                     pxsl_line="148">
+                    <Destination
+                         pxsl_line="148">
+                        <QuestObject
+                             class="Marker"
+                             name="ParkingTruck"
+                             pxsl_line="148" />
+                    </Destination>
+                    <DebugPlayerPosition
+                         pxsl_line="149">
+                        <QuestObject
+                             class="SpawnPoint"
+                             name="PS_PoliceStationGarage"
+                             pxsl_line="149" />
+                    </DebugPlayerPosition>
+                </Phase>
+                <Phase
+                     type="set state"
+                     name="_"
+                     desired_state="on"
+                     pxsl_line="150">
+                    <Trigger
+                         pxsl_line="150">
+                        <QuestObject
+                             class="VirtualSwitchDI"
+                             name="PS_PortalActivator"
+                             pxsl_line="150" />
+                    </Trigger>
+                </Phase>
+                <Phase
+                     type="set state"
+                     name="_"
+                     desired_state="on"
+                     pxsl_line="151">
+                    <Trigger
+                         pxsl_line="151">
+                        <QuestObject
+                             class="VirtualSwitchDI"
+                             name="tim_q1_zombieactivator"
+                             pxsl_line="151" />
+                    </Trigger>
+                </Phase>
+                <Phase
+                     type="checkpoint"
+                     name="_"
+                     pxsl_line="152">
+                    <Destination
+                         pxsl_line="152">
+                        <QuestObject
+                             class="SpawnPoint"
+                             name="PS_PoliceStationGarage"
+                             pxsl_line="152" />
+                    </Destination>
+                </Phase>
+                <Phase
+                     type="talk"
+                     name="_"
+                     speaker="Patrick"
+                     group="Patrick_Q1_NF"
+                     pxsl_line="153" />
+            </Path>
+        </Phase>
+        <Phase
+             type="set state"
+             name=" Patrick_Q1_BillDead_End "
+             desired_state="off"
+             pxsl_line="154">
+            <Trigger
+                 pxsl_line="154">
+                <QuestObject
+                     class="PhysicalSwitchDI"
+                     name="Patrick_Q1_Data_Dawnload"
+                     pxsl_line="154" />
+            </Trigger>
+            <DebugPlayerPosition
+                 pxsl_line="155">
+                <QuestObject
+                     class="SpawnPoint"
+                     name="JinRescue"
+                     pxsl_line="155" />
+            </DebugPlayerPosition>
+        </Phase>
+        <Phase
+             type="use"
+             name="_"
+             desired_state="on"
+             pxsl_line="156">
+            <Trigger
+                 pxsl_line="156">
+                <QuestObject
+                     class="PhysicalSwitchDI"
+                     name="Patrick_Q1_Data_Dawnload"
+                     pxsl_line="156" />
+            </Trigger>
+        </Phase>
+        <Phase
+             type="checkpoint"
+             name="_"
+             pxsl_line="157">
+            <Destination
+                 pxsl_line="157">
+                <QuestObject
+                     class="SpawnPoint"
+                     name="JinRescue"
+                     pxsl_line="157" />
+            </Destination>
+        </Phase>
+        <!-- ,take _ QuestInventoryItemDI Patrick_Q1_DataDisc -obj=&Patrick_Q1_Objective_B& -->
+    </Quest>
+    <!-- Bring documents to Tim.     -->
+    <Quest
+         name="Tim_Q1_BringDocuments"
+         reward="0"
+         parent="Tim_Q1"
+         glued="true"
+         pxsl_line="161">
+        <Phase
+             type="AND"
+             name="_"
+             objective="&amp;Tim_Q1_PS_Objective_A&amp;"
+             pxsl_line="162">
+            <Path
+                 pxsl_line="162">
+                <Phase
+                     type="go to"
+                     name=" Tim_Q1_Documents_Start"
+                     distance="40.0"
+                     leading_portal="ACT2A_Slums_PoliceStation"
+                     pxsl_line="163">
+                    <Destination
+                         pxsl_line="163">
+                        <QuestObject
+                             class="Marker"
+                             name="ParkingTruck"
+                             pxsl_line="163" />
+                    </Destination>
+                    <DebugPlayerPosition
+                         pxsl_line="164">
+                        <QuestObject
+                             class="SpawnPoint"
+                             name="PS_PoliceStationGarage"
+                             pxsl_line="164" />
+                    </DebugPlayerPosition>
+                </Phase>
+                <Phase
+                     type="set state"
+                     name="_"
+                     desired_state="on"
+                     pxsl_line="165">
+                    <Trigger
+                         pxsl_line="165">
+                        <QuestObject
+                             class="VirtualSwitchDI"
+                             name="PS_PortalActivator"
+                             pxsl_line="165" />
+                    </Trigger>
+                </Phase>
+                <Phase
+                     type="set state"
+                     name="_"
+                     desired_state="on"
+                     pxsl_line="166">
+                    <Trigger
+                         pxsl_line="166">
+                        <QuestObject
+                             class="VirtualSwitchDI"
+                             name="tim_q1_zombieactivator"
+                             pxsl_line="166" />
+                    </Trigger>
+                </Phase>
+                <Phase
+                     type="checkpoint"
+                     name="_"
+                     pxsl_line="167">
+                    <Destination
+                         pxsl_line="167">
+                        <QuestObject
+                             class="SpawnPoint"
+                             name="PS_PoliceStationGarage"
+                             pxsl_line="167" />
+                    </Destination>
+                </Phase>
+                <Phase
+                     type="go to"
+                     name="_"
+                     distance="2.0"
+                     leading_portal="ACT2A_Slums_PoliceStation"
+                     pxsl_line="168">
+                    <Destination
+                         pxsl_line="168">
+                        <QuestObject
+                             class="Marker"
+                             name="loc_Office"
+                             pxsl_line="168" />
+                    </Destination>
+                </Phase>
+                <Phase
+                     type="set state"
+                     name="_"
+                     desired_state="on"
+                     pxsl_line="169">
+                    <Trigger
+                         pxsl_line="169">
+                        <QuestObject
+                             class="VirtualSwitchDI"
+                             name="Patrick_Computer_Activator"
+                             pxsl_line="169" />
+                    </Trigger>
+                </Phase>
+            </Path>
+        </Phase>
+        <Phase
+             type="take item"
+             name=" Tim_Q1_Documents_End"
+             objective="&amp;Tim_Q1_PS_Objective_B&amp;"
+             show_locations="false"
+             leading_portal="ACT2A_Slums_PoliceStation"
+             pxsl_line="170">
+            <Item
+                 pxsl_line="170">
+                <QuestObject
+                     class="QuestInventoryItemDI"
+                     name="Tim_Q1_Documents"
+                     pxsl_line="170" />
+            </Item>
+            <DebugPlayerPosition
+                 pxsl_line="171">
+                <QuestObject
+                     class="SpawnPoint"
+                     name="JinRescue"
+                     pxsl_line="171" />
+            </DebugPlayerPosition>
+        </Phase>
+        <Phase
+             type="checkpoint"
+             name="_"
+             pxsl_line="172">
+            <Destination
+                 pxsl_line="172">
+                <QuestObject
+                     class="SpawnPoint"
+                     name="JinRescue"
+                     pxsl_line="172" />
+            </Destination>
+        </Phase>
+        <Phase
+             type="set state"
+             name="_"
+             desired_state="on"
+             pxsl_line="173">
+            <Trigger
+                 pxsl_line="173">
+                <QuestObject
+                     class="VirtualSwitchDI"
+                     name="tim_q1_doorsactivator"
+                     pxsl_line="173" />
+            </Trigger>
+        </Phase>
+        <Phase
+             type="set state"
+             name="_"
+             desired_state="opened"
+             pxsl_line="174">
+            <Trigger
+                 pxsl_line="174">
+                <QuestObject
+                     class="DoorDI"
+                     name="Storage_Door"
+                     pxsl_line="174" />
+            </Trigger>
+        </Phase>
+    </Quest>
+    <!-- ============================================ AUTOSAVES ============================================ -->
+    <!-- quest __Autosave_S1  -parent=Sewers_GoToPoliceStation  -->
+        <!-- ,BLOCK _ -->
+            <!-- ,goto _         Marker      Autosave_S1     -distance=2.0       -show=false -->
+            <!-- ,checkpoint _     SpawnPoint  loc_SecurityRoom_save -->
+        <!--  -->
+    <!-- quest __Autosave_S2  -parent=Sewers_GoToPoliceStation  -->
+        <!-- ,BLOCK _ -->
+            <!-- ,goto _ Marker loc_MainHall -distance=5.0                       -show=false -->
+            <!-- ,checkpoint _   SpawnPoint  loc_MainHall_save -->
+    <!--  -->
+    <!-- quest __Autosave_S3  -parent=Sewers_GoToPoliceStation  -->
+        <!-- ,BLOCK _ -->
+            <!-- ,goto _ Marker loc_Stairs -distance=3.0 -show=false -->
+            <!-- ,checkpoint _   SpawnPoint  checkpoint_Stairs -->
+        <!--  -->
+    <!-- quest __Autosave_S4  -parent=Sewers_GoToPoliceStation  -->
+        <!-- ,BLOCK _ -->
+            <!-- ,goto _ Marker loc_FinalFight -distance=6.0 -show=false -->
+            <!-- ,checkpoint _   SpawnPoint loc_FinalFight_save -->
+</QuestsDefinitions>
+<!-- vim: set et sw=4 ts=4: -->

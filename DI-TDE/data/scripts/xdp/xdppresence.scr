@@ -1,0 +1,38 @@
+sub main() 
+{   
+    Stat("XDPPresence")
+    {           
+        Name("Rich_LoadingLevel");
+        Event("Evn_LevelEvent")
+        {
+            LevelEvent("LOADING");
+        }
+    }
+    
+    Stat("XDPPresence")
+    {   
+        Name("Rich_Playing");
+        Event("Evn_LevelEvent")
+        {
+            LevelEvent("LOADED");
+        }
+    }
+    
+    Stat("XDPPresence")
+    {           
+        Name("Rich_ReturningToMainMenu");
+        Event("Evn_LevelEvent")
+        {
+            LevelEvent("UNLOADING");
+        }
+    }
+    
+    Stat("XDPPresence")
+    {           
+        Name("Rich_MainMenu");
+        Event("Evn_LevelEvent")
+        {
+            LevelEvent("UNLOADED");
+        }
+    }
+}

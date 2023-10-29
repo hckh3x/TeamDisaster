@@ -1,0 +1,27 @@
+!include("ai_data.def")
+!include("human_timing_events.def")
+!include("human_activities.def")
+!include("human_goals.def")
+
+SnapDist(0.8)    // MunDee Estuvo aquí
+StrongAttractor()
+ReleaseDist(1.2)    // MunDee Estuvo aquí
+ShortHeadRotation()
+Slot("", 1, IDLE_STAND, 1,0.0,0.0,0.0, 0.0, 0.0, 1.0,1.5)    // MunDee Estuvo aquí
+{
+	LockPosition()
+    AiTypeDataSet("human")
+    {
+		Data("idle:standing:idle::::", -2, "w_npc_hopeless_chair_prayer_loop_slow")
+        Data("idle:standing:idle::::", -2, "w_npc_hopeless_chair_prayer_loop")
+		Data("idle:standing:idle::::", -2, "w_npc_hopeless_chair_prayer_loop_slow")
+		Data("idle:standing:to_interact::::", -2, "w_npc_hopeless_chair_prayer_end")
+		Data("idle:standing:from_interact::::", -2, "w_npc_hopeless_chair_prayer_begin")
+        Data("idle:standing:interact::::", -2, "m_npc_hopeless_chair_Reaction")
+		
+		//Data("idle:standing:stand:none:none:prepare:none", -2, "m_npc_hopless_chair_prepare")
+        //Data("idle:standing:stand:none:none:none:finish", -2, "m_npc_hopless_chair_finish")
+
+    }
+}
+

@@ -1,0 +1,391 @@
+<?xml version="1.0"?>
+
+<!-- COMMON PARAMS -->
+<!--   name -->
+<!--   type -->
+<!--   physic_script -->
+<!--   description" -->
+<!--   pickup_mesh -->
+<!--   pickup_skin -->
+<!--   pickup_color_preset -->
+<!--   anim_prefix -->
+<!--   attach_element -->
+<!--   start_condition -->
+<!--   damaged_level_1 -->
+<!--   damaged_level_2 -->
+<!--   damaged_level_3 -->
+
+<items>
+
+<item id="Carriable Heavy Box">
+	<params
+		type="HeavyBox"
+		name="HeavyBox"
+		description="&amp;HeavyObject_Box&amp;"
+		physic_script="Data/OdePhysics/Single/DroppedInventoryBox.scr"
+		pickup_mesh="carton_box_b_ho.msh"
+		pickup_skin="default"
+		anim_prefix="woodenbox"
+		sound_prefix=""		
+		object_mass="3"
+	/>
+</item>
+
+<item id="Carriable Gas Canister">
+	<params 
+		type="Carrying1" 
+		name="Carrying1" 
+		description="&amp;HeavyObject_Gas&amp;" 
+		physic_script="Data/OdePhysics/Single/DroppedInventoryGasBottle.scr"
+		pickup_mesh="gas_cylinder_b_ho.MSH"
+		pickup_skin="Explosive"
+		anim_prefix="GasCanister"
+		sound_prefix=""
+		object_mass="5"
+	/>	
+</item>
+
+<item id="Carriable Crate Big">
+	<params 
+		type="HeavyBox" 
+		name="HeavyBox" 
+		description="&amp;HeavyObject_Crate&amp;" 
+		physic_script="Data/OdePhysics/Single/DroppedInventoryBox.scr"
+		pickup_mesh="crates_a_ho.MSH"
+		pickup_skin="D"
+		pickup_color_preset="red"
+		anim_prefix="woodenbox"
+		sound_prefix=""		
+		object_mass="3"
+	/>	
+</item>
+
+<item id="Carriable Crate Long">
+	<params 
+		type="HeavyBox" 
+		name="HeavyBox" 
+		description="&amp;HeavyObject_Crate&amp;" 
+		physic_script="Data/OdePhysics/Single/DroppedInventoryBox.scr"
+		pickup_mesh="crates_a_ho.MSH"
+		pickup_skin="D"
+		anim_prefix="woodenbox"
+		sound_prefix=""		
+		object_mass="6"
+	/>	
+</item>
+
+<item id="Carriable Gas Cylinder">
+	<params 
+		type="Carrying1" 
+		name="Carrying1" 
+		description="&amp;HeavyObject_Gas&amp;" 
+		physic_script="Data/OdePhysics/Single/DroppedInventoryGasBottle.scr"
+		pickup_mesh="gas_cylinder_b_ho.MSH"
+		pickup_skin="Explosive"
+		anim_prefix="GasCanister"
+		sound_prefix=""
+		object_mass="12"
+	/>	
+</item>
+
+<item id="Carriable Pipe Short">
+	<params 
+		type="HeavyBox" 
+		name="HeavyBox" 
+		description="&amp;HeavyObject_Rod&amp;" 
+		physic_script="Data/OdePhysics/Single/DroppedInventory.scr"
+		pickup_mesh="crates_a_ho.MSH"
+		pickup_skin="D"
+		anim_prefix="heavybox"
+		object_mass="10"
+	/>	
+</item>
+
+<item id="Carriable Pipe Medium">
+	<params 
+		type="HeavyBox" 
+		name="HeavyBox" 
+		description="&amp;HeavyObject_Crate&amp;" 
+		physic_script="Data/OdePhysics/Single/DroppedInventory.scr"
+		pickup_mesh="crates_a_ho.MSH"
+		pickup_skin="D"
+		anim_prefix="heavybox"
+		object_mass="15"
+	/>	
+</item>
+
+<item id="Carriable Pipe Long">
+	<params 
+		type="HeavyBox" 
+		name="HeavyBox" 
+		description="&amp;HeavyObject_Crate&amp;" 
+		physic_script="Data/OdePhysics/Single/DroppedInventory.scr"
+		pickup_mesh="crates_a_ho.MSH"
+		pickup_skin="D"
+		anim_prefix="heavybox"
+		object_mass="20"
+	/>	
+</item>
+
+<item id="Carriable Plastic Barrel">
+	<params 
+		type="HeavyBox" 
+		name="HeavyBox" 
+		description="&amp;HeavyObject_Barrel&amp;" 
+		physic_script="Data/OdePhysics/Single/DroppedInventory.scr"
+		pickup_mesh="crates_a_ho.MSH"
+		pickup_skin="D"
+		anim_prefix="heavybox"
+		object_mass="10"
+	/>	
+</item>
+
+<item id="Carriable Metal Barrel">
+	<params 
+		type="HeavyBox" 
+		name="HeavyBox" 
+		description="&amp;HeavyObject_Barrel&amp;" 
+		physic_script="Data/OdePhysics/Single/DroppedInventory.scr"
+		pickup_mesh="crates_a_ho.MSH"
+		pickup_skin="D"
+		anim_prefix="heavybox"
+		object_mass="10"
+	/>	
+</item>
+
+<item id="Carriable Zombie">
+	<params 
+		type="Carrying1" 
+		name="Carrying1" 
+		description="&amp;HeavyObject_Zombie&amp;" 
+		physic_script="Data/OdePhysics/Ragdoll/ZombieRagdoll.phx"
+		pickup_mesh=""
+		pickup_skin=""
+		anim_prefix="Carrying1"
+		object_mass="80"
+	/>	
+</item>
+
+<item id="Carriable Fuel Canister">
+	<params 
+		type="Carrying1" 
+		name="Carrying1" 
+		description="&amp;HeavyObject_Fuel&amp;" 
+		physic_script="Data/OdePhysics/Single/DroppedInventoryGasBottle.scr"
+		pickup_mesh="canister_a_ho.MSH"
+		pickup_skin="metal"
+		anim_prefix="FuelCanister"
+		sound_prefix=""
+		object_mass="18"
+	/>
+</item>
+
+<item id="Carriable Chemical Canister">
+	<params 
+		type="Carrying1" 
+		name="Carrying1" 
+		description="&amp;HeavyObject_Chemicals&amp;"
+		physic_script="Data/OdePhysics/Single/DroppedInventoryGasBottle.scr"
+		pickup_mesh="canister_a_ho.MSH"
+		pickup_skin="default"
+		anim_prefix="FuelCanister"
+		sound_prefix=""
+		object_mass="10"
+	/>
+</item>
+
+<item id="Carriable Cans Pack A">
+	<params 
+		type="Carrying1" 
+		name="Carrying1" 
+		description="&amp;HeavyObject_Food&amp;" 
+		physic_script="Data/OdePhysics/Single/DroppedInventoryBox.scr"
+		pickup_mesh="food_cans_a.MSH"
+		pickup_skin="Default"
+		anim_prefix="heavybox"
+		sound_prefix=""		
+		object_mass="4"
+	/>
+</item>
+
+<item id="Carriable Cans Pack B">
+	<params 
+		type="Carrying1" 
+		name="Carrying1" 
+		description="&amp;HeavyObject_Food&amp;" 
+		physic_script="Data/OdePhysics/Single/DroppedInventoryBox.scr"
+		pickup_mesh="food_cans_b.MSH"
+		pickup_skin="Default"
+		anim_prefix="heavybox"
+		sound_prefix=""		
+		object_mass="4"
+	/>
+</item>
+
+<item id="Carriable Juices Pack A">
+	<params 
+		type="Carrying1" 
+		name="Carrying1" 
+		description="&amp;HeavyObject_Juice&amp;" 
+		physic_script="Data/OdePhysics/Single/DroppedInventoryBox.scr"
+		pickup_mesh="food_juices_a.MSH"
+		pickup_skin="Default"
+		anim_prefix="heavybox"
+		sound_prefix=""		
+		object_mass="6"
+	/>
+</item>
+
+<item id="Carriable Juices Pack B">
+	<params 
+		type="Carrying1" 
+		name="Carrying1" 
+		description="&amp;HeavyObject_Juice&amp;" 
+		physic_script="Data/OdePhysics/Single/DroppedInventoryBox.scr"
+		pickup_mesh="food_juices_b.MSH"
+		pickup_skin="Default"
+		anim_prefix="heavybox"
+		sound_prefix=""		
+		object_mass="6"
+	/>
+</item>
+
+<item id="Carriable Juices Pack C">
+	<params 
+		type="Carrying1" 
+		name="Carrying1" 
+		description="&amp;HeavyObject_Juice&amp;" 
+		physic_script="Data/OdePhysics/Single/DroppedInventoryBox.scr"
+		pickup_mesh="food_juices_b.MSH"
+		pickup_skin="Default"
+		anim_prefix="heavybox"
+		sound_prefix=""		
+		object_mass="6"
+	/>
+</item>
+
+<item id="Carriable Plank">
+	<params 
+		type="Carrying1" 
+		name="Carrying1" 
+		description="&amp;HeavyObject_Plank&amp;" 
+		physic_script="Data/OdePhysics/Single/DroppedInventoryPlank.scr"
+		pickup_mesh="barricade_board_a_ho.MSH"
+		pickup_skin="Default"
+		anim_prefix="heavybox"
+		sound_prefix="plank"		
+		object_mass="10"
+	/>
+</item>
+
+<item id="Carriable Pipe">
+	<params 
+		type="Carrying1" 
+		name="Carrying1" 
+		description="&amp;HeavyObject_Pipe&amp;" 
+		physic_script="Data/OdePhysics/Single/DroppedInventory.scr"
+		pickup_mesh="barricade_pipe_a.MSH"
+		pickup_skin="Default"
+		anim_prefix="heavybox"
+		object_mass="5"
+	/>
+</item>
+
+<item id="Carriable CashPack">
+	<params
+		type="HeavyBox"
+		name="CashPack"
+		description="&amp;HeavyObject_Box&amp;"
+		physic_script="Data/OdePhysics/Single/DroppedInventory.scr"
+		pickup_mesh="cashpack.msh"
+		pickup_skin="default"
+		anim_prefix="heavybox"		
+		object_mass="6"
+	/>
+</item>
+
+<item id="Carriable Empty Canister">
+	<params 
+		type="Carrying1" 
+		name="Carrying1" 
+		description="&amp;HeavyObject_Canister&amp;" 
+		physic_script="Data/OdePhysics/Single/DroppedInventoryGasBottle.scr"
+		pickup_mesh="canister_a_ho.MSH"
+		pickup_skin="metal"
+		anim_prefix="GasCanister"
+		sound_prefix=""
+		object_mass="5"
+	/>
+</item>
+
+<item id="Carriable Ammo Box">
+	<params
+		type="HeavyBox"
+		name="HeavyBox"
+		description="&amp;HeavyObject_AmmoBox&amp;"
+		physic_script="Data/OdePhysics/Single/DroppedInventoryWoodenBox.scr"
+		pickup_mesh="wooden_box_b_ho.msh"
+		pickup_skin="default"
+		anim_prefix="woodenbox"
+		sound_prefix=""
+		object_mass="8"
+	/>
+</item>
+
+<item id="Carriable Weapon Box">
+	<params 
+		type="HeavyBox" 
+		name="HeavyBox" 
+		description="&amp;HeavyObject_WeaponBox&amp;" 
+		physic_script="Data/OdePhysics/Single/DroppedInventoryWoodenBox.scr"
+		pickup_mesh="crates_wooden_a_ho.msh"
+		pickup_skin="Default"
+		pickup_color_preset="red"
+		anim_prefix="woodenbox"
+		sound_prefix=""		
+		object_mass="10"
+	/>	
+</item>
+
+<item id="Carriable Brick Light">
+	<params 
+		type="HeavyBox"
+		name="HeavyBox"
+		description="&amp;HeavyObject_Brick&amp;"
+		physic_script="Data/OdePhysics/Single/DroppedInventoryBox.scr"
+		pickup_mesh="brick_ho.msh"
+		pickup_skin="default"
+		anim_prefix="heavybox"
+		sound_prefix=""		
+		object_mass="2"
+	/>	
+</item>
+
+<item id="Carriable Brick Medium">
+	<params 
+		type="HeavyBox"
+		name="HeavyBox"
+		description="&amp;HeavyObject_Brick&amp;"
+		physic_script="Data/OdePhysics/Single/DroppedInventoryBox.scr"
+		pickup_mesh="brick_ho.msh"
+		pickup_skin="default"
+		anim_prefix="heavybox"
+		sound_prefix=""		
+		object_mass="4"
+	/>	
+</item>
+
+<item id="Carriable Brick Heavy">
+	<params 
+		type="HeavyBox"
+		name="HeavyBox"
+		description="&amp;HeavyObject_Brick&amp;"
+		physic_script="Data/OdePhysics/Single/DroppedInventoryBox.scr"
+		pickup_mesh="brick_ho.msh"
+		pickup_skin="default"
+		anim_prefix="heavybox"
+		sound_prefix=""		
+		object_mass="6"
+	/>	
+</item>
+</items>

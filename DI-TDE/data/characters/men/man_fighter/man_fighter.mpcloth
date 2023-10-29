@@ -1,0 +1,9 @@
+MeshPartCloth("MPC_Fighter_Hair_back.phx", 1, 1)
+MeshPartCloth("MPC_Fighter_Hair_frontleft.phx", 1, 1)
+MeshPartCloth("MPC_Fighter_Hair_frontright.phx", 1, 1)
+
+MeshPartCloth("MPC_Fighter_Suspenders_back.phx", 1, 1)
+MeshPartCloth("MPC_Fighter_Suspenders_front.phx", 1, 1)
+
+
+

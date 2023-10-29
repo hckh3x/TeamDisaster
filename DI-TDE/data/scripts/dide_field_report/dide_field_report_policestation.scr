@@ -1,0 +1,5 @@
+sub policestation() {
+OnMap("policestation", "NPCLifePlace", "Reza_Q1_LifePlace", "18289", "538", "15012"){Field("m_PlaceType", 20);}
+OnMap("policestation", "NPCLifePlace", "Bill_LP", "19333", "538", "15987"){Field("m_PlaceType", 80);}
+
+}

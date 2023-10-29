@@ -1,0 +1,54 @@
+//----- animacje z beretta
+
+// beretta - podstawowe
+SeqTrackAlias( "FPP_Anaconda_StandNoise",           "FPP_Beretta_StandNoise")
+SeqTrackAlias( "FPP_Anaconda_MoveForwardNoise",     "FPP_Beretta_MoveForwardNoise")
+SeqTrackAlias( "FPP_Anaconda_MoveRightNoise",		"FPP_Beretta_MoveForwardNoise")
+SeqTrackAlias( "FPP_Anaconda_MoveLeftNoise",		"FPP_Beretta_MoveForwardNoise")
+SeqTrackAlias( "FPP_Anaconda_MoveBackwardNoise",	"FPP_Beretta_MoveForwardNoise")
+
+
+SeqTrack("FPP_Anaconda_Full_Reload", 			"M_FPP_Ragingbull_Reload.anm2"			, 0, 114, 30, 1, 0.1)
+{
+	Event(0,    EVENT_RAGINGBULL_RELOAD_01)
+	Event(21,   EVENT_RAGINGBULL_RELOAD_02)
+	Event(22,   EVENT_UPDATE_BULLETS_RIGHT)
+	Event(60,   EVENT_RAGINGBULL_RELOAD_03)
+	Event(67,   EVENT_ADD_RELOAD_BULLETS)	
+	Event(72,   EVENT_UPDATE_BULLETS_RIGHT)	
+	Event(80,   EVENT_RAGINGBULL_RELOAD_04)	
+	Event(100,  EVENT_RAGINGBULL_RELOAD_05)
+}
+SeqTrack("FPP_Anaconda_Shot", 					"M_FPP_Ragingbull.anm2"			, 0, 32, 30, 1, 0.1)
+{
+	Event(14,   EVENT_RAGINGBULL_RELOAD_AFTERSHOT)
+}
+SeqTrack("FPP_Anaconda_Stand", 				"M_FPP_Ragingbull.anm2"			, 38, 43, 30, 1, 0.1)
+
+//Alias
+SeqTrackAlias( "FPP_Anaconda_Idle", "FPP_Anaconda_Stand")
+SeqTrackAlias( "FPP_Anaconda_Reload", "FPP_Anaconda_Full_Reload")
+
+SeqTrack("FPP_Anaconda_Aim_Stand", 					"M_FPP_Ragingbull.anm2"			, 49, 54, 30, 1, 0.1)
+SeqTrack("FPP_Anaconda_Aim_Shot", 				"M_FPP_Ragingbull.anm2"			, 60, 92, 30, 1, 0.1)
+{
+	Event(14,   EVENT_RAGINGBULL_RELOAD_AFTERSHOT)
+}
+
+// Empty shots
+SeqTrack("FPP_Anaconda_ShotEmpty", 				"M_FPP_Ragingbull.anm2",              98, 130, 30, 1, 0.3)
+{
+	Event(14,   EVENT_RAGINGBULL_RELOAD_AFTERSHOT)
+}
+SeqTrack("FPP_Anaconda_Aim_ShotEmpty", 			"M_FPP_Ragingbull.anm2",          137, 169, 30, 1, 0.3)
+{
+	Event(14,   EVENT_RAGINGBULL_RELOAD_AFTERSHOT)
+}
+
+SeqTrack("FPP_Anaconda_Wall", 				"M_FPP_Ragingbull.anm2",              173, 178, 30, 1, 0.3)
+
+SeqTrack("FPP_Supporter_Fury", 				"M_FPP_Fury_Purna.anm2"		  		, 0, 45, 30, 1, 0.5)
+{
+	Event(21, SNAPSHOT)	
+}
+//SeqTrack("FPP_Anaconda_Jump_Pose", "M_TPP_Anaconda_Jump_Kick_Empty.anm2"	        , 16, 49, 30, 1, 0.3)

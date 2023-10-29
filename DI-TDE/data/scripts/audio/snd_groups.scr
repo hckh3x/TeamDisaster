@@ -1,0 +1,1699 @@
+//---------- !!! POSSIBLE PARAMETERS FOR SOUND GROUP PROPERTIES !!! -----------
+// Volume(f) // default: 1.0
+// MinDistance(f)  // default: 0.0 (means using default one defined elsewhere)
+// MaxDistance(f)  // default: 0.0 (means using default one defined elsewhere)
+// RollOff(f)      // default: 1.0
+// Pitch(f)        // default: 1.0
+// PitchRange(f,f) // default: 1.0, 1.0
+// LFE(f)  // low frequency effects channel multiplier, default: 1.0
+// SpreadStart(f) // default: 0.0
+// SpreadEnd(f)   // default: 0.0
+// Bus(i)
+// AttenuationModel(i) // default: 2 (INV_DST_CUT)
+// OcclusionPartialImpact( f )  //f range (0.0,1.0) more impact = greater dumping
+// OcclusionFullImpact( f )
+// OcclusionMode(f)  // 0 - disable, 1 - distance, 2 - objects, 3 - full
+// HDRRmsThreshold(float) // float <0,1>
+//-----------------------------------------------------------------------------
+
+
+//-------------------------- Attenuation Models  ------------------------------
+$INV_DST(i, 0)            // gain going to 0 after reference_distance
+$INV_DST_CLAMPED(i, 1)    // gain stops decreasing after max_distance
+$INV_DST_CUT(i, 2)        // gain is cut after max_distance to 0 (in reference_distance)
+$LIN_DST(i, 3)            // gain decrease lineary to 0
+$EXP_DST(i, 4)
+$EXP_DST_CLAMPED(i, 5)
+//-----------------------------------------------------------------------------
+
+
+//-------------------------- Max Instances Behaviour --------------------------
+$MI_STEAL_OLDEST(i, 0)      // if max instances limit is hit oldest sound is removed to make place for new one (Default behaviour)
+$MI_STEAL_QUITEST(i, 1)        // if max instances limit is hit quitest sound is removed to make place for new one.
+$MI_FAIL(i, 2)                // if max instances limit is hit new sound fails to play.
+//-----------------------------------------------------------------------------
+SoundGroup("SpawnBoxZombieSound")
+{
+    Sound("zombie_respawn_5_st_01")
+    Sound("zombie_respawn_10_st_01")
+    
+    GroupProperties()
+    {
+       SpreadStart(0.8)
+       SpreadEnd(0.2)   
+    }
+}
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+SoundGroup("TooLoudZombieSounds")
+{
+    Sound("zombie01_attack_00")
+    Sound("zombie01_attack_01")
+    Sound("zombie01_attack_02")
+    Sound("zombie01_attack_03")
+    Sound("zombie01_attack_04")
+    Sound("zombie01_idle_calm_00")
+    Sound("zombie01_idle_calm_01")
+    
+    GroupProperties()
+    {
+       Volume(0.7)
+    }
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+SoundGroup("Blunt_hit_surface")
+{
+  Sound("blunt_fire_00")
+  Sound("blunt_fire_01")
+  Sound("blunt_fire_02")
+  Sound("blunt_grass_00")
+  Sound("blunt_grass_01")
+  Sound("blunt_grass_02")
+  Sound("blunt_gravel_00")
+  Sound("blunt_gravel_01")
+  Sound("blunt_gravel_02")
+  Sound("blunt_metal_00")
+  Sound("blunt_metal_01")
+  Sound("blunt_metal_02")
+  Sound("blunt_metal_03")
+  Sound("blunt_mood_00")
+  Sound("blunt_mood_01")
+  Sound("blunt_mood_02")
+  Sound("blunt_sand_00")
+  Sound("blunt_sand_01")
+  Sound("blunt_sand_02")
+  Sound("blunt_stone_00")
+  Sound("blunt_stone_01")
+  Sound("blunt_stone_02")
+  Sound("blunt_water_00")
+  Sound("blunt_water_01")
+  Sound("blunt_water_02")
+  Sound("blunt_wood_00")
+  Sound("blunt_wood_01")
+  Sound("blunt_wood_02")
+
+    GroupProperties()
+    {
+       Volume(0.8)
+    }
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+SoundGroup("sharp_hit_surface")
+{
+  Sound("sharp_grass_00")
+  Sound("sharp_grass_01")
+  Sound("sharp_grass_02")
+  Sound("sharp_gravel_00")
+  Sound("sharp_gravel_01")
+  Sound("sharp_gravel_02")
+  Sound("sharp_gravel_03")
+  Sound("sharp_metal_00")
+  Sound("sharp_metal_01")
+  Sound("sharp_metal_02")
+  Sound("sharp_mood_00")
+  Sound("sharp_mood_01")
+  Sound("sharp_mood_02")
+  Sound("sharp_sand_00")
+  Sound("sharp_sand_01")
+  Sound("sharp_sand_02")
+  Sound("sharp_stone_00")
+  Sound("sharp_stone_01")
+  Sound("sharp_stone_02")
+  Sound("sharp_water_00")
+  Sound("sharp_water_01")
+  Sound("sharp_water_02")
+  Sound("sharp_wood_00")
+  Sound("sharp_wood_01")
+  Sound("sharp_wood_02")
+  Sound("sharp_wood_03")
+
+    GroupProperties()
+    {
+       Volume(0.8)
+    }
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+SoundGroup("axe")
+{
+  Sound("hit_axe_00")
+  Sound("hit_axe_01")
+  Sound("hit_axe_02")
+  Sound("hit_axe_03")
+  Sound("hit_axe_04")
+  Sound("hit_axe_05")
+
+
+    GroupProperties()
+    {
+       Volume(0.8)
+    }
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+SoundGroup("baseball")
+{
+  Sound("hit_baseball_00")
+  Sound("hit_baseball_01")
+  Sound("hit_baseball_02")
+  Sound("hit_baseball_03")
+  Sound("hit_baseball_04")
+  Sound("hit_baseball_05")
+
+    GroupProperties()
+    {
+       Volume(0.8)
+    }
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+SoundGroup("hammer")
+{
+  Sound("hit_hammer_00")
+  Sound("hit_hammer_01")
+  Sound("hit_hammer_02")
+  Sound("hit_hammer_03")
+  Sound("hit_hammer_04")
+  Sound("hit_hammer_05")
+
+
+    GroupProperties()
+    {
+       Volume(0.8)
+    }
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+SoundGroup("heavy_hammer")
+{
+  Sound("hit_heavy_hammer_00")
+  Sound("hit_heavy_hammer_01")
+  Sound("hit_heavy_hammer_02")
+
+
+    GroupProperties()
+    {
+       Volume(0.8)
+    }
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+SoundGroup("katana")
+{
+  Sound("hit_katana_00")
+  Sound("hit_katana_01")
+  Sound("hit_katana_02")
+  Sound("hit_katana_03")
+  Sound("hit_katana_04")
+  Sound("hit_katana_05")
+
+    GroupProperties()
+    {
+       Volume(0.8)
+    }
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+SoundGroup("knife")
+{
+  Sound("hit_knife_00")
+  Sound("hit_knife_01")
+  Sound("hit_knife_02")
+  Sound("hit_knife_03")
+  Sound("hit_knife_04")
+  Sound("hit_knife_05")
+  Sound("knife_throw_00")
+
+    GroupProperties()
+    {
+       Volume(0.8)
+    }
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+SoundGroup("leg")
+{
+  Sound("hit_leg_00")
+  Sound("hit_leg_01")
+  Sound("hit_leg_02")
+  Sound("hit_leg_03")
+  Sound("hit_leg_04")
+
+    GroupProperties()
+    {
+       Volume(0.8)
+    }
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+SoundGroup("machete")
+{
+  Sound("hit_machete_00")
+  Sound("hit_machete_01")
+  Sound("hit_machete_02")
+  Sound("hit_machete_03")
+  Sound("hit_machete_04")
+  Sound("hit_machete_05")
+
+
+    GroupProperties()
+    {
+       Volume(0.8)
+    }
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+SoundGroup("paddle")
+{
+  Sound("hit_paddle_00")
+  Sound("hit_paddle_01")
+  Sound("hit_paddle_02")
+  Sound("hit_paddle_03")
+  Sound("hit_paddle_04")
+  Sound("hit_paddle_05")
+
+    GroupProperties()
+    {
+       Volume(0.8)
+    }
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+SoundGroup("pipe")
+{
+  Sound("hit_pipe_00")
+  Sound("hit_pipe_01")
+  Sound("hit_pipe_02")
+  Sound("hit_pipe_03")
+  Sound("hit_pipe_04")
+  Sound("hit_pipe_05")
+  Sound("hit_pipe_critical_00")
+
+
+    GroupProperties()
+    {
+       Volume(0.8)
+    }
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+SoundGroup("stick")
+{
+  Sound("hit_stick_00")
+  Sound("hit_stick_01")
+  Sound("hit_stick_02")
+  Sound("hit_stick_03")
+  Sound("hit_stick_04")
+  Sound("hit_stick_05")
+
+    GroupProperties()
+    {
+       Volume(0.8)
+    }
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+SoundGroup("wrench")
+{
+  Sound("hit_wrench_00")
+  Sound("hit_wrench_01")
+  Sound("hit_wrench_02")
+  Sound("hit_wrench_03")
+  Sound("hit_wrench_04")
+  Sound("hit_wrench_05")
+  Sound("hit_wrench_critical_00")
+
+    GroupProperties()
+    {
+       Volume(0.9)
+    }
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+SoundGroup("loud_reload_sfx")
+{
+    Sound("colt_reload_part_00")
+    Sound("colt_reload_part_01")    
+    Sound("colt_reload_part_02")
+    Sound("colt_reload_part_03")
+    Sound("colt_reload_part_04")
+    Sound("colt_empty_00")
+	Sound("colt_load_00")
+    Sound("weapon_m16_reload_part_00")
+    Sound("weapon_m16_reload_part_01")
+    Sound("weapon_m16_reload_part_02")
+	Sound("weapon_m16_reload_part_03")
+	Sound("weapon_m16_reload_part_04")
+	Sound("weapon_m16_empty_00")
+	Sound("beretta_empty")
+	Sound("ak47_empty_00")
+	
+	GroupProperties()
+    {
+       Volume(0.7)
+    }
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+SoundGroup("shoot_tail")
+{
+    Sound("Ak47_open_area_00")
+    Sound("Ak47_tail_near_buildings_00")    
+    Sound("Ak47_tail_room_00")
+    Sound("AkOneShotSt_open_area_00")
+    Sound("AkOneShotSt_tail_hall_00")
+	Sound("AkOneShotSt_tail_near_buildings_00")
+    Sound("AkOneShotSt_tail_room_00")
+    Sound("beretta_tail_hall_00")
+    Sound("beretta_tail_near_buildings_00")
+	Sound("beretta_tail_open_area_00")
+	Sound("beretta_tail_room_00")
+	Sound("spas_tail_hall_00")
+	Sound("spas_tail_near_buildings_00")
+	Sound("spas_tail_near_buildings_01")
+	Sound("spas_tail_open_area_00")
+	Sound("spas_tail_open_area_01")
+	Sound("spas_tail_room_00")
+	
+	
+	GroupProperties()
+    {
+       Volume(0.7)
+    }
+}
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+SoundGroup("Ak47_Shoot")
+{
+    Sound("AkOneShotSt_00")
+    Sound("AkOneShotSt_01")
+    Sound("AkOneShotSt_02")
+    Sound("AkOneShotSt_03")
+	
+	GroupProperties()
+    {
+       Volume(0.5)
+    }
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+SoundGroup("DesertEagle_Shoot")
+{
+    Sound("Desert_Eagle_Shot_00")
+    Sound("Desert_Eagle_Shot_01")
+    Sound("Desert_Eagle_Shot_02")
+	
+	GroupProperties()
+    {
+       Volume(0.6)
+    }
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+SoundGroup("Saw_Baseball")
+{
+    Sound("saw_baseball_hit_00")
+    Sound("saw_baseball_hit_01")
+	Sound("saw_baseball_hit_02")
+	
+	GroupProperties()
+    {
+       Volume(0.8)
+    }
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+SoundGroup("New_DLC_Guns_Beretta_and_Shotgun")
+{
+    Sound("beretta_shoot_00")
+    Sound("beretta_shoot_01")
+	  Sound("beretta_shoot_02")
+    Sound("Shotgun_SPAS12_st_00")
+    Sound("Shotgun_SPAS12_st_01")
+	  Sound("Shotgun_SPAS12_st_02")
+    Sound("Shotgun_SPAS12_st_03")
+	
+	GroupProperties()
+    {
+       Volume(0.5)
+    }
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+SoundGroup("New_DLC_Guns_MINIGUN")
+{
+    Sound("minigun_shot_00")
+    Sound("minigun_shot_01")
+	Sound("minigun_shot_02")
+    Sound("minigun_shot_03")
+	
+	GroupProperties()
+    {
+       Volume(0.5)
+    }
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////DIDE MIX////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+SoundGroup("VO_no_occlusion")
+{
+    Sound("CIN05_02_SamB")
+	Sound("CIN01Alt_01_Voice")
+	Sound("cin01alt_02_sinamoi")
+	Sound("CIN01Alt_03_Sinamoi")
+	Sound("CIN01Alt_04_Sinamoi")
+	Sound("CIN01Alt_05_Voice")
+	Sound("CIN01Alt_06_Voice")
+	Sound("CIN01Alt_07_Voice")
+	Sound("CIN01Alt_08_Sinamoi")
+	Sound("CIN01Alt_10_Sinamoi")
+	Sound("CIN07_01_Jin")
+	Sound("BungalowSurvivor013_Armed_01")
+	Sound("Sinamoi_Fight_14")
+	Sound("CINBobbyAlt_04_SurvivorCin")
+	Sound("CINBobbyAlt_05_Bobby")
+	Sound("CINBobbyAlt_08_Bobby")
+	Sound("CINBobbyAlt_09_SurvivorCin")
+	Sound("CINBobbyAlt_10_Bobby")
+	Sound("CINBobbyAlt_11_SurvivorCin")
+	Sound("CINBobbyAlt_12_Bobby")
+	Sound("CINBobbyAlt_13_Bobby")
+	Sound("CINBobbyAlt_14_Bobby")
+	Sound("CINBobbyAlt_15_Bobby")
+	Sound("samb_warning_05")
+	Sound("xian_warning_05")
+	Sound("xian_warning_03")
+	Sound("CIN04_02_Logan")
+	Sound("CIN04_05_Logan")
+	Sound("CIN04_08_Logan")
+	Sound("CIN04_10_Logan")
+	Sound("CIN04_12_Logan")
+	Sound("CIN04_20_Logan")
+	Sound("CIN04_22_Logan")
+	Sound("CIN04_30_Logan")
+	Sound("CIN04_14_Purna")
+	Sound("CIN04_18_Purna")
+	Sound("CIN04_24_Purna")
+	Sound("CIN04_28_Purna")
+	Sound("CIN04_32_Purna")
+	Sound("CIN04_34_Purna")
+	Sound("CIN04_01_SamB")
+	Sound("CIN04_04_SamB")
+	Sound("CIN04_07_SamB")
+	Sound("CIN04_27_SamB")
+	Sound("CIN04_03_Xian")
+	Sound("CIN04_16_Xian")
+	Sound("CIN04_26_Xian")
+	Sound("CIN04_06_Voice")
+	Sound("CIN04_09_Voice")
+	Sound("CIN04_11_Voice")
+	Sound("CIN04_13_Voice")
+	Sound("CIN04_15_Voice")
+	Sound("CIN04_17_Voice")
+	Sound("CIN04_19_Voice")
+	Sound("CIN04_21_Voice")
+	Sound("CIN04_23_Voice")
+	Sound("CIN04_25_Voice")
+	Sound("CIN04_29_Voice")
+	Sound("CIN04_31_Voice")
+	Sound("CIN04_33_Voice")
+	Sound("CIN04_35_Voice")
+	Sound("CINMechanic_03_Jin")
+	Sound("CINMechanic_05_Purna")
+	Sound("CINMechanic_01_Mechanic")
+	Sound("CINMechanic_02_Mechanic")
+	Sound("CINMechanic_04_Mechanic")
+	Sound("CINMechanic_06_Mechanic")
+	Sound("CINMechanic_07_Logan")
+	Sound("CINMechanic_10_Jin")
+	Sound("CINMechanic_12_Jin")
+	Sound("CINMechanic_15_Jin")
+	Sound("CINMechanic_08_Mechanic")
+	Sound("CINMechanic_09_Mechanic")
+	Sound("CINMechanic_11_Mechanic")
+	Sound("CINMechanic_13_Mechanic")
+	Sound("CINMechanic_14_Mechanic")
+	Sound("CINMechanic_17_Mechanic")
+	Sound("CINMechanic_18_Mechanic")
+	Sound("CINMechanic_19_Mechanic")
+	Sound("CINMechanic_16_Xian")
+	Sound("CIN03_09_Logan")
+	Sound("CIN03_13_Logan")
+	Sound("CIN03_01_SamB")
+	Sound("CIN03_08_SamB")
+	Sound("CIN03_10_SamB")
+	Sound("cin03_11_samb")
+	Sound("CIN03_14_SamB")
+	Sound("CIN03_02_Purna")
+	Sound("CIN03_03_Purna")
+	Sound("CIN03_05_Purna")
+	Sound("CIN03_06_Purna")
+	Sound("CIN03_12_Xian")
+	Sound("CIN03_15_Xian")
+	Sound("CIN03_04_Jin")
+	Sound("CIN03_07_Jin")
+	Sound("CIN14RW_07_White")
+	Sound("CIN14RW_08_White")
+	Sound("CIN14RW_10_White")
+	Sound("CIN14RW_11_White")
+	Sound("CIN14RW_13_White")
+	Sound("CIN14RW_15_White")
+	Sound("CIN14RW_02_Charon")
+	Sound("CIN14RW_03_Charon")
+	Sound("CIN14RW_04_Charon")
+	Sound("CIN14RW_06_Charon")
+	Sound("CIN14RW_09_Charon")
+	Sound("CIN14RW_12_Charon")
+	Sound("CIN14RW_14_Charon")
+	Sound("CIN14RW_16_Charon")
+	Sound("CIN12RW_01_West")
+	Sound("CIN12RW_03_West")
+	Sound("CIN12RW_04_West")
+	Sound("CIN12RW_05_West")
+	Sound("CIN12RW_07_West")
+	Sound("CIN12RW_09_West")
+	Sound("CIN12RW_11_West")
+	Sound("CIN12RW_13_West")
+	Sound("CIN12RW_15_West")
+	Sound("CIN12RW_16_West")
+	Sound("CIN12RW_17_West")
+	Sound("CIN12RW_10_Yerema")
+	Sound("CIN12RW_12_Yerema")
+	Sound("CIN12RW_14_Yerema")
+	Sound("CIN12RW_18_Yerema")
+	Sound("CIN12RW_02_Charon")
+	Sound("CIN12RW_06_Charon")
+	Sound("CIN12RW_08_Charon")
+	Sound("CIN12RW_19_Charon")
+	Sound("CIN12RW_20_Charon")
+	Sound("CIN12RW_22_Charon")
+	Sound("CIN12RW_24_Charon")
+	Sound("CIN12RW_21_White")
+	Sound("CIN12RW_23_White")
+	Sound("CIN15RW_03_White")
+	Sound("CIN15RW_04_White")
+	Sound("CIN15RW_05_White")
+	Sound("CIN15RW_06_White")
+	Sound("CIN13RW_01_Charon")
+	Sound("CIN13RW_02_White")
+	Sound("CIN13RW_03_Charon")
+	Sound("CIN13RW_04_White")
+	Sound("CIN13RW_05_Charon")
+	Sound("CIN13RW_06_Charon")
+	Sound("CIN13RW_07_White")
+	Sound("CIN13RW_08_Charon")
+	Sound("CIN13RW_09_White")
+	Sound("CIN13RW_10_Charon")
+	Sound("CIN13RW_12_Charon")
+	Sound("CIN13RW_14_Charon")
+	Sound("CIN13RW_16_Charon")
+	Sound("CIN13RW_09_White")
+	Sound("CIN13RW_11_White")
+	Sound("CIN13RW_13_White")
+	Sound("CIN13RW_15_White")
+	Sound("CIN05_11_Logan")
+	Sound("CIN05_20_Logan")
+	Sound("CIN05_22_Logan")
+	Sound("CIN05_22_Logan")
+	Sound("CIN05_07_Purna")
+	Sound("CIN05_18_Purna")
+	Sound("CIN05_19_Purna")
+	Sound("CIN05_19_Purna")
+	Sound("CIN05_02_SamB")
+	Sound("CIN05_10_SamB")
+	Sound("CIN05_21_SamB")
+	Sound("CIN05_12_Xian")
+	Sound("CIN05_13_Xian")
+	Sound("CIN05_14_Xian")
+	Sound("CIN05_15_Xian")
+	Sound("CIN05_16_Xian")
+	Sound("CIN05_17_Jin")
+	Sound("CIN05_01_Voice")
+	Sound("CIN05_03_Voice")
+	Sound("CIN05_05_Voice")
+	Sound("CIN05_06_Voice")
+	Sound("CIN05_08_Voice")
+	Sound("CIN05_09_Voice")
+	Sound("Logan_Defeat_03")
+	Sound("CIN06_03_Ope")
+	Sound("CIN06_11_Yerema")
+	Sound("CIN06_07_Purna")
+	Sound("CIN06_01_SamB")
+	Sound("CIN06_06_SamB")
+	Sound("CIN06_09_SamB")
+	Sound("CIN06_13_SamB")
+	Sound("CIN06_02_Logan")
+	Sound("CIN06_08_Logan")
+	Sound("CIN06_05_Xian")
+	Sound("CIN06_10_Xian")
+	Sound("CIN06_12_Xian")
+	Sound("CIN06_14_Logan")
+	Sound("CIN06_17_Logan")
+	Sound("CIN06_15_SamB")
+	Sound("CIN06_16_SamB")
+	Sound("CIN10_06_Purna")
+	Sound("CIN10_01_Xian")
+	Sound("CIN10_09_Jin")
+	Sound("CIN10_11_Jin")
+	Sound("CIN10_13_Jin")
+	Sound("CIN10_02_White")
+	Sound("CIN10_04_White")
+	Sound("CIN10_05_White")
+	Sound("CIN10_07_White")
+	Sound("CIN10_08_White")
+	Sound("CIN10_10_White")
+	Sound("CIN10_12_White")
+	Sound("CIN10_14_White")
+	Sound("CIN10_15_White")
+	Sound("CIN10_03_Logan")
+	Sound("CIN11_03_Logan")
+	Sound("CIN11_09_Logan")
+	Sound("CIN11_01_Kevin")
+	Sound("CIN11_10_Kevin")
+	Sound("CIN11_11_Kevin")
+	Sound("CIN02_01_SamB")
+	Sound("CIN02_03_SamB")
+	Sound("CIN02_05_SamB")
+	Sound("CIN02_23_SamB")
+	Sound("CIN02_04_Logan")
+	Sound("CIN02_06_Logan")
+	Sound("CIN02_08_Logan")
+	Sound("CIN02_10_Logan")
+	Sound("CIN02_12_Logan")
+	Sound("CIN02_14_Logan")
+	Sound("CIN02_02_Purna")
+	Sound("CIN02_09_Purna")
+	Sound("CIN02_16_Purna")
+	Sound("CIN02_18_Purna")
+	Sound("CIN02_21_Purna")
+	Sound("CIN02_24_Purna")
+	Sound("CIN02_07_Xian")
+	Sound("CIN02_20_Xian")
+	Sound("CIN02_11_Jin")
+	Sound("CIN02_13_Jin")
+	Sound("CIN02_15_Jin")
+	Sound("CIN02_17_Jin")
+	Sound("CIN02_19_Jin")
+	Sound("CIN02_22_Jin")
+	Sound("CIN02_25_Jin")
+	Sound("Terrance_Q1_Agree")
+	Sound("Terrance_Q1_Use")
+	Sound("Terrance_Q1_Use_Second")
+	Sound("Terrance_Q1_Disagree")
+	Sound("Terrance_Q1_InProgress_01")
+	Sound("Terrance_Q1_InProgress_02")
+	Sound("Terrance_Q1_InProgress_03")
+	Sound("Terrance_Q1_MiddleToNear")
+	Sound("Terrance_Q1_Near_01")
+	Sound("Terrance_Q1_Near_02")
+	Sound("Terrance_Q1_Near_03")
+	Sound("Terrance_Q1_NearToMiddle")
+	Sound("Terrance_Q1_Raymond_Accomplished")
+	Sound("Mohakin_Act3A_BackBoat_NF01")
+	Sound("Mohakin_Act3A_BackBoat_NF02")
+	Sound("Mohakin_Act3A_BackBoat_NF03")
+	Sound("Mohakin_Act3A_BackBoat_NF04")
+	Sound("Mohakin_Act3A_BackBoat_Stash")
+	Sound("Mohakin_Act3A_BackBoat_Use01")
+	Sound("Mohakin_Act3A_BackBoat_Use02")
+	Sound("Mohakin_Act3A_BackBoat_Use03")
+	Sound("Mohakin_Act3A_GuideToWaterfall_Use01")
+	Sound("Mohakin_Act3A_GuideToWaterfall_Use02")
+	Sound("Mohakin_Act3A_GuideToWaterfall_Use03")
+	Sound("Mohakin_Act3A_SeeJin_Use01")
+	Sound("Mohakin_Act3A_SeeJin_Use02")
+	Sound("Punk_RWQ3_06")
+	Sound("Punk_RWQ3_07")
+	Sound("Punk_RWQ3_08")
+	Sound("Punk_RWQ3_09")
+	Sound("Punk_RWq3_14a")
+	Sound("Punk_RWQ3_15")
+	Sound("Punk_RWQ3_16")
+	Sound("Punk_RWQ3_17")
+	Sound("Punk_RWQ3_17a")
+	Sound("Punk_RWQ3_20a")
+	Sound("Punk_RWQ3_20b")
+	Sound("Punk_RWQ3_20c")
+	Sound("Punk_RWQ3_20d")
+	Sound("Punk_RWQ3_20e")
+	Sound("Punk_RWQ3_20f")
+	Sound("Punk_RWQ4_03")
+	Sound("Punk_RWQ4_06")
+	Sound("Punk_RWQ4_07")
+	Sound("Punk_RWQ4_08")
+	Sound("Nick_Q3_Radio_A")
+	Sound("Nick_Q3_Radio_B")
+	
+    GroupProperties()
+    {
+       OcclusionMode(1)
+    }
+}
+
+SoundGroup("doors_ope_close_no_occlusion")
+{
+	Sound("platicdoor_close_00")
+	Sound("platicdoor_close_01")
+	Sound("platicdoor_close_02")
+	Sound("metaldoor_open_00")
+	Sound("metaldoor_close_00")
+	Sound("wooddoor_open_00")
+	Sound("wooddoor_close_00")
+	Sound("DoorClosePart1")
+	Sound("DoorClosePart1")
+	Sound("DoorClosePart1")
+	Sound("DoorClosePart1")
+	Sound("wooden_big_door_open_00")
+	Sound("wooden_big_door_close_00")
+	Sound("metal_grille_door_open_00")
+	Sound("metal_grille_door_close_00")
+	Sound("metal_full_door_open_00")
+	Sound("metal_full_door_close_00")
+	Sound("metal_fence_door_open_00")
+	Sound("metal_fence_door_close_00")
+	Sound("metal_lightweight_door_open_00")
+	Sound("metal_lightweight_door_close_00")
+	Sound("metal_midsized_door_open_00")
+	Sound("metal_midsized_door_open_00")
+	Sound("metal_gate_open_00")
+	Sound("metal_gate_close_00")
+	Sound("Door_opening")
+	Sound("DoorClosePart1")
+	Sound("DoorClosePart2")
+	Sound("break_door_01")
+	Sound("DoorClosePart1")       
+	Sound("DoorClosePart1")
+	Sound("DoorClosePart1")
+	Sound("DoorClosePart1")
+	Sound("wooden_big_door_open_00")
+	Sound("wooden_big_door_close_00")      
+	Sound("metal_grille_door_open_00")
+	Sound("metal_grille_door_close_00")        
+	Sound("metal_full_door_open_00")
+	Sound("metal_full_door_close_00")     
+	Sound("metal_fence_door_open_00")
+	Sound("metal_fence_door_close_00")       
+	Sound("metal_lightweight_door_open_00")
+	Sound("metal_lightweight_door_close_00")         
+	Sound("metal_midsized_door_open_00")
+	Sound("metal_midsized_door_open_00")         
+	Sound("metal_gate_open_00")
+	Sound("metal_gate_close_00")         
+	Sound("Door_opening")
+	Sound("DoorClosePart1")
+	Sound("DoorClosePart2")
+	Sound("Shipdoor_wheel_locker_roll")
+	Sound("Shipdoor_wheel_locker_open")
+	Sound("Shipdoor_wheel_locker_left_right")
+	Sound("Shipdoor_slide_left_open")
+	Sound("Shipdoor_slide_left_close")
+	Sound("prison_door_open_00")
+	Sound("prison_door_close_00")
+	Sound("prison_door_buzz_and_opening_00")
+	Sound("elevator_door_close_00")
+	Sound("elevator_door_open_00")
+	Sound("metal_wardrobe_slide_00")
+	Sound("lift_door_open_00")
+	Sound("lift_door_open_with_signal_00")
+	Sound("elevator_engine_00")
+	Sound("sewer_open_00")
+	Sound("wooden_gate2_open_00")
+	Sound("wooden_gate_open_00")
+	Sound("automatic_fence_open_00")
+	Sound("automatic_fence_close_00")
+    
+	GroupProperties()
+    {
+       OcclusionMode(1)
+    }
+}
+
+SoundGroup("sea_ambient")
+{
+    Sound("sea_ambient")
+    
+    GroupProperties()
+    {
+		OcclusionMode(3)
+		OcclusionPartialImpact(0.3)
+		OcclusionFullImpact(0.6)
+    }
+}
+
+SoundGroup("grenades")
+{
+  Sound("incendiary_grenade_explosion_01")
+  Sound("incendiary_grenade_explosion_00")
+  Sound("sonic_pulse_grenade_explosion_01")
+  Sound("grenade_explosion_01")
+  Sound("stun_bomb_explosion_01")
+  Sound("big_explosion_01")
+  Sound("big_explosion_02")
+  Sound("big_explosion_03")
+  Sound("car_explosion_01")
+  Sound("dynamite_explosion")
+  Sound("dynamite_explosion_new")
+  Sound("gas_bottle_explosion_00")
+  Sound("mech_cannon_explosion")
+  Sound("tntbarrel_explosion")
+  Sound("molotow_on_ground")
+  Sound("highway_explosion_01")
+  
+    GroupProperties()
+    {
+       Volume(1.4)
+       SpreadStart(10)
+       SpreadEnd(9)
+       OcclusionMode(1)
+	   MinDistance(20)
+	   RollOff(0.6)
+       Bus(11)
+    }
+}
+
+SoundGroup("medium_explosion")
+{
+  Sound("medium_explosion_01")
+  Sound("medium_explosion_02")
+  Sound("medium_explosion_03")
+  Sound("medium_explosion_04")
+  Sound("medium_explosion_05")
+  Sound("medium_explosion_06")
+  
+    GroupProperties()
+    {
+       Volume(1.4)
+       SpreadStart(10)
+       SpreadEnd(9)
+       OcclusionMode(1)
+	   MinDistance(20)
+	   RollOff(0.6)
+       Bus(11)
+    }
+}
+
+SoundGroup("very_big_explosion")
+{
+  Sound("very_big_explosion")
+  Sound("explosion_nuclear_00")
+  
+    GroupProperties()
+    {
+       Volume(2)
+       SpreadStart(10)
+       SpreadEnd(9)
+       OcclusionMode(1)
+	   MinDistance(40)
+	   RollOff(0.6)
+       Bus(11)
+    }
+}
+
+SoundGroup("Rocket_Launcher_Shoot_00")
+{
+  Sound("Rocket_Launcher_Shoot_00")
+
+  
+    GroupProperties()
+    {
+       Volume(1.4)
+       SpreadStart(10)
+       SpreadEnd(9)
+       OcclusionMode(1)
+	   MinDistance(20)
+	   RollOff(0.6)
+       Bus(11)
+    }
+}
+
+SoundGroup("weapon_m60_PH")
+{
+    Sound("weapon_m60_PH_00")
+	Sound("weapon_m60_PH_01")
+	Sound("weapon_m60_PH_02")
+	Sound("weapon_m60_PH_03")
+
+    GroupProperties()
+    {
+		Volume(0.8)
+		//HDRWndMapping(1.00, 0.5)
+		Bus(7)
+		MinDistance(3.00)
+		RollOff(0.5)
+		OcclusionFullImpact(0.6)
+		OcclusionPartialImpact(0)
+		AttenuationModel(5)
+		MaxDistance(100.00)
+		MaxInstances(3)
+		MaxInstancesBehaviour(MI_STEAL_OLDEST)
+    }
+}
+
+SoundGroup("AkOneShotSt")
+{
+	Sound("AkOneShotSt_00")
+	Sound("AkOneShotSt_01")
+	Sound("AkOneShotSt_02")
+	Sound("AkOneShotSt_03")
+
+	GroupProperties()
+	{
+		Volume(0.6)
+		//HDRWndMapping(1.00, 0.5)
+		Bus(7)
+		MinDistance(3.00)
+		RollOff(0.5)
+		OcclusionFullImpact(0.6)
+		OcclusionPartialImpact(0)
+		AttenuationModel(5)
+		MaxDistance(100.00)
+		MaxInstances(3)
+		MaxInstancesBehaviour(MI_STEAL_OLDEST)
+	}
+}
+
+SoundGroup("M16_Shot")
+{
+	Sound("M16_Shot_00")
+	Sound("M16_Shot_01")
+	Sound("M16_Shot_02")
+	Sound("M16_Shot_03")
+
+	GroupProperties()
+	{
+		Volume(0.9)
+		//HDRWndMapping(1.00, 0.5)
+		Bus(7)
+		MinDistance(3.00)
+		RollOff(0.5)
+		OcclusionFullImpact(0.6)
+		OcclusionPartialImpact(0)
+		AttenuationModel(5)
+		MaxDistance(100.00)
+		MaxInstances(3)
+		MaxInstancesBehaviour(MI_STEAL_OLDEST)
+	}
+}
+
+SoundGroup("dragunow_shot")
+{
+	Sound("dragunow_shot_00")
+	Sound("dragunow_shot_01")
+	Sound("dragunow_shot_02")
+
+	GroupProperties()
+	{
+		Volume(0.5)
+		//HDRWndMapping(1.00, 0.5)
+		Bus(7)
+		MinDistance(3.00)
+		RollOff(0.5)
+		OcclusionFullImpact(0.6)
+		OcclusionPartialImpact(0)
+		AttenuationModel(5)
+		MaxDistance(100.00)
+		MaxInstances(3)
+		MaxInstancesBehaviour(MI_STEAL_OLDEST)
+	}
+}
+
+SoundGroup("Revolver_Shoot")
+{
+    Sound("Colt_38_shot_00")
+    Sound("Colt_38_shot_01")
+	Sound("Colt_38_shot_02")
+	Sound("Colt_38_shot_03")
+	
+	GroupProperties()
+    {
+		Volume(0.8)
+		//HDRWndMapping(1.00, 0.5)
+		Bus(7)
+		MinDistance(3.00)
+		RollOff(0.5)
+		OcclusionFullImpact(0.6)
+		OcclusionPartialImpact(0)
+		AttenuationModel(5)
+		MaxDistance(100.00)
+		MaxInstances(3)
+		MaxInstancesBehaviour(MI_STEAL_OLDEST)
+    }
+}
+
+SoundGroup("AI_M9_Beretta_Shot")
+{
+    Sound("AI_M9_Beretta_Shot_00")
+    Sound("AI_M9_Beretta_Shot_01")
+	Sound("AI_M9_Beretta_Shot_02")
+	
+	GroupProperties()
+    {
+		Volume(1.0)
+		//HDRWndMapping(1.00, 0.5)
+		Bus(7)
+		MinDistance(3.00)
+		RollOff(0.5)
+		OcclusionFullImpact(0.6)
+		OcclusionPartialImpact(0)
+		AttenuationModel(5)
+		MaxDistance(100.00)
+		MaxInstances(3)
+		MaxInstancesBehaviour(MI_STEAL_OLDEST)
+    }
+}
+
+SoundGroup("weapon_m24_PH")
+{
+    Sound("weapon_m24_PH_00")
+    Sound("weapon_m24_PH_01")
+	Sound("weapon_m24_PH_02")
+	
+	GroupProperties()
+    {
+		Volume(1.0)
+		//HDRWndMapping(1.00, 0.5)
+		Bus(7)
+		MinDistance(3.00)
+		RollOff(0.5)
+		OcclusionFullImpact(0.6)
+		OcclusionPartialImpact(0)
+		AttenuationModel(5)
+		MaxDistance(100.00)
+		MaxInstances(3)
+		MaxInstancesBehaviour(MI_STEAL_OLDEST)
+    }
+}
+
+SoundGroup("Desert_Eagle_Shot")
+{
+    Sound("Desert_Eagle_Shot_00")
+    Sound("Desert_Eagle_Shot_01")
+	Sound("Desert_Eagle_Shot_02")
+	
+	GroupProperties()
+    {
+		Volume(0.8)
+		//HDRWndMapping(1.00, 0.5)
+		Bus(7)
+		MinDistance(3.00)
+		RollOff(0.5)
+		OcclusionFullImpact(0.6)
+		OcclusionPartialImpact(0)
+		AttenuationModel(5)
+		MaxDistance(100.00)
+		MaxInstances(3)
+		MaxInstancesBehaviour(MI_STEAL_OLDEST)
+    }
+}
+
+SoundGroup("FlareGun_shoot")
+{
+    Sound("FlareGun_shoot_00")
+    Sound("FlareGun_shoot_01")
+	Sound("FlareGun_shoot_02")
+	
+	GroupProperties()
+    {
+		Volume(0.9)
+		//HDRWndMapping(1.00, 0.5)
+		Bus(7)
+		MinDistance(3.00)
+		RollOff(0.5)
+		OcclusionFullImpact(0.6)
+		OcclusionPartialImpact(0)
+		AttenuationModel(5)
+		MaxDistance(100.00)
+		MaxInstances(3)
+		MaxInstancesBehaviour(MI_STEAL_OLDEST)
+    }
+}
+
+SoundGroup("Harpoon_shoot_shoot")
+{
+    Sound("Harpoon_shoot_00")
+	
+	GroupProperties()
+    {
+		Volume(0.9)
+		//HDRWndMapping(1.00, 0.5)
+		Bus(7)
+		MinDistance(3.00)
+		RollOff(0.5)
+		OcclusionFullImpact(0.6)
+		OcclusionPartialImpact(0)
+		AttenuationModel(5)
+		MaxDistance(100.00)
+		MaxInstances(3)
+		MaxInstancesBehaviour(MI_STEAL_OLDEST)
+    }
+}
+
+SoundGroup("beretta_shoot")
+{
+    Sound("beretta_shoot_00")
+    Sound("beretta_shoot_01")
+	Sound("beretta_shoot_02")
+	
+	GroupProperties()
+    {
+       	Volume(0.8)
+		//HDRWndMapping(1.00, 0.5)
+		Bus(7)
+		MinDistance(3.00)
+		RollOff(0.5)
+		OcclusionFullImpact(0.6)
+		OcclusionPartialImpact(0)
+		AttenuationModel(5)
+		MaxDistance(100.00)
+		MaxInstances(3)
+		MaxInstancesBehaviour(MI_STEAL_OLDEST)
+    }
+}
+
+SoundGroup("Shotgun_SPAS12_st")
+{
+    Sound("Shotgun_SPAS12_st_00")
+    Sound("Shotgun_SPAS12_st_01")
+	Sound("Shotgun_SPAS12_st_02")
+    Sound("Shotgun_SPAS12_st_03")
+	
+	GroupProperties()
+    {
+		Volume(0.8)
+		//HDRWndMapping(1.00, 0.5)
+		Bus(7)
+		MinDistance(3.00)
+		RollOff(0.5)
+		OcclusionFullImpact(0.6)
+		OcclusionPartialImpact(0)
+		AttenuationModel(5)
+		MaxDistance(100.00)
+		MaxInstances(3)
+		MaxInstancesBehaviour(MI_STEAL_OLDEST)
+    }
+}
+
+SoundGroup("Magnum_357_Shot")
+{
+    Sound("Magnum_357_Shot_00")
+    Sound("Magnum_357_Shot_01")
+	Sound("Magnum_357_Shot_02")
+	
+	GroupProperties()
+    {
+       	Volume(0.8)
+		//HDRWndMapping(1.00, 0.5)
+		Bus(7)
+		MinDistance(3.00)
+		RollOff(0.5)
+		OcclusionFullImpact(0.6)
+		OcclusionPartialImpact(0)
+		AttenuationModel(5)
+		MaxDistance(100.00)
+		MaxInstances(3)
+		MaxInstancesBehaviour(MI_STEAL_OLDEST)
+    }
+}
+
+SoundGroup("Nailgun_shoot")
+{
+    Sound("Nailgun_shoot_00")
+    Sound("Nailgun_shoot_01")
+	Sound("Nailgun_shoot_02")
+	
+	GroupProperties()
+    {
+       	Volume(0.8)
+		//HDRWndMapping(1.00, 0.5)
+		Bus(7)
+		MinDistance(3.00)
+		RollOff(0.5)
+		OcclusionFullImpact(0.6)
+		OcclusionPartialImpact(0)
+		AttenuationModel(5)
+		MaxDistance(100.00)
+		MaxInstances(3)
+		MaxInstancesBehaviour(MI_STEAL_OLDEST)
+    }
+}
+
+SoundGroup("shotgun_short_shoot")
+{
+    Sound("shotgun_short_shoot_00")
+    Sound("shotgun_short_shoot_01")
+	Sound("shotgun_short_shoot_02")
+	
+	GroupProperties()
+    {
+       	Volume(0.9)
+		//HDRWndMapping(1.00, 0.5)
+		Bus(7)
+		MinDistance(3.00)
+		RollOff(0.5)
+		OcclusionFullImpact(0.6)
+		OcclusionPartialImpact(0)
+		AttenuationModel(5)
+		MaxDistance(100.00)
+		MaxInstances(3)
+		MaxInstancesBehaviour(MI_STEAL_OLDEST)
+    }
+}
+
+SoundGroup("Tasergun_Shoot")
+{
+    Sound("Tasergun_Shoot_00")
+    Sound("Tasergun_Shoot_01")
+	
+	GroupProperties()
+    {
+       	Volume(0.9)
+		//HDRWndMapping(1.00, 0.5)
+		Bus(7)
+		MinDistance(3.00)
+		RollOff(0.5)
+		OcclusionFullImpact(0.6)
+		OcclusionPartialImpact(0)
+		AttenuationModel(5)
+		MaxDistance(100.00)
+		MaxInstances(3)
+		MaxInstancesBehaviour(MI_STEAL_OLDEST)
+    }
+}
+
+SoundGroup("firearm_fury_shoot")
+{
+    Sound("firearm_fury_shoot_00")
+	
+	GroupProperties()
+    {
+       	Volume(0.9)
+		//HDRWndMapping(1.00, 0.5)
+		Bus(7)
+		MinDistance(3.00)
+		RollOff(0.5)
+		OcclusionFullImpact(0.6)
+		OcclusionPartialImpact(0)
+		AttenuationModel(5)
+		MaxDistance(100.00)
+		MaxInstances(3)
+		MaxInstancesBehaviour(MI_STEAL_OLDEST)
+    }
+}
+
+SoundGroup("collision_mix")
+{
+	Sound("default_00")
+	Sound("default_01")
+	Sound("default_02")
+	Sound("friction_default_00")
+	Sound("ground_00")
+	Sound("ground_01")
+	Sound("ground_02")
+	Sound("hit_big_default_00")
+	Sound("hit_big_default_01")
+	Sound("hit_big_default_02")
+	Sound("hit_big_flesh_00")
+	Sound("hit_big_glass_00")
+	Sound("hit_big_grass_00")
+	Sound("hit_big_ground_00")
+	Sound("hit_big_metal_00")
+	Sound("hit_big_metal_01")
+	Sound("hit_big_mud_00")
+	Sound("hit_big_mud_01")
+	Sound("hit_big_mud_02")
+	Sound("hit_big_plastic_00")
+	Sound("hit_big_plastic_01")
+	Sound("hit_big_plastic_02")
+	Sound("hit_big_rubber_00")
+	Sound("hit_big_rubber_01")
+	Sound("hit_big_snow_00")
+	Sound("hit_big_snow_01")
+	Sound("hit_big_stone_00")
+	Sound("hit_big_stone_01")
+	Sound("hit_big_water_00")
+	Sound("hit_big_water_01")
+	Sound("hit_big_wood_00")
+	Sound("hit_big_wood_01")
+	Sound("hit_big_wood_02")
+	Sound("hit_flesh_00")
+	Sound("hit_flesh_01")
+	Sound("hit_flesh_02")
+	Sound("hit_glass_00")
+	Sound("hit_glass_01")
+	Sound("hit_grass_00")
+	Sound("hit_grass_01")
+	Sound("hit_grass_02")
+	Sound("hit_ground_00")
+	Sound("hit_ground_01")
+	Sound("hit_ground_02")
+	Sound("hit_metal_00")
+	Sound("hit_metal_01")
+	Sound("hit_metal_02")
+	Sound("hit_mud_00")
+	Sound("hit_mud_01")
+	Sound("hit_plastic_00")
+	Sound("hit_plastic_01")
+	Sound("hit_rubber_00")
+	Sound("hit_rubber_01")
+	Sound("hit_snow_00")
+	Sound("hit_stone_00")
+	Sound("hit_stone_01")
+	Sound("hit_water_00")
+	Sound("hit_water_01")
+	Sound("hit_wood_00")
+	Sound("hit_wood_01")
+	Sound("hit_wood_02")
+	Sound("water_00")
+	Sound("water_01")
+	
+	GroupProperties()
+    {
+		Volume(1)
+		MinDistance(3)
+		RollOff(0.7)
+		OcclusionFullImpact(0.7)
+		OcclusionPartialImpact(0.0)	
+    }
+}
+
+SoundGroup("collision_mix")
+{
+	Sound("default_00")
+	Sound("default_01")
+	Sound("default_02")
+	Sound("friction_default_00")
+	Sound("ground_00")
+	Sound("ground_01")
+	Sound("ground_02")
+	Sound("hit_flesh_00")
+	Sound("hit_flesh_01")
+	Sound("hit_flesh_02")
+	Sound("hit_glass_00")
+	Sound("hit_glass_01")
+	Sound("hit_grass_00")
+	Sound("hit_grass_01")
+	Sound("hit_grass_02")
+	Sound("hit_ground_00")
+	Sound("hit_ground_01")
+	Sound("hit_ground_02")
+	Sound("hit_metal_00")
+	Sound("hit_metal_01")
+	Sound("hit_metal_02")
+	Sound("hit_mud_00")
+	Sound("hit_mud_01")
+	Sound("hit_plastic_00")
+	Sound("hit_plastic_01")
+	Sound("hit_rubber_00")
+	Sound("hit_rubber_01")
+	Sound("hit_snow_00")
+	Sound("hit_stone_00")
+	Sound("hit_stone_01")
+	Sound("hit_water_00")
+	Sound("hit_water_01")
+	Sound("hit_wood_00")
+	Sound("hit_wood_01")
+	Sound("hit_wood_02")
+	Sound("water_00")
+	Sound("water_01")
+	
+	GroupProperties()
+    {
+		Volume(1.4)
+		MinDistance(5)
+		RollOff(0.7)
+		OcclusionFullImpact(0.7)
+		OcclusionPartialImpact(0.0)	
+    }
+}
+
+SoundGroup("collision_big_mix")
+{
+	Sound("hit_big_default_00")
+	Sound("hit_big_default_01")
+	Sound("hit_big_default_02")
+	Sound("hit_big_flesh_00")
+	Sound("hit_big_glass_00")
+	Sound("hit_big_grass_00")
+	Sound("hit_big_ground_00")
+	Sound("hit_big_metal_00")
+	Sound("hit_big_metal_01")
+	Sound("hit_big_mud_00")
+	Sound("hit_big_mud_01")
+	Sound("hit_big_mud_02")
+	Sound("hit_big_plastic_00")
+	Sound("hit_big_plastic_01")
+	Sound("hit_big_plastic_02")
+	Sound("hit_big_rubber_00")
+	Sound("hit_big_rubber_01")
+	Sound("hit_big_snow_00")
+	Sound("hit_big_snow_01")
+	Sound("hit_big_stone_00")
+	Sound("hit_big_stone_01")
+	Sound("hit_big_water_00")
+	Sound("hit_big_water_01")
+	Sound("hit_big_wood_00")
+	Sound("hit_big_wood_01")
+	Sound("hit_big_wood_02")
+
+	GroupProperties()
+    {
+		Volume(1.8)
+		MinDistance(5)
+		RollOff(0.7)
+		OcclusionFullImpact(0.7)
+		OcclusionPartialImpact(0.0)	
+    }
+}
+
+SoundGroup("body_zombie_collision_ground_heavy")
+{
+	Sound("body_zombie_collision_ground_heavy_00")
+	Sound("body_zombie_collision_ground_heavy_01")
+	Sound("body_zombie_collision_ground_heavy_02")
+	Sound("body_zombie_collision_ground_heavy_03")
+
+	GroupProperties()
+    {
+		Volume(0.8)
+		MinDistance(5)
+		RollOff(0.7)
+		OcclusionFullImpact(0.7)
+		OcclusionPartialImpact(0.0)	
+    }
+}
+
+SoundGroup("body_zombie_collision_ground_light")
+{
+	Sound("body_zombie_collision_ground_light_00")
+	Sound("body_zombie_collision_ground_light_01")
+	Sound("body_zombie_collision_ground_light_02")
+	Sound("body_zombie_collision_ground_light_03")
+
+	GroupProperties()
+    {
+		Volume(0.6)
+		MinDistance(5)
+		RollOff(0.7)
+		OcclusionFullImpact(0.7)
+		OcclusionPartialImpact(0.0)	
+    }
+}
+
+SoundGroup("flesh_collision_ground")
+{
+	Sound("flesh_collision_ground_00")
+	Sound("flesh_collision_ground_01")
+	Sound("flesh_collision_ground_02")
+	Sound("flesh_collision_ground_03")
+	Sound("flesh_collision_ground_04")
+	Sound("flesh_collision_ground_05")
+
+	GroupProperties()
+    {
+		Volume(0.8)
+		MinDistance(5)
+		RollOff(0.7)
+		OcclusionFullImpact(0.7)
+		OcclusionPartialImpact(0.0)	
+    }
+}
+
+SoundGroup("head_collision_ground")
+{
+	Sound("head_collision_ground_00")
+	Sound("head_collision_ground_01")
+
+	GroupProperties()
+    {
+		Volume(0.8)
+		MinDistance(5)
+		RollOff(0.7)
+		OcclusionFullImpact(0.7)
+		OcclusionPartialImpact(0.0)	
+    }
+}
+
+SoundGroup("car_V8_engine")
+{
+	Sound("v8_pickup_idle_loop")
+	Sound("v8_pickup_offhigh_loop")
+	Sound("v8_pickup_offlow_loop")
+	Sound("v8_pickup_offmid_loop")
+	Sound("v8_pickup_onhigh_loop")
+	Sound("v8_pickup_onlow_loop")
+	Sound("v8_pickup_onmid_loop")
+
+	GroupProperties()
+    {
+		Bus(4)
+		Volume(1.0)
+		MinDistance(5)
+		SpreadStart(2.7)
+		SpreadEnd(2.5)
+    }
+}
+
+SoundGroup("car_drift_tarmac")
+{
+	Sound("drift_tarmac_00")
+	Sound("drift_tarmac_01")
+	Sound("drift_tarmac_02")
+
+	GroupProperties()
+    {
+		Volume(0.2)
+    }
+}
+
+SoundGroup("car_steering_wheel")
+{
+	Sound("steering_wheel_left_creak_01")
+	Sound("steering_wheel_left_creak_02")
+	Sound("steering_wheel_right_creak_01")
+	Sound("steering_wheel_right_creak_02")
+	Sound("steering_wheel_right_creak_03")
+		
+
+	GroupProperties()
+    {
+		Volume(0.4)
+    }
+}
+
+SoundGroup("NoRoomInHell_Master_48k")
+{
+	Sound("NoRoomInHell_Master_48k")
+
+	GroupProperties()
+    {
+		Volume(1.4)
+		SpreadStart(15)
+		SpreadEnd(10)
+    }
+}
+
+SoundGroup("WaterExtinguisher_mono")
+{
+	Sound("WaterExtinguisher_mono")
+
+	GroupProperties()
+    {
+		OcclusionMode(1)
+    }
+}
+
+SoundGroup("zombie_ram_step")
+{
+	Sound("zombie_ram_step_00")
+	Sound("zombie_ram_step_01")
+	Sound("zombie_ram_step_02")
+	Sound("zombie_ram_step_03")
+	Sound("zombie_ram_step_04")
+	Sound("zombie_ram_step_05")
+	
+	GroupProperties()
+    {
+		Volume(0.4)
+		Rolloff(0.8)
+		MinDistance(6)
+		OcclusionFullImpact(0.7)
+		OcclusionPartialImpact(0.1)
+		MaxInstances(1)
+    }
+}
+
+SoundGroup("zombie_ram_hit_after_run")
+{
+	Sound("zombie_ram_hit_after_run_00")
+	
+	GroupProperties()
+    {
+		Volume(1.5)
+		Rolloff(0.8)
+		MinDistance(6)
+		OcclusionFullImpact(0.7)
+		OcclusionPartialImpact(0.1)
+		ReverbMinLevel(1.5)
+		ReverbSendLevel(1.5)
+    }
+}
+
+SoundGroup("zombie_ram_hit_by_player_dull")
+{
+	Sound("zombie_ram_hit_by_player_dull_00")
+	Sound("zombie_ram_hit_by_player_dull_01")
+	Sound("zombie_ram_hit_by_player_dull_02")
+	
+	GroupProperties()
+    {
+		Volume(1)
+		Rolloff(0.8)
+		MinDistance(6)
+		OcclusionFullImpact(0.7)
+		OcclusionPartialImpact(0.1)
+    }
+}
+
+SoundGroup("zombie_ram_hit_enemy_while_running")
+{
+	Sound("zombie_ram_hit_enemy_while_running_00")
+	Sound("zombie_ram_hit_enemy_while_running_01")
+	Sound("zombie_ram_hit_enemy_while_running_02")
+	
+	GroupProperties()
+    {
+		Volume(1)
+		Rolloff(0.8)
+		MinDistance(6)
+		OcclusionFullImpact(0.7)
+		OcclusionPartialImpact(0.1)
+    }
+}

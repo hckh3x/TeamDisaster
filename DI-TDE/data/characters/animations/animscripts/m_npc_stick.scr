@@ -1,0 +1,195 @@
+//----- animacje Stick - Bron Jednoreczna
+
+// pozy
+//[nosek_20100729] SeqTrack("NPC_Stick_Melee_Stand", 				"M_TPP_Stick_Melee_Stand.anm2"			, 0, 123, 30, 1, 0.3)
+SeqTrack("NPC_Stick_Melee_Stand2", 				"M_TPP_Stick_Melee_Stand2.anm2"			, 0, 170, 30, 1, 0.3)
+
+// poruszanie
+
+SeqTrack("M_NPC_Stick_Walk_v01", 				"M_TPP_Stick_Walk_v01.anm2"			, 0, 60, 30, 1, 0.3)
+{
+	Event(11, VIS_EVENT_STEP_RIGHT)
+	Event(25, VIS_EVENT_STEP_LEFT)
+	Event(40, VIS_EVENT_STEP_RIGHT)
+	Event(56, VIS_EVENT_STEP_LEFT)
+}
+
+SeqTrack("M_NPC_Stick_Walk_v02", 				"M_TPP_Stick_Walk_v02.anm2"			, 0, 62, 30, 1, 0.3)
+{
+	Event(11, VIS_EVENT_STEP_LEFT)
+	Event(26, VIS_EVENT_STEP_RIGHT)
+	Event(42, VIS_EVENT_STEP_LEFT)
+	Event(57, VIS_EVENT_STEP_RIGHT)
+}
+
+SeqTrack("M_NPC_Stick_Walk_Left_v02", 				"M_TPP_Stick_Walk_Left_v02.anm2"			, 0, 121, 30, 1, 0.3)
+{
+	Event(11, VIS_EVENT_STEP_LEFT)
+	Event(28, VIS_EVENT_STEP_RIGHT)
+	Event(41, VIS_EVENT_STEP_LEFT)
+	Event(57, VIS_EVENT_STEP_RIGHT)
+	Event(71, VIS_EVENT_STEP_LEFT)
+	Event(86, VIS_EVENT_STEP_RIGHT)
+	Event(100, VIS_EVENT_STEP_LEFT)
+	Event(116, VIS_EVENT_STEP_RIGHT)
+}
+SeqTrack("M_NPC_Stick_Walk_Right_v02", 				"M_TPP_Stick_Walk_Right_v02.anm2"			, 0, 98, 30, 1, 0.3)
+{
+	Event(13, VIS_EVENT_STEP_LEFT)
+	Event(28, VIS_EVENT_STEP_RIGHT)
+	Event(46, VIS_EVENT_STEP_LEFT)
+	Event(60, VIS_EVENT_STEP_RIGHT)
+	Event(78, VIS_EVENT_STEP_LEFT)
+	Event(92, VIS_EVENT_STEP_RIGHT)
+}
+SeqTrack("M_NPC_Stick_Walk_Backward_v01", 				"M_TPP_Stick_Walk_Backward_v01.anm2"			, 0, 163, 30, 1, 0.3)
+{
+	Event(12, VIS_EVENT_STEP_RIGHT)
+	Event(35, VIS_EVENT_STEP_LEFT)
+	Event(53, VIS_EVENT_STEP_RIGHT)
+	Event(75, VIS_EVENT_STEP_LEFT)
+	Event(94, VIS_EVENT_STEP_RIGHT)
+	Event(114, VIS_EVENT_STEP_LEFT)
+	Event(132, VIS_EVENT_STEP_RIGHT)
+	Event(155, VIS_EVENT_STEP_LEFT)
+}
+
+SeqTrack("M_NPC_Stick_Run_v01", 				"M_TPP_Stick_Run_v01.anm2"			, 0, 20, 30, 1, 0.3)
+{
+	Event(8, VIS_EVENT_STEP_RIGHT)
+	Event(18, VIS_EVENT_STEP_LEFT)
+}
+
+SeqTrack("M_NPC_Stick_Sprint_v01", 				"M_TPP_Stick_Sprint_v02.anm2"			, 0, 32, 30, 1, 0.3)
+{
+	Event(7, VIS_EVENT_STEP_LEFT)
+	Event(15, VIS_EVENT_STEP_RIGHT)
+	Event(24, VIS_EVENT_STEP_LEFT)
+	Event(31, VIS_EVENT_STEP_RIGHT)
+}
+SeqTrack("M_NPC_Stick_Trot_L", 		"M_TPP_Stick_Trot_L.anm2"	, 0, 62, 30, 1, 0.3)
+{
+	Event(10, VIS_EVENT_STEP_RIGHT)
+	Event(24, VIS_EVENT_STEP_LEFT)
+	Event(40, VIS_EVENT_STEP_RIGHT)
+	Event(54, VIS_EVENT_STEP_LEFT)
+}
+
+SeqTrack("M_NPC_Stick_Trot_R", 		"M_TPP_Stick_Trot_R.anm2"	, 0, 62, 30, 1, 0.3)
+{
+	Event(10, VIS_EVENT_STEP_LEFT)
+	Event(24, VIS_EVENT_STEP_RIGHT)
+	Event(40, VIS_EVENT_STEP_LEFT)
+	Event(54, VIS_EVENT_STEP_RIGHT)
+}
+
+SeqTrack("M_NPC_Stick_Trot_B", 		"M_TPP_Stick_Trot_B.anm2"	, 0, 77, 30, 1, 0.3)
+{
+	Event(10, VIS_EVENT_STEP_RIGHT)
+	Event(21, VIS_EVENT_STEP_LEFT)
+	Event(34, VIS_EVENT_STEP_RIGHT)
+	Event(47, VIS_EVENT_STEP_LEFT)
+	Event(58, VIS_EVENT_STEP_RIGHT)
+	Event(71, VIS_EVENT_STEP_LEFT)
+}
+
+SeqTrack("M_NPC_Stick_Trot_F", 		"M_TPP_Stick_Trot_F.anm2"	, 0, 43, 30, 1, 0.3)
+{
+	Event(11, VIS_EVENT_STEP_LEFT)
+	Event(22, VIS_EVENT_STEP_RIGHT)
+	Event(33, VIS_EVENT_STEP_LEFT)
+	Event(43, VIS_EVENT_STEP_RIGHT)
+}
+
+// atak
+
+SeqTrack("NPC_Stick_Melee_Attack_DLR", 			"M_TPP_Stick_Melee_Attack_DLR.anm2"		, 0, 22, 30, 1, 0.3) // 30
+{
+    Event(6, EVENT_REACT_ON_HIT_DISABLED)
+    Event(11, EVENT_APPLY_DAMAGE_UP)
+    Event(16, EVENT_REACT_ON_HIT_ENABLED)
+}
+SeqTrack("NPC_Stick_Melee_Attack_DRL", 			"M_TPP_Stick_Melee_Attack_DRL.anm2"		, 0, 23, 30, 1, 0.3) //28
+{
+    Event(6, EVENT_REACT_ON_HIT_DISABLED)
+    Event(11, EVENT_APPLY_DAMAGE_LEFT)
+    Event(16, EVENT_REACT_ON_HIT_ENABLED)
+}
+SeqTrack("NPC_Stick_Melee_Attack_LDR", 			"M_TPP_Stick_Melee_Attack_LDR.anm2"		, 0, 23, 30, 1, 0.3) //30
+{
+    Event(6, EVENT_REACT_ON_HIT_DISABLED)
+    Event(11, EVENT_APPLY_DAMAGE_RIGHT)
+    Event(16, EVENT_REACT_ON_HIT_ENABLED)
+}
+SeqTrack("NPC_Stick_Melee_Attack_LR", 			"M_TPP_Stick_Melee_Attack_LR.anm2"		, 0, 25, 30, 1, 0.3) //30
+{
+    Event(5, EVENT_REACT_ON_HIT_DISABLED)
+    Event(10, EVENT_APPLY_DAMAGE_RIGHT)
+    Event(15, EVENT_REACT_ON_HIT_ENABLED)
+}
+SeqTrack("NPC_Stick_Melee_Attack_RDL", 			"M_TPP_Stick_Melee_Attack_RDL.anm2"		, 0, 25, 30, 1, 0.3) //30
+{
+    Event(7, EVENT_REACT_ON_HIT_DISABLED)
+    Event(12, EVENT_APPLY_DAMAGE_LEFT)
+    Event(17, EVENT_REACT_ON_HIT_ENABLED)
+}
+SeqTrack("NPC_Stick_Melee_Attack_RL", 			"M_TPP_Stick_Melee_Attack_RL.anm2"		, 0, 24, 30, 1, 0.3) //30
+{
+    Event(8, EVENT_REACT_ON_HIT_DISABLED)
+    Event(13, EVENT_APPLY_DAMAGE_LEFT)
+    Event(19, EVENT_REACT_ON_HIT_ENABLED)
+}
+
+// --------------- fighter specific anims --------------------
+
+SeqTrack("npc_upset_stand_hitreaction_right_counterattack_v01", "mz_upset_stand_hitreaction_torso_counterattack_v02.anm2", 8, 111, 45, 1, 0.5) //160
+{
+    Event(0, EVENT_REACT_ON_HIT_DISABLED)
+    Event(62, EVENT_APPLY_DAMAGE_LEFT)
+    Event(68, EVENT_REACT_ON_HIT_ENABLED)
+}
+
+SeqTrack("npc_upset_stand_hitreaction_left_counterattack_v01", "mz_upset_stand_hitreaction_head_counterattack_v02.anm2", 9, 79, 40, 1, 0.5)
+{
+    Event(0, EVENT_REACT_ON_HIT_DISABLED)
+    Event(33, EVENT_APPLY_DAMAGE_RIGHT)
+    Event(40, EVENT_REACT_ON_HIT_ENABLED)
+}
+
+SeqTrack("npc_upset_stand_hitreaction_left_counterattack_v02", "mzi_hit_recover_attack.anm2", 12, 142, 30, 1, 0.5)
+{
+    Event(0, EVENT_REACT_ON_HIT_DISABLED)
+    Event(102, EVENT_APPLY_DAMAGE_LEFT)
+    Event(122, EVENT_APPLY_DAMAGE_RIGHT)
+    
+    //Event(40, EVENT_REACT_ON_HIT_ENABLED)
+}
+
+SeqTrack("npc_upset_stand_dodge_low_counterattack_v01", "mz_upset_stand_hitreaction_torso_counterattack_v03.anm2", 5, 90, 43, 1, 0.5) //145
+{
+    Event(0, EVENT_REACT_ON_HIT_DISABLED)
+    Event(47, EVENT_APPLY_DAMAGE_LEFT)
+    Event(53, EVENT_REACT_ON_HIT_ENABLED)
+}
+
+SeqTrack("npc_upset_stand_dodge_low_counterattack_v02", "mz_upset_stand_hitreaction_torso_counterattack_v05.anm2", 10, 74, 40, 1, 0.5)
+{
+    Event(0, EVENT_REACT_ON_HIT_DISABLED)
+    Event(28, EVENT_APPLY_DAMAGE_RIGHT)
+    Event(34, EVENT_REACT_ON_HIT_ENABLED)
+}
+
+//TrackDef("npc_dodge_tr", "mzi_upset_evade_02.anm", 0, 10)
+//TrackDef("npc_upset_left_arm_strike_tr", "mzi_upset_left_arm_strike_01.anm", 19, 47)
+//Seq("npc_upset_stand_dodge_high_counterattack_v01", 30, 1, 0.5)
+//{
+//    Track("npc_dodge_tr",   0, 1, 0.0)
+//    Track("npc_upset_left_arm_strike_tr",  10, 1, 0.5)
+//    
+//    Event(0, EVENT_REACT_ON_HIT_DISABLED)
+//    Event(15, EVENT_APPLY_DAMAGE_RIGHT)
+//    Event(25, EVENT_REACT_ON_HIT_ENABLED)
+//}
+
+SeqTrack("npc_upset_stand_hitreaction_head_confused_v01", "mz_upset_stand_hitreaction_head_confused_v01.anm2", 0, 200, 36, 1, 0.5)
+

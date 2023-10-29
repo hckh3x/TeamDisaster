@@ -1,0 +1,77 @@
+!include("ai_data.def")
+!include("human_timing_events.def")
+!include("human_activities.def")
+!include("human_goals.def")
+
+SnapDist(0.8)    // MunDee Estuvo aquí
+StrongAttractor()
+ReleaseDist(1.2)    // MunDee Estuvo aquí
+Slot("hook_seat_a", 1, IDLE_STAND, 1,0.0,0.0,0.0, 0.0, 0.0, 1.0,1.5)    // MunDee Estuvo aquí
+{
+	LockPosition()
+	LockRotation()
+
+    AiTypeDataSet("human")
+    {
+        Data("idle:standing:idle::::", -2, "m_npc_hopeless_chair_Idle01_loop")
+    //    Data("idle:standing:idle::::", -2, "m_npc_hopeless_chair_Sadness_loop")
+    //    Data("idle:standing:idle::::", -2, "m_npc_hopeless_chair_Prayer_loop")
+        Data("idle:standing:special::::", -2, "m_npc_hopeless_chair_Swing_loop")
+        Data("idle:standing:special::::", -2, "m_npc_hopeless_chair_LookLeft_loop")
+        Data("idle:standing:special::::", -2, "m_npc_hopeless_chair_RightLeft_loop")
+        Data("idle:standing:special::::", -2, "m_npc_hopeless_chair_LookAround_loop")
+        Data("idle:standing:special::::", -2, "m_npc_hopeless_chair_Sneeze_loop")
+        Data("idle:standing:interact::::", -2, "m_npc_hopeless_chair_Reaction")
+        
+        
+        Data("chatter:idle:extern:none", -2, "m_npc_hopeless_chair_Idle01_loop")
+    //	Data("chatter:special:extern:none", -2, "m_npc_hopeless_chair_Swing_loop")
+        Data("chatter:special:extern:none", -2, "m_npc_hopeless_chair_LookLeft_loop")
+        Data("chatter:special:extern:none", -2, "m_npc_hopeless_chair_RightLeft_loop")
+        Data("chatter:special:extern:none", -2, "m_npc_hopeless_chair_Sneeze_loop")
+        Data("chatter:special:extern:none", -2, "m_npc_hopeless_chair_LookAround_loop")
+        Data("chatter:speech:extern:none", -2, "m_npc_hopeless_chair_Prayer_loop")
+        
+        
+        Data("chatter:idle:middle:none", -2, "m_npc_hopeless_near_stand")
+        Data("chatter:idle:far:none", -2, "m_npc_hopeless_near_stand")
+        Data("chatter:speech:far:none", -2, "m_npc_hopeless_near_talk")
+        Data("chatter:trans:far:extern", -2, "m_npc_hopeless_chair_StandUp")
+        Data("chatter:trans:extern:far", -2, "m_npc_hopeless_chair_SitDown")
+    }	
+}
+
+Slot("hook_seat_b", 1, IDLE_STAND, 1,0.0,0.0,0.95, 0.0, 0.0, -1.0,1.5)    // MunDee Estuvo aquí
+{
+	LockPosition()
+	LockRotation()
+
+    AiTypeDataSet("human")
+    {
+        Data("idle:standing:idle::::", -2, "m_npc_hopeless_chair_Idle01_loop")
+    //    Data("idle:standing:idle::::", -2, "m_npc_hopeless_chair_Sadness_loop")
+        Data("idle:standing:special::::", -2, "m_npc_hopeless_chair_Swing_loop")
+        Data("idle:standing:special::::", -2, "m_npc_hopeless_chair_LookLeft_loop")
+        Data("idle:standing:special::::", -2, "m_npc_hopeless_chair_RightLeft_loop")
+        Data("idle:standing:special::::", -2, "m_npc_hopeless_chair_LookAround_loop")
+        Data("idle:standing:special::::", -2, "m_npc_hopeless_chair_Sneeze_loop")
+        Data("idle:standing:interact::::", -2, "m_npc_hopeless_chair_Reaction")
+        
+        
+        Data("chatter:idle:extern:none", -2, "m_npc_hopeless_chair_Idle01_loop")
+    //	Data("chatter:special:extern:none", -2, "m_npc_hopeless_chair_Swing_loop")
+        Data("chatter:special:extern:none", -2, "m_npc_hopeless_chair_LookLeft_loop")
+        Data("chatter:special:extern:none", -2, "m_npc_hopeless_chair_RightLeft_loop")
+        Data("chatter:special:extern:none", -2, "m_npc_hopeless_chair_Sneeze_loop")
+        Data("chatter:special:extern:none", -2, "m_npc_hopeless_chair_LookAround_loop")
+        Data("chatter:speech:extern:none", -2, "m_npc_hopeless_chair_Prayer_loop")
+        
+        
+        Data("chatter:idle:middle:none", -2, "m_npc_hopeless_near_stand")
+        Data("chatter:idle:far:none", -2, "m_npc_hopeless_near_stand")
+        Data("chatter:speech:far:none", -2, "m_npc_hopeless_near_talk")
+        Data("chatter:trans:far:extern", -2, "m_npc_hopeless_chair_StandUp")
+        Data("chatter:trans:extern:far", -2, "m_npc_hopeless_chair_SitDown")
+    }
+}
+

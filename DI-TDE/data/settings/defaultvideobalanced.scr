@@ -1,0 +1,48 @@
+!Resolution(i,i)
+!WindowOffset(i,i)
+!Monitor(i)                    // -1 primary monitor
+!DX11()                        // game will use DirectX 11
+!TextureQuality(s)             // Low, Medium, High
+!GammaFloat(f)
+!MaxRefresh(i)
+!Shadows(s)                    // Low, High
+!ShadowMapSize(i)
+!SpotShadowMapSize(i)
+!Fullscreen()
+!VSync()                       // enable vertical sync
+!GrassQuality(i)               // lower is better
+!NvidiaEffects(i,i)            // enable extra nvidia effects
+!ExtraGameFov(f)               // extra fov
+!VisRange(f,f)
+!PostProcessQuality(i)
+!AmbientOcclusion(i)
+!MotionBlur(i)
+!AntiAliasing(i)
+!DisableDWM(i)
+!Version(i)
+!FXQuality(i)
+
+!NvidiaPCSS(i)
+!EnableFilmGrain(i)
+!Aberration(i)
+    
+Fullscreen(1)
+TextureQuality("Medium")
+Shadows("Low")
+VisRange(2.0, 2.0)
+ShadowMapSize(64)
+SpotShadowMapSize(64)
+GammaFloat(1.00)
+GrassQuality(2)
+NvidiaEffects(1, 0)
+AmbientOcclusion(0)
+MotionBlur(0)
+AntiAliasing(1)
+DisableDWM(1)
+FXQuality(2)
+Version(1)
+
+NvidiaPCSS(0)
+EnableFilmGrain(0)
+Aberration(0)
+    

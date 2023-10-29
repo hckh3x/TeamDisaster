@@ -1,0 +1,6 @@
+!include("hud.scr")
+
+Texture("white.dds", 4, 4)
+{
+    Whole("White")
+}

@@ -1,0 +1,175 @@
+<character_req value="samb_levels.xml">
+    <postfix id="SamB">
+        <skill id="FuryMeleeResInc" cat="Tree1" max_level="3" tier="1" desc_params="-15%;-30%;-45%">
+            <tier_req tier="0" cat="Tree1" value="1"/>
+            <dyn_req req="fury"/>
+            <effect id="DamageReceivedOnFuryFactor" change="-0.15"/>
+        </skill>
+        <skill id="Volatile" cat="Tree1" max_level="3" tier="3" desc_params="-10%;-20%;-30%">
+            <tier_req tier="2" cat="Tree1" value="1"/>
+            <effect id="FuryPointsNeededToActivate" change="-0.1"/>
+        </skill>
+        <skill id="Fury1" cat="Tree1" max_level="1" tier="0">
+            <effect id="FuryUsage" change="0.15"/>
+            <effect id="FuryLevel" change="1"/>
+        </skill>
+        <skill id="RamBluntIncraseFuryPoints" cat="Tree1" max_level="3" tier="1" desc_params="+8%;+16%;+24%">
+            <tier_req tier="0" cat="Tree1" value="1"/>
+            <effect id="FuryPointsAfterBluntKillMul" change="0.08 "/>
+        </skill>
+        <skill id="Fury2" cat="Tree1" max_level="1" tier="2">
+            <tier_req tier="1" cat="Tree1" value="3"/>
+            <effect id="FuryUsage" change="-0.07"/>
+            <effect id="FuryLevel" change="1"/>
+        </skill>
+        <skill id="FuryForHeadSmash" cat="Tree1" max_level="3" tier="3" desc_params="+25%;+50%;+75%">
+            <tier_req tier="2" cat="Tree1" value="1"/>
+            <effect id="FuryPointsAfterHeadSmashMul" change="0.25"/>
+        </skill>
+        <skill id="Fury3" cat="Tree1" max_level="1" tier="4">
+            <tier_req tier="3" cat="Tree1" value="3"/>
+            <effect id="FuryUsage" change="-0.03"/>
+            <effect id="FuryLevel" change="1"/>
+        </skill>
+        <skill id="ChanceFuryPointsAfterDamage" cat="Tree1" max_level="3" tier="1" desc_params="+10%;+20%;+30%">
+            <tier_req tier="0" cat="Tree1" value="1"/>
+            <effect id="ChanceToRestoreFuryPointsAfterDamage" change="0.1"/>
+        </skill>
+        <skill id="KillsOnFuryGainsHealth" cat="Tree1" max_level="3" tier="3" desc_params="3%;6%;9%">
+            <tier_req tier="2" cat="Tree1" value="1"/>
+            <dyn_req req="fury"/>
+            <effect id="RegainHealthAfterKillOnFury" change="0.03"/>
+        </skill>
+        <skill id="BluntDamageAndForceInc" cat="Tree2" max_level="3" tier="1" desc_params="+8%;+16%;+24%">
+            <tier_req tier="0" cat="Tree2" value="1"/>
+            <effect id="BluntDamageMul" change="0.08"/>
+            <effect id="BluntForceMul" change="0.10"/>
+        </skill>
+        <skill id="RamKOKing" cat="Tree2" max_level="3" tier="2" desc_params="4s;8s;12s">
+            <tier_req tier="1" cat="Tree2" value="3"/>
+            <effect id="KnockOutTimeMul" change="4.0"/>
+            <effect id="ConfusionTimeMul" change="0.15"/>
+        </skill>
+        <skill id="RamIncKOChance" cat="Tree2" max_level="3" tier="4" desc_params="15%;30%;45%">
+            <tier_req tier="3" cat="Tree2" value="1"/>
+            <effect id="KnockDownChance" change="0.15"/>
+        </skill>
+        <skill id="CraftedBluntCritical" cat="Tree2" max_level="3" tier="5" desc_params="+3%;+6%;+9%">
+            <tier_req tier="4" cat="Tree2" value="3"/>
+            <effect id="CraftedBluntCritProbAdd" change="0.03"/>
+        </skill>
+        <skill id="BluntApprentice" cat="Tree2" max_level="1" tier="0">
+            <effect id="BluntWeaponsSkill" change="1"/>
+            <effect id="BluntDamageMul" change="0.05"/>
+            <effect id="MeeleBluntStaminaUsageMul" change="-0.1"/>
+            <effect id="BluntCriticalChance" change="0.01"/>
+        </skill>
+        <skill id="RamBluntDecStamina" cat="Tree2" max_level="3" tier="1" desc_params="-15%;-30%;-45%">
+            <tier_req tier="0" cat="Tree2" value="1"/>
+            <effect id="MeeleBluntStaminaUsageMul" change="-0.15"/>
+        </skill>
+        <skill id="Raming" cat="Tree2" max_level="3" tier="2">
+            <tier_req tier="1" cat="Tree2" value="3"/>
+            <effect id="RamingLevel" change="1"/>
+        </skill>
+        <skill id="BluntExpert" cat="Tree2" max_level="1" tier="3">
+            <tier_req tier="2" cat="Tree2" value="3"/>
+            <effect id="BluntWeaponsSkill" change="1"/>
+            <effect id="BluntDamageMul" change="0.05"/>
+            <effect id="MeeleBluntStaminaUsageMul" change="-0.1"/>
+            <effect id="BluntCriticalChance" change="0.02"/>
+            <effect id="StomperSkillLevel" change="1"/>
+        </skill>
+        <skill id="RamMoreDamage2Hand" cat="Tree2" max_level="3" tier="4" desc_params="+15%;+30%;+45%">
+            <tier_req tier="3" cat="Tree2" value="1"/>
+            <effect id="TwoHandedDamageMul" change="0.15"/>
+        </skill>
+        <skill id="AimedShots" cat="Tree2" max_level="3" tier="5" desc_params="+5%;+10%;+15%">
+            <tier_req tier="4" cat="Tree2" value="3"/>
+            <effect id="BulletDamageMul" change="0.05"/>
+        </skill>
+        <skill id="BluntMaster" cat="Tree2" max_level="1" tier="6">
+            <tier_req tier="5" cat="Tree2" value="3"/>
+            <effect id="BluntWeaponsSkill" change="1"/>
+            <effect id="BluntDamageMul" change="0.05"/>
+            <effect id="MeeleBluntStaminaUsageMul" change="-0.1"/>
+            <effect id="BluntCriticalChance" change="0.03"/>
+            <effect id="StomperSkillLevel" change="1"/>
+        </skill>
+        <skill id="RamIncBluntDurability" cat="Tree2" max_level="3" tier="1" desc_params="+10%;+20%;+30%">
+            <tier_req tier="0" cat="Tree2" value="1"/>
+            <effect id="BluntWpnDurabilityLoss" change="-0.1"/>
+        </skill>
+        <skill id="CritChanceIncEnemyLowStamina" cat="Tree2" max_level="3" tier="2" desc_params="+6%;+12%;+18%">
+            <tier_req tier="1" cat="Tree2" value="3"/>
+            <effect id="CriticalIncChanceWhenEnemyStaminaLow" change="0.06"/>
+        </skill>
+        <skill id="CraftedBluntDamage" cat="Tree2" max_level="3" tier="4" desc_params="+2%;+4%;+6%">
+            <tier_req tier="3" cat="Tree2" value="1"/>
+            <effect id="CraftedBluntDamageMul" change="0.02"/>
+        </skill>
+        <skill id="RamBluntCritical" cat="Tree2" max_level="3" tier="5" desc_params="+1%;+2%;+3%">
+            <tier_req tier="4" cat="Tree2" value="3"/>
+            <effect id="BluntCriticalChance" change="0.01"/>
+        </skill>
+        <skill id="HRLuck" cat="Tree3" max_level="3" tier="1" desc_params="+10%;+20%;+30%">
+            <tier_req tier="0" cat="Tree3" value="1"/>
+            <effect id="LuckyFactor" change="0.1"/>
+        </skill>
+        <skill id="HRToughSkin" cat="Tree3" max_level="3" tier="2" desc_params="-5%;-10%;-15%">
+            <tier_req tier="1" cat="Tree3" value="3"/>
+            <effect id="MeleeDamageReductionPercent" change="5"/>
+        </skill>
+        <skill id="BereakLimbXpMul" cat="Tree3" max_level="3" tier="4" desc_params="x2;x3;x4">
+            <tier_req tier="3" cat="Tree3" value="1"/>
+            <effect id="BreakLimbAwardXpFactor" change="1"/>
+        </skill>
+        <skill id="LastStand" cat="Tree3" max_level="3" tier="5" desc_params="-20%;-40%;-60%">
+            <tier_req tier="4" cat="Tree3" value="3"/>
+            <effect id="DamageTakenWhenHealthLowFactor" change="-0.2"/>
+        </skill>
+        <skill id="HealthRegen1" cat="Tree3" max_level="1" tier="0">
+            <effect id="AutoHealthRegen" change="0.01"/>
+        </skill>
+        <skill id="StaminaGiveOnDamageTaken" cat="Tree3" max_level="3" tier="1" desc_params="10%;20%;30%">
+            <tier_req tier="0" cat="Tree3" value="1"/>
+            <effect id="RegainStaminaOnDamageProb" change="0.1"/>
+        </skill>
+        <skill id="HRThief" cat="Tree3" max_level="3" tier="2" desc_params="1;2;3">
+            <tier_req tier="1" cat="Tree3" value="3"/>
+            <effect id="LockpickLev" change="1"/>
+        </skill>
+        <skill id="HealthRegen2" cat="Tree3" max_level="1" tier="3">
+            <tier_req tier="2" cat="Tree3" value="3"/>
+            <effect id="AutoHealthRegen" change="0.05"/>
+        </skill>
+        <skill id="HRBulletProof" cat="Tree3" max_level="3" tier="4" desc_params="-6%;-12%;-18%">
+            <tier_req tier="3" cat="Tree3" value="1"/>
+            <effect id="BulletDamageResistance" change="0.06"/>
+        </skill>
+        <skill id="BetterSellPrice" cat="Tree3" max_level="3" tier="5" desc_params="+10%;+20%;+30%">
+            <tier_req tier="4" cat="Tree3" value="3"/>
+            <effect id="ItemSellFactor" change="0.1"/>
+        </skill>
+        <skill id="HealthRegen3" cat="Tree3" max_level="1" tier="6">
+            <tier_req tier="5" cat="Tree3" value="3"/>
+            <effect id="AutoHealthRegen" change="0.05"/>
+        </skill>
+        <skill id="HRLagerAggro" cat="Tree3" max_level="3" tier="1" desc_params="+10%;+20%;+30%">
+            <tier_req tier="0" cat="Tree3" value="1"/>
+            <effect id="AggroFactor" change="0.1"/>
+        </skill>
+        <skill id="DeeperPockets" cat="Tree3" max_level="3" tier="2" desc_params="2;4;6">
+            <tier_req tier="1" cat="Tree3" value="3"/>
+            <effect id="InventorySize" change="2"/>
+        </skill>
+        <skill id="KnockDownHurts" cat="Tree3" max_level="3" tier="4" desc_params="x1;x2;x3">
+            <tier_req tier="3" cat="Tree3" value="1"/>
+            <effect id="GiveBackDamageOnKOFactor" change="1"/>
+        </skill>
+        <skill id="CraftedWeaponsDurab" cat="Tree3" max_level="3" tier="5" desc_params="+10%;+20%;+30%">
+            <tier_req tier="4" cat="Tree3" value="3"/>
+            <effect id="CraftedWpnDurReduceMul" change="-0.1"/>
+        </skill>
+    </postfix>
+</character_req>

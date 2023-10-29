@@ -1,0 +1,16 @@
+//--------------------------------- Chainsaw ------------------------------//
+
+//SeqTrackAlias("TPP_Chainsaw_Start",	"FPP_Chainsaw_Start")
+//SeqTrackAlias("TPP_Chainsaw_Stand", 	"FPP_Chainsaw_Stand")
+//SeqTrackAlias("TPP_Chainsaw_StandHi", 	"FPP_Chainsaw_StandHi")
+//SeqTrackAlias("TPP_Chainsaw_StandOff",  "FPP_Chainsaw_StandOff")
+
+
+SeqTrack("TPP_Chainsaw_Start", 	"M_TPP_Chainsaw_Select.anm2"  	, 0, 50, 30, 1, 0.3)
+SeqTrack("TPP_Chainsaw_Stand",   	"M_TPP_Chainsaw_Pose.anm2"  	, 0, 10, 30, 1, 0.3)
+SeqTrack("TPP_Chainsaw_StandOff", 	"M_TPP_Chainsaw_Attack_Empty.anm2"  	, 0, 38, 30, 1, 0.3)
+SeqTrack("TPP_Chainsaw_StandHi", 	"M_TPP_Chainsaw_Attack_Hit.anm2"  	, 0, 38, 30, 1, 0.3)
+
+SeqTrackAlias("TPP_Chainsaw_Stop", 	"TPP_Chainsaw_StandOff")
+SeqTrackAlias("TPP_Chainsaw_CombatMode", 	"TPP_Chainsaw_StandOff")
+//SeqTrack("TPP_Chainsaw_CombatMode", 	"M_FPP_Chainsaw_AttackNoise.anm2"  	, 0, 99, 30, 1, 0.3)

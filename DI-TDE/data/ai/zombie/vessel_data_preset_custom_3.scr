@@ -1,0 +1,68 @@
+!include("ai_data.def")
+!include("vessel_timing_events.def")
+!include("vessel_sound_types.def")
+
+// preset for ZombieTypeBig
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////// DATA ///////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+// override movement animations so that big zombies would be slow
+//##################
+//#### MOVEMENT ####
+//##################
+
+Data("movement:standing:walk:calm:none:none:none:", -2, "mz_c_calm_walk_v01")
+//Data("movement:standing:walk:calm:none:none:none:", -2, "mz_c_calm_walk_v04")
+
+Data("movement:standing:walk::none:none:none:", -2, "mz_c_calm_walk_v01")
+//Data("movement:standing:walk:alarmed:none:none:none:", -2, "mz_d_calm_walk_v04")
+
+Data("movement:standing:run:calm:none:none:none:", -2, "mz_c_calm_walk_v01")
+//Data("movement:standing:run:calm:none:none:none:", -2, "mz_d_calm_walk_v04")
+
+Data("movement:standing:run::none:none:none:", -2, "mz_c_calm_walk_v01")
+//Data("movement:standing:run:alarmed:none:none:none:", -2, "mz_d_calm_walk_v04")
+
+Data("movement:standing:walk:alarmed::::", -2, "m_npc_unarmed_walk_left_v01")
+Data("movement:standing:walk:alarmed::::", -2, "m_npc_unarmed_walk_right_v01")
+Data("movement:standing:walk:alarmed::::", -2, "m_npc_unarmed_walk_backward")
+
+Data("movement:standing:walk:calm::::", -2, "m_npc_unarmed_walk_left_v01")
+Data("movement:standing:walk:calm::::", -2, "m_npc_unarmed_walk_right_v01")
+Data("movement:standing:walk:calm::::", -2, "m_npc_unarmed_walk_backward")
+
+// starts also need to be overriden
+//###############
+//#### START ####
+//###############
+//## start:is_standing:alarm_level:item_type:movement_type:angle:direction
+//##############  
+
+Data("start:standing::::90:left", -2, "mz_c_calm_startwalkturn_90_l")
+Data("start:standing::::90:right", -2, "mz_c_calm_startwalkturn_90_r")
+Data("start:standing::::0:", -2, "MZ_c_Calm_Walk_Start_F_V01")
+Data("start:standing::::180:left", -2, "mz_c_calm_startwalkturn_180_l")
+Data("start:standing::::180:right", -2, "mz_c_calm_startwalkturn_180_r")
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////// PARAMETERS ////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+ParamFloat("walk_speed_calm", 0.6)    // MunDee Estuvo aquí
+ParamFloat("walk_speed_alarmed", 0.6) // big zombie is always slow    // MunDee Estuvo aquí
+ParamFloat("run_speed_calm", 0.6)    // MunDee Estuvo aquí
+ParamFloat("run_speed_alarmed", 0.6)    // MunDee Estuvo aquí
+ParamFloat("stamina_regeneration_rate", 0.05)
+ParamFloat("medium_severity_threshold", 80.0) //increased medium hit severity
+ParamFloat("heavy_severity_threshold", 101.0) //disabled heavy hit severity
+ParamBool("can_fall", 1)
+ParamFloat("health_mul", 1.25)
+ParamFloat("stamina_mul", 1.25)
+ParamFloat("damage_mul", 1.25)
+ParamFloat("threat_level", 4)
+ParamFloat("berserker_hit_prob", 0.0)
+ParamFloat("berserker_grab_prob", 0.0)
+ParamInt("idle_alarmed_sound_type", SOUND_TYPE_IDLE_CALM)
+ParamInt("move_sound_type", SOUND_TYPE_IDLE_CALM)

@@ -1,0 +1,121 @@
+<?xml version="1.0"?>
+<QuestsDefinitions
+     level="Hotel"
+     pxsl_line="3">
+    <Quest
+         name="__HotelProlog_side"
+         parent="game_root"
+         pxsl_line="4">
+        <Phase
+             type="go to"
+             name="_"
+             distance="2.5"
+             show_locations="false"
+             pxsl_line="5">
+            <Destination
+                 pxsl_line="5">
+                <QuestObject
+                     class="SpawnPoint"
+                     name="sel_prologue_logic::MapStart"
+                     pxsl_line="5" />
+            </Destination>
+        </Phase>
+    </Quest>
+    <Quest
+         name="__FalingGuy"
+         parent="__HotelProlog_side"
+         pxsl_line="7">
+        <Phase
+             type="go to"
+             name="_"
+             distance="5.0"
+             show_locations="false"
+             pxsl_line="8">
+            <Destination
+                 pxsl_line="8">
+                <QuestObject
+                     class="Marker"
+                     name="sel_prologue_logic::M_Prologue_Elevator_001"
+                     pxsl_line="8" />
+            </Destination>
+        </Phase>
+        <Phase
+             type="movie"
+             name=" CINEMATIC - FALLING PEOPLE "
+             movie="MOV_Prolog_FallingGuy"
+             pxsl_line="9">
+            <DebugPlayerPosition
+                 pxsl_line="10">
+                <QuestObject
+                     class="SpawnPoint"
+                     name="SP_After_Mov_FallingGuy"
+                     pxsl_line="10" />
+            </DebugPlayerPosition>
+            <PreMovie
+                 pxsl_line="11">
+                <Phase
+                     type="set state"
+                     name="_"
+                     desired_state="off"
+                     pxsl_line="12">
+                    <Trigger
+                         pxsl_line="12">
+                        <QuestObject
+                             class="VirtualSwitchDI"
+                             name="sel_prologue_logic::VS_TV_message"
+                             pxsl_line="12" />
+                    </Trigger>
+                </Phase>
+            </PreMovie>
+            <PostMovie
+                 pxsl_line="13">
+                <Phase
+                     type="set state"
+                     name="_"
+                     desired_state="on"
+                     pxsl_line="14">
+                    <Trigger
+                         pxsl_line="14">
+                        <QuestObject
+                             class="VirtualSwitchDI"
+                             name="sel_prologue_logic::VS_TV_message"
+                             pxsl_line="14" />
+                    </Trigger>
+                </Phase>
+            </PostMovie>
+        </Phase>
+    </Quest>
+    <Quest
+         name="__Tutorial_Flashlight_END"
+         parent="__HotelProlog_side"
+         pxsl_line="17">
+        <Phase
+             type="go to"
+             name="_"
+             distance="2.5"
+             show_locations="false"
+             pxsl_line="18">
+            <Destination
+                 pxsl_line="18">
+                <QuestObject
+                     class="Marker"
+                     name="sel_prologue_logic::M_Prolog_Tutorial_FlashLight_END"
+                     pxsl_line="18" />
+            </Destination>
+        </Phase>
+        <Phase
+             type="set state"
+             name="_"
+             desired_state="off"
+             pxsl_line="19">
+            <Trigger
+                 pxsl_line="19">
+                <QuestObject
+                     class="VirtualSwitchDI"
+                     name="sel_prologue_logic::VS_Tutorial_Flashlight"
+                     pxsl_line="19" />
+            </Trigger>
+        </Phase>
+    </Quest>
+</QuestsDefinitions>
+<!-- vim: set et sw=4 ts=4: -->

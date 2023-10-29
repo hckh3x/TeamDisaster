@@ -1,0 +1,3 @@
+import "ResourcePackCfg.scr"
+
+export string current_config = "LINUX";

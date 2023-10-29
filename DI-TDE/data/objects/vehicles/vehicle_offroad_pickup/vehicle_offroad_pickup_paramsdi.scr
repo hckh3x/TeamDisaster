@@ -1,0 +1,69 @@
+!include ("vehicle_base.scr")
+Car()
+{
+    Torque(140)	
+    NumGears(4)  //without neutral and reverse gear
+    SuspensionHeight(0.6)
+    MaxRPM(5000)
+    WheelFrictionLongMul(1.5)
+    //WheelFrictionLatMul(1.0)
+	GlassElemName("dglassfront")
+    GlassHolderElemName("dglassfront")	
+    
+    SmoothEngineRPMMultiplier(0.95)
+}
+
+InstallPart(FRONT_LEFT_DOOR,"vehicle_offroad_pickup_door_fl.msh")
+{
+  HingeType(HINGE_UP)
+  HingeLowStop(0.0)
+  HingeHiStop(1.2)
+  GlassElemName("DGlassFL")
+  GlassHolderElemName("DGlassFL")
+}
+
+InstallPart(FRONT_RIGHT_DOOR,"vehicle_offroad_pickup_door_fr.msh")
+{
+  HingeType(HINGE_DOWN)
+  HingeLowStop(0.0)
+  HingeHiStop(1.2)
+  GlassElemName("DGlassFR")
+  GlassHolderElemName("DGlassFR")
+}
+
+InstallPart(BONNET,"vehicle_offroad_pickup_bonnet.msh")
+{
+  HingeType(HINGE_LEFT)
+  HingeLowStop(0.0)
+  HingeHiStop(1.2)
+}
+
+InstallPart(BACK_DOOR,"vehicle_offroad_pickup_back_door.msh")
+{
+  HingeType(HINGE_LEFT)
+  HingeLowStop(0.0)
+  HingeHiStop(1.2)
+}
+
+MeatSpot(-76.7188, 109.1814, 226.7424)
+MeatSpot(-91.7041, 85.3782, 231.1962)
+MeatSpot(-23.9639, 105.9454, 251.2291)
+MeatSpot(1.2344, 105.8580, 251.2682)
+MeatSpot(28.1084, 105.8580, 250.3298)
+MeatSpot(80.2295, 109.0035, 223.5222)
+MeatSpot(83.4609, 84.9761, 234.3797)
+MeatSpot(-6.8906, 134.8253, 125.6917)
+MeatSpot(-12.2490, 105.8580, 251.7391)
+MeatSpot(14.1475, 105.8580, 250.8212)
+MeatSpot(-83.7676, 101.8062, -256.4753)
+MeatSpot(-81.5547, 122.2164, -249.6536)
+MeatSpot(82.2158, 120.4456, -251.0001)
+MeatSpot(83.0576, 70.3339, -255.5076)
+MeatSpot(-6.5107, 183.2980, 14.3788)
+
+DropZone(0,0.0,0.0,0.0)    // MunDee Estuvo aquí
+DropZone(1,0.0,0.0,0.0)    // MunDee Estuvo aquí
+DropZone(2,0.38857,0.90349,-1.4346)    // MunDee Estuvo aquí
+DropZone(3,-0.35144,0.90349,-1.4346)    // MunDee Estuvo aquí
+DropZone(4,0.35144,0.90349,-2.15058)    // MunDee Estuvo aquí
+DropZone(5,-0.45664,0.90349,-2.15058)    // MunDee Estuvo aquí

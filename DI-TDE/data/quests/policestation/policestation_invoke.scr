@@ -1,0 +1,13 @@
+!QuestStage( s, s, s )
+
+QuestStage( "08x03  &PoliceStation_JinRescue_Name& (PoliceStation_JinRescue/ PoliceStation_MapStart)", "PoliceStation_JinRescue", " PoliceStation_MapStart" )
+QuestStage( "08x03  &PoliceStation_JinRescue_Name& (PoliceStation_JinRescue/ PoliceStation_FightPunks)", "PoliceStation_JinRescue", " PoliceStation_FightPunks" )
+QuestStage( "08x03  &PoliceStation_JinRescue_Name& (PoliceStation_JinRescue/ End Of PoliceStation )", "PoliceStation_JinRescue", " End Of PoliceStation " )
+QuestStage( "08x03  &PoliceStation_JinRescue_Name& (PoliceStation_JinRescue/CINEMATIC - JIN RESCUE)", "PoliceStation_JinRescue", "CINEMATIC - JIN RESCUE" )
+QuestStage( "08x03s &Reza_Q1_Name& (Reza_Q1/Reza_Q1_Opening cells_Start)", "Reza_Q1", "Reza_Q1_Opening cells_Start" )
+QuestStage( "08x03s &Reza_Q1_Name& (Reza_Q1/Reza_Q1_Opening cells_)", "Reza_Q1", "Reza_Q1_Opening cells_" )
+QuestStage( "08x03s &Reza_Q1_Name& (Reza_Q1/Reza_Q1_Opening cells_End)", "Reza_Q1", "Reza_Q1_Opening cells_End" )
+QuestStage( "08x05s &Patrick_Q1_BillDead_Name& (Patrick_Q1_BillDead/ Patrick_Q1_BillDead_Start)", "Patrick_Q1_BillDead", " Patrick_Q1_BillDead_Start" )
+QuestStage( "08x05s &Patrick_Q1_BillDead_Name& (Patrick_Q1_BillDead/ Patrick_Q1_BillDead_End )", "Patrick_Q1_BillDead", " Patrick_Q1_BillDead_End " )
+QuestStage( "08x05s &Tim_Q1_BringDocuments_Name& (Tim_Q1_BringDocuments/ Tim_Q1_Documents_Start)", "Tim_Q1_BringDocuments", " Tim_Q1_Documents_Start" )
+QuestStage( "08x05s &Tim_Q1_BringDocuments_Name& (Tim_Q1_BringDocuments/ Tim_Q1_Documents_End)", "Tim_Q1_BringDocuments", " Tim_Q1_Documents_End" )

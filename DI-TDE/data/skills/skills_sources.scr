@@ -1,0 +1,9 @@
+sub main()
+{	
+    Script("common_skills.xml");
+	Script("samb_skills.xml");    
+	Script("purna_skills.xml");
+	Script("xian_skills.xml");
+	Script("logan_skills.xml");
+    Script("ryder_skills.xml");
+}

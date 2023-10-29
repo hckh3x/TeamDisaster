@@ -1,0 +1,27 @@
+//man
+SeqTrack("m_cin00_dance01_loop", "m_cin00_dance01_loop.anm2", 0, 574, 30, 1, 0.5) 
+SeqTrack("m_cin00_dance02_loop", "m_cin00_dance02_loop.anm2", 0, 657, 30, 1, 0.5) 
+SeqTrack("m_cin00_dance03_loop", "m_cin00_dance03_loop.anm2", 0, 76, 30, 1, 0.5) 
+SeqTrack("m_cin00_dance04_loop", "m_cin00_dance04_loop.anm2", 0, 200, 30, 1, 0.5) 
+
+SeqTrack("m_cin00_drunk_stand01", "m_cin00_drunk_stand01.anm2", 0, 330, 30, 1, 0.5) 
+SeqTrack("m_cin00_sit01", "m_cin00_sit01.anm2", 0, 512, 30, 1, 0.5) 
+SeqTrack("m_cin00_sit02", "m_cin00_sit02.anm2", 0, 756, 30, 1, 0.5) 
+SeqTrack("m_cin00_barman", "m_cin00_barman.anm2", 0, 1058, 30, 1, 0.5) 
+
+
+// woman
+SeqTrack("w_cin00_dance01_loop", "w_cin00_dance01_loop.anm2", 0, 409, 30, 1, 0.5) 
+SeqTrack("w_cin00_dance02_loop", "w_cin00_dance02_loop.anm2", 0, 571, 30, 1, 0.5) 
+SeqTrack("w_cin00_dance03_loop", "w_cin00_dance03_loop.anm2", 0, 150, 30, 1, 0.5) 
+
+// flirt
+
+SeqTrack("w_cin00_flirt", "w_cin00_flirt.anm2", 0, 1200, 30, 1, 0.5) 
+SeqTrack("m_cin00_flirt", "m_cin00_flirt.anm2", 0, 1200, 30, 1, 0.5) 
+
+
+
+
+
+

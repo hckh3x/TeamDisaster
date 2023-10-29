@@ -1,0 +1,13 @@
+SeqTrack("cin00shote_FPPActor_00", "cin00shote_FPPActor_00.anm2", 0, 595, 30, 1, 0.5) 
+SeqTrack("cin00shote_Logan_00", "cin00shote_Logan_00.anm2", 0, 595, 30, 1, 0.5) 
+SeqTrack("cin00shote_WomanA_00", "cin00shote_WomanA_00.anm2", 0, 595, 30, 1, 0.5) 
+SeqTrack("cin00shote_WomanB_00", "cin00shote_WomanB_00.anm2", 0, 595, 30, 1, 0.5) 
+SeqTrack("cin00shote_ManC_00", "cin00shote_ManC_00.anm2", 0, 595, 30, 1, 0.5) 
+SeqTrack("cin00shote_SamB_00", "cin00shote_SamB_00.anm2", 0, 595, 30, 1, 0.5) 
+SeqTrack("cin00shote_Sinamoi_00", "cin00shote_Sinamoi_00.anm2", 0, 595, 30, 1, 0.5) 
+SeqTrack("cin00shote_Xian_00", "cin00shote_Xian_00.anm2", 0, 595, 30, 1, 0.5) 
+SeqTrack("cin00shote_Purna_00", "cin00shote_Purna_00.anm2", 0, 595, 30, 1, 0.5) 
+
+
+SeqTrack("cin00shote_Purna_00_mimic", "cin00shote_Purna_00_mimic.anm2", 0, 595, 30, 1, 0.5) 
+

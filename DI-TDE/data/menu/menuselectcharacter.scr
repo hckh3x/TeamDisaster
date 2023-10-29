@@ -1,0 +1,32 @@
+// Beast(i,s1,s2)
+// i - character index
+// s1 - icon
+// s2 - desc text
+
+sub main()
+{
+	CharParam(0,	"skill_BoomerangLvl1",				"&IntroSkill_Logan&");
+	CharParam(0,	"skill_Bulseye2",					"&IntroSkill_Logan_2&");
+	CharParam(0,	"skill_FireIsMyFriend",				"&IntroSkill_Logan_3&");
+	CharParam(0,	"skill_DrunkenRegenerate",			"&IntroSkill_Logan_4&");
+
+	CharParam(1,	"skill_BoostAura1",					"&IntroSkill_Purna&");
+	CharParam(1,	"skill_TeamSpirit1",				"&IntroSkill_Purna_2&");
+	CharParam(1,	"skill_RVAmmoManiac",				"&IntroSkill_Purna_3&");
+	CharParam(1,	"skill_GLBulletPenetrations",		"&IntroSkill_Purna_4&");
+
+	CharParam(2,	"skill_BackStabber",				"&IntroSkill_Xian&");
+	CharParam(2,	"skill_FuryPtsAfterEndRegainChance","&IntroSkill_Xian_2&");
+	CharParam(2,	"skill_DJSharpHitsFlurry",			"&IntroSkill_Xian_3&");
+	CharParam(2,	"skill_ExtraHeal1",					"&IntroSkill_Xian_4&");
+
+	CharParam(3,	"skill_Raming",						"&IntroSkill_SamB&");
+	CharParam(3,	"skill_Fury2",						"&IntroSkill_SamB_2&");
+	CharParam(3,	"skill_LastStand",					"&IntroSkill_SamB_3&");
+	CharParam(3,	"skill_RamKOKing",					"&IntroSkill_SamB_4&");
+
+	CharParam(4,	"skill_LevelUpWeaponSkillsFaster",	"&IntroSkill_John&");
+	CharParam(4,	"skill_FuryAoE",					"&IntroSkill_John_2&");
+	CharParam(4,	"skill_BSJohnSpecialAttack",		"&IntroSkill_John_3&");
+	CharParam(4,	"skill_MilitaryTraining",			"&IntroSkill_John_4&");
+}

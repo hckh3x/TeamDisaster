@@ -1,0 +1,162 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////
+// PhysicsObject - sign post.
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+!include("../Include/ODEPhysicsSingle.def")
+
+//-------------------------------------------------------------------------------------------------
+PhysicsParams()
+{
+    SetPhysicsSurfaceID(SRF_METAL)
+    SetVelsGate(0.0, 0)    // MunDee Estuvo aquí
+    SetWaterFloat(0.06)
+    SetAutoDisableVels(0.1, 0.3, 1)    // MunDee Estuvo aquí
+    SetAbsorbers(0.05, 0.05)
+    SetMaxVels(40.0, 5)    // MunDee Estuvo aquí
+    SetMaxWatchingTime(0.5)
+    SynchroInterpolation(1)
+    AllowDepthCompression(1)
+    TerrainCacheParams(1, 0, 10)
+    StaticMeshCacheParams(1, 0, 10)
+    TreesCacheParams(1, 0, 10)
+}
+
+//-------------------------------------------------------------------------------------------------
+JointsDefinition()   
+{
+    AddJoint("ball",[0,100,0],[0,0,0],1,1,100,1,1,1000)         // dodaj joint: typ (ball, universal, hinge...) 
+                                          // pozycja (znormalizowany uklad lokalny)
+                                          // axis (uklad lokalny)
+                                          // low limit
+                                          // high limit
+                                          // springyness
+                                          // motor velocity
+                                          // motor force
+                                          // break health
+}
+
+//-------------------------------------------------------------------------------------------------
+ContactParams("Terrain")
+{
+    ZeroFlags()
+    Mu(5)                  
+    
+    //SetModeFlag("dContactSoftERP")
+    //SetModeFlag("dContactSoftCFM")
+    //SoftERP(0.15) 
+    //SoftCFM(0.00001)
+
+    Ignore(0)
+}
+
+//-------------------------------------------------------------------------------------------------
+ContactParams("SimpleObjects")
+{
+    ZeroFlags()
+    Mu(5)                  
+    
+    //SetModeFlag("dContactSoftERP")
+    //SetModeFlag("dContactSoftCFM")
+    //SoftERP(0.25) 
+    //SoftCFM(0.00001)
+
+    Ignore(0)
+}
+
+//-------------------------------------------------------------------------------------------------
+ContactParams("NonODEObjects")
+{
+    ZeroFlags()
+    Mu(5)                  
+    
+    //SetModeFlag("dContactSoftERP")
+    //SetModeFlag("dContactSoftCFM")
+    //SoftERP(1.00)
+    //SoftCFM(0.0)
+    
+    Ignore(0)
+}
+
+//-------------------------------------------------------------------------------------------------
+ContactParams("ODEObjects")
+{
+    ZeroFlags()
+    Mu(5)                  
+    
+    //SetModeFlag("dContactSoftERP")
+    //SetModeFlag("dContactSoftCFM")
+    //SoftERP(0.25) 
+    //SoftCFM(0.00001)
+    
+    Ignore(0)
+}
+
+//-------------------------------------------------------------------------------------------------
+ContactParams("Water")
+{
+    ZeroFlags()
+    Mu(0.1)                  
+    
+    //SetModeFlag("dContactSoftERP")
+    //SetModeFlag("dContactSoftCFM")
+    //SoftERP(0.25) 
+    //SoftCFM(0.0000001)
+
+    Ignore(0)
+}
+
+//-------------------------------------------------------------------------------------------------
+
+
+//-------------------------------------------------------------------------------------------------
+/* DIDE CollisionSoundsParams()
+{
+    SetFreqMinMax(0.7, 1.2)
+    SetInterval(0.08)
+
+//  SetHitMinVolumeLinVel(3.0)    // MunDee Estuvo aquí
+//  SetHitMaxVolumeLinVel(5.0)    // MunDee Estuvo aquí
+
+    SetHitMinVolumeLinVel(1.5)    // MunDee Estuvo aquí
+    SetHitMaxVolumeLinVel(7.0)    // MunDee Estuvo aquí
+
+    SetFrictionMinVolumeLinVel(20.0)    // MunDee Estuvo aquí
+    SetFrictionMaxVolumeLinVel(50.0)    // MunDee Estuvo aquí
+    SetFrictionDotThreshold(0.04)
+    
+    HitSoundLightHeavyMassThreshold(20.0)
+    
+    HitSound(SRF_UNKNOWN,    "hit_default_XX.wav", "hit_big_default_XX.wav")
+    HitSound(SRF_WATER,      "hit_water_XX.wav",   "hit_big_water_XX.wav")
+    HitSound(SRF_SNOW,       "hit_snow_XX.wav",    "hit_big_snow_XX.wav")
+    HitSound(SRF_SAND,       "hit_ground_XX.wav",  "hit_big_ground_XX.wav")
+    HitSound(SRF_GRAVEL,     "hit_ground_XX.wav",  "hit_big_ground_XX.wav")
+    HitSound(SRF_GRASS,      "hit_grass_XX.wav",   "hit_big_grass_XX.wav")
+    HitSound(SRF_GROUND,     "hit_ground_XX.wav",  "hit_big_ground_XX.wav")
+    HitSound(SRF_MUD,        "hit_mud_XX.wav",     "hit_big_mud_XX.wav")
+    HitSound(SRF_FLESH,      "hit_flesh_XX.wav",   "hit_big_flesh_XX.wav")
+    HitSound(SRF_RUBBER,     "hit_rubber_XX.wav",  "hit_big_rubber_XX.wav")
+    HitSound(SRF_WOOD,       "hit_wood_XX.wav",    "hit_big_wood_XX.wav")
+    HitSound(SRF_PLASTIC,    "hit_plastic_XX.wav", "hit_big_plastic_XX.wav")
+    HitSound(SRF_TARMAC,     "hit_stone_XX.wav",   "hit_big_stone_XX.wav")
+    HitSound(SRF_GLASS,      "hit_glass_XX.wav",   "hit_big_glass_XX.wav")
+    HitSound(SRF_ICE,        "hit_glass_XX.wav",   "hit_big_glass_XX.wav")
+    HitSound(SRF_METAL,      "hit_metal_XX.wav",   "hit_big_metal_XX.wav")
+    HitSound(SRF_STONE,      "hit_stone_XX.wav",   "hit_big_stone_XX.wav")
+} */
+
+//-------------------------------------------------------------------------------------------------
+/* DIDE CollisionFX()
+{
+    ClearFXs()
+
+    AddHitFX(SRF_WATER,    "hit_water",1.5,  10)    // MunDee Estuvo aquí
+    AddHitFX(SRF_WATER,    "OneWaterRing",1.2,  2)    // MunDee Estuvo aquí
+    AddHitFX(SRF_GRASS,    "hit_ground",1.5,  10)    // MunDee Estuvo aquí
+    AddHitFX(SRF_GROUND,   "hit_ground",1.5,  10)    // MunDee Estuvo aquí
+    AddHitFX(SRF_SAND,     "hit_ground",1.5,  10)    // MunDee Estuvo aquí
+    AddHitFX(SRF_TARMAC,   "hit_ground",1.5,  10)    // MunDee Estuvo aquí
+    AddHitFX(SRF_MUD,      "hit_mud",1.5,  10)    // MunDee Estuvo aquí
+    AddHitFX(SRF_GRAVEL,   "hit_ground",1.5,  10)    // MunDee Estuvo aquí
+} */
+

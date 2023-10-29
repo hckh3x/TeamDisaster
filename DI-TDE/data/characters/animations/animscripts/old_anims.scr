@@ -1,0 +1,232 @@
+// spine tests
+//SeqTrack( "___w_broken_pose1_crying", 	"w_broken_pose1_cryingtest.anm2",	 0, 147, 30, 1, 0.5 )
+//SeqTrack( "___w_spine_twist_test",			    "w_spine_twist_test.anm2",	        0, 120, 10, 1, 0.5 )
+//SeqTrack( "___m_spine_twist_test",			    "_m_spine_twist_test.anm2",	        0, 120, 10, 1, 0.5 )
+//SeqTrack( "___m_spine_twist_test_smooth",			    "_m_spine_twist_test_smooth.anm2",	        0, 120, 10, 1, 0.5 )
+//SeqTrack( "___m_spine_twist_test_nosmooth",			    "_m_spine_twist_test_nosmooth.anm2",	        0, 120, 10, 1, 0.5 )
+//SeqTrack( "___m_spine_twist_test_simlpe",			    "_m_spine_twist_test_simple.anm2",	        0, 120, 10, 1, 0.5 )
+
+// Uzywane stare animacje
+//[nosek_20100519] SeqTrack( "_I_Upset_WalkForward_01",			    "_I_Upset_WalkForward_01.anm2",	        0, 33, 30, 1, 0.5 )
+//[nosek_20100519] SeqTrack( "_I_Calm_WalkForward_01",			        "_I_Calm_WalkForward_01.anm2",	        0, 102, 30, 1, 0.5 )
+
+SeqTrack( "_I_Upset_GrabFromStand_v01",			    "_I_Upset_Berserker_01.anm2",	        0, 68, 30, 1, 0.5 )
+{
+    Event(0, EVENT_GRAB_CHECK_START)
+	Event(68, EVENT_GRAB_CHECK_END)
+}
+
+SeqTrack( "MZ_Clinch_Loop",			    "M_FPP_Stick_Stand_Melee_Clinch_Loop.anm2",	        0, 90, 30, 1, 0.5 )
+SeqTrack( "MZ_Clinch_End",			    "MZ_Stick_Stand_Melee_Clinch_End.anm2",	        0, 40, 30, 1, 0.5 )
+
+
+//[nosek_20100519] SeqTrack( "_I_Upset_RunforwardtoStand_v01",	        "_I_Upset_AttackInRunforwardtoStand_01.anm2",	0, 57, 40, 1, 0.5 ) //60
+//{
+//    Event(5, VIS_EVENT_STEP_RIGHT)
+//	Event(14, VIS_EVENT_STEP_LEFT)
+//    Event(22, VIS_EVENT_STEP_RIGHT)
+//	Event(30, VIS_EVENT_STEP_LEFT)
+//    Event(36, EVENT_CANNOT_ATTACK)
+//    Event(37, EVENT_FORCE_EXECUTE_BERSERKER_ATTACK)
+//    Event(38, VIS_EVENT_STEP_RIGHT)
+//    Event(46, EVENT_APPLY_DAMAGE_LEFT)
+//	Event(47, VIS_EVENT_STEP_LEFT)
+//    Event(55, VIS_EVENT_STEP_RIGHT)
+//}
+//[nosek_20100519] SeqTrack( "_I_Upset_AttackInRunforwardtoStand_v01",	"_I_Upset_AttackInRunforwardtoStand_01.anm2",	36, 57, 40, 1, 0.5 ) //60
+//{
+//    Event(2, VIS_EVENT_STEP_RIGHT)
+//	Event(11, VIS_EVENT_STEP_LEFT)
+//    Event(12, EVENT_APPLY_DAMAGE_LEFT)
+//    Event(17, EVENT_CAN_BREAK_ATTACK)
+//    Event(19, VIS_EVENT_STEP_RIGHT)
+//}
+
+//[nosek_20100519] SeqTrack( "_I_upset_laying_v01",			        "_I_KOReactionFront_01.anm2",	    33, 35, 30, 1, 0.5 )
+//[nosek_20100729] SeqTrack( "_I_upset_standup_v01",			        "_I_KOReactionFront_01.anm2",	    35, 124, 30, 1, 0.5 )
+//{
+//    Event(0, EVENT_CAN_BE_FINISHED_START)
+//    Event(0, EVENT_LYING_ELLIPSOID)
+//    Event(0, EVENT_FALL_ON_HIT_ENABLE)
+//    Event(6, EVENT_CAN_BE_FINISHED_END)
+//    Event(60, EVENT_STAND_UP_ELLIPSOID)
+//    Event(80, EVENT_FALL_ON_HIT_DISABLE)
+//    Event(87, EVENT_STOOD_UP)
+//}
+//[nosek_20100519] SeqTrack( "_I_upset_laying_v02",			        "_I_ReactInRun_LR_01.anm2",	        45, 47, 30, 1, 0.5 )
+//[nosek_20100729] SeqTrack( "_I_upset_standup_v02",			        "_I_ReactInRun_LR_01.anm2",	        47, 124, 30, 1, 0.5 )
+//{
+//    Event(0, EVENT_CAN_BE_FINISHED_START)
+//    Event(0, EVENT_LYING_ELLIPSOID)
+//    Event(0, EVENT_FALL_ON_HIT_ENABLE)
+//    Event(14, EVENT_CAN_BE_FINISHED_END)
+//    Event(63, EVENT_STAND_UP_ELLIPSOID)
+//    Event(65, EVENT_FALL_ON_HIT_DISABLE)
+//    Event(75, EVENT_STOOD_UP)
+//}
+//[nosek_20100519] SeqTrack( "_I_upset_laying_v03",			        "_I_ReactInRun_RL_01.anm2",	        52, 54, 30, 1, 0.5 )
+//[nosek_20100729] SeqTrack( "_I_upset_standup_v03",			        "_I_ReactInRun_RL_01.anm2",	        54, 128, 30, 1, 0.5 )
+//{
+//    Event(0, EVENT_CAN_BE_FINISHED_START)
+//    Event(0, EVENT_LYING_ELLIPSOID)
+//    Event(0, EVENT_FALL_ON_HIT_ENABLE)
+//    Event(10, EVENT_CAN_BE_FINISHED_END)
+//    Event(65, EVENT_STAND_UP_ELLIPSOID)
+//    Event(72, EVENT_FALL_ON_HIT_DISABLE)
+//    Event(73, EVENT_STOOD_UP)
+//}
+//[nosek_20100519] SeqTrack( "_I_upset_laying_v04",		            "_I_Upset_Run_Hitreaction_02.anm2",	70, 72, 30, 1, 0.5 )
+//[nosek_20100729] SeqTrack( "_I_upset_standup_v04",		            "_I_Upset_Run_Hitreaction_02.anm2",	72, 110, 30, 1, 0.5 )
+//{
+//    Event(0, EVENT_CAN_BE_FINISHED_START)
+//    Event(0, EVENT_LYING_ELLIPSOID)
+//    Event(0, EVENT_FALL_ON_HIT_ENABLE)
+//    Event(6, EVENT_CAN_BE_FINISHED_END)
+//    Event(28, EVENT_STAND_UP_ELLIPSOID)
+//    Event(34, EVENT_FALL_ON_HIT_DISABLE)
+//    Event(37, EVENT_STOOD_UP)
+//}
+
+//[nosek_20100519] SeqTrack( "_I_Taunt_v01",			                "_I_Upset_JumptoAngry_01.anm2",	    60, 126, 30, 1, 0.5 )
+
+//[nosek_20100519] SeqTrack( "_I_Upset_AttackSequence_v01",			"_I_Upset_AttackSequnce_01.anm2",	9, 72, 30, 1, 0.5 )
+//{
+//    Event(17, EVENT_APPLY_DAMAGE_LEFT)
+//    Event(26, EVENT_APPLY_DAMAGE_RIGHT)
+//    Event(37, EVENT_APPLY_DAMAGE_LEFT)
+//    Event(48, EVENT_APPLY_DAMAGE_RIGHT)
+//}
+
+// Animacje stare przerobione na szybciora dla Infecteda 
+
+//[nosek_20100519] SeqTrack( "_I_Calm_Stand_Idle_01",			        "_I_Calm_Stand_Idle_01.anm2",	0, 80, 30, 1, 0.5 )
+//[nosek_20100519] SeqTrack( "_I_KOReactionFront_01",			        "_I_KOReactionFront_01.anm2",	0, 149, 30, 1, 0.5 )
+//[nosek_20100519] SeqTrack( "_I_React_GUN-FuFinisher_01",			    "_I_React_GUN-FuFinisher_01.anm2",	0, 7, 30, 1, 0.5 )
+//[nosek_20100519] SeqTrack( "_I_React_Melee_DU_01",			        "_I_React_Melee_DU_01.anm2",	0, 61, 30, 1, 0.5 )
+//[nosek_20100519] SeqTrack( "_I_React_Melee_LR_01",			        "_I_React_Melee_LR_01.anm2",	0, 59, 30, 1, 0.5 )
+//[nosek_20100519] SeqTrack( "_I_React_Melee_RL_01",			        "_I_React_Melee_RL_01.anm2",	0, 66, 30, 1, 0.5 )
+//[nosek_20100519] SeqTrack( "_I_React_Melee_UD_01",			        "_I_React_Melee_UD_01.anm2",	0, 66, 30, 1, 0.5 )
+//[nosek_20100519] SeqTrack( "_I_ReactInRun_LR_01",			        "_I_ReactInRun_LR_01.anm2",	0, 161, 30, 1, 0.5 )
+//[nosek_20100519] SeqTrack( "_I_ReactInRun_RL_01",			        "_I_ReactInRun_RL_01.anm2",	0, 174, 30, 1, 0.5 )
+//[nosek_20100519] SeqTrack( "_I_Upset_AttackInRunforward_01",		    "_I_Upset_AttackInRunforward_01.anm2",	0, 68, 30, 1, 0.5 )
+//[nosek_20100519] SeqTrack( "_I_Upset_AttackL_01",			"_I_Upset_AttackL_01.anm2",	0, 30, 30, 1, 0.5 )
+//[nosek_20100519] SeqTrack( "_I_Upset_AttackR_01",			"_I_Upset_AttackR_01.anm2",	0, 30, 30, 1, 0.5 )
+//[nosek_20100519] SeqTrack( "_I_Upset_Bitleft_01",			"_I_Upset_Bitleft_01.anm2",	0, 100, 30, 1, 0.5 )
+//[nosek_20100519] SeqTrack( "_I_Upset_BitRight_01",			"_I_Upset_BitRight_01.anm2",	0, 107, 30, 1, 0.5 )
+//[nosek_20100519] SeqTrack( "_I_Upset_Jump_01",				"_I_Upset_Jump_01.anm2",	0, 39, 30, 1, 0.5 )
+//[nosek_20100519] SeqTrack( "_I_Upset_JumptoAngry_01",			"_I_Upset_JumptoAngry_01.anm2",	0, 126, 30, 1, 0.5 )
+//[nosek_20100519] SeqTrack( "_I_Upset_JumptoPush_01",			"_I_Upset_JumptoPush_01.anm2",	0, 94, 30, 1, 0.5 )
+//[nosek_20100519] SeqTrack( "_I_Upset_JumptoStand_01",			"_I_Upset_JumptoStand_01.anm2",	0, 60, 30, 1, 0.5 )
+//[nosek_20100519] SeqTrack( "_I_Upset_R_JumpOver_Middle_01",		"_I_Upset_R_JumpOver_Middle_01.anm2",	0, 61, 30, 1, 0.5 )
+//[nosek_20100519] SeqTrack( "_I_Upset_Run_Hitreaction_02",		"_I_Upset_Run_Hitreaction_02.anm2",	0, 149, 30, 1, 0.5 )
+//SeqTrack( "_I_Upset_Runforward_01",			"_I_Upset_Runforward_01.anm2",	0, 68, 30, 1, 0.5 )
+//[nosek_20100519] SeqTrack( "_I_Upset_RunForward_Jump",			"_I_Upset_RunForward_Jump.anm2",	0, 45, 30, 1, 0.5 )
+//[nosek_20100519] SeqTrack( "_I_Upset_RunForwardAttackToStand_01",	"_I_Upset_RunForwardAttackToStand_01.anm2",	0, 51, 30, 1, 0.5 )
+//SeqTrack( "_I_Upset_RunForwardToStand_01",		"_I_Upset_RunForwardToStand_01.anm2",	0, 51, 30, 1, 0.5 )
+//[nosek_20100519] SeqTrack( "_I_Upset_SpeedUp_01",			"_I_Upset_SpeedUp_01.anm2",	0, 62, 30, 1, 0.5 )
+//[nosek_20100519] SeqTrack( "_I_Upset_Stand_Idle_01",			"_I_Upset_Stand_Idle_01.anm2",	0, 80, 30, 1, 0.5 )
+//[nosek_20100519] SeqTrack( "_I_Upset_Stand_WatchUp_01",			"_I_Upset_Stand_WatchUp_01.anm2",	0, 80, 30, 1, 0.5 )
+//[nosek_20100519] SeqTrack( "_I_Upset_StandtoPush_01",			"_I_Upset_StandtoPush_01.anm2",	0, 30, 30, 1, 0.5 )
+//[nosek_20100519] SeqTrack( "_I_Upset_WalkBackward_01",			"_I_Upset_WalkBackward_01.anm2",	0, 50, 30, 1, 0.5 )
+//[nosek_20100519] SeqTrack( "_I_Upset_F_BoxJumpUp_02",			"_I_Upset_F_BoxJumpUp_02.anm2",	0, 93, 60, 1, 0.5 )
+//[nosek_20100519] SeqTrack( "_J_Calm_Stand_Idle_01",			"_J_Calm_Stand_Idle_01.anm2",	0, 80, 30, 1, 0.5 )
+//[nosek_20100519] SeqTrack( "_J_Calm_WalkForward_01",			"_J_Calm_WalkForward_01.anm2",	0, 45, 30, 1, 0.5 )
+//[nosek_20100519] SeqTrack( "_J_KOReactionFront_01",			"_J_KOReactionFront_01.anm2",	0, 149, 30, 1, 0.5 )
+//[nosek_20100519] SeqTrack( "_J_React_GUN-FuFinisher_01",			"_J_React_GUN-FuFinisher_01.anm2",	0, 7, 30, 1, 0.5 )
+//[nosek_20100519] SeqTrack( "_J_React_Melee_DU_01",			"_J_React_Melee_DU_01.anm2",	0, 61, 30, 1, 0.5 )
+//[nosek_20100519] SeqTrack( "_J_React_Melee_LR_01",			"_J_React_Melee_LR_01.anm2",	0, 59, 30, 1, 0.5 )
+//[nosek_20100519] SeqTrack( "_J_React_Melee_RL_01",			"_J_React_Melee_RL_01.anm2",	0, 66, 30, 1, 0.5 )
+//[nosek_20100519] SeqTrack( "_J_React_Melee_UD_01",			"_J_React_Melee_UD_01.anm2",	0, 63, 30, 1, 0.5 )
+//[nosek_20100519] SeqTrack( "_J_ReactInRun_LR_01",			"_J_ReactInRun_LR_01.anm2",	0, 161, 30, 1, 0.5 )
+//[nosek_20100519] SeqTrack( "_J_ReactInRun_RL_01",			"_J_ReactInRun_RL_01.anm2",	0, 174, 30, 1, 0.5 )
+//[nosek_20100519] SeqTrack( "_J_Upset_AttackInRunforward_01",		"_J_Upset_AttackInRunforward_01.anm2",	0, 68, 30, 1, 0.5 )
+//[nosek_20100519] SeqTrack( "_J_Upset_AttackL_01",			"_J_Upset_AttackL_01.anm2",	0, 32, 30, 1, 0.5 )
+//[nosek_20100519] SeqTrack( "_J_Upset_AttackR_01",			"_J_Upset_AttackR_01.anm2",	0, 32, 30, 1, 0.5 )
+//[nosek_20100519] SeqTrack( "_J_Upset_AttackSequnce_01",			"_J_Upset_AttackSequnce_01.anm2",	0, 72, 30, 1, 0.5 )
+//[nosek_20100519] SeqTrack( "_J_Upset_Berserker_01",			"_J_Upset_Berserker_01.anm2",	0, 60, 30, 1, 0.5 )
+//[nosek_20100519] SeqTrack( "_J_Upset_Bitleft_01",			"_J_Upset_Bitleft_01.anm2",	0, 100, 30, 1, 0.5 )
+//[nosek_20100519] SeqTrack( "_J_Upset_BitRight_01",			"_J_Upset_BitRight_01.anm2",	0, 107, 30, 1, 0.5 )
+//[nosek_20100519] SeqTrack( "_J_Upset_Jump_01",				"_J_Upset_Jump_01.anm2",	0, 39, 30, 1, 0.5 )
+//[nosek_20100519] SeqTrack( "_J_Upset_JumptoAngry_01",			"_J_Upset_JumptoAngry_01.anm2",	0, 126, 30, 1, 0.5 )
+//[nosek_20100519] SeqTrack( "_J_Upset_JumptoPush_01",			"_J_Upset_JumptoPush_01.anm2",	0, 94, 30, 1, 0.5 )
+//[nosek_20100519] SeqTrack( "_J_Upset_JumptoStand_01",			"_J_Upset_JumptoStand_01.anm2",	0, 60, 30, 1, 0.5 )
+//[nosek_20100519] SeqTrack( "_J_Upset_R_JumpOver_Middle_01",		"_J_Upset_R_JumpOver_Middle_01.anm2",	0, 61, 30, 1, 0.5 )
+//[nosek_20100519] SeqTrack( "_J_Upset_Run_Hitreaction_02",		"_J_Upset_Run_Hitreaction_02.anm2",	0, 149, 30, 1, 0.5 )
+//[nosek_20100519] SeqTrack( "_J_Upset_RunForward_01",			"_J_Upset_RunForward_01.anm2",	0, 60, 30, 1, 0.5 )
+//[nosek_20100519] SeqTrack( "_J_Upset_RunForward_02",			"_J_Upset_RunForward_02.anm2",	0, 14, 30, 1, 0.5 )
+//[nosek_20100519] SeqTrack( "_J_Upset_RunForwardAttackToStand_01",	"_J_Upset_RunForwardAttackToStand_01.anm2",	0, 51, 30, 1, 0.5 )
+//[nosek_20100519] SeqTrack( "_J_Upset_RunForwardToStand_01",		"_J_Upset_RunForwardToStand_01.anm2",	0, 51, 30, 1, 0.5 )
+//[nosek_20100519] SeqTrack( "_J_Upset_SpeedUp_01",			"_J_Upset_SpeedUp_01.anm2",	0, 62, 30, 1, 0.5 )
+//[nosek_20100519] SeqTrack( "_J_Upset_Stand_Idle_01",			"_J_Upset_Stand_Idle_01.anm2",	0, 80, 30, 1, 0.5 )
+//[nosek_20100519] SeqTrack( "_J_Upset_Stand_WatchUp_01",			"_J_Upset_Stand_WatchUp_01.anm2",	0, 80, 30, 1, 0.5 )
+//[nosek_20100519] SeqTrack( "_J_Upset_StandtoPush_01",			"_J_Upset_StandtoPush_01.anm2",	0, 30, 30, 1, 0.5 )
+//[nosek_20100519] SeqTrack( "_J_Upset_WalkBackward_01",			"_J_Upset_WalkBackward_01.anm2",	0, 50, 30, 1, 0.5 )
+//[nosek_20100519] SeqTrack( "_J_Upset_WalkForward_01",			"_J_Upset_WalkForward_01.anm2",	0, 194, 30, 1, 0.5 )
+//[nosek_20100519] SeqTrack( "_J_Upset_F_BoxJumpUp_02",			"_J_Upset_F_BoxJumpUp_02.anm2",	0, 93, 30, 1, 0.5 )
+
+// Animacje strzelania z COJ2
+
+//[nosek_20100729] SeqTrack( "_Upset_P_S_HideGun",			"_Upset_P_S_HideGun.anm2",	0, 39, 30, 1, 0.5 )
+//{
+//    Event(25, EVENT_ITEM_DEACTIVATED)
+//}
+//[nosek_20100729] SeqTrack( "_Upset_P_S_ReadyGun",		"_Upset_P_S_HideGun.anm2",	39, 0, 30, 1, 0.5 )
+//{
+//    Event(14, EVENT_ITEM_ACTIVATED)
+//}
+//[nosek_20100729] SeqTrack( "_Upset_P_S_HitGun",			"_Upset_P_S_HitGun.anm2",	24, 45, 36, 1, 0.5 )
+//{
+//    Event(8, EVENT_APPLY_DAMAGE_UP)
+//}
+//[nosek_20100729] SeqTrack( "_Upset_P_S_HitGun2",			"_Upset_P_S_HitGun.anm2",	45, 66, 36, 1, 0.5 )
+//{
+//    Event(3, EVENT_APPLY_DAMAGE_UP)
+//}
+//[nosek_20100729] SeqTrack( "_Upset_P_S_Reload",			"_Upset_P_S_Reload.anm2",	0, 100, 30, 1, 0.5 )
+//[nosek_20100729] SeqTrack( "_Upset_P_S_Reload_slow",			"_Upset_P_S_Reload.anm2",	0, 100, 22, 1, 0.5 )
+//[nosek_20100729] SeqTrack( "_Upset_P_S_ShotSeq",			"_Upset_P_S_ShotSeq.anm2",	0, 103, 30, 1, 0.5 )
+//{
+//    Event(8, EVENT_APPLY_RANGED_DAMAGE)
+//    Event(39, EVENT_APPLY_RANGED_DAMAGE)
+//    Event(61, EVENT_APPLY_RANGED_DAMAGE)
+//}
+
+
+
+// Animacje wchodzenia i zeskakiwania z przeszkod z COJ2
+
+//[nosek_20100519] SeqTrack( "_calm_r_s_jump_down",			"_calm_r_s_boxjumpdown.anm2",	8, 80, 60, 1, 0.5 )
+//[nosek_20100729] SeqTrack( "_calm_r_s_jump_down_2",			"_calm_r_s_boxjumpdown2.anm2",	15, 60, 60, 1, 0.5 ) //85
+//[nosek_20100729] SeqTrack( "npc_calm_r_s_jump_down",			"_calm_r_s_boxjumpdown.anm2",	8, 80, 30, 1, 0.5 )
+
+//[nosek_20100519] SeqTrack( "_calm_r_s_jump_on",			    "_upset_2p_r_jumpover5.anm2",	27, 54, 60, 1, 0.5 )
+//[nosek_20100519] SeqTrack( "_calm_r_s_jump_off",			    "_upset_2p_r_jumpover5.anm2",	59, 79, 45, 1, 0.5 )
+//[nosek_20100519] SeqTrack( "_temp_c_n_s_climb120",			"_temp_c_n_s_climb120.anm2",	    0, 59, 30, 1, 0.5 )
+//[nosek_20100729] SeqTrack( "_temp_c_n_s_climb180",			"_temp_c_n_s_climb180.anm2",	    22, 80, 30, 1, 0.5 ) //95
+//{
+//    Event(1, VIS_EVENT_MOVEMENT_MOD_START)
+//    Event(5, VIS_EVENT_MOVEMENT_MOD_END)
+//    Event(5, EVENT_FINAL_POSITION)
+//}
+
+//[nosek_20100519] SeqTrack( "_upset_2p_r_jumpover5",			"_upset_2p_r_jumpover5.anm2",	0, 93, 30, 1, 0.5 )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<speakers>
+	<speaker name="prison_radio"/>
+	<speaker name="Joseph001">
+		<group name="Joseph001_QF02_Accomplished">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line>
+						<speech>&amp;Plumber_QF02_Accomplished_B&amp;</speech>
+						<audiofile>Plumber_QF02_Accomplished.ogg</audiofile>
+					</line>
+				</dialog>
+			</state>
+		</group>
+		<group name="Joseph001_QF02_InProgress_C">
+			<state type="near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Plumber_QF02_InProgress_06"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Joseph001_QF02_NF">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Plumber_QF02_Use_A"/>
+					<line id="Plumber_QF02_Use_B"/>
+					<decision>
+						<choice>
+							<speech>&amp;DialogSystem_Yes&amp;</speech>
+							<audiofile/>
+							<line id="Plumber_QF02_Agree"/>
+						</choice>
+						<main-choice>
+							<speech>&amp;DialogSystem_No&amp;</speech>
+							<audiofile/>
+						</main-choice>
+					</decision>
+					<line id="Plumber_QF02_Disagree"/>
+				</dialog>
+				<dialog/>
+			</state>
+			<state type="use_second" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Plumber_QF02_UseSecond"/>
+					<decision>
+						<choice>
+							<speech>&amp;DialogSystem_Yes&amp;</speech>
+							<audiofile/>
+							<line id="Plumber_QF02_Agree"/>
+						</choice>
+						<main-choice>
+							<speech>&amp;DialogSystem_No&amp;</speech>
+							<audiofile/>
+						</main-choice>
+					</decision>
+					<line id="Plumber_QF02_Disagree"/>
+				</dialog>
+			</state>
+			<state type="quest_brief" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Sewers_OpenSluices_Name"/>
+				</dialog>
+				<dialog>
+					<line id="Sewers_GoToACT2B_PaperLine_A"/>
+				</dialog>
+				<dialog>
+					<line id="Sewers_GoToACT2B_PaperLine_B"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Joseph001_QF02_InProgress_B" near_radius="100.0" middle_radius="150.0" far_radius="300.0">    <!-- Modificado -->
+			<state type="use" range="100.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Plumber_QF02_InProgress_07"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Joseph001_QF02_InProgress_A">
+			<state type="near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Plumber_QF02_InProgress_01"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Joseph001_QF02_InProgress_D" near_radius="100.0" middle_radius="150.0" far_radius="300.0">    <!-- Modificado -->
+			<state type="use" range="100.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Plumber_QF02_InProgress_08"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+</speakers>
+

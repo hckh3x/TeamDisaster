@@ -1,0 +1,119 @@
+!include("ai_data.def")
+!include("human_timing_events.def")
+!include("human_activities.def")
+!include("human_goals.def") 
+
+SoundRange(15.0)    // MunDee Estuvo aquí
+
+//////////passenger /////////
+
+Slot("driverhelper", 0, IDLE_NONE, 1,0.0,0.0,0.0, 0, 0, 0,0.2)     // MunDee Estuvo aquí
+{    
+    AiTypeDataSet("humancoop")
+    {
+        Data("vehicle_activation:standing::get_in:right", -2, "m_npc_car_passenger_get_in_right")
+        Data("vehicle_activation:standing::get_out:right", -2, "m_npc_car_passenger_get_out_right")
+
+        Data("idle:standing:stand::::", 10, "npc_unarmed_vehicle_passengervehicle")		
+    }
+    
+    AiTypeDataSet("human")
+    {
+        Data("vehicle_activation:standing::get_in:right", -2, "m_npc_car_passenger_get_in_right")
+        Data("vehicle_activation:standing::get_out:right", -2, "m_npc_car_passenger_get_out_right")
+
+        Data("idle:standing:stand::::", 10, "npc_unarmed_vehicle_passengervehicle")
+		Data("idle:standing:stand::high::", 10, "npc_unarmed_vehicle_passengervehicle_scared")
+		
+		Data("attack:standing:pistol:use_weapon:::", -2, "npc_beretta_vehicle_rightwindowshot_1")
+		Data("attack:standing:pistol:use_weapon:::", -2, "npc_beretta_vehicle_rightwindowshot_2")
+		Data("attack:standing::use_weapon:::", -2, "npc_unarmed_vehicle_passengervehicle_scared")
+    }
+}
+
+Slot("passengerhelper", 0, IDLE_NONE, 1,0.0,0.0,0.0, 0, 0, 0,0.2)     // MunDee Estuvo aquí
+{
+    AiTypeDataSet("humancoop")
+    {
+        Data("vehicle_activation:standing::get_in:left", -2, "m_npc_car_passenger_get_in_left")
+        Data("vehicle_activation:standing::get_out:left", -2, "m_npc_car_passenger_get_out_left")
+
+        Data("idle:standing:stand::::", 10, "npc_unarmed_vehicle_passengervehicle")
+    }
+    
+    AiTypeDataSet("human")
+    {
+        Data("vehicle_activation:standing::get_in:left", -2, "m_npc_car_passenger_get_in_left")
+        Data("vehicle_activation:standing::get_out:left", -2, "m_npc_car_passenger_get_out_left")
+
+        Data("idle:standing:stand::::", 10, "npc_unarmed_vehicle_passengervehicle")
+		Data("idle:standing:stand::high::", 10, "npc_unarmed_vehicle_passengervehicle_scared")
+		Data("attack:standing::use_weapon:::", -2, "npc_unarmed_vehicle_passengervehicle_scared")
+    }
+}
+
+Slot("", 1, IDLE_STAND, 1,-1.45,0.0,0.1, 1.0, 0.0, 0.0,0.2)     // MunDee Estuvo aquí
+{
+    AiTypeDataSet("zombie")
+    {       
+        Data("attack:standing::left_arm_strike::::", -2, "MZ_Upset_Stand_CarAttack01")
+        
+        Data("turn:standing::::", 0, "")
+    }
+    
+    //DeactivateOn(GOAL_REACT_ON_ENEMY)
+    DiscardOn(GOAL_REACT_ON_HIT)
+}
+
+Slot("", 1, IDLE_STAND, 1,1.45,0.0,0.35, -1.0, 0.0, 0.0,0.3)     // MunDee Estuvo aquí
+{
+    AiTypeDataSet("zombie")
+    {       
+        Data("attack:standing::left_arm_strike::::", -2, "MZ_Upset_Stand_CarAttack03")
+        
+        Data("turn:standing::::", 0, "")
+    }
+    
+    //DeactivateOn(GOAL_REACT_ON_ENEMY)
+    DiscardOn(GOAL_REACT_ON_HIT)
+}
+
+
+Slot("", 1, IDLE_STAND, 1,-0.3,0.0,3.4, 0.0, 0.0, -1.0,0.2)     // MunDee Estuvo aquí
+{
+    AiTypeDataSet("zombie")
+    {       
+		Data("attack:standing::left_arm_strike::::", -2, "MZ_Upset_Stand_CarAttack11")
+        
+        Data("turn:standing::::", 0, "")
+    }
+    
+    //DeactivateOn(GOAL_REACT_ON_ENEMY)
+    DiscardOn(GOAL_REACT_ON_HIT)
+}
+
+Slot("", 1, IDLE_STAND, 1,0.5,0.0,3.35, 0.0, 0.0, -1.0,0.2)     // MunDee Estuvo aquí
+{
+    AiTypeDataSet("zombie")
+    {   
+		Data("attack:standing::left_arm_strike::::", -2, "MZ_Upset_Stand_CarAttack10")    
+        
+        Data("turn:standing::::", 0, "")
+    }
+    
+    //DeactivateOn(GOAL_REACT_ON_ENEMY)
+    DiscardOn(GOAL_REACT_ON_HIT)
+}
+
+Slot("", 1, IDLE_STAND, 1,1.75,0.0,1.8, -1.0, 0.0, 0.0,0.2)     // MunDee Estuvo aquí
+{
+    AiTypeDataSet("zombie")
+    {       
+		Data("attack:standing::left_arm_strike::::", -2, "MZ_Upset_Stand_CarAttack11")  
+        
+        Data("turn:standing::::", 0, "")
+    }
+    
+    //DeactivateOn(GOAL_REACT_ON_ENEMY)
+    DiscardOn(GOAL_REACT_ON_HIT)
+}

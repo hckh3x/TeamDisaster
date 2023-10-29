@@ -1,0 +1,6 @@
+!QuestStage( s, s, s )
+
+QuestStage( "18x01  &ACT4A_Prison_FinalFight_Name& (ACT4A_Prison_FinalFight/Boss Fight - Start)", "ACT4A_Prison_FinalFight", "Boss Fight - Start" )
+QuestStage( "18x01  &ACT4A_Prison_FinalFight_Name& (ACT4A_Prison_FinalFight/CINEMATIC - JINs DEATH)", "ACT4A_Prison_FinalFight", "CINEMATIC - JINs DEATH" )
+QuestStage( "18x01  &ACT4A_Prison_FinalFight_Name& (ACT4A_Prison_FinalFight/Boss Fight - Final battle)", "ACT4A_Prison_FinalFight", "Boss Fight - Final battle" )
+QuestStage( "18x02  &DI_FINAL_Name& (DI_FINAL/CINEMATIC - CIN11 - LEAVING THE ISLAND )", "DI_FINAL", "CINEMATIC - CIN11 - LEAVING THE ISLAND " )

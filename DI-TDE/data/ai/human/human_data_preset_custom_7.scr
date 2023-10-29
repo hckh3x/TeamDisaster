@@ -1,0 +1,194 @@
+!include("ai_data.def")
+!include("human_timing_events.def")
+
+// sinamoi fighting
+
+////////////////////////////////////////////// DATA ///////////////////////////////////////////////
+
+//##################
+//#### ALARMING ####
+//##################
+//## alarming:is_standing:alarm_level:angle:direction
+//##################
+
+Data("alarming:standing:alarmed:0:", 0, "")
+Data("alarming:standing:alarmed:45:right", 0, "")
+Data("alarming:standing:alarmed:45:left", 0, "")
+Data("alarming:standing:alarmed:90:right", 0, "")
+Data("alarming:standing:alarmed:90:left", 0, "")
+Data("alarming:standing:alarmed:180:right", 0, "")
+Data("alarming:standing:alarmed:180:left", 0, "")
+
+//################
+//#### ATTACK ####
+//################
+//## attack:pose:item_type:attack_type:direction:attack_range:should_change_pose
+//################
+
+Data("attack:standing:stick:melee_weapon:::", -2, "melee_fighter_attack_01")
+Data("attack:standing:stick:melee_weapon:::", -2, "melee_fighter_attack_02")
+Data("attack:standing:stick:melee_weapon:::", -2, "melee_fighter_attack_03")
+Data("attack:standing:stick:melee_weapon:::", -2, "melee_fighter_attack_04")
+Data("attack:standing:stick:melee_weapon:::", -2, "melee_fighter_attack_05")
+Data("attack:standing:stick:melee_weapon:::", -2, "melee_fighter_attack_06")
+Data("attack:standing:stick:melee_weapon:::", -2, "melee_fighter_attack_07")
+Data("attack:standing:stick:melee_weapon:::", -2, "melee_fighter_attack_08")
+Data("attack:standing:stick:melee_weapon:::", -2, "melee_fighter_attack_combo_01")
+Data("attack:standing:stick:melee_weapon:::", -2, "melee_fighter_attack_combo_02")
+//Data("attack:standing:stick:melee_weapon:::", -2, "melee_fighter_attack_fake_01")
+//Data("attack:standing:stick:melee_weapon:::", -2, "melee_fighter_attack_fake_02")
+//Data("attack:standing:stick:melee_weapon:::", -2, "melee_fighter_attack_fake_03")
+Data("attack:standing:stick:strike_from_stand::2m:", -2, "melee_fighter_attack_ranged_fromstand_3m_01")
+Data("attack:standing:stick:strike_from_stand::2m:", -2, "melee_fighter_attack_ranged_fromstand_3m_02")
+Data("attack:standing:stick:strike_from_stand::2m:", -2, "melee_fighter_attack_ranged_fromstand_3m_03")
+Data("attack:standing:stick:strike_from_stand::2m:", -2, "melee_fighter_attack_ranged_fromstand_3m_04")
+Data("attack:standing:stick:strike_from_stand::2m:", -2, "melee_fighter_attack_ranged_fromstand_3m_05")
+Data("attack:standing:stick:strike_from_stand::2m:", -2, "melee_fighter_attack_ranged_fromstand_4m_01")
+Data("attack:standing:stick:strike_from_stand::2m:", -2, "melee_fighter_attack_ranged_fromstand_4m_02")
+Data("attack:standing:stick:strike_from_stand::2m:", -2, "melee_fighter_attack_ranged_2m_01")
+Data("attack:standing:stick:attack_from_move::2m:", -2, "melee_fighter_attack_ranged_running_3m_01")
+Data("attack:standing:stick:attack_from_move::2m:", -2, "melee_fighter_attack_ranged_running_4m_01")
+Data("attack:standing:stick:attack_from_move::2m:", -2, "melee_fighter_attack_ranged_running_4m_02")
+
+//#######################
+//#### HIT REACTIONS ####
+//#######################
+//## hit_reaction:pose:hit_reaction:item_type:damage_type:attacker_pos:body_part:direction:severity
+//#######################
+
+Data("hit_reaction:standing:pain::chainsaw::::", -2, "MZ_chainsow_death_loopB")
+
+/*Data("hit_reaction:standing:pain::all:rear:::", -2, "melee_fighter_hit_reaction_anger_back_01")
+Data("hit_reaction:standing:pain::all:::forward:", -2, "melee_fighter_hit_reaction_anger_back_01")
+
+Data("hit_reaction:standing:pain::all::head::", -2, "melee_fighter_confusion")
+
+Data("hit_reaction:standing:pain::all:::up:", -2, "melee_fighter_hit_reaction_anger_head_back_01")
+Data("hit_reaction:standing:pain::all:::left:", -2, "melee_fighter_hit_reaction_anger_head_left_01")
+Data("hit_reaction:standing:pain::all:::down:", -2, "melee_fighter_hit_reaction_anger_head_back_01")
+Data("hit_reaction:standing:pain::all:::right:", -2, "melee_fighter_hit_reaction_anger_head_right_01")
+Data("hit_reaction:standing:pain::all:::backward:", -2, "melee_fighter_hit_reaction_anger_head_back_01")*/
+
+//Data("hit_reaction:standing:pain::all:rear:::", -2, "melee_fighter_hit_reaction_counter_back_01")
+//Data("hit_reaction:standing:pain::all:::forward:", -2, "melee_fighter_hit_reaction_counter_back_01")
+
+Data("hit_reaction:standing:counter_attack::all:::backward:", -2, "melee_fighter_hit_reaction_counter_head_back_01")
+Data("hit_reaction:standing:counter_attack::all:::backward:heavy", -2, "melee_fighter_hit_reaction_counter_head_back_02")
+Data("hit_reaction:standing:counter_attack::all:::backward:", -2, "melee_fighter_hit_reaction_counter_head_back_03")
+
+Data("hit_reaction:standing:counter_attack::all:::up:", -2, "melee_fighter_hit_reaction_counter_head_back_01")
+Data("hit_reaction:standing:counter_attack::all:::up:heavy", -2, "melee_fighter_hit_reaction_counter_head_back_02")
+Data("hit_reaction:standing:counter_attack::all:::up:", -2, "melee_fighter_hit_reaction_counter_head_back_03")
+
+Data("hit_reaction:standing:counter_attack::all:::down:heavy", -2, "melee_fighter_hit_reaction_counter_head_left_02")
+Data("hit_reaction:standing:counter_attack::all:::down:heavy", -2, "melee_fighter_hit_reaction_counter_head_right_03")
+Data("hit_reaction:standing:counter_attack::all:::down:", -2, "melee_fighter_hit_reaction_counter_head_right_04")
+Data("hit_reaction:standing:counter_attack::all:::down:", -2, "melee_fighter_hit_reaction_counter_head_back_03")
+
+Data("hit_reaction:standing:counter_attack::all:::right:", -2, "melee_fighter_hit_reaction_counter_head_right_01")
+Data("hit_reaction:standing:counter_attack::all:::right:", -2, "melee_fighter_hit_reaction_counter_head_right_02")
+Data("hit_reaction:standing:counter_attack::all:::right:heavy", -2, "melee_fighter_hit_reaction_counter_head_right_03")
+Data("hit_reaction:standing:counter_attack::all:::right:", -2, "melee_fighter_hit_reaction_counter_head_right_04")
+
+Data("hit_reaction:standing:counter_attack::all:::left:", -2, "melee_fighter_hit_reaction_counter_head_left_01")
+Data("hit_reaction:standing:counter_attack::all:::left:heavy", -2, "melee_fighter_hit_reaction_counter_head_left_02")
+Data("hit_reaction:standing:counter_attack::all:::left:", -2, "melee_fighter_hit_reaction_counter_head_left_03")
+
+//##############
+//#### IDLE ####
+//##############
+//## idle:pose:idle_type:item_type:scare_level:is_idle_prepare:is_idle_finish
+//##############
+
+Data("idle:standing:stand:stick:::", -2, "melee_fighter_idle01")
+Data("idle:standing:stand:stick:::", -2, "melee_fighter_idle02")
+
+//##################
+//#### MOVEMENT ####
+//##################
+//## movement:pose:movement_type:alarm_level:item_type:ram_type:scare_level
+//##################
+
+Data("movement:standing:walk::stick:::", -2, "melee_fighter_walk_loop_forward01")
+Data("movement:standing:walk::stick:::", -2, "melee_fighter_walk_loop_forward02")
+Data("movement:standing:trot::stick:::", -2, "melee_fighter_walk_loop_forward01")
+Data("movement:standing:trot::stick:::", -2, "melee_fighter_walk_loop_forward02")
+Data("movement:standing:run::stick:::", -2, "melee_fighter_run_loop_01")
+Data("movement:standing:run::stick:::", -2, "melee_fighter_run_loop_02")
+Data("movement:standing:sprint::stick:::", -2, "melee_fighter_run_loop_01")
+Data("movement:standing:sprint::stick:::", -2, "melee_fighter_run_loop_02")
+
+//###############
+//#### START ####
+//###############
+//## start:start_pose:alarm_level:item_type:movement_type:angle:direction
+//###############
+
+Data("start:standing::::90:left", -2, "melee_fighter_walk_start_left")
+Data("start:standing::::90:right", -2, "melee_fighter_walk_start_right")
+Data("start:standing::::0:", -2, "melee_fighter_walk_start_forward01")
+Data("start:standing::::180:left", -2, "melee_fighter_walk_start_backwardleft")
+Data("start:standing::::180:right", -2, "melee_fighter_walk_start_backwardright")
+
+//##############
+//#### STOP ####
+//##############
+//## stop:end_pose:alarm_level:item_type:movement_type:angle:direction
+//##############
+
+Data("stop:standing::::0::false", -2, "melee_fighter_walk_stop_forward01")
+Data("stop:standing::::0::false", -2, "melee_fighter_walk_stop_forward02")
+
+//##################
+//##### DODGE ######
+//##################
+//## dodge:pose:item_type:type
+//##################
+
+Data("dodge:standing::", -2, "melee_fighter_dodge_back01")
+Data("dodge:standing::", -2, "melee_fighter_dodge_back02")
+Data("dodge:standing::", -2, "melee_fighter_dodge_back_counter2hands")
+Data("dodge:standing::", -2, "melee_fighter_dodge_back_counterfront")
+Data("dodge:standing::", -2, "melee_fighter_dodge_combo_back01")
+Data("dodge:standing::", -2, "melee_fighter_dodge_combo_back02")
+Data("dodge:standing::", -2, "melee_fighter_dodge_combo_back03")
+Data("dodge:standing::", -2, "melee_fighter_dodge_combo_back04")
+Data("dodge:standing::", -2, "melee_fighter_dodge_combo_back05")
+Data("dodge:standing::", -2, "melee_fighter_dodge_combo_down")
+Data("dodge:standing::", -2, "melee_fighter_dodge_combo_down02")
+Data("dodge:standing::", -2, "melee_fighter_dodge_down_counter2hands")
+Data("dodge:standing::", -2, "melee_fighter_dodge_down_counterfront02")
+Data("dodge:standing::left", -2, "melee_fighter_dodge_combo_left")
+Data("dodge:standing::left", -2, "melee_fighter_dodge_combo_left02")
+Data("dodge:standing::left", -2, "melee_fighter_dodge_left_counter2hands")
+Data("dodge:standing::left", -2, "melee_fighter_dodge_left_counterright")
+Data("dodge:standing::right", -2, "melee_fighter_dodge_combo_right")
+Data("dodge:standing::right", -2, "melee_fighter_dodge_combo_right03")
+Data("dodge:standing::right", -2, "melee_fighter_dodge_combo_right04")
+Data("dodge:standing::right", -2, "melee_fighter_dodge_right_counter2hands")
+Data("dodge:standing::right", -2, "melee_fighter_dodge_right_counterleft")
+Data("dodge:standing::", -2, "melee_fighter_dodge_down01")
+Data("dodge:standing::left", -2, "melee_fighter_dodge_left01")
+Data("dodge:standing::right", -2, "melee_fighter_dodge_right01")
+
+
+/////////////////////////////////////////// PARAMETERS ////////////////////////////////////////////
+
+ParamFloat("walk_speed_calm", 1.95)    // MunDee Estuvo aquí
+ParamFloat("walk_speed_alarmed", 1.95)    // MunDee Estuvo aquí
+ParamFloat("run_speed_calm", 3.9)    // MunDee Estuvo aquí
+ParamFloat("run_speed_alarmed", 3.9)    // MunDee Estuvo aquí
+ParamFloat("sprint_speed_calm", 3.9)    // MunDee Estuvo aquí
+ParamFloat("sprint_speed_alarmed", 3.9)    // MunDee Estuvo aquí
+ParamFloat("back_strafe_speed_mult", 0.6)
+ParamFloat("side_strafe_speed_mult", 0.95)
+ParamBool("can_defend", 1)
+ParamFloat("counter_attack_prob_mul", 1.0)
+ParamFloat("head_health_influence", 3.0)
+ParamFloat("health_mul", 15.0)
+ParamFloat("damage_mul", 7.0)
+ParamFloat("counter_attack_prob_mul", 1.0)
+ParamBool("can_keep_distance_during_melee", 0)
+ParamFloat("dodge_prob_mul", 10.0)
+ParamFloat("ellipsoid_size_mul", 1.5)
+ParamBool("enable_collisions_with_other_ai", 1)

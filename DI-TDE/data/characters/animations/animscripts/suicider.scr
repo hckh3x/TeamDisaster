@@ -1,0 +1,38 @@
+//--- nowe animacje Suicider
+
+//----------------   Suicider ---------------------
+
+
+SeqTrack( "suicider_startwalk_forward",		            	"suicider_startwalk_forward.anm2",	        0, 149, 30, 1, 0.5 )
+SeqTrack( "suicider_idle01",		            	"suicider_idle01.anm2",	        0, 520, 30, 1, 0.5 )
+SeqTrack( "suicider_walk01_forward",		            	"suicider_walk01_forward.anm2",	        0, 183, 30, 1, 0.5 )
+SeqTrack("suicider_start_180_left", 	  "suicider_start_180_left.anm2"    , 0, 150, 30, 1, 0.3)
+SeqTrack("suicider_start_180_right", 	  "suicider_start_180_right.anm2"    , 0, 150, 30, 1, 0.3)
+
+SeqTrack("suicider_walk2", 	  "suicider_walk2.anm2"    , 0, 300, 30, 1, 0.3)
+SeqTrack("suicider_walk", 	  "suicider_walk.anm2"    , 0, 160, 30, 1, 0.3)
+SeqTrack("suicider_startwalk", 	  "suicider_startwalk.anm2"    , 0, 79, 30, 1, 0.3)
+SeqTrack("suicider_idle_02", 	  "suicider_idle_02.anm2"    , 0, 390, 30, 1, 0.3)
+
+
+SeqTrack("suicider_explosion_1",		            	"suicider_explosion_01.anm2",	        70, 206, 35, 1, 0.5 ) //300
+{
+    Event(98, EVENT_DIE)
+    Event(98, VIS_EVENT_STOPANIM)
+}
+
+SeqTrack("suicider_explosion_2", 	  "suicider_explosion_2.anm2"    , 65, 181, 33, 1, 0.3) //245
+{
+    Event(78, EVENT_DIE)
+    Event(78, VIS_EVENT_STOPANIM)
+}
+
+SeqTrack("suicider_explosion_3", 	  "suicider_explosion_3.anm2"    , 118, 222, 32, 1, 0.3) //285
+{
+    Event(78, EVENT_DIE)
+    Event(78, VIS_EVENT_STOPANIM)
+}
+
+SeqTrack("suicider_walk_start_left", 	  "suicider_walk_start_left.anm2"    , 0, 150, 30, 1, 0.3)
+
+SeqTrack("suicider_walk_start_right", 	  "suicider_walk_start_right.anm2"    , 0, 150, 30, 1, 0.3)

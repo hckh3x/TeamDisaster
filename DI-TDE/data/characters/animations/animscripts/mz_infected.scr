@@ -1,0 +1,2115 @@
+//SeqTrack( "MZ_Upset_Sprint01",			            "MZ_Upset_Sprint01.anm2",	            0, 40, 30, 1, 0.5 )
+//SeqTrack( "MZ_Upset_Sprint02",			            "MZ_Upset_Sprint02.anm2",	            0, 40, 30, 1, 0.5 )
+
+
+
+//[nosek_20100519] SeqTrack( "mz_upset_sprint01_dash", "mz_upset_sprint01_dash.anm2", 0, 85, 30, 1, 0.5 )
+//{
+//    Event(5, VIS_EVENT_STEP_RIGHT)
+//    Event(12, VIS_EVENT_STEP_LEFT)
+//    Event(31, VIS_EVENT_STEP_RIGHT)
+//    Event(35, EVENT_CANNOT_ATTACK)
+//    Event(41, EVENT_FALL)
+//}
+
+SeqTrack( "mzi_upset_stand_idle01", "mzi_upset_stand_idle01.anm2", 0, 127, 30, 1, 0.5 )
+SeqTrack( "mzi_upset_stand_idle02", "mzi_upset_stand_idle01.anm2", 127, 415, 30, 1, 0.5 )
+{
+	Event(0, SOUND_EVENT_IDLE_TWITCH)
+}
+SeqTrack( "mzi_upset_stand_idle03", "mzi_upset_stand_idle02.anm2", 0, 295, 30, 1, 0.5 )
+{
+	Event(36, SOUND_EVENT_IDLE_TWITCH)
+}
+SeqTrack( "mzi_upset_stand_idle04", "mzi_upset_stand_idle03.anm2", 0, 222, 30, 1, 0.5 )
+SeqTrack( "mzi_upset_stand_idle05", "mzi_upset_stand_idle04.anm2", 0, 223, 30, 1, 0.5 )
+SeqTrack( "mzi_upset_stand_idle06", "mzi_upset_stand_idle05.anm2", 0, 190, 30, 1, 0.5 )
+{
+	Event(32, SOUND_EVENT_IDLE_TWITCH)
+}
+SeqTrack( "mzi_upset_stand_idle07", "mzi_upset_stand_idle05.anm2", 190, 314, 30, 1, 0.5 )
+{
+	Event(6, SOUND_EVENT_IDLE_RAGE)
+}
+SeqTrack( "mzi_upset_stand_idle08", "mzi_upset_stand_idle06.anm2", 0, 383, 30, 1, 0.5 )
+{
+	Event(139, SOUND_EVENT_IDLE_RAGE)
+}
+
+SeqTrack( "mzi_upset_stand_attack_fake_v01", "mzi_upset_stand_idle05.anm2", 231, 286, 30, 1, 0.5 )
+SeqTrack( "mzi_upset_stand_attack_fake_v02", "mzi_upset_stand_idle06.anm2", 354, 383, 30, 1, 0.5 )
+SeqTrack( "mzi_upset_stand_attack_fake_v03", "mzi_upset_stand_idle06.anm2", 58, 113, 30, 1, 0.5 )
+SeqTrack( "mzi_upset_stand_attack_fake_v04", "mzi_upset_stand_idle02.anm2", 208, 255, 30, 1, 0.5 )
+
+
+SeqTrack( "mzi_upset_taunt_01", "mzi_upset_taunt_01.anm2", 15, 54, 30, 1, 0.5 ) //71
+{
+    Event(0, SOUND_EVENT_TAUNT)
+} 
+SeqTrack( "mzi_upset_taunt_02", "mzi_upset_taunt_02.anm2", 0, 37, 30, 1, 0.5 ) //64
+{
+    Event(0, SOUND_EVENT_TAUNT)
+}
+SeqTrack( "mzi_upset_taunt_03", "mzi_upset_taunt_03.anm2", 0, 43, 30, 1, 0.5 ) //72
+{
+    Event(0, SOUND_EVENT_TAUNT)
+}
+SeqTrack( "mzi_upset_taunt_04", "mzi_upset_taunt_04.anm2", 0, 40, 30, 1, 0.5 ) //67
+{
+    Event(0, SOUND_EVENT_TAUNT)
+}
+
+// starts
+
+//[nosek_20100729] SeqTrack( "MZI_Upset_Stand_Sprint_Start_F", "MZI_Upset_Stand_Sprint_Start_F.anm2", 0, 30, 30, 1, 0.5 )
+//{
+//    Event(15, VIS_EVENT_STEP_LEFT)
+//    Event(27, VIS_EVENT_STEP_RIGHT)
+//	Event(24, VIS_EVENT_STOPANIM)
+//    Event(24, VIS_EVENT_ROTATION_MOD_END)
+//}
+//[nosek_20100729] SeqTrack( "MZI_Upset_Stand_Sprint_Start_R", "MZI_Upset_Stand_Sprint_Start_R.anm2", 0, 40, 30, 1, 0.5 )
+//{
+//    Event(19, VIS_EVENT_STEP_LEFT)
+//    Event(25, VIS_EVENT_STEP_RIGHT)
+//    Event(35, VIS_EVENT_STEP_LEFT)
+//	Event(38, VIS_EVENT_STOPANIM)
+//    Event(38, VIS_EVENT_ROTATION_MOD_END)
+//}
+//[nosek_20100729] SeqTrack( "MZI_Upset_Stand_Sprint_Start_L", "MZI_Upset_Stand_Sprint_Start_L.anm2", 0, 59, 30, 1, 0.5 )
+//{
+//    Event(12, VIS_EVENT_STEP_RIGHT)
+//    Event(20, VIS_EVENT_STEP_LEFT)
+//	Event(25, VIS_EVENT_ROTATION_MOD_END)
+//    Event(31, VIS_EVENT_STEP_RIGHT)
+//	Event(35, VIS_EVENT_STOPANIM)
+//    Event(39, VIS_EVENT_STEP_LEFT)
+//    Event(46, VIS_EVENT_STEP_RIGHT)
+//    Event(56, VIS_EVENT_STEP_LEFT)
+//}
+//[nosek_20100729] SeqTrack( "MZI_Upset_Stand_Sprint_Start_B", "MZI_Upset_Stand_Sprint_Start_B.anm2", 0, 46, 30, 1, 0.5 )
+//{
+//    Event(12, VIS_EVENT_STEP_LEFT)
+//	Event(17, VIS_EVENT_ROTATION_MOD_END)
+//    Event(18, VIS_EVENT_STEP_RIGHT)
+//	Event(25, VIS_EVENT_STOPANIM)
+//    Event(27, VIS_EVENT_STEP_LEFT)
+//    Event(35, VIS_EVENT_STEP_RIGHT)
+//    Event(43, VIS_EVENT_STEP_LEFT)
+//}
+
+//[nosek_20100729] SeqTrack("MZI_Walk_Start_F", 		        "M_TPP_Unarmed_Walk_Start_F.anm2"		, 0, 55, 30, 1, 0.3) 
+//{
+//	Event(18, VIS_EVENT_STEP_LEFT)
+//    Event(19, VIS_EVENT_ROTATION_MOD_END)
+//	Event(25 ,VIS_EVENT_STOPANIM)
+//	Event(34, VIS_EVENT_STEP_RIGHT)
+//	Event(50, VIS_EVENT_STEP_LEFT)
+//}
+//[nosek_20100729] SeqTrack("MZI_Walk_Start_B",		        "M_TPP_Unarmed_Walk_Start_B.anm2"		, 0, 91, 30, 1, 0.3) 
+//{
+//	Event(18, VIS_EVENT_STEP_RIGHT)
+//	Event(33, VIS_EVENT_STEP_LEFT)
+//	Event(46 ,VIS_EVENT_STOPANIM)
+//    Event(46, VIS_EVENT_ROTATION_MOD_END)
+//	Event(57, VIS_EVENT_STEP_RIGHT)
+//	Event(73, VIS_EVENT_STEP_LEFT)
+//	Event(89, VIS_EVENT_STEP_RIGHT)
+//}
+//[nosek_20100729] SeqTrack("MZI_Walk_Start_L", 		        "M_TPP_Unarmed_Walk_Start_L.anm2"		, 0, 77, 30, 1, 0.3) 
+//{
+//	Event(23, VIS_EVENT_STEP_LEFT)
+//	Event(34, VIS_EVENT_STOPANIM)
+//    Event(34, VIS_EVENT_ROTATION_MOD_END)
+//	Event(42, VIS_EVENT_STEP_RIGHT)
+//	Event(59, VIS_EVENT_STEP_LEFT)
+//	Event(75, VIS_EVENT_STEP_RIGHT)
+//}
+//[nosek_20100729] SeqTrack("MZI_Walk_Start_R", 		        "M_TPP_Unarmed_Walk_Start_R.anm2"		, 0, 77, 30, 1, 0.3) 
+//{
+//	Event(24, VIS_EVENT_STEP_RIGHT)
+//	Event(33 ,VIS_EVENT_STOPANIM)
+//    Event(33, VIS_EVENT_ROTATION_MOD_END)
+//	Event(42, VIS_EVENT_STEP_LEFT)
+//	Event(58, VIS_EVENT_STEP_RIGHT)
+//	Event(73, VIS_EVENT_STEP_LEFT)
+//}
+    
+//[nosek_20100519] SeqTrack( "MZI_Upset_Sprint_Stop", "MZI_Upset_Sprint_Stop.anm2", 0, 59, 30, 1, 0.5 )
+
+// Attacks
+
+SeqTrack( "mzi_upset_right_arm_strike_01", "mzi_upset_right_arm_strike_01.anm2", 0, 42, 30, 1, 0.5 ) //48
+{
+    Event(13, EVENT_REACT_ON_HIT_DISABLED)
+	Event(14, SOUND_EVENT_ATTACK)
+    Event(18, EVENT_APPLY_DAMAGE_LEFT)
+    Event(23, EVENT_REACT_ON_HIT_ENABLED)
+}
+
+SeqTrack( "mzi_upset_arm_strike_combo_01", "mzi_upset_arm_strike_combo_01.anm2", 0, 83, 30, 1, 0.5 )
+{
+	Event(10, SOUND_EVENT_ATTACK)
+    Event(20, EVENT_REACT_ON_HIT_DISABLED)
+    Event(25, EVENT_APPLY_DAMAGE_RIGHT)
+    Event(30, EVENT_REACT_ON_HIT_ENABLED)
+    Event(39, EVENT_REACT_ON_HIT_DISABLED)
+	Event(40, SOUND_EVENT_ATTACK)
+    Event(44, EVENT_APPLY_DAMAGE_LEFT)
+    Event(49, EVENT_REACT_ON_HIT_ENABLED)
+    
+    Event(55, EVENT_REACT_ON_HIT_DISABLED)
+    Event(60, EVENT_APPLY_DAMAGE_RIGHT)
+    Event(65, EVENT_REACT_ON_HIT_ENABLED)
+}
+
+SeqTrack( "mzi_upset_both_hands_strike_01", "mzi_upset_both_hands_strike_01.anm2", 0, 40, 30, 1, 0.5 ) //62
+{
+    Event(15, EVENT_REACT_ON_HIT_DISABLED)
+    Event(20, EVENT_APPLY_DAMAGE_FORWARD)
+    Event(20, EVENT_APPLY_DAMAGE_FORWARD)
+    Event(25, EVENT_REACT_ON_HIT_ENABLED)
+}
+
+SeqTrack( "mzi_upset_grab", "mzi_upset_both_hands_strike_01.anm2", 8, 21, 25, 1, 0.5 )
+{
+	Event(0, SOUND_EVENT_GRAB_ATTACK)
+    Event(0, EVENT_GRAB_CHECK_START)
+}
+
+//[nosek_20100519] SeqTrack( "mzi_upset_right_arm_strike_02", "mzi_upset_right_arm_strike_02.anm2", 0, 45, 30, 1, 0.5 )
+//{
+//    Event(20, EVENT_APPLY_DAMAGE_UP)
+//}
+
+SeqTrack( "mzi_upset_left_arm_strike_01", "mzi_upset_left_arm_strike_01.anm2", 4, 47, 30, 1, 0.5 ) //50
+{
+    Event(16, EVENT_REACT_ON_HIT_DISABLED)
+	Event(17, SOUND_EVENT_ATTACK)
+    Event(21, EVENT_APPLY_DAMAGE_RIGHT)
+    Event(26, EVENT_REACT_ON_HIT_ENABLED)
+}
+
+SeqTrack( "mzi_upset_stand_attack_push", "mzi_upset_run_hit_push_01.anm2", 47, 77, 30, 1, 0.5 )
+{
+	Event(10, SOUND_EVENT_ATTACK)
+    Event(12, EVENT_REACT_ON_HIT_DISABLED)
+    Event(17, EVENT_APPLY_DAMAGE_FORWARD)
+    Event(21, EVENT_REACT_ON_HIT_ENABLED)
+}
+
+//SeqTrack( "mzi_dodge_01", "MZI_Upset_Evade_01.anm2", 0, 21, 30, 1, 0.5 )
+//SeqTrack( "mzi_dodge_02", "MZI_Upset_Evade_02.anm2", 0, 23, 30, 1, 0.5 )
+
+// Movement
+
+
+//[nosek_20100519] SeqTrack( "mzi_upset_sprint_loop", "mzi_upset_sprint_loop.anm2", 0, 32, 30, 1, 0.5 )
+//{
+//    Event(7, VIS_EVENT_STEP_RIGHT)
+//	Event(15, VIS_EVENT_STEP_LEFT)
+//	Event(23, VIS_EVENT_STEP_RIGHT)
+//	Event(32, VIS_EVENT_STEP_LEFT)
+//}
+
+//[nosek_20100729] SeqTrack( "mzi_upset_sprint_v01", "MZI_Upset_Sprint_v01.anm2", 0, 27, 30, 1, 0.5 )
+//{
+//    Event(2, VIS_EVENT_STEP_LEFT)
+//	Event(9, VIS_EVENT_STEP_RIGHT)
+//	Event(16, VIS_EVENT_STEP_LEFT)
+//    Event(23, VIS_EVENT_STEP_RIGHT)
+//}
+//[nosek_20100729] SeqTrack( "mzi_upset_sprint_v02", "MZI_Upset_Sprint_v02.anm2", 0, 26, 30, 1, 0.5 )
+//{
+//    Event(2, VIS_EVENT_STEP_LEFT)
+//	Event(9, VIS_EVENT_STEP_RIGHT)
+//	Event(15, VIS_EVENT_STEP_LEFT)
+//    Event(22, VIS_EVENT_STEP_RIGHT)
+//}
+//[nosek_20100729] SeqTrack( "mzi_upset_sprint_v03", "MZI_Upset_Sprint_v03.anm2", 0, 28, 30, 1, 0.5 )
+//{
+//    Event(2, VIS_EVENT_STEP_LEFT)
+//	Event(9, VIS_EVENT_STEP_RIGHT)
+//	Event(17, VIS_EVENT_STEP_LEFT)
+//    Event(24, VIS_EVENT_STEP_RIGHT)
+//}
+//[nosek_20100729] SeqTrack( "mzi_upset_sprint_v04", "MZI_Upset_Sprint_v04.anm2", 0, 29, 30, 1, 0.5 )
+//{
+//    Event(2, VIS_EVENT_STEP_RIGHT)
+//	Event(9, VIS_EVENT_STEP_LEFT)
+//    Event(17, VIS_EVENT_STEP_RIGHT)
+//	Event(24, VIS_EVENT_STEP_LEFT)
+//}
+
+SeqTrack( "mzi_upset_sprint", "mz_upset_sprint.anm2", 0, 86, 25, 1, 0.5 )
+{
+    Event(0, VIS_EVENT_STEP_RIGHT)
+	Event(7, VIS_EVENT_STEP_LEFT)
+    Event(14, VIS_EVENT_STEP_RIGHT)
+	Event(21, VIS_EVENT_STEP_LEFT)
+    Event(28, VIS_EVENT_STEP_RIGHT)
+	Event(36, VIS_EVENT_STEP_LEFT)
+    Event(44, VIS_EVENT_STEP_RIGHT)
+	Event(51, VIS_EVENT_STEP_LEFT)
+    Event(58, VIS_EVENT_STEP_RIGHT)
+	Event(65, VIS_EVENT_STEP_LEFT)
+    Event(72, VIS_EVENT_STEP_RIGHT)
+	Event(79, VIS_EVENT_STEP_LEFT)
+    Event(86, VIS_EVENT_STEP_RIGHT)
+}
+
+//[nosek_20100519] 
+SeqTrack( "mzi_upset_sprint_start180l_lleg", "mzi_upset_sprint_start180L_LLeg.anm2", 4, 55, 30, 1, 0.5 )
+{
+    Event(0, VIS_EVENT_LEFT_FEET_FORWARD)
+    Event(13, VIS_EVENT_STEP_RIGHT)
+	Event(19, VIS_EVENT_STEP_LEFT)
+    Event(27, VIS_EVENT_STEP_RIGHT)
+	Event(30, VIS_EVENT_STOPANIM)
+    Event(30, VIS_EVENT_ROTATION_MOD_END)
+    Event(33, VIS_EVENT_STEP_LEFT)
+	Event(42, VIS_EVENT_STEP_RIGHT)
+}
+//[nosek_20100519] 
+SeqTrack( "mzi_upset_sprint_start180L_RLeg", "mzi_upset_sprint_start180L_RLeg.anm2", 0, 55, 30, 1, 0.5 )
+{
+    Event(0, VIS_EVENT_RIGHT_FEET_FORWARD)
+    Event(11, VIS_EVENT_STEP_RIGHT)
+	Event(17, VIS_EVENT_STEP_LEFT)
+    Event(19, VIS_EVENT_ROTATION_MOD_END)    
+    Event(25, VIS_EVENT_STEP_RIGHT)
+    Event(26, VIS_EVENT_STOPANIM)    
+	Event(33, VIS_EVENT_STEP_LEFT)
+	Event(40, VIS_EVENT_STEP_RIGHT)
+}
+//[nosek_20100519] 
+SeqTrack( "mzi_upset_sprint_start180R_LLeg", "mzi_upset_sprint_start180R_LLeg.anm2", 0, 56, 30, 1, 0.5 )
+{
+    Event(0, VIS_EVENT_LEFT_FEET_FORWARD)
+    Event(11, VIS_EVENT_STEP_LEFT)
+	Event(16, VIS_EVENT_STEP_RIGHT)
+    Event(22, VIS_EVENT_ROTATION_MOD_END)
+	Event(28, VIS_EVENT_STEP_LEFT)
+    Event(29, VIS_EVENT_STOPANIM)
+    Event(35, VIS_EVENT_STEP_RIGHT)
+	Event(42, VIS_EVENT_STEP_LEFT)
+}
+//[nosek_20100519] 
+SeqTrack( "mzi_upset_sprint_start180R_RLeg", "mzi_upset_sprint_start180R_RLeg.anm2", 4, 60, 30, 1, 0.5 )
+{
+    Event(0, VIS_EVENT_RIGHT_FEET_FORWARD)
+    Event(8, VIS_EVENT_STEP_LEFT)
+	Event(16, VIS_EVENT_STEP_RIGHT)
+    Event(20, VIS_EVENT_ROTATION_MOD_END)
+    Event(21, VIS_EVENT_STOPANIM)
+	Event(25, VIS_EVENT_STEP_LEFT)
+    Event(33, VIS_EVENT_STEP_RIGHT)
+	Event(40, VIS_EVENT_STEP_LEFT)
+}
+//[nosek_20100519] 
+SeqTrack( "mzi_upset_sprint_start90L_LLeg", "mzi_upset_sprint_start90L_LLeg.anm2", 4, 44, 30, 1, 0.5 )
+{
+    Event(0, VIS_EVENT_LEFT_FEET_FORWARD)
+    Event(5, VIS_EVENT_STEP_RIGHT)
+	Event(13, VIS_EVENT_STEP_LEFT)
+    Event(16, VIS_EVENT_ROTATION_MOD_END)
+    Event(19, VIS_EVENT_STOPANIM)
+    Event(23, VIS_EVENT_STEP_RIGHT)
+	Event(30, VIS_EVENT_STEP_LEFT)
+	Event(37, VIS_EVENT_STEP_RIGHT)
+}
+//[nosek_20100519] 
+SeqTrack( "mzi_upset_sprint_start90L_RLeg", "mzi_upset_sprint_start90L_RLeg.anm2", 6, 44, 30, 1, 0.5 )
+{
+    Event(0, VIS_EVENT_RIGHT_FEET_FORWARD)
+    Event(6, VIS_EVENT_STEP_RIGHT)
+	Event(16, VIS_EVENT_STEP_LEFT)
+    Event(16, VIS_EVENT_ROTATION_MOD_END)
+    Event(19, VIS_EVENT_STOPANIM)
+    Event(25, VIS_EVENT_STEP_RIGHT)
+	Event(32, VIS_EVENT_STEP_LEFT)
+}
+//[nosek_20100519] 
+SeqTrack( "mzi_upset_sprint_start90R_LLeg", "mzi_upset_sprint_start90R_LLeg.anm2", 3, 59, 30, 1, 0.5 )
+{
+    Event(0, VIS_EVENT_LEFT_FEET_FORWARD)
+    Event(21, VIS_EVENT_STEP_RIGHT)
+    Event(22, VIS_EVENT_ROTATION_MOD_END)
+    Event(24, VIS_EVENT_STOPANIM)
+	Event(29, VIS_EVENT_STEP_LEFT)
+    Event(37, VIS_EVENT_STEP_RIGHT)
+	Event(44, VIS_EVENT_STEP_LEFT)
+}
+
+//[nosek_20100729] SeqTrack( "mzi_upset_sprint_start90R_RLeg", "mzi_upset_sprint_start90R_RLeg.anm2", 0, 55, 30, 1, 0.5 )
+//{
+//    Event(0, VIS_EVENT_RIGHT_FEET_FORWARD)
+//    Event(15, VIS_EVENT_STEP_RIGHT)
+//    Event(20, VIS_EVENT_ROTATION_MOD_END)
+//	Event(25, VIS_EVENT_STEP_LEFT)
+//    Event(33, VIS_EVENT_STEP_RIGHT)
+//	Event(40, VIS_EVENT_STEP_LEFT)
+//	Event(47, VIS_EVENT_STEP_RIGHT)
+//	Event(54, VIS_EVENT_STEP_LEFT)
+//}
+
+
+//[nosek_20100519] 
+SeqTrack( "mzi_upset_sprint_startF_LLeg", 	   "mzi_upset_sprint_startF_LLeg.anm2", 6, 30, 30, 1, 0.5 )
+{
+    Event(0, VIS_EVENT_LEFT_FEET_FORWARD)
+    Event(5, VIS_EVENT_STEP_LEFT)
+    Event(11, VIS_EVENT_ROTATION_MOD_END)
+	Event(15, VIS_EVENT_STEP_RIGHT)
+    Event(16, VIS_EVENT_STOPANIM)
+	Event(22, VIS_EVENT_STEP_LEFT)    
+}
+//[nosek_20100519] 
+SeqTrack( "mzi_upset_sprint_startF_RLeg", 	   "mzi_upset_sprint_startF_RLeg.anm2", 9, 30, 30, 1, 0.5 )
+{
+    Event(0, VIS_EVENT_RIGHT_FEET_FORWARD)
+    Event(7, VIS_EVENT_STEP_RIGHT)
+    Event(9, VIS_EVENT_ROTATION_MOD_END)
+    Event(11, VIS_EVENT_STOPANIM)
+	Event(17, VIS_EVENT_STEP_LEFT)
+}
+
+//[nosek_20100519] 
+SeqTrack( "mzi_upset_sprint_stop180R_LLeg", 	   "mzi_upset_sprint_stop180R_LLeg.anm2", 0, 72, 30, 1, 0.5 ) //83
+{
+    //Event(0, VIS_EVENT_STEP_RIGHT)
+    //Event(8, VIS_EVENT_STEP_LEFT)
+    Event(0, VIS_EVENT_STEP_RIGHT)
+    Event(2, VIS_EVENT_MAX_ANIM_CUT_TIME)    
+    Event(7, VIS_EVENT_STEP_LEFT)
+    Event(12, VIS_EVENT_STEP_RIGHT)
+    Event(27, VIS_EVENT_STEP_LEFT)
+    Event(24, VIS_EVENT_STEP_RIGHT)
+    Event(39, VIS_EVENT_ROTATION_MOD_START)
+    Event(52, VIS_EVENT_STEP_LEFT)
+}
+/*SeqTrack( "mzi_upset_sprint_stop180R_LLeg", 	   "mzi_upset_sprint_stop180R_LLeg.anm2", 0, 72, 30, 1, 0.5 ) //83
+{
+    Event(0, VIS_EVENT_STEP_RIGHT)
+    Event(8, VIS_EVENT_STEP_LEFT)
+    Event(17, VIS_EVENT_STEP_RIGHT)
+    Event(19, VIS_EVENT_MAX_ANIM_CUT_TIME)    
+    Event(24, VIS_EVENT_STEP_LEFT)
+    Event(29, VIS_EVENT_STEP_RIGHT)
+    Event(34, VIS_EVENT_STEP_LEFT)
+    Event(41, VIS_EVENT_STEP_RIGHT)
+    Event(56, VIS_EVENT_ROTATION_MOD_START)
+    Event(69, VIS_EVENT_STEP_LEFT)
+}*/
+//[nosek_20100519] 
+SeqTrack( "mzi_upset_sprint_stop90L_LLeg", 	   "mzi_upset_sprint_stop90L_LLeg.anm2", 0, 55, 30, 1, 0.5 ) //63
+{
+    //Event(0, VIS_EVENT_STEP_LEFT)
+    //Event(9, VIS_EVENT_STEP_RIGHT)
+    Event(0, VIS_EVENT_STEP_LEFT)
+    Event(3, VIS_EVENT_MAX_ANIM_CUT_TIME)
+    Event(7, VIS_EVENT_STEP_RIGHT)
+    Event(13, VIS_EVENT_STEP_LEFT)
+    Event(20, VIS_EVENT_STEP_RIGHT)
+    Event(27, VIS_EVENT_ROTATION_MOD_START)
+    Event(29, VIS_EVENT_STEP_LEFT)
+}
+/*SeqTrack( "mzi_upset_sprint_stop90L_LLeg", 	   "mzi_upset_sprint_stop90L_LLeg.anm2", 0, 55, 30, 1, 0.5 ) //63
+{
+    Event(0, VIS_EVENT_STEP_LEFT)
+    Event(9, VIS_EVENT_STEP_RIGHT)
+    Event(17, VIS_EVENT_STEP_LEFT)
+    Event(20, VIS_EVENT_MAX_ANIM_CUT_TIME)
+    Event(24, VIS_EVENT_STEP_RIGHT)
+    Event(30, VIS_EVENT_STEP_LEFT)
+    Event(37, VIS_EVENT_STEP_RIGHT)
+    Event(44, VIS_EVENT_ROTATION_MOD_START)
+    Event(46, VIS_EVENT_STEP_LEFT)
+}*/
+//[nosek_20100519] 
+SeqTrack( "mzi_upset_sprint_stop90R_LLeg", 	   "mzi_upset_sprint_stop90R_LLeg.anm2", 0, 52, 30, 1, 0.5 ) //58
+{
+    //Event(5, VIS_EVENT_STEP_LEFT)
+    Event(0, VIS_EVENT_STEP_RIGHT)
+    Event(3, VIS_EVENT_MAX_ANIM_CUT_TIME)
+    Event(8, VIS_EVENT_STEP_LEFT)
+    Event(14, VIS_EVENT_STEP_RIGHT)
+    Event(19, VIS_EVENT_STEP_LEFT)
+    Event(25, VIS_EVENT_STEP_RIGHT)
+    Event(30, VIS_EVENT_STEP_LEFT)
+    Event(30, VIS_EVENT_ROTATION_MOD_START)
+}
+/*SeqTrack( "mzi_upset_sprint_stop90R_LLeg", 	   "mzi_upset_sprint_stop90R_LLeg.anm2", 0, 52, 30, 1, 0.5 ) //58
+{
+    Event(5, VIS_EVENT_STEP_LEFT)
+    Event(14, VIS_EVENT_STEP_RIGHT)
+    Event(16, VIS_EVENT_MAX_ANIM_CUT_TIME)
+    Event(21, VIS_EVENT_STEP_LEFT)
+    Event(27, VIS_EVENT_STEP_RIGHT)
+    Event(32, VIS_EVENT_STEP_LEFT)
+    Event(38, VIS_EVENT_STEP_RIGHT)
+    Event(43, VIS_EVENT_STEP_LEFT)
+    Event(43, VIS_EVENT_ROTATION_MOD_START)
+}*/
+//[nosek_20100519] 
+SeqTrack( "mzi_upset_sprint_stop_LLeg", 	   		"mzi_upset_sprint_stopF_LLeg.anm2", 13, 48, 30, 1, 0.5 ) //55
+{
+    //Event(5, VIS_EVENT_STEP_LEFT)
+    Event(0, VIS_EVENT_STEP_RIGHT)    
+    Event(2, VIS_EVENT_MAX_ANIM_CUT_TIME)
+    Event(7, VIS_EVENT_STEP_LEFT)
+    Event(13, VIS_EVENT_STEP_RIGHT)
+    Event(18, VIS_EVENT_ROTATION_MOD_START)
+    Event(19, VIS_EVENT_STEP_LEFT)
+    Event(25, VIS_EVENT_STEP_RIGHT)
+    Event(31, VIS_EVENT_STEP_LEFT)
+}
+/*SeqTrack( "mzi_upset_sprint_stop_LLeg", 	   		"mzi_upset_sprint_stopF_LLeg.anm2", 0, 48, 30, 1, 0.5 ) //55
+{
+    Event(5, VIS_EVENT_STEP_LEFT)
+    Event(13, VIS_EVENT_STEP_RIGHT)
+    Event(15, VIS_EVENT_MAX_ANIM_CUT_TIME)
+    Event(20, VIS_EVENT_STEP_LEFT)
+    Event(26, VIS_EVENT_STEP_RIGHT)
+    Event(31, VIS_EVENT_ROTATION_MOD_START)
+    Event(32, VIS_EVENT_STEP_LEFT)    
+    Event(38, VIS_EVENT_STEP_RIGHT)
+    Event(44, VIS_EVENT_STEP_LEFT)
+}*/
+
+SeqTrack("mzi_upset_sprint_turn_90_l", 	         "MZI_Sprint_Sudden_Turn_90L.anm2",       0, 52, 30, 1, 0.5)
+{
+    Event(6, VIS_EVENT_STEP_LEFT)
+    Event(13, VIS_EVENT_STEP_RIGHT)
+    Event(15, VIS_EVENT_MAX_ANIM_CUT_TIME)
+    Event(20, VIS_EVENT_STEP_LEFT)
+    Event(22, VIS_EVENT_STEP_RIGHT)
+    Event(25, VIS_EVENT_ROTATION_MOD_START)
+	Event(27, VIS_EVENT_STEP_LEFT)
+    Event(28, EVENT_FINAL_POSITION)
+	Event(28, VIS_EVENT_STEP_RIGHT)
+    Event(30, VIS_EVENT_ROTATION_MOD_END)
+	Event(32, VIS_EVENT_STEP_LEFT)
+    Event(37, VIS_EVENT_STOPANIM)
+	Event(41, VIS_EVENT_STEP_RIGHT)
+    Event(49, VIS_EVENT_STEP_LEFT)
+}
+
+SeqTrack("mzi_upset_sprint_turn_90_r", 	         "MZI_Sprint_Sudden_Turn_90R.anm2", 0, 52, 30, 1, 0.5)
+{
+    Event(6, VIS_EVENT_STEP_RIGHT)
+    Event(13, VIS_EVENT_STEP_LEFT)
+    Event(15, VIS_EVENT_MAX_ANIM_CUT_TIME)
+    Event(20, VIS_EVENT_STEP_RIGHT)
+    Event(22, VIS_EVENT_STEP_LEFT)
+    Event(25, VIS_EVENT_ROTATION_MOD_START)
+	Event(27, VIS_EVENT_STEP_RIGHT)
+    Event(28, EVENT_FINAL_POSITION)
+	Event(28, VIS_EVENT_STEP_LEFT)
+    Event(30, VIS_EVENT_ROTATION_MOD_END)
+	Event(32, VIS_EVENT_STEP_RIGHT)
+    Event(37, VIS_EVENT_STOPANIM)
+	Event(41, VIS_EVENT_STEP_LEFT)
+    Event(49, VIS_EVENT_STEP_RIGHT)
+}
+
+SeqTrack("mzi_upset_sprint_turn_180_l", 	         "MZI_Sprint_Sudden_Turn_180L.anm2",       0, 77, 30, 1, 0.5)
+{
+    Event(6, VIS_EVENT_STEP_RIGHT)
+    Event(14, VIS_EVENT_STEP_LEFT)
+    Event(15, VIS_EVENT_MAX_ANIM_CUT_TIME)
+    Event(22, VIS_EVENT_STEP_RIGHT)
+    Event(29, VIS_EVENT_STEP_LEFT)
+	Event(35, VIS_EVENT_STEP_RIGHT)
+    Event(35, VIS_EVENT_ROTATION_MOD_START)
+    Event(35, EVENT_FINAL_POSITION)
+    Event(46, VIS_EVENT_ROTATION_MOD_END)
+	Event(47, VIS_EVENT_STEP_LEFT)
+	Event(54, VIS_EVENT_STEP_RIGHT)
+    Event(56, VIS_EVENT_STOPANIM)
+	Event(62, VIS_EVENT_STEP_LEFT)
+    Event(69, VIS_EVENT_STEP_RIGHT)
+}
+
+SeqTrack("mzi_upset_sprint_turn_180_r", 	         "MZI_Sprint_Sudden_Turn_180R_Mirror.anm2",       0, 71, 30, 1, 0.5)
+{
+    Event(6, VIS_EVENT_STEP_LEFT)
+    Event(14, VIS_EVENT_STEP_RIGHT)
+    Event(15, VIS_EVENT_MAX_ANIM_CUT_TIME)
+    Event(22, VIS_EVENT_STEP_LEFT)
+    Event(29, VIS_EVENT_STEP_RIGHT)
+	Event(35, VIS_EVENT_STEP_LEFT)
+    Event(35, VIS_EVENT_ROTATION_MOD_START)
+    Event(35, EVENT_FINAL_POSITION)
+    Event(46, VIS_EVENT_ROTATION_MOD_END)
+	Event(47, VIS_EVENT_STEP_RIGHT)
+	Event(54, VIS_EVENT_STEP_LEFT)
+    Event(56, VIS_EVENT_STOPANIM)
+	Event(62, VIS_EVENT_STEP_RIGHT)
+    Event(69, VIS_EVENT_STEP_LEFT)
+}
+
+
+//[nosek_20100729] SeqTrack( "mzi_upset_stand_walk_loop", "mzi_upset_walk_loop.anm2", 0, 72, 30, 1, 0.5 )
+//{
+//    Event(20, VIS_EVENT_STEP_RIGHT)
+//    Event(35, VIS_EVENT_STEP_LEFT)
+//    Event(53, VIS_EVENT_STEP_RIGHT)
+//    Event(70, VIS_EVENT_STEP_LEFT)
+//}
+
+//[nosek_20100729] SeqTrack( "mzi_upset_berserker_ram", "mzi_upset_run_hit_push_01.anm2", 0, 37, 30, 1, 0.5 ) //92
+//{
+//    Event(0, EVENT_FALL_ON_HIT_ENABLE)
+//    Event(1, VIS_EVENT_STEP_LEFT)
+//    Event(11, VIS_EVENT_STEP_RIGHT)
+//	Event(16, EVENT_CANNOT_ATTACK)
+//    Event(21, VIS_EVENT_STEP_LEFT)
+//    Event(23, EVENT_APPLY_DAMAGE_MEDIUM_PUSH)
+//    Event(31, VIS_EVENT_STEP_RIGHT)
+//}
+
+/*SeqTrack( "mzi_upset_berserker_right_arm", "mzi_upset_run_hit_push_01.anm2", 0, 37, 30, 1, 0.5 ) //92
+{
+	//Event(0, EVENT_REACT_ON_HIT_DISABLED)
+	Event(0, EVENT_FALL_ON_HIT_ENABLE)
+    Event(0, EVENT_FALL_ON_HIT_ENABLE)
+    Event(1, VIS_EVENT_STEP_LEFT)
+    Event(11, VIS_EVENT_STEP_RIGHT)
+	Event(18, SOUND_EVENT_ATTACK)
+	Event(18, EVENT_CANNOT_ATTACK)
+    Event(18, EVENT_FORCE_EXECUTE_BERSERKER_ATTACK)
+    Event(21, VIS_EVENT_STEP_LEFT)
+    Event(23, EVENT_APPLY_DAMAGE_LEFT)
+	//Event(25, EVENT_REACT_ON_HIT_ENABLED)
+    Event(31, VIS_EVENT_STEP_RIGHT)
+}
+
+SeqTrack( "mzi_upset_berserker_right_arm_strike", "mzi_upset_run_hit_push_01.anm2", 18, 37, 30, 1, 0.5 ) //92
+{
+	Event(0, SOUND_EVENT_ATTACK)
+    Event(3, VIS_EVENT_STEP_LEFT)
+    Event(5, EVENT_APPLY_DAMAGE_LEFT)
+    Event(13, VIS_EVENT_STEP_RIGHT)
+    Event(13, EVENT_CAN_BREAK_ATTACK)
+	//Event(16, EVENT_REACT_ON_HIT_ENABLED)
+}
+
+SeqTrack( "mzi_move_attack_right_arm", "mzi_upset_run_hit_push_01.anm2", 10, 37, 30, 1, 0.5 )
+{
+	//Event(0, EVENT_REACT_ON_HIT_DISABLED)    
+	Event(0, EVENT_FALL_ON_HIT_ENABLE)
+	Event(1, VIS_EVENT_MAX_ANIM_CUT_TIME)
+    Event(1, VIS_EVENT_STEP_RIGHT)
+	Event(8, EVENT_CANNOT_ATTACK)
+    Event(11, VIS_EVENT_STEP_LEFT)
+    Event(13, EVENT_APPLY_DAMAGE_LEFT)
+	//Event(15, EVENT_REACT_ON_HIT_ENABLED)
+    Event(21, VIS_EVENT_STEP_RIGHT)
+}*/
+
+SeqTrack( "mzi_upset_jump_over_high_01", "mzi_upset_climb_01.anm2", 10, 195, 36, 1, 0.5 )
+{
+    Event(6, EVENT_FALL_ON_HIT_ENABLE)
+    Event(29, VIS_EVENT_MOVEMENT_MOD_START)
+    Event(41, VIS_EVENT_MOVEMENT_MOD_END)
+    Event(41, EVENT_FINAL_POSITION)
+    Event(142, EVENT_TURN_ON_PHYSICS)
+    Event(155, EVENT_FALL_ON_HIT_DISABLE)
+    Event(156, VIS_EVENT_STOPANIM)
+}
+
+SeqTrack( "mzi_upset_jump_over_high_02", "mzi_upset_climb_02.anm2",	 22, 195, 36, 1, 0.5 )
+{
+    Event(2, EVENT_FALL_ON_HIT_ENABLE)
+    Event(15, VIS_EVENT_MOVEMENT_MOD_START)
+    Event(28, VIS_EVENT_MOVEMENT_MOD_END)
+    Event(28, EVENT_FINAL_POSITION)
+    Event(121, EVENT_TURN_ON_PHYSICS)
+    Event(142, EVENT_FALL_ON_HIT_DISABLE)
+    Event(143, VIS_EVENT_STOPANIM)
+}
+
+SeqTrack( "mzi_upset_jump_over_high_03", "mzi_upset_climb_03.anm2",	 15, 255, 36, 1, 0.5 )
+{
+    Event(12, EVENT_FALL_ON_HIT_ENABLE)
+    Event(22, VIS_EVENT_MOVEMENT_MOD_START)
+    Event(30, VIS_EVENT_MOVEMENT_MOD_END)
+    Event(30, EVENT_FINAL_POSITION)
+    Event(120, EVENT_TURN_ON_PHYSICS)
+    Event(193, EVENT_FALL_ON_HIT_DISABLE)
+    Event(194, VIS_EVENT_STOPANIM)
+}
+
+//[nosek_20100519] SeqTrack( "mzi_upset_jump_over_high_04", "mzi_upset_climb_04.anm2",	 14, 197, 36, 1, 0.5 ) //210
+//{
+//    Event(96, EVENT_FINAL_POSITION)
+//    Event(105, EVENT_TURN_ON_PHYSICS)
+//}
+
+//[nosek_20100519] SeqTrack( "mzi_upset_jump_over_low_01", "mzi_upset_run_jump_over_01.anm2", 18, 51, 30, 1, 0.5 ) //90
+//{
+//    Event(13, EVENT_FINAL_POSITION)
+//    Event(20, EVENT_TURN_ON_PHYSICS)
+//}
+
+SeqTrack( "mzi_upset_climb_01",			"_temp_c_n_s_climb180.anm2",	    12, 80, 36, 1, 0.5 ) //95
+{
+    Event(11, EVENT_FALL_ON_HIT_ENABLE)
+    Event(11, VIS_EVENT_MOVEMENT_MOD_START)
+    //Event(15, VIS_EVENT_MOVEMENT_MOD_END)
+    Event(15, EVENT_FINAL_POSITION)
+    Event(67, EVENT_FALL_ON_HIT_DISABLE)
+}
+
+SeqTrack( "mzi_upset_jump_down_01",			"_calm_r_s_boxjumpdown2.anm2",	15, 60, 40, 1, 0.5 ) //85
+{
+    Event(2, EVENT_FALL_ON_HIT_ENABLE)
+    Event(23, EVENT_TURN_ON_PHYSICS)
+    Event(41, EVENT_FALL_ON_HIT_DISABLE)
+}
+
+//[nosek_20100519] 
+/*SeqTrack( "MZI_Upset_Walk_Loop_v03",	"MZI_Upset_Walk_Loop_v03.anm2", 0, 26, 30, 1, 0.5 )
+{
+    Event(0, VIS_EVENT_STEP_LEFT)
+    Event(13, VIS_EVENT_STEP_LEFT)
+    Event(25, VIS_EVENT_STEP_RIGHT)
+}*/
+//[nosek_20100519] 
+/*SeqTrack( "MZI_Upset_Walk_Loop_V02",	"MZI_Upset_Walk_Loop_V02.anm2", 0, 53, 30, 1, 0.5 )
+{
+    Event(15, VIS_EVENT_STEP_RIGHT)
+    Event(27, VIS_EVENT_STEP_LEFT)
+    Event(40, VIS_EVENT_STEP_RIGHT)
+    Event(53, VIS_EVENT_STEP_LEFT)    
+}*/
+//[nosek_20100519] 
+SeqTrack( "mzi_upset_walk_loop_v04",	"MZI_Upset_Walk_Loop_V04.anm2", 0, 51, 30, 1, 0.5 )
+{
+    Event(0, VIS_EVENT_STEP_RIGHT)
+    Event(13, VIS_EVENT_STEP_LEFT)
+    Event(26, VIS_EVENT_STEP_RIGHT)
+    Event(38, VIS_EVENT_STEP_LEFT)
+    Event(51, VIS_EVENT_STEP_RIGHT)
+}
+
+SeqTrackAlias("mzi_upset_walk_left", "m_npc_unarmed_walk_left_v01")
+SeqTrackAlias("mzi_upset_walk_right", "m_npc_unarmed_walk_right_v01")
+SeqTrackAlias("mzi_upset_walk_backward", "m_npc_unarmed_walk_backward")
+
+//[nosek_20100519] 
+SeqTrack( "mzi_upset_walk_start180l_lleg",	"mzi_upset_walk_start180L_LLeg.anm2", 7, 71, 30, 1, 0.5 )
+{
+    Event(23, VIS_EVENT_STEP_LEFT)
+    Event(28, VIS_EVENT_ROTATION_MOD_END)
+    Event(29, VIS_EVENT_STOPANIM)
+    Event(38, VIS_EVENT_STEP_RIGHT)
+    Event(50, VIS_EVENT_STEP_LEFT)
+    Event(63, VIS_EVENT_STEP_RIGHT)
+}
+//[nosek_20100519] 
+SeqTrack( "mzi_upset_walk_start180l_rleg",	"mzi_upset_walk_start180L_RLeg.anm2", 2, 74, 30, 1, 0.5 )
+{
+    Event(17, VIS_EVENT_STEP_LEFT)
+    Event(20, VIS_EVENT_ROTATION_MOD_END)
+    Event(23, VIS_EVENT_STOPANIM)
+    Event(32, VIS_EVENT_STEP_RIGHT)
+    Event(45, VIS_EVENT_STEP_LEFT)
+    Event(58, VIS_EVENT_STEP_RIGHT)
+    Event(72, VIS_EVENT_STEP_LEFT)
+}
+//[nosek_20100519] 
+SeqTrack( "mzi_upset_walk_start180r_lleg",	"mzi_upset_walk_start180R_LLeg.anm2", 5, 78, 30, 1, 0.5 )
+{
+    Event(18, VIS_EVENT_STEP_RIGHT)
+    Event(25, VIS_EVENT_ROTATION_MOD_END)
+    Event(27, VIS_EVENT_STOPANIM)
+    Event(33, VIS_EVENT_STEP_LEFT)
+    Event(46, VIS_EVENT_STEP_RIGHT)
+    Event(59, VIS_EVENT_STEP_LEFT)
+    Event(73, VIS_EVENT_STEP_RIGHT)
+}
+//[nosek_20100519] 
+SeqTrack( "mzi_upset_walk_start180r_rleg",	"mzi_upset_walk_start180R_RLeg.anm2", 3, 67, 30, 1, 0.5 )
+{
+    Event(24, VIS_EVENT_STEP_RIGHT)
+    Event(30, VIS_EVENT_ROTATION_MOD_END)
+    Event(32, VIS_EVENT_STOPANIM)
+    Event(38, VIS_EVENT_STEP_LEFT)
+    Event(51, VIS_EVENT_STEP_RIGHT)
+    Event(64, VIS_EVENT_STEP_LEFT)
+}
+//[nosek_20100519] 
+SeqTrack( "mzi_upset_walk_start90l_lleg",	"mzi_upset_walk_start90L_LLeg.anm2", 4, 76, 30, 1, 0.5 )
+{
+    Event(18, VIS_EVENT_STEP_LEFT)
+    Event(23, VIS_EVENT_ROTATION_MOD_END)
+    Event(26, VIS_EVENT_STOPANIM)
+    Event(33, VIS_EVENT_STEP_RIGHT)
+    Event(47, VIS_EVENT_STEP_LEFT)
+}
+//[nosek_20100519] 
+SeqTrack( "mzi_upset_walk_start90l_rleg",	"mzi_upset_walk_start90L_RLeg.anm2", 4, 78, 30, 1, 0.5 )
+{
+    Event(18, VIS_EVENT_STEP_LEFT)
+    Event(24, VIS_EVENT_ROTATION_MOD_END)
+    Event(26, VIS_EVENT_STOPANIM)
+    Event(33, VIS_EVENT_STEP_RIGHT)
+    Event(47, VIS_EVENT_STEP_LEFT)
+}
+//[nosek_20100519] 
+SeqTrack( "mzi_upset_walk_start90r_lleg",	"mzi_upset_walk_start90R_LLeg.anm2", 6, 64, 30, 1, 0.5 )
+{
+    Event(15, VIS_EVENT_STEP_RIGHT)
+    Event(23, VIS_EVENT_ROTATION_MOD_END)
+    Event(23, VIS_EVENT_STOPANIM)
+    Event(31, VIS_EVENT_STEP_LEFT)
+    Event(45, VIS_EVENT_STEP_RIGHT)
+}
+//[nosek_20100519] 
+SeqTrack( "mzi_upset_walk_start90r_rleg",	"mzi_upset_walk_start90R_RLeg.anm2", 3, 76, 30, 1, 0.5 )
+{
+    Event(17, VIS_EVENT_STEP_RIGHT)
+    Event(23, VIS_EVENT_ROTATION_MOD_END)
+    Event(26, VIS_EVENT_STOPANIM)
+    Event(33, VIS_EVENT_STEP_LEFT)
+    Event(47, VIS_EVENT_STEP_RIGHT)
+}
+//[nosek_20100519] 
+SeqTrack( "mzi_upset_walk_start_lleg",	"MZI_Upset_Walk_Start_LLeg.anm2", 5, 71, 30, 1, 0.5 )
+{
+    Event(11, VIS_EVENT_STEP_LEFT)
+    Event(11, VIS_EVENT_ROTATION_MOD_END)
+    Event(19, VIS_EVENT_STOPANIM)
+    Event(27, VIS_EVENT_STEP_RIGHT)
+    Event(40, VIS_EVENT_STEP_LEFT)
+    Event(52, VIS_EVENT_STEP_RIGHT)
+}
+//[nosek_20100519] 
+SeqTrack( "mzi_upset_walk_start_rleg",	"mzi_upset_walk_start_RLeg.anm2", 7, 68, 30, 1, 0.5 )
+{
+    Event(20, VIS_EVENT_STEP_LEFT)
+    Event(20, VIS_EVENT_ROTATION_MOD_END)
+    Event(26, VIS_EVENT_STOPANIM)
+    Event(35, VIS_EVENT_STEP_RIGHT)
+    Event(48, VIS_EVENT_STEP_LEFT)
+    Event(61, VIS_EVENT_STEP_RIGHT)
+}
+
+//[nosek_20100519] 
+SeqTrack( "mzi_upset_walk_stop180l_lleg",	"mzi_upset_walk_stop180L_LLeg.anm2", 0, 53, 30, 1, 0.5 )
+{
+    Event(0, VIS_EVENT_STEP_LEFT)
+    Event(13, VIS_EVENT_STEP_RIGHT)
+    Event(26, VIS_EVENT_STEP_LEFT)
+    Event(27, VIS_EVENT_MAX_ANIM_CUT_TIME)
+    Event(30, VIS_EVENT_ROTATION_MOD_START)
+    Event(39, VIS_EVENT_STEP_RIGHT)
+    Event(51, VIS_EVENT_STEP_LEFT)
+}
+//[nosek_20100519] 
+SeqTrack( "mzi_upset_walk_stop180l_rleg",	"mzi_upset_walk_stop180L_RLeg.anm2", 0, 77, 30, 1, 0.5 )
+{
+    Event(0, VIS_EVENT_STEP_LEFT)
+    Event(12, VIS_EVENT_STEP_RIGHT)
+    Event(25, VIS_EVENT_STEP_LEFT)
+    Event(38, VIS_EVENT_MAX_ANIM_CUT_TIME)    
+    Event(38, VIS_EVENT_ROTATION_MOD_START)
+    Event(39, VIS_EVENT_STEP_RIGHT)    
+    Event(47, VIS_EVENT_STEP_LEFT)
+    Event(55, VIS_EVENT_STEP_RIGHT)
+    Event(67, VIS_EVENT_STEP_LEFT)
+    Event(77, VIS_EVENT_STEP_RIGHT)
+}
+//[nosek_20100519] 
+SeqTrack( "mzi_upset_walk_stop180r_lleg",	"mzi_upset_walk_stop180R_LLeg.anm2", 0, 94, 30, 1, 0.5 )
+{
+    Event(0, VIS_EVENT_STEP_LEFT)
+    Event(13, VIS_EVENT_STEP_RIGHT)
+    Event(26, VIS_EVENT_STEP_LEFT)
+    Event(39, VIS_EVENT_STEP_RIGHT)
+    Event(50, VIS_EVENT_MAX_ANIM_CUT_TIME)    
+    Event(50, VIS_EVENT_ROTATION_MOD_START)
+    Event(51, VIS_EVENT_STEP_LEFT)
+    Event(58, VIS_EVENT_STEP_RIGHT)    
+    Event(65, VIS_EVENT_STEP_LEFT)
+    Event(77, VIS_EVENT_STEP_RIGHT)
+    Event(90, VIS_EVENT_STEP_LEFT)
+}
+//[nosek_20100519] 
+SeqTrack( "mzi_upset_walk_stop180r_rleg",	"mzi_upset_walk_stop180R_RLeg.anm2", 0, 71, 30, 1, 0.5 )
+{
+    Event(0, VIS_EVENT_STEP_LEFT)
+    Event(12, VIS_EVENT_STEP_RIGHT)
+    Event(25, VIS_EVENT_STEP_LEFT)
+    Event(38, VIS_EVENT_STEP_RIGHT)
+    Event(43, VIS_EVENT_MAX_ANIM_CUT_TIME)    
+    Event(44, VIS_EVENT_ROTATION_MOD_START)
+    Event(50, VIS_EVENT_STEP_LEFT)
+    Event(60, VIS_EVENT_STEP_RIGHT)
+}
+//[nosek_20100519] 
+SeqTrack( "mzi_upset_walk_stop90l_lleg",	"mzi_upset_walk_stop90L_LLeg.anm2", 0, 65, 30, 1, 0.5 )
+{
+    Event(0, VIS_EVENT_STEP_RIGHT)
+    Event(12, VIS_EVENT_STEP_LEFT)
+    Event(25, VIS_EVENT_STEP_RIGHT)
+    Event(26, VIS_EVENT_MAX_ANIM_CUT_TIME)        
+    Event(36, VIS_EVENT_STEP_LEFT)
+    Event(36, VIS_EVENT_ROTATION_MOD_START)
+    Event(48, VIS_EVENT_STEP_RIGHT)
+}
+//[nosek_20100519] 
+SeqTrack( "mzi_upset_walk_stop90l_rleg",	"mzi_upset_walk_stop90L_RLeg.anm2", 0, 79, 30, 1, 0.5 )
+{
+    Event(0, VIS_EVENT_STEP_LEFT)
+    Event(13, VIS_EVENT_STEP_RIGHT)
+    Event(26, VIS_EVENT_STEP_LEFT)
+    Event(34, VIS_EVENT_MAX_ANIM_CUT_TIME)    
+    Event(39, VIS_EVENT_STEP_RIGHT)
+    Event(39, VIS_EVENT_ROTATION_MOD_START)
+    Event(49, VIS_EVENT_STEP_LEFT)
+    Event(59, VIS_EVENT_STEP_RIGHT)    
+    Event(71, VIS_EVENT_STEP_LEFT)
+}
+//[nosek_20100519] 
+SeqTrack( "mzi_upset_walk_stop90r_lleg",	"mzi_upset_walk_stop90R_LLeg.anm2", 0, 81, 30, 1, 0.5 )
+{
+    Event(0, VIS_EVENT_STEP_RIGHT)
+    Event(12, VIS_EVENT_STEP_LEFT)
+    Event(25, VIS_EVENT_STEP_RIGHT)
+    Event(38, VIS_EVENT_STEP_LEFT)
+    Event(39, VIS_EVENT_MAX_ANIM_CUT_TIME)    
+    Event(40, VIS_EVENT_ROTATION_MOD_START)
+    Event(50, VIS_EVENT_STEP_RIGHT)
+    Event(60, VIS_EVENT_STEP_LEFT)
+    Event(73, VIS_EVENT_STEP_RIGHT)
+}
+//[nosek_20100519] 
+SeqTrack( "mzi_upset_walk_stop90r_rleg",	"mzi_upset_walk_stop90R_RLeg.anm2", 0, 63, 30, 1, 0.5 ) //65
+{
+    Event(0, VIS_EVENT_STEP_RIGHT)
+    Event(12, VIS_EVENT_STEP_LEFT)
+    Event(25, VIS_EVENT_STEP_RIGHT)
+    Event(38, VIS_EVENT_STEP_LEFT)
+    Event(39, VIS_EVENT_MAX_ANIM_CUT_TIME)    
+    Event(39, VIS_EVENT_ROTATION_MOD_START)
+    Event(50, VIS_EVENT_STEP_RIGHT)
+    Event(62, VIS_EVENT_STEP_LEFT)
+}
+//[nosek_20100519] 
+SeqTrack( "mzi_upset_walk_stop_lleg",	"MZI_Upset_Walk_Stop_LLeg.anm2", 0, 70, 30, 1, 0.5 )
+{
+    Event(0, VIS_EVENT_STEP_RIGHT)
+    Event(12, VIS_EVENT_STEP_LEFT)
+    Event(24, VIS_EVENT_STEP_RIGHT)
+    Event(37, VIS_EVENT_STEP_LEFT)
+    Event(50, VIS_EVENT_STEP_RIGHT)
+    Event(53, VIS_EVENT_MAX_ANIM_CUT_TIME)    
+    Event(53, VIS_EVENT_ROTATION_MOD_START)
+    Event(63, VIS_EVENT_STEP_LEFT)
+    Event(70, VIS_EVENT_STEP_RIGHT)
+}
+//[nosek_20100519] 
+SeqTrack( "mzi_upset_walk_stop_rleg",	"mzi_upset_walk_stop_RLeg.anm2", 0, 74, 30, 1, 0.5 ) //81
+{
+    Event(0, VIS_EVENT_STEP_LEFT)
+    Event(14, VIS_EVENT_STEP_RIGHT)
+    Event(27, VIS_EVENT_STEP_LEFT)
+    Event(40, VIS_EVENT_STEP_RIGHT)
+    Event(53, VIS_EVENT_STEP_LEFT)
+    Event(54, VIS_EVENT_MAX_ANIM_CUT_TIME)    
+    Event(54, VIS_EVENT_ROTATION_MOD_START)
+    Event(65, VIS_EVENT_STEP_RIGHT)    
+    Event(74, VIS_EVENT_STEP_LEFT)
+}
+
+SeqTrack("mzi_upset_walk_turn_180_l", 		    "m_tpp_unarmed_walk_turn_180_l.anm2"		, 0, 191, 30, 1, 0.3)
+{
+	Event(12, VIS_EVENT_STEP_LEFT)
+	Event(30, VIS_EVENT_STEP_RIGHT)
+	Event(46, VIS_EVENT_STEP_LEFT)
+	Event(64, VIS_EVENT_STEP_RIGHT)
+    Event(77, VIS_EVENT_ROTATION_MOD_START)
+    Event(77, VIS_EVENT_MAX_ANIM_CUT_TIME)
+	Event(80, VIS_EVENT_STEP_LEFT)
+	Event(95, VIS_EVENT_STEP_RIGHT)
+    Event(95, EVENT_FINAL_POSITION)
+	Event(112, VIS_EVENT_STEP_LEFT)
+    Event(118, VIS_EVENT_ROTATION_MOD_END)    
+    Event(120, VIS_EVENT_STOPANIM)
+	Event(134, VIS_EVENT_STEP_RIGHT)
+	Event(151, VIS_EVENT_STEP_LEFT)
+	Event(168, VIS_EVENT_STEP_RIGHT)
+	Event(186, VIS_EVENT_STEP_LEFT)
+}
+SeqTrack("mzi_upset_walk_turn_180_r", 		    "m_tpp_unarmed_walk_turn_180_r.anm2"		, 0, 195, 30, 1, 0.3)
+{
+	Event(14, VIS_EVENT_STEP_RIGHT)
+	Event(31, VIS_EVENT_STEP_LEFT)
+	Event(48, VIS_EVENT_STEP_RIGHT)
+	Event(66, VIS_EVENT_STEP_LEFT)
+    Event(73, VIS_EVENT_ROTATION_MOD_START)
+    Event(73, VIS_EVENT_MAX_ANIM_CUT_TIME)
+	Event(83, VIS_EVENT_STEP_RIGHT)
+    Event(97, VIS_EVENT_STEP_LEFT)
+    Event(97, EVENT_FINAL_POSITION)
+    Event(115, VIS_EVENT_STEP_RIGHT)
+    Event(122, VIS_EVENT_ROTATION_MOD_END)        
+    Event(125, VIS_EVENT_STOPANIM)
+	Event(136, VIS_EVENT_STEP_LEFT)
+	Event(154, VIS_EVENT_STEP_RIGHT)
+	Event(171, VIS_EVENT_STEP_LEFT)
+	Event(189, VIS_EVENT_STEP_RIGHT)
+}
+SeqTrack("mzi_upset_walk_turn_90_l", 		    "m_tpp_unarmed_walk_turn_90_l.anm2"		, 0, 105, 30, 1, 0.3)
+{
+	Event(12, VIS_EVENT_STEP_RIGHT)
+	Event(29, VIS_EVENT_STEP_LEFT)
+    Event(45, VIS_EVENT_ROTATION_MOD_START)
+    Event(45, VIS_EVENT_MAX_ANIM_CUT_TIME)
+	Event(47, VIS_EVENT_STEP_RIGHT)
+	Event(65, VIS_EVENT_STEP_LEFT)
+    Event(65, EVENT_FINAL_POSITION)
+	Event(83, VIS_EVENT_STEP_RIGHT)
+    Event(84, VIS_EVENT_ROTATION_MOD_END)    
+    Event(89, VIS_EVENT_STOPANIM)
+	Event(100, VIS_EVENT_STEP_LEFT)
+}
+SeqTrack("mzi_upset_walk_turn_90_r", 		    "m_tpp_unarmed_walk_turn_90_r.anm2"		, 0, 141, 30, 1, 0.3)
+{
+	Event(14, VIS_EVENT_STEP_RIGHT)
+	Event(32, VIS_EVENT_STEP_LEFT)
+	Event(49, VIS_EVENT_STEP_RIGHT)
+    Event(57, VIS_EVENT_ROTATION_MOD_START)
+    Event(57, VIS_EVENT_MAX_ANIM_CUT_TIME)
+	Event(67, VIS_EVENT_STEP_LEFT)
+    Event(84, VIS_EVENT_STEP_RIGHT)
+    Event(84, EVENT_FINAL_POSITION)    
+    Event(98, VIS_EVENT_ROTATION_MOD_END)    
+	Event(103, VIS_EVENT_STEP_LEFT)
+    Event(104, VIS_EVENT_STOPANIM)
+	Event(120, VIS_EVENT_STEP_RIGHT)
+	Event(136, VIS_EVENT_STEP_LEFT)
+}
+
+// Recovering from fall
+
+//[nosek_20100519] SeqTrack( "mzi_upset_standup_v01",	"mzi_upset_climb_03.anm2", 155, 212, 30, 1, 0.5 )
+//{
+//    Event(0, EVENT_LYING_ELLIPSOID)
+//    Event(0, EVENT_FALL_ON_HIT_ENABLE)
+//    Event(34, EVENT_STAND_UP_ELLIPSOID)
+//    Event(56, EVENT_FALL_ON_HIT_DISABLE)
+//    Event(56, EVENT_STOOD_UP)
+//}
+
+//[nosek_20100519] SeqTrack( "mzi_upset_standup_v02",	"mzi_upset_climb_04.anm2", 164, 206, 30, 1, 0.5 )
+//{
+//    Event(0, EVENT_LYING_ELLIPSOID)
+//    Event(0, EVENT_FALL_ON_HIT_ENABLE)
+//    Event(21, EVENT_STAND_UP_ELLIPSOID)
+//    Event(38, EVENT_FALL_ON_HIT_DISABLE)
+//    Event(38, EVENT_STOOD_UP)
+//}
+
+//[nosek_20100519] SeqTrack( "mzi_upset_standup_v03",	"mzi_upset_stand_hitreaction_head_v01.anm2", 88, 146, 30, 1, 0.5 )
+//{
+//    Event(0, EVENT_LYING_ELLIPSOID)
+//    Event(0, EVENT_FALL_ON_HIT_ENABLE)
+//    Event(46, EVENT_STAND_UP_ELLIPSOID)
+//    Event(55, EVENT_FALL_ON_HIT_DISABLE)
+//    Event(55, EVENT_STOOD_UP)
+//}
+
+//[nosek_20100519] SeqTrack( "mzi_upset_standup_v04", "mzi_upset_stand_hitreaction_head_v03.anm2",	 124, 175, 30, 1, 0.5 )
+//{
+//    Event(0, EVENT_LYING_ELLIPSOID)
+//    Event(0, EVENT_FALL_ON_HIT_ENABLE)
+//    Event(32, EVENT_STAND_UP_ELLIPSOID)
+//    Event(44, EVENT_FALL_ON_HIT_DISABLE)
+//    Event(44, EVENT_STOOD_UP)
+//}
+
+// Hit reactions
+
+//[nosek_20100519] SeqTrack( "MZI_Upset_Stand_Hitreaction_Head_v01", 	"MZI_Upset_Stand_Hitreaction_Head_v01.anm2",	 0, 177, 30, 1, 0.5 )
+//[nosek_20100519] SeqTrack( "MZI_Upset_Stand_Hitreaction_Head_v02", 	"MZI_Upset_Stand_Hitreaction_Head_v02.anm2",	 0, 180, 30, 1, 0.5 )
+//[nosek_20100519] SeqTrack( "MZI_Upset_Stand_Hitreaction_Head_v03", 	"MZI_Upset_Stand_Hitreaction_Head_v03.anm2",	 0, 309, 30, 1, 0.5 )
+
+
+// Atractor MeatJar
+//[nosek_20100519] SeqTrack( "MZI_Upset_MeatJar_Start01", 	"MZI_Upset_MeatJar_Start01.anm2",	 0, 95, 30, 1, 0.5 )
+SeqTrack( "MZI_Upset_MeatJar_Loop01", 	"MZI_Upset_MeatJar_Loop01.anm2",	 	0, 321, 30, 1, 0.5 )
+{
+    Event(9, VIS_EVENT_EATING_TEAR_LEFT_HAND)
+    Event(80, VIS_EVENT_EATING_TEAR_RIGHT_HAND)
+    Event(185, VIS_EVENT_EATING_TEAR_RIGHT_HAND)
+    Event(218, VIS_EVENT_EATING_TEAR_RIGHT_HAND)
+    Event(260, VIS_EVENT_EATING_TEAR_RIGHT_HAND)
+}
+//[nosek_20100519] SeqTrack( "MZI_Upset_MeatJar_Loop_02", 	"MZI_Upset_MeatJar_Loop_02.anm2",	0, 692, 30, 1, 0.5 )
+SeqTrack( "MZI_Upset_MeatJar_End01", 	"MZI_Upset_MeatJar_End01.anm2",		0, 91, 30, 1, 0.5 )
+
+
+// Jumps
+//[nosek_20100519] 
+/*SeqTrack( "MZI_Upset_Jumps01_base", "MZI_Upset_Jumps01.anm2",	 0, 73, 30, 1, 0.5 )//73 
+{
+    Event(0, VIS_EVENT_STEP_RIGHT)
+    Event(7, VIS_EVENT_STEP_LEFT)
+    Event(16, VIS_EVENT_STEP_RIGHT)
+    Event(25, EVENT_TURN_ON_PHYSICS)
+    Event(27, VIS_EVENT_STEP_LEFT)
+    Event(27, VIS_EVENT_STOPANIM)
+    Event(37, VIS_EVENT_STEP_RIGHT)
+    Event(56, VIS_EVENT_STEP_LEFT)
+    Event(62, VIS_EVENT_STEP_RIGHT)	
+}*/
+SeqTrack( "mzi_upset_jump_on", 	"MZI_Upset_Jumps01.anm2",	 0, 30, 30, 1, 0.5 )//73 
+{
+	Event(0, VIS_EVENT_STEP_RIGHT)
+    Event(7, VIS_EVENT_STEP_LEFT)
+    Event(17, VIS_EVENT_MAX_ANIM_CUT_TIME)
+    Event(18, VIS_EVENT_MOVEMENT_MOD_START)
+    Event(16, VIS_EVENT_STEP_RIGHT)    
+    Event(27, VIS_EVENT_STEP_LEFT)
+    Event(27, EVENT_TURN_ON_PHYSICS)
+    Event(27, VIS_EVENT_STOPANIM)
+}
+SeqTrack( "mzi_upset_jump_off", "MZI_Upset_Jumps01.anm2",	 30, 68, 30, 1, 0.5 )//73 
+{
+    Event(0, VIS_EVENT_STEP_LEFT)
+    Event(7, VIS_EVENT_STEP_RIGHT)
+    Event(12, VIS_EVENT_MAX_ANIM_CUT_TIME)
+    Event(23, EVENT_TURN_ON_PHYSICS)
+    Event(26, VIS_EVENT_STEP_LEFT)
+    Event(32, VIS_EVENT_STEP_RIGHT)
+}
+
+//[nosek_20100519] 
+//SeqTrack( "MZI_Upset_Jumps02_base", "MZI_Upset_Jumps02.anm2",	 0, 56, 30, 1, 0.5 )//56
+//[nosek_20100519] SeqTrack( "MZI_Upset_Jumps02", 	"MZI_Upset_Jumps02.anm2",	 11, 31, 38, 1, 0.5 )//56
+//{
+//	Event(9, VIS_EVENT_STEP_RIGHT)
+//	Event(19, VIS_EVENT_STEP_LEFT)
+//	Event(19, EVENT_TURN_ON_PHYSICS)
+//}
+//[nosek_20100519] SeqTrack( "MZI_Upset_Jumps02_off", "MZI_Upset_Jumps02.anm2",	 33, 56, 38, 1, 0.5 )//56
+//{
+//	Event(18, VIS_EVENT_STEP_RIGHT)
+//	Event(20, EVENT_TURN_ON_PHYSICS)
+//	Event(22, VIS_EVENT_STEP_LEFT)
+//}
+//[nosek_20100519] 
+//SeqTrack( "MZI_Upset_Jumps03_base", 	"MZI_Upset_Jumps03.anm2",	 0, 82, 30, 1, 0.5 )//82
+//SeqTrack( "MZI_Upset_Jumps03", 	"MZI_Upset_Jumps03.anm2",	 15, 25, 30, 1, 0.5 )//82
+//{
+////	Event(8, VIS_EVENT_STEP_LEFT)
+//	Event(9, EVENT_TURN_ON_PHYSICS)
+//}
+//[nosek_20100519] SeqTrack( "MZI_Upset_Jumps04", 	"MZI_Upset_Jumps04.anm2",	 0, 128, 30, 1, 0.5 )
+//[nosek_20100519] SeqTrack( "MZI_Upset_Jumps05", 	"MZI_Upset_Jumps05.anm2",	 0, 163, 30, 1, 0.5 )
+//[nosek_20100519] SeqTrack( "MZI_Upset_Jumps06", 	"MZI_Upset_Jumps06.anm2",	 0, 131, 30, 1, 0.5 )
+SeqTrack( "mzi_upset_jump_over_low_01", 	"MZI_Upset_Jumps07.anm2",	 0, 55, 30, 1, 0.5 )//55
+{
+    Event(0, VIS_EVENT_STEP_RIGHT)
+    Event(7, VIS_EVENT_STEP_LEFT)    
+    Event(8, EVENT_FALL_ON_HIT_ENABLE)
+    Event(8, VIS_EVENT_MAX_ANIM_CUT_TIME)
+	Event(18, EVENT_FINAL_POSITION)
+	Event(23, EVENT_TURN_ON_PHYSICS)
+	Event(27, VIS_EVENT_STEP_RIGHT)
+    Event(31, EVENT_FALL_ON_HIT_DISABLE)
+	Event(31, VIS_EVENT_STEP_LEFT)
+    Event(32, VIS_EVENT_STOPANIM)
+    Event(41, VIS_EVENT_STEP_RIGHT)
+}
+
+SeqTrack( "mzi_upset_jump_over_low_02", 	"MZI_Upset_Jumps08.anm2",	 0, 50, 30, 1, 0.5 )//50
+{
+    Event(1, VIS_EVENT_STEP_RIGHT)
+    Event(8, VIS_EVENT_STEP_LEFT)
+    Event(8, EVENT_FALL_ON_HIT_ENABLE)
+    Event(8, VIS_EVENT_MAX_ANIM_CUT_TIME)
+    Event(18, EVENT_FINAL_POSITION)
+	Event(21, EVENT_TURN_ON_PHYSICS)
+	Event(25, VIS_EVENT_STEP_RIGHT)
+    Event(30, EVENT_FALL_ON_HIT_DISABLE)
+	Event(30, VIS_EVENT_STEP_LEFT)    
+    Event(31, VIS_EVENT_STOPANIM)
+    Event(30, VIS_EVENT_STEP_RIGHT)
+}
+//[nosek_20100519] SeqTrack( "MZI_Upset_Jumps09", 	"MZI_Upset_Jumps09.anm2",	 6, 33, 30, 1, 0.5 )//49
+//{
+//	Event(2, VIS_EVENT_STEP_RIGHT)
+//	Event(12, EVENT_FINAL_POSITION)
+//	Event(16, EVENT_TURN_ON_PHYSICS)
+//	Event(21, VIS_EVENT_STEP_LEFT)
+//	Event(24, VIS_EVENT_STEP_RIGHT)
+//}
+//[nosek_20100519] SeqTrack( "MZI_Upset_Jumps10", 	"MZI_Upset_Jumps10.anm2",	 0, 120, 30, 1, 0.5 )
+
+SeqTrack( "MZI_Upset_Jumps11", 	"MZI_Upset_Jumps11.anm2",	 0, 121, 30, 1, 0.5 )
+{
+	Event(7, VIS_EVENT_STEP_RIGHT)
+	Event(11, EVENT_FALL_ON_HIT_ENABLE)
+    Event(17, VIS_EVENT_STEP_LEFT)
+    Event(20, VIS_EVENT_STEP_RIGHT)
+	Event(30, EVENT_GRAB_CHECK_START)
+    Event(39, EVENT_CANNOT_ATTACK)
+	Event(40, EVENT_GRAB_CHECK_END)
+    Event(49, EVENT_FALL)
+}
+
+SeqTrack( "MZI_Upset_Jump_From_Move", 	"MZI_Upset_Jumps11.anm2",	 10, 121, 30, 1, 0.5 )
+{
+	//Event(-3, VIS_EVENT_STEP_RIGHT)
+	Event(6, EVENT_FALL_ON_HIT_ENABLE)
+    Event(7, VIS_EVENT_STEP_LEFT)
+    Event(10, VIS_EVENT_STEP_RIGHT)
+	Event(20, EVENT_GRAB_CHECK_START)
+    Event(29, EVENT_CANNOT_ATTACK)
+	Event(30, EVENT_GRAB_CHECK_END)
+    Event(39, EVENT_FALL)
+}
+
+
+// sprint
+//[nosek_20100519] SeqTrack( "MZI_Upset_Sprint_01", 	"MZI_Upset_Sprint_01.anm2",	 0, 14, 30, 1, 0.5 )
+//{
+//    Event(7, VIS_EVENT_STEP_RIGHT)
+//    Event(13, VIS_EVENT_STEP_LEFT)
+//}
+//[nosek_20100729] SeqTrack( "MZI_Upset_Sprint_02", 	"MZI_Upset_Sprint_02.anm2",	 0, 43, 30, 1, 0.5 )
+//{
+//    Event(7, VIS_EVENT_STEP_RIGHT)
+//    Event(14, VIS_EVENT_STEP_LEFT)
+//    Event(22, VIS_EVENT_STEP_RIGHT)
+//    Event(29, VIS_EVENT_STEP_LEFT)
+//    Event(36, VIS_EVENT_STEP_RIGHT)
+//    Event(43, VIS_EVENT_STEP_LEFT)
+//}
+//[nosek_20100519] SeqTrack( "MZI_Upset_Sprint_03", 	"MZI_Upset_Sprint_03.anm2",	 0, 14, 30, 1, 0.5 )
+
+/*SeqTrack( "MZ_Upset_Zombie_Burn_01",                "MZ_Upset_Zombie_Burn_01.anm2",	    201, 437, 30, 1, 0.5 )
+{
+	Event(227, EVENT_DIE)
+}
+SeqTrack( "MZ_Upset_Zombie_Burn_02",                "MZ_Upset_Zombie_Burn_02.anm2",	    0, 320, 30, 1, 0.5 )*/
+
+
+
+
+//[nosek_20100519] SeqTrack( "MZI_Upset_MeatJar_AlertStart_01",                "MZI_Upset_MeatJar_AlertStart_01.anm2",	    0, 30, 30, 1, 0.5 )
+//[nosek_20100519] SeqTrack( "MZI_Upset_MeatJar_AlertStand_01",                "MZI_Upset_MeatJar_AlertStand_01.anm2",	    0, 130, 30, 1, 0.5 )
+//[nosek_20100519] SeqTrack( "MZI_Upset_MeatJar_AlertStand_02",                "MZI_Upset_MeatJar_AlertStand_02.anm2",	    0, 55, 30, 1, 0.5 )
+
+
+// Trot
+
+//[nosek_20100519] 
+SeqTrack( "MZI_Upset_Trot",               	     "MZI_Upset_Trot.anm2",	   	    0, 22, 30, 1, 0.5 )
+{
+    Event(0, VIS_EVENT_STEP_LEFT)
+    Event(11, VIS_EVENT_STEP_RIGHT)
+    Event(22, VIS_EVENT_STEP_LEFT)
+}
+//[nosek_20100519] 
+/*SeqTrack( "MZI_Upset_Trot_Start_LLeg",               "MZI_Upset_Trot_Start_LLeg.anm2",	    9, 60, 30, 1, 0.5 )
+{
+    Event(3, VIS_EVENT_STEP_LEFT)
+    Event(18, VIS_EVENT_STEP_RIGHT)
+    Event(13, VIS_EVENT_STOPANIM)
+    Event(13, VIS_EVENT_ROTATION_MOD_END)
+    Event(29, VIS_EVENT_STEP_LEFT)
+    Event(40, VIS_EVENT_STEP_RIGHT)
+    Event(51, VIS_EVENT_STEP_LEFT)
+}*/
+
+//[nosek_20100519] 
+/*SeqTrack( "MZI_Upset_Trot_Start_RLeg",               "MZI_Upset_Trot_Start_RLeg.anm2",	    0, 51, 30, 1, 0.5 )
+{
+    Event(10, VIS_EVENT_STEP_RIGHT)
+    Event(28, VIS_EVENT_STEP_LEFT)
+    Event(29, VIS_EVENT_STOPANIM)
+    Event(29, VIS_EVENT_ROTATION_MOD_END)
+    Event(40, VIS_EVENT_STEP_RIGHT)
+    Event(50, VIS_EVENT_STEP_LEFT)
+}*/
+
+//[nosek_20100519] 
+/*SeqTrack( "MZI_Upset_Trot_Stop_LLeg",                "MZI_Upset_Trot_Stop_LLeg.anm2",	    0, 63, 30, 1, 0.5 )
+{
+    Event(0, VIS_EVENT_STEP_RIGHT)
+    Event(12, VIS_EVENT_STEP_LEFT)
+    Event(23, VIS_EVENT_STEP_RIGHT)
+    Event(34, VIS_EVENT_STEP_LEFT)
+    Event(41, VIS_EVENT_MAX_ANIM_CUT_TIME)
+    Event(41, VIS_EVENT_ROTATION_MOD_START)
+    Event(44, VIS_EVENT_STEP_RIGHT)
+    Event(50, VIS_EVENT_STEP_LEFT)
+}*/
+//[nosek_20100519] 
+/*SeqTrack( "MZI_Upset_Trot_Stop_RLeg",                "MZI_Upset_Trot_Stop_RLeg.anm2",	    0, 64, 30, 1, 0.5 )
+{
+    Event(0, VIS_EVENT_STEP_LEFT)
+    Event(10, VIS_EVENT_STEP_RIGHT)
+    Event(21, VIS_EVENT_STEP_LEFT)
+    Event(31, VIS_EVENT_STEP_RIGHT)
+    Event(37, VIS_EVENT_MAX_ANIM_CUT_TIME)
+    Event(37, VIS_EVENT_ROTATION_MOD_START)
+    Event(40, VIS_EVENT_STEP_LEFT)
+    Event(48, VIS_EVENT_STEP_RIGHT)
+}*/
+
+// Rotations
+
+//[nosek_20100519] SeqTrack( "MZI_Upset_Rotate_45L_LegL",                "MZI_Upset_Rotate_45L_LegL.anm2",	    0, 42, 30, 1, 0.5 )
+//[nosek_20100519] SeqTrack( "MZI_Upset_Rotate_45L_LegR",                "MZI_Upset_Rotate_45L_LegR.anm2",	    0, 45, 30, 1, 0.5 )
+//[nosek_20100519] SeqTrack( "MZI_Upset_Rotate_45R_LegL",                "MZI_Upset_Rotate_45R_LegL.anm2",	    0, 44, 30, 1, 0.5 )
+//[nosek_20100519] SeqTrack( "MZI_Upset_Rotate_45R_LegR",                "MZI_Upset_Rotate_45R_LegR.anm2",	    0, 45, 30, 1, 0.5 )
+
+//[nosek_20100519] SeqTrack( "MZI_Upset_Rotate_90L_LegL",                "MZI_Upset_Rotate_90L_LegL.anm2",	    0, 48, 30, 1, 0.5 )
+//[nosek_20100519] SeqTrack( "MZI_Upset_Rotate_90L_LegR",                "MZI_Upset_Rotate_90L_LegR.anm2",	    0, 50, 30, 1, 0.5 )
+//[nosek_20100519] SeqTrack( "MZI_Upset_Rotate_90R_LegL",                "MZI_Upset_Rotate_90R_LegL.anm2",	    0, 45, 30, 1, 0.5 )
+//[nosek_20100519] SeqTrack( "MZI_Upset_Rotate_90R_LegR",                "MZI_Upset_Rotate_90R_LegR.anm2",	    0, 50, 30, 1, 0.5 )
+
+//[nosek_20100519] SeqTrack( "MZI_Upset_Rotate_180L_LegL",                "MZI_Upset_Rotate_180L_LegL.anm2",	    0, 45, 30, 1, 0.5 )
+//[nosek_20100519] SeqTrack( "MZI_Upset_Rotate_180L_LegR",                "MZI_Upset_Rotate_180L_LegR.anm2",	    0, 49, 30, 1, 0.5 )
+//[nosek_20100519] SeqTrack( "MZI_Upset_Rotate_180R_LegL",                "MZI_Upset_Rotate_180R_LegL.anm2",	    0, 48, 30, 1, 0.5 )
+//[nosek_20100519] SeqTrack( "MZI_Upset_Rotate_180R_LegR",                "MZI_Upset_Rotate_180R_LegR.anm2",	    0, 45, 30, 1, 0.5 )
+
+
+
+
+// MZI STAND IDLE NEW
+
+//[nosek_20100519] SeqTrack("MZI_Upset_Stand_Idle01A", 	            "MZI_Upset_Stand_Idle01A.anm2",       0, 227, 30, 1, 0.5)
+//[nosek_20100519] SeqTrack("MZI_Upset_Stand_Idle01B", 	            "MZI_Upset_Stand_Idle01B.anm2",       0, 223, 30, 1, 0.5)
+//[nosek_20100519] SeqTrack("MZI_Upset_Stand_Idle05A", 	            "MZI_Upset_Stand_Idle05A.anm2",       0, 208, 30, 1, 0.5)
+//SeqTrack("MZI_Upset_Stand_Idle01B", 	            "MZI_Upset_Stand_Idle01B.anm2",       0, 148, 30, 1, 0.5)
+
+// MZI stand up
+
+SeqTrack("mzi_standup_rightside01", 	         "mzi_standup_rightside01.anm2",       4, 66, 30, 1, 0.5)
+{
+    Event(0, EVENT_CAN_BE_FINISHED_START)
+    Event(0, EVENT_LYING_ELLIPSOID)
+    Event(0, EVENT_FALL_ON_HIT_ENABLE)
+    Event(16, EVENT_CAN_BE_FINISHED_END)
+    Event(33, EVENT_STAND_UP_ELLIPSOID)
+    Event(41, EVENT_FALL_ON_HIT_DISABLE)
+    Event(41, EVENT_STOOD_UP)
+}
+
+SeqTrack("mzi_standup_rightside02", 	         "mzi_standup_rightside02.anm2",       0, 68, 30, 1, 0.5) //71
+{
+    Event(0, EVENT_CAN_BE_FINISHED_START)
+    Event(0, EVENT_LYING_ELLIPSOID)
+    Event(0, EVENT_FALL_ON_HIT_ENABLE)
+    Event(13, EVENT_CAN_BE_FINISHED_END)
+    Event(36, EVENT_STAND_UP_ELLIPSOID)
+    Event(48, EVENT_FALL_ON_HIT_DISABLE)
+    Event(48, EVENT_STOOD_UP)
+}
+
+
+SeqTrack("mzi_standup_leftside01", 	         "mzi_standup_leftside01.anm2",       5, 71, 30, 1, 0.5)
+{
+    Event(0, EVENT_CAN_BE_FINISHED_START)
+    Event(0, EVENT_LYING_ELLIPSOID)
+    Event(0, EVENT_FALL_ON_HIT_ENABLE)
+    Event(16, EVENT_CAN_BE_FINISHED_END)
+    Event(33, EVENT_STAND_UP_ELLIPSOID)
+    Event(41, EVENT_FALL_ON_HIT_DISABLE)
+    Event(41, EVENT_STOOD_UP)
+}
+
+SeqTrack("mzi_standup_leftside02", 	         "mzi_standup_leftside02.anm2",       0, 70, 30, 1, 0.5) //90
+{
+    Event(0, EVENT_CAN_BE_FINISHED_START)
+    Event(0, EVENT_LYING_ELLIPSOID)
+    Event(0, EVENT_FALL_ON_HIT_ENABLE)
+    Event(17, EVENT_CAN_BE_FINISHED_END)
+    Event(36, EVENT_STAND_UP_ELLIPSOID)
+    Event(55, EVENT_FALL_ON_HIT_DISABLE)
+    Event(55, EVENT_STOOD_UP)
+}
+
+SeqTrack("mzi_standup_stomach01", 	         "mzi_standup_stomach01.anm2",       6, 59, 30, 1, 0.5)
+{
+    Event(0, EVENT_CAN_BE_FINISHED_START)
+    Event(0, EVENT_LYING_ELLIPSOID)
+    Event(0, EVENT_FALL_ON_HIT_ENABLE)
+    Event(13, EVENT_CAN_BE_FINISHED_END)
+    Event(20, EVENT_STAND_UP_ELLIPSOID)
+    Event(30, EVENT_FALL_ON_HIT_DISABLE)
+    Event(30, EVENT_STOOD_UP)
+}
+
+SeqTrack("mzi_standup_stomach02", 	         "mzi_standup_stomach02.anm2",       0, 43, 30, 1, 0.5) //60
+{
+    Event(0, EVENT_CAN_BE_FINISHED_START)
+    Event(0, EVENT_LYING_ELLIPSOID)
+    Event(0, EVENT_FALL_ON_HIT_ENABLE)
+    Event(10, EVENT_CAN_BE_FINISHED_END)
+    Event(24, EVENT_STAND_UP_ELLIPSOID)
+    Event(35, EVENT_FALL_ON_HIT_DISABLE)
+    Event(35, EVENT_STOOD_UP)
+}
+
+SeqTrack("mzi_standup_stomach03", 	         "mzi_standup_stomach03.anm2",       0, 55, 30, 1, 0.5) //70
+{
+    Event(0, EVENT_CAN_BE_FINISHED_START)
+    Event(0, EVENT_LYING_ELLIPSOID)
+    Event(0, EVENT_FALL_ON_HIT_ENABLE)
+    Event(16, EVENT_CAN_BE_FINISHED_END)
+    Event(27, EVENT_STAND_UP_ELLIPSOID)
+    Event(38, EVENT_FALL_ON_HIT_DISABLE)
+    Event(38, EVENT_STOOD_UP)
+}
+
+SeqTrack("mzi_standup_back01", 	         "mzi_standup_back01.anm2",       2, 75, 30, 1, 0.5)
+{
+    Event(0, EVENT_CAN_BE_FINISHED_START)
+    Event(0, EVENT_LYING_ELLIPSOID)
+    Event(0, EVENT_FALL_ON_HIT_ENABLE)
+    Event(10, EVENT_CAN_BE_FINISHED_END)
+    Event(26, EVENT_STAND_UP_ELLIPSOID)
+    Event(36, EVENT_FALL_ON_HIT_DISABLE)
+    Event(36, EVENT_STOOD_UP)
+}
+
+SeqTrack("mzi_standup_back02", 	         "mzi_standup_back02.anm2",       6, 75, 30, 1, 0.5)
+{
+    Event(0, EVENT_CAN_BE_FINISHED_START)
+    Event(0, EVENT_LYING_ELLIPSOID)
+    Event(0, EVENT_FALL_ON_HIT_ENABLE)
+    Event(11, EVENT_CAN_BE_FINISHED_END)
+    Event(31, EVENT_STAND_UP_ELLIPSOID)
+    Event(41, EVENT_FALL_ON_HIT_DISABLE)
+    Event(41, EVENT_STOOD_UP)
+}
+
+//[nosek_20100729] SeqTrack("mzi_standup_jump", 	         "mzi_standup_jump.anm2",       0, 121, 30, 1, 0.5)
+
+
+
+// Nowe pliki dodane 07.10.2010
+SeqTrack("mzi_upset_sprint_sudden_turn_90_l", 	         "MZI_Sprint_Sudden_Turn_90L.anm2",       0, 52, 30, 1, 0.5)
+{
+    Event(6, VIS_EVENT_STEP_LEFT)
+    Event(13, VIS_EVENT_STEP_RIGHT)
+    Event(15, VIS_EVENT_MAX_ANIM_CUT_TIME)
+    Event(15, EVENT_FINAL_POSITION)
+    Event(20, VIS_EVENT_STEP_LEFT)
+    Event(22, VIS_EVENT_STEP_RIGHT)
+    Event(25, VIS_EVENT_ROTATION_MOD_START)
+	Event(27, VIS_EVENT_STEP_LEFT)
+    //Event(28, EVENT_FINAL_POSITION)
+	Event(28, VIS_EVENT_STEP_RIGHT)
+    Event(30, VIS_EVENT_ROTATION_MOD_END)
+	Event(32, VIS_EVENT_STEP_LEFT)
+    Event(37, VIS_EVENT_STOPANIM)
+	Event(41, VIS_EVENT_STEP_RIGHT)
+    Event(49, VIS_EVENT_STEP_LEFT)
+}
+
+SeqTrack("mzi_upset_sprint_sudden_turn_90_r", 	         "MZI_Sprint_Sudden_Turn_90R.anm2",       0, 52, 30, 1, 0.5)
+{
+    Event(6, VIS_EVENT_STEP_RIGHT)
+    Event(13, VIS_EVENT_STEP_LEFT)
+    Event(15, VIS_EVENT_MAX_ANIM_CUT_TIME)
+    Event(15, EVENT_FINAL_POSITION)
+    Event(20, VIS_EVENT_STEP_RIGHT)
+    Event(22, VIS_EVENT_STEP_LEFT)
+    Event(25, VIS_EVENT_ROTATION_MOD_START)
+	Event(27, VIS_EVENT_STEP_RIGHT)
+    //Event(28, EVENT_FINAL_POSITION)
+	Event(28, VIS_EVENT_STEP_LEFT)
+    Event(30, VIS_EVENT_ROTATION_MOD_END)
+	Event(32, VIS_EVENT_STEP_RIGHT)
+    Event(37, VIS_EVENT_STOPANIM)
+	Event(41, VIS_EVENT_STEP_LEFT)
+    Event(49, VIS_EVENT_STEP_RIGHT)
+}
+
+SeqTrack("mzi_upset_sprint_sudden_turn_180_l", 	         "MZI_Sprint_Sudden_Turn_180L.anm2",       0, 77, 30, 1, 0.5)
+{
+    Event(6, VIS_EVENT_STEP_RIGHT)
+    Event(14, VIS_EVENT_STEP_LEFT)
+    Event(15, VIS_EVENT_MAX_ANIM_CUT_TIME)
+    Event(15, EVENT_FINAL_POSITION)
+    Event(22, VIS_EVENT_STEP_RIGHT)
+    Event(29, VIS_EVENT_STEP_LEFT)
+	Event(35, VIS_EVENT_STEP_RIGHT)
+    Event(35, VIS_EVENT_ROTATION_MOD_START)
+    //Event(35, EVENT_FINAL_POSITION)
+    Event(46, VIS_EVENT_ROTATION_MOD_END)
+	Event(47, VIS_EVENT_STEP_LEFT)
+	Event(54, VIS_EVENT_STEP_RIGHT)
+    Event(56, VIS_EVENT_STOPANIM)
+	Event(62, VIS_EVENT_STEP_LEFT)
+    Event(69, VIS_EVENT_STEP_RIGHT)
+}
+
+SeqTrack("mzi_upset_sprint_sudden_turn_180_r", "MZI_Sprint_Sudden_Turn_180R_Mirror.anm2", 0, 71, 30, 1, 0.5)
+{
+    Event(6, VIS_EVENT_STEP_LEFT)
+    Event(14, VIS_EVENT_STEP_RIGHT)
+    Event(15, VIS_EVENT_MAX_ANIM_CUT_TIME)
+    Event(15, EVENT_FINAL_POSITION)
+    Event(22, VIS_EVENT_STEP_LEFT)
+    Event(29, VIS_EVENT_STEP_RIGHT)
+	Event(35, VIS_EVENT_STEP_LEFT)
+    Event(35, VIS_EVENT_ROTATION_MOD_START)
+    //Event(35, EVENT_FINAL_POSITION)
+    Event(46, VIS_EVENT_ROTATION_MOD_END)
+	Event(47, VIS_EVENT_STEP_RIGHT)
+	Event(54, VIS_EVENT_STEP_LEFT)
+    Event(56, VIS_EVENT_STOPANIM)
+	Event(62, VIS_EVENT_STEP_RIGHT)
+    Event(69, VIS_EVENT_STEP_LEFT)
+}
+
+// --------------- fighter specific anims --------------------
+
+SeqTrack("mzi_upset_stand_hitreaction_right_counterattack_v01", "mz_upset_stand_hitreaction_torso_counterattack_v02.anm2", 8, 111, 55, 1, 0.5) //160
+{
+    Event(0, EVENT_REACT_ON_HIT_DISABLED)
+    Event(62, EVENT_APPLY_DAMAGE_LEFT)
+    Event(68, EVENT_REACT_ON_HIT_ENABLED)
+}
+
+SeqTrack("mzi_upset_stand_hitreaction_left_counterattack_v01", "mz_upset_stand_hitreaction_head_counterattack_v02.anm2", 9, 79, 40, 1, 0.5)
+{
+    Event(0, EVENT_REACT_ON_HIT_DISABLED)
+    Event(33, EVENT_APPLY_DAMAGE_RIGHT)
+    Event(40, EVENT_REACT_ON_HIT_ENABLED)
+}
+
+SeqTrack("mzi_upset_stand_hitreaction_left_counterattack_v02", "mzi_hit_recover_attack.anm2", 12, 142, 30, 1, 0.5)
+{
+    Event(0, EVENT_REACT_ON_HIT_DISABLED)
+    Event(102, EVENT_APPLY_DAMAGE_LEFT)
+    Event(122, EVENT_APPLY_DAMAGE_RIGHT)
+    
+    //Event(40, EVENT_REACT_ON_HIT_ENABLED)
+}
+
+/*SeqTrack("mzi_upset_stand_dodge_low_counterattack_v01", "mz_upset_stand_hitreaction_torso_counterattack_v03.anm2", 5, 90, 40, 1, 0.5) //145
+{
+    Event(0, EVENT_REACT_ON_HIT_DISABLED)
+    Event(0, EVENT_TAKE_DAMAGE_DISABLED)
+    Event(28, EVENT_TAKE_DAMAGE_ENABLED)
+    Event(47, EVENT_APPLY_DAMAGE_LEFT)
+    Event(53, EVENT_REACT_ON_HIT_ENABLED)
+}
+
+SeqTrack("mzi_upset_stand_dodge_low_counterattack_v02", "mz_upset_stand_hitreaction_torso_counterattack_v05.anm2", 10, 74, 38, 1, 0.5)
+{
+    Event(0, EVENT_REACT_ON_HIT_DISABLED)
+    Event(0, EVENT_TAKE_DAMAGE_DISABLED)
+    Event(16, EVENT_TAKE_DAMAGE_ENABLED)
+    Event(28, EVENT_APPLY_DAMAGE_RIGHT)
+    Event(34, EVENT_REACT_ON_HIT_ENABLED)
+}*/
+
+//TrackDef("mzi_dodge_tr", "mzi_upset_evade_02.anm", 0, 10)
+//TrackDef("mzi_upset_left_arm_strike_tr", "mzi_upset_left_arm_strike_01.anm", 19, 47)
+/*Seq("mzi_upset_stand_dodge_high_counterattack_v01", 30, 1, 0.5)
+{
+    Track("mzi_dodge_tr",   0, 1, 0)
+    Track("mzi_upset_left_arm_strike_tr",  10, 1, 0.166)
+    
+    Event(0, EVENT_REACT_ON_HIT_DISABLED)
+    Event(0, EVENT_TAKE_DAMAGE_DISABLED)
+    Event(13, EVENT_TAKE_DAMAGE_ENABLED)
+    Event(15, EVENT_APPLY_DAMAGE_RIGHT)
+    Event(25, EVENT_REACT_ON_HIT_ENABLED)
+}*/
+
+SeqTrack("mzi_upset_stand_hitreaction_head_confused_v01", "mz_upset_stand_hitreaction_head_confused_v01.anm2", 0, 200, 36, 1, 0.5)
+
+//SeqTrack("mzi_upset_arm_strike_fighter_combo_01", "mzi_upset_arm_strike_combo_01.anm2", 0, 83, 36, 1, 0.5 )
+
+SeqTrack("mzi_upset_melee_jumpattack", "mzi_jump_attack.anm2", 81, 124, 30, 1, 0.5)
+{
+    Event(0, EVENT_DODGE_DISABLED)
+    Event(11, EVENT_FALL_ON_HIT_ENABLE)
+    Event(18, EVENT_APPLY_DAMAGE_FORWARD)
+    Event(25, EVENT_FALL_ON_HIT_DISABLE)
+    Event(25, EVENT_DODGE_ENABLED)
+}
+
+SeqTrack("mzi_upset_melee_range_attack", "mzi_hit_recover_attack.anm2", 124, 157, 36, 1, 0.5)
+{
+    Event(5, EVENT_REACT_ON_HIT_DISABLED)
+    Event(10, EVENT_APPLY_DAMAGE_RIGHT)
+    Event(15, EVENT_REACT_ON_HIT_ENABLED)
+    Event(20, EVENT_REACT_ON_HIT_DISABLED)
+    Event(25, EVENT_APPLY_DAMAGE_LEFT)
+    Event(30, EVENT_REACT_ON_HIT_ENABLED)
+}
+
+SeqTrack("MZI_Stand_Hitreaction_Head_Back_Strong_01",      "MZI_Stand_Hitreaction_Head_Back_Strong_01.anm2",      9, 47, 30, 1, 0.5) //56
+SeqTrack("MZI_Stand_Hitreaction_Head_Back_Strong_02",      "MZI_Stand_Hitreaction_Head_Back_Strong_02.anm2",      11, 44, 30, 1, 0.5) //62
+SeqTrack("MZI_Stand_Hitreaction_Head_Down_Medium_01",      "MZI_Stand_Hitreaction_Head_Down_Medium_01.anm2",     10, 42, 30, 1, 0.5) //53
+SeqTrack("MZI_Stand_Hitreaction_Head_Down_Medium_02",      "MZI_Stand_Hitreaction_Head_Down_Medium_02.anm2",      8, 43, 30, 1, 0.5) //51
+SeqTrack("MZI_Stand_Hitreaction_Head_Left_Medium_01",      "MZI_Stand_Hitreaction_Head_Left_Medium_01.anm2",      7, 39, 30, 1, 0.5) //39
+SeqTrack("MZI_Stand_Hitreaction_Head_Left_Medium_02",      "MZI_Stand_Hitreaction_Head_Left_Medium_02.anm2",     13, 43, 30, 1, 0.5) //43
+SeqTrack("MZI_Stand_Hitreaction_Head_Right_Medium_01",     "MZI_Stand_Hitreaction_Head_Right_Medium_01.anm2",     6, 36, 30, 1, 0.5) //39
+SeqTrack("MZI_Stand_Hitreaction_Head_Right_Medium_02",     "MZI_Stand_Hitreaction_Head_Right_Medium_02.anm2",     7, 44, 30, 1, 0.5) //63
+SeqTrack("MZI_Stand_Hitreaction_Back_V03",	    			"MZ_Upset_Stand_Hitreaction_Back_V03.anm2",	    	 7, 44, 45, 1, 0.5 ) //90
+SeqTrack("MZI_Stand_Hitreaction_Back_V04",	    			"MZ_Upset_Stand_Hitreaction_Back_V04.anm2",	    	 5, 44, 45, 1, 0.5 ) //65
+
+SeqTrack("mzi_step_frw_attack_right_hand",                 "MZI_Step_Frw_Attack_Right_Hand.anm2",                 14, 72, 30, 1, 0.5) //94
+{
+    Event(10, EVENT_REACT_ON_HIT_DISABLED)
+    Event(14, EVENT_APPLY_DAMAGE_LEFT)
+    Event(19, EVENT_REACT_ON_HIT_ENABLED)
+}
+SeqTrack("mzi_step_frw_attack_both_hand",                  "MZI_Step_Frw_Attack_Both_Hand.anm2",                  0, 85, 30, 1, 0.5)
+{
+    Event(20, EVENT_REACT_ON_HIT_DISABLED)
+    Event(24, EVENT_APPLY_DAMAGE_LEFT)
+    Event(29, EVENT_REACT_ON_HIT_ENABLED)
+    Event(38, EVENT_REACT_ON_HIT_DISABLED)
+    Event(42, EVENT_APPLY_DAMAGE_RIGHT)
+    Event(46, EVENT_REACT_ON_HIT_ENABLED)
+}
+SeqTrack("mzi_step_frw_attack_left_hand",                  "MZI_Step_Frw_Attack_Left_Hand.anm2",                  8, 90, 30, 1, 0.5) //90
+{
+    Event(25, EVENT_REACT_ON_HIT_DISABLED)
+    Event(29, EVENT_APPLY_DAMAGE_RIGHT)
+    Event(33, EVENT_REACT_ON_HIT_ENABLED)
+}
+
+SeqTrack("MZI_attack_from_move_2m_1", 	  "MZI_Run_Stop_Attack_Both_Hand_01.anm2"    , 30, 102, 30, 1, 0.3)
+{
+    Event(5, VIS_EVENT_STEP_LEFT)
+	Event(7, SOUND_EVENT_ATTACK)
+    Event(10, EVENT_REACT_ON_HIT_DISABLED)
+	Event(12, EVENT_APPLY_DAMAGE_RIGHT)
+	Event(12, EVENT_APPLY_DAMAGE_MEDIUM_PUSH)
+	Event(13, EVENT_REACT_ON_HIT_ENABLED)
+	Event(16, VIS_EVENT_STEP_RIGHT)
+	Event(20, SOUND_EVENT_ATTACK)
+    Event(22, EVENT_REACT_ON_HIT_DISABLED)
+	Event(24, EVENT_APPLY_DAMAGE_LEFT)
+	Event(24, EVENT_APPLY_DAMAGE_MEDIUM_PUSH)
+	Event(25, EVENT_REACT_ON_HIT_ENABLED)
+	Event(28, VIS_EVENT_STEP_LEFT)
+}
+
+SeqTrack("MZI_attack_from_move_3m_1", 	  "MZI_Run_Stop_Attack_Both_Hand_02.anm2"    , 27, 105, 30, 1, 0.3)
+{
+    Event(4, VIS_EVENT_STEP_RIGHT)
+	Event(7, EVENT_REACT_ON_HIT_DISABLED)
+	Event(5, SOUND_EVENT_ATTACK)
+	Event(9, EVENT_APPLY_DAMAGE_LEFT)
+	Event(9, EVENT_APPLY_DAMAGE_MEDIUM_PUSH)
+	Event(9, EVENT_REACT_ON_HIT_ENABLED)
+	Event(14, VIS_EVENT_STEP_LEFT)
+	Event(17, EVENT_REACT_ON_HIT_DISABLED)
+	Event(18, SOUND_EVENT_ATTACK)
+	Event(19, EVENT_APPLY_DAMAGE_RIGHT)
+	Event(19, EVENT_APPLY_DAMAGE_MEDIUM_PUSH)
+	Event(20, EVENT_REACT_ON_HIT_ENABLED)
+    Event(26, EVENT_REACT_ON_HIT_DISABLED)
+	Event(24, SOUND_EVENT_ATTACK)
+	Event(28, VIS_EVENT_STEP_RIGHT)
+    Event(28, EVENT_APPLY_DAMAGE_RIGHT)
+	Event(28, EVENT_APPLY_DAMAGE_MEDIUM_PUSH)
+    Event(29, EVENT_REACT_ON_HIT_ENABLED)
+    Event(38, VIS_EVENT_STEP_LEFT)
+}
+
+SeqTrack("MZI_attack_from_move_4m_1", 	  "MZI_Run_Stop_Attack_Both_Hand_03.anm2"    , 12, 87, 30, 1, 0.3)
+{
+    Event(3, VIS_EVENT_STEP_RIGHT)
+	Event(6, EVENT_REACT_ON_HIT_DISABLED)
+	Event(5, SOUND_EVENT_ATTACK)
+	Event(8, EVENT_APPLY_DAMAGE_LEFT)
+	Event(8, EVENT_APPLY_DAMAGE_MEDIUM_PUSH)
+	Event(9, EVENT_REACT_ON_HIT_ENABLED)
+	Event(13, VIS_EVENT_STEP_LEFT)
+	Event(15, EVENT_REACT_ON_HIT_DISABLED)
+	Event(15, SOUND_EVENT_ATTACK)
+	Event(17, EVENT_APPLY_DAMAGE_RIGHT)
+	Event(17, EVENT_APPLY_DAMAGE_MEDIUM_PUSH)
+	Event(18, EVENT_REACT_ON_HIT_ENABLED)
+    Event(25, EVENT_REACT_ON_HIT_DISABLED)
+	Event(23, SOUND_EVENT_ATTACK)
+	Event(28, VIS_EVENT_STEP_RIGHT)
+    Event(27, EVENT_APPLY_DAMAGE_RIGHT)
+	Event(27, EVENT_APPLY_DAMAGE_MEDIUM_PUSH)
+    Event(28, EVENT_REACT_ON_HIT_ENABLED)
+    Event(34, VIS_EVENT_STEP_LEFT)
+}
+
+SeqTrack("MZI_attack_from_move_4m_2", 	  "MZI_Run_Stop_Attack_Both_Hand_04.anm2"    , 36, 137, 30, 1, 0.3)
+{
+	Event(2, EVENT_REACT_ON_HIT_DISABLED)
+	Event(1, SOUND_EVENT_ATTACK)
+	Event(4, EVENT_APPLY_DAMAGE_RIGHT)
+	Event(4, EVENT_APPLY_DAMAGE_MEDIUM_PUSH)
+	Event(5, EVENT_REACT_ON_HIT_ENABLED)
+	Event(11, EVENT_REACT_ON_HIT_DISABLED)
+	Event(10, SOUND_EVENT_ATTACK)
+	Event(13, EVENT_APPLY_DAMAGE_RIGHT)
+	Event(13, EVENT_APPLY_DAMAGE_MEDIUM_PUSH)
+	Event(14, EVENT_REACT_ON_HIT_ENABLED)
+    Event(17, VIS_EVENT_STEP_RIGHT)
+    Event(28, VIS_EVENT_STEP_LEFT)
+    Event(37, EVENT_REACT_ON_HIT_DISABLED)
+	Event(35, SOUND_EVENT_ATTACK)
+    Event(39, EVENT_APPLY_DAMAGE_LEFT)
+	Event(39, EVENT_APPLY_DAMAGE_MEDIUM_PUSH)
+    Event(40, EVENT_REACT_ON_HIT_ENABLED)
+    //Event(60, EVENT_REACT_ON_HIT_DISABLED)
+	Event(60, SOUND_EVENT_ATTACK)
+    Event(64, EVENT_APPLY_DAMAGE_FORWARD)
+	Event(64, EVENT_APPLY_DAMAGE_HEAVY_PUSH)
+    //Event(68, EVENT_REACT_ON_HIT_ENABLED)
+}
+
+SeqTrack("MZI_attack_from_move_4m_3", 	  "MZI_Run_Stop_Attack_Both_Hand_05.anm2"    , 33, 129, 30, 1, 0.3)
+{
+    Event(3, EVENT_APPLY_DAMAGE_RIGHT)
+    Event(7, EVENT_REACT_ON_HIT_DISABLED)
+	Event(6, SOUND_EVENT_ATTACK)
+    Event(9, EVENT_APPLY_DAMAGE_LEFT)
+	Event(9, EVENT_APPLY_DAMAGE_MEDIUM_PUSH)
+    Event(10, EVENT_REACT_ON_HIT_ENABLED)
+    Event(14, VIS_EVENT_STEP_LEFT)
+    Event(17, EVENT_REACT_ON_HIT_DISABLED)
+    Event(19, EVENT_APPLY_DAMAGE_RIGHT)
+	Event(19, EVENT_APPLY_DAMAGE_MEDIUM_PUSH)
+    Event(20, EVENT_REACT_ON_HIT_ENABLED)
+    Event(26, EVENT_REACT_ON_HIT_DISABLED)
+    Event(29, VIS_EVENT_STEP_RIGHT)
+    Event(28, EVENT_APPLY_DAMAGE_RIGHT)
+	Event(28, EVENT_APPLY_DAMAGE_MEDIUM_PUSH)
+    Event(29, EVENT_REACT_ON_HIT_ENABLED)
+    Event(37, VIS_EVENT_STEP_LEFT)
+    Event(49, EVENT_REACT_ON_HIT_DISABLED)
+	Event(49, SOUND_EVENT_ATTACK)
+    Event(51, EVENT_APPLY_DAMAGE_UP)
+	Event(51, EVENT_APPLY_DAMAGE_MEDIUM_PUSH)
+    Event(52, EVENT_REACT_ON_HIT_ENABLED)
+}
+
+SeqTrack("MZI_attack_from_stand_2m_1", 	  "MZI_Step_Frw_Attack_Both_Hand_02.anm2"    , 0, 76, 36, 1, 0.3)
+{
+    Event(18, EVENT_REACT_ON_HIT_DISABLED)
+	Event(17, SOUND_EVENT_ATTACK)
+    Event(20, EVENT_APPLY_DAMAGE_RIGHT)
+	Event(20, EVENT_APPLY_DAMAGE_MEDIUM_PUSH)
+    Event(21, EVENT_REACT_ON_HIT_ENABLED)
+    Event(25, VIS_EVENT_STEP_RIGHT)
+    Event(37, EVENT_REACT_ON_HIT_DISABLED)
+	Event(36, SOUND_EVENT_ATTACK)
+    Event(39, EVENT_APPLY_DAMAGE_LEFT)
+	Event(39, EVENT_APPLY_DAMAGE_MEDIUM_PUSH)
+    Event(40, EVENT_REACT_ON_HIT_ENABLED)
+    Event(40, VIS_EVENT_STEP_LEFT)
+}
+
+SeqTrack("MZI_attack_from_stand_2m_2", 	  "MZI_Step_Frw_Attack_Both_Hand_03.anm2"    , 10, 95, 36, 1, 0.3)
+{
+    Event(25, EVENT_REACT_ON_HIT_DISABLED)
+	Event(24, SOUND_EVENT_ATTACK)
+    Event(27, EVENT_APPLY_DAMAGE_RIGHT)
+	Event(27, EVENT_APPLY_DAMAGE_MEDIUM_PUSH)
+    Event(28, EVENT_REACT_ON_HIT_ENABLED)
+    Event(35, VIS_EVENT_STEP_RIGHT)
+    Event(50, EVENT_REACT_ON_HIT_DISABLED)
+	Event(48, SOUND_EVENT_ATTACK)
+    Event(49, VIS_EVENT_STEP_LEFT)
+    Event(52, EVENT_APPLY_DAMAGE_UP)
+	Event(52, EVENT_APPLY_DAMAGE_MEDIUM_PUSH)
+    Event(53, EVENT_REACT_ON_HIT_ENABLED)
+}
+
+SeqTrack("MZI_attack_from_stand_2m_3", 	  "MZI_Step_Frw_Attack_Both_Hand_04.anm2"    , 0, 101, 36, 1, 0.3)
+{
+    Event(25, VIS_EVENT_STEP_RIGHT)
+    Event(34, EVENT_REACT_ON_HIT_DISABLED)
+	Event(31, SOUND_EVENT_ATTACK)
+    Event(36, EVENT_APPLY_DAMAGE_DOWN)
+	Event(36, EVENT_APPLY_DAMAGE_MEDIUM_PUSH)
+    Event(37, EVENT_REACT_ON_HIT_ENABLED)
+    Event(41, VIS_EVENT_STEP_LEFT)
+    Event(52, EVENT_REACT_ON_HIT_DISABLED)
+	Event(50, SOUND_EVENT_ATTACK)
+    Event(54, EVENT_APPLY_DAMAGE_RIGHT)
+	Event(54, EVENT_APPLY_DAMAGE_MEDIUM_PUSH)
+    Event(55, EVENT_REACT_ON_HIT_ENABLED)
+}
+
+SeqTrack("MZI_attack_from_stand_3m_1", 	  "MZI_Step_Frw_Attack_Both_Hand_05.anm2"    , 15, 84, 36, 1, 0.3)
+{
+    Event(4, EVENT_REACT_ON_HIT_DISABLED)
+	Event(1, SOUND_EVENT_ATTACK)
+    Event(6, EVENT_APPLY_DAMAGE_RIGHT)
+	Event(6, EVENT_APPLY_DAMAGE_MEDIUM_PUSH)
+    Event(7, EVENT_REACT_ON_HIT_ENABLED)
+    Event(12, VIS_EVENT_STEP_RIGHT)
+    Event(20, EVENT_REACT_ON_HIT_DISABLED)
+	Event(18, SOUND_EVENT_ATTACK)
+    Event(22, EVENT_APPLY_DAMAGE_LEFT)
+	Event(22, EVENT_APPLY_DAMAGE_MEDIUM_PUSH)
+    Event(23, EVENT_REACT_ON_HIT_ENABLED)
+    Event(27, VIS_EVENT_STEP_LEFT)
+    Event(35, EVENT_REACT_ON_HIT_DISABLED)
+	Event(33, SOUND_EVENT_ATTACK)
+    Event(37, EVENT_APPLY_DAMAGE_BACKWARD)
+	Event(37, EVENT_APPLY_DAMAGE_HEAVY_PUSH)
+    Event(38, EVENT_REACT_ON_HIT_ENABLED)
+    Event(42, VIS_EVENT_STEP_RIGHT)
+    //Event(59, VIS_EVENT_STEP_LEFT)
+}
+
+SeqTrack("MZI_attack_from_stand_3m_2", 	  "MZI_Step_Frw_Attack_Both_Hand_06.anm2"    , 10, 116, 36, 1, 0.3)
+{
+    Event(19, SOUND_EVENT_ATTACK)
+    Event(21, EVENT_REACT_ON_HIT_DISABLED)	
+    Event(23, EVENT_APPLY_DAMAGE_RIGHT)
+	Event(23, EVENT_APPLY_DAMAGE_MEDIUM_PUSH)
+    Event(24, EVENT_REACT_ON_HIT_ENABLED)
+    Event(29, VIS_EVENT_STEP_RIGHT)
+	Event(35, SOUND_EVENT_ATTACK)
+    Event(37, EVENT_REACT_ON_HIT_DISABLED)
+    Event(39, EVENT_APPLY_DAMAGE_LEFT)
+	Event(39, EVENT_APPLY_DAMAGE_MEDIUM_PUSH)    
+    Event(40, EVENT_REACT_ON_HIT_ENABLED)
+    Event(44, VIS_EVENT_STEP_LEFT)
+    Event(50, SOUND_EVENT_ATTACK)
+    Event(52, EVENT_REACT_ON_HIT_DISABLED)	
+    Event(54, EVENT_APPLY_DAMAGE_RIGHT)
+	Event(54, EVENT_APPLY_DAMAGE_MEDIUM_PUSH)    
+    Event(55, EVENT_REACT_ON_HIT_ENABLED)
+    Event(60, EVENT_REACT_ON_HIT_DISABLED)	
+    Event(62, EVENT_APPLY_DAMAGE_RIGHT)
+	Event(62, EVENT_APPLY_DAMAGE_MEDIUM_PUSH)
+    Event(63, EVENT_REACT_ON_HIT_ENABLED)
+    Event(73, VIS_EVENT_STEP_RIGHT)
+    Event(85, VIS_EVENT_STEP_LEFT)
+    //Event(100, VIS_EVENT_STEP_RIGHT)
+}
+
+SeqTrack("MZI_attack_from_stand_3m_3", 	  "MZI_Step_Frw_Attack_Both_Hand_07.anm2"    , 0, 112, 36, 1, 0.3) //128
+{
+    Event(28, EVENT_REACT_ON_HIT_DISABLED)
+	Event(26, SOUND_EVENT_ATTACK)
+    Event(30, EVENT_APPLY_DAMAGE_UP)
+	Event(30, EVENT_APPLY_DAMAGE_MEDIUM_PUSH)
+    Event(31, EVENT_REACT_ON_HIT_ENABLED)
+    Event(34, VIS_EVENT_STEP_RIGHT)
+    Event(44, EVENT_REACT_ON_HIT_DISABLED)
+	Event(43, SOUND_EVENT_ATTACK)
+    Event(46, EVENT_APPLY_DAMAGE_RIGHT)
+	Event(46, EVENT_APPLY_DAMAGE_MEDIUM_PUSH)
+    Event(47, EVENT_REACT_ON_HIT_ENABLED)
+    Event(55, VIS_EVENT_STEP_LEFT)
+    Event(64, EVENT_REACT_ON_HIT_DISABLED)
+	Event(64, SOUND_EVENT_ATTACK)
+    Event(66, EVENT_APPLY_DAMAGE_DOWN)
+	Event(66, EVENT_APPLY_DAMAGE_HEAVY_PUSH)
+    Event(67, EVENT_REACT_ON_HIT_ENABLED)
+}
+
+SeqTrack("MZI_attack_from_stand_4m_1", 	  "MZI_Step_Frw_Attack_Both_Hand_08.anm2"    , 0, 137, 36, 1, 0.3)
+{    
+	Event(19, SOUND_EVENT_ATTACK)
+    Event(21, EVENT_REACT_ON_HIT_DISABLED)
+    Event(23, EVENT_APPLY_DAMAGE_RIGHT)
+	Event(23, EVENT_APPLY_DAMAGE_MEDIUM_PUSH)
+    Event(24, EVENT_REACT_ON_HIT_ENABLED)
+    Event(30, VIS_EVENT_STEP_RIGHT)
+    Event(35, EVENT_REACT_ON_HIT_DISABLED)
+	Event(35, SOUND_EVENT_ATTACK)
+    Event(37, EVENT_APPLY_DAMAGE_LEFT)
+	Event(37, EVENT_APPLY_DAMAGE_MEDIUM_PUSH)
+    Event(38, EVENT_REACT_ON_HIT_ENABLED)
+    Event(40, VIS_EVENT_STEP_LEFT)
+    Event(49, SOUND_EVENT_ATTACK)
+    Event(52, EVENT_REACT_ON_HIT_DISABLED)
+    Event(51, VIS_EVENT_STEP_RIGHT)
+    Event(54, EVENT_APPLY_DAMAGE_RIGHT)
+	Event(54, EVENT_APPLY_DAMAGE_HEAVY_PUSH)
+    Event(55, EVENT_REACT_ON_HIT_ENABLED)    
+	Event(62, SOUND_EVENT_ATTACK)
+    Event(63, EVENT_REACT_ON_HIT_DISABLED)
+    Event(65, EVENT_APPLY_DAMAGE_RIGHT)
+	Event(65, EVENT_APPLY_DAMAGE_HEAVY_PUSH)
+    Event(66, EVENT_REACT_ON_HIT_ENABLED)
+    Event(70, VIS_EVENT_STEP_LEFT)
+    Event(95, EVENT_REACT_ON_HIT_DISABLED)
+	Event(95, SOUND_EVENT_ATTACK)
+    Event(95, EVENT_APPLY_DAMAGE_BACKWARD)
+	Event(95, EVENT_APPLY_DAMAGE_HEAVY_PUSH)
+    Event(100, EVENT_REACT_ON_HIT_ENABLED)
+}
+
+// --------------- infected new alvernia mocaps, dec2010/jan2011 --------------------
+
+
+SeqTrack("mzi_hit_reaction_mild_right01",                  "mzi_hit_reaction_mild_right01.anm2",                  6, 41, 30, 1, 0.5) //60
+SeqTrack("mzi_hit_reaction_mild_right02",                  "mzi_hit_reaction_mild_right02.anm2",                  9, 34, 30, 1, 0.5) //50
+SeqTrack("mzi_hit_reaction_mild_right03",                  "mzi_hit_reaction_mild_right03.anm2",                  5, 32, 30, 1, 0.5) //43
+
+SeqTrack("mzi_hit_reaction_mild_left01",                  "mzi_hit_reaction_mild_left01.anm2",                  4, 30, 30, 1, 0.5) //55
+SeqTrack("mzi_hit_reaction_mild_left02",                  "mzi_hit_reaction_mild_left02.anm2",                  5, 25, 30, 1, 0.5) //55
+
+SeqTrack("mzi_hit_reaction_mild_front01",                  "mzi_hit_reaction_mild_front01.anm2",                  4, 31, 30, 1, 0.5) //45
+SeqTrack("mzi_hit_reaction_mild_back01",                  "mzi_hit_reaction_mild_back01.anm2",                  5, 35, 30, 1, 0.5) //45
+
+SeqTrack("mzi_hit_reaction_mild_sick02",                  "mzi_hit_reaction_mild_sick02.anm2",                  0, 175, 30, 1, 0.5) //180
+{
+	Event(10, VIS_EVENT_PUKE)
+	Event(13, VIS_EVENT_PUKE_SPLAT)
+	Event(108, VIS_EVENT_PUKE_END)
+}
+SeqTrack("mzi_hit_reaction_mild_sick01",                  "mzi_hit_reaction_mild_sick01.anm2",                  0, 161, 30, 1, 0.5)
+{
+	Event(16, VIS_EVENT_PUKE)
+	Event(19, VIS_EVENT_PUKE_SPLAT)
+	Event(130, VIS_EVENT_PUKE_END)
+}
+
+SeqTrack("mzi_death_cutoff_rightarm01",                  "mzi_death_cutoff_rightarm01.anm2",                  0, 160, 30, 1, 0.5)
+SeqTrack("mzi_death_cutoff_rightarm02",                  "mzi_death_cutoff_rightarm02.anm2",                  0, 155, 30, 1, 0.5)
+
+SeqTrack("mzi_death_cutoff_leftarm01",                  "mzi_death_cutoff_leftarm01.anm2",                  0, 240, 30, 1, 0.5)
+SeqTrack("mzi_death_cutoff_leftarm02",                  "mzi_death_cutoff_leftarm02.anm2",                  0, 190, 30, 1, 0.5)
+SeqTrack("mzi_death_cutoff_leftarm03",                  "mzi_death_cutoff_leftarm03.anm2",                  0, 159, 30, 1, 0.5)
+SeqTrack("mzi_death_cutoff_leftarm04",                  "mzi_death_cutoff_leftarm04.anm2",                  0, 155, 30, 1, 0.5)
+
+SeqTrack("mzi_infected_hit_reaction_backward_heavy_01", 		       "mzi_infected_hit_reaction_backward_heavy_01.anm2", 	                    0, 37, 30, 1, 0.5) //78
+{
+    Event(17, VIS_EVENT_STEP_LEFT)
+    Event(26, VIS_EVENT_STEP_RIGHT)
+    Event(34, VIS_EVENT_STEP_LEFT)
+}
+SeqTrack("mzi_infected_hit_reaction_left_heavy_01", 		           "mzi_infected_hit_reaction_left_heavy_01.anm2", 	                        0, 41, 30, 1, 0.5) //58
+{
+    Event(15, VIS_EVENT_STEP_RIGHT)
+    Event(25, VIS_EVENT_STEP_LEFT)
+    Event(38, VIS_EVENT_STEP_RIGHT)
+}
+SeqTrack("mzi_infected_hit_reaction_right_heavy_01", 		           "mzi_infected_hit_reaction_right_heavy_01.anm2", 	                        0, 35, 30, 1, 0.5) //60
+{
+    Event(14, VIS_EVENT_STEP_RIGHT)
+    Event(23, VIS_EVENT_STEP_LEFT)
+    Event(34, VIS_EVENT_STEP_RIGHT)
+}
+SeqTrack("mzi_infected_hit_reaction_forward_heavy_01", 		           "mzi_infected_hit_reaction_forward_heavy_01.anm2", 	                    0, 37, 30, 1, 0.5) //66
+{
+    Event(18, VIS_EVENT_STEP_LEFT)
+    Event(27, VIS_EVENT_STEP_RIGHT)
+    Event(37, VIS_EVENT_STEP_LEFT)
+}
+
+SeqTrack("mzi_infected_hit_reaction_left_heavy_02", 		       "mzi_infected_hit_reaction_left_heavy_02.anm2", 	                    0, 43, 30, 1, 0.5) //57
+{
+    Event(18, VIS_EVENT_STEP_RIGHT)
+    Event(28, VIS_EVENT_STEP_LEFT)
+    Event(38, VIS_EVENT_STEP_RIGHT)
+}
+SeqTrack("mzi_infected_hit_reaction_right_heavy_02", 		       "mzi_infected_hit_reaction_right_heavy_02.anm2", 	                    0, 34, 30, 1, 0.5) //67
+{
+    Event(24, VIS_EVENT_STEP_LEFT)
+    Event(33, VIS_EVENT_STEP_RIGHT)
+}
+SeqTrack("mzi_infected_hit_reaction_backward_heavy_02", 		       "mzi_infected_hit_reaction_backward_heavy_02.anm2", 	                    0, 35, 30, 1, 0.5) //55
+{
+    Event(16, VIS_EVENT_STEP_LEFT)
+    Event(25, VIS_EVENT_STEP_RIGHT)
+    Event(35, VIS_EVENT_STEP_LEFT)
+}
+SeqTrack("mzi_infected_hit_reaction_forward_heavy_02", 		       "mzi_infected_hit_reaction_forward_heavy_02.anm2", 	                    0, 37, 30, 1, 0.5) //63
+{
+    Event(18, VIS_EVENT_STEP_RIGHT)
+    Event(30, VIS_EVENT_STEP_LEFT)
+}
+SeqTrack("mzi_infected_hit_reaction_forward_heavy", 		       "mzi_infected_hit_reaction_forward_heavy.anm2", 	                    0, 51, 30, 1, 0.5) //72
+{
+    Event(23, VIS_EVENT_STEP_RIGHT)
+    Event(33, VIS_EVENT_STEP_LEFT)
+    Event(45, VIS_EVENT_STEP_RIGHT)
+}
+
+SeqTrack("mzi_infected_hit_reaction_right_counter_01", 		       "mzi_infected_hit_reaction_right_counter_01.anm2", 	                    0, 41, 30, 1, 0.5) //53
+{
+    Event(0, EVENT_REACT_ON_HIT_DISABLED)
+    Event(19, SOUND_EVENT_ATTACK)
+    Event(22, EVENT_APPLY_DAMAGE_LEFT)
+    Event(23, EVENT_REACT_ON_HIT_ENABLED)
+}
+SeqTrack("mzi_infected_hit_reaction_left_counter_01", 		       "mzi_infected_hit_reaction_left_counter_01.anm2", 	                    0, 48, 30, 1, 0.5) //62
+{
+    Event(0, EVENT_REACT_ON_HIT_DISABLED)
+    Event(26, SOUND_EVENT_ATTACK)
+    Event(29, EVENT_APPLY_DAMAGE_RIGHT)
+    Event(30, EVENT_REACT_ON_HIT_ENABLED)
+}
+SeqTrack("mzi_infected_hit_reaction_up_counter_01", 		       "mzi_infected_hit_reaction_up_counter_01.anm2", 	                    0, 51, 30, 1, 0.5) //62
+{
+    Event(0, EVENT_REACT_ON_HIT_DISABLED)
+    Event(31, SOUND_EVENT_ATTACK)
+    Event(33, EVENT_APPLY_DAMAGE_LEFT)
+    Event(34, EVENT_REACT_ON_HIT_ENABLED)
+}
+SeqTrack("mzi_infected_hit_reaction_down_counter_01", 		       "mzi_infected_hit_reaction_down_counter_01.anm2", 	                    0, 60, 30, 1, 0.5) //72
+{
+    Event(0, EVENT_REACT_ON_HIT_DISABLED)
+    Event(31, SOUND_EVENT_ATTACK)
+    Event(33, EVENT_APPLY_DAMAGE_LEFT)
+    Event(34, EVENT_REACT_ON_HIT_ENABLED)
+}
+SeqTrack("mzi_infected_hit_reaction_right_counter_02", 		       "mzi_infected_hit_reaction_right_counter_02.anm2", 	                    0, 46, 30, 1, 0.5) //56
+{
+    Event(0, EVENT_REACT_ON_HIT_DISABLED)
+    Event(21, SOUND_EVENT_ATTACK)
+    Event(24, EVENT_APPLY_DAMAGE_LEFT)
+    Event(25, EVENT_REACT_ON_HIT_ENABLED)
+}
+SeqTrack("mzi_infected_hit_reaction_left_counter_02", 		       "mzi_infected_hit_reaction_left_counter_02.anm2", 	                    0, 47, 30, 1, 0.5) //59
+{
+    Event(0, EVENT_REACT_ON_HIT_DISABLED)
+    Event(17, SOUND_EVENT_ATTACK)
+    Event(20, EVENT_APPLY_DAMAGE_RIGHT)
+    Event(21, EVENT_REACT_ON_HIT_ENABLED)
+}
+SeqTrack("mzi_infected_hit_reaction_up_counter_02", 		       "mzi_infected_hit_reaction_up_counter_02.anm2", 	                    0, 53, 30, 1, 0.5) //57
+{
+    Event(0, EVENT_REACT_ON_HIT_DISABLED)
+    Event(29, SOUND_EVENT_ATTACK)
+    Event(32, EVENT_APPLY_DAMAGE_LEFT)
+    Event(33, EVENT_REACT_ON_HIT_ENABLED)
+}
+SeqTrack("mzi_infected_hit_reaction_up_counter_03", 		       "mzi_infected_hit_reaction_up_counter_03.anm2", 	                    0, 52, 30, 1, 0.5) //67
+{
+    Event(0, EVENT_REACT_ON_HIT_DISABLED)
+    Event(27, SOUND_EVENT_ATTACK)
+    Event(30, EVENT_APPLY_DAMAGE_RIGHT)
+    Event(31, EVENT_REACT_ON_HIT_ENABLED)
+}
+SeqTrack("mzi_infected_hit_reaction_down_counter_02", 		       "mzi_infected_hit_reaction_down_counter_02.anm2", 	                    0, 53, 30, 1, 0.5) //61
+{
+    Event(0, EVENT_REACT_ON_HIT_DISABLED)
+    Event(24, SOUND_EVENT_ATTACK)
+    Event(28, EVENT_APPLY_DAMAGE_DOWN)
+    Event(29, EVENT_REACT_ON_HIT_ENABLED)
+}
+SeqTrack("mzi_infected_hit_reaction_down_counter_03", 		       "mzi_infected_hit_reaction_down_counter_03.anm2", 	                    0, 56, 30, 1, 0.5) //64
+{
+    Event(0, EVENT_REACT_ON_HIT_DISABLED)
+    Event(26, SOUND_EVENT_ATTACK)
+    Event(30, EVENT_APPLY_DAMAGE_LEFT)
+    Event(31, EVENT_REACT_ON_HIT_ENABLED)
+}
+
+SeqTrack("mzi_infected_hit_reaction_right_counter_push_01", 		   "mzi_infected_hit_reaction_right_counter_push_01.anm2", 	                    0, 47, 30, 1, 0.5) //53
+{
+    Event(0, EVENT_REACT_ON_HIT_DISABLED)
+    Event(16, SOUND_EVENT_ATTACK)
+    Event(21, EVENT_APPLY_DAMAGE_FORWARD)
+    Event(21, EVENT_APPLY_DAMAGE_MEDIUM_PUSH)
+    Event(22, EVENT_REACT_ON_HIT_ENABLED)
+    Event(28, VIS_EVENT_STEP_RIGHT)
+    Event(39, VIS_EVENT_STEP_LEFT)
+}
+SeqTrack("mzi_infected_hit_reaction_left_counter_push_01", 		       "mzi_infected_hit_reaction_left_counter_push_01.anm2", 	                    0, 49, 30, 1, 0.5) //62
+{
+    Event(0, EVENT_REACT_ON_HIT_DISABLED)
+    Event(18, VIS_EVENT_STEP_LEFT)
+    Event(25, SOUND_EVENT_ATTACK)
+    Event(28, EVENT_APPLY_DAMAGE_FORWARD)
+    Event(28, EVENT_APPLY_DAMAGE_MEDIUM_PUSH)
+    Event(29, EVENT_REACT_ON_HIT_ENABLED)
+    Event(38, VIS_EVENT_STEP_LEFT)
+    Event(48, VIS_EVENT_STEP_RIGHT)
+}
+SeqTrack("mzi_infected_hit_reaction_up_counter_push_01", 		       "mzi_infected_hit_reaction_up_counter_push_01.anm2", 	                        0, 50, 30, 1, 0.5) //58
+{
+    Event(0, EVENT_REACT_ON_HIT_DISABLED)
+    Event(21, SOUND_EVENT_ATTACK)
+    Event(23, VIS_EVENT_STEP_LEFT)
+    Event(27, EVENT_APPLY_DAMAGE_FORWARD)
+    Event(27, EVENT_APPLY_DAMAGE_MEDIUM_PUSH)
+    Event(28, EVENT_REACT_ON_HIT_ENABLED)
+    Event(37, VIS_EVENT_STEP_RIGHT)
+}
+SeqTrack("mzi_infected_hit_reaction_down_counter_push_01", 		       "mzi_infected_hit_reaction_down_counter_push_01.anm2", 	                    0, 50, 30, 1, 0.5) //52
+{
+    Event(0, EVENT_REACT_ON_HIT_DISABLED)
+    Event(21, SOUND_EVENT_ATTACK)
+    Event(25, VIS_EVENT_STEP_LEFT)
+    Event(26, EVENT_APPLY_DAMAGE_FORWARD)
+    Event(26, EVENT_APPLY_DAMAGE_MEDIUM_PUSH)
+    Event(27, EVENT_REACT_ON_HIT_ENABLED)
+    Event(40, VIS_EVENT_STEP_RIGHT)
+}
+SeqTrack("mzi_infected_hit_reaction_right_counter_push_02", 		   "mzi_infected_hit_reaction_right_counter_push_02.anm2", 	                    0, 58, 30, 1, 0.5)
+{
+    Event(0, EVENT_REACT_ON_HIT_DISABLED)
+    Event(20, SOUND_EVENT_ATTACK)
+    Event(24, EVENT_APPLY_DAMAGE_FORWARD)
+    Event(24, EVENT_APPLY_DAMAGE_MEDIUM_PUSH)
+    Event(25, EVENT_REACT_ON_HIT_ENABLED)
+    Event(26, VIS_EVENT_STEP_LEFT)
+    Event(37, VIS_EVENT_STEP_RIGHT)   
+}
+SeqTrack("mzi_infected_hit_reaction_left_counter_push_02", 		       "mzi_infected_hit_reaction_left_counter_push_02.anm2", 	                    0, 48, 30, 1, 0.5) //63
+{
+    Event(0, EVENT_REACT_ON_HIT_DISABLED)
+    Event(22, VIS_EVENT_STEP_LEFT)
+    Event(27, SOUND_EVENT_ATTACK)
+    Event(30, EVENT_APPLY_DAMAGE_FORWARD)
+    Event(30, EVENT_APPLY_DAMAGE_MEDIUM_PUSH)
+    Event(31, EVENT_REACT_ON_HIT_ENABLED)
+    Event(37, VIS_EVENT_STEP_LEFT)
+    Event(44, VIS_EVENT_STEP_RIGHT)   
+}
+SeqTrack("mzi_infected_hit_reaction_left_counter_push_03", 		       "mzi_infected_hit_reaction_left_counter_push_03.anm2", 	                    0, 52, 30, 1, 0.5) //65
+{
+    Event(0, EVENT_REACT_ON_HIT_DISABLED)
+    Event(19, VIS_EVENT_STEP_LEFT)
+    Event(27, SOUND_EVENT_ATTACK)
+    Event(31, EVENT_APPLY_DAMAGE_FORWARD)
+    Event(31, EVENT_APPLY_DAMAGE_MEDIUM_PUSH)
+    Event(32, EVENT_REACT_ON_HIT_ENABLED)
+    Event(39, VIS_EVENT_STEP_LEFT)
+    Event(49, VIS_EVENT_STEP_RIGHT)   
+}
+SeqTrack("mzi_infected_hit_reaction_up_counter_push_02", 		       "mzi_infected_hit_reaction_up_counter_push_02.anm2", 	                        0, 58, 30, 1, 0.5) //67
+{
+    Event(0, EVENT_REACT_ON_HIT_DISABLED)
+    Event(20, VIS_EVENT_STEP_RIGHT)
+    Event(29, SOUND_EVENT_ATTACK)
+    Event(30, VIS_EVENT_STEP_LEFT)
+    Event(34, EVENT_APPLY_DAMAGE_FORWARD)
+    Event(34, EVENT_APPLY_DAMAGE_MEDIUM_PUSH)
+    Event(35, EVENT_REACT_ON_HIT_ENABLED)
+    Event(44, VIS_EVENT_STEP_RIGHT)   
+    Event(54, VIS_EVENT_STEP_LEFT)
+}
+SeqTrack("mzi_infected_hit_reaction_down_counter_push_02", 		       "mzi_infected_hit_reaction_down_counter_push_02.anm2", 	                    0, 56, 30, 1, 0.5) //63
+{
+    Event(0, EVENT_REACT_ON_HIT_DISABLED)
+    Event(14, VIS_EVENT_STEP_RIGHT)
+    Event(27, SOUND_EVENT_ATTACK)
+    Event(28, VIS_EVENT_STEP_LEFT)
+    Event(31, EVENT_APPLY_DAMAGE_FORWARD)
+    Event(31, EVENT_APPLY_DAMAGE_MEDIUM_PUSH)
+    Event(32, EVENT_REACT_ON_HIT_ENABLED)
+    Event(45, VIS_EVENT_STEP_RIGHT)   
+    Event(55, VIS_EVENT_STEP_LEFT)
+}
+
+SeqTrack("mzi_stunned", 		                                        "mz_vessel_stunned.anm2", 	                                        0, 374, 30, 1, 0.5)

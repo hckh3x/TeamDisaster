@@ -1,0 +1,147 @@
+!include("ai_data.def")
+!include("vessel_timing_events.def")
+!include("vessel_sound_types.def")
+
+// preset for a boss on a "resort" level
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////// DATA ///////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+//#######################
+//#### HIT REACTIONS ####
+//#######################
+//## hit_reaction:pose:hit_reaction:item_type:damage_type:attacker_pos:body_part:direction:severity
+//#######################
+
+Data("hit_reaction:standing:counter_attack::all:::backward:light", -2, "mz_upset_stand_hitreaction_torso_counterattack_v01")
+Data("hit_reaction:standing:counter_attack::all:::backward:light", -2, "mz_upset_stand_hitreaction_torso_counterattack_v02")
+Data("hit_reaction:standing:counter_attack::all:::backward:light", -2, "mz_upset_stand_hitreaction_torso_counterattack_v05")
+
+Data("hit_reaction:standing:counter_attack::all:::backward:medium", -2, "mz_upset_stand_hitreaction_torso_counterattack_v01")
+Data("hit_reaction:standing:counter_attack::all:::backward:medium", -2, "mz_upset_stand_hitreaction_torso_counterattack_v02")
+Data("hit_reaction:standing:counter_attack::all:::backward:medium", -2, "mz_upset_stand_hitreaction_torso_counterattack_v05")
+
+Data("hit_reaction:standing:counter_attack::all:::backward:heavy", -2, "mz_upset_stand_hitreaction_torso_counterattack_v01")
+Data("hit_reaction:standing:counter_attack::all:::backward:heavy", -2, "mz_upset_stand_hitreaction_torso_counterattack_v02")
+Data("hit_reaction:standing:counter_attack::all:::backward:heavy", -2, "mz_upset_stand_hitreaction_torso_counterattack_v05")
+
+//##############
+//#### IDLE ####
+//##############
+//## idle:pose:idle_type:item_type:scare_level:is_idle_prepare:is_idle_finish
+//##############
+
+Data("idle:standing:stand:none:none:none:none", -2, "mz_a_calm_stand_idle_v01")
+Data("idle:standing:stand:none:none:none:none", -2, "mz_a_calm_stand_idle_v02")
+Data("idle:standing:stand:none:none:none:none", -2, "mz_a_calm_stand_idle_v03")
+Data("idle:standing:stand:none:none:none:none", -2, "mz_a_calm_stand_idle_v04")
+
+//##################
+//#### ALARMING ####
+//##################
+//## alarming:is_standing:alarm_level
+//##################
+
+//Data("alarming:standing:alarmed::", 1.0, "mz_a_calm_stand_idle_v01")
+
+//################
+//#### ATTACK ####
+//################
+//## attack:is_standing:item_type:attack_type:attack_dir:attack_range:is_defending_head:is_holding
+//################
+
+Data("attack:standing::strike_from_stand::::", -2, "mz_strike_from_stand_attack")
+Data("attack:standing::taunt::::", -2, "Thug_taunt_01")
+
+//##################
+//#### MOVEMENT ####
+//##################
+//## movement:is_standing:movement_type:alarm_level:item_type:is_left_leg_crippled:is_right_leg_crippled:ram_type
+//##################
+
+Data("movement:standing:walk:calm:none:none:none:", -2, "mz_a_calm_walk")
+Data("movement:standing:walk:alarmed:none:none:none:", -2, "mz_a_calm_walk")
+Data("movement:standing:run:calm:none:none:none:", -2, "mz_a_calm_walk")
+Data("movement:standing:run:alarmed:none:none:none:", -2, "mz_a_calm_walk")
+
+Data("movement:standing:walk:alarmed::::", -2, "m_npc_unarmed_walk_left_v01")
+Data("movement:standing:walk:alarmed::::", -2, "m_npc_unarmed_walk_right_v01")
+Data("movement:standing:walk:alarmed::::", -2, "m_npc_unarmed_walk_backward")
+
+Data("movement:standing:walk:calm::::", -2, "m_npc_unarmed_walk_left_v01")
+Data("movement:standing:walk:calm::::", -2, "m_npc_unarmed_walk_right_v01")
+Data("movement:standing:walk:calm::::", -2, "m_npc_unarmed_walk_backward")
+
+//##############
+//#### TURN ####
+//##############
+//## turn:is_standing:alarm_level:item_type:direction:angle
+//##############
+
+Data("turn:standing:::left:45", -2, "mz_b_calm_turn_45_l")
+Data("turn:standing:::right:45", -2, "mz_b_calm_turn_45_r")
+
+Data("turn:standing:::left:90", -2, "mz_b_calm_turn_90_l")
+Data("turn:standing:::right:90", -2, "mz_b_calm_turn_90_r")
+
+Data("turn:standing:::left:180", -2, "mz_b_calm_turn_180_l")
+Data("turn:standing:::right:180", -2, "mz_b_calm_turn_180_r")
+
+//###############
+//#### START ####
+//###############
+//## start:is_standing:alarm_level:item_type:movement_type:angle:direction
+//##############
+
+Data("start:standing::::90:left", -2, "mz_a_calm_startwalkturn_90_l")
+Data("start:standing::::90:right", -2, "mz_a_calm_startwalkturn_90_r")
+Data("start:standing::::0:", -2, "mz_a_calm_walk_start")
+Data("start:standing::::180:left", -2, "mz_a_calm_startwalkturn_180_l")
+Data("start:standing::::180:right", -2, "mz_a_calm_startwalkturn_180_r")
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////// CURVES //////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+Curve(CURVE_KO_PROBABILITY, "zombie_ko_prob_thug")
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////// PARAMETERS ////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+ParamFloat("walk_speed_calm", 0.8)    // MunDee Estuvo aquí
+ParamFloat("walk_speed_alarmed", 0.8)    // MunDee Estuvo aquí
+ParamFloat("run_speed_calm", 0.8)    // MunDee Estuvo aquí
+ParamFloat("run_speed_alarmed", 0.8)    // MunDee Estuvo aquí
+ParamFloat("turn_speed", 240.0)
+ParamFloat("stamina_regeneration_rate", 0.08)
+ParamFloat("medium_severity_threshold", 101.0) //disabled medium hit severity
+ParamFloat("heavy_severity_threshold", 101.0) //disabled heavy hit severity
+ParamBool("always_react_on_kick", 0)
+ParamFloat("decapitation_prob", 0.0)
+ParamFloat("berserker_hit_prob", 0.0)
+ParamFloat("berserker_grab_prob", 0.0)
+ParamFloat("berserker_ram_prob", 0.0)
+ParamBool("can_fall", 0)
+ParamBool("can_react_on_hit", 1)
+ParamFloat("melee_range", 1.7)    // MunDee Estuvo aquí
+ParamFloat("bite_range", 1.2)    // MunDee Estuvo aquí
+ParamFloat("bite_damage_mul", 0.65)
+ParamFloat("min_time_btw_attack_from_stand_attempts", 1.0)    // min time (spawner borders) between grab attempts (0 in the center of normal spawner)
+ParamFloat("max_time_btw_attack_from_stand_attempts", 1.0)   // max time (spawner borders) between grab attempts (a distance from normal spawner)
+ParamFloat("taunt_prob", 100.0)
+ParamFloat("taunt_prob_on_target_change", 100.0)
+ParamInt("zombie_type", 1)
+ParamFloat("health_mul", 4.0)
+ParamFloat("stamina_mul", 20.0)
+ParamFloat("damage_mul", 1.8)
+ParamFloat("physics_damage", 150.0)
+ParamFloat("experience_mul", 12.0)
+ParamInt("max_severity", 1)
+ParamFloat("min_time_btw_hit_reactions", 3.0)
+ParamInt("idle_alarmed_sound_type", SOUND_TYPE_IDLE_CALM)
+ParamBool("force_counter_on_kick", 1)
+ParamFloat("counter_attack_from_stand_prob_mul", 0.0)
+ParamFloat("counter_push_prob_mul", 0.0)
+ParamFloat("counter_combo_prob_mul", 0.0)

@@ -1,0 +1,98 @@
+!include("ai_data.def")
+!include("human_timing_events.def")
+!include("human_activities.def")
+!include("human_goals.def")
+
+SnapDist(0.8)    // MunDee Estuvo aquí
+StrongAttractor()
+ReleaseDist(1.2)    // MunDee Estuvo aquí
+//InteractFull()
+InteractOnlyHead()
+ShortHeadRotation()
+CanPlayDialogAnim()
+Slot("", 1, IDLE_STAND, 1,0.0,0.0,0.0, 0.0, 0.0, 1.0,1.5)    // MunDee Estuvo aquí
+{
+	LockPosition()
+    AiTypeDataSet("human")
+    {	
+		// Data("idle:standing:stand::::", -2, "Design_C_Idle_Sit")
+        // Data("idle:standing:idle::::", -2, "Design_C_Idle_Sit")
+        Data("idle:standing:stand::::", -2, "m_calm_sit_floor_idle01")
+        Data("idle:standing:idle::::", -2, "m_calm_sit_floor_idle01")
+		Data("idle:standing:idle::::", -2, "m_calm_sit_floor_idle02")
+		Data("idle:standing:special::::", -2, "m_calm_sit_floor_special01")
+		
+		Data("dialog:m_caring:pose2:idle", -2, "m_calm_sit_floor_idle01")
+		Data("dialog:m_caring:pose2:idle", -2, "m_calm_sit_floor_idle02")
+		Data("dialog:m_caring:pose2:use", -2, "m_calm_sit_floor_talk01")
+		Data("dialog:m_caring:pose2:agree", -2, "m_calm_sit_floor_talk02")
+		Data("dialog:m_caring:pose2:disagree", -2, "m_calm_sit_floor_talk02")
+		
+		Data("dialog:m_crafty:pose2:idle", -2, "m_calm_sit_floor_idle01")
+		Data("dialog:m_crafty:pose2:idle", -2, "m_calm_sit_floor_idle02")
+		Data("dialog:m_crafty:pose2:use", -2, "m_calm_sit_floor_talk01")
+		Data("dialog:m_crafty:pose2:agree", -2, "m_calm_sit_floor_talk02")
+		Data("dialog:m_crafty:pose2:disagree", -2, "m_calm_sit_floor_talk02")
+		
+		Data("dialog:m_scared:pose2:idle", -2, "m_calm_sit_floor_idle01")
+		Data("dialog:m_scared:pose2:idle", -2, "m_calm_sit_floor_idle02")
+		Data("dialog:m_scared:pose2:use", -2, "m_calm_sit_floor_talk01")
+		Data("dialog:m_scared:pose2:agree", -2, "m_calm_sit_floor_talk02")
+		Data("dialog:m_scared:pose2:disagree", -2, "m_calm_sit_floor_talk02")
+		
+		Data("dialog:m_weak:pose2:idle", -2, "m_calm_sit_floor_idle01")
+		Data("dialog:m_weak:pose2:idle", -2, "m_calm_sit_floor_idle02")
+		Data("dialog:m_weak:pose2:use", -2, "m_calm_sit_floor_talk01")
+		Data("dialog:m_weak:pose2:agree", -2, "m_calm_sit_floor_talk02")
+		Data("dialog:m_weak:pose2:disagree", -2, "m_calm_sit_floor_talk02")
+		
+		Data("dialog:m_tough:pose2:idle", -2, "m_calm_sit_floor_idle01")
+		Data("dialog:m_tough:pose2:idle", -2, "m_calm_sit_floor_idle02")
+		Data("dialog:m_tough:pose2:use", -2, "m_calm_sit_floor_talk01")
+		Data("dialog:m_tough:pose2:agree", -2, "m_calm_sit_floor_talk02")
+		Data("dialog:m_tough:pose2:disagree", -2, "m_calm_sit_floor_talk02")
+		
+		Data("dialog:w_broken:pose2:idle", -2, "m_calm_sit_floor_idle01")
+		Data("dialog:w_broken:pose2:idle", -2, "m_calm_sit_floor_idle02")
+		Data("dialog:w_broken:pose2:use", -2, "m_calm_sit_floor_talk01")
+		Data("dialog:w_broken:pose2:agree", -2, "m_calm_sit_floor_talk02")
+		Data("dialog:w_broken:pose2:disagree", -2, "m_calm_sit_floor_talk02")
+		
+		Data("dialog:w_cheeky:pose2:idle", -2, "m_calm_sit_floor_idle01")
+		Data("dialog:w_cheeky:pose2:idle", -2, "m_calm_sit_floor_idle02")
+		Data("dialog:w_cheeky:pose2:use", -2, "m_calm_sit_floor_talk01")
+		Data("dialog:w_cheeky:pose2:agree", -2, "m_calm_sit_floor_talk02")
+		Data("dialog:w_cheeky:pose2:disagree", -2, "m_calm_sit_floor_talk02")
+		
+		Data("dialog:w_dignified:pose2:idle", -2, "m_calm_sit_floor_idle01")
+		Data("dialog:w_dignified:pose2:idle", -2, "m_calm_sit_floor_idle02")
+		Data("dialog:w_dignified:pose2:use", -2, "m_calm_sit_floor_talk01")
+		Data("dialog:w_dignified:pose2:agree", -2, "m_calm_sit_floor_talk02")
+		Data("dialog:w_dignified:pose2:disagree", -2, "m_calm_sit_floor_talk02")
+		
+		Data("dialog:w_scared:pose2:idle", -2, "m_calm_sit_floor_idle01")
+		Data("dialog:w_scared:pose2:idle", -2, "m_calm_sit_floor_idle02")
+		Data("dialog:w_scared:pose2:use", -2, "m_calm_sit_floor_talk01")
+		Data("dialog:w_scared:pose2:agree", -2, "m_calm_sit_floor_talk02")
+		Data("dialog:w_scared:pose2:disagree", -2, "m_calm_sit_floor_talk02")
+		
+		Data("dialog:w_weak:pose2:idle", -2, "m_calm_sit_floor_idle01")
+		Data("dialog:w_weak:pose2:idle", -2, "m_calm_sit_floor_idle02")
+		Data("dialog:w_weak:pose2:use", -2, "m_calm_sit_floor_talk01")
+		Data("dialog:w_weak:pose2:agree", -2, "m_calm_sit_floor_talk02")
+		Data("dialog:w_weak:pose2:disagree", -2, "m_calm_sit_floor_talk02")
+		
+		Data("dialog:jin:pose2:idle", -2, "m_calm_sit_floor_idle01")
+		Data("dialog:jin:pose2:idle", -2, "m_calm_sit_floor_idle02")
+		Data("dialog:jin:pose2:use", -2, "m_calm_sit_floor_talk01")
+		Data("dialog:jin:pose2:agree", -2, "m_calm_sit_floor_talk02")
+		Data("dialog:jin:pose2:disagree", -2, "m_calm_sit_floor_talk02")
+		
+		Data("dialog:extra:pose2:idle", -2, "m_calm_sit_floor_idle01")
+		Data("dialog:extra:pose2:idle", -2, "m_calm_sit_floor_idle02")
+		Data("dialog:extra:pose2:use", -2, "m_calm_sit_floor_talk01")
+		Data("dialog:extra:pose2:agree", -2, "m_calm_sit_floor_talk02")
+		Data("dialog:extra:pose2:disagree", -2, "m_calm_sit_floor_talk02")
+	}
+}
+

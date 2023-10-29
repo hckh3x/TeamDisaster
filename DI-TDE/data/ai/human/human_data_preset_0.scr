@@ -1,0 +1,8 @@
+!include("ai_data.def")
+!include("human_timing_events.def")
+
+// AI with gun fighting in indoor preset
+
+/////////////////////////////////////////// PARAMETERS ////////////////////////////////////////////
+//ParamFloat("change_position_time_min", 30.0)
+//ParamFloat("change_position_time_max", 30.0)

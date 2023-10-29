@@ -1,0 +1,62 @@
+!include("ai_data.def")
+!include("infected_timing_events.def")
+
+// preset for infected melee fighter
+
+////////////////////////////////////////////// DATA ///////////////////////////////////////////////
+
+!include("fighter_data.def")
+
+/////////////////////////////////////////// PARAMETERS ////////////////////////////////////////////
+
+ParamFloat("walk_speed_calm", 2.3) //190    // MunDee Estuvo aquí
+ParamFloat("walk_speed_alarmed", 2.3)    // MunDee Estuvo aquí
+ParamFloat("run_speed_calm", 5.0)    // MunDee Estuvo aquí
+ParamFloat("run_speed_alarmed", 5.0)    // MunDee Estuvo aquí
+ParamFloat("sprint_speed_calm", 5.0)    // MunDee Estuvo aquí
+ParamFloat("sprint_speed_alarmed", 5.0)    // MunDee Estuvo aquí
+ParamFloat("stamina_regeneration_rate", 0.1)
+ParamFloat("melee_range",1.55)    // MunDee Estuvo aquí
+ParamFloat("min_time_btw_hit_reactions", 0.0)
+ParamFloat("min_time_btw_attack_from_stand_attempts", 0.0)
+ParamFloat("max_time_btw_attack_from_stand_attempts", 0.0)
+// ParamFloat("melee_range", 1.55)    // MunDee Estuvo aquí
+// ParamFloat("counterattack_dist", 2.5)    // MunDee Estuvo aquí
+ParamInt("zombie_type", 5)
+ParamFloat("taunt_prob", 100.0)
+ParamFloat("taunt_prob_on_target_change", 100.0)
+ParamBool("can_fall", 0)
+ParamBool("can_defend", 1)
+ParamBool("can_keep_distance_during_melee", 0)
+ParamBool("always_react_on_kick", 1)
+ParamFloat("counter_attack_prob_mul", 1.0)
+ParamFloat("counter_attack_from_stand_prob_mul", 0.0)
+ParamFloat("counter_push_prob_mul", 0.0)
+ParamFloat("counterattack_dist",2.5)    // MunDee Estuvo aquí
+ParamFloat("counterattack_angle", 360.0)
+ParamFloat("regeneration_rate", 0.12) // part of health restored per second (only for those with enabled regeneration)
+//ParamFloat("no_regeneration_time", 2.0)
+ParamFloat("regeneration_probability", 0.3)
+ParamFloat("ellipsoid_size_mul", 1.3)
+ParamFloat("head_health_influence", 2.0)
+ParamFloat("left_arm_health_influence", 1.0)
+ParamFloat("right_arm_health_influence", 1.0)
+ParamFloat("left_leg_health_influence", 1.0)
+ParamFloat("right_leg_health_influence", 1.0)
+ParamFloat("torso_front_health_influence", 1.0)
+ParamFloat("torso_back_health_influence", 1.0)
+ParamFloat("health_mul", 4.0)
+ParamFloat("stamina_mul", 5.0)
+ParamFloat("damage_mul", 1.0)
+ParamFloat("experience_mul", 8.0)
+ParamFloat("min_time_btw_hit_reactions", 1.0)
+ParamFloat("berserker_hit_prob", 0.0)
+ParamFloat("berserker_grab_prob", 0.0)
+ParamFloat("berserker_ram_prob", 0.0)
+ParamFloat("dodge_prob_mul", 10.0)
+ParamBool("limb_cut_by_direct_hit", 0)
+ParamBool("can_strike_from_stand", 1)
+ParamBool("can_attack_from_move", 1)
+ParamFloat("confusion_prob_mod", 1.0)
+ParamFloat("time_for_clench_check", -1.0)
+ParamFloat("threat_level", 12)

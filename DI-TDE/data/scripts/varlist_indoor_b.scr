@@ -1,0 +1,6 @@
+VarInt("i_indoor_on", 1)
+VarFloat("f_ambient_00_weight", 0.00000000000000000000)
+VarFloat("f_ambient_01_weight", 1.00000000000000000000)
+VarFloat("f_srl_near",50.0)    // MunDee Estuvo aquí
+VarFloat("f_srl_far",60.0)    // MunDee Estuvo aquí
+VarVec4("vambient", [0.26607799053192139000, 0.27092199158668518000, 0.28245101451873779000, 1.00000000000000000000])

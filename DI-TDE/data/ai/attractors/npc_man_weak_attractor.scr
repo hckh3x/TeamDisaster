@@ -1,0 +1,29 @@
+!include("ai_data.def")
+!include("human_timing_events.def")
+!include("human_activities.def")
+!include("human_goals.def")
+
+SnapDist(0.8)    // MunDee Estuvo aquí
+StrongAttractor()
+ReleaseDist(1.2)    // MunDee Estuvo aquí
+CanPlayDialogAnim()
+InteractOnlyHead()
+Slot("", 1, IDLE_STAND, 1,0.0,0.0,0.0, 0.0, 0.0, 1.0,1.5)    // MunDee Estuvo aquí
+{
+    AiTypeDataSet("human")
+    {	
+        Data("idle:standing:stand::::", -2, "m_npc_hopeless_talk_sadness")
+        Data("idle:standing:idle::::", -2, "m_npc_hopeless_talk_sadness")
+        
+        Data("dialog:m_weak:pose2:idle", -2, "m_npc_hopeless_talk_sadness")
+        
+// 		Data("dialog:m_weak:pose2:rotate_r", -2, "w_scared_pose2_rotate60R")
+//         Data("dialog:m_weak:pose2:rotate_l", -2, "w_scared_pose2_rotate60L")
+//         Data("dialog:m_weak:pose2:rotate_r180", -2, "w_scared_pose2_rotate180R")
+//         Data("dialog:m_weak:pose2:rotate_l180", -2, "w_scared_pose2_rotate180L")
+
+        
+        //Data("dialog:m_weak:pose2:talk", -2, "m_npc_hopeless_talk_sadness")
+	}
+}
+

@@ -1,0 +1,8 @@
+// keep it synchronized with EScareLevel!!!
+
+export string SCARE_LVL_NONE                    = "None";
+export string SCARE_LVL_VERY_LOW                = "VeryLow";
+export string SCARE_LVL_LOW                     = "Low";
+export string SCARE_LVL_MIDDLE                  = "Middle";
+export string SCARE_LVL_HIGH                    = "High";
+export string SCARE_LVL_MAX                     = "Max";

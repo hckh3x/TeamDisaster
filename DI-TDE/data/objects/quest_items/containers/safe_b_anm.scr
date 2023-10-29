@@ -1,0 +1,2 @@
+SeqTrack( "Open", "safe_b_anm.anm2", 0, 20, 30, 0, 0.5 )
+SeqTrack( "Close", "safe_b_anm.anm2", 20, 0, 30, 0, 0.5 )

@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<QuestsDefinitions
+     level="testmapbalance"
+     pxsl_line="3">
+    <Quest
+         name="TestMapBalance_locker"
+         pxsl_line="4">
+        <Phase
+             type="go to"
+             name="StartingPlayerPosition"
+             show_locations="false"
+             pxsl_line="5">
+            <Destination
+                 pxsl_line="5">
+                <QuestObject
+                     class="SpawnPoint"
+                     name="TestMapBalance_MapStart"
+                     pxsl_line="5" />
+            </Destination>
+            <DebugPlayerPosition
+                 pxsl_line="6">
+                <QuestObject
+                     class="SpawnPoint"
+                     name="TestMapBalance_MapStart"
+                     pxsl_line="6" />
+            </DebugPlayerPosition>
+        </Phase>
+        <Phase
+             type="checkpoint"
+             name="autosave"
+             pxsl_line="7">
+            <Destination
+                 pxsl_line="7">
+                <QuestObject
+                     class="SpawnPoint"
+                     name="TestMapBalance_MapStart"
+                     pxsl_line="7" />
+            </Destination>
+        </Phase>
+    </Quest>
+    <Quest
+         name="TMB_Resort"
+         parent="TestMapBalance_locker"
+         pxsl_line="9">
+        <Phase
+             type="go to"
+             name="Resort"
+             show_locations="false"
+             pxsl_line="10">
+            <Destination
+                 pxsl_line="10">
+                <QuestObject
+                     class="SpawnPoint"
+                     name="TestMapBalance_MapStart"
+                     pxsl_line="10" />
+            </Destination>
+            <DebugPlayerPosition
+                 pxsl_line="11">
+                <QuestObject
+                     class="SpawnPoint"
+                     name="TestMapBalance_MapStart"
+                     pxsl_line="11" />
+            </DebugPlayerPosition>
+        </Phase>
+    </Quest>
+    <Quest
+         name="TMB_Prison"
+         parent="TestMapBalance_locker"
+         pxsl_line="13">
+        <Phase
+             type="go to"
+             name="Prison"
+             show_locations="false"
+             pxsl_line="14">
+            <Destination
+                 pxsl_line="14">
+                <QuestObject
+                     class="SpawnPoint"
+                     name="TestMapBalance_Prison"
+                     pxsl_line="14" />
+            </Destination>
+            <DebugPlayerPosition
+                 pxsl_line="15">
+                <QuestObject
+                     class="SpawnPoint"
+                     name="TestMapBalance_Prison"
+                     pxsl_line="15" />
+            </DebugPlayerPosition>
+        </Phase>
+    </Quest>
+</QuestsDefinitions>
+<!-- vim: set et sw=4 ts=4: -->

@@ -1,0 +1,8 @@
+FromBone("bip01 spine2", 17)
+FromBone("bip01 pelvis", 17)
+FromBone("bip01 l hand", 5)
+FromBone("bip01 r hand", 5)
+FromBone("bip01 l foot", 5)
+FromBone("bip01 r foot", 5)
+FromBone("bip01 head", 13)
+

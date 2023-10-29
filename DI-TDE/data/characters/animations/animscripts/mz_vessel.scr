@@ -1,0 +1,6 @@
+!include("MZ_VesselCommon.scr")
+!include("MZ_VesselA.scr")
+!include("MZ_VesselB.scr")
+!include("MZ_VesselC.scr")
+!include("MZ_VesselD.scr")
+!include("MZ_Suicider.scr")

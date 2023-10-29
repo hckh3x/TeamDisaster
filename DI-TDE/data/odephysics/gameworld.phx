@@ -1,0 +1,55 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////
+// CoJ2 ODE world settings
+///////////////////////////////////////////////////////////////////////////////////////////////////
+ 
+!include("ODEWorld.phx")
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+WorldParams()
+{
+    DepthThreshold(0.001)    // MunDee Estuvo aquí
+    ContactDepthMul(0.14)
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+//PhysicalDamageThresholdOf100kgBody() // #DIDE rem
+//{
+//    $DEF_VALUE(f, 50)
+//
+//    SetThreshold("ALL",             DEF_VALUE)
+//    SetThreshold("CUT",             DEF_VALUE)
+//    SetThreshold("BULLET",          DEF_VALUE)
+//    SetThreshold("BLAST",           DEF_VALUE)
+//    SetThreshold("BLAST_SPECIAL",   DEF_VALUE)
+//    SetThreshold("ELECTRIC",        DEF_VALUE)
+//    SetThreshold("HEAT",            DEF_VALUE)
+//    SetThreshold("COLLISION_FROM_GAME_SCRIPT",  DEF_VALUE)
+//    SetThreshold("COLLISION_FROM_PHYSICS",      DEF_VALUE)
+//    SetThreshold("DROWNING",        DEF_VALUE)
+//    SetThreshold("ROPE",            DEF_VALUE)
+//    SetThreshold("FIRE",            DEF_VALUE)
+//    SetThreshold("PUNCH1",          DEF_VALUE)
+//    SetThreshold("PUNCH2",          DEF_VALUE)
+//    SetThreshold("PUNCH3",          DEF_VALUE)
+//    SetThreshold("PUNCH_KO",        DEF_VALUE)
+//    SetThreshold("ARROW",           DEF_VALUE)
+//    SetThreshold("LASSO",           DEF_VALUE)
+//    SetThreshold("BLUNT",           DEF_VALUE)
+//    SetThreshold("BITE",            DEF_VALUE)
+//    SetThreshold("PUSH",            DEF_VALUE)
+//    SetThreshold("WALL_HIT",        DEF_VALUE)
+//    SetThreshold("GENTLE_PUSH",     DEF_VALUE)
+//    SetThreshold("CHAINSAW",        DEF_VALUE)
+//    SetThreshold("FINISHER",        DEF_VALUE)
+//    SetThreshold("PUKE",            DEF_VALUE)
+//    SetThreshold("FAKE",            DEF_VALUE)
+//    SetThreshold("BLEEDING",        DEF_VALUE)
+//    SetThreshold("POISON",          DEF_VALUE)
+//    SetThreshold("SUICIDER_BLAST",  DEF_VALUE)
+//    SetThreshold("IMPACT",          DEF_VALUE)
+//    SetThreshold("RAM",             DEF_VALUE)
+//    SetThreshold("PUNCH_BLOCKED",   DEF_VALUE)
+//    SetThreshold("FLASH",           DEF_VALUE)
+//    SetThreshold("CAR_HIT",         DEF_VALUE)
+//}
+

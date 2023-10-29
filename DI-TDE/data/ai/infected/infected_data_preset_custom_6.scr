@@ -1,0 +1,213 @@
+!include("ai_data.def")
+!include("vessel_timing_events.def")
+!include("vessel_sound_types.def")
+
+// infected ram
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////// DATA ///////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+//###############
+//#### DYING ####
+//###############
+//## die:is_standing:is_decapitated:direction
+//###############
+
+Data("die:standing:::::::", -2, "ram_decapitation_1")
+Data("die:standing:::::::", -2, "ram_decapitation_2")
+Data("die:standing:::::::", -2, "ram_decapitation_3")
+
+//##############
+//#### IDLE ####
+//##############
+//## idle:pose:idle_type:item_type:scare_level:is_idle_prepare:is_idle_finish
+//##############
+
+Data("idle:standing:stand::::", -2, "ram_idle")
+Data("idle:standing:special::::", -2, "mz_exhausted_after_ram")
+
+//################
+//#### ATTACK ####
+//################
+//## attack:is_standing:item_type:attack_type:attack_dir:attack_range:is_defending_head:is_holding
+//################
+
+//Data("attack:standing::left_arm_strike:left:::", -2, "ram_left")
+Data("attack:standing::left_arm_strike:left:::", -2, "ram_kick_left")
+//Data("attack:standing::left_arm_strike:right:::", -2, "ram_right")
+Data("attack:standing::left_arm_strike:right:::", -2, "ram_kick_right")
+Data("attack:standing::left_arm_strike:forward:::", -2, "ram_kick_front")
+//Data("attack:standing::left_arm_strike:forward:::", -2, "ram_front")
+Data("attack:standing::left_arm_strike:backward:::", -2, "ram_kick_back")
+//Data("attack:standing::left_arm_strike:backward:::", -2, "ram_backleft")
+//Data("attack:standing::left_arm_strike:backward:::", -2, "ram_backright")
+
+//Data("attack:standing::right_arm_strike:left:::", -2, "ram_left")
+Data("attack:standing::right_arm_strike:left:::", -2, "ram_kick_left")
+//Data("attack:standing::right_arm_strike:right:::", -2, "ram_right")
+Data("attack:standing::right_arm_strike:right:::", -2, "ram_kick_right")
+Data("attack:standing::right_arm_strike:forward:::", -2, "ram_kick_front")
+//Data("attack:standing::right_arm_strike:forward:::", -2, "ram_front")
+Data("attack:standing::right_arm_strike:backward:::", -2, "ram_kick_back")
+//Data("attack:standing::right_arm_strike:backward:::", -2, "ram_backleft")
+//Data("attack:standing::right_arm_strike:backward:::", -2, "ram_backright")
+
+
+//#######################
+//#### HIT REACTIONS ####
+//#######################
+//## hit_reaction:pose:hit_reaction:item_type:damage_type:attacker_pos:body_part:direction:severity
+//#######################
+
+Data("hit_reaction:standing:pain::all:rear:::", -2, "ram_hit_reaction_back01")
+Data("hit_reaction:standing:pain::all:rear:::", -2, "ram_hit_reaction_back02")
+Data("hit_reaction:standing:pain::all:rear:::", -2, "ram_hit_reaction_back03")
+Data("hit_reaction:standing:pain::all:rear:::", -2, "ram_hit_reaction_back04")
+
+Data("hit_reaction:standing:pain::all:::forward:", -2, "ram_hit_reaction_back01")
+Data("hit_reaction:standing:pain::all:::forward:", -2, "ram_hit_reaction_back02")
+Data("hit_reaction:standing:pain::all:::forward:", -2, "ram_hit_reaction_back03")
+Data("hit_reaction:standing:pain::all:::forward:", -2, "ram_hit_reaction_back04")
+
+Data("hit_reaction:standing:pain::all::::", -2, "ram_hit_reaction01")
+Data("hit_reaction:standing:pain::all::::", -2, "ram_hit_reaction02")
+Data("hit_reaction:standing:pain::all::::", -2, "ram_hit_reaction03")
+Data("hit_reaction:standing:pain::all::::", -2, "ram_hit_reaction04")
+Data("hit_reaction:standing:pain::all::::", -2, "ram_hit_reaction05")
+Data("hit_reaction:standing:pain::all::::", -2, "ram_hit_reaction06")
+Data("hit_reaction:standing:pain::all::::", -2, "ram_hit_reaction07")
+Data("hit_reaction:standing:pain::all::::", -2, "ram_hit_reaction08")
+
+//##############
+//#### TURN ####
+//##############
+//## turn:pose:alarm_level:item_type:direction:angle
+//##############
+
+Data("turn:standing:::left:90", -2, "ram_rotate_90left")
+Data("turn:standing:::right:90", -2, "ram_rotate_90right")
+
+Data("turn:standing:::left:180", -2, "ram_rotate_180left")
+Data("turn:standing:::right:180", -2, "ram_rotate_180right")
+
+//#############################
+//#### COLLISION REACTIONS ####
+//#############################
+//## collision_reaction:pose
+//#######################
+
+Data("collision_reaction:standing", -2, "ram_attack_wallhit02")
+Data("collision_reaction:standing", -2, "ram_attack_wallhit03")
+Data("collision_reaction:standing", -2, "ram_attack_wallhit04")
+
+//##################
+//#### MOVEMENT ####
+//##################
+//## movement:is_standing:movement_type:alarm_level:item_type:is_left_leg_crippled:is_right_leg_crippled:ram_type
+//##################
+
+Data("movement:standing:berserker_ram:alarmed::::", -2, "ram_berserker_ram")
+Data("movement:standing:berserker_ram_end:alarmed::::", -2, "ram_berserker_stop")
+
+Data("movement:standing:walk:::::", -2, "ram_walkforward_loop")
+Data("movement:standing:trot:::::", -2, "ram_walkforward_loop")
+Data("movement:standing:run:::::", -2, "ram_walkforward_loop")
+Data("movement:standing:sprint:::::", -2, "ram_walkforward_loop")
+
+//###############
+//#### START ####
+//###############
+//## start:is_standing:alarm_level:item_type:movement_type:angle:direction
+//##############
+
+Data("start:standing:::berserker_ram:0:", -2, "ram_angel_start_front")
+Data("start:standing:::berserker_ram:90:right", -2, "ram_angel_start_right")
+Data("start:standing:::berserker_ram:90:left", -2, "ram_angel_start_left")
+Data("start:standing:::berserker_ram:180:right", -2, "ram_angel_start_backright")
+Data("start:standing:::berserker_ram:180:left", -2, "ram_angel_start_backleft")
+
+Data("start:standing::::90:left", -2, "ram_walkleft_start")
+Data("start:standing::::90:right", -2, "ram_walkright_start")
+Data("start:standing::::0:", -2, "ram_walkforward_start")
+Data("start:standing::::180:left", -2, "ram_walkbackward_startleft")
+Data("start:standing::::180:right", -2, "ram_walkbackward_startright")
+
+//##############
+//#### STOP ####
+//##############
+//## stop:is_standing:alarm_level:item_type:movement_type:angle:direction
+//##############
+
+Data("stop:standing::::0::false", -2, "ram_walkforward_stop")
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////// CURVES //////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+Curve(CURVE_EXPERIENCE, "infected_experience")
+Curve(CURVE_HEALTH, "infected_health")
+Curve(CURVE_MELEE_DAMAGE, "ram_melee_damage")
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////// PARAMETERS ////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+ParamFloat("walk_speed_calm", 1.1)    // MunDee Estuvo aquí
+ParamFloat("walk_speed_alarmed", 1.1)     // MunDee Estuvo aquí
+ParamFloat("run_speed_calm", 1.1)    // MunDee Estuvo aquí
+ParamFloat("run_speed_alarmed", 1.1)    // MunDee Estuvo aquí
+ParamFloat("sprint_speed_calm", 1.1)    // MunDee Estuvo aquí
+ParamFloat("sprint_speed_alarmed", 1.1)    // MunDee Estuvo aquí
+ParamFloat("stamina_regeneration_rate", 0.05)
+ParamFloat("head_health_influence", 1.2)
+ParamFloat("left_arm_health_influence", 0.0)
+ParamFloat("right_arm_health_influence", 0.0)
+ParamFloat("left_leg_health_influence", 0.0)
+ParamFloat("right_leg_health_influence", 0.0)
+ParamFloat("torso_front_health_influence", 0.0)
+ParamFloat("torso_back_health_influence", 1.0)
+ParamFloat("min_time_btw_hit_reactions", 4)
+ParamBool("directional_melee_attacks", 1)
+ParamBool("can_fall", 0)
+ParamBool("can_keep_distance_during_melee", 0)
+ParamFloat("berserker_ram_dist", 13.0)    // MunDee Estuvo aquí
+ParamFloat("berserker_ram_min_dist", 3.0)    // MunDee Estuvo aquí
+ParamFloat("melee_range", 2.0)    // MunDee Estuvo aquí
+ParamFloat("melee_range_y", 1.0)    // MunDee Estuvo aquí
+ParamFloat("time_btw_ram_berserkers", 0.0)                  // time between possible occurance of ram berserker attacks
+ParamFloat("move_time_before_berserker", 0.0)
+ParamFloat("ram_physics_damage", 85.0)
+ParamFloat("ram_damage_mul", 1.0)
+ParamFloat("taunt_prob", 0.0)
+ParamFloat("taunt_prob_on_target_change", 0.0)
+ParamInt("zombie_type", 2)
+ParamBool("can_fall_on_low_obstacles", 0)
+ParamBool("can_climb", 0)
+ParamBool("always_react_on_bullet", 0)
+ParamBool("always_react_on_kick", 0)
+ParamBool("check_enemy_reachable", 1)
+ParamFloat("ellipsoid_size_mul", 1.5)
+ParamFloat("ram_turn_speed_limit_far", 60.0)
+ParamFloat("ram_turn_speed_limit_close", 15.0)
+ParamFloat("after_ram_wait_time", 2.0)
+ParamFloat("ram_close_dist", 3.5)    // MunDee Estuvo aquí
+ParamBool("limb_cut_by_direct_hit", 0)
+ParamFloat("berserker_ram_prob", 100.0)
+ParamBool("can_strike_from_stand", 0)
+ParamBool("can_attack_from_move", 0)
+ParamFloat("experience_mul", 10.0)
+ParamFloat("health_mul", 4.0)
+ParamFloat("counter_attack_prob_mul", 0.0)
+ParamFloat("combo_prob_mul", 0.0)
+ParamFloat("confusion_prob_mod", 0.0)
+ParamFloat("time_for_clench_check", -1.0)
+ParamFloat("physics_damage", 250.0)
+ParamBool("fall_on_head_collision", 0)
+ParamFloat("threat_level", 8)
+ParamInt("berserker_move_sound_type", SOUND_TYPE_BERSERKER_MOVE)
+ParamInt("idle_alarmed_sound_type", SOUND_TYPE_IDLE_ALARMED)
+ParamInt("idle_calm_sound_type", SOUND_TYPE_IDLE_CALM)
+ParamInt("starting_sound_type", SOUND_TYPE_IDLE_CALM)
+ParamBool("enable_collisions_with_other_ai", 1)
+ParamFloat("time_after_attack_before_loiter", 0.0)

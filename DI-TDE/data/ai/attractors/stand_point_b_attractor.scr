@@ -1,0 +1,28 @@
+!include("ai_data.def")
+!include("human_timing_events.def")
+!include("human_activities.def")
+!include("human_goals.def")
+
+SnapDist(0.8)    // MunDee Estuvo aquí
+ReleaseDist(1.2)    // MunDee Estuvo aquí
+StrongAttractor()
+InteractOnlyHead()
+Slot("", 1, IDLE_STAND, 1,0.0,0.0,0.0, 0.0, 0.0, 1.0,1.5)    // MunDee Estuvo aquí
+{
+	CanMoveOnAnimation()
+	CanRotateInInteract()
+	
+    AiTypeDataSet("human")
+    {	
+		Data("idle:standing:stand::::", -2, "m_caring_pose1_idle")
+        Data("idle:standing:idle::::", -2, "m_caring_pose1_idle")
+        Data("idle:standing:special::::", -2, "m_caring_pose1_neckcracking")
+		Data("idle:standing:special::::", -2, "m_caring_pose1_chin")
+		Data("idle:standing:interact::::", -2, "m_caring_pose3_elbow_loop_1")
+		Data("idle:standing:interact::::", -2, "m_caring_pose3_elbow_loop_2")
+		Data("idle:standing:interact::::", -2, "m_caring_pose3_elbow_loop_3")
+		Data("idle:standing:to_interact::::", -2, "m_caring_pose3_elbow_start")
+		Data("idle:standing:from_interact::::", -2, "m_caring_pose3_elbow_end")
+	}
+}
+

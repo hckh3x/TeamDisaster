@@ -1,0 +1,4 @@
+sub arena_c() {
+OnMap("arena_c", "AIBaseSpawnBox", "AISpawner_arena_c", "37045", "4859", "17177"){Field("m_AILocation", 8);}
+
+}

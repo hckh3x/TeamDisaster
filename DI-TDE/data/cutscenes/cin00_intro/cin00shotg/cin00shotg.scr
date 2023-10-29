@@ -1,0 +1,7 @@
+SeqTrack("cin00shotG_FPPActor_00", "cin00shotG_FPPActor_00.anm2", 0, 1020, 30, 1, 0.5) 
+SeqTrack("cin00shotG_WomanA_00", "cin00shotG_WomanA_00.anm2", 0, 1020, 30, 1, 0.5) 
+SeqTrack("cin00shotG_Xian_00", "cin00shotG_Xian_00.anm2", 0, 1020, 30, 1, 0.5) 
+SeqTrack("cin00shotG_Mirror_00", "cin00shotG_Mirror_00.anm2", 0, 1020, 30, 1, 0.5)
+
+SeqTrack("cin00shotG_Xian_00_mimic", "cin00shotG_Xian_00_mimic.anm2", 0, 1020, 30, 1, 0.5)
+

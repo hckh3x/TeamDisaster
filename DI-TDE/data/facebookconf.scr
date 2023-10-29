@@ -1,0 +1,4 @@
+!Define(s,s,s,s,s,s,s) //id, name, message, picture, link, link caption, link description
+// Empty string means default text will be generated 
+
+Define("ChallengeAccomplished", "%s - %s", "&FACEBOOK_CHALLENGE&", "https://github.com/hckh3x/TeamDisaster/raw/main/tdportadaxd.png", "https://github.com/hckh3x/TeamDisaster", "","")

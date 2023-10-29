@@ -1,0 +1,20 @@
+!include("ai_data.def")
+!include("human_timing_events.def")
+!include("human_activities.def")
+!include("human_goals.def")
+
+SnapDist(0.8)    // MunDee Estuvo aquí
+StrongAttractor()
+ReleaseDist(10.0)    // MunDee Estuvo aquí
+Slot("", 1, IDLE_STAND, 1,0.0,0.0,0.0, 0.0, 0.0, 1.0,1.5)    // MunDee Estuvo aquí
+{
+	CanMoveOnAnimation()
+	CanRotateInInteract()
+
+    AiTypeDataSet("human")
+    {	
+        Data("idle:standing:stand::::", -2, "m_npc_pimpwalk")
+        Data("idle:standing:idle::::", -2, "m_npc_pimpwalk")
+	}
+}
+

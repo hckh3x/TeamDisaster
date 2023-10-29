@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<speakers>
+	<speaker name="Jin"/>
+	<speaker name="Player_Placeholder"/>
+	<speaker name="Reza">
+		<group name="Reza_Q1_NF" time_btw_series="188.000000">
+			<state type="near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Reza_Q1_Near_01"/>
+				</dialog>
+				<dialog>
+					<line id="Reza_Q1_Near_02"/>
+				</dialog>
+				<dialog>
+					<line id="Reza_Q1_Near_03"/>
+				</dialog>
+				<dialog>
+					<line id="Reza_Q1_Near_04"/>
+				</dialog>
+			</state>
+			<state type="middle" range="64.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Reza_Q1_Middle_01"/>
+				</dialog>
+				<dialog>
+					<line id="Reza_Q1_Middle_02"/>
+				</dialog>
+			</state>
+			<state type="far" range="100.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Reza_Q1_Far_01"/>
+				</dialog>
+				<dialog>
+					<line id="Reza_Q1_Far_02"/>
+				</dialog>
+				<dialog>
+					<line id="Reza_Q1_Far_03"/>
+				</dialog>
+				<dialog>
+					<line id="Reza_Q1_Far_04"/>
+				</dialog>
+				<dialog>
+					<line id="Reza_Q1_Far_05"/>
+				</dialog>
+			</state>
+			<state type="near_to_middle" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Reza_Q1_NearToMiddle_01"/>
+				</dialog>
+				<dialog>
+					<line id="Reza_Q1_NearToMiddle_02"/>
+				</dialog>
+			</state>
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Reza_Q1_Use_A"/>
+					<line id="Reza_Q1_Use_B"/>
+					<decision>
+						<choice>
+							<speech>&amp;DialogSystem_Yes&amp;</speech>
+							<audiofile/>
+							<line id="Reza_Q1_Agree"/>
+						</choice>
+						<main-choice>
+							<speech>&amp;DialogSystem_No&amp;</speech>
+							<audiofile/>
+						</main-choice>
+					</decision>
+					<line id="Reza_Q1_Disagree"/>
+				</dialog>
+			</state>
+			<state type="use_second" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Reza_Q1_UseSecond"/>
+					<decision>
+						<choice>
+							<speech>&amp;DialogSystem_Yes&amp;</speech>
+							<audiofile/>
+							<line id="Reza_Q1_Agree"/>
+						</choice>
+						<main-choice>
+							<speech>&amp;DialogSystem_No&amp;</speech>
+							<audiofile/>
+						</main-choice>
+					</decision>
+					<line id="Reza_Q1_Disagree"/>
+				</dialog>
+			</state>
+			<state type="quest_brief" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Reza_Q1_Name"/>
+				</dialog>
+				<dialog>
+					<line id="Reza_Q1_PaperLine"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Reza_Q1_Accomplished">
+			<state type="use" range="26.01" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Reza_Q1_Accomplished"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="MarketRunner001">
+		<group name="PunkInitiation_NF" without_anims="true">
+			<state type="use" range="100.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Market_Bandits_Alarm_InProgress_A"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="Patrick">
+		<group name="Patrick_Q1_NF" time_btw_series="188.000000">
+			<state type="near" range="100.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Patrick_Q1_Near_01"/>
+				</dialog>
+				<dialog attract_player="false">
+					<line id="Patrick_Q1_Near_02"/>
+				</dialog>
+				<dialog attract_player="false">
+					<line id="Patrick_Q1_Near_03"/>
+				</dialog>
+				<dialog attract_player="false">
+					<line id="Patrick_Q1_Radio"/>
+				</dialog>
+			</state>
+			<state type="middle" range="100.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Patrick_Q1_NearToMiddle"/>
+				</dialog>
+				<dialog attract_player="false">
+					<line id="Patrick_Q1_Near_01"/>
+				</dialog>
+			</state>
+			<state type="far" range="100.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Patrick_Q1_Radio"/>
+				</dialog>
+			</state>
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Patrick_Q1_Use_A"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Patrick_Q1_Calling" voice_2d="true">
+			<state type="use" range="26.01" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Patrick_Q1_Radio"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+</speakers>
+

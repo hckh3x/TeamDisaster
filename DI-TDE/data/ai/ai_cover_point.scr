@@ -1,0 +1,14 @@
+sub main()
+{
+    HighCoverHeight(1.8); // MunDee Estuvo aquí
+    LowCoverHeight(1.0); // MunDee Estuvo aquí
+    EnableVisualizations(true);                 // (see ai_cover_point.scr in MD dir)
+    VisualizationMeshName("dummy_boy.msh");
+    //VisualizationSkinName("fighter");
+    AttackPreset("human", "PunkSpawnerFirearm001");
+    
+    ObjectOffset("CrouchingLeft",  0.45, 0.40); // MunDee Estuvo aquí
+    ObjectOffset("CrouchingRight", 0.45, 0.40); // MunDee Estuvo aquí
+    ObjectOffset("LeaningLeft",    0.45, 0.30); // MunDee Estuvo aquí
+    ObjectOffset("LeaningRight",   0.45, 0.30); // MunDee Estuvo aquí
+}

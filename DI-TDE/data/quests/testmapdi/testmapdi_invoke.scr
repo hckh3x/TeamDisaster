@@ -1,0 +1,3 @@
+!QuestStage( s, s, s )
+
+QuestStage( "   00x01s  &TEST_WEAPONS_Quest_Name& (TEST_WEAPONS_Quest/TEST WEAPONS )", "TEST_WEAPONS_Quest", "TEST WEAPONS " )

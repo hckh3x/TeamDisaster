@@ -1,0 +1,2103 @@
+<?xml version="1.0"?>
+<QuestsDefinitions
+     level="rwhite_city"
+     pxsl_line="2">
+    <!-- -->
+    <!-- Actions to fabular plot  -->
+    <!-- -->
+    <!-- Ryder White Idle Talks -->
+    <!-- quest __RW_Idle_001 -parent=RWhite_C_QF01 -->
+        <!-- ,goto <<DLG 1>> Marker  DLG_01  -distance=3.0 -show=false -->
+        <!-- ,set _          VirtualSwitchDI     Chatter_02_switch                                  -state=on -->
+        <!-- ,talk _ voice2d Ryder_RWQ1_08b -show=false -auto=true -->
+        <!-- ,set _          VirtualSwitchDI     Chatter_02_switch                                  -state=off -->
+    <Quest
+         name="__RW_Idle_002"
+         parent="RWhite_C_QF01"
+         pxsl_line="15">
+        <Phase
+             type="go to"
+             name="DLG 2"
+             distance="8.0"
+             show_locations="false"
+             pxsl_line="16">
+            <Destination
+                 pxsl_line="16">
+                <QuestObject
+                     class="Marker"
+                     name="DLG_02"
+                     pxsl_line="16" />
+            </Destination>
+        </Phase>
+        <Phase
+             type="set state"
+             name="_"
+             desired_state="on"
+             pxsl_line="17">
+            <Trigger
+                 pxsl_line="17">
+                <QuestObject
+                     class="VirtualSwitchDI"
+                     name="Chatter_03_switch"
+                     pxsl_line="17" />
+            </Trigger>
+        </Phase>
+        <Phase
+             type="talk"
+             name="_"
+             speaker="voice2d"
+             group="Ryder_RWQ1_08c"
+             show_locations="false"
+             auto_start="true"
+             pxsl_line="18" />
+        <Phase
+             type="set state"
+             name="_"
+             desired_state="off"
+             pxsl_line="19">
+            <Trigger
+                 pxsl_line="19">
+                <QuestObject
+                     class="VirtualSwitchDI"
+                     name="Chatter_03_switch"
+                     pxsl_line="19" />
+            </Trigger>
+        </Phase>
+    </Quest>
+    <!-- First Talk with Emily -->
+    <Quest
+         name="__RW_Idle_003"
+         parent="RWhite_C_QF01"
+         pxsl_line="22">
+        <Phase
+             type="OR"
+             name="_"
+             pxsl_line="23">
+            <Path
+                 pxsl_line="24">
+                <Phase
+                     type="go to"
+                     name="DLG 2"
+                     distance="17.0"
+                     show_locations="false"
+                     pxsl_line="25">
+                    <Destination
+                         pxsl_line="25">
+                        <QuestObject
+                             class="Marker"
+                             name="DLG_04"
+                             pxsl_line="25" />
+                    </Destination>
+                </Phase>
+            </Path>
+            <Path
+                 pxsl_line="26">
+                <Phase
+                     type="go to"
+                     name="DLG 2alt"
+                     distance="8.0"
+                     show_locations="false"
+                     pxsl_line="27">
+                    <Destination
+                         pxsl_line="27">
+                        <QuestObject
+                             class="Marker"
+                             name="DLG_04a"
+                             pxsl_line="27" />
+                    </Destination>
+                </Phase>
+            </Path>
+        </Phase>
+        <Phase
+             type="set state"
+             name="_"
+             desired_state="on"
+             pxsl_line="28">
+            <Trigger
+                 pxsl_line="28">
+                <QuestObject
+                     class="VirtualSwitchDI"
+                     name="Chatter_04_switch"
+                     pxsl_line="28" />
+            </Trigger>
+        </Phase>
+        <Phase
+             type="talk"
+             name="_"
+             speaker="voice2d"
+             group="Emily_RWQ2_08"
+             show_locations="false"
+             auto_start="true"
+             pxsl_line="29" />
+        <Phase
+             type="talk"
+             name="_"
+             speaker="voice2d"
+             group="Emily_RWQ2_09"
+             show_locations="false"
+             auto_start="true"
+             pxsl_line="30" />
+        <!-- ,talk _ voice2d Emily_RWQ2_10 -show=false -auto=true -->
+        <Phase
+             type="talk"
+             name="_"
+             speaker="voice2d"
+             group="Emily_RWQ2_11"
+             show_locations="false"
+             auto_start="true"
+             pxsl_line="32" />
+        <Phase
+             type="talk"
+             name="_"
+             speaker="voice2d"
+             group="Ryder_RWQ2_12"
+             show_locations="false"
+             auto_start="true"
+             pxsl_line="33" />
+        <!-- ,talk _ voice2d Ryder_RWQ2_12a -show=false -auto=true -->
+        <Phase
+             type="set state"
+             name="_"
+             desired_state="off"
+             pxsl_line="35">
+            <Trigger
+                 pxsl_line="35">
+                <QuestObject
+                     class="VirtualSwitchDI"
+                     name="Chatter_04_switch"
+                     pxsl_line="35" />
+            </Trigger>
+        </Phase>
+    </Quest>
+    <!-- Talk on enter to Quarantine  -->
+    <Quest
+         name="__RW_Idle_004"
+         parent="RWhite_C_QF02"
+         pxsl_line="38">
+        <Phase
+             type="go to"
+             name="_"
+             distance="6.5"
+             show_locations="false"
+             pxsl_line="39">
+            <Destination
+                 pxsl_line="39">
+                <QuestObject
+                     class="Marker"
+                     name="DLG_07"
+                     pxsl_line="39" />
+            </Destination>
+        </Phase>
+        <Phase
+             type="set state"
+             name="_"
+             desired_state="on"
+             pxsl_line="40">
+            <Trigger
+                 pxsl_line="40">
+                <QuestObject
+                     class="VirtualSwitchDI"
+                     name="Chatter_07_switch"
+                     pxsl_line="40" />
+            </Trigger>
+        </Phase>
+        <Phase
+             type="talk"
+             name="_"
+             speaker="voice2d"
+             group="Ryder_RWQ3_05d"
+             show_locations="false"
+             auto_start="true"
+             pxsl_line="41" />
+        <Phase
+             type="set state"
+             name="_"
+             desired_state="off"
+             pxsl_line="42">
+            <Trigger
+                 pxsl_line="42">
+                <QuestObject
+                     class="VirtualSwitchDI"
+                     name="Chatter_07_switch"
+                     pxsl_line="42" />
+            </Trigger>
+        </Phase>
+        <Phase
+             type="go to"
+             name="_"
+             distance="8.0"
+             show_locations="false"
+             pxsl_line="43">
+            <Destination
+                 pxsl_line="43">
+                <QuestObject
+                     class="Marker"
+                     name="DLG_08"
+                     pxsl_line="43" />
+            </Destination>
+        </Phase>
+        <Phase
+             type="set state"
+             name="_"
+             desired_state="on"
+             pxsl_line="44">
+            <Trigger
+                 pxsl_line="44">
+                <QuestObject
+                     class="VirtualSwitchDI"
+                     name="Chatter_08_switch"
+                     pxsl_line="44" />
+            </Trigger>
+        </Phase>
+        <Phase
+             type="talk"
+             name="_"
+             speaker="voice2d"
+             group="Ryder_RWQ3_05e"
+             show_locations="false"
+             auto_start="true"
+             pxsl_line="45" />
+        <Phase
+             type="set state"
+             name="_"
+             desired_state="off"
+             pxsl_line="46">
+            <Trigger
+                 pxsl_line="46">
+                <QuestObject
+                     class="VirtualSwitchDI"
+                     name="Chatter_08_switch"
+                     pxsl_line="46" />
+            </Trigger>
+        </Phase>
+    </Quest>
+    <!-- Second Talk witch Emily -->
+    <Quest
+         name="__RW_Idle_005"
+         parent="RWhite_C_QF02"
+         pxsl_line="49">
+        <Phase
+             type="OR"
+             name="_"
+             pxsl_line="50">
+            <Path
+                 pxsl_line="51">
+                <Phase
+                     type="go to"
+                     name="DLG 6"
+                     distance="5.0"
+                     show_locations="false"
+                     pxsl_line="52">
+                    <Destination
+                         pxsl_line="52">
+                        <QuestObject
+                             class="Marker"
+                             name="DLG_06"
+                             pxsl_line="52" />
+                    </Destination>
+                </Phase>
+            </Path>
+            <Path
+                 pxsl_line="53">
+                <Phase
+                     type="go to"
+                     name="DLG 6a"
+                     distance="8.0"
+                     show_locations="false"
+                     pxsl_line="54">
+                    <Destination
+                         pxsl_line="54">
+                        <QuestObject
+                             class="Marker"
+                             name="DLG_06a"
+                             pxsl_line="54" />
+                    </Destination>
+                </Phase>
+            </Path>
+            <Path
+                 pxsl_line="55">
+                <Phase
+                     type="go to"
+                     name="DLG 6b"
+                     distance="6.0"
+                     show_locations="false"
+                     pxsl_line="56">
+                    <Destination
+                         pxsl_line="56">
+                        <QuestObject
+                             class="Marker"
+                             name="DLG_06b"
+                             pxsl_line="56" />
+                    </Destination>
+                </Phase>
+            </Path>
+        </Phase>
+        <Phase
+             type="set state"
+             name="_"
+             desired_state="on"
+             pxsl_line="57">
+            <Trigger
+                 pxsl_line="57">
+                <QuestObject
+                     class="VirtualSwitchDI"
+                     name="Chatter_09_switch"
+                     pxsl_line="57" />
+            </Trigger>
+        </Phase>
+        <Phase
+             type="talk"
+             name="_"
+             speaker="voice2d"
+             group="Emily_RWQ3_01"
+             show_locations="false"
+             auto_start="true"
+             pxsl_line="58" />
+        <Phase
+             type="talk"
+             name="_"
+             speaker="voice2d"
+             group="Emily_RWQ3_02"
+             show_locations="false"
+             auto_start="true"
+             pxsl_line="59" />
+        <!-- ,talk _ voice2d Emily_RWQ3_03 -show=false -auto=true -->
+        <!-- ,talk _ voice2d Emily_RWQ3_04 -show=false -auto=true -->
+        <Phase
+             type="talk"
+             name="_"
+             speaker="voice2d"
+             group="Ryder_RWQ3_05"
+             show_locations="false"
+             auto_start="true"
+             pxsl_line="62" />
+        <!-- ,talk _ voice2d Ryder_RWQ3_05ab -show=false -auto=true -->
+        <Phase
+             type="set state"
+             name="_"
+             desired_state="off"
+             pxsl_line="64">
+            <Trigger
+                 pxsl_line="64">
+                <QuestObject
+                     class="VirtualSwitchDI"
+                     name="Chatter_09_switch"
+                     pxsl_line="64" />
+            </Trigger>
+        </Phase>
+    </Quest>
+    <Quest
+         name="__RW_Antena_Punk_Transmision"
+         parent="RWhite_C_QF02"
+         pxsl_line="66">
+        <Phase
+             type="go to"
+             name="_"
+             distance="8.0"
+             show_locations="false"
+             pxsl_line="67">
+            <Destination
+                 pxsl_line="67">
+                <QuestObject
+                     class="Marker"
+                     name="DLG_05"
+                     pxsl_line="67" />
+            </Destination>
+        </Phase>
+        <Phase
+             type="talk"
+             name="_"
+             speaker="Punk_RW01"
+             group="Punk_RWQ3_06"
+             show_locations="false"
+             auto_start="true"
+             pxsl_line="68" />
+        <Phase
+             type="talk"
+             name="_"
+             speaker="Punk_RW01"
+             group="Punk_RWQ3_07"
+             show_locations="false"
+             auto_start="true"
+             pxsl_line="69" />
+        <Phase
+             type="talk"
+             name="_"
+             speaker="Punk_RW01"
+             group="Punk_RWQ3_08"
+             show_locations="false"
+             auto_start="true"
+             pxsl_line="70" />
+        <Phase
+             type="talk"
+             name="_"
+             speaker="Punk_RW01"
+             group="Punk_RWQ3_09"
+             show_locations="false"
+             auto_start="true"
+             pxsl_line="71" />
+    </Quest>
+    <!-- Last Action with heli evacuation -->
+    <Quest
+         name="__CIN_18_Heli"
+         parent="RWhite_C_QF06"
+         pxsl_line="75">
+        <Phase
+             type="wait guard"
+             name="_"
+             time="100"
+             pxsl_line="76" />
+        <Phase
+             type="set state"
+             name="_"
+             desired_state="on"
+             pxsl_line="77">
+            <Trigger
+                 pxsl_line="77">
+                <QuestObject
+                     class="VirtualSwitchDI"
+                     name="switch_Heli_Sound"
+                     pxsl_line="77" />
+            </Trigger>
+        </Phase>
+        <Phase
+             type="movie"
+             name="_"
+             movie="CIN_18_Heli"
+             pxsl_line="78" />
+        <Phase
+             type="movie"
+             name="_"
+             movie="CIN_18_Heli_Loop"
+             pxsl_line="79" />
+    </Quest>
+    <!-- Ammo supplies info -->
+    <Quest
+         name="__RWhite_C_Supplies_Info"
+         parent="RWhite_C_QF01"
+         pxsl_line="83">
+        <Phase
+             type="go to"
+             name="DLG 3"
+             distance="10.0"
+             show_locations="false"
+             pxsl_line="84">
+            <Destination
+                 pxsl_line="84">
+                <QuestObject
+                     class="Marker"
+                     name="DLG_03"
+                     pxsl_line="84" />
+            </Destination>
+        </Phase>
+        <Phase
+             type="talk"
+             name="_"
+             speaker="voice2d"
+             group="Base_RWQ2_01"
+             show_locations="false"
+             auto_start="true"
+             pxsl_line="85" />
+        <!-- ,talk _ voice2d Base_RWQ2_02 -show=false -auto=true -->
+    </Quest>
+    <!-- quest __RWhite_C_Supplies_Talk01 -parent=RWhite_C_QF01   -->
+        <!-- ,goto _ Marker Supplies01   -distance=4.5 -show=false -->
+        <!-- ,set _          VirtualSwitchDI     Chatter_02_switch                                  -state=on -->
+        <!-- ,talk _ voice2d Ryder_RWQ1_08d -show=false -auto=true -->
+        <!-- ,set _          VirtualSwitchDI     Chatter_02_switch                                  -state=off -->
+    <Quest
+         name="RWhite_C_Supplies"
+         parent="__RWhite_C_Supplies_Info"
+         glued="true"
+         pxsl_line="94">
+        <Phase
+             type="OR"
+             name="find supplies"
+             pxsl_line="95">
+            <Path
+                 pxsl_line="96">
+                <Phase
+                     type="go to"
+                     name="_"
+                     distance="2.0"
+                     show_locations="false"
+                     pxsl_line="97">
+                    <Destination
+                         pxsl_line="97">
+                        <QuestObject
+                             class="Marker"
+                             name="Supplies01"
+                             pxsl_line="97" />
+                    </Destination>
+                </Phase>
+            </Path>
+            <Path
+                 pxsl_line="98">
+                <Phase
+                     type="go to"
+                     name="_"
+                     distance="2.0"
+                     show_locations="false"
+                     pxsl_line="99">
+                    <Destination
+                         pxsl_line="99">
+                        <QuestObject
+                             class="Marker"
+                             name="Supplies02"
+                             pxsl_line="99" />
+                    </Destination>
+                </Phase>
+            </Path>
+            <Path
+                 pxsl_line="100">
+                <Phase
+                     type="go to"
+                     name="_"
+                     distance="2.0"
+                     show_locations="false"
+                     pxsl_line="101">
+                    <Destination
+                         pxsl_line="101">
+                        <QuestObject
+                             class="Marker"
+                             name="Supplies03"
+                             pxsl_line="101" />
+                    </Destination>
+                </Phase>
+            </Path>
+            <Path
+                 pxsl_line="102">
+                <Phase
+                     type="go to"
+                     name="_"
+                     distance="2.0"
+                     show_locations="false"
+                     pxsl_line="103">
+                    <Destination
+                         pxsl_line="103">
+                        <QuestObject
+                             class="Marker"
+                             name="Supplies04"
+                             pxsl_line="103" />
+                    </Destination>
+                </Phase>
+            </Path>
+            <Path
+                 pxsl_line="104">
+                <Phase
+                     type="go to"
+                     name="_"
+                     distance="2.0"
+                     show_locations="false"
+                     pxsl_line="105">
+                    <Destination
+                         pxsl_line="105">
+                        <QuestObject
+                             class="Marker"
+                             name="Supplies05"
+                             pxsl_line="105" />
+                    </Destination>
+                </Phase>
+            </Path>
+            <Path
+                 pxsl_line="106">
+                <Phase
+                     type="go to"
+                     name="_"
+                     distance="2.0"
+                     show_locations="false"
+                     pxsl_line="107">
+                    <Destination
+                         pxsl_line="107">
+                        <QuestObject
+                             class="Marker"
+                             name="Supplies06"
+                             pxsl_line="107" />
+                    </Destination>
+                </Phase>
+            </Path>
+        </Phase>
+        <Phase
+             type="set state"
+             name="_"
+             desired_state="on"
+             pxsl_line="108">
+            <Trigger
+                 pxsl_line="108">
+                <QuestObject
+                     class="VirtualSwitchDI"
+                     name="Chatter_03_switch"
+                     pxsl_line="108" />
+            </Trigger>
+        </Phase>
+        <Phase
+             type="talk"
+             name="_"
+             speaker="voice2d"
+             group="Ryder_RWQ2_02a"
+             show_locations="false"
+             auto_start="true"
+             pxsl_line="109" />
+        <Phase
+             type="set state"
+             name="_"
+             desired_state="off"
+             pxsl_line="110">
+            <Trigger
+                 pxsl_line="110">
+                <QuestObject
+                     class="VirtualSwitchDI"
+                     name="Chatter_09_switch"
+                     pxsl_line="110" />
+            </Trigger>
+        </Phase>
+    </Quest>
+    <!--     -->
+    <!-- CIN in game - scripted actions -->
+    <!-- -->
+    <!-- Wave of infecteds turn on when player will approach to Roof Hub CKM -->
+    <Quest
+         name="__Roof_Hub_Infecteds_001"
+         parent="RWhite_C_QF02"
+         pxsl_line="120">
+        <Phase
+             type="go to"
+             name="_"
+             distance="2.0"
+             show_locations="false"
+             pxsl_line="121">
+            <Destination
+                 pxsl_line="121">
+                <QuestObject
+                     class="Marker"
+                     name="Roof_Hub_001"
+                     pxsl_line="121" />
+            </Destination>
+        </Phase>
+        <Phase
+             type="set state"
+             name="_"
+             desired_state="on"
+             pxsl_line="122">
+            <Trigger
+                 pxsl_line="122">
+                <QuestObject
+                     class="VirtualSwitchDI"
+                     name="Chatter_06_switch"
+                     pxsl_line="122" />
+            </Trigger>
+        </Phase>
+        <Phase
+             type="talk"
+             name="_"
+             speaker="voice2d"
+             group="Ryder_RWQ3_05a"
+             show_locations="false"
+             auto_start="true"
+             pxsl_line="123" />
+        <Phase
+             type="set state"
+             name="_"
+             desired_state="off"
+             pxsl_line="124">
+            <Trigger
+                 pxsl_line="124">
+                <QuestObject
+                     class="VirtualSwitchDI"
+                     name="Chatter_06_switch"
+                     pxsl_line="124" />
+            </Trigger>
+        </Phase>
+        <!-- ,wait _ 1 -->
+        <!-- ,set _  VirtualSwitchDI Roof_Hub_Infecteds_001_Switch001    -state=on -->
+        <Phase
+             type="kill"
+             name="_"
+             show_locations="false"
+             pxsl_line="127">
+            <Spawner
+                 pxsl_line="128">
+                <QuestObject
+                     class="AISpawnBoxWaves"
+                     name="Roof_Hub_Zombies_002"
+                     pxsl_line="128" />
+            </Spawner>
+            <Spawner
+                 pxsl_line="129">
+                <QuestObject
+                     class="AISpawnBoxWaves"
+                     name="Roof_Hub_Zombies_003"
+                     pxsl_line="129" />
+            </Spawner>
+        </Phase>
+    </Quest>
+    <Quest
+         name="__Roof_Hub_Explosion_001"
+         parent="game_root_rw"
+         pxsl_line="131">
+        <Phase
+             type="use"
+             name="_"
+             desired_state="on"
+             show_locations="false"
+             pxsl_line="132">
+            <Trigger
+                 pxsl_line="132">
+                <QuestObject
+                     class="DamageSwitchDI"
+                     name="Roof_Hub_Exp03"
+                     pxsl_line="132" />
+            </Trigger>
+        </Phase>
+        <Phase
+             type="wait guard"
+             name="_"
+             time="1"
+             pxsl_line="133" />
+        <Phase
+             type="set state"
+             name="_"
+             desired_state="on"
+             pxsl_line="134">
+            <Trigger
+                 pxsl_line="134">
+                <QuestObject
+                     class="VirtualSwitchDI"
+                     name="Roof_Hub_Explosion_02"
+                     pxsl_line="134" />
+            </Trigger>
+        </Phase>
+        <Phase
+             type="set state"
+             name="_"
+             desired_state="on"
+             pxsl_line="135">
+            <Trigger
+                 pxsl_line="135">
+                <QuestObject
+                     class="VirtualSwitchDI"
+                     name="car_fire_01"
+                     pxsl_line="135" />
+            </Trigger>
+        </Phase>
+        <Phase
+             type="wait guard"
+             name="_"
+             time="5"
+             pxsl_line="136" />
+        <Phase
+             type="set state"
+             name="_"
+             desired_state="off"
+             pxsl_line="137">
+            <Trigger
+                 pxsl_line="137">
+                <QuestObject
+                     class="VirtualSwitchDI"
+                     name="Roof_Hub_Explosion_02"
+                     pxsl_line="137" />
+            </Trigger>
+        </Phase>
+    </Quest>
+    <Quest
+         name="__Roof_Hub_Explosion_002"
+         parent="game_root_rw"
+         pxsl_line="139">
+        <Phase
+             type="use"
+             name="_"
+             desired_state="on"
+             show_locations="false"
+             pxsl_line="140">
+            <Trigger
+                 pxsl_line="140">
+                <QuestObject
+                     class="DamageSwitchDI"
+                     name="Roof_Hub_Exp02"
+                     pxsl_line="140" />
+            </Trigger>
+        </Phase>
+        <Phase
+             type="wait guard"
+             name="_"
+             time="1"
+             pxsl_line="141" />
+        <Phase
+             type="set state"
+             name="_"
+             desired_state="on"
+             pxsl_line="142">
+            <Trigger
+                 pxsl_line="142">
+                <QuestObject
+                     class="VirtualSwitchDI"
+                     name="Roof_Hub_Fire_02"
+                     pxsl_line="142" />
+            </Trigger>
+        </Phase>
+    </Quest>
+    <Quest
+         name="__Roof_Hub_Explosion_003"
+         parent="game_root_rw"
+         pxsl_line="144">
+        <Phase
+             type="use"
+             name="_"
+             desired_state="on"
+             show_locations="false"
+             pxsl_line="145">
+            <Trigger
+                 pxsl_line="145">
+                <QuestObject
+                     class="DamageSwitchDI"
+                     name="Roof_Hub_Exp01"
+                     pxsl_line="145" />
+            </Trigger>
+        </Phase>
+        <Phase
+             type="wait guard"
+             name="_"
+             time="1"
+             pxsl_line="146" />
+        <Phase
+             type="set state"
+             name="_"
+             desired_state="on"
+             pxsl_line="147">
+            <Trigger
+                 pxsl_line="147">
+                <QuestObject
+                     class="VirtualSwitchDI"
+                     name="Roof_Hub_Fire_01"
+                     pxsl_line="147" />
+            </Trigger>
+        </Phase>
+        <Phase
+             type="wait guard"
+             name="_"
+             time="2"
+             pxsl_line="148" />
+        <Phase
+             type="set state"
+             name="_"
+             desired_state="on"
+             pxsl_line="149">
+            <Trigger
+                 pxsl_line="149">
+                <QuestObject
+                     class="VirtualSwitchDI"
+                     name="Roof_Hub_Fx_01"
+                     pxsl_line="149" />
+            </Trigger>
+        </Phase>
+        <Phase
+             type="set state"
+             name="_"
+             desired_state="on"
+             pxsl_line="150">
+            <Trigger
+                 pxsl_line="150">
+                <QuestObject
+                     class="VirtualSwitchDI"
+                     name="Roof_Hub_Explosion_01"
+                     pxsl_line="150" />
+            </Trigger>
+        </Phase>
+        <Phase
+             type="wait guard"
+             name="_"
+             time="5"
+             pxsl_line="151" />
+        <Phase
+             type="set state"
+             name="_"
+             desired_state="off"
+             pxsl_line="152">
+            <Trigger
+                 pxsl_line="152">
+                <QuestObject
+                     class="VirtualSwitchDI"
+                     name="Roof_Hub_Explosion_01"
+                     pxsl_line="152" />
+            </Trigger>
+        </Phase>
+    </Quest>
+    <Quest
+         name="__Roof_Hub_Explosion_004"
+         parent="game_root_rw"
+         pxsl_line="154">
+        <Phase
+             type="appear"
+             name="_"
+             mode="hide"
+             pxsl_line="155">
+            <Object
+                 pxsl_line="155">
+                <QuestObject
+                     class="ModelObject"
+                     name="Roof_Hub_BlackWindow01"
+                     pxsl_line="155" />
+            </Object>
+        </Phase>
+        <Phase
+             type="use"
+             name="_"
+             desired_state="on"
+             show_locations="false"
+             pxsl_line="156">
+            <Trigger
+                 pxsl_line="156">
+                <QuestObject
+                     class="DamageSwitchDI"
+                     name="Roof_Hub_Exp04"
+                     pxsl_line="156" />
+            </Trigger>
+        </Phase>
+        <Phase
+             type="set state"
+             name="_"
+             desired_state="on"
+             pxsl_line="157">
+            <Trigger
+                 pxsl_line="157">
+                <QuestObject
+                     class="VirtualSwitchDI"
+                     name="Roof_Hub_Fx_03a"
+                     pxsl_line="157" />
+            </Trigger>
+        </Phase>
+        <Phase
+             type="appear"
+             name="_"
+             mode="show"
+             pxsl_line="158">
+            <Object
+                 pxsl_line="158">
+                <QuestObject
+                     class="ModelObject"
+                     name="Roof_Hub_BlackWindow01"
+                     pxsl_line="158" />
+            </Object>
+        </Phase>
+        <Phase
+             type="wait guard"
+             name="_"
+             time="2"
+             pxsl_line="159" />
+        <Phase
+             type="set state"
+             name="_"
+             desired_state="on"
+             pxsl_line="160">
+            <Trigger
+                 pxsl_line="160">
+                <QuestObject
+                     class="VirtualSwitchDI"
+                     name="Roof_Hub_Fx_03"
+                     pxsl_line="160" />
+            </Trigger>
+        </Phase>
+    </Quest>
+    <Quest
+         name="__Roof_Hub_Explosion_005"
+         parent="game_root_rw"
+         pxsl_line="162">
+        <Phase
+             type="use"
+             name="_"
+             desired_state="on"
+             show_locations="false"
+             pxsl_line="163">
+            <Trigger
+                 pxsl_line="163">
+                <QuestObject
+                     class="DamageSwitchDI"
+                     name="Roof_Hub_Exp05"
+                     pxsl_line="163" />
+            </Trigger>
+        </Phase>
+        <Phase
+             type="wait guard"
+             name="_"
+             time="1"
+             pxsl_line="164" />
+        <Phase
+             type="set state"
+             name="_"
+             desired_state="on"
+             pxsl_line="165">
+            <Trigger
+                 pxsl_line="165">
+                <QuestObject
+                     class="VirtualSwitchDI"
+                     name="Roof_Hub_Fx_02"
+                     pxsl_line="165" />
+            </Trigger>
+        </Phase>
+    </Quest>
+    <Quest
+         name="__Roof_Hub_Electric"
+         parent="RWhite_C_QF02"
+         pxsl_line="167">
+        <Phase
+             type="go to"
+             name="_"
+             distance="3.0"
+             show_locations="false"
+             pxsl_line="168">
+            <Destination
+                 pxsl_line="168">
+                <QuestObject
+                     class="Marker"
+                     name="Roof_Hub_003"
+                     pxsl_line="168" />
+            </Destination>
+        </Phase>
+        <Phase
+             type="chatters"
+             name="_"
+             state="off"
+             pxsl_line="169" />
+        <Phase
+             type="talk"
+             name="_"
+             speaker="voice2d"
+             group="Ryder_RWQ3_05c"
+             show_locations="false"
+             auto_start="true"
+             pxsl_line="170" />
+        <Phase
+             type="chatters"
+             name="_"
+             state="on"
+             pxsl_line="171" />
+    </Quest>
+    <!-- more zombies on end Slums -->
+    <!-- quest  __RWhite_C_QF06_End_Infecteds -parent=RWhite_C_QF06 -->
+        <!-- ,kill-multi _                                               -show=false  -->
+            <!-- ,spawner AISpawnBoxWaves                rwhite_zombie12 -->
+            <!-- ,spawner AISpawnBoxWaves                rwhite_zombie13 -->
+            <!-- ,spawner AISpawnBoxWaves                rwhite_zombie14 -->
+    <Quest
+         name="__RWhite_C_QF06_End_Infecteds01"
+         parent="RWhite_C_QF06"
+         pxsl_line="180">
+        <Phase
+             type="set state"
+             name="_"
+             desired_state="on"
+             pxsl_line="181">
+            <Trigger
+                 pxsl_line="181">
+                <QuestObject
+                     class="VirtualSwitchDI"
+                     name="Final_Inf_Sound_Switch01"
+                     pxsl_line="181" />
+            </Trigger>
+        </Phase>
+        <Phase
+             type="wait guard"
+             name="_"
+             time="1"
+             pxsl_line="182" />
+        <Phase
+             type="set state"
+             name="_"
+             desired_state="on"
+             pxsl_line="183">
+            <Trigger
+                 pxsl_line="183">
+                <QuestObject
+                     class="VirtualSwitchDI"
+                     name="Final_Inf_Sound_Switch02"
+                     pxsl_line="183" />
+            </Trigger>
+        </Phase>
+        <Phase
+             type="set state"
+             name="_"
+             desired_state="on"
+             pxsl_line="184">
+            <Trigger
+                 pxsl_line="184">
+                <QuestObject
+                     class="VirtualSwitchDI"
+                     name="Final_Inf_Sound_Switch03"
+                     pxsl_line="184" />
+            </Trigger>
+        </Phase>
+        <Phase
+             type="kill"
+             name="_"
+             show_locations="false"
+             pxsl_line="185">
+            <Spawner
+                 pxsl_line="186">
+                <QuestObject
+                     class="AISpawnBoxWaves"
+                     name="rwhite_zombie6"
+                     pxsl_line="186" />
+            </Spawner>
+            <Spawner
+                 pxsl_line="187">
+                <QuestObject
+                     class="AISpawnBoxWaves"
+                     name="rwhite_zombie7"
+                     pxsl_line="187" />
+            </Spawner>
+            <Spawner
+                 pxsl_line="188">
+                <QuestObject
+                     class="AISpawnBoxWaves"
+                     name="rwhite_zombie8"
+                     pxsl_line="188" />
+            </Spawner>
+            <Spawner
+                 pxsl_line="189">
+                <QuestObject
+                     class="AISpawnBoxWaves"
+                     name="rwhite_zombie9"
+                     pxsl_line="189" />
+            </Spawner>
+        </Phase>
+    </Quest>
+    <Quest
+         name="__RWhite_C_QF06_End_Infecteds02"
+         parent="RWhite_C_QF06"
+         pxsl_line="191">
+        <Phase
+             type="wait guard"
+             name="_"
+             time="25"
+             pxsl_line="192" />
+        <Phase
+             type="set state"
+             name="_"
+             desired_state="off"
+             pxsl_line="193">
+            <Trigger
+                 pxsl_line="193">
+                <QuestObject
+                     class="VirtualSwitchDI"
+                     name="Final_Inf_Sound_Switch01"
+                     pxsl_line="193" />
+            </Trigger>
+        </Phase>
+        <Phase
+             type="set state"
+             name="_"
+             desired_state="off"
+             pxsl_line="194">
+            <Trigger
+                 pxsl_line="194">
+                <QuestObject
+                     class="VirtualSwitchDI"
+                     name="Final_Inf_Sound_Switch02"
+                     pxsl_line="194" />
+            </Trigger>
+        </Phase>
+        <Phase
+             type="set state"
+             name="_"
+             desired_state="off"
+             pxsl_line="195">
+            <Trigger
+                 pxsl_line="195">
+                <QuestObject
+                     class="VirtualSwitchDI"
+                     name="Final_Inf_Sound_Switch03"
+                     pxsl_line="195" />
+            </Trigger>
+        </Phase>
+        <Phase
+             type="set state"
+             name="_"
+             desired_state="on"
+             pxsl_line="196">
+            <Trigger
+                 pxsl_line="196">
+                <QuestObject
+                     class="VirtualSwitchDI"
+                     name="Final_Inf_Sound_Switch01"
+                     pxsl_line="196" />
+            </Trigger>
+        </Phase>
+        <Phase
+             type="wait guard"
+             name="_"
+             time="1"
+             pxsl_line="197" />
+        <Phase
+             type="set state"
+             name="_"
+             desired_state="on"
+             pxsl_line="198">
+            <Trigger
+                 pxsl_line="198">
+                <QuestObject
+                     class="VirtualSwitchDI"
+                     name="Final_Inf_Sound_Switch02"
+                     pxsl_line="198" />
+            </Trigger>
+        </Phase>
+        <Phase
+             type="set state"
+             name="_"
+             desired_state="on"
+             pxsl_line="199">
+            <Trigger
+                 pxsl_line="199">
+                <QuestObject
+                     class="VirtualSwitchDI"
+                     name="Final_Inf_Sound_Switch03"
+                     pxsl_line="199" />
+            </Trigger>
+        </Phase>
+        <Phase
+             type="kill"
+             name="_"
+             show_locations="false"
+             pxsl_line="200">
+            <Spawner
+                 pxsl_line="201">
+                <QuestObject
+                     class="AISpawnBoxWaves"
+                     name="rwhite_zombie10"
+                     pxsl_line="201" />
+            </Spawner>
+            <Spawner
+                 pxsl_line="202">
+                <QuestObject
+                     class="AISpawnBoxWaves"
+                     name="rwhite_zombie12"
+                     pxsl_line="202" />
+            </Spawner>
+            <Spawner
+                 pxsl_line="203">
+                <QuestObject
+                     class="AISpawnBoxWaves"
+                     name="rwhite_zombie13"
+                     pxsl_line="203" />
+            </Spawner>
+            <Spawner
+                 pxsl_line="204">
+                <QuestObject
+                     class="AISpawnBoxWaves"
+                     name="rwhite_zombie14"
+                     pxsl_line="204" />
+            </Spawner>
+        </Phase>
+    </Quest>
+    <!-- Final Fight Actions -->
+    <Quest
+         name="__Sign_Exp"
+         parent="game_root_rw"
+         pxsl_line="207">
+        <Phase
+             type="use"
+             name="_"
+             desired_state="on"
+             show_locations="false"
+             pxsl_line="208">
+            <Trigger
+                 pxsl_line="208">
+                <QuestObject
+                     class="DamageSwitchDI"
+                     name="Roof_Final_Exp01"
+                     pxsl_line="208" />
+            </Trigger>
+        </Phase>
+        <Phase
+             type="AND"
+             name="_"
+             pxsl_line="209">
+            <Path
+                 pxsl_line="210">
+                <Phase
+                     type="movie"
+                     name="_"
+                     movie="CIN_IN_GAME_GS_Sign"
+                     pxsl_line="211" />
+            </Path>
+            <Path
+                 pxsl_line="212">
+                <Phase
+                     type="wait guard"
+                     name="_"
+                     time="2"
+                     pxsl_line="213" />
+                <Phase
+                     type="set state"
+                     name="_"
+                     desired_state="on"
+                     pxsl_line="214">
+                    <Trigger
+                         pxsl_line="214">
+                        <QuestObject
+                             class="VirtualSwitchDI"
+                             name="switch_GS_Sign01"
+                             pxsl_line="214" />
+                    </Trigger>
+                </Phase>
+                <Phase
+                     type="wait guard"
+                     name="_"
+                     time="30"
+                     pxsl_line="215" />
+                <Phase
+                     type="set state"
+                     name="_"
+                     desired_state="off"
+                     pxsl_line="216">
+                    <Trigger
+                         pxsl_line="216">
+                        <QuestObject
+                             class="VirtualSwitchDI"
+                             name="switch_GS_Sign01"
+                             pxsl_line="216" />
+                    </Trigger>
+                </Phase>
+            </Path>
+        </Phase>
+    </Quest>
+    <Quest
+         name="__Car_Exp01"
+         parent="game_root_rw"
+         pxsl_line="218">
+        <Phase
+             type="use"
+             name="_"
+             desired_state="on"
+             show_locations="false"
+             pxsl_line="219">
+            <Trigger
+                 pxsl_line="219">
+                <QuestObject
+                     class="DamageSwitchDI"
+                     name="Roof_Final_Exp02"
+                     pxsl_line="219" />
+            </Trigger>
+        </Phase>
+        <Phase
+             type="wait guard"
+             name="_"
+             time="1"
+             pxsl_line="220" />
+        <Phase
+             type="set state"
+             name="_"
+             desired_state="on"
+             pxsl_line="221">
+            <Trigger
+                 pxsl_line="221">
+                <QuestObject
+                     class="VirtualSwitchDI"
+                     name="switch_GS_Car01"
+                     pxsl_line="221" />
+            </Trigger>
+        </Phase>
+        <Phase
+             type="wait guard"
+             name="_"
+             time="1"
+             pxsl_line="222" />
+        <Phase
+             type="set state"
+             name="_"
+             desired_state="on"
+             pxsl_line="223">
+            <Trigger
+                 pxsl_line="223">
+                <QuestObject
+                     class="VirtualSwitchDI"
+                     name="switch_GS_Car02"
+                     pxsl_line="223" />
+            </Trigger>
+        </Phase>
+        <Phase
+             type="wait guard"
+             name="_"
+             time="20"
+             pxsl_line="224" />
+        <Phase
+             type="set state"
+             name="_"
+             desired_state="off"
+             pxsl_line="225">
+            <Trigger
+                 pxsl_line="225">
+                <QuestObject
+                     class="VirtualSwitchDI"
+                     name="switch_GS_Car01"
+                     pxsl_line="225" />
+            </Trigger>
+        </Phase>
+    </Quest>
+    <Quest
+         name="__Trash_Exp01"
+         parent="game_root_rw"
+         pxsl_line="227">
+        <Phase
+             type="use"
+             name="_"
+             desired_state="on"
+             show_locations="false"
+             pxsl_line="228">
+            <Trigger
+                 pxsl_line="228">
+                <QuestObject
+                     class="DamageSwitchDI"
+                     name="Roof_Final_Exp03"
+                     pxsl_line="228" />
+            </Trigger>
+        </Phase>
+        <Phase
+             type="wait guard"
+             name="_"
+             time="1"
+             pxsl_line="229" />
+        <Phase
+             type="set state"
+             name="_"
+             desired_state="on"
+             pxsl_line="230">
+            <Trigger
+                 pxsl_line="230">
+                <QuestObject
+                     class="VirtualSwitchDI"
+                     name="switch_GS_Trash"
+                     pxsl_line="230" />
+            </Trigger>
+        </Phase>
+    </Quest>
+    <!--  -->
+    <!-- Encounters -->
+    <!-- -->
+    <Quest
+         name="__Electro_zombie001"
+         parent="game_root_rw"
+         pxsl_line="237">
+        <Phase
+             type="go to"
+             name="_"
+             distance="6.0"
+             show_locations="false"
+             pxsl_line="238">
+            <Destination
+                 pxsl_line="238">
+                <QuestObject
+                     class="Marker"
+                     name="electro_zombie_start_01"
+                     pxsl_line="238" />
+            </Destination>
+        </Phase>
+        <Phase
+             type="kill"
+             name="_"
+             show_locations="false"
+             pxsl_line="239">
+            <Spawner
+                 pxsl_line="239">
+                <QuestObject
+                     class="AISpawnBoxNumber"
+                     name="Electro_zombie"
+                     pxsl_line="239" />
+            </Spawner>
+        </Phase>
+    </Quest>
+    <Quest
+         name="__Infecteds_001"
+         parent="game_root_rw"
+         pxsl_line="241">
+        <Phase
+             type="go to"
+             name="_"
+             distance="8.0"
+             show_locations="false"
+             pxsl_line="242">
+            <Destination
+                 pxsl_line="242">
+                <QuestObject
+                     class="Marker"
+                     name="Infecteds_scripted_001"
+                     pxsl_line="242" />
+            </Destination>
+        </Phase>
+        <Phase
+             type="set state"
+             name="inf scream 01 on"
+             desired_state="on"
+             pxsl_line="243">
+            <Trigger
+                 pxsl_line="243">
+                <QuestObject
+                     class="VirtualSwitchDI"
+                     name="Switch_Eva01_Infecteds_Scream01"
+                     pxsl_line="243" />
+            </Trigger>
+        </Phase>
+        <Phase
+             type="wait guard"
+             name="_"
+             time="1"
+             pxsl_line="244" />
+        <Phase
+             type="set state"
+             name="inf scream 02 on"
+             desired_state="on"
+             pxsl_line="245">
+            <Trigger
+                 pxsl_line="245">
+                <QuestObject
+                     class="VirtualSwitchDI"
+                     name="Switch_Eva01_Infecteds_Scream02"
+                     pxsl_line="245" />
+            </Trigger>
+        </Phase>
+        <Phase
+             type="set state"
+             name="inf on"
+             desired_state="on"
+             pxsl_line="246">
+            <Trigger
+                 pxsl_line="246">
+                <QuestObject
+                     class="VirtualSwitchDI"
+                     name="Switch_Eva01_Infecteds"
+                     pxsl_line="246" />
+            </Trigger>
+        </Phase>
+        <Phase
+             type="wait guard"
+             name="_"
+             time="30"
+             pxsl_line="247" />
+        <Phase
+             type="set state"
+             name="inf off"
+             desired_state="off"
+             pxsl_line="248">
+            <Trigger
+                 pxsl_line="248">
+                <QuestObject
+                     class="VirtualSwitchDI"
+                     name="Switch_Eva01_Infecteds"
+                     pxsl_line="248" />
+            </Trigger>
+        </Phase>
+        <Phase
+             type="set state"
+             name="inf scream 01 off2"
+             desired_state="off"
+             pxsl_line="249">
+            <Trigger
+                 pxsl_line="249">
+                <QuestObject
+                     class="VirtualSwitchDI"
+                     name="Switch_Qua_Infecteds_Scream01"
+                     pxsl_line="249" />
+            </Trigger>
+        </Phase>
+        <Phase
+             type="set state"
+             name="inf scream 02 off2"
+             desired_state="off"
+             pxsl_line="250">
+            <Trigger
+                 pxsl_line="250">
+                <QuestObject
+                     class="VirtualSwitchDI"
+                     name="Switch_Qua_Infecteds_Scream02"
+                     pxsl_line="250" />
+            </Trigger>
+        </Phase>
+        <Phase
+             type="checkpoint"
+             name="_"
+             pxsl_line="251">
+            <Destination
+                 pxsl_line="251">
+                <QuestObject
+                     class="SpawnPoint"
+                     name="Save03"
+                     pxsl_line="251" />
+            </Destination>
+        </Phase>
+    </Quest>
+    <Quest
+         name="__ENC001_Inf"
+         parent="RWhite_C_QF02"
+         pxsl_line="253">
+        <Phase
+             type="go to"
+             name="_"
+             distance="2.0"
+             show_locations="false"
+             pxsl_line="254">
+            <Destination
+                 pxsl_line="254">
+                <QuestObject
+                     class="Marker"
+                     name="ENC001_place"
+                     pxsl_line="254" />
+            </Destination>
+        </Phase>
+        <Phase
+             type="set state"
+             name="_"
+             desired_state="on"
+             pxsl_line="255">
+            <Trigger
+                 pxsl_line="255">
+                <QuestObject
+                     class="VirtualSwitchDI"
+                     name="ENC001_switch_Inf_sound01"
+                     pxsl_line="255" />
+            </Trigger>
+        </Phase>
+        <Phase
+             type="AND"
+             name="_"
+             pxsl_line="256">
+            <Path
+                 pxsl_line="257">
+                <Phase
+                     type="kill"
+                     name="_"
+                     show_locations="false"
+                     pxsl_line="258">
+                    <Spawner
+                         pxsl_line="258">
+                        <QuestObject
+                             class="AISpawnBoxWaves"
+                             name="ENC001_Infecteds01"
+                             pxsl_line="258" />
+                    </Spawner>
+                </Phase>
+            </Path>
+            <Path
+                 pxsl_line="259">
+                <Phase
+                     type="kill"
+                     name="_"
+                     show_locations="false"
+                     pxsl_line="260">
+                    <Spawner
+                         pxsl_line="260">
+                        <QuestObject
+                             class="AISpawnBoxWaves"
+                             name="ENC001_Infecteds02"
+                             pxsl_line="260" />
+                    </Spawner>
+                </Phase>
+            </Path>
+            <Path
+                 pxsl_line="261">
+                <Phase
+                     type="wait guard"
+                     name="_"
+                     time="2"
+                     pxsl_line="262" />
+                <Phase
+                     type="set state"
+                     name="_"
+                     desired_state="on"
+                     pxsl_line="263">
+                    <Trigger
+                         pxsl_line="263">
+                        <QuestObject
+                             class="VirtualSwitchDI"
+                             name="ENC001_switch_Inf_sound02"
+                             pxsl_line="263" />
+                    </Trigger>
+                </Phase>
+                <Phase
+                     type="kill"
+                     name="_"
+                     show_locations="false"
+                     pxsl_line="264">
+                    <Spawner
+                         pxsl_line="264">
+                        <QuestObject
+                             class="AISpawnBoxWaves"
+                             name="ENC001_Infecteds03"
+                             pxsl_line="264" />
+                    </Spawner>
+                </Phase>
+            </Path>
+        </Phase>
+        <Phase
+             type="set state"
+             name="_"
+             desired_state="off"
+             pxsl_line="265">
+            <Trigger
+                 pxsl_line="265">
+                <QuestObject
+                     class="VirtualSwitchDI"
+                     name="ENC001_switch_Inf_sound01"
+                     pxsl_line="265" />
+            </Trigger>
+        </Phase>
+        <Phase
+             type="set state"
+             name="_"
+             desired_state="off"
+             pxsl_line="266">
+            <Trigger
+                 pxsl_line="266">
+                <QuestObject
+                     class="VirtualSwitchDI"
+                     name="ENC001_switch_Inf_sound02"
+                     pxsl_line="266" />
+            </Trigger>
+        </Phase>
+    </Quest>
+    <!-- -->
+    <!-- Survivors -->
+    <!-- -->
+    <Quest
+         name="__Survivor_002"
+         parent="RWhite_C_QF02"
+         pxsl_line="274">
+        <Phase
+             type="go to"
+             name=" Survivor_002_Talk "
+             distance="4.0"
+             show_locations="false"
+             pxsl_line="275">
+            <Destination
+                 pxsl_line="275">
+                <QuestObject
+                     class="Marker"
+                     name="Survivor_002_Activator"
+                     pxsl_line="275" />
+            </Destination>
+            <DebugPlayerPosition
+                 pxsl_line="276">
+                <QuestObject
+                     class="SpawnPoint"
+                     name="Survivor_002_debugpos"
+                     pxsl_line="276" />
+            </DebugPlayerPosition>
+        </Phase>
+        <Phase
+             type="talk"
+             name="_"
+             speaker="Survivor_002"
+             group="Survivor_002_RWSQ_2"
+             show_locations="false"
+             pxsl_line="277" />
+        <Phase
+             type="talk"
+             name="_"
+             speaker="voice2d"
+             group="Ryder_RWSurvivor_002"
+             show_locations="false"
+             auto_start="true"
+             pxsl_line="278" />
+    </Quest>
+    <Quest
+         name="__Survivor_003"
+         parent="RWhite_C_QF02"
+         pxsl_line="280">
+        <Phase
+             type="go to"
+             name=" Survivor_003_Talk "
+             distance="5.0"
+             show_locations="false"
+             pxsl_line="281">
+            <Destination
+                 pxsl_line="281">
+                <QuestObject
+                     class="Marker"
+                     name="Survivor_003_Activator"
+                     pxsl_line="281" />
+            </Destination>
+            <DebugPlayerPosition
+                 pxsl_line="282">
+                <QuestObject
+                     class="SpawnPoint"
+                     name="Survivor_003_debugpos"
+                     pxsl_line="282" />
+            </DebugPlayerPosition>
+        </Phase>
+        <Phase
+             type="talk"
+             name="_"
+             speaker="Survivor_003"
+             group="Survivor_003_RWSQ_3"
+             show_locations="false"
+             pxsl_line="283" />
+        <!-- ,talk _         voice2d         Ryder_RWSurvivor_003 -show=false -auto=true -->
+    </Quest>
+    <Quest
+         name="__Survivor_004"
+         parent="RWhite_C_QF02"
+         pxsl_line="286">
+        <Phase
+             type="go to"
+             name=" Survivor_004_Talk "
+             distance="4.0"
+             show_locations="false"
+             pxsl_line="287">
+            <Destination
+                 pxsl_line="287">
+                <QuestObject
+                     class="Marker"
+                     name="Survivor_004_Activator"
+                     pxsl_line="287" />
+            </Destination>
+            <DebugPlayerPosition
+                 pxsl_line="288">
+                <QuestObject
+                     class="SpawnPoint"
+                     name="Survivor_004_debugpos"
+                     pxsl_line="288" />
+            </DebugPlayerPosition>
+        </Phase>
+        <Phase
+             type="talk"
+             name="_"
+             speaker="Survivor_004"
+             group="Survivor_004_RWSQ_4"
+             show_locations="false"
+             pxsl_line="289" />
+        <!-- ,talk _         voice2d         Ryder_RWSurvivor_004 -show=false -auto=true -->
+    </Quest>
+    <!-- -->
+    <!-- Sewers Actions -->
+    <!-- -->
+    <Quest
+         name="__SewersBomb"
+         parent="game_root_rw"
+         pxsl_line="298">
+        <Phase
+             type="go to"
+             name=" Pipe Explode "
+             distance="3.0"
+             show_locations="false"
+             pxsl_line="299">
+            <Destination
+                 pxsl_line="299">
+                <QuestObject
+                     class="Marker"
+                     name="Kaboom_Activator"
+                     pxsl_line="299" />
+            </Destination>
+            <DebugPlayerPosition
+                 pxsl_line="300">
+                <QuestObject
+                     class="SpawnPoint"
+                     name="Kaboom_debugpos"
+                     pxsl_line="300" />
+            </DebugPlayerPosition>
+        </Phase>
+        <Phase
+             type="set state"
+             name="_"
+             desired_state="on"
+             pxsl_line="301">
+            <Trigger
+                 pxsl_line="301">
+                <QuestObject
+                     class="VirtualSwitchDI"
+                     name="Zombie_Pipes_Explosives"
+                     pxsl_line="301" />
+            </Trigger>
+        </Phase>
+        <Phase
+             type="use"
+             name="_"
+             desired_state="on"
+             show_locations="false"
+             pxsl_line="302">
+            <Trigger
+                 pxsl_line="302">
+                <QuestObject
+                     class="DamageSwitchDI"
+                     name="Kaboom_Pipe"
+                     pxsl_line="302" />
+            </Trigger>
+        </Phase>
+        <Phase
+             type="set state"
+             name="_"
+             desired_state="on"
+             pxsl_line="303">
+            <Trigger
+                 pxsl_line="303">
+                <QuestObject
+                     class="VirtualSwitchDI"
+                     name="Pipes_FireEmitter"
+                     pxsl_line="303" />
+            </Trigger>
+        </Phase>
+        <Phase
+             type="use"
+             name="_"
+             desired_state="on"
+             show_locations="false"
+             pxsl_line="304">
+            <Trigger
+                 pxsl_line="304">
+                <QuestObject
+                     class="PhysicalSwitchDI"
+                     name="GasTank_Switch"
+                     pxsl_line="304" />
+            </Trigger>
+        </Phase>
+        <Phase
+             type="set state"
+             name="_"
+             desired_state="off"
+             pxsl_line="305">
+            <Trigger
+                 pxsl_line="305">
+                <QuestObject
+                     class="VirtualSwitchDI"
+                     name="Pipes_FireEmitter"
+                     pxsl_line="305" />
+            </Trigger>
+        </Phase>
+    </Quest>
+    <!-- -->
+    <!-- RADIO MESSAGES -->
+    <!-- -->
+    <Quest
+         name="__Andrew_Tape1"
+         parent="game_root_rw"
+         pxsl_line="311">
+        <Phase
+             type="use"
+             name="_"
+             desired_state="off"
+             show_locations="false"
+             pxsl_line="312">
+            <Trigger
+                 pxsl_line="312">
+                <QuestObject
+                     class="InvisibleSwitchDI"
+                     name="Andrew_Tape_1_switch"
+                     pxsl_line="312" />
+            </Trigger>
+        </Phase>
+        <Phase
+             type="talk"
+             name="_"
+             speaker="Andrew_1"
+             group="Tape1"
+             show_locations="false"
+             auto_start="true"
+             pxsl_line="313" />
+    </Quest>
+    <Quest
+         name="__Andrew_Tape2"
+         parent="game_root_rw"
+         pxsl_line="315">
+        <Phase
+             type="use"
+             name="_"
+             desired_state="off"
+             show_locations="false"
+             pxsl_line="316">
+            <Trigger
+                 pxsl_line="316">
+                <QuestObject
+                     class="InvisibleSwitchDI"
+                     name="Andrew_Tape_2_switch"
+                     pxsl_line="316" />
+            </Trigger>
+        </Phase>
+        <Phase
+             type="talk"
+             name="_"
+             speaker="Andrew_2"
+             group="Tape2"
+             show_locations="false"
+             auto_start="true"
+             pxsl_line="317" />
+    </Quest>
+    <Quest
+         name="__Andrew_Tape3"
+         parent="game_root_rw"
+         pxsl_line="319">
+        <Phase
+             type="use"
+             name="_"
+             desired_state="off"
+             show_locations="false"
+             pxsl_line="320">
+            <Trigger
+                 pxsl_line="320">
+                <QuestObject
+                     class="InvisibleSwitchDI"
+                     name="Andrew_Tape_3_switch"
+                     pxsl_line="320" />
+            </Trigger>
+        </Phase>
+        <Phase
+             type="talk"
+             name="_"
+             speaker="Andrew_3"
+             group="Tape3"
+             show_locations="false"
+             auto_start="true"
+             pxsl_line="321" />
+    </Quest>
+    <Quest
+         name="__Andrew_Tape4"
+         parent="game_root_rw"
+         pxsl_line="323">
+        <Phase
+             type="use"
+             name="_"
+             desired_state="off"
+             show_locations="false"
+             pxsl_line="324">
+            <Trigger
+                 pxsl_line="324">
+                <QuestObject
+                     class="InvisibleSwitchDI"
+                     name="Andrew_Tape_4_switch"
+                     pxsl_line="324" />
+            </Trigger>
+        </Phase>
+        <Phase
+             type="talk"
+             name="_"
+             speaker="Andrew_4"
+             group="Tape4"
+             show_locations="false"
+             auto_start="true"
+             pxsl_line="325" />
+    </Quest>
+    <Quest
+         name="__Andrew_Tape5"
+         parent="game_root_rw"
+         pxsl_line="327">
+        <Phase
+             type="use"
+             name="_"
+             desired_state="off"
+             show_locations="false"
+             pxsl_line="328">
+            <Trigger
+                 pxsl_line="328">
+                <QuestObject
+                     class="InvisibleSwitchDI"
+                     name="Andrew_Tape_5_switch"
+                     pxsl_line="328" />
+            </Trigger>
+        </Phase>
+        <Phase
+             type="talk"
+             name="_"
+             speaker="Andrew_5"
+             group="Tape5"
+             show_locations="false"
+             auto_start="true"
+             pxsl_line="329" />
+    </Quest>
+</QuestsDefinitions>
+<!--  vim: set et sw=4 ts=4: -->

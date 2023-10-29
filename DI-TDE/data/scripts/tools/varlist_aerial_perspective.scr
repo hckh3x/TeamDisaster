@@ -1,0 +1,3 @@
+VarFloat("f_scattering_z_factor", 1.0)
+VarFloat("f_scattering_h_factor", 512.0)
+VarFloat("f_scattering_shafts_factor", 1.0)

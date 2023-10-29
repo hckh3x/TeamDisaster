@@ -1,0 +1,94 @@
+!include("../Generic/ODEPhysicsRagdoll.phx")
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+PhysicsParams()
+{
+    QuickStepNumIterations(25)
+    QuickStepSortingMethod(0)
+    
+    SetAbsorbers(0.7, 1) 
+    SetAutoDisableVels(0.0, 0, -1)    // MunDee Estuvo aquí
+    MaxLifeTime(-1)
+    
+    AllowContinuousCollisions(0, 0)
+    SetWaterFloat(0.11)
+    SynchroMode("PhysicsDependant")
+    
+    CollisionDamageToOtherMul(0, 0)    
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+RagdollParams()
+{
+    Mass(10)
+    StiffenStartTime(-1)
+    ApplyForceMod(1)
+    ApplyForceAddUp(0.0)    // MunDee Estuvo aquí
+    
+    SynchroOwner(0)
+    AllowAnimationOfOtherElements(1)
+    ExtentsUpdateMode("expand_existing")
+    
+    AnimationBlendingTimeAfterDisable(2)
+}
+
+//-------------------------------------------------------------------------------------------------
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+Bones()
+{ 
+    UseBone("Bip01 spine3",                   "sphere",   1)
+    //UseBone("bip01 l clavicle",               "sphere",   1)
+    UseBone("Bip01 l upperarm",               "capsule",  1)
+    UseBone("Bip01 l forearm",                "capsule",  1)
+    UseBoneScale("Bip01 l hand",              "sphere",   1,  1.3)
+    
+    NoCollidedPair("Bip01 spine3", "Bip01 l upperarm")
+    SelfCollisionGeom("Bip01 l thigh",    "capsule",      1)
+    SelfCollisionGeom("Bip01 pelvis",     "sphere",       1.2)
+    SelfCollisionGeom("Bip01 spine1",     "sphere",       1.2)
+    //SelfCollisionGeom("bip01 spine2",     "sphere",       1.0)
+
+    FixBone("Bip01 spine3", 1)
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+Joints()
+{
+    // definicja jointow
+    DefineJoint("Bip01 spine3",     "Bip01 l upperarm", "ball",     1,  0,  0,    1,  0,  0)
+    DefineJoint("Bip01 l upperarm", "Bip01 l forearm",  "hinge",    0,  1,  0,    0,  0,  0)
+    DefineJoint("Bip01 l forearm",  "Bip01 l hand",     "hinge",    0,  1,  0,    0,  0,  0)
+
+    // polozenie stawow
+    SetAnchorPosition("Bip01 spine3 Bip01 l upperarm",      -0.60,  0.00,  0.00)  
+    SetAnchorPosition("Bip01 l upperarm Bip01 l forearm",   -0.50,  0.00,  0.00)
+    SetAnchorPosition("Bip01 l forearm Bip01 l hand",       -0.50,  0.00,  0.00)
+
+    // parametry stopu
+    Set3DOFStops("Bip01 spine3 Bip01 l upperarm",       -0.20, 0.40,    -0.40, 0.40,    -0.10, 0.10,  0, 0, 0)
+    Set1DOFStops("Bip01 l upperarm Bip01 l forearm",    -0.30, 0.70,    0) 
+    Set1DOFStops("Bip01 l forearm Bip01 l hand",        -0.30, 0.50,    0) 
+
+    // sily tarcia stawow
+    SetFrictionForceAll(1.0)
+
+    // SetFrictionForce("bip01 spine3 bip01 l clavicle", 3)
+    // SetFrictionForce("bip01 l clavicle bip01 l upperarm", 5)
+    
+    // wspolczynniki dopuszczalnych bledow stopow
+    SetStopERPAll(0.5)
+
+    // wspolczynniki sprezystosci jointow po osiagnieciu stopow
+    SetStopCFMAll(0.0001)
+
+    // wspolczynniki sprezystosci jointow
+    SetCFMAll(0.00001)
+
+    // wspolczynniki tlumienia sily oddalajacej od stopu (1 - brak tlumienia, 0.5 - sila zmniejszona dwukrotnie)
+    SetFudgeFactorAll(0.1)
+}
+
+
+

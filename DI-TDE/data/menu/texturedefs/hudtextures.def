@@ -1,0 +1,196 @@
+!Texture(s, i, i) //texture file/ filename, width, height
+!HiddenInEditor(i) //if present, texture won't be visible in UIEditor combobox
+!Rect(s, i, i, i, i) //texture part / name, left, top, right, bottom (in pixels)
+!RectWithCorner(s, i, i, i, i, i, i) //texture part / name, left, top, right, bottom, corner width, corner height (in pixels)
+!Whole(s)
+
+!include("Skills.scr")
+!include("Skills_big.scr")
+!include("hud.scr") //DXT5 compressed, big
+!include("hud_dide_hack.scr") //DXT5 compressed, big
+!include("hud_nocompress.scr") //A8R8G8B8 - no compression, small, gradients ussually
+
+!include("achievements_icons.scr")
+!include("challenges_icons.scr")
+!include("splats.scr")
+
+//============ old crap : remove ASAP ==========//
+
+//------------------------------------------------------------------------------
+
+Texture("BackgroundBlack.dds", 4, 4)
+{
+  Rect("blackMask", 0, 0, 4, 4)
+}
+
+Texture("white.dds", 4, 4)
+{
+	Whole("white")
+}
+
+Texture("paper_sheet.dds", 256, 256)
+{
+    Whole("paper_sheet")
+}
+
+Texture("DI_new_HUD_store_2.dds", 1280, 720)
+{
+    Whole("DI_new_HUD_store_2")
+}
+
+//------------------------------------------------------------------------------
+
+Texture("health_bar_back.dds", 512, 32)
+{
+    Whole("health_bar_back")
+}
+
+Texture("health_bar_dirt.dds", 512, 16)
+{
+    Whole("health_bar_dirt")
+}
+
+Texture("health_bar_veins.dds", 512, 16)
+{
+    Whole("health_bar_veins")
+}
+
+Texture("health_bar_veins_big.dds", 512, 16)
+{
+    Whole("health_bar_veins_big")
+}
+
+Texture("compass_test.dds", 512, 32)
+{
+	Whole("compass_test")
+}
+
+Texture("half_black_gradient.dds", 4, 256)
+{
+    Whole("half_black_gradient")
+}
+
+//Hit Indicator
+Texture("HitIndicator.dds", 128, 128)
+{
+   Whole("HitIndicator")
+}
+Texture("DirectionIndicator.dds", 128, 128)
+{
+   Whole("DirectionIndicator")
+}
+
+Texture("blood_decal_V_hud.dds", 256, 256)
+{
+	Whole("blood_decal_V")
+}
+
+Texture("blood_decal_F_hud.dds", 256, 256)
+{
+	Whole("blood_decal_F")
+}
+
+Texture("blood_decal_c_hud.dds", 256, 256)
+{
+	Whole("blood_decal_c")
+}
+
+Texture("blood_decal_y_hud.dds", 256, 256)
+{
+	Whole("blood_decal_y")
+}
+
+Texture("rs_sides.dds",256,256)
+{
+    Rect("hud_back_strip_0"                , 6, 0, 87, 124) //  85x 124
+    Rect("hud_back_strip_1"                , 89, 0, 170, 124) //  85x 124
+    Rect("hud_back_strip_2"                , 173, 0, 254, 124) //  85x 124
+    Rect("hud_back_strip_3"                , 89, 125, 170, 249) //  85x 124    
+    Rect("hud_back_strip_4"                , 173, 125, 254, 249) //  85x 124    
+}
+
+Texture("menu_in_game_info_bckg.dds", 532, 128)
+{
+	Whole("menu_in_game_info_bckg")
+}
+
+Texture("skills_picture_frame.dds", 316, 204)
+{
+	Whole("skills_picture_frame")
+}
+
+Texture("map_not_available.dds", 700, 440)
+{
+	Whole("map_not_available")
+}
+
+Texture("hud_lightning_frame.dds", 256, 256)
+{
+	Whole("hud_lightning_frame")
+}
+
+Texture("dn_arrow.dds", 32, 32)
+{
+	Whole("dn_arrow")
+}
+
+Texture("MenuRiptide_Tile.dds", 32, 32)
+{
+	Whole("MenuRiptide_Tile")
+}
+
+Texture("arrow_radial_inv.dds", 128, 32) 
+{
+	Whole("arrow_radial_inv")
+}
+
+Texture("exclamation_mark.dds", 32, 32) 
+{
+	Whole("exclamation_mark")
+}
+
+
+Texture("controller_x360.dds", 512, 512)
+{
+    Whole("controller_x360") //  512 x  512
+}
+
+Texture("controller_xone.dds", 512, 512)
+{
+    Whole("controller_xone") //  512 x  512
+}
+
+Texture("controller_ps4.dds", 1024, 512)
+{
+    Whole("controller_ps4") // 1024 x  512
+}
+
+Texture("controller_x360_lines.dds", 1024, 512)
+{
+    Whole("controller_x360_lines") // 1024 x  512
+}
+
+Texture("controller_xone_lines.dds", 1024, 512)
+{
+    Whole("controller_xone_lines") // 1024 x  512
+}
+
+Texture("controller_ps4_lines.dds", 1024, 512)
+{
+    Whole("controller_ps4_lines") // 1024 x  512
+}
+
+Texture("controller_x360_lines_riptide.dds", 1024, 512)
+{
+    Whole("controller_x360_lines_riptide") // 1024 x  512
+}
+
+Texture("controller_xone_lines_riptide.dds", 1024, 512)
+{
+    Whole("controller_xone_lines_riptide") // 1024 x  512
+}
+
+Texture("controller_ps4_lines_riptide.dds", 1024, 512)
+{
+    Whole("controller_ps4_lines_riptide") // 1024 x  512
+}

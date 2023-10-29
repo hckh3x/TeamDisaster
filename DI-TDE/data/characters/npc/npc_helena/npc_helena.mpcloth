@@ -1,0 +1,11 @@
+MeshPartCloth("MPC_Helena_cingulum.phx", 1, 1)
+MeshPartCloth("MPC_Helena_cross.phx", 1, 1)
+MeshPartCloth("MPC_Helena_frock_down.phx", 1, 1)
+
+MeshPartCloth("MPC_Helena_frock_up_back.phx", 1, 1)
+MeshPartCloth("MPC_Helena_frock_up_frontleft.phx", 1, 1)
+MeshPartCloth("MPC_Helena_frock_up_frontright.phx", 1, 1)
+
+
+
+

@@ -1,0 +1,35 @@
+!include("ai_data.def")
+!include("human_timing_events.def")
+!include("human_activities.def")
+!include("human_goals.def")
+
+SnapDist(0.8)    // MunDee Estuvo aquí
+ReleaseDist(1.2)    // MunDee Estuvo aquí
+StrongAttractor()
+LPSound("break_door_01.wav")
+
+Slot("", 1, IDLE_STAND, 1,0.0,0.0,0.0, 0.0, 0.0, 1.0,1.5)    // MunDee Estuvo aquí
+{
+	CanRotateInInteract()
+	CanMoveOnAnimation()
+	LockPosition()
+	InteractionDistance(0.05)    // MunDee Estuvo aquí
+
+    AiTypeDataSet("human")
+    {	
+        Data("idle:standing:stand::::", -2, "m_lp_breakingdoor_loop1")
+        Data("idle:standing:idle::::", -2, "m_lp_breakingdoor_loop1")
+        Data("idle:standing:idle::::", -2, "m_lp_breakingdoor_loop2")
+		Data("idle:standing:idle::::", -2, "m_lp_breakingdoor_v01")
+		Data("idle:standing:idle::::", -2, "m_lp_breakingdoor_v02")
+        Data("idle:standing:interact::::", -2, "m_lp_calm_stand")
+		Data("idle:standing:to_interact::::", -2, "m_lp_breakingdoor_end")
+		Data("idle:standing:from_interact::::", -2, "m_lp_breakingdoor_start")
+
+		
+		Data("idle:standing:stand:none:none:prepare:none", -2, "m_lp_breakingdoor_start")
+        Data("idle:standing:stand:none:none:none:finish", -2, "m_lp_breakingdoor_end")
+		
+	}
+}
+

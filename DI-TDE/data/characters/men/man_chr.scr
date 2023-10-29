@@ -1,0 +1,6833 @@
+// Master(name, reactor)
+// Slave(name, position, rotation, scale)
+// Reaction(name, value)
+// State(object, controller, value)
+
+sub main()
+{
+	Master("Body_Hands_ForearmsFatness", "#value")
+	{
+		Slave("Bip01 R ForeTwist2", "[-53.822,-3.25617,118.723]", "(quat -0.0494311 0.514921 -0.0814668 -0.851925)", "[0.999999,1,0.999999]")
+		{
+			Reaction("#State03", "0.0")
+			{
+				State("Bip01 R ForeTwist2", "Y Scale", "1.0")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+				State("Bip01 R ForeTwist2", "Z Scale", "1.0")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+			Reaction("#State04", "1.0")
+			{
+				State("Bip01 R ForeTwist2", "Y Scale", "1.12712")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+				State("Bip01 R ForeTwist2", "Z Scale", "1.12712")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+			Reaction("#State05", "-1.0")
+			{
+				State("Bip01 R ForeTwist2", "Z Scale", "1.0")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+				State("Bip01 R ForeTwist2", "Y Scale", "1.0")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+		}
+		Slave("Bip01 R ForeTwist1", "[-45.9086,0.781065,123.181]", "(quat -0.0448198 0.52404 -0.108195 -0.843604)", "[1,0.999999,0.999999]")
+		{
+			Reaction("#State03", "0.0")
+			{
+				State("Bip01 R ForeTwist1", "Y Scale", "1.0")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+				State("Bip01 R ForeTwist1", "Z Scale", "1.0")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+			Reaction("#State04", "1.0")
+			{
+				State("Bip01 R ForeTwist1", "Y Scale", "1.19015")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+				State("Bip01 R ForeTwist1", "Z Scale", "1.19015")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+			Reaction("#State05", "-1.0")
+			{
+				State("Bip01 R ForeTwist1", "Z Scale", "1.0")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+				State("Bip01 R ForeTwist1", "Y Scale", "1.0")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+		}
+		Slave("Bip01 R ForeTwist", "[-37.9952,4.81831,127.638]", "(quat -0.0618159 0.524666 -0.134134 -0.838399)", "[1,0.999999,0.999999]")
+		{
+			Reaction("#State03", "0.0")
+			{
+				State("Bip01 R ForeTwist", "Y Scale", "1.0")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+				State("Bip01 R ForeTwist", "Z Scale", "1.0")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+			Reaction("#State04", "1.0")
+			{
+				State("Bip01 R ForeTwist", "Y Scale", "1.43077")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+				State("Bip01 R ForeTwist", "Z Scale", "1.43077")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+			Reaction("#State05", "-1.0")
+			{
+				State("Bip01 R ForeTwist", "Z Scale", "0.746791")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+				State("Bip01 R ForeTwist", "Y Scale", "0.746791")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+		}
+		Slave("Bip01 L ForeTwist2", "[53.8219,-3.25605,118.723]", "(quat -0.321563 0.495962 -0.32428 0.738554)", "[1,0.999999,1]")
+		{
+			Reaction("#State03", "0.0")
+			{
+				State("Bip01 L ForeTwist2", "Y Scale", "1.0")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+				State("Bip01 L ForeTwist2", "Z Scale", "1.0")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+			Reaction("#State04", "1.0")
+			{
+				State("Bip01 L ForeTwist2", "Y Scale", "1.12712")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+				State("Bip01 L ForeTwist2", "Z Scale", "1.12712")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+			Reaction("#State05", "-1.0")
+			{
+				State("Bip01 L ForeTwist2", "Z Scale", "1.0")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+				State("Bip01 L ForeTwist2", "Y Scale", "1.0")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+		}
+		Slave("Bip01 L ForeTwist1", "[45.9085,0.781175,123.181]", "(quat -0.398543 0.505081 -0.297551 0.705351)", "[1,0.999999,1]")
+		{
+			Reaction("#State03", "0.0")
+			{
+				State("Bip01 L ForeTwist1", "Y Scale", "1.0")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+				State("Bip01 L ForeTwist1", "Z Scale", "1.0")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+			Reaction("#State04", "1.0")
+			{
+				State("Bip01 L ForeTwist1", "Y Scale", "1.19015")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+				State("Bip01 L ForeTwist1", "Z Scale", "1.19015")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+			Reaction("#State05", "-1.0")
+			{
+				State("Bip01 L ForeTwist1", "Z Scale", "1.0")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+				State("Bip01 L ForeTwist1", "Y Scale", "1.0")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+		}
+		Slave("Bip01 L ForeTwist", "[37.9951,4.8184,127.638]", "(quat -0.451684 0.515183 -0.271945 0.675732)", "[1,0.999999,1]")
+		{
+			Reaction("#State03", "0.0")
+			{
+				State("Bip01 L ForeTwist", "Y Scale", "1.0")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "99.9999");
+					}
+				}
+				State("Bip01 L ForeTwist", "Z Scale", "0.999999")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "99.9999");
+					}
+				}
+			}
+			Reaction("#State04", "1.0")
+			{
+				State("Bip01 L ForeTwist", "Y Scale", "1.43077")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "99.9999");
+					}
+				}
+				State("Bip01 L ForeTwist", "Z Scale", "1.43077")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "99.9999");
+					}
+				}
+			}
+			Reaction("#State05", "-1.0")
+			{
+				State("Bip01 L ForeTwist", "Z Scale", "0.746791")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "99.9999");
+					}
+				}
+				State("Bip01 L ForeTwist", "Y Scale", "0.746791")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "99.9999");
+					}
+				}
+			}
+		}
+	}
+	Master("Body_Hands_HandsSize", "#value")
+	{
+		Slave("Bip01 R Hand", "[-57.7787,-5.2748,116.495]", "(quat 0.502969 -0.35921 0.536674 0.574431)", "[1,0.999999,1]")
+		{
+			Reaction("#State01", "0.0")
+			{
+				State("Bip01 R Hand", "X Scale", "1.0")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "99.9999");
+						Property("#z_scale", "100.0");
+					}
+				}
+				State("Bip01 R Hand", "Z Scale", "1.0")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "99.9999");
+						Property("#z_scale", "100.0");
+					}
+				}
+				State("Bip01 R Hand", "Y Scale", "0.999999")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "99.9999");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+			Reaction("#State04", "1.0")
+			{
+				State("Bip01 R Hand", "X Scale", "1.3096")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "99.9999");
+						Property("#z_scale", "100.0");
+					}
+				}
+				State("Bip01 R Hand", "Z Scale", "1.3096")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "99.9999");
+						Property("#z_scale", "100.0");
+					}
+				}
+				State("Bip01 R Hand", "Y Scale", "1.3096")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "99.9999");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+			Reaction("#State05", "-1.0")
+			{
+				State("Bip01 R Hand", "Y Scale", "0.786844")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "99.9999");
+						Property("#z_scale", "100.0");
+					}
+				}
+				State("Bip01 R Hand", "X Scale", "0.786844")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "99.9999");
+						Property("#z_scale", "100.0");
+					}
+				}
+				State("Bip01 R Hand", "Z Scale", "0.786844")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "99.9999");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+		}
+		Slave("Bip01 L Hand", "[57.7787,-5.27467,116.495]", "(quat -0.69102 0.649087 0.182215 0.260719)", "[1,0.999999,1]")
+		{
+			Reaction("#State01", "0.0")
+			{
+				State("Bip01 L Hand", "X Scale", "1.0")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "99.9999");
+						Property("#z_scale", "100.0");
+					}
+				}
+				State("Bip01 L Hand", "Z Scale", "1.0")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "99.9999");
+						Property("#z_scale", "100.0");
+					}
+				}
+				State("Bip01 L Hand", "Y Scale", "0.999999")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "99.9999");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+			Reaction("#State04", "1.0")
+			{
+				State("Bip01 L Hand", "X Scale", "1.3096")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "99.9999");
+						Property("#z_scale", "100.0");
+					}
+				}
+				State("Bip01 L Hand", "Z Scale", "1.3096")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "99.9999");
+						Property("#z_scale", "100.0");
+					}
+				}
+				State("Bip01 L Hand", "Y Scale", "1.3096")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "99.9999");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+			Reaction("#State05", "-1.0")
+			{
+				State("Bip01 L Hand", "Y Scale", "0.786843")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "99.9999");
+						Property("#z_scale", "100.0");
+					}
+				}
+				State("Bip01 L Hand", "X Scale", "0.786844")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "99.9999");
+						Property("#z_scale", "100.0");
+					}
+				}
+				State("Bip01 L Hand", "Z Scale", "0.786844")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "99.9999");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+		}
+	}
+	Master("Body_Hands_UpperarmsFatness", "#value")
+	{
+		Slave("Bip01 R UpArmTwist1", "[-27.7834,4.17539,136.592]", "(quat -0.0451302 0.654446 -0.0666423 -0.751812)", "[1,0.999999,1]")
+		{
+			Reaction("#State03", "0.0")
+			{
+				State("Bip01 R UpArmTwist1", "Y Scale", "1.0")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+				State("Bip01 R UpArmTwist1", "Z Scale", "1.0")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+			Reaction("#State04", "1.0")
+			{
+				State("Bip01 R UpArmTwist1", "Y Scale", "1.14847")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+				State("Bip01 R UpArmTwist1", "Z Scale", "1.14847")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+			Reaction("#State05", "-1.0")
+			{
+				State("Bip01 R UpArmTwist1", "Z Scale", "1.0")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+				State("Bip01 R UpArmTwist1", "Y Scale", "1.0")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+		}
+		Slave("Bip01 R UpArmTwist", "[-17.5716,3.53248,145.545]", "(quat 0.195512 0.637783 -0.00861163 -0.744939)", "[1,0.999999,1]")
+		{
+			Reaction("#State03", "0.0")
+			{
+				State("Bip01 R UpArmTwist", "Y Scale", "1.0")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+				State("Bip01 R UpArmTwist", "Z Scale", "1.0")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+			Reaction("#State04", "1.0")
+			{
+				State("Bip01 R UpArmTwist", "Y Scale", "1.43239")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+				State("Bip01 R UpArmTwist", "Z Scale", "1.43239")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+			Reaction("#State05", "-1.0")
+			{
+				State("Bip01 R UpArmTwist", "Z Scale", "0.643974")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+				State("Bip01 R UpArmTwist", "Y Scale", "0.643974")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+		}
+		Slave("Bip01 L UpArmTwist1", "[27.7834,4.17547,136.592]", "(quat -0.0895134 0.650292 0.113747 0.745768)", "[1,0.999999,1]")
+		{
+			Reaction("#State03", "0.0")
+			{
+				State("Bip01 L UpArmTwist1", "Y Scale", "1.0")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+				State("Bip01 L UpArmTwist1", "Z Scale", "1.0")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+			Reaction("#State04", "1.0")
+			{
+				State("Bip01 L UpArmTwist1", "Y Scale", "1.14847")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+				State("Bip01 L UpArmTwist1", "Z Scale", "1.14847")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+			Reaction("#State05", "-1.0")
+			{
+				State("Bip01 L UpArmTwist1", "Z Scale", "1.0")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+				State("Bip01 L UpArmTwist1", "Y Scale", "1.0")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+		}
+		Slave("Bip01 L UpArmTwist", "[17.5716,3.53252,145.545]", "(quat -0.19827 0.64606 0.0551693 0.735018)", "[1,0.999999,1]")
+		{
+			Reaction("#State03", "0.0")
+			{
+				State("Bip01 L UpArmTwist", "Y Scale", "1.0")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+				State("Bip01 L UpArmTwist", "Z Scale", "1.0")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+			Reaction("#State04", "1.0")
+			{
+				State("Bip01 L UpArmTwist", "Y Scale", "1.43239")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+				State("Bip01 L UpArmTwist", "Z Scale", "1.43239")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+			Reaction("#State05", "-1.0")
+			{
+				State("Bip01 L UpArmTwist", "Z Scale", "0.643974")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+				State("Bip01 L UpArmTwist", "Y Scale", "0.643974")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+		}
+	}
+	Master("Body_Head_HeadSize", "#value")
+	{
+		Slave("deform Head", "[3.13263e-006,0.951933,160.196]", "(quat -0.707107 -3.85322e-007 -0.707107 -4.13507e-007)", "[1,1,0.999999]")
+		{
+			Reaction("#State04", "0.0")
+			{
+				State("deform Head", "X Scale", "1.0")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+				State("deform Head", "Z Scale", "1.0")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+				State("deform Head", "Y Scale", "1.0")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+			Reaction("#State05", "1.0")
+			{
+				State("deform Head", "X Scale", "1.25155")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+				State("deform Head", "Z Scale", "1.25155")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+				State("deform Head", "Y Scale", "1.25155")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+			Reaction("#State06", "-1.0")
+			{
+				State("deform Head", "Y Scale", "0.79288")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+				State("deform Head", "X Scale", "0.79288")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+				State("deform Head", "Z Scale", "0.79288")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+		}
+	}
+	Master("Body_Head_NeckFatness", "#value")
+	{
+		Slave("deform Neck", "[-5.53003e-006,4.09917,151.719]", "(quat -0.695966 0.125027 -0.695965 0.125027)", "[1,1,0.999999]")
+		{
+			Reaction("#State03", "0.0")
+			{
+				State("deform Neck", "Y Scale", "1.0")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+				State("deform Neck", "Z Scale", "1.0")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+			Reaction("#State04", "1.0")
+			{
+				State("deform Neck", "Y Scale", "1.272")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+				State("deform Neck", "Z Scale", "1.272")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+			Reaction("#State05", "-1.0")
+			{
+				State("deform Neck", "Z Scale", "0.627115")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+				State("deform Neck", "Y Scale", "0.627115")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+		}
+	}
+	Master("Body_Head_NeckLength", "#value")
+	{
+		Slave("Bip01 Head", "[1.83914e-005,0.951943,160.196]", "(quat -0.176571 0.00926271 -0.0515627 -0.982893)", "[1,0.999999,0.999999]")
+		{
+			Reaction("#State01", "0.0")
+			{
+				State("Bip01 Head", "X Position", "9.04228")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "9.04228");
+						Property("#y_position", "-7.15256e-006");
+						Property("#z_position", "-3.81697e-007");
+					}
+				}
+			}
+			Reaction("#State03", "1.0")
+			{
+				State("Bip01 Head", "X Position", "13.1166")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "9.04228");
+						Property("#y_position", "-7.15256e-006");
+						Property("#z_position", "-3.81697e-007");
+					}
+				}
+			}
+			Reaction("#State04", "-1.0")
+			{
+				State("Bip01 Head", "X Position", "5.9857")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "9.04228");
+						Property("#y_position", "-7.15256e-006");
+						Property("#z_position", "-3.81697e-007");
+					}
+				}
+			}
+		}
+		Slave("deform Neck", "[-5.53003e-006,4.09917,151.719]", "(quat -0.695966 0.125027 -0.695965 0.125027)", "[1,1,0.999999]")
+		{
+			Reaction("#State01", "0.0")
+			{
+				State("deform Neck", "X Scale", "1.0")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+			Reaction("#State03", "1.0")
+			{
+				State("deform Neck", "X Scale", "1.39416")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+			Reaction("#State04", "-1.0")
+			{
+				State("deform Neck", "X Scale", "0.788019")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+		}
+	}
+	Master("Body_Legs_CalfsFatness", "#value")
+	{
+		Slave("deform R Calf", "[-15.7857,3.61513,53.3559]", "(quat 0.654956 0.00975284 -0.75108 -0.0825597)", "[1,1,0.999999]")
+		{
+			Reaction("#State03", "0.0")
+			{
+				State("deform R Calf", "Y Scale", "1.0")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+				State("deform R Calf", "Z Scale", "1.0")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+			Reaction("#State04", "1.0")
+			{
+				State("deform R Calf", "Y Scale", "1.44156")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+				State("deform R Calf", "Z Scale", "1.44156")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+			Reaction("#State05", "-1.0")
+			{
+				State("deform R Calf", "Z Scale", "0.771649")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+				State("deform R Calf", "Y Scale", "0.771649")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+		}
+		Slave("deform L Calf", "[15.7857,3.61518,53.3559]", "(quat -0.75108 -0.0825614 0.654956 0.0097507)", "[1,1,1]")
+		{
+			Reaction("#State03", "0.0")
+			{
+				State("deform L Calf", "Y Scale", "1.0")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+				State("deform L Calf", "Z Scale", "1.0")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+			Reaction("#State04", "1.0")
+			{
+				State("deform L Calf", "Y Scale", "1.44157")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+				State("deform L Calf", "Z Scale", "1.44157")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+			Reaction("#State05", "-1.0")
+			{
+				State("deform L Calf", "Z Scale", "0.771649")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+				State("deform L Calf", "Y Scale", "0.771649")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+		}
+	}
+	Master("Body_Legs_FootsLenght", "#value")
+	{
+		Slave("deform R Foot", "[-21.2202,9.40342,11.7934]", "(quat 0.700713 -0.0948716 -0.700714 -0.0948715)", "[1,1,1]")
+		{
+			Reaction("#State03", "0.0")
+			{
+				State("deform R Foot", "Y Scale", "1.0")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+			Reaction("#State04", "1.0")
+			{
+				State("deform R Foot", "Y Scale", "1.261")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+			Reaction("#State05", "-1.0")
+			{
+				State("deform R Foot", "Y Scale", "0.841024")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+		}
+		Slave("Bip01 R Toe0", "[-25.3083,-5.41686,0.244481]", "(quat -0.0812849 0.106743 -0.600364 -0.788392)", "[1,1,1]")
+		{
+			Reaction("#State03", "0.0")
+			{
+				State("Bip01 R Toe0", "Y Position", "15.3738")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "11.5489");
+						Property("#y_position", "15.3738");
+						Property("#z_position", "-2.14577e-006");
+					}
+				}
+			}
+			Reaction("#State04", "1.0")
+			{
+				State("Bip01 R Toe0", "Y Position", "20.1516")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "11.5489");
+						Property("#y_position", "15.3738");
+						Property("#z_position", "-2.14577e-006");
+					}
+				}
+			}
+			Reaction("#State05", "-1.0")
+			{
+				State("Bip01 R Toe0", "Y Position", "12.7472")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "11.5489");
+						Property("#y_position", "15.3738");
+						Property("#z_position", "-2.14577e-006");
+					}
+				}
+			}
+		}
+		Slave("deform L Foot", "[21.2202,9.40347,11.7934]", "(quat 0.700713 0.0948722 -0.700713 0.0948725)", "[1,1,0.999999]")
+		{
+			Reaction("#State03", "0.0")
+			{
+				State("deform L Foot", "Y Scale", "1.0")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "99.9999");
+					}
+				}
+			}
+			Reaction("#State04", "1.0")
+			{
+				State("deform L Foot", "Y Scale", "1.261")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "99.9999");
+					}
+				}
+			}
+			Reaction("#State05", "-1.0")
+			{
+				State("deform L Foot", "Y Scale", "0.841024")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "99.9999");
+					}
+				}
+			}
+		}
+		Slave("Bip01 L Toe0", "[25.3083,-5.41679,0.24447]", "(quat 0.106744 -0.0812856 -0.788392 -0.600363)", "[1,0.999999,1]")
+		{
+			Reaction("#State03", "0.0")
+			{
+				State("Bip01 L Toe0", "Y Position", "15.3738")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "11.5489");
+						Property("#y_position", "15.3738");
+						Property("#z_position", "-2.38419e-007");
+					}
+				}
+			}
+			Reaction("#State04", "1.0")
+			{
+				State("Bip01 L Toe0", "Y Position", "20.1516")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "11.5489");
+						Property("#y_position", "15.3738");
+						Property("#z_position", "-2.38419e-007");
+					}
+				}
+			}
+			Reaction("#State05", "-1.0")
+			{
+				State("Bip01 L Toe0", "Y Position", "12.7472")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "11.5489");
+						Property("#y_position", "15.3738");
+						Property("#z_position", "-2.38419e-007");
+					}
+				}
+			}
+		}
+	}
+	Master("Body_Legs_FootsWidth", "#value")
+	{
+		Slave("deform R Foot", "[-21.2202,9.40342,11.7934]", "(quat 0.700713 -0.0948716 -0.700714 -0.0948715)", "[1,1,1]")
+		{
+			Reaction("#State01", "0.0")
+			{
+				State("deform R Foot", "Z Scale", "1.0")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+			Reaction("#State02", "1.0")
+			{
+				State("deform R Foot", "Z Scale", "1.34746")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+			Reaction("#State03", "-1.0")
+			{
+				State("deform R Foot", "Z Scale", "0.681653")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+		}
+		Slave("Bip01 R Toe0", "[-25.3083,-5.41686,0.244481]", "(quat -0.0812849 0.106743 -0.600364 -0.788392)", "[1,1,1]")
+		{
+			Reaction("#State01", "0.0")
+			{
+				State("Bip01 R Toe0", "Z Scale", "1.0")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+			Reaction("#State02", "1.0")
+			{
+				State("Bip01 R Toe0", "Z Scale", "1.34746")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+			Reaction("#State03", "-1.0")
+			{
+				State("Bip01 R Toe0", "Z Scale", "0.681654")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+		}
+		Slave("deform L Foot", "[21.2202,9.40347,11.7934]", "(quat 0.700713 0.0948722 -0.700713 0.0948725)", "[1,1,0.999999]")
+		{
+			Reaction("#State01", "0.0")
+			{
+				State("deform L Foot", "Z Scale", "0.999999")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "99.9999");
+					}
+				}
+			}
+			Reaction("#State02", "1.0")
+			{
+				State("deform L Foot", "Z Scale", "1.34745")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "99.9999");
+					}
+				}
+			}
+			Reaction("#State03", "-1.0")
+			{
+				State("deform L Foot", "Z Scale", "0.681653")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "99.9999");
+					}
+				}
+			}
+		}
+		Slave("Bip01 L Toe0", "[25.3083,-5.41679,0.24447]", "(quat 0.106744 -0.0812856 -0.788392 -0.600363)", "[1,0.999999,1]")
+		{
+			Reaction("#State01", "0.0")
+			{
+				State("Bip01 L Toe0", "Z Scale", "1.0")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+			Reaction("#State02", "1.0")
+			{
+				State("Bip01 L Toe0", "Z Scale", "1.34746")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+			Reaction("#State03", "-1.0")
+			{
+				State("Bip01 L Toe0", "Z Scale", "0.681654")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+		}
+	}
+	Master("Body_Legs_ThighsFatness", "#value")
+	{
+		Slave("deform R Thigh", "[-10.2978,-1.62868e-005,93.8572]", "(quat 0.654998 -0.00636683 -0.752884 -0.0640526)", "[1,0.999999,0.999999]")
+		{
+			Reaction("#State03", "0.0")
+			{
+				State("deform R Thigh", "Y Scale", "0.999999")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "99.9999");
+						Property("#z_scale", "99.9999");
+					}
+				}
+				State("deform R Thigh", "Z Scale", "0.999999")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "99.9999");
+						Property("#z_scale", "99.9999");
+					}
+				}
+			}
+			Reaction("#State04", "1.0")
+			{
+				State("deform R Thigh", "Y Scale", "1.42636")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "99.9999");
+						Property("#z_scale", "99.9999");
+					}
+				}
+				State("deform R Thigh", "Z Scale", "1.42636")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "99.9999");
+						Property("#z_scale", "99.9999");
+					}
+				}
+			}
+			Reaction("#State05", "-1.0")
+			{
+				State("deform R Thigh", "Z Scale", "0.719024")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "99.9999");
+						Property("#z_scale", "99.9999");
+					}
+				}
+				State("deform R Thigh", "Y Scale", "0.719024")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "99.9999");
+						Property("#z_scale", "99.9999");
+					}
+				}
+			}
+		}
+		Slave("Bip01 R ThighTwist", "[-10.2978,-1.83919e-005,93.8572]", "(quat -0.0524606 -0.0022389 0.0964261 -0.993954)", "[1,1,1]")
+		{
+			Reaction("#State03", "0.0")
+			{
+				State("Bip01 R ThighTwist", "Y Scale", "1.0")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+				State("Bip01 R ThighTwist", "Z Scale", "1.0")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+			Reaction("#State04", "1.0")
+			{
+				State("Bip01 R ThighTwist", "Y Scale", "1.42636")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+				State("Bip01 R ThighTwist", "Z Scale", "1.42636")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+			Reaction("#State05", "-1.0")
+			{
+				State("Bip01 R ThighTwist", "Z Scale", "0.719024")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+				State("Bip01 R ThighTwist", "Y Scale", "0.719024")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+		}
+		Slave("deform L Thigh", "[10.2978,9.01907e-006,93.8572]", "(quat -0.752884 -0.0640538 0.654998 -0.0063683)", "[1,1,0.999999]")
+		{
+			Reaction("#State03", "0.0")
+			{
+				State("deform L Thigh", "Y Scale", "1.0")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+				State("deform L Thigh", "Z Scale", "1.0")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+			Reaction("#State04", "1.0")
+			{
+				State("deform L Thigh", "Y Scale", "1.42636")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+				State("deform L Thigh", "Z Scale", "1.42636")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+			Reaction("#State05", "-1.0")
+			{
+				State("deform L Thigh", "Z Scale", "0.719024")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+				State("deform L Thigh", "Y Scale", "0.719024")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+		}
+		Slave("Bip01 L ThighTwist", "[10.2978,9.91551e-006,93.8572]", "(quat -0.0220796 0.000551283 -0.00836364 -0.999721)", "[1,1,1]")
+		{
+			Reaction("#State03", "0.0")
+			{
+				State("Bip01 L ThighTwist", "Y Scale", "1.0")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+				State("Bip01 L ThighTwist", "Z Scale", "1.0")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+			Reaction("#State04", "1.0")
+			{
+				State("Bip01 L ThighTwist", "Y Scale", "1.42636")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+				State("Bip01 L ThighTwist", "Z Scale", "1.42636")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+			Reaction("#State05", "-1.0")
+			{
+				State("Bip01 L ThighTwist", "Z Scale", "0.719024")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+				State("Bip01 L ThighTwist", "Y Scale", "0.719024")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+		}
+	}
+	/*Master("Body_Main_Scale", "#value")
+	{
+		Slave("Bip01", "[0,0,93.8572]", "(quat 0 0 -0.707106 0.707107)", "[1,1,1]")
+		{
+			Reaction("#State06", "0.0")
+			{
+				State("Bip01", "X Scale", "1.0")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+				State("Bip01", "Position Weight 0", "50.0")
+				{
+					Controller("Position Constraint", "Position Constraint")
+					{
+						Property("#relative", "false");
+					}
+				}
+				State("Bip01", "Y Scale", "1.0")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+				State("Bip01", "Z Scale", "1.0")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+				State("Bip01", "Position Weight 1", "50.0")
+				{
+					Controller("Position Constraint", "Position Constraint")
+					{
+						Property("#relative", "false");
+					}
+				}
+			}
+			Reaction("#State07", "1.0")
+			{
+				State("Bip01", "Y Scale", "1.5")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+				State("Bip01", "Z Scale", "1.5")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+				State("Bip01", "X Scale", "1.5")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+				State("Bip01", "Position Weight 1", "25.0")
+				{
+					Controller("Position Constraint", "Position Constraint")
+					{
+						Property("#relative", "false");
+					}
+				}
+				State("Bip01", "Position Weight 0", "75.0")
+				{
+					Controller("Position Constraint", "Position Constraint")
+					{
+						Property("#relative", "false");
+					}
+				}
+			}
+			Reaction("#State08", "-1.0")
+			{
+				State("Bip01", "X Scale", "0.5")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+				State("Bip01", "Z Scale", "0.5")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+				State("Bip01", "Position Weight 1", "75.0")
+				{
+					Controller("Position Constraint", "Position Constraint")
+					{
+						Property("#relative", "false");
+					}
+				}
+				State("Bip01", "Position Weight 0", "25.0")
+				{
+					Controller("Position Constraint", "Position Constraint")
+					{
+						Property("#relative", "false");
+					}
+				}
+				State("Bip01", "Y Scale", "0.5")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+		}
+	}*/
+	Master("Body_Torso_PelvisFatness", "#value")
+	{
+		Slave("deform Pelvis", "[7.62939e-006,0,93.8572]", "(quat -0.707107 0 -0.707107 6.4556e-007)", "[1,1,1]")
+		{
+			Reaction("#State03", "0.0")
+			{
+				State("deform Pelvis", "Y Scale", "1.0")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+				State("deform Pelvis", "Z Scale", "1.0")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+			Reaction("#State04", "1.0")
+			{
+				State("deform Pelvis", "Y Scale", "1.35905")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+				State("deform Pelvis", "Z Scale", "1.35905")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+			Reaction("#State05", "-1.0")
+			{
+				State("deform Pelvis", "Z Scale", "0.729268")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+				State("deform Pelvis", "Y Scale", "0.729268")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+		}
+	}
+	Master("Body_Torso_ShouldersFatness", "#value")
+	{
+		Slave("deform R Clavicle", "[-4.30278,3.93651,151.756]", "(quat 0.0126888 -0.976429 0.00613563 -0.215378)", "[1,1,0.999999]")
+		{
+			Reaction("#State03", "0.0")
+			{
+				State("deform R Clavicle", "Y Scale", "1.0")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+				State("deform R Clavicle", "Z Scale", "1.0")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+			Reaction("#State04", "1.0")
+			{
+				State("deform R Clavicle", "Y Scale", "1.48871")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+				State("deform R Clavicle", "Z Scale", "1.48871")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+			Reaction("#State05", "-1.0")
+			{
+				State("deform R Clavicle", "Z Scale", "0.47515")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+				State("deform R Clavicle", "Y Scale", "0.475151")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+		}
+		Slave("deform L Clavicle", "[4.30276,3.93653,151.756]", "(quat -0.00613594 0.215378 -0.0126875 0.976429)", "[1,1,1]")
+		{
+			Reaction("#State03", "0.0")
+			{
+				State("deform L Clavicle", "Y Scale", "1.0")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+				State("deform L Clavicle", "Z Scale", "1.0")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+			Reaction("#State04", "1.0")
+			{
+				State("deform L Clavicle", "Y Scale", "1.48871")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+				State("deform L Clavicle", "Z Scale", "1.48871")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+			Reaction("#State05", "-1.0")
+			{
+				State("deform L Clavicle", "Z Scale", "0.47515")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+				State("deform L Clavicle", "Y Scale", "0.475151")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+		}
+	}
+	Master("Body_Torso_ShouldersWidth", "#value")
+	{
+		Slave("Bip01 R UpperArm", "[-17.5716,3.53248,145.545]", "(quat -0.151133 0.52793 -0.140644 -0.823813)", "[1,0.999999,0.999999]")
+		{
+			Reaction("#State03", "0.0")
+			{
+				State("Bip01 R UpperArm", "X Position", "14.6309")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "14.6309");
+						Property("#y_position", "-5.74328e-007");
+						Property("#z_position", "-1.73776e-005");
+					}
+				}
+			}
+			Reaction("#State04", "1.0")
+			{
+				State("Bip01 R UpperArm", "X Position", "19.8725")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "14.6309");
+						Property("#y_position", "-5.74328e-007");
+						Property("#z_position", "-1.73776e-005");
+					}
+				}
+			}
+			Reaction("#State05", "-1.0")
+			{
+				State("Bip01 R UpperArm", "X Position", "8.53469")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "14.6309");
+						Property("#y_position", "-5.74328e-007");
+						Property("#z_position", "-1.73776e-005");
+					}
+				}
+			}
+		}
+		Slave("deform R Clavicle", "[-4.30278,3.93651,151.756]", "(quat 0.0126888 -0.976429 0.00613563 -0.215378)", "[1,1,0.999999]")
+		{
+			Reaction("#State03", "0.0")
+			{
+				State("deform R Clavicle", "X Scale", "1.0")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+			Reaction("#State04", "1.0")
+			{
+				State("deform R Clavicle", "X Scale", "1.37432")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+			Reaction("#State05", "-1.0")
+			{
+				State("deform R Clavicle", "X Scale", "0.732927")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+		}
+		Slave("Bip01 L UpperArm", "[17.5716,3.53253,145.545]", "(quat -0.153761 0.53352 0.113143 0.823962)", "[1,0.999999,1]")
+		{
+			Reaction("#State03", "0.0")
+			{
+				State("Bip01 L UpperArm", "X Position", "14.6309")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "14.6309");
+						Property("#y_position", "-9.5248e-007");
+						Property("#z_position", "3.05176e-005");
+					}
+				}
+			}
+			Reaction("#State04", "1.0")
+			{
+				State("Bip01 L UpperArm", "X Position", "19.8725")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "14.6309");
+						Property("#y_position", "-9.5248e-007");
+						Property("#z_position", "3.05176e-005");
+					}
+				}
+			}
+			Reaction("#State05", "-1.0")
+			{
+				State("Bip01 L UpperArm", "X Position", "8.53467")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "14.6309");
+						Property("#y_position", "-9.5248e-007");
+						Property("#z_position", "3.05176e-005");
+					}
+				}
+			}
+		}
+		Slave("deform L Clavicle", "[4.30276,3.93653,151.756]", "(quat -0.00613594 0.215378 -0.0126875 0.976429)", "[1,1,1]")
+		{
+			Reaction("#State03", "0.0")
+			{
+				State("deform L Clavicle", "X Scale", "1.0")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+			Reaction("#State04", "1.0")
+			{
+				State("deform L Clavicle", "X Scale", "1.37432")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+			Reaction("#State05", "-1.0")
+			{
+				State("deform L Clavicle", "X Scale", "0.732927")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+		}
+	}
+	Master("Body_Torso_Spine1Fatness", "#value")
+	{
+		Slave("deform Spine1", "[4.11701e-007,-0.454918,116.542]", "(quat -0.706968 -0.0140242 -0.706968 -0.0140241)", "[1,1,1]")
+		{
+			Reaction("#State03", "0.0")
+			{
+				State("deform Spine1", "Y Scale", "1.0")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+				State("deform Spine1", "Z Scale", "1.0")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+			Reaction("#State04", "1.0")
+			{
+				State("deform Spine1", "Y Scale", "1.29909")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+				State("deform Spine1", "Z Scale", "1.29909")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+			Reaction("#State05", "-1.0")
+			{
+				State("deform Spine1", "Z Scale", "0.663299")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+				State("deform Spine1", "Y Scale", "0.663299")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+		}
+	}
+	Master("Body_Torso_Spine1Position", "#value")
+	{
+		Slave("Bip01 Spine1", "[4.11687e-007,-0.454918,116.542]", "(quat -0.00906557 -0.0010297 0.112804 -0.993575)", "[1,1,1]")
+		{
+			Reaction("#State01", "0.0")
+			{
+				State("Bip01 Spine1", "X Position", "11.759")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "11.759");
+						Property("#y_position", "-0.0135142");
+						Property("#z_position", "0.0");
+					}
+				}
+			}
+			Reaction("#State02", "1.0")
+			{
+				State("Bip01 Spine1", "X Position", "14.4276")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "11.759");
+						Property("#y_position", "-0.0135142");
+						Property("#z_position", "0.0");
+					}
+				}
+			}
+			Reaction("#State03", "-1.0")
+			{
+				State("Bip01 Spine1", "X Position", "9.10856")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "11.759");
+						Property("#y_position", "-0.0135142");
+						Property("#z_position", "0.0");
+					}
+				}
+			}
+		}
+	}
+	Master("Body_Torso_Spine2Fatness", "#value")
+	{
+		Slave("deform Spine2", "[-3.49948e-006,2.1566,127.879]", "(quat -0.705683 -0.0448483 -0.705683 -0.0448482)", "[1,1,1]")
+		{
+			Reaction("#State03", "0.0")
+			{
+				State("deform Spine2", "Y Scale", "1.0")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+				State("deform Spine2", "Z Scale", "1.0")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+			Reaction("#State04", "1.0")
+			{
+				State("deform Spine2", "Y Scale", "1.3095")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+				State("deform Spine2", "Z Scale", "1.3095")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+			Reaction("#State05", "-1.0")
+			{
+				State("deform Spine2", "Z Scale", "0.60186")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+				State("deform Spine2", "Y Scale", "0.601859")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+		}
+	}
+	Master("Body_Torso_Spine2Position", "#value")
+	{
+		Slave("Bip01 Spine2", "[-3.49948e-006,2.1566,127.879]", "(quat 0.112502 0.00831533 0.0732416 -0.990914)", "[1,1,1]")
+		{
+			Reaction("#State01", "0.0")
+			{
+				State("Bip01 Spine2", "X Position", "11.6332")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "11.6332");
+						Property("#y_position", "-0.00374195");
+						Property("#z_position", "0.0");
+					}
+				}
+			}
+			Reaction("#State02", "1.0")
+			{
+				State("Bip01 Spine2", "X Position", "15.3319")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "11.6332");
+						Property("#y_position", "-0.00374195");
+						Property("#z_position", "0.0");
+					}
+				}
+			}
+			Reaction("#State03", "-1.0")
+			{
+				State("Bip01 Spine2", "X Position", "8.00562")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "11.6332");
+						Property("#y_position", "-0.00374195");
+						Property("#z_position", "0.0");
+					}
+				}
+			}
+		}
+	}
+	Master("Body_Torso_Spine3Fatness", "#value")
+	{
+		Slave("deform Spine3", "[-2.11124e-005,3.82872,139.522]", "(quat -0.706968 -0.0140229 -0.706968 -0.0140252)", "[1,1,1]")
+		{
+			Reaction("#State03", "0.0")
+			{
+				State("deform Spine3", "Y Scale", "1.0")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+				State("deform Spine3", "Z Scale", "1.0")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+			Reaction("#State04", "1.0")
+			{
+				State("deform Spine3", "Y Scale", "1.30054")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+				State("deform Spine3", "Z Scale", "1.30054")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+			Reaction("#State05", "-1.0")
+			{
+				State("deform Spine3", "Z Scale", "0.60228")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+				State("deform Spine3", "Y Scale", "0.60228")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+		}
+	}
+	Master("Body_Torso_Spine3Position", "#value")
+	{
+		Slave("Bip01 Spine3", "[-2.11124e-005,3.82872,139.522]", "(quat 0.0737095 0.000614077 0.00830621 -0.997245)", "[1,1,1]")
+		{
+			Reaction("#State01", "0.0")
+			{
+				State("Bip01 Spine3", "X Position", "11.7625")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "11.7625");
+						Property("#y_position", "0.0578555");
+						Property("#z_position", "-1.5035e-005");
+					}
+				}
+			}
+			Reaction("#State02", "1.0")
+			{
+				State("Bip01 Spine3", "X Position", "15.2754")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "11.7625");
+						Property("#y_position", "0.0578555");
+						Property("#z_position", "-1.5035e-005");
+					}
+				}
+			}
+			Reaction("#State03", "-1.0")
+			{
+				State("Bip01 Spine3", "X Position", "8.76272")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "11.7625");
+						Property("#y_position", "0.0578555");
+						Property("#z_position", "-1.5035e-005");
+					}
+				}
+			}
+		}
+	}
+	Master("Body_Torso_SpineFatness", "#value")
+	{
+		Slave("deform Spine", "[-6.7249e-007,-0.253848,104.785]", "(quat -0.707077 0.00645319 -0.707077 0.00645084)", "[1,1,1]")
+		{
+			Reaction("#State03", "0.0")
+			{
+				State("deform Spine", "Y Scale", "1.0")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+				State("deform Spine", "Z Scale", "1.0")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+			Reaction("#State04", "1.0")
+			{
+				State("deform Spine", "Y Scale", "1.4")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+				State("deform Spine", "Z Scale", "1.4")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+			Reaction("#State05", "-1.0")
+			{
+				State("deform Spine", "Z Scale", "0.5")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+				State("deform Spine", "Y Scale", "0.5")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+		}
+	}
+	Master("Body_Torso_SpinePosition", "#value")
+	{
+		Slave("Bip01 Spine", "[-6.72489e-007,-0.253848,104.785]", "(quat 7.10366e-007 0 -0.00912448 -0.999958)", "[1,1,1]")
+		{
+			Reaction("#State01", "0.0")
+			{
+				State("Bip01 Spine", "X Position", "0.00206235")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "0.00206235");
+						Property("#y_position", "0.019168");
+						Property("#z_position", "-9.71999e-006");
+					}
+				}
+			}
+			Reaction("#State02", "1.0")
+			{
+				State("Bip01 Spine", "X Position", "5.39307")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "0.00206235");
+						Property("#y_position", "0.019168");
+						Property("#z_position", "-9.71999e-006");
+					}
+				}
+			}
+			Reaction("#State03", "-1.0")
+			{
+				State("Bip01 Spine", "X Position", "-4.8338")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "0.00206235");
+						Property("#y_position", "0.019168");
+						Property("#z_position", "-9.71999e-006");
+					}
+				}
+			}
+		}
+	}
+	Master("Face_Cheeks_CheekboneDepth", "#value")
+	{
+		Slave("deform R CheekBone", "[-4.57375,-7.94704,166.998]", "(quat -0.699751 0.229001 0.370292 -0.566384)", "[1,0.999999,1]")
+		{
+			Reaction("#State03", "0.0")
+			{
+				State("deform R CheekBone", "Y Position", "8.89898")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "6.80183");
+						Property("#y_position", "8.89898");
+						Property("#z_position", "-4.57376");
+					}
+				}
+				State("deform R CheekBone", "Z Position", "-4.57376")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "6.80183");
+						Property("#y_position", "8.89898");
+						Property("#z_position", "-4.57376");
+					}
+				}
+			}
+			Reaction("#State04", "1.0")
+			{
+				State("deform R CheekBone", "Y Position", "9.89898")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "6.80183");
+						Property("#y_position", "8.89898");
+						Property("#z_position", "-4.57376");
+					}
+				}
+				State("deform R CheekBone", "Z Position", "-5.57376")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "6.80183");
+						Property("#y_position", "8.89898");
+						Property("#z_position", "-4.57376");
+					}
+				}
+			}
+			Reaction("#State05", "-1.0")
+			{
+				State("deform R CheekBone", "Z Position", "-3.57376")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "6.80183");
+						Property("#y_position", "8.89898");
+						Property("#z_position", "-4.57376");
+					}
+				}
+				State("deform R CheekBone", "Y Position", "7.89898")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "6.80183");
+						Property("#y_position", "8.89898");
+						Property("#z_position", "-4.57376");
+					}
+				}
+			}
+		}
+		Slave("deform L CheekBone", "[4.57381,-7.94704,166.998]", "(quat -0.699751 -0.229001 -0.370292 -0.566384)", "[1,0.999999,1]")
+		{
+			Reaction("#State03", "0.0")
+			{
+				State("deform L CheekBone", "Y Position", "8.89898")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "6.80183");
+						Property("#y_position", "8.89898");
+						Property("#z_position", "4.57381");
+					}
+				}
+				State("deform L CheekBone", "Z Position", "4.57381")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "6.80183");
+						Property("#y_position", "8.89898");
+						Property("#z_position", "4.57381");
+					}
+				}
+			}
+			Reaction("#State04", "1.0")
+			{
+				State("deform L CheekBone", "Y Position", "9.89898")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "6.80183");
+						Property("#y_position", "8.89898");
+						Property("#z_position", "4.57381");
+					}
+				}
+				State("deform L CheekBone", "Z Position", "5.57381")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "6.80183");
+						Property("#y_position", "8.89898");
+						Property("#z_position", "4.57381");
+					}
+				}
+			}
+			Reaction("#State05", "-1.0")
+			{
+				State("deform L CheekBone", "Z Position", "3.57381")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "6.80183");
+						Property("#y_position", "8.89898");
+						Property("#z_position", "4.57381");
+					}
+				}
+				State("deform L CheekBone", "Y Position", "7.89898")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "6.80183");
+						Property("#y_position", "8.89898");
+						Property("#z_position", "4.57381");
+					}
+				}
+			}
+		}
+	}
+	Master("Face_Cheeks_CheekbonePosition", "#value")
+	{
+		Slave("deform R CheekBone", "[-4.57375,-7.94704,166.998]", "(quat -0.699751 0.229001 0.370292 -0.566384)", "[1,0.999999,1]")
+		{
+			Reaction("#State01", "0.0")
+			{
+				State("deform R CheekBone", "X Position", "6.80183")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "6.80183");
+						Property("#y_position", "8.89898");
+						Property("#z_position", "-4.57376");
+					}
+				}
+			}
+			Reaction("#State02", "1.0")
+			{
+				State("deform R CheekBone", "X Position", "7.85237")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "6.80183");
+						Property("#y_position", "8.89898");
+						Property("#z_position", "-4.57376");
+					}
+				}
+			}
+			Reaction("#State03", "-1.0")
+			{
+				State("deform R CheekBone", "X Position", "5.87502")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "6.80183");
+						Property("#y_position", "8.89898");
+						Property("#z_position", "-4.57376");
+					}
+				}
+			}
+		}
+		Slave("deform L CheekBone", "[4.57381,-7.94704,166.998]", "(quat -0.699751 -0.229001 -0.370292 -0.566384)", "[1,0.999999,1]")
+		{
+			Reaction("#State01", "0.0")
+			{
+				State("deform L CheekBone", "X Position", "6.80183")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "6.80183");
+						Property("#y_position", "8.89898");
+						Property("#z_position", "4.57381");
+					}
+				}
+			}
+			Reaction("#State02", "1.0")
+			{
+				State("deform L CheekBone", "X Position", "7.85236")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "6.80183");
+						Property("#y_position", "8.89898");
+						Property("#z_position", "4.57381");
+					}
+				}
+			}
+			Reaction("#State03", "-1.0")
+			{
+				State("deform L CheekBone", "X Position", "5.87501")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "6.80183");
+						Property("#y_position", "8.89898");
+						Property("#z_position", "4.57381");
+					}
+				}
+			}
+		}
+	}
+	Master("Face_Cheeks_CheeksFullness", "#value")
+	{
+		Slave("deform Face", "[0.025733,-4.177,170.816]", "(quat -0.707107 0 2.08616e-007 -0.707107)", "[0.962032,0.999999,0.999999]")
+		{
+			Reaction("#State03", "0.0")
+			{
+				State("deform Face", "Y Position", "5.12895")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "10.6204");
+						Property("#y_position", "5.12895");
+						Property("#z_position", "0.0257263");
+					}
+				}
+			}
+			Reaction("#State04", "1.0")
+			{
+				State("deform Face", "Y Position", "5.93034")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "10.6204");
+						Property("#y_position", "5.12895");
+						Property("#z_position", "0.0257263");
+					}
+				}
+			}
+			Reaction("#State05", "-1.0")
+			{
+				State("deform Face", "Y Position", "4.67595")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "10.6204");
+						Property("#y_position", "5.12895");
+						Property("#z_position", "0.0257263");
+					}
+				}
+			}
+		}
+		Slave("deform R Cheek", "[-4.2694,-6.75765,163.484]", "(quat -0.691422 0.334727 0.434622 -0.470104)", "[1,1,1]")
+		{
+			Reaction("#State03", "0.0")
+			{
+				State("deform R Cheek", "Z Scale", "1.0")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+			Reaction("#State04", "1.0")
+			{
+				State("deform R Cheek", "Z Scale", "1.56512")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+			Reaction("#State05", "-1.0")
+			{
+				State("deform R Cheek", "Z Scale", "0.310369")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+		}
+		Slave("deform L Cheek", "[4.26946,-6.75765,163.484]", "(quat -0.691422 -0.334727 -0.434622 -0.470104)", "[1,0.999999,1]")
+		{
+			Reaction("#State03", "0.0")
+			{
+				State("deform L Cheek", "Z Scale", "1.0")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+			Reaction("#State04", "1.0")
+			{
+				State("deform L Cheek", "Z Scale", "1.56512")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+			Reaction("#State05", "-1.0")
+			{
+				State("deform L Cheek", "Z Scale", "0.310369")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+		}
+	}
+	Master("Face_Chin_Depth", "#value")
+	{
+		Slave("deform Chin", "[0.0257285,-8.67785,160.855]", "(quat -0.707107 0 2.38419e-007 -0.707107)", "[1,1,0.999999]")
+		{
+			Reaction("#State01", "0.0")
+			{
+				State("deform Chin", "Y Position", "9.62979")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "0.658668");
+						Property("#y_position", "9.62979");
+						Property("#z_position", "0.0257263");
+					}
+				}
+			}
+			Reaction("#State02", "1.0")
+			{
+				State("deform Chin", "Y Position", "11.0934")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "0.658668");
+						Property("#y_position", "9.62979");
+						Property("#z_position", "0.0257263");
+					}
+				}
+			}
+			Reaction("#State03", "-1.0")
+			{
+				State("deform Chin", "Y Position", "9.24722")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "0.658668");
+						Property("#y_position", "9.62979");
+						Property("#z_position", "0.0257263");
+					}
+				}
+			}
+		}
+	}
+	Master("Face_Chin_Size", "#value")
+	{
+		Slave("deform Chin", "[0.0257285,-8.67785,160.855]", "(quat -0.707107 0 2.38419e-007 -0.707107)", "[1,1,0.999999]")
+		{
+			Reaction("#State11", "0.0")
+			{
+				State("deform Chin", "Y Scale", "1.0")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+				State("deform Chin", "Z Scale", "1.0")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+			Reaction("#State12", "1.0")
+			{
+				State("deform Chin", "Y Scale", "1.40683")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+				State("deform Chin", "Z Scale", "1.12468")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+			Reaction("#State13", "-1.0")
+			{
+				State("deform Chin", "Z Scale", "0.949645")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+				State("deform Chin", "Y Scale", "0.409683")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+		}
+	}
+	Master("Face_Chin_Width", "#value")
+	{
+		Slave("deform Chin", "[0.0257285,-8.67785,160.855]", "(quat -0.707107 0 2.38419e-007 -0.707107)", "[1,1,0.999999]")
+		{
+			Reaction("#State01", "0.0")
+			{
+				State("deform Chin", "X Scale", "1.0")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+			Reaction("#State02", "1.0")
+			{
+				State("deform Chin", "X Scale", "1.21334")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+			Reaction("#State03", "-1.0")
+			{
+				State("deform Chin", "X Scale", "0.916294")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+		}
+	}
+	Master("Face_Ear_Angle", "#value")
+	{
+		Slave("deform R Ear", "[-7.20479,-2.80205,167.291]", "(quat -0.627507 0.439385 0.368688 -0.526541)", "[1,1,0.999999]")
+		{
+			Reaction("#State04", "0.0")
+			{
+				State("deform R Ear", "Y Rotation", "-2.79253")
+				{
+					Controller("Rotation", "Euler XYZ")
+					{
+						Property("#axisOrder", "1");
+						Property("#x_rotation", "10.0");
+						Property("#y_rotation", "-160.0");
+						Property("#z_rotation", "-90.0");
+					}
+				}
+			}
+			Reaction("#State05", "1.0")
+			{
+				State("deform R Ear", "Y Rotation", "-2.0944")
+				{
+					Controller("Rotation", "Euler XYZ")
+					{
+						Property("#axisOrder", "1");
+						Property("#x_rotation", "10.0");
+						Property("#y_rotation", "-160.0");
+						Property("#z_rotation", "-90.0");
+					}
+				}
+			}
+			Reaction("#State06", "-1.0")
+			{
+				State("deform R Ear", "Y Rotation", "-3.14159")
+				{
+					Controller("Rotation", "Euler XYZ")
+					{
+						Property("#axisOrder", "1");
+						Property("#x_rotation", "10.0");
+						Property("#y_rotation", "-160.0");
+						Property("#z_rotation", "-90.0");
+					}
+				}
+			}
+		}
+		Slave("deform L Ear", "[7.20485,-2.80205,167.291]", "(quat -0.627507 -0.439385 -0.368688 -0.526541)", "[1,1,1]")
+		{
+			Reaction("#State04", "0.0")
+			{
+				State("deform L Ear", "Y Rotation", "-2.79253")
+				{
+					Controller("Rotation", "Euler XYZ")
+					{
+						Property("#axisOrder", "1");
+						Property("#x_rotation", "190.0");
+						Property("#y_rotation", "-160.0");
+						Property("#z_rotation", "90.0001");
+					}
+				}
+			}
+			Reaction("#State05", "1.0")
+			{
+				State("deform L Ear", "Y Rotation", "-2.0944")
+				{
+					Controller("Rotation", "Euler XYZ")
+					{
+						Property("#axisOrder", "1");
+						Property("#x_rotation", "190.0");
+						Property("#y_rotation", "-160.0");
+						Property("#z_rotation", "90.0001");
+					}
+				}
+			}
+			Reaction("#State06", "-1.0")
+			{
+				State("deform L Ear", "Y Rotation", "-3.14159")
+				{
+					Controller("Rotation", "Euler XYZ")
+					{
+						Property("#axisOrder", "1");
+						Property("#x_rotation", "190.0");
+						Property("#y_rotation", "-160.0");
+						Property("#z_rotation", "90.0001");
+					}
+				}
+			}
+		}
+	}
+	Master("Face_Ear_Position", "#value")
+	{
+		Slave("deform R Ear", "[-7.20479,-2.80205,167.291]", "(quat -0.627507 0.439385 0.368688 -0.526541)", "[1,1,0.999999]")
+		{
+			Reaction("#State01", "0.0")
+			{
+				State("deform R Ear", "X Position", "7.09526")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "7.09526");
+						Property("#y_position", "3.75399");
+						Property("#z_position", "-7.2048");
+					}
+				}
+			}
+			Reaction("#State02", "1.0")
+			{
+				State("deform R Ear", "X Position", "8.49486")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "7.09526");
+						Property("#y_position", "3.75399");
+						Property("#z_position", "-7.2048");
+					}
+				}
+			}
+			Reaction("#State03", "-1.0")
+			{
+				State("deform R Ear", "X Position", "5.84257")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "7.09526");
+						Property("#y_position", "3.75399");
+						Property("#z_position", "-7.2048");
+					}
+				}
+			}
+		}
+		Slave("deform L Ear", "[7.20485,-2.80205,167.291]", "(quat -0.627507 -0.439385 -0.368688 -0.526541)", "[1,1,1]")
+		{
+			Reaction("#State01", "0.0")
+			{
+				State("deform L Ear", "X Position", "7.09492")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "7.09492");
+						Property("#y_position", "3.75399");
+						Property("#z_position", "7.20485");
+					}
+				}
+			}
+			Reaction("#State02", "1.0")
+			{
+				State("deform L Ear", "X Position", "8.49452")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "7.09492");
+						Property("#y_position", "3.75399");
+						Property("#z_position", "7.20485");
+					}
+				}
+			}
+			Reaction("#State03", "-1.0")
+			{
+				State("deform L Ear", "X Position", "5.84224")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "7.09492");
+						Property("#y_position", "3.75399");
+						Property("#z_position", "7.20485");
+					}
+				}
+			}
+		}
+	}
+	Master("Face_Eyebrows_Angle", "#value")
+	{
+		Slave("deform R Brow", "[-3.47849,-11.5993,170.847]", "(quat -0.701057 0.0922959 0.153046 -0.690346)", "[1,1,0.999999]")
+		{
+			Reaction("#State04", "0.0")
+			{
+				State("deform R Brow", "X Rotation", "-3.37663")
+				{
+					Controller("Rotation", "Euler XYZ")
+					{
+						Property("#axisOrder", "1");
+						Property("#x_rotation", "-193.466");
+						Property("#y_rotation", "-69.4093");
+						Property("#z_rotation", "104.349");
+					}
+				}
+				State("deform R Brow", "Z Rotation", "1.82123")
+				{
+					Controller("Rotation", "Euler XYZ")
+					{
+						Property("#axisOrder", "1");
+						Property("#x_rotation", "-193.466");
+						Property("#y_rotation", "-69.4093");
+						Property("#z_rotation", "104.349");
+					}
+				}
+				State("deform R Brow", "Y Rotation", "-1.21142")
+				{
+					Controller("Rotation", "Euler XYZ")
+					{
+						Property("#axisOrder", "1");
+						Property("#x_rotation", "-193.466");
+						Property("#y_rotation", "-69.4093");
+						Property("#z_rotation", "104.349");
+					}
+				}
+			}
+			Reaction("#State05", "1.0")
+			{
+				State("deform R Brow", "X Rotation", "-2.17708")
+				{
+					Controller("Rotation", "Euler XYZ")
+					{
+						Property("#axisOrder", "1");
+						Property("#x_rotation", "-193.466");
+						Property("#y_rotation", "-69.4093");
+						Property("#z_rotation", "104.349");
+					}
+				}
+				State("deform R Brow", "Z Rotation", "0.714793")
+				{
+					Controller("Rotation", "Euler XYZ")
+					{
+						Property("#axisOrder", "1");
+						Property("#x_rotation", "-193.466");
+						Property("#y_rotation", "-69.4093");
+						Property("#z_rotation", "104.349");
+					}
+				}
+				State("deform R Brow", "Y Rotation", "-1.02416")
+				{
+					Controller("Rotation", "Euler XYZ")
+					{
+						Property("#axisOrder", "1");
+						Property("#x_rotation", "-193.466");
+						Property("#y_rotation", "-69.4093");
+						Property("#z_rotation", "104.349");
+					}
+				}
+			}
+			Reaction("#State06", "-1.0")
+			{
+				State("deform R Brow", "Y Rotation", "-0.874344")
+				{
+					Controller("Rotation", "Euler XYZ")
+					{
+						Property("#axisOrder", "1");
+						Property("#x_rotation", "-193.466");
+						Property("#y_rotation", "-69.4093");
+						Property("#z_rotation", "104.349");
+					}
+				}
+				State("deform R Brow", "X Rotation", "-4.23245")
+				{
+					Controller("Rotation", "Euler XYZ")
+					{
+						Property("#axisOrder", "1");
+						Property("#x_rotation", "-193.466");
+						Property("#y_rotation", "-69.4093");
+						Property("#z_rotation", "104.349");
+					}
+				}
+				State("deform R Brow", "Z Rotation", "2.58166")
+				{
+					Controller("Rotation", "Euler XYZ")
+					{
+						Property("#axisOrder", "1");
+						Property("#x_rotation", "-193.466");
+						Property("#y_rotation", "-69.4093");
+						Property("#z_rotation", "104.349");
+					}
+				}
+			}
+		}
+		Slave("deform L Brow", "[3.47857,-11.5993,170.847]", "(quat -0.71859 -0.0733054 -0.127263 -0.679749)", "[1,1,0.999999]")
+		{
+			Reaction("#State04", "0.0")
+			{
+				State("deform L Brow", "X Rotation", "-0.235033")
+				{
+					Controller("Rotation", "Euler XYZ")
+					{
+						Property("#axisOrder", "1");
+						Property("#x_rotation", "-13.4664");
+						Property("#y_rotation", "-73.1093");
+						Property("#z_rotation", "-73.3514");
+					}
+				}
+				State("deform L Brow", "Z Rotation", "-1.28022")
+				{
+					Controller("Rotation", "Euler XYZ")
+					{
+						Property("#axisOrder", "1");
+						Property("#x_rotation", "-13.4664");
+						Property("#y_rotation", "-73.1093");
+						Property("#z_rotation", "-73.3514");
+					}
+				}
+				State("deform L Brow", "Y Rotation", "-1.276")
+				{
+					Controller("Rotation", "Euler XYZ")
+					{
+						Property("#axisOrder", "1");
+						Property("#x_rotation", "-13.4664");
+						Property("#y_rotation", "-73.1093");
+						Property("#z_rotation", "-73.3514");
+					}
+				}
+			}
+			Reaction("#State05", "1.0")
+			{
+				State("deform L Brow", "X Rotation", "1.10105")
+				{
+					Controller("Rotation", "Euler XYZ")
+					{
+						Property("#axisOrder", "1");
+						Property("#x_rotation", "-13.4664");
+						Property("#y_rotation", "-73.1093");
+						Property("#z_rotation", "-73.3514");
+					}
+				}
+				State("deform L Brow", "Z Rotation", "-2.54097")
+				{
+					Controller("Rotation", "Euler XYZ")
+					{
+						Property("#axisOrder", "1");
+						Property("#x_rotation", "-13.4664");
+						Property("#y_rotation", "-73.1093");
+						Property("#z_rotation", "-73.3514");
+					}
+				}
+				State("deform L Brow", "Y Rotation", "-1.05578")
+				{
+					Controller("Rotation", "Euler XYZ")
+					{
+						Property("#axisOrder", "1");
+						Property("#x_rotation", "-13.4664");
+						Property("#y_rotation", "-73.1093");
+						Property("#z_rotation", "-73.3514");
+					}
+				}
+			}
+			Reaction("#State06", "-1.0")
+			{
+				State("deform L Brow", "Y Rotation", "-0.906004")
+				{
+					Controller("Rotation", "Euler XYZ")
+					{
+						Property("#axisOrder", "1");
+						Property("#x_rotation", "-13.4664");
+						Property("#y_rotation", "-73.1093");
+						Property("#z_rotation", "-73.3514");
+					}
+				}
+				State("deform L Brow", "X Rotation", "-1.12418")
+				{
+					Controller("Rotation", "Euler XYZ")
+					{
+						Property("#axisOrder", "1");
+						Property("#x_rotation", "-13.4664");
+						Property("#y_rotation", "-73.1093");
+						Property("#z_rotation", "-73.3514");
+					}
+				}
+				State("deform L Brow", "Z Rotation", "-0.468152")
+				{
+					Controller("Rotation", "Euler XYZ")
+					{
+						Property("#axisOrder", "1");
+						Property("#x_rotation", "-13.4664");
+						Property("#y_rotation", "-73.1093");
+						Property("#z_rotation", "-73.3514");
+					}
+				}
+			}
+		}
+	}
+	Master("Face_Eyebrows_Depth", "#value")
+	{
+		Slave("deform R Brow", "[-3.47849,-11.5993,170.847]", "(quat -0.701057 0.0922959 0.153046 -0.690346)", "[1,1,0.999999]")
+		{
+			Reaction("#State01", "0.0")
+			{
+				State("deform R Brow", "Y Position", "12.5512")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "10.6505");
+						Property("#y_position", "12.5512");
+						Property("#z_position", "-3.4785");
+					}
+				}
+			}
+			Reaction("#State02", "1.0")
+			{
+				State("deform R Brow", "Y Position", "14.355")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "10.6505");
+						Property("#y_position", "12.5512");
+						Property("#z_position", "-3.4785");
+					}
+				}
+			}
+			Reaction("#State03", "-1.0")
+			{
+				State("deform R Brow", "Y Position", "11.7522")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "10.6505");
+						Property("#y_position", "12.5512");
+						Property("#z_position", "-3.4785");
+					}
+				}
+			}
+		}
+		Slave("deform L Brow", "[3.47857,-11.5993,170.847]", "(quat -0.71859 -0.0733054 -0.127263 -0.679749)", "[1,1,0.999999]")
+		{
+			Reaction("#State01", "0.0")
+			{
+				State("deform L Brow", "Y Position", "12.5512")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "10.6505");
+						Property("#y_position", "12.5512");
+						Property("#z_position", "3.47856");
+					}
+				}
+			}
+			Reaction("#State02", "1.0")
+			{
+				State("deform L Brow", "Y Position", "14.355")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "10.6505");
+						Property("#y_position", "12.5512");
+						Property("#z_position", "3.47856");
+					}
+				}
+			}
+			Reaction("#State03", "-1.0")
+			{
+				State("deform L Brow", "Y Position", "11.7522")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "10.6505");
+						Property("#y_position", "12.5512");
+						Property("#z_position", "3.47856");
+					}
+				}
+			}
+		}
+	}
+	Master("Face_Eyebrows_Distance", "#value")
+	{
+		Slave("deform R Brow", "[-3.47849,-11.5993,170.847]", "(quat -0.701057 0.0922959 0.153046 -0.690346)", "[1,1,0.999999]")
+		{
+			Reaction("#State04", "0.0")
+			{
+				State("deform R Brow", "Z Position", "-3.4785")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "10.6505");
+						Property("#y_position", "12.5512");
+						Property("#z_position", "-3.4785");
+					}
+				}
+			}
+			Reaction("#State05", "1.0")
+			{
+				State("deform R Brow", "Z Position", "-5.4785")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "10.6505");
+						Property("#y_position", "12.5512");
+						Property("#z_position", "-3.4785");
+					}
+				}
+			}
+			Reaction("#State06", "-1.0")
+			{
+				State("deform R Brow", "Z Position", "-1.9785")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "10.6505");
+						Property("#y_position", "12.5512");
+						Property("#z_position", "-3.4785");
+					}
+				}
+			}
+		}
+		Slave("deform L Brow", "[3.47857,-11.5993,170.847]", "(quat -0.71859 -0.0733054 -0.127263 -0.679749)", "[1,1,0.999999]")
+		{
+			Reaction("#State04", "0.0")
+			{
+				State("deform L Brow", "Z Position", "3.47856")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "10.6505");
+						Property("#y_position", "12.5512");
+						Property("#z_position", "3.47856");
+					}
+				}
+			}
+			Reaction("#State05", "1.0")
+			{
+				State("deform L Brow", "Z Position", "5.47856")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "10.6505");
+						Property("#y_position", "12.5512");
+						Property("#z_position", "3.47856");
+					}
+				}
+			}
+			Reaction("#State06", "-1.0")
+			{
+				State("deform L Brow", "Z Position", "1.97856")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "10.6505");
+						Property("#y_position", "12.5512");
+						Property("#z_position", "3.47856");
+					}
+				}
+			}
+		}
+	}
+	Master("Face_Eyebrows_Position", "#value")
+	{
+		Slave("deform R Brow", "[-3.47849,-11.5993,170.847]", "(quat -0.701057 0.0922959 0.153046 -0.690346)", "[1,1,0.999999]")
+		{
+			Reaction("#State01", "0.0")
+			{
+				State("deform R Brow", "X Position", "10.6505")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "10.6505");
+						Property("#y_position", "12.5512");
+						Property("#z_position", "-3.4785");
+					}
+				}
+			}
+			Reaction("#State02", "1.0")
+			{
+				State("deform R Brow", "X Position", "11.8235")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "10.6505");
+						Property("#y_position", "12.5512");
+						Property("#z_position", "-3.4785");
+					}
+				}
+			}
+			Reaction("#State03", "-1.0")
+			{
+				State("deform R Brow", "X Position", "8.973")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "10.6505");
+						Property("#y_position", "12.5512");
+						Property("#z_position", "-3.4785");
+					}
+				}
+			}
+		}
+		Slave("deform L Brow", "[3.47857,-11.5993,170.847]", "(quat -0.71859 -0.0733054 -0.127263 -0.679749)", "[1,1,0.999999]")
+		{
+			Reaction("#State01", "0.0")
+			{
+				State("deform L Brow", "X Position", "10.6505")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "10.6505");
+						Property("#y_position", "12.5512");
+						Property("#z_position", "3.47856");
+					}
+				}
+			}
+			Reaction("#State02", "1.0")
+			{
+				State("deform L Brow", "X Position", "11.8235")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "10.6505");
+						Property("#y_position", "12.5512");
+						Property("#z_position", "3.47856");
+					}
+				}
+			}
+			Reaction("#State03", "-1.0")
+			{
+				State("deform L Brow", "X Position", "8.97301")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "10.6505");
+						Property("#y_position", "12.5512");
+						Property("#z_position", "3.47856");
+					}
+				}
+			}
+		}
+	}
+	Master("Face_Eyebrows_Size", "#value")
+	{
+		Slave("deform R Brow", "[-3.47849,-11.5993,170.847]", "(quat -0.701057 0.0922959 0.153046 -0.690346)", "[1,1,0.999999]")
+		{
+			Reaction("#State01", "0.0")
+			{
+				State("deform R Brow", "X Scale", "1.0")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+				State("deform R Brow", "Y Scale", "1.0")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+			Reaction("#State02", "1.0")
+			{
+				State("deform R Brow", "X Scale", "1.2")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+				State("deform R Brow", "Y Scale", "1.75")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+			Reaction("#State03", "-1.0")
+			{
+				State("deform R Brow", "Y Scale", "0.75")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+				State("deform R Brow", "X Scale", "0.9")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+		}
+		Slave("deform L Brow", "[3.47857,-11.5993,170.847]", "(quat -0.71859 -0.0733054 -0.127263 -0.679749)", "[1,1,0.999999]")
+		{
+			Reaction("#State01", "0.0")
+			{
+				State("deform L Brow", "X Scale", "1.0")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+				State("deform L Brow", "Y Scale", "1.0")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+			Reaction("#State02", "1.0")
+			{
+				State("deform L Brow", "X Scale", "1.2")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+				State("deform L Brow", "Y Scale", "1.75")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+			Reaction("#State03", "-1.0")
+			{
+				State("deform L Brow", "Y Scale", "0.75")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+				State("deform L Brow", "X Scale", "0.9")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+		}
+	}
+	Master("Face_Eyes_Angle", "#value")
+	{
+		Slave("deform R Eye", "[-3.22054,-9.11301,169.539]", "(quat 1.72666e-007 -2.68221e-007 0 -1)", "[1,1,0.999999]")
+		{
+			Reaction("#State01", "0.0")
+			{
+				State("deform R Eye", "Y Rotation", "-1.5708")
+				{
+					Controller("Rotation", "Euler XYZ")
+					{
+						Property("#axisOrder", "1");
+						Property("#x_rotation", "180.0");
+						Property("#y_rotation", "-90.0");
+						Property("#z_rotation", "0.0");
+					}
+				}
+			}
+			Reaction("#State02", "1.0")
+			{
+				State("deform R Eye", "Y Rotation", "-1.309")
+				{
+					Controller("Rotation", "Euler XYZ")
+					{
+						Property("#axisOrder", "1");
+						Property("#x_rotation", "180.0");
+						Property("#y_rotation", "-90.0");
+						Property("#z_rotation", "0.0");
+					}
+				}
+			}
+			Reaction("#State03", "-1.0")
+			{
+				State("deform R Eye", "Y Rotation", "-1.8326")
+				{
+					Controller("Rotation", "Euler XYZ")
+					{
+						Property("#axisOrder", "1");
+						Property("#x_rotation", "180.0");
+						Property("#y_rotation", "-90.0");
+						Property("#z_rotation", "0.0");
+					}
+				}
+			}
+		}
+		Slave("deform L Eye", "[3.22041,-9.11301,169.539]", "(quat 4.11084e-007 -2.68221e-007 0 -1)", "[1,1,0.999999]")
+		{
+			Reaction("#State01", "0.0")
+			{
+				State("deform L Eye", "Y Rotation", "-1.5708")
+				{
+					Controller("Rotation", "Euler XYZ")
+					{
+						Property("#axisOrder", "1");
+						Property("#x_rotation", "180.0");
+						Property("#y_rotation", "-90.0");
+						Property("#z_rotation", "6.83019e-005");
+					}
+				}
+			}
+			Reaction("#State02", "1.0")
+			{
+				State("deform L Eye", "Y Rotation", "-1.8326")
+				{
+					Controller("Rotation", "Euler XYZ")
+					{
+						Property("#axisOrder", "1");
+						Property("#x_rotation", "180.0");
+						Property("#y_rotation", "-90.0");
+						Property("#z_rotation", "6.83019e-005");
+					}
+				}
+			}
+			Reaction("#State03", "-1.0")
+			{
+				State("deform L Eye", "Y Rotation", "-1.309")
+				{
+					Controller("Rotation", "Euler XYZ")
+					{
+						Property("#axisOrder", "1");
+						Property("#x_rotation", "180.0");
+						Property("#y_rotation", "-90.0");
+						Property("#z_rotation", "6.83019e-005");
+					}
+				}
+			}
+		}
+	}
+	Master("Face_Eyes_Depth", "#value")
+	{
+		Slave("deform R Eye", "[-3.22054,-9.11301,169.539]", "(quat 1.72666e-007 -2.68221e-007 0 -1)", "[1,1,0.999999]")
+		{
+			Reaction("#State01", "0.0")
+			{
+				State("deform R Eye", "Y Position", "10.065")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "9.34337");
+						Property("#y_position", "10.065");
+						Property("#z_position", "-3.22055");
+					}
+				}
+			}
+			Reaction("#State02", "1.0")
+			{
+				State("deform R Eye", "Y Position", "11.0178")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "9.34337");
+						Property("#y_position", "10.065");
+						Property("#z_position", "-3.22055");
+					}
+				}
+			}
+			Reaction("#State03", "-1.0")
+			{
+				State("deform R Eye", "Y Position", "8.37844")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "9.34337");
+						Property("#y_position", "10.065");
+						Property("#z_position", "-3.22055");
+					}
+				}
+			}
+		}
+		Slave("deform L Eye", "[3.22041,-9.11301,169.539]", "(quat 4.11084e-007 -2.68221e-007 0 -1)", "[1,1,0.999999]")
+		{
+			Reaction("#State01", "0.0")
+			{
+				State("deform L Eye", "Y Position", "10.065")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "9.34338");
+						Property("#y_position", "10.065");
+						Property("#z_position", "3.22041");
+					}
+				}
+			}
+			Reaction("#State02", "1.0")
+			{
+				State("deform L Eye", "Y Position", "11.0178")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "9.34338");
+						Property("#y_position", "10.065");
+						Property("#z_position", "3.22041");
+					}
+				}
+			}
+			Reaction("#State03", "-1.0")
+			{
+				State("deform L Eye", "Y Position", "8.37844")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "9.34338");
+						Property("#y_position", "10.065");
+						Property("#z_position", "3.22041");
+					}
+				}
+			}
+		}
+	}
+	Master("Face_Eyes_Distance", "#value")
+	{
+		Slave("deform R Eye", "[-3.22054,-9.11301,169.539]", "(quat 1.72666e-007 -2.68221e-007 0 -1)", "[1,1,0.999999]")
+		{
+			Reaction("#State01", "0.0")
+			{
+				State("deform R Eye", "Z Position", "-3.22055")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "9.34337");
+						Property("#y_position", "10.065");
+						Property("#z_position", "-3.22055");
+					}
+				}
+			}
+			Reaction("#State02", "1.0")
+			{
+				State("deform R Eye", "Z Position", "-4.22055")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "9.34337");
+						Property("#y_position", "10.065");
+						Property("#z_position", "-3.22055");
+					}
+				}
+			}
+			Reaction("#State03", "-1.0")
+			{
+				State("deform R Eye", "Z Position", "-2.22055")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "9.34337");
+						Property("#y_position", "10.065");
+						Property("#z_position", "-3.22055");
+					}
+				}
+			}
+		}
+		Slave("deform L Eye", "[3.22041,-9.11301,169.539]", "(quat 4.11084e-007 -2.68221e-007 0 -1)", "[1,1,0.999999]")
+		{
+			Reaction("#State01", "0.0")
+			{
+				State("deform L Eye", "Z Position", "3.22041")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "9.34338");
+						Property("#y_position", "10.065");
+						Property("#z_position", "3.22041");
+					}
+				}
+			}
+			Reaction("#State02", "1.0")
+			{
+				State("deform L Eye", "Z Position", "4.22041")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "9.34338");
+						Property("#y_position", "10.065");
+						Property("#z_position", "3.22041");
+					}
+				}
+			}
+			Reaction("#State03", "-1.0")
+			{
+				State("deform L Eye", "Z Position", "2.22041")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "9.34338");
+						Property("#y_position", "10.065");
+						Property("#z_position", "3.22041");
+					}
+				}
+			}
+		}
+	}
+	Master("Face_Eyes_Position", "#value")
+	{
+		Slave("deform R Eye", "[-3.22054,-9.11301,169.539]", "(quat 1.72666e-007 -2.68221e-007 0 -1)", "[1,1,0.999999]")
+		{
+			Reaction("#State01", "0.0")
+			{
+				State("deform R Eye", "X Position", "9.34337")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "9.34337");
+						Property("#y_position", "10.065");
+						Property("#z_position", "-3.22055");
+					}
+				}
+			}
+			Reaction("#State02", "1.0")
+			{
+				State("deform R Eye", "X Position", "10.3305")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "9.34337");
+						Property("#y_position", "10.065");
+						Property("#z_position", "-3.22055");
+					}
+				}
+			}
+			Reaction("#State03", "-1.0")
+			{
+				State("deform R Eye", "X Position", "8.31546")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "9.34337");
+						Property("#y_position", "10.065");
+						Property("#z_position", "-3.22055");
+					}
+				}
+			}
+		}
+		Slave("deform L Eye", "[3.22041,-9.11301,169.539]", "(quat 4.11084e-007 -2.68221e-007 0 -1)", "[1,1,0.999999]")
+		{
+			Reaction("#State01", "0.0")
+			{
+				State("deform L Eye", "X Position", "9.34338")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "9.34338");
+						Property("#y_position", "10.065");
+						Property("#z_position", "3.22041");
+					}
+				}
+			}
+			Reaction("#State02", "1.0")
+			{
+				State("deform L Eye", "X Position", "10.3305")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "9.34338");
+						Property("#y_position", "10.065");
+						Property("#z_position", "3.22041");
+					}
+				}
+			}
+			Reaction("#State03", "-1.0")
+			{
+				State("deform L Eye", "X Position", "8.31548")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "9.34338");
+						Property("#y_position", "10.065");
+						Property("#z_position", "3.22041");
+					}
+				}
+			}
+		}
+	}
+	Master("Face_Eyes_Scale", "#value")
+	{
+		Slave("deform R Eye", "[-3.22054,-9.11301,169.539]", "(quat 1.72666e-007 -2.68221e-007 0 -1)", "[1,1,0.999999]")
+		{
+			Reaction("#State01", "0.0")
+			{
+				State("deform R Eye", "Scale", "[1,1,1]")
+				{
+					Controller("deform R Eye", "Dummy")
+					{
+						Property("#boxsize", "[2.27468,2.27468,2.27468]");
+					}
+				}
+			}
+			Reaction("#State02", "1.0")
+			{
+				State("deform R Eye", "Scale", "[1.25155,1.25155,1.25155]")
+				{
+					Controller("deform R Eye", "Dummy")
+					{
+						Property("#boxsize", "[2.27468,2.27468,2.27468]");
+					}
+				}
+			}
+			Reaction("#State03", "-1.0")
+			{
+				State("deform R Eye", "Scale", "[0.644548,0.644548,0.644548]")
+				{
+					Controller("deform R Eye", "Dummy")
+					{
+						Property("#boxsize", "[2.27468,2.27468,2.27468]");
+					}
+				}
+			}
+		}
+		Slave("deform L Eye", "[3.22041,-9.11301,169.539]", "(quat 4.11084e-007 -2.68221e-007 0 -1)", "[1,1,0.999999]")
+		{
+			Reaction("#State01", "0.0")
+			{
+				State("deform L Eye", "Scale", "[1,1,1]")
+				{
+					Controller("deform L Eye", "Dummy")
+					{
+						Property("#boxsize", "[2.27468,2.27468,2.27468]");
+					}
+				}
+			}
+			Reaction("#State02", "1.0")
+			{
+				State("deform L Eye", "Scale", "[1.25155,1.25155,1.25155]")
+				{
+					Controller("deform L Eye", "Dummy")
+					{
+						Property("#boxsize", "[2.27468,2.27468,2.27468]");
+					}
+				}
+			}
+			Reaction("#State03", "-1.0")
+			{
+				State("deform L Eye", "Scale", "[0.644548,0.644548,0.644548]")
+				{
+					Controller("deform L Eye", "Dummy")
+					{
+						Property("#boxsize", "[2.27468,2.27468,2.27468]");
+					}
+				}
+			}
+		}
+	}
+	Master("Face_Head_ForeheadDepth", "#value")
+	{
+		Slave("deform FrontalBone", "[0.025733,-4.76547,170.907]", "(quat -0.736644 0.00131753 0.000790894 -0.676279)", "[1,1,0.999999]")
+		{
+			Reaction("#State01", "0.0")
+			{
+				State("deform FrontalBone", "Y Position", "5.71742")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "10.7112");
+						Property("#y_position", "5.71742");
+						Property("#z_position", "0.0257264");
+					}
+				}
+			}
+			Reaction("#State02", "1.0")
+			{
+				State("deform FrontalBone", "Y Position", "7.47017")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "10.7112");
+						Property("#y_position", "5.71742");
+						Property("#z_position", "0.0257264");
+					}
+				}
+			}
+			Reaction("#State03", "-1.0")
+			{
+				State("deform FrontalBone", "Y Position", "4.5475")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "10.7112");
+						Property("#y_position", "5.71742");
+						Property("#z_position", "0.0257264");
+					}
+				}
+			}
+		}
+	}
+	Master("Face_Head_ForeheadHeight", "#value")
+	{
+		Slave("deform FrontalBone", "[0.025733,-4.76547,170.907]", "(quat -0.736644 0.00131753 0.000790894 -0.676279)", "[1,1,0.999999]")
+		{
+			Reaction("#State01", "0.0")
+			{
+				State("deform FrontalBone", "Y Scale", "1.0")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+			Reaction("#State02", "1.0")
+			{
+				State("deform FrontalBone", "Y Scale", "1.42459")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+			Reaction("#State03", "-1.0")
+			{
+				State("deform FrontalBone", "Y Scale", "0.677361")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+		}
+	}
+	Master("Face_Head_ForeheadPosition", "#value")
+	{
+		Slave("deform FrontalBone", "[0.025733,-4.76547,170.907]", "(quat -0.736644 0.00131753 0.000790894 -0.676279)", "[1,1,0.999999]")
+		{
+			Reaction("#State01", "0.0")
+			{
+				State("deform FrontalBone", "X Position", "10.7112")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "10.7112");
+						Property("#y_position", "5.71742");
+						Property("#z_position", "0.0257264");
+					}
+				}
+			}
+			Reaction("#State02", "1.0")
+			{
+				State("deform FrontalBone", "X Position", "11.7423")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "10.7112");
+						Property("#y_position", "5.71742");
+						Property("#z_position", "0.0257264");
+					}
+				}
+			}
+			Reaction("#State03", "-1.0")
+			{
+				State("deform FrontalBone", "X Position", "10.0416")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "10.7112");
+						Property("#y_position", "5.71742");
+						Property("#z_position", "0.0257264");
+					}
+				}
+			}
+		}
+	}
+	Master("Face_Head_ForeheadWidth", "#value")
+	{
+		Slave("deform FrontalBone", "[0.025733,-4.76547,170.907]", "(quat -0.736644 0.00131753 0.000790894 -0.676279)", "[1,1,0.999999]")
+		{
+			Reaction("#State01", "0.0")
+			{
+				State("deform FrontalBone", "X Scale", "1.0")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+			Reaction("#State02", "1.0")
+			{
+				State("deform FrontalBone", "X Scale", "1.15533")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+			Reaction("#State03", "-1.0")
+			{
+				State("deform FrontalBone", "X Scale", "0.78702")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+		}
+	}
+	Master("Face_Head_OccipitalDepth", "#value")
+	{
+		Slave("deform OccipitalBone", "[0.025733,-4.88419,170.816]", "(quat -0.707107 0 2.08616e-007 -0.707107)", "[1,1,0.999999]")
+		{
+			Reaction("#State05", "0.0")
+			{
+				State("deform OccipitalBone", "Z Scale", "0.999999")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "99.9999");
+					}
+				}
+			}
+			Reaction("#State06", "1.0")
+			{
+				State("deform OccipitalBone", "Z Scale", "1.20661")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "99.9999");
+					}
+				}
+			}
+			Reaction("#State07", "-1.0")
+			{
+				State("deform OccipitalBone", "Z Scale", "0.856817")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "99.9999");
+					}
+				}
+			}
+		}
+	}
+	Master("Face_Head_OccipitalWidth", "#value")
+	{
+		Slave("deform R Ear", "[-7.20479,-2.80205,167.291]", "(quat -0.627507 0.439385 0.368688 -0.526541)", "[1,1,0.999999]")
+		{
+			Reaction("#State05", "0.0")
+			{
+				State("deform R Ear", "Z Position", "-7.2048")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "7.09526");
+						Property("#y_position", "3.75399");
+						Property("#z_position", "-7.2048");
+					}
+				}
+			}
+			Reaction("#State06", "1.0")
+			{
+				State("deform R Ear", "Z Position", "-8.2048")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "7.09526");
+						Property("#y_position", "3.75399");
+						Property("#z_position", "-7.2048");
+					}
+				}
+			}
+			Reaction("#State07", "-1.0")
+			{
+				State("deform R Ear", "Z Position", "-6.2048")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "7.09526");
+						Property("#y_position", "3.75399");
+						Property("#z_position", "-7.2048");
+					}
+				}
+			}
+		}
+		Slave("deform OccipitalBone", "[0.025733,-4.88419,170.816]", "(quat -0.707107 0 2.08616e-007 -0.707107)", "[1,1,0.999999]")
+		{
+			Reaction("#State05", "0.0")
+			{
+				State("deform OccipitalBone", "X Scale", "1.0")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "99.9999");
+					}
+				}
+			}
+			Reaction("#State06", "1.0")
+			{
+				State("deform OccipitalBone", "X Scale", "1.21986")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "99.9999");
+					}
+				}
+			}
+			Reaction("#State07", "-1.0")
+			{
+				State("deform OccipitalBone", "X Scale", "0.805855")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "99.9999");
+					}
+				}
+			}
+		}
+		Slave("deform L Ear", "[7.20485,-2.80205,167.291]", "(quat -0.627507 -0.439385 -0.368688 -0.526541)", "[1,1,1]")
+		{
+			Reaction("#State05", "0.0")
+			{
+				State("deform L Ear", "Z Position", "7.20485")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "7.09492");
+						Property("#y_position", "3.75399");
+						Property("#z_position", "7.20485");
+					}
+				}
+			}
+			Reaction("#State06", "1.0")
+			{
+				State("deform L Ear", "Z Position", "8.20485")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "7.09492");
+						Property("#y_position", "3.75399");
+						Property("#z_position", "7.20485");
+					}
+				}
+			}
+			Reaction("#State07", "-1.0")
+			{
+				State("deform L Ear", "Z Position", "6.20485")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "7.09492");
+						Property("#y_position", "3.75399");
+						Property("#z_position", "7.20485");
+					}
+				}
+			}
+		}
+	}
+	Master("Face_Head_ParietalDepth", "#value")
+	{
+		Slave("deform ParietalBone", "[0.025733,-4.5033,170.816]", "(quat -0.707107 -1.19209e-007 0 -0.707107)", "[1,1,0.999999]")
+		{
+			Reaction("#State01", "0.0")
+			{
+				State("deform ParietalBone", "Z Scale", "1.0")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+			Reaction("#State02", "1.0")
+			{
+				State("deform ParietalBone", "Z Scale", "1.12206")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+			Reaction("#State03", "-1.0")
+			{
+				State("deform ParietalBone", "Z Scale", "0.794693")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+		}
+	}
+	Master("Face_Head_ParietalHeight", "#value")
+	{
+		Slave("deform ParietalBone", "[0.025733,-4.5033,170.816]", "(quat -0.707107 -1.19209e-007 0 -0.707107)", "[1,1,0.999999]")
+		{
+			Reaction("#State01", "0.0")
+			{
+				State("deform ParietalBone", "Y Scale", "1.0")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+			Reaction("#State02", "1.0")
+			{
+				State("deform ParietalBone", "Y Scale", "1.17309")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+			Reaction("#State03", "-1.0")
+			{
+				State("deform ParietalBone", "Y Scale", "0.820246")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+		}
+	}
+	Master("Face_Head_ParietalWidth", "#value")
+	{
+		Slave("deform ParietalBone", "[0.025733,-4.5033,170.816]", "(quat -0.707107 -1.19209e-007 0 -0.707107)", "[1,1,0.999999]")
+		{
+			Reaction("#State01", "0.0")
+			{
+				State("deform ParietalBone", "X Scale", "1.0")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+			Reaction("#State02", "1.0")
+			{
+				State("deform ParietalBone", "X Scale", "1.22026")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+			Reaction("#State03", "-1.0")
+			{
+				State("deform ParietalBone", "X Scale", "0.796276")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+		}
+	}
+	Master("Face_Mouth_Angle", "#value")
+	{
+		Slave("deform Mouth", "[0.0257292,-8.50704,162.46]", "(quat -0.716301 -1.78814e-007 2.08616e-007 -0.697791)", "[1,1,0.999999]")
+		{
+			Reaction("#State01", "0.0")
+			{
+				State("deform Mouth", "Y Rotation", "-1.5708")
+				{
+					Controller("Rotation", "Euler XYZ")
+					{
+						Property("#axisOrder", "1");
+						Property("#x_rotation", "271.5");
+						Property("#y_rotation", "-90.0");
+						Property("#z_rotation", "360.0");
+					}
+				}
+			}
+			Reaction("#State02", "1.0")
+			{
+				State("deform Mouth", "Y Rotation", "-1.74533")
+				{
+					Controller("Rotation", "Euler XYZ")
+					{
+						Property("#axisOrder", "1");
+						Property("#x_rotation", "271.5");
+						Property("#y_rotation", "-90.0");
+						Property("#z_rotation", "360.0");
+					}
+				}
+			}
+			Reaction("#State03", "-1.0")
+			{
+				State("deform Mouth", "Y Rotation", "-1.39626")
+				{
+					Controller("Rotation", "Euler XYZ")
+					{
+						Property("#axisOrder", "1");
+						Property("#x_rotation", "271.5");
+						Property("#y_rotation", "-90.0");
+						Property("#z_rotation", "360.0");
+					}
+				}
+			}
+		}
+	}
+	Master("Face_Mouth_Depth", "#value")
+	{
+		Slave("deform Mouth", "[0.0257292,-8.50704,162.46]", "(quat -0.716301 -1.78814e-007 2.08616e-007 -0.697791)", "[1,1,0.999999]")
+		{
+			Reaction("#State01", "0.0")
+			{
+				State("deform Mouth", "Y Position", "9.45898")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "2.26446");
+						Property("#y_position", "9.45898");
+						Property("#z_position", "0.0257263");
+					}
+				}
+			}
+			Reaction("#State02", "1.0")
+			{
+				State("deform Mouth", "Y Position", "10.2041")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "2.26446");
+						Property("#y_position", "9.45898");
+						Property("#z_position", "0.0257263");
+					}
+				}
+			}
+			Reaction("#State03", "-1.0")
+			{
+				State("deform Mouth", "Y Position", "8.6438")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "2.26446");
+						Property("#y_position", "9.45898");
+						Property("#z_position", "0.0257263");
+					}
+				}
+			}
+		}
+	}
+	Master("Face_Mouth_LowerLip", "#value")
+	{
+		Slave("deform RB Lip", "[-1.45819,-11.5384,162.227]", "(quat 0.693366 -0.23999 -0.256271 0.629264)", "[1,1,1]")
+		{
+			Reaction("#State08", "0.0")
+			{
+				State("deform RB Lip", "X Rotation", "-3.05296")
+				{
+					Controller("Rotation", "Euler XYZ")
+					{
+						Property("#axisOrder", "1");
+						Property("#x_rotation", "-174.922");
+						Property("#y_rotation", "-138.967");
+						Property("#z_rotation", "177.251");
+					}
+				}
+				State("deform RB Lip", "X Position", "-1.48392")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "-1.48392");
+						Property("#y_position", "-0.153563");
+						Property("#z_position", "3.03641");
+					}
+				}
+				State("deform RB Lip", "Z Rotation", "3.09362")
+				{
+					Controller("Rotation", "Euler XYZ")
+					{
+						Property("#axisOrder", "1");
+						Property("#x_rotation", "-174.922");
+						Property("#y_rotation", "-138.967");
+						Property("#z_rotation", "177.251");
+					}
+				}
+				State("deform RB Lip", "Scale", "[1,1,1]")
+				{
+					Controller("deform RB Lip", "Dummy")
+					{
+						Property("#boxsize", "[1.81349,1.81349,1.81349]");
+					}
+				}
+				State("deform RB Lip", "Y Position", "-0.153563")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "-1.48392");
+						Property("#y_position", "-0.153563");
+						Property("#z_position", "3.03641");
+					}
+				}
+				State("deform RB Lip", "Z Position", "3.03641")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "-1.48392");
+						Property("#y_position", "-0.153563");
+						Property("#z_position", "3.03641");
+					}
+				}
+				State("deform RB Lip", "Y Rotation", "-2.42543")
+				{
+					Controller("Rotation", "Euler XYZ")
+					{
+						Property("#axisOrder", "1");
+						Property("#x_rotation", "-174.922");
+						Property("#y_rotation", "-138.967");
+						Property("#z_rotation", "177.251");
+					}
+				}
+			}
+			Reaction("#State09", "1.0")
+			{
+				State("deform RB Lip", "Z Position", "2.95201")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "-1.48392");
+						Property("#y_position", "-0.153563");
+						Property("#z_position", "3.03641");
+					}
+				}
+				State("deform RB Lip", "X Position", "-1.48392")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "-1.48392");
+						Property("#y_position", "-0.153563");
+						Property("#z_position", "3.03641");
+					}
+				}
+				State("deform RB Lip", "Scale", "[1,1.18576,1.14513]")
+				{
+					Controller("deform RB Lip", "Dummy")
+					{
+						Property("#boxsize", "[1.81349,1.81349,1.81349]");
+					}
+				}
+				State("deform RB Lip", "X Rotation", "-3.12778")
+				{
+					Controller("Rotation", "Euler XYZ")
+					{
+						Property("#axisOrder", "1");
+						Property("#x_rotation", "-174.922");
+						Property("#y_rotation", "-138.967");
+						Property("#z_rotation", "177.251");
+					}
+				}
+				State("deform RB Lip", "Y Rotation", "-2.42095")
+				{
+					Controller("Rotation", "Euler XYZ")
+					{
+						Property("#axisOrder", "1");
+						Property("#x_rotation", "-174.922");
+						Property("#y_rotation", "-138.967");
+						Property("#z_rotation", "177.251");
+					}
+				}
+				State("deform RB Lip", "Y Position", "-0.210998")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "-1.48392");
+						Property("#y_position", "-0.153563");
+						Property("#z_position", "3.03641");
+					}
+				}
+				State("deform RB Lip", "Z Rotation", "3.20846")
+				{
+					Controller("Rotation", "Euler XYZ")
+					{
+						Property("#axisOrder", "1");
+						Property("#x_rotation", "-174.922");
+						Property("#y_rotation", "-138.967");
+						Property("#z_rotation", "177.251");
+					}
+				}
+			}
+			Reaction("#State10", "-1.0")
+			{
+				State("deform RB Lip", "Z Rotation", "3.31499")
+				{
+					Controller("Rotation", "Euler XYZ")
+					{
+						Property("#axisOrder", "1");
+						Property("#x_rotation", "-174.922");
+						Property("#y_rotation", "-138.967");
+						Property("#z_rotation", "177.251");
+					}
+				}
+				State("deform RB Lip", "X Rotation", "-3.20386")
+				{
+					Controller("Rotation", "Euler XYZ")
+					{
+						Property("#axisOrder", "1");
+						Property("#x_rotation", "-174.922");
+						Property("#y_rotation", "-138.967");
+						Property("#z_rotation", "177.251");
+					}
+				}
+				State("deform RB Lip", "Z Position", "2.86631")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "-1.48392");
+						Property("#y_position", "-0.153563");
+						Property("#z_position", "3.03641");
+					}
+				}
+				State("deform RB Lip", "Scale", "[0.996449,0.464348,1]")
+				{
+					Controller("deform RB Lip", "Dummy")
+					{
+						Property("#boxsize", "[1.81349,1.81349,1.81349]");
+					}
+				}
+				State("deform RB Lip", "Y Position", "-0.0221672")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "-1.48392");
+						Property("#y_position", "-0.153563");
+						Property("#z_position", "3.03641");
+					}
+				}
+				State("deform RB Lip", "X Position", "-1.48392")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "-1.48392");
+						Property("#y_position", "-0.153563");
+						Property("#z_position", "3.03641");
+					}
+				}
+				State("deform RB Lip", "Y Rotation", "-2.42278")
+				{
+					Controller("Rotation", "Euler XYZ")
+					{
+						Property("#axisOrder", "1");
+						Property("#x_rotation", "-174.922");
+						Property("#y_rotation", "-138.967");
+						Property("#z_rotation", "177.251");
+					}
+				}
+			}
+		}
+		Slave("deform LB Lip", "[1.68678,-11.656,162.237]", "(quat 0.693366 0.23999 0.25627 0.629264)", "[1,1,0.999999]")
+		{
+			Reaction("#State08", "0.0")
+			{
+				State("deform LB Lip", "X Rotation", "0.0886317")
+				{
+					Controller("Rotation", "Euler XYZ")
+					{
+						Property("#axisOrder", "1");
+						Property("#x_rotation", "5.07822");
+						Property("#y_rotation", "41.0333");
+						Property("#z_rotation", "2.7486");
+					}
+				}
+				State("deform LB Lip", "X Position", "1.66105")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "1.66105");
+						Property("#y_position", "-0.140844");
+						Property("#z_position", "3.15375");
+					}
+				}
+				State("deform LB Lip", "Z Rotation", "0.0479721")
+				{
+					Controller("Rotation", "Euler XYZ")
+					{
+						Property("#axisOrder", "1");
+						Property("#x_rotation", "5.07822");
+						Property("#y_rotation", "41.0333");
+						Property("#z_rotation", "2.7486");
+					}
+				}
+				State("deform LB Lip", "Scale", "[1,1,1]")
+				{
+					Controller("deform LB Lip", "Dummy")
+					{
+						Property("#boxsize", "[1.81349,1.81349,1.81349]");
+					}
+				}
+				State("deform LB Lip", "Y Position", "-0.140844")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "1.66105");
+						Property("#y_position", "-0.140844");
+						Property("#z_position", "3.15375");
+					}
+				}
+				State("deform LB Lip", "Z Position", "3.15375")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "1.66105");
+						Property("#y_position", "-0.140844");
+						Property("#z_position", "3.15375");
+					}
+				}
+				State("deform LB Lip", "Y Rotation", "0.716166")
+				{
+					Controller("Rotation", "Euler XYZ")
+					{
+						Property("#axisOrder", "1");
+						Property("#x_rotation", "5.07822");
+						Property("#y_rotation", "41.0333");
+						Property("#z_rotation", "2.7486");
+					}
+				}
+			}
+			Reaction("#State09", "1.0")
+			{
+				State("deform LB Lip", "Z Position", "3.04427")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "1.66105");
+						Property("#y_position", "-0.140844");
+						Property("#z_position", "3.15375");
+					}
+				}
+				State("deform LB Lip", "X Position", "1.66105")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "1.66105");
+						Property("#y_position", "-0.140844");
+						Property("#z_position", "3.15375");
+					}
+				}
+				State("deform LB Lip", "Scale", "[1,1.18576,1.14513]")
+				{
+					Controller("deform LB Lip", "Dummy")
+					{
+						Property("#boxsize", "[1.81349,1.81349,1.81349]");
+					}
+				}
+				State("deform LB Lip", "X Rotation", "0.0138079")
+				{
+					Controller("Rotation", "Euler XYZ")
+					{
+						Property("#axisOrder", "1");
+						Property("#x_rotation", "5.07822");
+						Property("#y_rotation", "41.0333");
+						Property("#z_rotation", "2.7486");
+					}
+				}
+				State("deform LB Lip", "Y Rotation", "0.720639")
+				{
+					Controller("Rotation", "Euler XYZ")
+					{
+						Property("#axisOrder", "1");
+						Property("#x_rotation", "5.07822");
+						Property("#y_rotation", "41.0333");
+						Property("#z_rotation", "2.7486");
+					}
+				}
+				State("deform LB Lip", "Y Position", "-0.198936")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "1.66105");
+						Property("#y_position", "-0.140844");
+						Property("#z_position", "3.15375");
+					}
+				}
+				State("deform LB Lip", "Z Rotation", "-0.0668726")
+				{
+					Controller("Rotation", "Euler XYZ")
+					{
+						Property("#axisOrder", "1");
+						Property("#x_rotation", "5.07822");
+						Property("#y_rotation", "41.0333");
+						Property("#z_rotation", "2.7486");
+					}
+				}
+			}
+			Reaction("#State10", "-1.0")
+			{
+				State("deform LB Lip", "Z Rotation", "-0.173393")
+				{
+					Controller("Rotation", "Euler XYZ")
+					{
+						Property("#axisOrder", "1");
+						Property("#x_rotation", "5.07822");
+						Property("#y_rotation", "41.0333");
+						Property("#z_rotation", "2.7486");
+					}
+				}
+				State("deform LB Lip", "X Rotation", "-0.0622673")
+				{
+					Controller("Rotation", "Euler XYZ")
+					{
+						Property("#axisOrder", "1");
+						Property("#x_rotation", "5.07822");
+						Property("#y_rotation", "41.0333");
+						Property("#z_rotation", "2.7486");
+					}
+				}
+				State("deform LB Lip", "Z Position", "2.98365")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "1.66105");
+						Property("#y_position", "-0.140844");
+						Property("#z_position", "3.15375");
+					}
+				}
+				State("deform LB Lip", "Scale", "[0.996449,0.464348,1]")
+				{
+					Controller("deform LB Lip", "Dummy")
+					{
+						Property("#boxsize", "[1.81349,1.81349,1.81349]");
+					}
+				}
+				State("deform LB Lip", "Y Position", "-0.00944802")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "1.66105");
+						Property("#y_position", "-0.140844");
+						Property("#z_position", "3.15375");
+					}
+				}
+				State("deform LB Lip", "X Position", "1.66105")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "1.66105");
+						Property("#y_position", "-0.140844");
+						Property("#z_position", "3.15375");
+					}
+				}
+				State("deform LB Lip", "Y Rotation", "0.718814")
+				{
+					Controller("Rotation", "Euler XYZ")
+					{
+						Property("#axisOrder", "1");
+						Property("#x_rotation", "5.07822");
+						Property("#y_rotation", "41.0333");
+						Property("#z_rotation", "2.7486");
+					}
+				}
+			}
+		}
+		Slave("deform B Lip", "[0.165861,-12.271,162.07]", "(quat 0.619093 0 -1.25086e-007 0.785317)", "[1,1,1]")
+		{
+			Reaction("#State08", "0.0")
+			{
+				State("deform B Lip", "X Rotation", "-0.261799")
+				{
+					Controller("Rotation", "Euler XYZ")
+					{
+						Property("#axisOrder", "1");
+						Property("#x_rotation", "-15.0");
+						Property("#y_rotation", "9.53172e-006");
+						Property("#z_rotation", "6.72157e-006");
+					}
+				}
+				State("deform B Lip", "X Position", "0.140132")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "0.140132");
+						Property("#y_position", "-0.291891");
+						Property("#z_position", "3.77284");
+					}
+				}
+				State("deform B Lip", "Z Rotation", "0.0")
+				{
+					Controller("Rotation", "Euler XYZ")
+					{
+						Property("#axisOrder", "1");
+						Property("#x_rotation", "-15.0");
+						Property("#y_rotation", "9.53172e-006");
+						Property("#z_rotation", "6.72157e-006");
+					}
+				}
+				State("deform B Lip", "Scale", "[1,1,1]")
+				{
+					Controller("deform B Lip", "Dummy")
+					{
+						Property("#boxsize", "[1.81349,1.81349,1.81349]");
+					}
+				}
+				State("deform B Lip", "Y Position", "-0.291891")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "0.140132");
+						Property("#y_position", "-0.291891");
+						Property("#z_position", "3.77284");
+					}
+				}
+				State("deform B Lip", "Z Position", "3.77284")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "0.140132");
+						Property("#y_position", "-0.291891");
+						Property("#z_position", "3.77284");
+					}
+				}
+				State("deform B Lip", "Y Rotation", "1.6636e-007")
+				{
+					Controller("Rotation", "Euler XYZ")
+					{
+						Property("#axisOrder", "1");
+						Property("#x_rotation", "-15.0");
+						Property("#y_rotation", "9.53172e-006");
+						Property("#z_rotation", "6.72157e-006");
+					}
+				}
+			}
+			Reaction("#State09", "1.0")
+			{
+				State("deform B Lip", "Z Position", "3.94255")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "0.140132");
+						Property("#y_position", "-0.291891");
+						Property("#z_position", "3.77284");
+					}
+				}
+				State("deform B Lip", "X Position", "0.140133")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "0.140132");
+						Property("#y_position", "-0.291891");
+						Property("#z_position", "3.77284");
+					}
+				}
+				State("deform B Lip", "Scale", "[1,1.44068,1.13267]")
+				{
+					Controller("deform B Lip", "Dummy")
+					{
+						Property("#boxsize", "[1.81349,1.81349,1.81349]");
+					}
+				}
+				State("deform B Lip", "X Rotation", "-0.52375")
+				{
+					Controller("Rotation", "Euler XYZ")
+					{
+						Property("#axisOrder", "1");
+						Property("#x_rotation", "-15.0");
+						Property("#y_rotation", "9.53172e-006");
+						Property("#z_rotation", "6.72157e-006");
+					}
+				}
+				State("deform B Lip", "Y Rotation", "1.64384e-007")
+				{
+					Controller("Rotation", "Euler XYZ")
+					{
+						Property("#axisOrder", "1");
+						Property("#x_rotation", "-15.0");
+						Property("#y_rotation", "9.53172e-006");
+						Property("#z_rotation", "6.72157e-006");
+					}
+				}
+				State("deform B Lip", "Y Position", "-0.565817")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "0.140132");
+						Property("#y_position", "-0.291891");
+						Property("#z_position", "3.77284");
+					}
+				}
+				State("deform B Lip", "Z Rotation", "1.20534e-007")
+				{
+					Controller("Rotation", "Euler XYZ")
+					{
+						Property("#axisOrder", "1");
+						Property("#x_rotation", "-15.0");
+						Property("#y_rotation", "9.53172e-006");
+						Property("#z_rotation", "6.72157e-006");
+					}
+				}
+			}
+			Reaction("#State10", "-1.0")
+			{
+				State("deform B Lip", "Z Rotation", "0.0")
+				{
+					Controller("Rotation", "Euler XYZ")
+					{
+						Property("#axisOrder", "1");
+						Property("#x_rotation", "-15.0");
+						Property("#y_rotation", "9.53172e-006");
+						Property("#z_rotation", "6.72157e-006");
+					}
+				}
+				State("deform B Lip", "X Rotation", "-0.261799")
+				{
+					Controller("Rotation", "Euler XYZ")
+					{
+						Property("#axisOrder", "1");
+						Property("#x_rotation", "-15.0");
+						Property("#y_rotation", "9.53172e-006");
+						Property("#z_rotation", "6.72157e-006");
+					}
+				}
+				State("deform B Lip", "Z Position", "3.5623")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "0.140132");
+						Property("#y_position", "-0.291891");
+						Property("#z_position", "3.77284");
+					}
+				}
+				State("deform B Lip", "Scale", "[1,0.620491,1]")
+				{
+					Controller("deform B Lip", "Dummy")
+					{
+						Property("#boxsize", "[1.81349,1.81349,1.81349]");
+					}
+				}
+				State("deform B Lip", "Y Position", "-0.161554")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "0.140132");
+						Property("#y_position", "-0.291891");
+						Property("#z_position", "3.77284");
+					}
+				}
+				State("deform B Lip", "X Position", "0.140132")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "0.140132");
+						Property("#y_position", "-0.291891");
+						Property("#z_position", "3.77284");
+					}
+				}
+				State("deform B Lip", "Y Rotation", "1.6636e-007")
+				{
+					Controller("Rotation", "Euler XYZ")
+					{
+						Property("#axisOrder", "1");
+						Property("#x_rotation", "-15.0");
+						Property("#y_rotation", "9.53172e-006");
+						Property("#z_rotation", "6.72157e-006");
+					}
+				}
+			}
+		}
+	}
+	Master("Face_Mouth_Position", "#value")
+	{
+		Slave("deform Mouth", "[0.0257292,-8.50704,162.46]", "(quat -0.716301 -1.78814e-007 2.08616e-007 -0.697791)", "[1,1,0.999999]")
+		{
+			Reaction("#State01", "0.0")
+			{
+				State("deform Mouth", "X Position", "2.26446")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "2.26446");
+						Property("#y_position", "9.45898");
+						Property("#z_position", "0.0257263");
+					}
+				}
+			}
+			Reaction("#State02", "1.0")
+			{
+				State("deform Mouth", "X Position", "3.11724")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "2.26446");
+						Property("#y_position", "9.45898");
+						Property("#z_position", "0.0257263");
+					}
+				}
+			}
+			Reaction("#State03", "-1.0")
+			{
+				State("deform Mouth", "X Position", "1.4837")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "2.26446");
+						Property("#y_position", "9.45898");
+						Property("#z_position", "0.0257263");
+					}
+				}
+			}
+		}
+	}
+	Master("Face_Mouth_Size", "#value")
+	{
+		Slave("deform Mouth", "[0.0257292,-8.50704,162.46]", "(quat -0.716301 -1.78814e-007 2.08616e-007 -0.697791)", "[1,1,0.999999]")
+		{
+			Reaction("#State04", "0.0")
+			{
+				State("deform Mouth", "X Scale", "1.0")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+				State("deform Mouth", "Z Scale", "1.0")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+				State("deform Mouth", "Y Scale", "1.0")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+			Reaction("#State05", "1.0")
+			{
+				State("deform Mouth", "X Scale", "1.19721")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+				State("deform Mouth", "Z Scale", "0.989028")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+				State("deform Mouth", "Y Scale", "1.34554")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+			Reaction("#State06", "-1.0")
+			{
+				State("deform Mouth", "Y Scale", "0.470598")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+				State("deform Mouth", "X Scale", "0.72256")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+				State("deform Mouth", "Z Scale", "1.02936")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+		}
+	}
+	Master("Face_Mouth_UpperLip", "#value")
+	{
+		Slave("deform T Lip", "[0.176056,-12.3549,163.156]", "(quat 0.826589 0 -1.78427e-007 0.562805)", "[1,1,1]")
+		{
+			Reaction("#State08", "0.0")
+			{
+				State("deform T Lip", "X Rotation", "0.349066")
+				{
+					Controller("Rotation", "Euler XYZ")
+					{
+						Property("#axisOrder", "1");
+						Property("#x_rotation", "20.0");
+						Property("#y_rotation", "9.17119e-006");
+						Property("#z_rotation", "1.74957e-006");
+					}
+				}
+				State("deform T Lip", "X Position", "0.150327")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "0.150327");
+						Property("#y_position", "0.795882");
+						Property("#z_position", "3.82835");
+					}
+				}
+				State("deform T Lip", "Z Rotation", "0.0")
+				{
+					Controller("Rotation", "Euler XYZ")
+					{
+						Property("#axisOrder", "1");
+						Property("#x_rotation", "20.0");
+						Property("#y_rotation", "9.17119e-006");
+						Property("#z_rotation", "1.74957e-006");
+					}
+				}
+				State("deform T Lip", "Scale", "[1,1,1]")
+				{
+					Controller("deform T Lip", "Dummy")
+					{
+						Property("#boxsize", "[1.81349,1.81349,1.81349]");
+					}
+				}
+				State("deform T Lip", "Y Position", "0.795882")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "0.150327");
+						Property("#y_position", "0.795882");
+						Property("#z_position", "3.82835");
+					}
+				}
+				State("deform T Lip", "Z Position", "3.82835")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "0.150327");
+						Property("#y_position", "0.795882");
+						Property("#z_position", "3.82835");
+					}
+				}
+				State("deform T Lip", "Y Rotation", "1.60067e-007")
+				{
+					Controller("Rotation", "Euler XYZ")
+					{
+						Property("#axisOrder", "1");
+						Property("#x_rotation", "20.0");
+						Property("#y_rotation", "9.17119e-006");
+						Property("#z_rotation", "1.74957e-006");
+					}
+				}
+			}
+			Reaction("#State09", "1.0")
+			{
+				State("deform T Lip", "Z Position", "3.99572")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "0.150327");
+						Property("#y_position", "0.795882");
+						Property("#z_position", "3.82835");
+					}
+				}
+				State("deform T Lip", "X Position", "0.150327")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "0.150327");
+						Property("#y_position", "0.795882");
+						Property("#z_position", "3.82835");
+					}
+				}
+				State("deform T Lip", "Scale", "[1,1.34039,1]")
+				{
+					Controller("deform T Lip", "Dummy")
+					{
+						Property("#boxsize", "[1.81349,1.81349,1.81349]");
+					}
+				}
+				State("deform T Lip", "X Rotation", "0.523599")
+				{
+					Controller("Rotation", "Euler XYZ")
+					{
+						Property("#axisOrder", "1");
+						Property("#x_rotation", "20.0");
+						Property("#y_rotation", "9.17119e-006");
+						Property("#z_rotation", "1.74957e-006");
+					}
+				}
+				State("deform T Lip", "Y Rotation", "1.60067e-007")
+				{
+					Controller("Rotation", "Euler XYZ")
+					{
+						Property("#axisOrder", "1");
+						Property("#x_rotation", "20.0");
+						Property("#y_rotation", "9.17119e-006");
+						Property("#z_rotation", "1.74957e-006");
+					}
+				}
+				State("deform T Lip", "Y Position", "0.935721")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "0.150327");
+						Property("#y_position", "0.795882");
+						Property("#z_position", "3.82835");
+					}
+				}
+				State("deform T Lip", "Z Rotation", "0.0")
+				{
+					Controller("Rotation", "Euler XYZ")
+					{
+						Property("#axisOrder", "1");
+						Property("#x_rotation", "20.0");
+						Property("#y_rotation", "9.17119e-006");
+						Property("#z_rotation", "1.74957e-006");
+					}
+				}
+			}
+			Reaction("#State10", "-1.0")
+			{
+				State("deform T Lip", "Z Rotation", "0.0")
+				{
+					Controller("Rotation", "Euler XYZ")
+					{
+						Property("#axisOrder", "1");
+						Property("#x_rotation", "20.0");
+						Property("#y_rotation", "9.17119e-006");
+						Property("#z_rotation", "1.74957e-006");
+					}
+				}
+				State("deform T Lip", "X Rotation", "0.436333")
+				{
+					Controller("Rotation", "Euler XYZ")
+					{
+						Property("#axisOrder", "1");
+						Property("#x_rotation", "20.0");
+						Property("#y_rotation", "9.17119e-006");
+						Property("#z_rotation", "1.74957e-006");
+					}
+				}
+				State("deform T Lip", "Z Position", "3.82459")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "0.150327");
+						Property("#y_position", "0.795882");
+						Property("#z_position", "3.82835");
+					}
+				}
+				State("deform T Lip", "Scale", "[1,0.562824,1]")
+				{
+					Controller("deform T Lip", "Dummy")
+					{
+						Property("#boxsize", "[1.81349,1.81349,1.81349]");
+					}
+				}
+				State("deform T Lip", "Y Position", "0.669321")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "0.150327");
+						Property("#y_position", "0.795882");
+						Property("#z_position", "3.82835");
+					}
+				}
+				State("deform T Lip", "X Position", "0.150327")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "0.150327");
+						Property("#y_position", "0.795882");
+						Property("#z_position", "3.82835");
+					}
+				}
+				State("deform T Lip", "Y Rotation", "1.60067e-007")
+				{
+					Controller("Rotation", "Euler XYZ")
+					{
+						Property("#axisOrder", "1");
+						Property("#x_rotation", "20.0");
+						Property("#y_rotation", "9.17119e-006");
+						Property("#z_rotation", "1.74957e-006");
+					}
+				}
+			}
+		}
+		Slave("deform RT Lip", "[-1.73134,-11.6355,163.14]", "(quat 0.743281 -0.339893 -0.123743 0.562756)", "[1,1,0.999999]")
+		{
+			Reaction("#State08", "0.0")
+			{
+				State("deform RT Lip", "X Rotation", "0.14537")
+				{
+					Controller("Rotation", "Euler XYZ")
+					{
+						Property("#axisOrder", "1");
+						Property("#x_rotation", "8.32908");
+						Property("#y_rotation", "-39.7267");
+						Property("#z_rotation", "16.2647");
+					}
+				}
+				State("deform RT Lip", "X Position", "-1.75707")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "-1.75707");
+						Property("#y_position", "0.761665");
+						Property("#z_position", "3.1096");
+					}
+				}
+				State("deform RT Lip", "Z Rotation", "0.283872")
+				{
+					Controller("Rotation", "Euler XYZ")
+					{
+						Property("#axisOrder", "1");
+						Property("#x_rotation", "8.32908");
+						Property("#y_rotation", "-39.7267");
+						Property("#z_rotation", "16.2647");
+					}
+				}
+				State("deform RT Lip", "Scale", "[1,1,1]")
+				{
+					Controller("deform RT Lip", "Dummy")
+					{
+						Property("#boxsize", "[1.81349,1.81349,1.81349]");
+					}
+				}
+				State("deform RT Lip", "Y Position", "0.761665")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "-1.75707");
+						Property("#y_position", "0.761665");
+						Property("#z_position", "3.1096");
+					}
+				}
+				State("deform RT Lip", "Z Position", "3.1096")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "-1.75707");
+						Property("#y_position", "0.761665");
+						Property("#z_position", "3.1096");
+					}
+				}
+				State("deform RT Lip", "Y Rotation", "-0.693362")
+				{
+					Controller("Rotation", "Euler XYZ")
+					{
+						Property("#axisOrder", "1");
+						Property("#x_rotation", "8.32908");
+						Property("#y_rotation", "-39.7267");
+						Property("#z_rotation", "16.2647");
+					}
+				}
+			}
+			Reaction("#State09", "1.0")
+			{
+				State("deform RT Lip", "Z Position", "3.19074")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "-1.75707");
+						Property("#y_position", "0.761665");
+						Property("#z_position", "3.1096");
+					}
+				}
+				State("deform RT Lip", "X Position", "-1.75707")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "-1.75707");
+						Property("#y_position", "0.761665");
+						Property("#z_position", "3.1096");
+					}
+				}
+				State("deform RT Lip", "Scale", "[1,1.5779,1]")
+				{
+					Controller("deform RT Lip", "Dummy")
+					{
+						Property("#boxsize", "[1.81349,1.81349,1.81349]");
+					}
+				}
+				State("deform RT Lip", "X Rotation", "0.392495")
+				{
+					Controller("Rotation", "Euler XYZ")
+					{
+						Property("#axisOrder", "1");
+						Property("#x_rotation", "8.32908");
+						Property("#y_rotation", "-39.7267");
+						Property("#z_rotation", "16.2647");
+					}
+				}
+				State("deform RT Lip", "Y Rotation", "-0.658909")
+				{
+					Controller("Rotation", "Euler XYZ")
+					{
+						Property("#axisOrder", "1");
+						Property("#x_rotation", "8.32908");
+						Property("#y_rotation", "-39.7267");
+						Property("#z_rotation", "16.2647");
+					}
+				}
+				State("deform RT Lip", "Y Position", "1.01402")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "-1.75707");
+						Property("#y_position", "0.761665");
+						Property("#z_position", "3.1096");
+					}
+				}
+				State("deform RT Lip", "Z Rotation", "-0.0021143")
+				{
+					Controller("Rotation", "Euler XYZ")
+					{
+						Property("#axisOrder", "1");
+						Property("#x_rotation", "8.32908");
+						Property("#y_rotation", "-39.7267");
+						Property("#z_rotation", "16.2647");
+					}
+				}
+			}
+			Reaction("#State10", "-1.0")
+			{
+				State("deform RT Lip", "Z Rotation", "0.0652907")
+				{
+					Controller("Rotation", "Euler XYZ")
+					{
+						Property("#axisOrder", "1");
+						Property("#x_rotation", "8.32908");
+						Property("#y_rotation", "-39.7267");
+						Property("#z_rotation", "16.2647");
+					}
+				}
+				State("deform RT Lip", "X Rotation", "0.282275")
+				{
+					Controller("Rotation", "Euler XYZ")
+					{
+						Property("#axisOrder", "1");
+						Property("#x_rotation", "8.32908");
+						Property("#y_rotation", "-39.7267");
+						Property("#z_rotation", "16.2647");
+					}
+				}
+				State("deform RT Lip", "Z Position", "3.0777")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "-1.75707");
+						Property("#y_position", "0.761665");
+						Property("#z_position", "3.1096");
+					}
+				}
+				State("deform RT Lip", "Scale", "[1,0.562824,1]")
+				{
+					Controller("deform RT Lip", "Dummy")
+					{
+						Property("#boxsize", "[1.81349,1.81349,1.81349]");
+					}
+				}
+				State("deform RT Lip", "Y Position", "0.56255")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "-1.75707");
+						Property("#y_position", "0.761665");
+						Property("#z_position", "3.1096");
+					}
+				}
+				State("deform RT Lip", "X Position", "-1.75707")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "-1.75707");
+						Property("#y_position", "0.761665");
+						Property("#z_position", "3.1096");
+					}
+				}
+				State("deform RT Lip", "Y Rotation", "-0.656149")
+				{
+					Controller("Rotation", "Euler XYZ")
+					{
+						Property("#axisOrder", "1");
+						Property("#x_rotation", "8.32908");
+						Property("#y_rotation", "-39.7267");
+						Property("#z_rotation", "16.2647");
+					}
+				}
+			}
+		}
+		Slave("deform LT Lip", "[1.98004,-11.7743,163.152]", "(quat 0.74328 0.339893 0.123742 0.562756)", "[0.999999,1,1]")
+		{
+			Reaction("#State08", "0.0")
+			{
+				State("deform LT Lip", "X Rotation", "0.145369")
+				{
+					Controller("Rotation", "Euler XYZ")
+					{
+						Property("#axisOrder", "1");
+						Property("#x_rotation", "8.32902");
+						Property("#y_rotation", "39.7267");
+						Property("#z_rotation", "-16.2647");
+					}
+				}
+				State("deform LT Lip", "X Position", "1.95432")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "1.95432");
+						Property("#y_position", "0.776684");
+						Property("#z_position", "3.24806");
+					}
+				}
+				State("deform LT Lip", "Z Rotation", "-0.283872")
+				{
+					Controller("Rotation", "Euler XYZ")
+					{
+						Property("#axisOrder", "1");
+						Property("#x_rotation", "8.32902");
+						Property("#y_rotation", "39.7267");
+						Property("#z_rotation", "-16.2647");
+					}
+				}
+				State("deform LT Lip", "Scale", "[1,1,1]")
+				{
+					Controller("deform LT Lip", "Dummy")
+					{
+						Property("#boxsize", "[1.81349,1.81349,1.81349]");
+					}
+				}
+				State("deform LT Lip", "Y Position", "0.776684")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "1.95432");
+						Property("#y_position", "0.776684");
+						Property("#z_position", "3.24806");
+					}
+				}
+				State("deform LT Lip", "Z Position", "3.24806")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "1.95432");
+						Property("#y_position", "0.776684");
+						Property("#z_position", "3.24806");
+					}
+				}
+				State("deform LT Lip", "Y Rotation", "0.693361")
+				{
+					Controller("Rotation", "Euler XYZ")
+					{
+						Property("#axisOrder", "1");
+						Property("#x_rotation", "8.32902");
+						Property("#y_rotation", "39.7267");
+						Property("#z_rotation", "-16.2647");
+					}
+				}
+			}
+			Reaction("#State09", "1.0")
+			{
+				State("deform LT Lip", "Z Position", "3.32998")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "1.95432");
+						Property("#y_position", "0.776684");
+						Property("#z_position", "3.24806");
+					}
+				}
+				State("deform LT Lip", "X Position", "1.95432")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "1.95432");
+						Property("#y_position", "0.776684");
+						Property("#z_position", "3.24806");
+					}
+				}
+				State("deform LT Lip", "Scale", "[1,1.5779,1]")
+				{
+					Controller("deform LT Lip", "Dummy")
+					{
+						Property("#boxsize", "[1.81349,1.81349,1.81349]");
+					}
+				}
+				State("deform LT Lip", "X Rotation", "0.451933")
+				{
+					Controller("Rotation", "Euler XYZ")
+					{
+						Property("#axisOrder", "1");
+						Property("#x_rotation", "8.32902");
+						Property("#y_rotation", "39.7267");
+						Property("#z_rotation", "-16.2647");
+					}
+				}
+				State("deform LT Lip", "Y Rotation", "0.623114")
+				{
+					Controller("Rotation", "Euler XYZ")
+					{
+						Property("#axisOrder", "1");
+						Property("#x_rotation", "8.32902");
+						Property("#y_rotation", "39.7267");
+						Property("#z_rotation", "-16.2647");
+					}
+				}
+				State("deform LT Lip", "Y Position", "1.01691")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "1.95432");
+						Property("#y_position", "0.776684");
+						Property("#z_position", "3.24806");
+					}
+				}
+				State("deform LT Lip", "Z Rotation", "0.101442")
+				{
+					Controller("Rotation", "Euler XYZ")
+					{
+						Property("#axisOrder", "1");
+						Property("#x_rotation", "8.32902");
+						Property("#y_rotation", "39.7267");
+						Property("#z_rotation", "-16.2647");
+					}
+				}
+			}
+			Reaction("#State10", "-1.0")
+			{
+				State("deform LT Lip", "Z Rotation", "-0.0652905")
+				{
+					Controller("Rotation", "Euler XYZ")
+					{
+						Property("#axisOrder", "1");
+						Property("#x_rotation", "8.32902");
+						Property("#y_rotation", "39.7267");
+						Property("#z_rotation", "-16.2647");
+					}
+				}
+				State("deform LT Lip", "X Rotation", "0.282274")
+				{
+					Controller("Rotation", "Euler XYZ")
+					{
+						Property("#axisOrder", "1");
+						Property("#x_rotation", "8.32902");
+						Property("#y_rotation", "39.7267");
+						Property("#z_rotation", "-16.2647");
+					}
+				}
+				State("deform LT Lip", "Z Position", "3.21615")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "1.95432");
+						Property("#y_position", "0.776684");
+						Property("#z_position", "3.24806");
+					}
+				}
+				State("deform LT Lip", "Scale", "[1,0.562824,1]")
+				{
+					Controller("deform LT Lip", "Dummy")
+					{
+						Property("#boxsize", "[1.81349,1.81349,1.81349]");
+					}
+				}
+				State("deform LT Lip", "Y Position", "0.577569")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "1.95432");
+						Property("#y_position", "0.776684");
+						Property("#z_position", "3.24806");
+					}
+				}
+				State("deform LT Lip", "X Position", "1.95432")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "1.95432");
+						Property("#y_position", "0.776684");
+						Property("#z_position", "3.24806");
+					}
+				}
+				State("deform LT Lip", "Y Rotation", "0.656149")
+				{
+					Controller("Rotation", "Euler XYZ")
+					{
+						Property("#axisOrder", "1");
+						Property("#x_rotation", "8.32902");
+						Property("#y_rotation", "39.7267");
+						Property("#z_rotation", "-16.2647");
+					}
+				}
+			}
+		}
+	}
+	Master("Face_Nose_Angle", "#value")
+	{
+		Slave("deform Nose", "[0.0257314,-10.8007,169.703]", "(quat -0.5 -2.38419e-007 1.3411e-007 -0.866026)", "[1,1,0.999999]")
+		{
+			Reaction("#State01", "0.0")
+			{
+				State("deform Nose", "Z Rotation", "6.28319")
+				{
+					Controller("Rotation", "Euler XYZ")
+					{
+						Property("#axisOrder", "1");
+						Property("#x_rotation", "240.0");
+						Property("#y_rotation", "-90.0");
+						Property("#z_rotation", "360.0");
+					}
+				}
+			}
+			Reaction("#State02", "1.0")
+			{
+				State("deform Nose", "Z Rotation", "5.93412")
+				{
+					Controller("Rotation", "Euler XYZ")
+					{
+						Property("#axisOrder", "1");
+						Property("#x_rotation", "240.0");
+						Property("#y_rotation", "-90.0");
+						Property("#z_rotation", "360.0");
+					}
+				}
+			}
+			Reaction("#State03", "-1.0")
+			{
+				State("deform Nose", "Z Rotation", "6.63225")
+				{
+					Controller("Rotation", "Euler XYZ")
+					{
+						Property("#axisOrder", "1");
+						Property("#x_rotation", "240.0");
+						Property("#y_rotation", "-90.0");
+						Property("#z_rotation", "360.0");
+					}
+				}
+			}
+		}
+	}
+	Master("Face_Nose_Bridge", "#value")
+	{
+		Slave("deform Nose2", "[0.02573,-12.1572,167.408]", "(quat 0.5 0 0 0.866026)", "[1,1,0.999999]")
+		{
+			Reaction("#State03", "0.0")
+			{
+				State("deform Nose2", "Z Position", "0.0269165")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "0.0");
+						Property("#y_position", "-2.66644");
+						Property("#z_position", "0.0269165");
+					}
+				}
+				State("deform Nose2", "X Rotation", "4.76837e-007")
+				{
+					Controller("Rotation", "Euler XYZ")
+					{
+						Property("#axisOrder", "1");
+						Property("#x_rotation", "2.73208e-005");
+						Property("#y_rotation", "0.0");
+						Property("#z_rotation", "2.73208e-005");
+					}
+				}
+			}
+			Reaction("#State04", "1.0")
+			{
+				State("deform Nose2", "Z Position", "0.675903")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "0.0");
+						Property("#y_position", "-2.66644");
+						Property("#z_position", "0.0269165");
+					}
+				}
+				State("deform Nose2", "X Rotation", "0.436333")
+				{
+					Controller("Rotation", "Euler XYZ")
+					{
+						Property("#axisOrder", "1");
+						Property("#x_rotation", "2.73208e-005");
+						Property("#y_rotation", "0.0");
+						Property("#z_rotation", "2.73208e-005");
+					}
+				}
+			}
+			Reaction("#State05", "-1.0")
+			{
+				State("deform Nose2", "X Rotation", "-0.261799")
+				{
+					Controller("Rotation", "Euler XYZ")
+					{
+						Property("#axisOrder", "1");
+						Property("#x_rotation", "2.73208e-005");
+						Property("#y_rotation", "0.0");
+						Property("#z_rotation", "2.73208e-005");
+					}
+				}
+				State("deform Nose2", "Z Position", "-0.829285")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "0.0");
+						Property("#y_position", "-2.66644");
+						Property("#z_position", "0.0269165");
+					}
+				}
+			}
+		}
+	}
+	Master("Face_Nose_Broken", "#value")
+	{
+		Slave("deform Nose3", "[0.0257295,-12.9975,165.876]", "(quat 0.707107 6.52098e-005 -0.00024361 0.707107)", "[1,1,1]")
+		{
+			Reaction("#State06", "0.0")
+			{
+				State("deform Nose3", "X Position", "4.76837e-007")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "4.76837e-007");
+						Property("#y_position", "-4.41268");
+						Property("#z_position", "-0.0110168");
+					}
+				}
+				State("deform Nose3", "Y Rotation", "-3.14159")
+				{
+					Controller("Rotation", "Euler XYZ")
+					{
+						Property("#axisOrder", "1");
+						Property("#x_rotation", "210.0");
+						Property("#y_rotation", "-180.0");
+						Property("#z_rotation", "179.971");
+					}
+				}
+			}
+			Reaction("#State07", "1.0")
+			{
+				State("deform Nose3", "X Position", "0.195283")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "4.76837e-007");
+						Property("#y_position", "-4.41268");
+						Property("#z_position", "-0.0110168");
+					}
+				}
+				State("deform Nose3", "Y Rotation", "-3.21714")
+				{
+					Controller("Rotation", "Euler XYZ")
+					{
+						Property("#axisOrder", "1");
+						Property("#x_rotation", "210.0");
+						Property("#y_rotation", "-180.0");
+						Property("#z_rotation", "179.971");
+					}
+				}
+			}
+			Reaction("#State08", "-1.0")
+			{
+				State("deform Nose3", "Y Rotation", "-3.06633")
+				{
+					Controller("Rotation", "Euler XYZ")
+					{
+						Property("#axisOrder", "1");
+						Property("#x_rotation", "210.0");
+						Property("#y_rotation", "-180.0");
+						Property("#z_rotation", "179.971");
+					}
+				}
+				State("deform Nose3", "X Position", "-0.175826")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "4.76837e-007");
+						Property("#y_position", "-4.41268");
+						Property("#z_position", "-0.0110168");
+					}
+				}
+			}
+		}
+		Slave("deform Nose2", "[0.02573,-12.1572,167.408]", "(quat 0.5 0 0 0.866026)", "[1,1,0.999999]")
+		{
+			Reaction("#State06", "0.0")
+			{
+				State("deform Nose2", "X Position", "0.0")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "0.0");
+						Property("#y_position", "-2.66644");
+						Property("#z_position", "0.0269165");
+					}
+				}
+				State("deform Nose2", "Y Rotation", "0.0")
+				{
+					Controller("Rotation", "Euler XYZ")
+					{
+						Property("#axisOrder", "1");
+						Property("#x_rotation", "2.73208e-005");
+						Property("#y_rotation", "0.0");
+						Property("#z_rotation", "2.73208e-005");
+					}
+				}
+			}
+			Reaction("#State07", "1.0")
+			{
+				State("deform Nose2", "X Position", "0.478882")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "0.0");
+						Property("#y_position", "-2.66644");
+						Property("#z_position", "0.0269165");
+					}
+				}
+				State("deform Nose2", "Y Rotation", "0.0872665")
+				{
+					Controller("Rotation", "Euler XYZ")
+					{
+						Property("#axisOrder", "1");
+						Property("#x_rotation", "2.73208e-005");
+						Property("#y_rotation", "0.0");
+						Property("#z_rotation", "2.73208e-005");
+					}
+				}
+			}
+			Reaction("#State08", "-1.0")
+			{
+				State("deform Nose2", "Y Rotation", "-0.174533")
+				{
+					Controller("Rotation", "Euler XYZ")
+					{
+						Property("#axisOrder", "1");
+						Property("#x_rotation", "2.73208e-005");
+						Property("#y_rotation", "0.0");
+						Property("#z_rotation", "2.73208e-005");
+					}
+				}
+				State("deform Nose2", "X Position", "-0.47314")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "0.0");
+						Property("#y_position", "-2.66644");
+						Property("#z_position", "0.0269165");
+					}
+				}
+			}
+		}
+	}
+	Master("Face_Nose_Depth", "#value")
+	{
+		Slave("deform Nose", "[0.0257314,-10.8007,169.703]", "(quat -0.5 -2.38419e-007 1.3411e-007 -0.866026)", "[1,1,0.999999]")
+		{
+			Reaction("#State01", "0.0")
+			{
+				State("deform Nose", "Y Position", "11.7526")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "9.50726");
+						Property("#y_position", "11.7526");
+						Property("#z_position", "0.025726");
+					}
+				}
+			}
+			Reaction("#State02", "1.0")
+			{
+				State("deform Nose", "Y Position", "13.4958")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "9.50726");
+						Property("#y_position", "11.7526");
+						Property("#z_position", "0.025726");
+					}
+				}
+			}
+			Reaction("#State03", "-1.0")
+			{
+				State("deform Nose", "Y Position", "10.5153")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "9.50726");
+						Property("#y_position", "11.7526");
+						Property("#z_position", "0.025726");
+					}
+				}
+			}
+		}
+	}
+	Master("Face_Nose_Position", "#value")
+	{
+		Slave("deform Nose", "[0.0257314,-10.8007,169.703]", "(quat -0.5 -2.38419e-007 1.3411e-007 -0.866026)", "[1,1,0.999999]")
+		{
+			Reaction("#State01", "0.0")
+			{
+				State("deform Nose", "X Position", "9.50726")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "9.50726");
+						Property("#y_position", "11.7526");
+						Property("#z_position", "0.025726");
+					}
+				}
+			}
+			Reaction("#State02", "1.0")
+			{
+				State("deform Nose", "X Position", "10.4584")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "9.50726");
+						Property("#y_position", "11.7526");
+						Property("#z_position", "0.025726");
+					}
+				}
+			}
+			Reaction("#State03", "-1.0")
+			{
+				State("deform Nose", "X Position", "8.42862")
+				{
+					Controller("Position", "Position XYZ")
+					{
+						Property("#x_position", "9.50726");
+						Property("#y_position", "11.7526");
+						Property("#z_position", "0.025726");
+					}
+				}
+			}
+		}
+	}
+	Master("Face_Nose_Tip", "#value")
+	{
+		Slave("deform Nose3", "[0.0257295,-12.9975,165.876]", "(quat 0.707107 6.52098e-005 -0.00024361 0.707107)", "[1,1,1]")
+		{
+			Reaction("#State01", "0.0")
+			{
+				State("deform Nose3", "X Rotation", "3.66519")
+				{
+					Controller("Rotation", "Euler XYZ")
+					{
+						Property("#axisOrder", "1");
+						Property("#x_rotation", "210.0");
+						Property("#y_rotation", "-180.0");
+						Property("#z_rotation", "179.971");
+					}
+				}
+			}
+			Reaction("#State02", "1.0")
+			{
+				State("deform Nose3", "X Rotation", "2.87979")
+				{
+					Controller("Rotation", "Euler XYZ")
+					{
+						Property("#axisOrder", "1");
+						Property("#x_rotation", "210.0");
+						Property("#y_rotation", "-180.0");
+						Property("#z_rotation", "179.971");
+					}
+				}
+			}
+			Reaction("#State03", "-1.0")
+			{
+				State("deform Nose3", "X Rotation", "4.62512")
+				{
+					Controller("Rotation", "Euler XYZ")
+					{
+						Property("#axisOrder", "1");
+						Property("#x_rotation", "210.0");
+						Property("#y_rotation", "-180.0");
+						Property("#z_rotation", "179.971");
+					}
+				}
+			}
+		}
+	}
+	Master("Face_Nose_Width", "#value")
+	{
+		Slave("deform Nose3", "[0.0257295,-12.9975,165.876]", "(quat 0.707107 6.52098e-005 -0.00024361 0.707107)", "[1,1,1]")
+		{
+			Reaction("#State01", "0.0")
+			{
+				State("deform Nose3", "X Scale", "1.0")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+			Reaction("#State02", "1.0")
+			{
+				State("deform Nose3", "X Scale", "1.4242")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+			Reaction("#State03", "-1.0")
+			{
+				State("deform Nose3", "X Scale", "0.763277")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+		}
+		Slave("deform Nose2", "[0.02573,-12.1572,167.408]", "(quat 0.5 0 0 0.866026)", "[1,1,0.999999]")
+		{
+			Reaction("#State01", "0.0")
+			{
+				State("deform Nose2", "X Scale", "1.0")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+			Reaction("#State02", "1.0")
+			{
+				State("deform Nose2", "X Scale", "1.35772")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+			Reaction("#State03", "-1.0")
+			{
+				State("deform Nose2", "X Scale", "0.675555")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+		}
+		Slave("deform Nose1", "[0.0257311,-11.2665,169.183]", "(quat 0.422618 0 -1.81883e-007 0.906308)", "[1,1,1]")
+		{
+			Reaction("#State01", "0.0")
+			{
+				State("deform Nose1", "X Scale", "1.0")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+			Reaction("#State02", "1.0")
+			{
+				State("deform Nose1", "X Scale", "1.58233")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+			Reaction("#State03", "-1.0")
+			{
+				State("deform Nose1", "X Scale", "0.437111")
+				{
+					Controller("Scale", "ScaleXYZ")
+					{
+						Property("#x_scale", "100.0");
+						Property("#y_scale", "100.0");
+						Property("#z_scale", "100.0");
+					}
+				}
+			}
+		}
+	}
+}

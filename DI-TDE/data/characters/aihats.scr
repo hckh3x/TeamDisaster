@@ -1,0 +1,25 @@
+!Skin(s)
+!Hat(s)
+
+
+//---------------------------
+Skin("SoldierA")
+{
+	Hat("SoldierHatA.MSH")
+}
+
+Skin("SoldierE")
+{
+	Hat("Beret.MSH")
+
+}
+
+Skin("RebelE")
+{
+	Hat("BaseballCap.MSH")
+}
+
+Skin("SoldierG")
+{
+	Hat("SoldierCap.MSH")
+}

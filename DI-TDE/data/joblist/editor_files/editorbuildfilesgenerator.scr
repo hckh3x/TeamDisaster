@@ -1,0 +1,8 @@
+sub main()
+{
+    JoblistSinglePlayerFilesPath("data/joblist/mapssingle");
+    JoblistMultiPlayerFilesPath("data/joblist/mapsnet");
+    JoblistSinglePlayerTemplate("data/joblist/editor_files/SinglePlayerJoblistTemplate.jl");
+    JoblistMultiPlayerTemplate("data/joblist/editor_files/MultiPlayerJoblistTemplate.jl");
+    BatchFilesPath("../#BuildTools");
+}

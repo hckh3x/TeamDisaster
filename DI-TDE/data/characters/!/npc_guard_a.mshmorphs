@@ -1,0 +1,53 @@
+export int SKIN = 1;
+export int MORPH = 1;
+export int HIDE = 1;
+
+sub morphs()
+{
+  version(2);
+  // node(name, lod_index, is_skinning, is_hiding, is_morphing, morph_offset_vertices);
+  node("beard", 0, SKIN, 0, MORPH, 0);
+  node("beard", 1, SKIN, 0, MORPH, 172);
+  node("beard_b", 0, SKIN, 0, MORPH, 256);
+  node("beard_b", 1, SKIN, 0, MORPH, 1577);
+  node("body", 0, SKIN, HIDE, MORPH, 2235);
+  node("body", 1, SKIN, HIDE, MORPH, 10598);
+  node("flashlight", 0, SKIN, 0, MORPH, 13867);
+  node("flashlight", 1, SKIN, 0, MORPH, 14082);
+  node("glasses_a", 0, SKIN, 0, 0, 0);
+  node("glasses_a", 1, SKIN, 0, 0, 0);
+  node("glasses_b", 0, SKIN, 0, 0, 0);
+  node("glasses_b", 1, SKIN, 0, 0, 0);
+  node("gore", 0, SKIN, 0, MORPH, 14219);
+  node("guard_stuff", 0, SKIN, 0, MORPH, 14283);
+  node("guard_stuff", 1, SKIN, 0, MORPH, 15317);
+  node("hair_a", 0, SKIN, 0, MORPH, 15897);
+  node("hair_a", 1, SKIN, 0, MORPH, 16998);
+  node("hair_b", 0, SKIN, 0, MORPH, 17537);
+  node("hair_b", 1, SKIN, 0, MORPH, 19205);
+  node("hair_c", 0, SKIN, 0, MORPH, 19954);
+  node("hair_c", 1, SKIN, 0, MORPH, 20868);
+  node("hair_d", 0, SKIN, 0, MORPH, 21337);
+  node("hair_d", 1, SKIN, 0, MORPH, 24039);
+  node("hair_e", 0, SKIN, 0, MORPH, 26218);
+  node("hair_e", 1, SKIN, 0, MORPH, 30191);
+  node("head", 0, SKIN, 0, MORPH, 33399);
+  node("head", 1, SKIN, 0, MORPH, 36304);
+  node("head_bandage", 0, SKIN, 0, 0, 0);
+  node("head_bandage", 1, SKIN, 0, 0, 0);
+  node("head_cut_1", 0, SKIN, 0, MORPH, 38082);
+  node("head_cut_1", 1, SKIN, 0, MORPH, 38697);
+  node("head_cut_2", 0, SKIN, 0, MORPH, 39057);
+  node("head_cut_2", 1, SKIN, 0, MORPH, 39426);
+  node("head_cut_3", 0, SKIN, 0, MORPH, 39625);
+  node("head_cut_3", 1, SKIN, 0, MORPH, 39749);
+  node("m_bballcap_b", 0, SKIN, 0, MORPH, 39823);
+  node("m_bballcap_b", 1, SKIN, 0, MORPH, 40840);
+  node("m_bballcap_b_zombie", 0, SKIN, 0, 0, 0);
+  node("m_bballcap_b_zombie", 1, SKIN, 0, 0, 0);
+  node("moustache_a", 0, SKIN, 0, MORPH, 41415);
+  node("moustache_a", 1, SKIN, 0, MORPH, 41572);
+  node("moustache_b", 0, SKIN, 0, MORPH, 41669);
+  node("moustache_b", 1, SKIN, 0, MORPH, 42598);
+  total(43059);
+}

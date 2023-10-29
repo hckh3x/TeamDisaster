@@ -1,0 +1,20 @@
+//Font Aliases (styles)
+
+//FontStyle(sFontStyleID, sEngineFontID, fScale, fOutlineSize, fCharacterSpacing, fSpecialSignsScale)
+//creates font style (alias) for sEngineFont (the one actually loaded from .dds)
+!FontStyle(s, s, f, f, f, f)
+
+//FontStyleAlias(sFontStyleID, sFontStyleID, fAdditionalScale, fOutlineSize, fCharacterSpacing, fSpecialSignsScale)
+//creates font style based on previously defined style (scales are multiplied together)
+//WARNING: aliases cant reference to each another more than 10 times (not mentioning they must not create loops)
+!FontStyleAlias(s, s, f, f, f, f)
+
+//------------ fonts used in DeadIsland only in Intro Module ------------------//
+
+FontStyle("TextMedium",		  "LLRubberGrotesque 44", 0.8, 1, 0.0, 1.0)
+FontStyle("TextMediumBigger", "LLRubberGrotesque 44", 0.8, 1, 0.0, 1.0)
+FontStyle("TextNormal",		  "LLRubberGrotesque 44", 1.0, 1, 0.0, 1.0)
+FontStyle("TextBig",		  "LLRubberGrotesque 44", 1.2, 1, 0.0, 1.0)
+
+
+

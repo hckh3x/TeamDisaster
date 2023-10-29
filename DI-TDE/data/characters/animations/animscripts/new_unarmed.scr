@@ -1,0 +1,36 @@
+//===================================== uniwersalne - niezlaezne od broni ============================================
+/*
+SeqTrack( "Universal_Stand",			"M_FPP_Unarmed_Stand.anm2",	0, 10, 30, 1, 0.5 )
+SeqTrack( "Universal_Grabed_Loop",		"M_FPP_Unarmed_Grabbed.anm2",22, 96, 30, 1, 0.5 )
+SeqTrack( "Universal_Clench_Loop",		"M_FPP_Stick_Stand_Melee_Clinch_Loop.anm2",0, 90, 30, 1, 0.5 )
+SeqTrack( "Universal_Clench_End",		"M_FPP_Stick_Stand_Melee_Clinch_End.anm2",0, 41, 30, 1, 0.5 )
+SeqTrack( "Universal_Push_Enemy",		"M_FPP_Stick_Stand_Melee_Push.anm2", 10, 40, 30, 1, 0.5)
+
+SeqTrack( "Universal_Knockdown_Fly",	"Player_Melee_Hitreact_Strengh_01.anm2",	0, 60, 60, 1, 0.5 )
+SeqTrack( "Universal_Knockdown_Lay",	"Player_Melee_Hitreact_Strengh_01.anm2",	50, 110, 30, 1, 0.5 )
+SeqTrack( "Universal_Knockdown_WakeUp",	"Player_Melee_Hitreact_Strengh_01.anm2",	110, 162, 30, 1, 0.5 )
+
+SeqTrack( "Universal_TakeObject_Beg",	"Player_Object_Take.anm2",			0, 20, 30, 1, 0.5 )
+SeqTrack( "Universal_TakeObject_End",	"Player_Object_Take.anm2",			15, 30, 30, 1, 0.5 )
+
+SeqTrack( "Universal_KickBeg",			"Ray_Unarmed_KickLeft.anm2",			0, 16, 45, 1, 0.5 )
+SeqTrack( "Universal_KickLoop",			"Ray_Unarmed_KickLeft.anm2",			16, 27, 45, 1, 0.5 )
+SeqTrack( "Universal_KickEnd",			"Ray_Unarmed_KickLeft.anm2",			27, 55, 45, 1, 0.5 )
+
+SeqTrack( "Universal_CarryObjectBeg",	"Player_Throw_Weapon.anm2",			0, 30, 30, 1, 0.5 )
+SeqTrack( "Universal_CarryObjectLoop",	"Player_Throw_Weapon.anm2",			39, 65, 30, 1, 0.5 )
+SeqTrack( "Universal_CarryObjectEnd",	"Player_Throw_Weapon.anm2",			66, 92, 30, 1, 0.5 )
+
+SeqTrack( "Universal_JumpBeg",			"Billy_Unarmed_JumpFull.anm2",		0, 13, 30, 1, 0.5 )
+SeqTrack( "Universal_JumpLoop",			"Billy_Unarmed_JumpFull.anm2",		13, 14, 1, 1, 0.5 )
+SeqTrack( "Universal_JumpEnd",			"Billy_Unarmed_JumpFull.anm2",		14, 27, 60, 1, 0.5 )
+{
+	Event( 4.0, 0 )
+	Event( 9.0, 1 )
+}
+
+SeqTrack( "Universal_HitReaction",		"B_React_Upset_Clinch.anm2",           15, 60, 30, 1, 0.5)
+
+
+
+*/

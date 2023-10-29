@@ -1,0 +1,79 @@
+
+
+// intro
+!include("cin00add.scr")
+!include("cin00shota.scr")
+!include("cin00shotb.scr")
+!include("cin00shotc.scr")
+!include("cin00shotd.scr")
+!include("cin00shote.scr")
+!include("cin00shotf.scr")
+!include("cin00shotg.scr")
+!include("cin00shoth.scr")
+!include("PeopleFalling.scr")
+!include("wake_up.scr")
+!include("cin_prologue_running.scr")
+!include("CIN_ElevatorShaft.scr")
+
+
+
+// ACT1A 
+!include("CIN00_ACT1A_WakeUp.scr")
+!include("CIN01_ACT1A_Voice.scr")
+!include("CIN_ACT1A_Removal.scr")
+!include("CIN07_Kill_Father.scr")
+!include("burning_bodies.scr")
+!include("CIN_BOSS.scr")
+!include("CIN03.scr")
+!include("CIN03_new.scr")
+!include("Opendoor.scr")
+!include("CIN_PARKINGLOT.scr")
+!include("CIN_PARKINGLOT_new.scr")
+!include("CIN_ACT2A_ManRam.scr")
+!include("OutOfBungalow.scr")
+!include("Sinamoitest.scr")
+!include("CIN_Corruptor_introduction.scr")
+!include("CIN04_Hotel.scr")
+!include("CIN_ACT1A_14.scr")
+!include("CIN_Wake.scr")
+!include("CIN_suicider.scr")
+!include("CIN08.scr")
+!include("Cin_Mechanic.scr")
+
+// ACT3A
+!include("CIN_Fighter_introduction.scr")
+!include("CIN_ACT3A_Moven_07.scr")
+!include("CIN05.scr")
+!include("Cin_afran.scr")
+
+// ACT3B
+!include("CIN14.scr")
+!include("CIN09.scr")
+
+// ACT3C
+
+!include("Cin06.scr")
+
+
+// ACT4A
+!include("CIN10.scr")
+!include("CIN11_outro.scr")
+
+// ACT4B
+!include("CIN_Prison.scr")
+
+
+// CityHallA
+!include("CIN02.scr")
+
+
+
+// Market
+!include("Cin_Bridge.scr")
+
+// DLC Arena
+//!include("CIN_DLC1_Arena.scr") // included by CIN_DLC_RW.scr anyway
+
+// DLC RW
+!include("CIN_DLC_RW.scr")
+

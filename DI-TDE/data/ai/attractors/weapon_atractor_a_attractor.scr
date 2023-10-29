@@ -1,0 +1,20 @@
+!include("ai_data.def")
+!include("human_timing_events.def")
+!include("human_activities.def")
+!include("human_goals.def")
+
+StrongAttractor()
+
+MultiSlot("", 1, IDLE_STAND, 1, 1.0, 8, 1.50)     // MunDee Estuvo aquí
+{
+    AiTypeDataSet("zombie")
+    {
+        Data("idle:standing:stand:none:none:prepare:none", -2, "mz_upset_crouch_eating_v02")
+        Data("idle:standing:stand:none:none:none:none", -2, "mz_b_upset_loop_eating_v03")
+        Data("idle:standing:stand:none:none:none:finish", -2, "mz_b_upset_crouch_eating_standup_v03")
+        Data("idle:laying:stand:none:none:none:none", -2, "mz_b_upset_loop_eating_v03")
+    }
+    
+    //DeactivateOn(GOAL_REACT_ON_ENEMY)
+    DiscardOn(GOAL_REACT_ON_HIT)
+}

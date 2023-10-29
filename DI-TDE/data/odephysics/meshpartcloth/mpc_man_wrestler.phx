@@ -1,0 +1,65 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////
+!include("MeshPartCloth.def")
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+MeshPartCloth()
+{
+    BonesGridSize(1, 5)
+
+    Bone(0, 0, "Bone_Guts_00",  1, -1, -1) // CM2M
+    Bone(0, 1, "Bone_Guts_01",  0, -1, -1) // CM2M
+    Bone(0, 2, "Bone_Guts_02",  0, -1, -1)  // CM2M
+    Bone(0, 3, "Bone_Guts_03",  0, -1, -1)  // CM2M
+    Bone(0, 4, "",                    0,  -1, -1)    // CM2M
+
+   // Clip(1, 4, 0, 4,            -1, -1) // CM2M
+    //Clip(1, 5, 0, 5,            -1, -1) // CM2M
+
+   // CalcNormalX(0, 4, 0, 2, 1, 2)  
+
+    CollisionSlide(1)
+    CollisionBounce(0)
+    CollisionSpeedMod(1)
+    
+	CollisionCapsule("bip01 l thigh",0.15, 0.2)    // MunDee Estuvo aquí
+    CollisionCapsule("bip01 r thigh",0.15, 0.2)    // MunDee Estuvo aquí
+	CollisionCapsule("bip01 pelvis",0.1, 0.2)    // MunDee Estuvo aquí
+    
+	
+	
+	//CollisionMinDistance(0, 1, "bip01 l thigh", [0.0,0.0,0.0],0.0, 0)    // MunDee Estuvo aquí
+    //CollisionMaxDistance(0, 1, "bip01 l thigh", [0.5,0.5,0.5],0.0, 0)    // MunDee Estuvo aquí
+	//CollisionMinDistance(0, 1, "bip01 r thigh", [0.0,0.0,0.0],0.0, 0)    // MunDee Estuvo aquí
+    //CollisionMaxDistance(0, 1, "bip01 r thigh", [0.5,0.5,0.5],0.0, 0)    // MunDee Estuvo aquí
+	//CollisionMinDistance(0, 1, "bip01 pelvis", [0.0,0.0,0.0],0.0, 0)    // MunDee Estuvo aquí
+    //CollisionMaxDistance(0, 1, "bip01 pelvis", [0.5,0.5,0.5],0.0, 0)    // MunDee Estuvo aquí
+
+
+
+
+
+	
+    NodeCollisionSphereRadius(0.3)    // MunDee Estuvo aquí
+    ExternalCollisionAffectMul(0)
+    
+    SynchroWithPhysics(0)
+
+    GravityMul(1)
+        
+    Mass(1)
+    Viscous(2)
+    AirFriction(1)
+    StructuralStiffness(8000, 0)
+    ShearStiffness(4000, 0)
+    FlexionStiffness(4000, 0)
+
+    HorizontSpringRatio(0)
+    CheckLengthsStepsPerSec(0)
+    WindInfluence(1)
+
+    ObjectMoveMul(1)
+    AnimationMoveMul(0.7)
+}
+
+
+

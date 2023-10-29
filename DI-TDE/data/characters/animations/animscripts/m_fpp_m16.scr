@@ -1,0 +1,24 @@
+//----- animacje z M16
+
+SeqTrackAlias( "FPP_M16_StandNoise",            "FPP_ak47_StandNoise")
+SeqTrackAlias( "FPP_M16_MoveForwardNoise",      "FPP_ak47_MoveForwardNoise")
+SeqTrackAlias( "FPP_M16_MoveRightNoise",		"FPP_ak47_MoveForwardNoise")
+SeqTrackAlias( "FPP_M16_MoveLeftNoise",			"FPP_ak47_MoveForwardNoise")
+SeqTrackAlias( "FPP_M16_MoveBackwardNoise",		"FPP_ak47_MoveForwardNoise")
+
+                                            
+SeqTrack( "FPP_M16_Reload", 			    "M_FPP_AK47_Reload.anm2" ,0 , 244, 60, 1, 0.3)				
+{                                           
+	Event(0,   EVENT_M16_RELOAD_01)      
+	Event(56,  EVENT_M16_RELOAD_02)      
+	Event(101, EVENT_M16_RELOAD_03)      
+	Event(149, EVENT_M16_RELOAD_04)      
+	Event(180, EVENT_M16_RELOAD_05)      
+}                                           
+SeqTrackAlias( "FPP_M16_Shot", 			"FPP_AK47_Shot") 					
+SeqTrackAlias( "FPP_M16_Stand", 	    "FPP_AK47_Stand") 								                            
+SeqTrackAlias( "FPP_M16_Aim_Stand", 	"FPP_AK47_Aim_Stand") 			
+SeqTrackAlias( "FPP_M16_Aim_Shot", 		"FPP_AK47_Aim_Shot") 				                                         
+SeqTrackAlias( "FPP_M16_ShotEmpty", 	"FPP_AK47_ShotEmpty") 			
+SeqTrackAlias( "FPP_M16_Aim_ShotEmpty", "FPP_AK47_Aim_ShotEmpty") 		
+SeqTrackAlias( "FPP_M16_Wall", 			"FPP_AK47_Wall")			

@@ -1,0 +1,14 @@
+$_HEAD(i, 0)
+$_UPPERARM_L(i, 1)
+$_UPPERARM_R(i, 2)
+$_FOREARM_L(i, 3)
+$_FOREARM_R(i, 4)
+$_THIGH_L(i, 5)
+$_THIGH_R(i, 6)
+
+//!BodyElement(i, i, i, f, f, s, s, s, i, f, i)//element, durability, die_after_destroy, damage_per_sec, mass, fx1, fx2, fx_mesh_elem, hide_chanel, hide_weight, morph_replicate
+!AddRelics(s, s, s)//nazwy/a relica/grupy relicow ktore odpadaja po oderwaniu konczyny
+!AddRelicsWithDestroyedChild(s, s, s)//nazwy/a relica/grupy relicow ktore odpadaja po oderwaniu konczyny KTOREJ CHILD JUZ ZOSTAL OBCIETY
+!AddMesh2Disable(s)// mesh ktory jest wylaczany
+
+!BurningTempo(f)// szybkosc spalania sie

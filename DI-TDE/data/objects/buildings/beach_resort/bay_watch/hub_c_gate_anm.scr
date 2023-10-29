@@ -1,0 +1,2 @@
+SeqTrack( "Open", "hub_c_gate_anm.anm2", 0, 150, 30, 0, 0.5 )
+SeqTrack( "Close", "hub_c_gate_anm.anm2", 150, 0, 30, 0, 0.5 )

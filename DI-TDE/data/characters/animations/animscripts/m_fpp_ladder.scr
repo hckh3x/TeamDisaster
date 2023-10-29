@@ -1,0 +1,73 @@
+//--------------------------------- Ladder ------------------------------//
+
+SeqTrack("FPP_Unarmed_Ladder_GetOut", 		"M_FPP_Unarmed_Ladder_GetOut.anm2"	, 0, 77, 30, 1, 0.3)
+{
+    Event(14, EVENT_LADDER_LEFT)
+    Event(35, EVENT_LADDER_RIGHT)
+    Event(35, EVENT_LADDER_GOING_UP_START)
+    Event(49, EVENT_LADDER_LEFT)
+	Event(50, EVENT_LADDER_GOING_UP_FINISH)
+    Event(51, VIS_EVENT_STEP_LEFT)
+}
+
+SeqTrack("FPP_Unarmed_Ladder_ClimbUpR", 	"M_FPP_Unarmed_Ladder_Idle.anm2"		, 0, 15, 30, 1, 0.3)
+{
+	Event(14, EVENT_LADDER_RIGHT)
+}
+SeqTrack("FPP_Unarmed_Ladder_ClimbUpL", 	"M_FPP_Unarmed_Ladder_Idle.anm2"		, 15, 30, 30, 1, 0.3)
+{
+	Event(13, EVENT_LADDER_LEFT)
+}
+
+SeqTrack("FPP_Unarmed_Ladder_ClimbDownL", 	"M_FPP_Unarmed_Ladder_Idle.anm2"		, 30, 15, 30, 1, 0.3)
+{
+	Event(12, EVENT_LADDER_LEFT)
+}
+SeqTrack("FPP_Unarmed_Ladder_ClimbDownR", 	"M_FPP_Unarmed_Ladder_Idle.anm2"		, 15, 0, 30, 1, 0.3)
+{
+	Event(14, EVENT_LADDER_RIGHT)
+}
+SeqTrack("FPP_Unarmed_Ladder_PositionsL", 	"M_FPP_Unarmed_Ladder_Idle_Poses.anm2"	, 2, 8, 20, 1, 0.3)
+SeqTrack("FPP_Unarmed_Ladder_PositionsR", 	"M_FPP_Unarmed_Ladder_Idle_Poses.anm2"	, 17, 23, 20, 1, 0.3)
+
+SeqTrack("FPP_Unarmed_Ladder_GetInPreL1",       "M_FPP_Unarmed_Ladder_GetINTO_L1.anm2"   , 0, 15, 30, 1, 0.3)
+{
+    Event(0,  EVENT_LADDER_GOING_DOWN_START)
+    Event(15, EVENT_LADDER_RIGHT)
+}
+
+//TrackDef("FPP_Unarmed_Ladder_GetInPreL1_a",  "M_FPP_Unarmed_Ladder_GetINTO_L1.anm",     0, 15)
+//TrackDef("FPP_Unarmed_Ladder_GetInPreL1_b",  "M_FPP_Unarmed_Ladder_GetINTO_L2.anm",     0, 15)
+//Seq("FPP_Unarmed_Ladder_GetInPreL1", 30, 1, 0.3)
+//{
+//    Track("FPP_Unarmed_Ladder_GetInPreL1_a",   0, 1, 0.0)
+//    Track("FPP_Unarmed_Ladder_GetInPreL1_b",  15, 1, 0.3)
+//}
+
+SeqTrack("FPP_Unarmed_Ladder_GetInPreR1",       "M_FPP_Unarmed_Ladder_GetINTO_R1.anm2"   , 0, 15, 30, 1, 0.3)
+{
+    Event(0,  EVENT_LADDER_GOING_DOWN_START)
+    Event(15, EVENT_LADDER_RIGHT)
+}
+
+//TrackDef("FPP_Unarmed_Ladder_GetInPreR1_a",  "M_FPP_Unarmed_Ladder_GetINTO_R1.anm",     0, 15)
+//TrackDef("FPP_Unarmed_Ladder_GetInPreR1_b",  "M_FPP_Unarmed_Ladder_GetINTO_L2.anm",     0, 15)
+//Seq("FPP_Unarmed_Ladder_GetInPreR1", 30, 1, 0.3)
+//{
+//    Track("FPP_Unarmed_Ladder_GetInPreR1_a",   0, 1, 0.0)
+//    Track("FPP_Unarmed_Ladder_GetInPreR1_b",  15, 1, 0.3)
+//}
+//
+SeqTrack("FPP_Unarmed_Ladder_GetInL2",          "M_FPP_Unarmed_Ladder_GetINTO_L2.anm2"   , 15, 65, 30, 1, 0.3)
+{
+    Event(6,  EVENT_LADDER_LEFT)
+    Event(15, EVENT_LADDER_GOING_DOWN_FINISH)
+    Event(35, EVENT_LADDER_RIGHT)
+    Event(48, EVENT_LADDER_LEFT)
+}
+SeqTrackAlias("FPP_Unarmed_Ladder_GetInR2",     "FPP_Unarmed_Ladder_GetInL2")
+//SeqTrack("FPP_Unarmed_Ladder_GetInR2",          "M_FPP_Unarmed_Ladder_GetINTO_R2.anm2"   , 0, 65, 30, 1, 0.3)
+
+
+/* SeqTrack("LADDERL", 	"M_FPP_Unarmed_Ladder_Positions.anm2"	, 0, 140, 30, 1, 0.3)
+SeqTrack("LADDERR", 	"M_FPP_Unarmed_Ladder_Positions.anm2"	, 156, 290, 30, 1, 0.3)*/

@@ -1,0 +1,10 @@
+//Loads font and associates it to given engine id
+//Font(sFontID, sTTFName, iSize, nStyle, sFormatFile, fHeightScale)
+//nStyle: 0x0-normal, 0x1-bold, 0x2-underline, 0x4-strikeout; any combination of thoes flags apply
+!Font(s, s, i, i, s, f)
+
+//DeadIsland HUD
+// These settings are overriden in DataRu
+Font("LLRubberGrotesque 44", "Myriad Pro Cond", 44, 1, "", 1.0)
+
+// Font("Franklin Gothic Medium Cond 36", "Franklin Gothic Medium Cond", 36, 0, "", 1.0)

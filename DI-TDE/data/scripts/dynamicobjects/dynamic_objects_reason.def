@@ -1,0 +1,16 @@
+//Keep this synchronized with DynamicObjectsManager::FReason enum!!!
+
+export int DYNOBJ_REASON_SHOT              	= 1;
+export int DYNOBJ_REASON_COLLISION_PLAYER  	= 2;
+export int DYNOBJ_REASON_COLLISION_VEHICLE 	= 4;
+export int DYNOBJ_REASON_ENVTARGET	   	= 8;
+export int DYNOBJ_REASON_MELEE			= 16;
+export int DYNOBJ_REASON_ALL               	= 31;
+
+// Additional helper values.
+export int DYNOBJ_REASON_COLLISION         	= 6;
+export int DYNOBJ_REASON_VEHICLE_AND_SHOT  	= 5;
+export int DYNOBJ_REASON_ENVTARGET_AND_SHOT	= 9;
+export int DYNOBJ_REASON_ENVTARGET_VEHICLE_SHOT	= 13;
+export int DYNOBJ_REASON_SHOT_AND_MELEE		= 17;
+export int DYNOBJ_REASON_ENV_VEH_SHOT_MELEE	= 29;

@@ -1,0 +1,9 @@
+//keep this synchronized with EZombieSoundEvent !!!
+
+$SOUND_EVENT_GRAB_ATTACK			(i, 3501)
+$SOUND_EVENT_SPIT					(i, 3502)
+$SOUND_EVENT_TAUNT					(i, 3503)
+$SOUND_EVENT_IDLE_RAGE              (i, 3504)
+$SOUND_EVENT_BITE     				(i, 3505)
+$SOUND_EVENT_IDLE_TWITCH     		(i, 3506)
+$SOUND_EVENT_SPECIAL_ATTACK         (i, 3507)

@@ -1,0 +1,51 @@
+!include ("vehicle_base.scr")
+Car()
+{
+    Torque(85)	
+    NumGears(3)  //without neutral and reverse gear
+    SuspensionHeight(0.6)
+    MaxRPM(5000)
+    WheelFrictionLongMul(1.0)
+    WheelFrictionLatMul(1.0)
+	GlassElemName("dglassfront")
+    GlassHolderElemName("dglassfront")
+}
+
+InstallPart(FRONT_LEFT_DOOR,"vehicle_pickup_door_fl.msh")
+{
+  HingeType(HINGE_UP)
+  HingeLowStop(0.0)
+  HingeHiStop(1.2)
+  GlassElemName("DGlassFL")
+  GlassHolderElemName("DGlassFL")
+}
+
+InstallPart(FRONT_RIGHT_DOOR,"vehicle_pickup_door_fr.msh")
+{
+  HingeType(HINGE_DOWN)
+  HingeLowStop(0.0)
+  HingeHiStop(1.2)
+  GlassElemName("DGlassFR")
+  GlassHolderElemName("DGlassFR")
+}
+
+InstallPart(BONNET,"vehicle_pickup_bonnet.msh")
+{
+  HingeType(HINGE_LEFT)
+  HingeLowStop(0.0)
+  HingeHiStop(1.2)
+}
+
+InstallPart(BACK_DOOR,"vehicle_pickup_back_door.msh")
+{  
+  HingeType(HINGE_LEFT)
+  HingeLowStop(0.0)
+  HingeHiStop(1.2)
+}
+
+DropZone(0,0.0,0.0,0.0)    // MunDee Estuvo aquí
+DropZone(1,0.0,0.0,0.0)    // MunDee Estuvo aquí
+DropZone(2,0.02907,0.60742,-1.10404)    // MunDee Estuvo aquí
+DropZone(3,0.43742,0.60742,-1.90551)    // MunDee Estuvo aquí
+DropZone(4,-0.33284,0.60742,-1.90092)    // MunDee Estuvo aquí
+DropZone(5,0.0,0.0,0.0)    // MunDee Estuvo aquí

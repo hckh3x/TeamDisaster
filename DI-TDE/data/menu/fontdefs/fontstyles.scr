@@ -1,0 +1,155 @@
+//Font Aliases (styles)
+
+//FontStyle(sFontStyleID, sEngineFontID, fScale, fOutlineSize, fCharacterSpacing, fSpecialSignsScale)
+//creates font style (alias) for sEngineFont (the one actually loaded from .dds)
+!FontStyle(s, s, f, f, f, f)
+
+//FontStyleAlias(sFontStyleID, sFontStyleID, fAdditionalScale, fOutlineSize, fCharacterSpacing, fSpecialSignsScale)
+//creates font style based on previously defined style (scales are multiplied together)
+//WARNING: aliases cant reference to each another more than 10 times (not mentioning they must not create loops)
+!FontStyleAlias(s, s, f, f, f, f)
+
+
+//s html_font_name
+//i html_font_size
+//s font_style
+!HtmlFontStyleAlias(s, i, s)
+
+!Scaling(f) //scale all font sizes by given value
+Scaling(0.66667)
+
+
+//============ DeadIsland ================//
+
+//-------- styles used for various texts --------------//
+
+
+FontStyle("TextVerySmall",	  "LLRubberGrotesque 22", 0.415, 1, 1.0, 1.0)
+FontStyle("TextSmall",		  "LLRubberGrotesque 22", 0.477, 1, 1.0, 1.0) //14
+FontStyle("TextSmallOutline", "LLRubberGrotesque 22", 0.477, 3, 1.0, 1.0)
+FontStyle("TextMediumSmall",  "LLRubberGrotesque 22", 0.625, 1, 1.0, 1.0) //17
+FontStyle("TextMedium",		  "LLRubberGrotesque 22", 0.727, 1, 1.0, 1.0) //19
+FontStyle("TextMediumBigger", "LLRubberGrotesque 22", 0.835, 1, 1.0, 1.0) 
+FontStyle("TextNormal",		  "LLRubberGrotesque 22", 0.832, 1, 1.0, 1.0) //23
+FontStyle("TextNormalBigger", "LLRubberGrotesque 22", 1.001, 1, 1.0, 1.0) //25
+FontStyle("TextBig",		  "LLRubberGrotesque 44", 0.556, 1, 0.0, 1.0)
+FontStyle("TextBigger",		  "LLRubberGrotesque 44", 0.695, 1, 0.0, 1.0) 	//36
+
+FontStyle("TextVeryBig",	  "LLRubberGrotesque 44", 0.6375, 1, 0.0, 1.0)
+FontStyle("TextHuge",		  "LLRubberGrotesque 44", 0.695, 1, -1.0, 1.0)
+FontStyle("TextVeryHuge",	  "LLRubberGrotesque 44", 1.225, 1, -1.0, 1.0)
+FontStyle("Text15",			  "LLRubberGrotesque 44", 0.286, 1, 1.0, 1.0) // 15
+FontStyle("Text16",		      "LLRubberGrotesque 44", 0.310, 1, 1.0, 1.0) // 16
+FontStyle("Text16Outline",	  "LLRubberGrotesque 44", 0.310, 3, 1.0, 1.0)
+FontStyle("Text20",		      "LLRubberGrotesque 44", 0.384, 1, 1.0, 1.0) // 20
+
+//---- HUD ----//
+
+FontStyle("HUDSmall",	"LLRubberGrotesque 44", 	0.254, 3, 0.0, 1.0)
+FontStyle("HUDMedium",	"LLRubberGrotesque 44", 	0.290, 3, 0.0, 1.0)
+FontStyle("HUDNormal",	"LLRubberGrotesque 44",		0.327, 3, 0.0, 1.0)
+FontStyle("HUDNormalOutline", "LLRubberGrotesque 44",	0.363, 3, 0.0, 1.0)
+FontStyle("HUDBigOutline", "LLRubberGrotesque 44",	0.524, 3, 0.0, 1.0)
+FontStyle("HUDBig",		"LLRubberGrotesque 44", 	0.400, 3, 0.0, 1.0)
+FontStyle("HUDBigger",	"LLRubberGrotesque 44",		0.436, 3, 0.0, 1.0) //19
+
+FontStyle("HUDHuge",	"LLRubberGrotesque 44",		0.477, 3, 0.0, 1.0) //19
+
+FontStyle("HUDTextSmall",	"LLRubberGrotesque 44", 0.318, 1, 0.0, 1.0)
+FontStyle("HUDTextNormal",	"LLRubberGrotesque 44", 0.523, 1, 0.0, 1.0)
+
+//--- HTML ----//
+
+FontStyle("HtmlTextVerySmall",	"MSSansSerif8", 1.0, 1, 0.0, 1.0)
+FontStyle("HtmlTextSmall",	"LLRubberGrotesque 44", 0.245, 1, 0.0, 1.0)
+FontStyle("HtmlTextMedium",	"LLRubberGrotesque 44", 0.368, 1, 0.0, 1.0)
+FontStyle("HtmlTextNormal",	"LLRubberGrotesque 44", 0.425, 1, 0.0, 1.0)
+FontStyle("HtmlTextBig",	"LLRubberGrotesque 44", 0.556, 1, 0.0, 1.0)
+
+HtmlFontStyleAlias("arial", 1, "HtmlTextVerySmall")
+HtmlFontStyleAlias("arial", 2, "HtmlTextSmall")
+HtmlFontStyleAlias("arial", 3, "HtmlTextMedium")
+HtmlFontStyleAlias("arial", 4, "HtmlTextNormal")
+HtmlFontStyleAlias("arial", 5, "HtmlTextBig")
+
+HtmlFontStyleAlias("my_verdana", 1, "TextMediumSmall")
+HtmlFontStyleAlias("my_verdana2", 1, "Text15")
+HtmlFontStyleAlias("my_verdana3", 1, "Text16")
+HtmlFontStyleAlias("my_verdana3", 1, "Text16Outline")
+HtmlFontStyleAlias("my_verdana4", 1, "Text20")
+HtmlFontStyleAlias("my_verdana5", 1, "HandWrite")
+HtmlFontStyleAlias("my_verdana6", 1, "HandWriteSmall")
+HtmlFontStyleAlias("my_verdana6", 2, "HandWriteMedium")
+
+HtmlFontStyleAlias("verdana", 1, "TextVerySmall")
+HtmlFontStyleAlias("verdana", 1, "TextSmall")
+HtmlFontStyleAlias("verdana", 2, "TextSmallOutline")
+HtmlFontStyleAlias("verdana", 2, "TextMedium")
+HtmlFontStyleAlias("verdana", 3, "TextNormal")
+HtmlFontStyleAlias("verdana", 4, "TextBig")
+HtmlFontStyleAlias("verdana", 5, "TextBigger")
+HtmlFontStyleAlias("verdana", 6, "TextHuge")
+HtmlFontStyleAlias("verdana1", 1, "TextNormalBigger")
+
+HtmlFontStyleAlias("typodermic", 1, "HUDSmall")
+HtmlFontStyleAlias("typodermic", 1, "HUDTextSmall")
+HtmlFontStyleAlias("typodermic", 2, "HUDMedium")
+HtmlFontStyleAlias("typodermic", 3, "HUDNormal")
+HtmlFontStyleAlias("typodermic", 3, "HUDTextNormal")
+HtmlFontStyleAlias("typodermic", 4, "HUDBig")
+HtmlFontStyleAlias("typodermic", 5, "HUDBigger")
+
+HtmlFontStyleAlias("typodermicbig", 1, "HUDDigitsBig")
+HtmlFontStyleAlias("typodermicbig", 2, "HUDDigitsVeryBig")
+
+HtmlFontStyleAlias("my_hand6", 1, "HandWriteSmall")
+HtmlFontStyleAlias("my_hand6", 2, "HandWriteMedium")
+HtmlFontStyleAlias("my_hand6", 3, "HandWrite")
+
+HtmlFontStyleAlias("my_hand_menu", 1, "MenuHandWriteSmall")
+HtmlFontStyleAlias("my_hand_menu", 2, "MenuHandWriteMedium")
+HtmlFontStyleAlias("my_hand_menu", 3, "MenuHandWrite")
+
+//====== old crap remove ASAP =====//
+//-------- Main Menu Buttons -------------//
+
+FontStyleAlias("ButtonVerySmall",	"TextVerySmall", 1.0, 3, 0.0, 1.0)
+FontStyleAlias("ButtonSmall",		"TextMedium", 1.0, 3, 0.0, 1.0)
+FontStyleAlias("Button",			"TextNormal", 1.0, 3, 0.0, 1.0)
+FontStyleAlias("ButtonBig",			"TextBig", 1.0, 3, 0.0, 1.0)
+
+//-------- YesNo dialog window -----------//
+
+FontStyleAlias("DialogTitle",	"TextBig", 1.0, 3, 0.0, 1.0)
+FontStyleAlias("DialogQuestion","TextNormal",1.0, 3, 0.0, 1.0)
+FontStyleAlias("DialogButton",	"TextMedium",1.0, 3, 0.0, 1.0)
+
+FontStyleAlias("Subtitles",	"TextNormal", 1.0, 3, 0.0, 1.0)
+
+FontStyleAlias("HUDNetChat","TextSmall", 1.0, 3, 0.0, 1.0)
+
+FontStyle("HUDDigitsVeryBig", "Typodermic 36", 	1.0, 1, 0.0, 1.0) //36 digits only
+FontStyle("HUDDigitsBig",     "Typodermic 36", 	0.625, 1, 0.0, 1.0) //22.5 digits only
+
+FontStyle("HUDConcentration",	"Typodermic 24",	1.0, 1.5, 0.0, 1.0)
+
+FontStyleAlias("HUDWeaponHandBig",	"TextVeryBig",1.125, 1.5, 0.0, 1.0)
+FontStyleAlias("HUDWeaponHand",		"TextNormal",1.0, 1.5, 0.0, 1.0)
+
+//HUDWeaponsConsole 
+FontStyle("HUDWpnCon_Name", 	"Typodermic 24", 1.0, 1.5, 0.0, 1.0)
+FontStyle("HUDWpnCon_Ammo", 	"Duality 32", 0.6, 1.5, 0.0, 1.0) //19.2 digits only
+FontStyle("HUDWpnCon_AmmoBig", 	"Duality 32", 1.0, 1.5, 0.0, 1.0) //32 digits only
+FontStyle("HUDWpnCon_Upgrade",  "Typodermic 24",0.95, 1.5, 0.0, 1.0)
+
+//HUDReloadNotify
+FontStyle("HUDReload_Ammo", 	"Duality 32", 0.5, 1.5, 0.0, 1.0) //16 digits only
+FontStyle("HUDReload_AmmoBig", 	"Duality 32", 0.8125, 1.5, 0.0, 1.0) //26 digits only
+
+//HUDConcentrationCharge
+FontStyle("HUDConChargeTime",   "Duality 32", 0.6, 3, 0.0, 1.0) //digits only
+
+FontStyle("HUDSwitchWeapons", "Typodermic 24",	0.75, 3, 0.0, 1.0)
+
+//-------- other --------//
+FontStyleAlias("BackgroundLoadingModule", "TextNormal", 1.0, 3, 0.0, 1.0)

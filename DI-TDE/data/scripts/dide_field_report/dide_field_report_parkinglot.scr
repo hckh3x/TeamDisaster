@@ -1,0 +1,9 @@
+sub parkinglot() {
+OnMap("parkinglot", "NPCLifePlace", "", "22284", "15135", "3554"){Field("m_PlaceType", 2);}
+OnMap("parkinglot", "NPCLifePlace", "LP_Ken_Dead", "32418", "15133", "6876"){Field("m_PlaceType", 80);}
+OnMap("parkinglot", "NPCLifePlace", "LP_Ken_Lying", "32418", "15133", "6876"){Field("m_PlaceType", 11);}
+OnMap("parkinglot", "NPCLifePlace", "", "11227", "15386", "17307"){Field("m_PlaceType", 17);}
+OnMap("parkinglot", "NPCLifePlace", "", "10960", "15249", "17203"){Field("m_PlaceType", 18);}
+OnMap("parkinglot", "NPCLifePlace", "", "11207", "15249", "16932"){Field("m_PlaceType", 18);}
+
+}

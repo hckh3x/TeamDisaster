@@ -1,0 +1,25 @@
+// skill_name, double, tex1, tex2
+!ActiveSkillData(s,i,s,s)
+
+
+ActiveSkillData("sharpapprenticexian", 	0,	"xian_bladefighter", 		"")				//"Blade fighter"
+ActiveSkillData("deadlyjumperxian", 	0,	"xian_flyingstrike", 		"")				//"Flying Strike"
+ActiveSkillData("sharpexpertxian", 	1,	"xian_sharpexpert_stomper", 	"xian_sharpexpert_followup")	//"Sharp Expert"
+ActiveSkillData("sharpmasterxian", 	1,	"xian_sharpexpert_stomper", 	"xian_blademaster")		//"Blade Master"
+ActiveSkillData("bloodrage1xian", 	0,	"xian_bloodrage", 		"")				//"Blood rage"
+
+ActiveSkillData("teamspirit1purna", 	0,	"purna_guardian", 		"")	//"Guardian"
+ActiveSkillData("sharpapprenticepurna", 0,	"purna_bladefighter", 		"")	//"Blade Fighter"
+ActiveSkillData("firearmsapprenticepurna", 0,	"purna_firearmstraining", 	"")	//"Firearms Training"
+
+ActiveSkillData("fury1samb", 		0,	"samb_haymaker", 		"")				//"haymaker"
+ActiveSkillData("bluntapprenticesamb", 	0,	"samb_heavyhitter",		"")				//"heavy hitter"
+ActiveSkillData("ramingsamb", 		0,	"samb_tackle", 			"")				//"tackle"
+ActiveSkillData("bluntexpertsamb", 	1, 	"samb_bluntexpert_stomper",	"samb_bluntexpert_followup")	//"blunt expert"
+ActiveSkillData("bluntmastersamb", 	1, 	"samb_bluntexpert_stomper",	"samb_earthshaker")		//"earthshaker"
+
+ActiveSkillData("bulseye1logan", 		0,	"logan_bullseye", "")							//""
+ActiveSkillData("bluntapprenticelogan",		0,	"logan_heavyhitter", "")						//"heavy hitter"
+ActiveSkillData("sharpapprenticeloganlogan",	1,	"logan_sharpapprentice", "logan_sharpapprentice_stomper")		//"sharp apprentice"
+
+

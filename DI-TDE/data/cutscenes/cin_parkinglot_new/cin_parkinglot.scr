@@ -1,0 +1,4 @@
+SeqTrack("CIN_Parkinglot_Zombie1_00", "CIN_Parkinglot_Zombie1_00.anm2", 0, 399, 30, 1, 0.5) 
+SeqTrack("CIN_Parkinglot_Zombie2_00", "CIN_Parkinglot_Zombie2_00.anm2", 0, 399, 30, 1, 0.5) 
+SeqTrack("CIN_Parkinglot_Zombie3_00", "CIN_Parkinglot_Zombie3_00.anm2", 0, 399, 30, 1, 0.5) 
+SeqTrack("CIN_Parkinglot_Van_00", "CIN_Parkinglot_Van_00.anm2", 0, 399, 30, 1, 0.5) 

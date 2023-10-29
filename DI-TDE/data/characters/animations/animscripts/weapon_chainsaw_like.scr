@@ -1,0 +1,2 @@
+SeqTrack( "Right_Chainsaw_Turn", "weapon_chainsaw_a.anm2", 0, 6, 60, 0, 0.0 )
+SeqTrack( "Left_Chainsaw_Turn", "weapon_chainsaw_a.anm2", 6, 0, 60, 0, 0.0 )

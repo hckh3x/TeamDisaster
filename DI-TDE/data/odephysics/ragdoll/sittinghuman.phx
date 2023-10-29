@@ -1,0 +1,185 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////
+// Fizyka Ragdoll dla czlowieka
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+!include("../Generic/ODEPhysicsRagdoll.phx")
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+PhysicsParams()
+{
+    QuickStepNumIterations(25)
+    QuickStepSortingMethod(0)
+    
+    AllowContinuousCollisions(0, 0)
+    SetWaterFloat(1.7)
+    
+    SetVelsGate(0.03, 0.4)    // MunDee Estuvo aquí
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+RagdollParams()
+{
+    Mass(90)
+    StiffenStartTime(-1)
+    ApplyForceMod(1)
+    ApplyForceAddUp(0.0)    // MunDee Estuvo aquí
+
+    SynchroOwner(0)
+    AllowAnimationOfOtherElements(1)
+    ExtentsUpdateMode("expand_existing")
+    
+    BlendingOfNonPhysicalBonesTime(0)
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+Bones()
+{
+    UseBoneScale("Bip01 Spine1",  "sphere",   6, 0.9)
+    UseBoneScale("Bip01 Spine3",  "capsule",  6, 0.9)
+    UseBone("Bip01 Head",         "sphere",   4)
+    UseBone("Bip01 L Upperarm",   "capsule",  4)
+    UseBone("Bip01 R Upperarm",   "capsule",  4)
+    UseBone("Bip01 L Forearm",    "capsule",  3)
+    UseBone("Bip01 R Forearm",    "capsule",  3)
+    UseBoneScale("Bip01 L Hand",  "sphere",   2, 1.4)
+    UseBoneScale("Bip01 R Hand",  "sphere",   2, 1.4)
+	
+    GeomFrictionMul("Bip01 L Forearm", 0.2)
+    GeomFrictionMul("Bip01 R Forearm", 0.2)
+    GeomFrictionMul("Bip01 L Hand", 0.2)
+    GeomFrictionMul("Bip01 R Hand", 0.2)
+    
+    BoneSynchro("Bip01 L Upperarm", "Bip01 l uparmtwist")
+    BoneSynchro("Bip01 R Upperarm", "Bip01 r uparmtwist")
+    
+    FixBone("Bip01 Spine1", 0)
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+Joints()
+{
+    // definicja jointow
+    DefineJoint("Bip01 Spine1",     "Bip01 Spine3",     "ball",  0,  1,  0,    1,  0,  0)
+    DefineJoint("Bip01 Spine3",     "Bip01 Head",       "ball",  0,  1,  0,    1,  0,  0)
+    DefineJoint("Bip01 Spine3",     "Bip01 L Upperarm", "ball",  0,  0,  1,    1,  0,  0)
+    DefineJoint("Bip01 Spine3",     "Bip01 R Upperarm", "ball",  0,  0,  1,    1,  0,  0)
+    DefineJoint("Bip01 L Upperarm", "Bip01 L Forearm",  "ball",  0,  1,  0,    1,  0,  0)
+    DefineJoint("Bip01 R Upperarm", "Bip01 R Forearm",  "ball",  0, -1,  0,    1,  0,  0)
+    DefineJoint("Bip01 L Forearm",  "Bip01 L Hand",     "hinge", 0,  0,  1,    0,  0,  0)
+    DefineJoint("Bip01 R Forearm",  "Bip01 R Hand",     "hinge", 0,  0, -1,    0,  0,  0)
+
+    // parametry stopu
+    Set3DOFStops("Bip01 Spine1 Bip01 Spine3",        -0.05, 0.05,   -0.05, 0.05,   -0.05, 0.05,  0, 0, 0) 
+    Set3DOFStops("Bip01 Spine3 Bip01 Head",          -0.20, 0.10,   -0.10, 0.10,   -0.30, 0.30,  0, 0, 0) 
+    Set3DOFStops("Bip01 Spine3 Bip01 L Upperarm",     0.00, 0.30,   -0.00, 0.30,   -0.35, 0.20,  0, 0, 0) 
+    Set3DOFStops("Bip01 Spine3 Bip01 R Upperarm",    -0.30, 0.00,   -0.00, 0.30,   -0.20, 0.35,  0, 0, 0) 
+    Set3DOFStops("Bip01 L Upperarm Bip01 L Forearm", -0.15, 0.15,   -0.20, 0.00,   -0.15, 0.05,  0, 0, 0) 
+    Set3DOFStops("Bip01 R Upperarm Bip01 R Forearm", -0.15, 0.15,   -0.20, 0.00,   -0.05, 0.15,  0, 0, 0) 
+    Set1DOFStops("Bip01 L Forearm Bip01 L Hand",     -0.20, 0.20,  0) 
+    Set1DOFStops("Bip01 R Forearm Bip01 R Hand",     -0.20, 0.20,  0) 
+
+    // sily tarcia stawow
+    SetFrictionForceAll(6)
+
+    // wspolczynniki dopuszczalnych bledow stopow
+    SetStopERPAll(0.3)
+
+    // wspolczynniki sprezystosci jointow po osiagnieciu stopow
+    SetStopCFMAll(0.03)
+
+    // wspolczynniki sprezystosci jointow
+    SetCFMAll(0)
+
+    // wspolczynniki tlumienia sily oddalajacej od stopu (1 - brak tlumienia, 0.5 - sila zmniejszona dwukrotnie)
+    SetFudgeFactorAll(0.1)
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+/* DIDE CollisionSoundsParams()
+{
+    SetFreqMinMax(0.6, 1.2)
+    SetInterval(0.06)
+
+    SetHitMinVolumeLinVel(1.0)    // MunDee Estuvo aquí
+    SetHitMaxVolumeLinVel(4.0)    // MunDee Estuvo aquí
+
+    SetFrictionMinVolumeLinVel(20.0)    // MunDee Estuvo aquí
+    SetFrictionMaxVolumeLinVel(50.0)    // MunDee Estuvo aquí
+    SetFrictionDotThreshold(0.04)
+
+    HitDefaultSound("falling_body_XX.wav", "falling_body_XX.wav")
+    
+    HitSound(SRF_WATER, "hit_water_XX.wav", "hit_big_water_XX.wav")
+    HitSound(SRF_SAND, "falling_body_XX.wav", "falling_body_XX.wav")
+    HitSound(SRF_GRAVEL, "falling_body_XX.wav", "falling_body_XX.wav")
+    HitSound(SRF_GRASS, "falling_body_XX.wav", "falling_body_XX.wav")
+    HitSound(SRF_GROUND, "falling_body_XX.wav", "falling_body_XX.wav")
+    HitSound(SRF_MUD, "falling_body_XX.wav", "falling_body_XX.wav")
+    HitSound(SRF_RUBBER, "falling_body_XX.wav", "falling_body_XX.wav")
+    HitSound(SRF_WOOD, "falling_body_XX.wav", "falling_body_XX.wav")
+    HitSound(SRF_PLASTIC, "falling_body_XX.wav", "falling_body_XX.wav")
+    HitSound(SRF_TARMAC, "falling_body_XX.wav", "falling_body_XX.wav")
+    HitSound(SRF_GLASS, "falling_body_XX.wav", "falling_body_XX.wav")
+    HitSound(SRF_METAL, "falling_body_XX.wav", "falling_body_XX.wav")
+    HitSound(SRF_STONE, "falling_body_XX.wav", "falling_body_XX.wav")
+} */
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+ContactParams("Terrain")
+{
+    ZeroFlags()
+    Ignore(1)
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+ContactParams("SimpleObjects")
+{
+    ZeroFlags()
+    Ignore(1)
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+ContactParams("NonODEObjects")
+{
+    ZeroFlags()
+    Ignore(1)
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+ContactParams("ODEObjects")
+{
+    // ZeroFlags()
+    //Ignore(0)
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+ContactParams("ODEObjectsSamePhysics")
+{
+    ZeroFlags()
+    Ignore(1)
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+ContactParams("ODEObjectsSameOwnerOtherPhysics")
+{
+    ZeroFlags()
+    Ignore(1)
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+ContactParams("Water")
+{
+    ZeroFlags()
+    Ignore(1)
+}
+
+
+
+
+
+
+
+
+
+
+

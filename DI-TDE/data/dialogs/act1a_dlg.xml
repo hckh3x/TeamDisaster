@@ -1,0 +1,6196 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<speakers>
+	<speaker name="Bobby">
+		<group name="Bobby_QF01_NF" near_radius="3.0" middle_radius="5.0" time_btw_series="40.000000" random_order="true">    <!-- Modificado -->
+			<state type="near" range="12.25" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Bobby_QF01_Near_01"/>
+				</dialog>
+				<dialog>
+					<line id="Bobby_QF01_Near_02"/>
+				</dialog>
+				<dialog>
+					<line id="Bobby_QF01_Near_03"/>
+				</dialog>
+			</state>
+			<state type="middle" range="12.25" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Bobby_QF01_Middle_01"/>
+				</dialog>
+				<dialog>
+					<line id="Bobby_QF01_Middle_02"/>
+				</dialog>
+				<dialog>
+					<line id="Bobby_QF01_Middle_03"/>
+				</dialog>
+			</state>
+			<state type="player_spotted" range="12.25" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Bobby_QF01_PlayerSpotted"/>
+				</dialog>
+			</state>
+			<state type="near_to_middle" range="12.25" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Bobby_QF01_NearToMiddle"/>
+				</dialog>
+			</state>
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Bobby_QF01_Use_A"/>
+					<decision>
+						<choice>
+							<speech>&amp;DialogSystem_Yes&amp;</speech>
+							<audiofile/>
+							<line id="Bobby_QF01_Agree"/>
+						</choice>
+						<main-choice>
+							<speech>&amp;DialogSystem_No&amp;</speech>
+							<audiofile/>
+						</main-choice>
+					</decision>
+					<line id="Bobby_QF01_Disagree"/>
+				</dialog>
+			</state>
+			<state type="use_second" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Bobby_QF01_Use_Second"/>
+					<decision>
+						<choice>
+							<speech>&amp;DialogSystem_Yes&amp;</speech>
+							<audiofile/>
+							<line id="Bobby_QF01_Agree"/>
+						</choice>
+						<main-choice>
+							<speech>&amp;DialogSystem_No&amp;</speech>
+							<audiofile/>
+						</main-choice>
+					</decision>
+					<line id="Bobby_QF01_Disagree"/>
+				</dialog>
+			</state>
+			<state type="quest_brief" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="ACT1A_BobbyAmbulatory_Name"/>
+				</dialog>
+				<dialog>
+					<line id="ACT1A_BobbyAmbulatory_PaperLine"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Bobby_QF02_NF" near_radius="2.0" middle_radius="3.0" time_btw_series="40.000000" random_order="true">    <!-- Modificado -->
+			<state type="near" range="12.96" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Bobby_QF02_Near_01"/>
+				</dialog>
+				<dialog>
+					<line id="Bobby_QF02_Near_02"/>
+				</dialog>
+				<dialog>
+					<line id="Bobby_QF02_Near_03"/>
+				</dialog>
+				<dialog>
+					<line id="Bobby_QF02_Near_04"/>
+				</dialog>
+			</state>
+			<state type="player_spotted" range="11.56" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Bobby_QF02_PlayerSpotted"/>
+				</dialog>
+			</state>
+			<state type="near_to_middle" range="12.25" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Bobby_QF02_NearToMiddle"/>
+				</dialog>
+			</state>
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Bobby_QF02_Use"/>
+					<line id="Bobby_QF02_Agree"/>
+					<decision>
+						<choice>
+							<speech>&amp;DialogSystem_Yes&amp;</speech>
+							<audiofile/>
+							<line id="Bobby_QF02_Near_05"/>
+						</choice>
+						<main-choice>
+							<speech>&amp;DialogSystem_No&amp;</speech>
+							<audiofile/>
+						</main-choice>
+					</decision>
+					<line id="Bobby_QF02_Disagree"/>
+				</dialog>
+			</state>
+			<state type="use_second" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Bobby_QF02_Use_Second"/>
+					<decision>
+						<choice>
+							<speech>&amp;DialogSystem_Yes&amp;</speech>
+							<audiofile/>
+							<line id="Bobby_QF02_Agree"/>
+						</choice>
+						<main-choice>
+							<speech>&amp;DialogSystem_No&amp;</speech>
+							<audiofile/>
+						</main-choice>
+					</decision>
+					<line id="Bobby_QF02_Disagree"/>
+				</dialog>
+			</state>
+			<state type="quest_brief" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="ACT1A_BobbyBag_Name"/>
+				</dialog>
+				<dialog>
+					<line id="ACT1A_BobbyBag_PaperLine"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Bobby_QF00_NF" near_radius="2.0" time_btw_series="60.000000" random_order="true">    <!-- Modificado -->
+			<state type="near" range="8.41" volume="0.690000" subtitles="false">    <!-- Modificado -->
+				<dialog>
+					<line id="Bobby_InTheBungalow_Near_01"/>
+				</dialog>
+				<dialog>
+					<line id="Bobby_InTheBungalow_Near_02"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Bobby_QF01_InProgress001" time_btw_series="60.000000" random_order="true">
+			<state type="middle_to_near" range="46.24" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Bobby_QF01_InProgress_01"/>
+				</dialog>
+				<dialog>
+					<line id="Bobby_QF01_InProgress_02"/>
+				</dialog>
+				<dialog>
+					<line id="Bobby_QF01_InProgress_03"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Bobby_QF02_InProgress" near_radius="1.5" middle_radius="3.0" time_btw_series="188.000000" random_order="true">    <!-- Modificado -->
+			<state type="middle_to_near" range="12.25" volume="1.000000" subtitles="false">    <!-- Modificado -->
+				<dialog>
+					<line id="Bobby_QF02_InProgress_01"/>
+				</dialog>
+				<dialog>
+					<line id="Bobby_QF02_InProgress_02"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Bobby_QF02_Accomplished" time_btw_series="40.000000" random_order="true">
+			<state type="middle_to_near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Bobby_QF02_InProgress_01"/>
+				</dialog>
+				<dialog>
+					<line id="Bobby_QF02_InProgress_02"/>
+				</dialog>
+			</state>
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Bobby_QF02_Accomplished"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Bobby_QF01_Accomplished">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Bobby_QF01_Accomplished"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Bobby_QF01_InProgress002" near_radius="10.0" time_btw_series="30.000000" random_order="true">    <!-- Modificado -->
+			<state type="near" range="72.25" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Bobby_QF01_InProgress_05"/>
+				</dialog>
+				<dialog>
+					<line id="Bobby_QF01_InProgress_06"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="Megan">
+		<group name="Megan_Q1_NF" far_radius="30.0" time_btw_series="30.000000" random_order="true">    <!-- Modificado -->
+			<state type="near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Megan_Q1_Near_01"/>
+				</dialog>
+				<dialog>
+					<line id="Megan_Q1_Near_02"/>
+				</dialog>
+				<dialog>
+					<line id="Megan_Q1_Near_03"/>
+				</dialog>
+			</state>
+			<state type="middle" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Megan_Q1_Middle_01"/>
+				</dialog>
+				<dialog>
+					<line id="Megan_Q1_Middle_02"/>
+				</dialog>
+				<dialog>
+					<line id="Megan_Q1_Middle_03"/>
+				</dialog>
+			</state>
+			<state type="far" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Megan_Q1_Far_01"/>
+				</dialog>
+				<dialog>
+					<line id="Megan_Q1_Far_02"/>
+				</dialog>
+				<dialog>
+					<line id="Megan_Q1_Far_03"/>
+				</dialog>
+			</state>
+			<state type="surprised" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Megan_Q1_Surprised"/>
+				</dialog>
+			</state>
+			<state type="player_spotted" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Megan_Q1_PlayerSpotted"/>
+				</dialog>
+			</state>
+			<state type="near_to_middle" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Megan_Q1_NearToMiddle"/>
+				</dialog>
+			</state>
+			<state type="middle_to_near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Megan_Q1_MiddleToNear"/>
+				</dialog>
+			</state>
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Megan_Q1_Use_A"/>
+					<line id="Megan_Q1_Use_B"/>
+					<decision>
+						<choice id="DialogSystem_Yes">
+							<line id="Megan_Q1_Agree"/>
+						</choice>
+						<main-choice id="DialogSystem_No"/>
+					</decision>
+					<line id="Megan_Q1_Disagree"/>
+				</dialog>
+			</state>
+			<state type="use_second" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Megan_Q1_Use_Second"/>
+					<decision>
+						<choice id="DialogSystem_Yes">
+							<line id="Megan_Q1_Agree"/>
+						</choice>
+						<main-choice id="DialogSystem_No"/>
+					</decision>
+					<line id="Megan_Q1_Disagree"/>
+				</dialog>
+			</state>
+			<state type="quest_brief" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Megan_Q1_Name"/>
+				</dialog>
+				<dialog>
+					<line id="Megan_Q1_PaperLine_A"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Megan_Q1_InProgress" random_order="true">
+			<state type="middle_to_near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Megan_Q1_InProgress_01"/>
+				</dialog>
+				<dialog>
+					<line id="Megan_Q1_InProgress_02"/>
+				</dialog>
+				<dialog>
+					<line id="Megan_Q1_InProgress_03"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Megan_Q1_Accomplished_02">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Megan_Q1_Accomplished_B"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Megan_Q1_Accomplished_01">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Megan_Q1_Accomplished_A"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="Mike001">
+		<group name="Mike001_Q2_InProgress" near_radius="3.0" middle_radius="6.0" far_radius="10.0" time_btw_series="60.000000">    <!-- Modificado -->
+			<state type="middle_to_near" range="27.04" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Mike_QF02_InProgress_01"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Mike001_Q2_NF" near_radius="3.0" middle_radius="7.0" time_btw_series="40.000000">    <!-- Modificado -->
+			<state type="near_to_middle" range="26.01" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Mike_QF02_NearToMiddle"/>
+				</dialog>
+			</state>
+			<state type="middle_to_near" range="27.04" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Mike_QF02_MiddleToNear"/>
+				</dialog>
+			</state>
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Mike_QF02_Use"/>
+					<decision>
+						<choice>
+							<speech>&amp;DialogSystem_Yes&amp;</speech>
+							<audiofile/>
+							<line id="Mike_QF02_Agree"/>
+						</choice>
+						<main-choice>
+							<speech>&amp;DialogSystem_No&amp;</speech>
+							<audiofile/>
+						</main-choice>
+					</decision>
+					<line id="Mike_QF02_Disagree"/>
+				</dialog>
+			</state>
+			<state type="use_second" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Mike_QF02_UseSecond"/>
+					<decision>
+						<choice>
+							<speech>&amp;DialogSystem_Yes&amp;</speech>
+							<audiofile/>
+							<line id="Mike_QF02_Agree"/>
+						</choice>
+						<main-choice>
+							<speech>&amp;DialogSystem_No&amp;</speech>
+							<audiofile/>
+						</main-choice>
+					</decision>
+					<line id="Mike_QF02_Disagree"/>
+				</dialog>
+			</state>
+			<state type="quest_brief" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Mike_QF02_Name"/>
+				</dialog>
+				<dialog>
+					<line id="Mike_QF02_PaperLine_A"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Mike001_Q2_Accomplished" near_radius="3.0" middle_radius="6.0">    <!-- Modificado -->
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Mike_QF02_Accomplished"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Mike001_Q3_NF" near_radius="2.0" middle_radius="4.0" time_btw_series="40.000000">    <!-- Modificado -->
+			<state type="near_to_middle" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Mike_QF03_NearToMiddle_01"/>
+				</dialog>
+			</state>
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Mike_QF03_Use_A"/>
+					<line id="Mike_QF03_Use_B"/>
+					<decision>
+						<choice>
+							<speech>&amp;DialogSystem_Yes&amp;</speech>
+							<audiofile/>
+							<line id="Mike_QF03_Agree"/>
+						</choice>
+						<main-choice>
+							<speech>&amp;DialogSystem_No&amp;</speech>
+							<audiofile/>
+						</main-choice>
+					</decision>
+					<line id="Mike_QF03_Disagree"/>
+				</dialog>
+			</state>
+			<state type="use_second" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Mike_QF03_Use_Second"/>
+					<decision>
+						<choice>
+							<speech>&amp;DialogSystem_Yes&amp;</speech>
+							<audiofile/>
+							<line id="Mike_QF03_Agree"/>
+						</choice>
+						<main-choice>
+							<speech>&amp;DialogSystem_No&amp;</speech>
+							<audiofile/>
+						</main-choice>
+					</decision>
+					<line id="Mike_QF03_Disagree"/>
+				</dialog>
+			</state>
+			<state type="quest_brief" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Mike_QF03_Name"/>
+				</dialog>
+				<dialog>
+					<line id="Mike_QF03_PaperLine"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Mike001_Q3_InProgress" near_radius="2.0" middle_radius="4.0" time_btw_series="40.000000">    <!-- Modificado -->
+			<state type="middle_to_near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Mike_QF03_InProgress_01"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Mike001_Q3_NF_Loop" near_radius="2.0" middle_radius="4.0" time_btw_series="40.000000">    <!-- Modificado -->
+			<state type="near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Mike_QF03_Use_Second"/>
+				</dialog>
+			</state>
+			<state type="near_to_middle" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Mike_QF03_NearToMiddle_01"/>
+				</dialog>
+			</state>
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Mike_QF03_Agree"/>
+				</dialog>
+			</state>
+			<state type="use_second" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Mike_QF03_InProgress_01"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="Nikolai">
+		<group name="Nikolai_Q1_NF" middle_radius="16.0" time_btw_series="40.000000">    <!-- Modificado -->
+			<state type="near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Nikolai_Q1_NearToMiddle"/>
+				</dialog>
+			</state>
+			<state type="middle" range="49.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Nikolai_Q1_Middle_01"/>
+				</dialog>
+				<dialog>
+					<line id="Nikolai_Q1_Middle_02"/>
+				</dialog>
+				<dialog>
+					<line id="Nikolai_Q1_Middle_03"/>
+				</dialog>
+			</state>
+			<state type="player_spotted" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Nikolai_Q1_PlayerSpotted"/>
+				</dialog>
+			</state>
+			<state type="near_to_middle" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Nikolai_Q1_Near_01"/>
+				</dialog>
+				<dialog>
+					<line id="Nikolai_Q1_Near_02"/>
+				</dialog>
+				<dialog>
+					<line id="Nikolai_Q1_Near_03"/>
+				</dialog>
+			</state>
+			<state type="middle_to_near" range="49.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Nikolai_Q1_MiddleToNear"/>
+				</dialog>
+			</state>
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Nikolai_Q1_Use_A"/>
+					<line id="Nikolai_Q1_Use_B"/>
+					<line id="Nikolai_Q1_Use_C"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Nikolai_Q2_NF" time_btw_series="40.000000">
+			<state type="near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Nikolai_Q2_Near_01"/>
+				</dialog>
+				<dialog>
+					<line id="Nikolai_Q2_Near_02"/>
+				</dialog>
+				<dialog>
+					<line id="Nikolai_Q2_Near_03"/>
+				</dialog>
+			</state>
+			<state type="player_spotted" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Nikolai_Q2_PlayerSpotted"/>
+				</dialog>
+			</state>
+			<state type="near_to_middle" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Nikolai_Q2_NearToMiddle"/>
+				</dialog>
+			</state>
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Nikolai_Q2_Use_A"/>
+					<line id="Nikolai_Q2_Use_B"/>
+					<decision>
+						<choice id="DialogSystem_Yes">
+							<line id="Nikolai_Q2_Agree"/>
+						</choice>
+						<main-choice id="DialogSystem_No"/>
+					</decision>
+					<line id="Nikolai_Q2_Disagree"/>
+				</dialog>
+			</state>
+			<state type="use_second" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Nikolai_Q2_Use_Second"/>
+					<decision>
+						<choice id="DialogSystem_Yes">
+							<line id="Nikolai_Q2_Agree"/>
+						</choice>
+						<main-choice id="DialogSystem_No"/>
+					</decision>
+					<line id="Nikolai_Q2_Disagree"/>
+				</dialog>
+			</state>
+			<state type="quest_brief" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Nikolai_Q2_Name"/>
+				</dialog>
+				<dialog>
+					<line id="Nikolai_Q2_PaperLine_A"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Nikolai_Q1_InProgress" near_radius="6.0" time_btw_series="60.000000" random_order="true">    <!-- Modificado -->
+			<state type="middle_to_near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Nikolai_Q1_InProgress_02"/>
+				</dialog>
+				<dialog>
+					<line id="Nikolai_Q1_InProgress_03"/>
+				</dialog>
+				<dialog>
+					<line id="Nikolai_Q1_InProgress_01"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Nikolai_Q2_InProgress" time_btw_series="40.000000">
+			<state type="middle_to_near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Nikolai_Q2_InProgress_01"/>
+				</dialog>
+				<dialog>
+					<line id="Nikolai_Q2_InProgress_02"/>
+				</dialog>
+				<dialog>
+					<line id="Nikolai_Q2_InProgress_03"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Nikolai_Q1_Accomplished">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Nikolai_Q1_Accomplished"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Nikolai_Q1_InProgress2" near_radius="10.0" middle_radius="15.0" time_btw_series="40.000000" random_order="true">    <!-- Modificado -->
+			<state type="near" range="60.84" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Nikolai_Q1_InProgress_05"/>
+				</dialog>
+				<dialog>
+					<line id="Nikolai_Q1_InProgress_04"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Nikolai_Q1_Kill">
+			<state type="use" range="36.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Nikolai_Q1_InProgress_04"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Nikolai_Q1_go">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Nikolai_Q1_InProgress_01"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="Sinamoi">
+		<group name="Sinamoi_QF01_NF" near_radius="7.0" middle_radius="9.0" time_btw_series="40.000000" random_order="true">    <!-- Modificado -->
+			<state type="near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Sinamoi_QF01_Near_01"/>
+				</dialog>
+				<dialog>
+					<line id="Sinamoi_QF01_Near_02"/>
+				</dialog>
+				<dialog>
+					<line id="Sinamoi_QF01_Near_03"/>
+				</dialog>
+			</state>
+			<state type="middle" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Sinamoi_QF01_Middle_01"/>
+				</dialog>
+			</state>
+			<state type="near_to_middle" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Sinamoi_QF01_NearToMiddle"/>
+				</dialog>
+			</state>
+			<state type="middle_to_near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Sinamoi_QF01_MiddleToNear"/>
+				</dialog>
+			</state>
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Sinamoi_QF01_Use_A"/>
+					<line id="Sinamoi_QF01_Use_B"/>
+					<line id="Sinamoi_QF01_Use_C"/>
+					<decision>
+						<choice id="DialogSystem_Yes">
+							<line id="Sinamoi_QF01_Agree"/>
+						</choice>
+						<main-choice id="DialogSystem_No"/>
+					</decision>
+					<line id="Sinamoi_QF01_Disagree"/>
+				</dialog>
+			</state>
+			<state type="use_second" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Sinamoi_QF01_UseSecond"/>
+					<decision>
+						<choice>
+							<speech>&amp;DialogSystem_Yes&amp;</speech>
+							<audiofile/>
+							<line id="Sinamoi_QF01_Agree"/>
+						</choice>
+						<main-choice>
+							<speech>&amp;DialogSystem_No&amp;</speech>
+							<audiofile/>
+						</main-choice>
+					</decision>
+					<line id="Sinamoi_QF01_Disagree"/>
+				</dialog>
+			</state>
+			<state type="quest_brief" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="ACT1A_WalkieTalkies_Name"/>
+				</dialog>
+				<dialog>
+					<line id="ACT1A_WalkieTalkies_PaperLine_A"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Sinamoi_QF02_NF" near_radius="6.0" time_btw_series="40.000000" random_order="true">    <!-- Modificado -->
+			<state type="near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Sinamoi_QF02_Near_01"/>
+				</dialog>
+				<dialog>
+					<line id="Sinamoi_QF02_Near_02"/>
+				</dialog>
+				<dialog>
+					<line id="Sinamoi_QF02_Near_03"/>
+				</dialog>
+			</state>
+			<state type="near_to_middle" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Sinamoi_QF02_NearToMiddle"/>
+				</dialog>
+			</state>
+			<state type="middle_to_near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Sinamoi_QF02_MiddleToNear"/>
+				</dialog>
+			</state>
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Sinamoi_QF02_Use"/>
+					<decision>
+						<choice>
+							<speech>&amp;DialogSystem_Yes&amp;</speech>
+							<audiofile/>
+							<line id="Sinamoi_QF02_Agree"/>
+						</choice>
+						<main-choice>
+							<speech>&amp;DialogSystem_No&amp;</speech>
+							<audiofile/>
+						</main-choice>
+					</decision>
+					<line id="Sinamoi_QF02_Disagree"/>
+				</dialog>
+			</state>
+			<state type="use_second" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Sinamoi_QF02_UseSecond"/>
+					<decision>
+						<choice>
+							<speech>&amp;DialogSystem_Yes&amp;</speech>
+							<audiofile/>
+							<line id="Sinamoi_QF02_Agree"/>
+						</choice>
+						<main-choice>
+							<speech>&amp;DialogSystem_No&amp;</speech>
+							<audiofile/>
+						</main-choice>
+					</decision>
+					<line id="Sinamoi_QF02_Disagree"/>
+				</dialog>
+			</state>
+			<state type="quest_brief" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="ACT1A_ClearRescueHub_Name"/>
+				</dialog>
+				<dialog>
+					<line id="ACT1A_ClearRescueHub_PaperLine_A"/>
+				</dialog>
+				<dialog>
+					<line id="ACT1A_ClearRescueHub_PaperLine_B"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Sinamoi_QF04_NF" middle_radius="7.0" time_btw_series="40.000000">    <!-- Modificado -->
+			<state type="near_to_middle" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Sinamoi_QF04_NearToMiddle"/>
+				</dialog>
+			</state>
+			<state type="middle_to_near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Sinamoi_QF04_MiddleToNear"/>
+				</dialog>
+			</state>
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Sinamoi_QF04_Use_A"/>
+					<line id="Sinamoi_QF04_Use_B"/>
+					<decision>
+						<choice>
+							<speech>&amp;DialogSystem_Yes&amp;</speech>
+							<audiofile/>
+							<line id="Sinamoi_QF04_Agree"/>
+						</choice>
+						<main-choice>
+							<speech>&amp;DialogSystem_No&amp;</speech>
+							<audiofile/>
+						</main-choice>
+					</decision>
+					<line id="Sinamoi_QF04_Disagree"/>
+				</dialog>
+			</state>
+			<state type="use_second" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Sinamoi_QF04_UseSecond"/>
+					<decision>
+						<choice>
+							<speech>&amp;DialogSystem_Yes&amp;</speech>
+							<audiofile/>
+							<line id="Sinamoi_QF04_Agree"/>
+						</choice>
+						<main-choice>
+							<speech>&amp;DialogSystem_No&amp;</speech>
+							<audiofile/>
+						</main-choice>
+					</decision>
+					<line id="Sinamoi_QF04_Disagree"/>
+				</dialog>
+			</state>
+			<state type="quest_brief" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="ACT1A_Sinamoi_FoodSupplies_Name"/>
+				</dialog>
+				<dialog>
+					<line id="ACT1A_Sinamoi_FoodSupplies_PaperLine_B"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Sinamoi_QF06_NF" middle_radius="7.0" time_btw_series="40.000000">    <!-- Modificado -->
+			<state type="near_to_middle" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Sinamoi_QF06_NearToMiddle_01"/>
+				</dialog>
+			</state>
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Sinamoi_QF06_Use_A"/>
+					<line id="Sinamoi_QF06_Use_B"/>
+					<decision>
+						<choice>
+							<speech>&amp;DialogSystem_Yes&amp;</speech>
+							<audiofile/>
+							<line id="Sinamoi_QF06_Agree"/>
+						</choice>
+						<main-choice>
+							<speech>&amp;DialogSystem_No&amp;</speech>
+							<audiofile/>
+						</main-choice>
+					</decision>
+					<line id="Sinamoi_QF06_Disagree"/>
+				</dialog>
+			</state>
+			<state type="use_second" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Sinamoi_QF06_Use_Second"/>
+					<decision>
+						<choice>
+							<speech>&amp;DialogSystem_Yes&amp;</speech>
+							<audiofile/>
+							<line id="Sinamoi_QF06_Agree"/>
+						</choice>
+						<main-choice>
+							<speech>&amp;DialogSystem_No&amp;</speech>
+							<audiofile/>
+						</main-choice>
+					</decision>
+					<line id="Sinamoi_QF06_Disagree"/>
+				</dialog>
+			</state>
+			<state type="quest_brief" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="ACT1A_SinamoiHelicopter_Name"/>
+				</dialog>
+				<dialog>
+					<line id="ACT1A_SinamoiHelicopter_PaperLine"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Sinamoi_QF08_NF" middle_radius="7.0" time_btw_series="40.000000">    <!-- Modificado -->
+			<state type="surprised" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Sinamoi_QF08_Surprised"/>
+				</dialog>
+			</state>
+			<state type="near_to_middle" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Sinamoi_QF08_NearToMiddle"/>
+				</dialog>
+			</state>
+			<state type="middle_to_near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Sinamoi_QF08_MiddleToNear"/>
+				</dialog>
+			</state>
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Sinamoi_QF08_Use_A"/>
+					<line id="Sinamoi_QF08_Use_B"/>
+					<line id="Sinamoi_QF08_Use_C"/>
+					<decision>
+						<choice>
+							<speech>&amp;DialogSystem_Yes&amp;</speech>
+							<audiofile/>
+							<line id="Sinamoi_QF08_Agree_A"/>
+							<line id="Sinamoi_QF08_Agree_B"/>
+						</choice>
+						<main-choice>
+							<speech>&amp;DialogSystem_No&amp;</speech>
+							<audiofile/>
+						</main-choice>
+					</decision>
+					<line id="Sinamoi_QF08_Disagree"/>
+				</dialog>
+			</state>
+			<state type="use_second" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Sinamoi_QF08_Use_Second"/>
+					<decision>
+						<choice>
+							<speech>&amp;DialogSystem_Yes&amp;</speech>
+							<audiofile/>
+							<line id="Sinamoi_QF08_Agree_A"/>
+							<line id="Sinamoi_QF08_Agree_B"/>
+						</choice>
+						<main-choice>
+							<speech>&amp;DialogSystem_No&amp;</speech>
+							<audiofile/>
+						</main-choice>
+					</decision>
+					<line id="Sinamoi_QF08_Disagree"/>
+				</dialog>
+			</state>
+			<state type="quest_brief" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="ACT1A_GoToParkingLot_Name"/>
+				</dialog>
+				<dialog>
+					<line id="ACT1A_GoToParkingLot_PaperLine"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Sinamoi_QF09_NF" middle_radius="7.0" time_btw_series="40.000000">    <!-- Modificado -->
+			<state type="near_to_middle" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Sinamoi_QF09_NearToMiddle"/>
+				</dialog>
+			</state>
+			<state type="middle_to_near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Sinamoi_QF09_MiddleToNear"/>
+				</dialog>
+			</state>
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Sinamoi_QF09_Use_A"/>
+					<line id="Sinamoi_QF09_Use_B"/>
+					<decision>
+						<choice>
+							<speech>&amp;DialogSystem_Yes&amp;</speech>
+							<audiofile/>
+							<line id="Sinamoi_QF09_Agree_A"/>
+							<line id="Sinamoi_QF09_Agree_B"/>
+						</choice>
+						<main-choice>
+							<speech>&amp;DialogSystem_No&amp;</speech>
+							<audiofile/>
+						</main-choice>
+					</decision>
+					<line id="Sinamoi_QF09_Disagree"/>
+				</dialog>
+			</state>
+			<state type="use_second" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Sinamoi_QF09_Use_Second"/>
+					<decision>
+						<choice>
+							<speech>&amp;DialogSystem_Yes&amp;</speech>
+							<audiofile/>
+							<line id="Sinamoi_QF09_Agree_A"/>
+							<line id="Sinamoi_QF09_Agree_B"/>
+						</choice>
+						<main-choice>
+							<speech>&amp;DialogSystem_No&amp;</speech>
+							<audiofile/>
+						</main-choice>
+					</decision>
+					<line id="Sinamoi_QF09_Disagree"/>
+				</dialog>
+			</state>
+			<state type="quest_brief" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="ACT1A_Mechanic_Name"/>
+				</dialog>
+				<dialog>
+					<line id="ACT1A_Mechanic_PaperLine_A"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Sinamoi_QF01_InProgress" time_btw_series="188.000000" random_order="true">
+			<state type="middle_to_near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Sinamoi_QF01_InProgress_01"/>
+				</dialog>
+				<dialog>
+					<line id="Sinamoi_QF01_InProgress_02"/>
+				</dialog>
+				<dialog>
+					<line id="Sinamoi_QF01_InProgress_03"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Sinamoi_QF02_InProgress" time_btw_series="188.000000" random_order="true">
+			<state type="middle_to_near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Sinamoi_QF02_InProgress_01"/>
+				</dialog>
+				<dialog>
+					<line id="Sinamoi_QF02_InProgress_02"/>
+				</dialog>
+				<dialog>
+					<line id="Sinamoi_QF02_InProgress_03"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Sinamoi_QF08_InProgress" middle_radius="5.0" time_btw_series="60.000000">    <!-- Modificado -->
+			<state type="middle_to_near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Sinamoi_QF08_InProgress_01"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Sinamoi_QF03_NF_Busy_01" time_btw_series="30.000000" random_order="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Sinamoi_Busy_01"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Sinamoi_QF04_InProgress" middle_radius="5.0" time_btw_series="60.000000">    <!-- Modificado -->
+			<state type="middle_to_near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Sinamoi_QF04_InProgress_01"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Sinamoi_QF06_InProgress" middle_radius="5.0" time_btw_series="60.000000">    <!-- Modificado -->
+			<state type="middle_to_near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Sinamoi_QF06_InProgress_01"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Sinamoi_QF09_InProgress" middle_radius="5.0" time_btw_series="60.000000">    <!-- Modificado -->
+			<state type="middle_to_near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Sinamoi_QF09_InProgress_01"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Sinamoi_QF01_Accomplished" near_radius="4.0" time_btw_series="20.000000" random_order="true">    <!-- Modificado -->
+			<state type="middle_to_near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Sinamoi_QF01_InProgress_01"/>
+				</dialog>
+				<dialog>
+					<line id="Sinamoi_QF01_InProgress_02"/>
+				</dialog>
+				<dialog>
+					<line id="Sinamoi_QF01_InProgress_03"/>
+				</dialog>
+			</state>
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Sinamoi_QF01_Accomplished"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Sinamoi_QF04_Accomplished">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Sinamoi_QF04_Accomplished"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Sinamoi_QF06_Accomplished">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Sinamoi_QF06_Accomplished"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Sinamoi_QF08_Accomplished" auto_use="true">
+			<state type="use" range="49.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Sinamoi_QF08_Accomplished"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Sinamoi_QF09_Accomplished">
+			<state type="player_spotted" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Sinamoi_QF09_Accomplished"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Sinamoi_QF10_NF" middle_radius="5.0" time_btw_series="40.000000">    <!-- Modificado -->
+			<state type="near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Sinamoi_QF10_FarToMiddle"/>
+				</dialog>
+			</state>
+			<state type="near_to_middle" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Sinamoi_QF10_NearToMiddle"/>
+				</dialog>
+			</state>
+			<state type="middle_to_near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Sinamoi_QF10_MiddleToNear"/>
+				</dialog>
+			</state>
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Sinamoi_QF10_Use_A"/>
+					<line id="Sinamoi_QF10_Use_B"/>
+					<decision>
+						<choice>
+							<speech>&amp;DialogSystem_Yes&amp;</speech>
+							<audiofile/>
+							<line id="Sinamoi_QF10_Agree_A"/>
+							<line id="Sinamoi_QF10_Agree_B"/>
+						</choice>
+						<main-choice>
+							<speech>&amp;DialogSystem_No&amp;</speech>
+							<audiofile/>
+						</main-choice>
+					</decision>
+					<line id="Sinamoi_QF10_Disagree"/>
+				</dialog>
+			</state>
+			<state type="use_second" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Sinamoi_QF10_UseSecond"/>
+					<decision>
+						<choice>
+							<speech>&amp;DialogSystem_Yes&amp;</speech>
+							<audiofile/>
+							<line id="Sinamoi_QF10_Agree_A"/>
+							<line id="Sinamoi_QF10_Agree_B"/>
+						</choice>
+						<main-choice>
+							<speech>&amp;DialogSystem_No&amp;</speech>
+							<audiofile/>
+						</main-choice>
+					</decision>
+					<line id="Sinamoi_QF10_Disagree"/>
+				</dialog>
+			</state>
+			<state type="quest_brief" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="ACT1A_GoToHotel_Name"/>
+				</dialog>
+				<dialog>
+					<line id="Hotel_ContactTheVoice_PaperLine"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Sinamoi_QF10_InProgress" middle_radius="5.0" time_btw_series="60.000000">    <!-- Modificado -->
+			<state type="middle_to_near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Sinamoi_QF10_InProgress_01"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Sinamoi_QF05_NF" middle_radius="7.0" time_btw_series="40.000000">    <!-- Modificado -->
+			<state type="near_to_middle" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Sinamoi_QF05_NearToMiddle"/>
+				</dialog>
+			</state>
+			<state type="middle_to_near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Sinamoi_QF05_MiddleToNear"/>
+				</dialog>
+			</state>
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Sinamoi_QF05_Use_A"/>
+					<line id="Sinamoi_QF05_Use_B"/>
+					<decision>
+						<choice>
+							<speech>&amp;DialogSystem_Yes&amp;</speech>
+							<audiofile/>
+							<line id="Sinamoi_QF05_Agree_A"/>
+							<line id="Sinamoi_QF05_Agree_B"/>
+						</choice>
+						<main-choice>
+							<speech>&amp;DialogSystem_No&amp;</speech>
+							<audiofile/>
+						</main-choice>
+					</decision>
+					<line id="Sinamoi_QF05_Disagree"/>
+				</dialog>
+			</state>
+			<state type="use_second" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Sinamoi_QF05_Use_Second"/>
+					<decision>
+						<choice>
+							<speech>&amp;DialogSystem_Yes&amp;</speech>
+							<audiofile/>
+							<line id="Sinamoi_QF05_Agree_A"/>
+							<line id="Sinamoi_QF05_Agree_B"/>
+						</choice>
+						<main-choice>
+							<speech>&amp;DialogSystem_No&amp;</speech>
+							<audiofile/>
+						</main-choice>
+					</decision>
+					<line id="Sinamoi_QF05_Disagree"/>
+				</dialog>
+			</state>
+			<state type="quest_brief" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="ACT1A_Sinamoi_FoodBars_Name"/>
+				</dialog>
+				<dialog>
+					<line id="ACT1A_Sinamoi_FoodBars_PaperLine_A"/>
+				</dialog>
+				<dialog>
+					<line id="ACT1A_Sinamoi_FoodBars_PaperLine_C"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Sinamoi_QF05_InProgress" middle_radius="5.0" time_btw_series="188.000000">    <!-- Modificado -->
+			<state type="middle_to_near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Sinamoi_QF05_InProgress_01"/>
+				</dialog>
+				<dialog>
+					<line id="Sinamoi_QF05_InProgress_02"/>
+				</dialog>
+				<dialog>
+					<line id="Sinamoi_QF05_InProgress_03"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Sinamoi_QF05_Accomplished" auto_use="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Sinamoi_QF05_Accomplished"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Sinamoi_QF_Gather" time_btw_series="20.000000">
+			<state type="middle_to_near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Sinamoi_Gather_01"/>
+				</dialog>
+				<dialog>
+					<line id="Sinamoi_Gather_02"/>
+				</dialog>
+				<dialog>
+					<line id="Sinamoi_Gather_03"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Sinamoi_QF03_Accomplished_Busy">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Sinamoi_BusyEnd"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Sinamoi_QF03_NF_Busy_02" time_btw_series="40.000000">
+			<state type="near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Sinamoi_Busy_02"/>
+				</dialog>
+				<dialog>
+					<line id="Sinamoi_Busy_03"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="Mechanic">
+		<group name="Mechanic_QF01_NF" time_btw_series="40.000000">
+			<state type="middle" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Mechanic_QF01_Middle_01"/>
+				</dialog>
+				<dialog>
+					<line id="Mechanic_QF01_Middle_02"/>
+				</dialog>
+				<dialog>
+					<line id="Mechanic_QF01_Middle_03"/>
+				</dialog>
+			</state>
+			<state type="near_to_middle" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Mechanic_QF01_NearToMiddle"/>
+				</dialog>
+			</state>
+			<state type="middle_to_near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Mechanic_QF01_MiddleToNear"/>
+				</dialog>
+			</state>
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Mechanic_QF01_Use_A"/>
+					<line id="Mechanic_QF01_Use_B"/>
+					<decision>
+						<choice>
+							<speech>&amp;DialogSystem_Yes&amp;</speech>
+							<audiofile/>
+							<line id="Mechanic_QF02_Agree"/>
+						</choice>
+						<main-choice>
+							<speech>&amp;DialogSystem_No&amp;</speech>
+							<audiofile/>
+						</main-choice>
+					</decision>
+					<line id="Mechanic_QF01_Disagree"/>
+				</dialog>
+			</state>
+			<state type="use_second" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Mechanic_QF02_Use_Second"/>
+					<decision>
+						<choice>
+							<speech>&amp;DialogSystem_Yes&amp;</speech>
+							<audiofile/>
+							<line id="Mechanic_QF02_Agree"/>
+						</choice>
+						<main-choice>
+							<speech>&amp;DialogSystem_No&amp;</speech>
+							<audiofile/>
+						</main-choice>
+					</decision>
+					<line id="Mechanic_QF01_Disagree"/>
+				</dialog>
+			</state>
+			<state type="quest_brief" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="ACT1A_Mechanic_Protect_Name"/>
+				</dialog>
+				<dialog>
+					<line id="ACT1A_Mechanic_PaperLine_D"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Mechanic_QF01_InProgress" time_btw_series="60.000000">
+			<state type="middle_to_near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Mechanic_QF01_InProgress_01"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Mechanic_QF01_Accomplished">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Mechanic_QF02_Accomplished"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="Jin">
+		<group name="Jin_QF02_NF" time_btw_series="40.000000">
+			<state type="near_to_middle" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Jin_QF02_NearToMiddle_01"/>
+				</dialog>
+			</state>
+			<state type="middle_to_near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Jin_QF02_MiddleToNear_01"/>
+				</dialog>
+			</state>
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Jin_QF02_Use_A"/>
+					<line id="Jin_QF02_Use_B"/>
+					<decision>
+						<choice>
+							<speech>&amp;DialogSystem_Yes&amp;</speech>
+							<audiofile/>
+							<line id="Jin_QF02_Accomplished"/>
+						</choice>
+						<main-choice>
+							<speech>&amp;DialogSystem_No&amp;</speech>
+							<audiofile/>
+						</main-choice>
+					</decision>
+					<line id="Jin_QF02_Disagree"/>
+				</dialog>
+			</state>
+			<state type="use_second" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Jin_QF02_Use_Second"/>
+					<decision>
+						<choice>
+							<speech>&amp;DialogSystem_Yes&amp;</speech>
+							<audiofile/>
+							<line id="Jin_QF02_Accomplished"/>
+						</choice>
+						<main-choice>
+							<speech>&amp;DialogSystem_No&amp;</speech>
+							<audiofile/>
+						</main-choice>
+					</decision>
+					<line id="Jin_QF02_Disagree"/>
+				</dialog>
+			</state>
+			<state type="quest_brief" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="ACT1A_ToTheCity_Name"/>
+				</dialog>
+				<dialog>
+					<line id="ACT1A_ToTheCity_PaperLine_A"/>
+				</dialog>
+				<dialog>
+					<line id="ACT1A_ToTheCity_PaperLine_B"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Jin_QF05_InProgress" time_btw_series="188.000000">
+			<state type="middle_to_near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Jin_QF05_InProgress_01"/>
+				</dialog>
+				<dialog>
+					<line id="Jin_QF05_InProgress_02"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Jin_QF06_NF">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Jin_QF06_MiddleToNear"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Jin_QF02_InProgress" time_btw_series="188.000000">
+			<state type="middle_to_near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Jin_QF02_InProgress_01"/>
+				</dialog>
+				<dialog>
+					<line id="Jin_QF02_Near_03"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Jin_QF05_Accomplished" auto_use="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Jin_QF05_Accomplished"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Jin_QF12_NF">
+			<state type="near_to_middle" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Jin_QF12_NearToMiddle"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Jin_QF12_NF2" time_btw_series="40.000000">
+			<state type="near_to_middle" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Jin_QF12_NearToMiddle"/>
+				</dialog>
+			</state>
+			<state type="middle_to_near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Jin_QF12_MiddleToNear"/>
+				</dialog>
+			</state>
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Jin_QF12_Use"/>
+					<decision>
+						<choice>
+							<speech>&amp;DialogSystem_Yes&amp;</speech>
+							<audiofile/>
+							<line id="Jin_QF12_Agree"/>
+						</choice>
+						<main-choice>
+							<speech>&amp;DialogSystem_No&amp;</speech>
+							<audiofile/>
+						</main-choice>
+					</decision>
+					<line id="Jin_QF12_Disagree"/>
+				</dialog>
+			</state>
+			<state type="use_second" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Jin_QF12_UseSecond"/>
+					<decision>
+						<choice>
+							<speech>&amp;DialogSystem_Yes&amp;</speech>
+							<audiofile/>
+							<line id="Jin_QF12_Agree"/>
+						</choice>
+						<main-choice>
+							<speech>&amp;DialogSystem_No&amp;</speech>
+							<audiofile/>
+						</main-choice>
+					</decision>
+					<line id="Jin_QF12_Disagree"/>
+				</dialog>
+			</state>
+			<state type="quest_brief" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="ACT1A_Bunker_PaperTitle"/>
+				</dialog>
+				<dialog>
+					<line id="ACT1A_FindMowenInJungle_PaperLine_A"/>
+				</dialog>
+				<dialog>
+					<line id="ACT1A_FindMowenInJungle_PaperLine_B"/>
+				</dialog>
+				<dialog>
+					<line id="ACT1A_FindMowenInJungle_PaperLine_C"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Jin_QF13_NF1" middle_radius="17.0" time_btw_series="40.000000">    <!-- Modificado -->
+			<state type="near_to_middle" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Jin_QF13_NearToMiddle"/>
+				</dialog>
+			</state>
+			<state type="middle_to_near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Jin_QF13_MiddleToNear"/>
+				</dialog>
+			</state>
+			<state type="use" range="75.69" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Jin_QF13_Use_A"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Jin_QF13_NF2" time_btw_series="30.000000">
+			<state type="middle_to_near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Jin_QF13_MiddleToNear"/>
+				</dialog>
+			</state>
+			<state type="use" range="57.76" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Jin_QF13_Use_B"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Jin_QF13_NF3">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Jin_QF13_Use_C"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Jin_QF12_NF1" time_btw_series="90.000000" random_order="true">
+			<state type="middle" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Jin_QF02_Near_03"/>
+				</dialog>
+				<dialog>
+					<line id="Jin_QF02_Near_01"/>
+				</dialog>
+			</state>
+			<state type="near_to_middle" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Jin_QF02_Use_Second"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Jin_QF12_Esc_01_A">
+			<state type="use" range="44.89" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Jin_Act3A_QF01_InProgress11"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Jin_QF12_Esc_01_B">
+			<state type="use" range="47.61" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Jin_Act3A_QF01_WalkingHighway05"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Jin_QF12_Esc_02_A">
+			<state type="use" range="49.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Jin_Act3A_QF01_WalkingHighway04"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Jin_QF12_Esc_02_B">
+			<state type="use" range="49.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Jin_QF02_Near_01"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Jin_QF12_Esc_03_A">
+			<state type="use" range="49.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Jin_QF00B_Use"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Jin_QF12_Esc_03_B">
+			<state type="use" range="49.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Jin_QF01_InProgress_02"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Jin_QF12_Esc_04_A">
+			<state type="use" range="49.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Jin_QF08_Far_02"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Jin_QF12_Esc_04_B">
+			<state type="use" range="49.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Jin_QF13_Near_01"/>
+					<line id="Jin_QF13_Near_03"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Jin_QF12_Esc_04_C">
+			<state type="middle_to_near" range="49.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Jin_Waiting_01"/>
+				</dialog>
+				<dialog>
+					<line id="Jin_Waiting_03"/>
+				</dialog>
+				<dialog>
+					<line id="Jin_Waiting_04"/>
+				</dialog>
+			</state>
+			<state type="use" range="49.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Jin_Act3A_QF01_WalkingHighway01"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="Survivor_Act1A_011">
+		<group name="Survivor_Act1A_011_NF_02" near_radius="20.0" middle_radius="21.0" far_radius="22.0" time_btw_series="-1.000000">    <!-- Modificado -->
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="SurvivorCar_Use_A"/>
+					<line id="SurvivorCar_Use_D"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Survivor_Act1A_011_NF_01" near_radius="20.0" middle_radius="25.0" far_radius="30.0" time_btw_series="3.000000" random_order="true">    <!-- Modificado -->
+			<state type="near" range="62.41" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="SurvivorCar_Far_01"/>
+				</dialog>
+				<dialog>
+					<line id="SurvivorCar_Far_02"/>
+				</dialog>
+				<dialog>
+					<line id="SurvivorCar_Far_03"/>
+				</dialog>
+				<dialog>
+					<line id="SurvivorCar_Far_04"/>
+				</dialog>
+				<dialog>
+					<line id="SurvivorCar_Far_05"/>
+				</dialog>
+				<dialog>
+					<line id="SurvivorCar_Far_06"/>
+				</dialog>
+				<dialog>
+					<line id="SurvivorCar_Far_07"/>
+				</dialog>
+			</state>
+			<state type="middle" range="60.84" volume="1.000000" subtitles="false">    <!-- Modificado -->
+				<dialog>
+					<line id="SurvivorCar_Far_01"/>
+				</dialog>
+				<dialog>
+					<line id="SurvivorCar_Far_02"/>
+				</dialog>
+				<dialog>
+					<line id="SurvivorCar_Far_03"/>
+				</dialog>
+				<dialog>
+					<line id="SurvivorCar_Far_04"/>
+				</dialog>
+				<dialog>
+					<line id="SurvivorCar_Far_05"/>
+				</dialog>
+				<dialog>
+					<line id="SurvivorCar_Far_06"/>
+				</dialog>
+				<dialog>
+					<line id="SurvivorCar_Far_07"/>
+				</dialog>
+			</state>
+			<state type="far" range="60.84" volume="1.000000" subtitles="false">    <!-- Modificado -->
+				<dialog>
+					<line id="SurvivorCar_Far_01"/>
+				</dialog>
+				<dialog>
+					<line id="SurvivorCar_Far_02"/>
+				</dialog>
+				<dialog>
+					<line id="SurvivorCar_Far_03"/>
+				</dialog>
+				<dialog>
+					<line id="SurvivorCar_Far_04"/>
+				</dialog>
+				<dialog>
+					<line id="SurvivorCar_Far_05"/>
+				</dialog>
+				<dialog>
+					<line id="SurvivorCar_Far_06"/>
+				</dialog>
+				<dialog>
+					<line id="SurvivorCar_Far_07"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Survivor_Act1A_011_NF_03">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="SurvivorCar_Use_E"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Survivor_Act1A_011_NF_04" time_btw_series="40.000000">
+			<state type="near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="SurvivorCar_Near_01"/>
+				</dialog>
+				<dialog>
+					<line id="SurvivorCar_Near_02"/>
+				</dialog>
+				<dialog>
+					<line id="SurvivorCar_Near_03"/>
+				</dialog>
+				<dialog>
+					<line id="SurvivorCar_Near_04"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="Jeannine">
+		<group name="Jeannine_Q1_NF" near_radius="2.0" middle_radius="3.0" time_btw_series="40.000000">    <!-- Modificado -->
+			<state type="near" range="12.25" volume="0.670000" subtitles="false">    <!-- Modificado -->
+				<dialog>
+					<line id="Jeannine_Q1_Near_01"/>
+				</dialog>
+				<dialog>
+					<line id="Jeannine_Q1_Near_02"/>
+				</dialog>
+				<dialog>
+					<line id="Jeannine_Q1_Near_03"/>
+				</dialog>
+			</state>
+			<state type="near_to_middle" range="10.24" volume="0.660000" subtitles="false">    <!-- Modificado -->
+				<dialog>
+					<line id="Jeannine_Q1_NearToMiddle"/>
+				</dialog>
+			</state>
+			<state type="middle_to_near" range="16.0" volume="0.580000" subtitles="false">    <!-- Modificado -->
+				<dialog>
+					<line id="Jeannine_Q1_MiddleToNear"/>
+				</dialog>
+			</state>
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Jeannine_Q1_Use"/>
+					<decision>
+						<choice>
+							<speech>&amp;DialogSystem_Yes&amp;</speech>
+							<audiofile/>
+							<line id="Jeannine_Q1_Agree"/>
+						</choice>
+						<main-choice>
+							<speech>&amp;DialogSystem_No&amp;</speech>
+							<audiofile/>
+						</main-choice>
+					</decision>
+					<line id="Jeannine_Q1_Disagree"/>
+				</dialog>
+			</state>
+			<state type="use_second" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Jeannine_Q1_Use_Second"/>
+					<decision>
+						<choice>
+							<speech>&amp;DialogSystem_Yes&amp;</speech>
+							<audiofile/>
+							<line id="Jeannine_Q1_Agree"/>
+						</choice>
+						<main-choice>
+							<speech>&amp;DialogSystem_No&amp;</speech>
+							<audiofile/>
+						</main-choice>
+					</decision>
+					<line id="Jeannine_Q1_Disagree"/>
+				</dialog>
+			</state>
+			<state type="quest_brief" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Jeannine_Q1_Name"/>
+				</dialog>
+				<dialog>
+					<line id="Jeannine_Q1_PaperLine_A"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Jeannine_Q1_InProgress" near_radius="2.0" middle_radius="4.0" time_btw_series="188.000000">    <!-- Modificado -->
+			<state type="middle_to_near" range="12.96" volume="0.660000" subtitles="false">    <!-- Modificado -->
+				<dialog>
+					<line id="Jeannine_Q1_InProgress_01"/>
+				</dialog>
+				<dialog>
+					<line id="Jeannine_Q1_InProgress_02"/>
+				</dialog>
+				<dialog>
+					<line id="Jeannine_Q1_InProgress_03"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Jeannine_Q1_Accomplished">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Jeannine_Q1_Accomplished"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="Richard">
+		<group name="Richard_Q1_NF" near_radius="5.0" middle_radius="20.0" far_radius="40.0" time_btw_series="40.000000">    <!-- Modificado -->
+			<state type="near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Richard_Q1_Near_03"/>
+				</dialog>
+				<dialog>
+					<line id="Richard_Q1_Near_02"/>
+				</dialog>
+				<dialog>
+					<line id="Richard_Q1_Near_01"/>
+				</dialog>
+			</state>
+			<state type="middle" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Richard_Q1_Middle_01"/>
+				</dialog>
+				<dialog>
+					<line id="Richard_Q1_Middle_02"/>
+				</dialog>
+				<dialog>
+					<line id="Richard_Q1_Middle_03"/>
+				</dialog>
+			</state>
+			<state type="far" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Richard_Q1_Far_01"/>
+				</dialog>
+				<dialog>
+					<line id="Richard_Q1_Far_02"/>
+				</dialog>
+				<dialog>
+					<line id="Richard_Q1_Far_03"/>
+				</dialog>
+			</state>
+			<state type="surprised" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Richard_Q1_Surprised"/>
+				</dialog>
+			</state>
+			<state type="player_spotted" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Richard_Q1_PlayerSpotted"/>
+				</dialog>
+			</state>
+			<state type="near_to_middle" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Richard_Q1_NearToMiddle"/>
+				</dialog>
+			</state>
+			<state type="middle_to_near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Richard_Q1_MiddleToNear"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Richard_Q1_Accomplished">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Richard_Q1_Accomplished_A"/>
+					<line id="Richard_Q1_Accomplished_B"/>
+					<line id="Richard_Q1_Accomplished_C"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="Roger">
+		<group name="Roger_Q1_NF" time_btw_series="40.000000">
+			<state type="near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Roger_Q1_Near_01"/>
+				</dialog>
+				<dialog>
+					<line id="Roger_Q1_Near_02"/>
+				</dialog>
+				<dialog>
+					<line id="Roger_Q1_Near_03"/>
+				</dialog>
+			</state>
+			<state type="middle" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Roger_Q1_Middle_01"/>
+				</dialog>
+				<dialog>
+					<line id="Roger_Q1_Middle_02"/>
+				</dialog>
+				<dialog>
+					<line id="Roger_Q1_Middle_03"/>
+				</dialog>
+			</state>
+			<state type="far" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Roger_Q1_Far_01"/>
+				</dialog>
+				<dialog>
+					<line id="Roger_Q1_Far_02"/>
+				</dialog>
+				<dialog>
+					<line id="Roger_Q1_Far_03"/>
+				</dialog>
+			</state>
+			<state type="surprised" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Roger_Q1_Surprised"/>
+				</dialog>
+			</state>
+			<state type="player_spotted" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Roger_Q1_PlayerSpotted"/>
+				</dialog>
+			</state>
+			<state type="near_to_middle" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Roger_Q1_NearToMiddle"/>
+				</dialog>
+			</state>
+			<state type="middle_to_near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Roger_Q1_MiddleToNear"/>
+				</dialog>
+			</state>
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Roger_Q1_Use_A"/>
+					<line id="Roger_Q1_Use_B"/>
+					<line id="Roger_Q1_Use_C"/>
+					<decision>
+						<choice>
+							<speech>&amp;DialogSystem_Yes&amp;</speech>
+							<audiofile/>
+							<line id="Roger_Q1_Agree"/>
+						</choice>
+						<main-choice>
+							<speech>&amp;DialogSystem_No&amp;</speech>
+							<audiofile/>
+						</main-choice>
+					</decision>
+					<line id="Roger_Q1_Disagree"/>
+				</dialog>
+			</state>
+			<state type="use_second" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Roger_Q1_UseSecond"/>
+					<decision>
+						<choice>
+							<speech>&amp;DialogSystem_Yes&amp;</speech>
+							<audiofile/>
+							<line id="Roger_Q1_Agree"/>
+						</choice>
+						<main-choice>
+							<speech>&amp;DialogSystem_No&amp;</speech>
+							<audiofile/>
+						</main-choice>
+					</decision>
+					<line id="Roger_Q1_Disagree"/>
+				</dialog>
+			</state>
+			<state type="quest_brief" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Roger_Q1_Name"/>
+				</dialog>
+				<dialog>
+					<line id="Roger_Q1_PaperLine"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Roger_Q1_InProgress" time_btw_series="60.000000">
+			<state type="middle_to_near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Roger_Q1_InProgress_01"/>
+				</dialog>
+				<dialog>
+					<line id="Roger_Q1_InProgress_02"/>
+				</dialog>
+				<dialog>
+					<line id="Roger_Q1_InProgress_03"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="James">
+		<group name="James_Q1_NF" near_radius="3.0" middle_radius="6.0" time_btw_series="40.000000" random_order="true">    <!-- Modificado -->
+			<state type="near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="James_Q1_Near_01"/>
+				</dialog>
+				<dialog>
+					<line id="James_Q1_Near_02"/>
+				</dialog>
+				<dialog>
+					<line id="James_Q1_Near_03"/>
+				</dialog>
+			</state>
+			<state type="player_spotted" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="James_Q1_PlayerSpotted"/>
+				</dialog>
+			</state>
+			<state type="near_to_middle" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="James_Q1_NearToMiddle"/>
+				</dialog>
+			</state>
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="James_Q1_Use_A"/>
+					<line id="James_Q1_Use_B"/>
+					<decision>
+						<choice>
+							<speech>&amp;DialogSystem_Yes&amp;</speech>
+							<audiofile/>
+							<line id="James_Q1_Use_C"/>
+						</choice>
+						<main-choice>
+							<speech>&amp;DialogSystem_No&amp;</speech>
+							<audiofile/>
+						</main-choice>
+					</decision>
+					<line id="James_Q2_Disagree"/>
+				</dialog>
+			</state>
+			<state type="use_second" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="James_Q1_Use_B"/>
+					<decision>
+						<choice>
+							<speech>&amp;DialogSystem_Yes&amp;</speech>
+							<audiofile/>
+							<line id="James_Q1_Use_C"/>
+						</choice>
+						<main-choice>
+							<speech>&amp;DialogSystem_No&amp;</speech>
+							<audiofile/>
+						</main-choice>
+					</decision>
+					<line id="James_Q2_Disagree"/>
+				</dialog>
+			</state>
+			<state type="quest_brief" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="James_Q1_Name"/>
+				</dialog>
+				<dialog>
+					<line id="James_Q1_PaperLine_A"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="James_Q1_InProgress" time_btw_series="188.000000" random_order="true">
+			<state type="middle_to_near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="James_Q1_InProgress_01"/>
+				</dialog>
+				<dialog>
+					<line id="James_Q1_InProgress_02"/>
+				</dialog>
+				<dialog>
+					<line id="James_Q1_InProgress_03"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="James_Q1_Accomplished">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="James_Q1_Accomplished"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="James_Q2_NF" near_radius="3.0" middle_radius="6.0" time_btw_series="40.000000" random_order="true">    <!-- Modificado -->
+			<state type="near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="James_Q2_Near_01"/>
+				</dialog>
+				<dialog>
+					<line id="James_Q2_Near_02"/>
+				</dialog>
+			</state>
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="James_Q2_Use_A"/>
+					<line id="James_Q2_Use_B"/>
+					<decision>
+						<choice>
+							<speech>&amp;DialogSystem_Yes&amp;</speech>
+							<audiofile/>
+							<line id="James_Q2_Agree"/>
+						</choice>
+						<main-choice>
+							<speech>&amp;DialogSystem_No&amp;</speech>
+							<audiofile/>
+						</main-choice>
+					</decision>
+					<line id="James_Q2_Disagree"/>
+				</dialog>
+			</state>
+			<state type="use_second" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="James_Q2_Use_Second"/>
+					<decision>
+						<choice>
+							<speech>&amp;DialogSystem_Yes&amp;</speech>
+							<audiofile/>
+							<line id="James_Q2_Agree"/>
+						</choice>
+						<main-choice>
+							<speech>&amp;DialogSystem_No&amp;</speech>
+							<audiofile/>
+						</main-choice>
+					</decision>
+					<line id="James_Q2_Disagree"/>
+				</dialog>
+			</state>
+			<state type="quest_brief" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="James_Q2_Name"/>
+				</dialog>
+				<dialog>
+					<line id="James_Q2_PaperLine_B"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="James_Q2_InProgress" near_radius="2.0" middle_radius="5.0" time_btw_series="188.000000" random_order="true">    <!-- Modificado -->
+			<state type="middle_to_near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="James_Q2_InProgress_01"/>
+				</dialog>
+				<dialog>
+					<line id="James_Q2_InProgress_02"/>
+				</dialog>
+				<dialog>
+					<line id="James_Q2_InProgress_03"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="James_Q2_Accomplished">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="James_Q2_Accomplished"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="Jennifer">
+		<group name="Jennifer_Q1_NF" middle_radius="5.0" time_btw_series="40.000000">    <!-- Modificado -->
+			<state type="near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Jennifer_Q1_Near_01"/>
+				</dialog>
+				<dialog>
+					<line id="Jennifer_Q1_Near_02"/>
+				</dialog>
+				<dialog>
+					<line id="Jennifer_Q1_Near_03"/>
+				</dialog>
+			</state>
+			<state type="middle" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Jennifer_Q1_Middle_01"/>
+				</dialog>
+				<dialog>
+					<line id="Jennifer_Q1_Middle_02"/>
+				</dialog>
+				<dialog>
+					<line id="Jennifer_Q1_Middle_03"/>
+				</dialog>
+			</state>
+			<state type="surprised" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Jennifer_Q1_Surprised"/>
+				</dialog>
+			</state>
+			<state type="player_spotted" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Jennifer_Q1_PlayerSpotted"/>
+				</dialog>
+			</state>
+			<state type="near_to_middle" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Jennifer_Q1_NearToMiddle"/>
+				</dialog>
+			</state>
+			<state type="middle_to_near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Jennifer_Q1_MiddleToNear"/>
+				</dialog>
+			</state>
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Jennifer_Q1_Use_A"/>
+					<line id="Jennifer_Q1_Use_B"/>
+					<decision>
+						<choice>
+							<speech>&amp;DialogSystem_Yes&amp;</speech>
+							<audiofile/>
+							<line id="Jennifer_Q1_Agree"/>
+						</choice>
+						<main-choice>
+							<speech>&amp;DialogSystem_No&amp;</speech>
+							<audiofile/>
+						</main-choice>
+					</decision>
+					<line id="Jennifer_Q1_Disagree"/>
+				</dialog>
+			</state>
+			<state type="use_second" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Jennifer_Q1_UseSecond"/>
+					<decision>
+						<choice>
+							<speech>&amp;DialogSystem_Yes&amp;</speech>
+							<audiofile/>
+							<line id="Jennifer_Q1_Agree"/>
+						</choice>
+						<main-choice>
+							<speech>&amp;DialogSystem_No&amp;</speech>
+							<audiofile/>
+						</main-choice>
+					</decision>
+					<line id="Jennifer_Q1_Disagree"/>
+				</dialog>
+			</state>
+			<state type="quest_brief" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Jennifer_Q1_Name"/>
+				</dialog>
+				<dialog>
+					<line id="Jennifer_Q1_PaperLine"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Jennifer_Q1_InProgress" middle_radius="5.0" time_btw_series="188.000000">    <!-- Modificado -->
+			<state type="middle_to_near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Jennifer_Q1_InProgress_01"/>
+				</dialog>
+				<dialog>
+					<line id="Jennifer_Q1_InProgress_02"/>
+				</dialog>
+				<dialog>
+					<line id="Jennifer_Q1_InProgress_03"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Jennifer_Q1_Accomplished">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Jennifer_Q1_Accomplished"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="Cliff">
+		<group name="Cliff_Q1_NF" time_btw_series="30.000000">
+			<state type="near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Cliff_Q1_Near_01"/>
+				</dialog>
+				<dialog>
+					<line id="Cliff_Q1_Near_02"/>
+				</dialog>
+				<dialog>
+					<line id="Cliff_Q1_Near_03"/>
+				</dialog>
+			</state>
+			<state type="middle" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Cliff_Q1_Middle_01"/>
+				</dialog>
+				<dialog>
+					<line id="Cliff_Q1_Middle_02"/>
+				</dialog>
+				<dialog>
+					<line id="Cliff_Q1_Middle_03"/>
+				</dialog>
+			</state>
+			<state type="far" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Cliff_Q1_Far_01"/>
+				</dialog>
+				<dialog>
+					<line id="Cliff_Q1_Far_02"/>
+				</dialog>
+				<dialog>
+					<line id="Cliff_Q1_Far_03"/>
+				</dialog>
+			</state>
+			<state type="surprised" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Cliff_Q1_Surprised"/>
+				</dialog>
+				<dialog>
+					<line id="Cliff_Q1_PaperLine"/>
+				</dialog>
+			</state>
+			<state type="player_spotted" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Cliff_Q1_PlayerSpotted"/>
+				</dialog>
+			</state>
+			<state type="near_to_middle" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Cliff_Q1_NearToMiddle"/>
+				</dialog>
+			</state>
+			<state type="middle_to_near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Cliff_Q1_MiddleToNear"/>
+				</dialog>
+			</state>
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Cliff_Q1_Use_A"/>
+					<line id="Cliff_Q1_Use_B"/>
+					<decision>
+						<choice>
+							<speech>&amp;DialogSystem_Yes&amp;</speech>
+							<audiofile/>
+							<line id="Cliff_Q1_Agree"/>
+						</choice>
+						<main-choice>
+							<speech>&amp;DialogSystem_No&amp;</speech>
+							<audiofile/>
+						</main-choice>
+					</decision>
+					<line id="Cliff_Q1_Disagree"/>
+				</dialog>
+			</state>
+			<state type="use_second" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Cliff_Q1_Use_Second"/>
+					<decision>
+						<choice>
+							<speech>&amp;DialogSystem_Yes&amp;</speech>
+							<audiofile/>
+							<line id="Cliff_Q1_Agree"/>
+						</choice>
+						<main-choice>
+							<speech>&amp;DialogSystem_No&amp;</speech>
+							<audiofile/>
+						</main-choice>
+					</decision>
+					<line id="Cliff_Q1_Disagree"/>
+				</dialog>
+			</state>
+			<state type="quest_brief" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Cliff_Q1_Name"/>
+				</dialog>
+				<dialog>
+					<line id="Cliff_Q1_PaperLine"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Cliff_Q1_Accomplished" auto_use="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Cliff_Q1_Accomplished_A"/>
+				</dialog>
+				<dialog>
+					<line id="Cliff_Q1_Accomplished_B"/>
+				</dialog>
+				<dialog>
+					<line id="Cliff_Q1_Accomplished_C"/>
+				</dialog>
+				<dialog>
+					<line id="Cliff_Q1_Accomplished_D"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Cliff_Q1_NF_noUse" time_btw_series="20.000000">
+			<state type="near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Cliff_Q1_Near_01"/>
+				</dialog>
+				<dialog>
+					<line id="Cliff_Q1_Near_02"/>
+				</dialog>
+				<dialog>
+					<line id="Cliff_Q1_Near_03"/>
+				</dialog>
+			</state>
+			<state type="middle" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Cliff_Q1_Middle_01"/>
+				</dialog>
+				<dialog>
+					<line id="Cliff_Q1_Middle_02"/>
+				</dialog>
+				<dialog>
+					<line id="Cliff_Q1_Middle_03"/>
+				</dialog>
+			</state>
+			<state type="far" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Cliff_Q1_Far_01"/>
+				</dialog>
+				<dialog>
+					<line id="Cliff_Q1_Far_02"/>
+				</dialog>
+				<dialog>
+					<line id="Cliff_Q1_Far_03"/>
+				</dialog>
+			</state>
+			<state type="surprised" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Cliff_Q1_Surprised"/>
+				</dialog>
+			</state>
+			<state type="player_spotted" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Cliff_Q1_PlayerSpotted"/>
+				</dialog>
+			</state>
+			<state type="near_to_middle" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Cliff_Q1_NearToMiddle"/>
+				</dialog>
+			</state>
+			<state type="middle_to_near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Cliff_Q1_MiddleToNear"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="Jose">
+		<group name="Jose_Q1_NF" near_radius="10.0" middle_radius="20.0" far_radius="25.0" time_btw_series="30.000000">    <!-- Modificado -->
+			<state type="near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Jose_Q1_Near_01"/>
+				</dialog>
+				<dialog>
+					<line id="Jose_Q1_Near_02"/>
+				</dialog>
+				<dialog>
+					<line id="Jose_Q1_Near_03"/>
+				</dialog>
+			</state>
+			<state type="near_to_middle" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Jose_Q1_MiddleToNear"/>
+				</dialog>
+			</state>
+			<state type="middle_to_near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Jose_Q1_NearToMiddle"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Jose_Q1_Accomplished">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Jose_Q1_Accomplished_A"/>
+					<line id="Jose_Q1_Accomplished_B"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="Laurie">
+		<group name="Laurie_Q1_NF" time_btw_series="40.000000">
+			<state type="near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Laurie_Q1_Near_01"/>
+				</dialog>
+				<dialog>
+					<line id="Laurie_Q1_Near_03"/>
+				</dialog>
+			</state>
+			<state type="middle" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Laurie_Q1_Near_02"/>
+				</dialog>
+			</state>
+			<state type="far" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Laurie_Q1_MiddleToNear"/>
+				</dialog>
+			</state>
+			<state type="near_to_middle" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Laurie_Q1_NearToMiddle"/>
+				</dialog>
+			</state>
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Laurie_Q1_Use_A"/>
+					<line id="Laurie_Q1_Use_B"/>
+					<decision>
+						<choice>
+							<speech>&amp;DialogSystem_Yes&amp;</speech>
+							<audiofile/>
+							<line id="Laurie_Q1_Agree"/>
+						</choice>
+						<main-choice>
+							<speech>&amp;DialogSystem_No&amp;</speech>
+							<audiofile/>
+						</main-choice>
+					</decision>
+					<line id="Laurie_Q1_Disagree"/>
+				</dialog>
+			</state>
+			<state type="use_second" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Laurie_Q1_Use_Second"/>
+					<decision>
+						<choice>
+							<speech>&amp;DialogSystem_Yes&amp;</speech>
+							<audiofile/>
+							<line id="Laurie_Q1_Agree"/>
+						</choice>
+						<main-choice>
+							<speech>&amp;DialogSystem_No&amp;</speech>
+							<audiofile/>
+						</main-choice>
+					</decision>
+					<line id="Laurie_Q1_Disagree"/>
+				</dialog>
+			</state>
+			<state type="quest_brief" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Laurie_Q1_Name"/>
+				</dialog>
+				<dialog>
+					<line id="Laurie_Q1_PaperLine"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Laurie_Q1_InProgress" time_btw_series="40.000000">
+			<state type="middle_to_near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Laurie_Q1_InProgress_01"/>
+				</dialog>
+				<dialog>
+					<line id="Laurie_Q1_InProgress_02"/>
+				</dialog>
+				<dialog>
+					<line id="Laurie_Q1_InProgress_03"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Laurie_Q2_NF" time_btw_series="30.000000">
+			<state type="near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Laurie_Q2_Near_01"/>
+				</dialog>
+				<dialog>
+					<line id="Laurie_Q2_Near_02"/>
+				</dialog>
+				<dialog>
+					<line id="Laurie_Q2_Near_03"/>
+				</dialog>
+			</state>
+			<state type="near_to_middle" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Laurie_Q2_NearToMiddle"/>
+				</dialog>
+			</state>
+			<state type="middle_to_near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Laurie_Q2_MiddleToNear"/>
+				</dialog>
+			</state>
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Laurie_Q2_Use_A"/>
+					<line id="Laurie_Q2_Use_B"/>
+					<decision>
+						<choice>
+							<speech>&amp;DialogSystem_Yes&amp;</speech>
+							<audiofile/>
+							<line id="Laurie_Q2_Agree"/>
+						</choice>
+						<main-choice>
+							<speech>&amp;DialogSystem_No&amp;</speech>
+							<audiofile/>
+						</main-choice>
+					</decision>
+					<line id="Laurie_Q2_Disagree"/>
+				</dialog>
+			</state>
+			<state type="use_second" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Laurie_Q2_Use_Second"/>
+					<decision>
+						<choice>
+							<speech>&amp;DialogSystem_Yes&amp;</speech>
+							<audiofile/>
+							<line id="Laurie_Q2_Agree"/>
+						</choice>
+						<main-choice>
+							<speech>&amp;DialogSystem_No&amp;</speech>
+							<audiofile/>
+						</main-choice>
+					</decision>
+					<line id="Laurie_Q2_Disagree"/>
+				</dialog>
+			</state>
+			<state type="quest_brief" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Laurie_Q2_Name"/>
+				</dialog>
+				<dialog>
+					<line id="Laurie_Q2_PaperLine"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Laurie_Q2_InProgress">
+			<state type="middle_to_near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Laurie_Q2_InProgress_01"/>
+				</dialog>
+				<dialog>
+					<line id="Laurie_Q2_InProgress_02"/>
+				</dialog>
+				<dialog>
+					<line id="Laurie_Q2_InProgress_03"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Laurie_Q1_Accomplished">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Laurie_Q1_Accomplished"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Laurie_Q2_Accomplished">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Laurie_Q2_Accomplished"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="William">
+		<group name="William_Q1_NF" time_btw_series="40.000000">
+			<state type="near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="William_Q1_Near_01"/>
+				</dialog>
+				<dialog>
+					<line id="William_Q1_Near_02"/>
+				</dialog>
+				<dialog>
+					<line id="William_Q1_Near_03"/>
+				</dialog>
+			</state>
+			<state type="near_to_middle" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="William_Q1_NearToMiddle_01"/>
+				</dialog>
+			</state>
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="William_Q1_Use_A"/>
+					<line id="William_Q1_Use_B"/>
+					<line id="William_Q1_Use_C"/>
+					<line id="William_Q1_Use_D"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="Stanley">
+		<group name="Stanley_Q1_NF" time_btw_series="40.000000">
+			<state type="near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Stanley_Q1_Near_01"/>
+				</dialog>
+				<dialog>
+					<line id="Stanley_Q1_Near_02"/>
+				</dialog>
+				<dialog>
+					<line id="Stanley_Q1_Near_03"/>
+				</dialog>
+			</state>
+			<state type="near_to_middle" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Stanley_Q1_NearToMiddle"/>
+				</dialog>
+			</state>
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Stanley_Q1_Use_A"/>
+					<line id="Stanley_Q1_Use_B"/>
+					<decision>
+						<choice>
+							<speech>&amp;DialogSystem_Yes&amp;</speech>
+							<audiofile/>
+							<line id="Stanley_Q1_Agree"/>
+						</choice>
+						<main-choice>
+							<speech>&amp;DialogSystem_No&amp;</speech>
+							<audiofile/>
+						</main-choice>
+					</decision>
+					<line id="Stanley_Q1_Disagree"/>
+				</dialog>
+			</state>
+			<state type="use_second" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Stanley_Q1_Use_Second"/>
+					<decision>
+						<choice>
+							<speech>&amp;DialogSystem_Yes&amp;</speech>
+							<audiofile/>
+							<line id="Stanley_Q1_Agree"/>
+						</choice>
+						<main-choice>
+							<speech>&amp;DialogSystem_No&amp;</speech>
+							<audiofile/>
+						</main-choice>
+					</decision>
+					<line id="Stanley_Q1_Disagree"/>
+				</dialog>
+			</state>
+			<state type="quest_brief" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Stanley_Q1_Name"/>
+				</dialog>
+				<dialog>
+					<line id="Stanley_Q1_PaperLine"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Stanley_Q1_InProgress" time_btw_series="188.000000">
+			<state type="near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Stanley_Q1_Use_Second"/>
+				</dialog>
+				<dialog>
+					<line id="Stanley_Q1_InProgress_03"/>
+				</dialog>
+				<dialog>
+					<line id="Stanley_Q1_InProgress_01"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Stanley_Q1_Accomplished" auto_use="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Stanley_Q1_Agree"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Stanley_Q1_Puke">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Stanley_Q1_Near_03"/>
+					<line id="Stanley_Q1_InProgress_02"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Stanley_Q1_Help" time_btw_series="40.000000">
+			<state type="middle" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="SurvivorCar_Far_05"/>
+				</dialog>
+			</state>
+			<state type="far" range="100.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="SurvivorCar_Far_01"/>
+				</dialog>
+			</state>
+			<state type="near_to_middle" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="SurvivorCar_Far_06"/>
+				</dialog>
+			</state>
+			<state type="middle_to_near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="SurvivorCar_Far_09"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="Jessica">
+		<group name="Jessica_Q1_NF" time_btw_series="40.000000" auto_use="true">
+			<state type="near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Jessica_Q1_Near_01"/>
+				</dialog>
+				<dialog>
+					<line id="Jessica_Q1_Near_02"/>
+				</dialog>
+				<dialog>
+					<line id="Jessica_Q1_Near_03"/>
+				</dialog>
+			</state>
+			<state type="middle" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Jessica_Q1_Middle_01"/>
+				</dialog>
+				<dialog>
+					<line id="Jessica_Q1_Middle_02"/>
+				</dialog>
+				<dialog>
+					<line id="Jessica_Q1_Middle_03"/>
+				</dialog>
+			</state>
+			<state type="far" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Jessica_Q1_Far_01"/>
+				</dialog>
+				<dialog>
+					<line id="Jessica_Q1_Far_02"/>
+				</dialog>
+				<dialog>
+					<line id="Jessica_Q1_Far_03"/>
+				</dialog>
+			</state>
+			<state type="near_to_middle" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Jessica_Q1_NearToMiddle"/>
+				</dialog>
+			</state>
+			<state type="middle_to_near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Jessica_Q1_MiddleToNear"/>
+				</dialog>
+			</state>
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Jessica_Q1_Use"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Jessica_Q1_InProgress" time_btw_series="188.000000">
+			<state type="middle_to_near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Jessica_Q1_InProgress_01"/>
+				</dialog>
+				<dialog>
+					<line id="Jessica_Q1_InProgress_03"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Jessica_Q1_Accomplished" near_radius="6.0" auto_use="true">    <!-- Modificado -->
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Jessica_Q1_Accomplished"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Jessica_Q1_NF_B" auto_use="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Jessica_Q1_InProgress_02"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="Monica">
+		<group name="Monica_Q1_NF" near_radius="2.0" middle_radius="4.0" time_btw_series="40.000000" random_order="true">    <!-- Modificado -->
+			<state type="near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Monica_Q1_Near_01"/>
+				</dialog>
+				<dialog>
+					<line id="Monica_Q1_Near_02"/>
+				</dialog>
+				<dialog>
+					<line id="Monica_Q1_Near_03"/>
+				</dialog>
+			</state>
+			<state type="near_to_middle" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Monica_Q1_NearToMiddle"/>
+				</dialog>
+			</state>
+			<state type="middle_to_near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Monica_Q1_MiddleToNear"/>
+				</dialog>
+			</state>
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Monica_Q1_Use_A"/>
+					<line id="Monica_Q1_Use_B"/>
+					<decision>
+						<choice>
+							<speech>&amp;DialogSystem_Yes&amp;</speech>
+							<audiofile/>
+							<line id="Monica_Q1_Agree"/>
+						</choice>
+						<main-choice>
+							<speech>&amp;DialogSystem_No&amp;</speech>
+							<audiofile/>
+						</main-choice>
+					</decision>
+					<line id="Monica_Q1_Disagree"/>
+				</dialog>
+			</state>
+			<state type="use_second" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Monica_Q1_Use_Second"/>
+					<decision>
+						<choice>
+							<speech>&amp;DialogSystem_Yes&amp;</speech>
+							<audiofile/>
+							<line id="Monica_Q1_Agree"/>
+						</choice>
+						<main-choice>
+							<speech>&amp;DialogSystem_No&amp;</speech>
+							<audiofile/>
+						</main-choice>
+					</decision>
+					<line id="Monica_Q1_Disagree"/>
+				</dialog>
+			</state>
+			<state type="quest_brief" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Monica_Q1_Name"/>
+				</dialog>
+				<dialog>
+					<line id="Monica_Q1_PaperLine"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Monica_Q1_InProgress" near_radius="2.0" middle_radius="5.0" time_btw_series="188.000000" random_order="true">    <!-- Modificado -->
+			<state type="middle_to_near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Monica_Q1_InProgress_01"/>
+				</dialog>
+				<dialog>
+					<line id="Monica_Q1_InProgress_02"/>
+				</dialog>
+				<dialog>
+					<line id="Monica_Q1_InProgress_03"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Monica_Q1_Accomplished">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Monica_Q1_Accomplished"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="Steve">
+		<group name="Steve_Q1_NF" time_btw_series="30.000000">
+			<state type="near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Steve_Q1_Near_01"/>
+				</dialog>
+				<dialog>
+					<line id="Steve_Q1_Near_02"/>
+				</dialog>
+				<dialog>
+					<line id="Steve_Q1_Near_03"/>
+				</dialog>
+			</state>
+			<state type="middle" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Steve_Q1_Middle_01"/>
+				</dialog>
+				<dialog>
+					<line id="Steve_Q1_Middle_02"/>
+				</dialog>
+				<dialog>
+					<line id="Steve_Q1_Middle_03"/>
+				</dialog>
+			</state>
+			<state type="far" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Steve_Q1_Far_01"/>
+				</dialog>
+				<dialog>
+					<line id="Steve_Q1_Far_02"/>
+				</dialog>
+				<dialog>
+					<line id="Steve_Q1_Far_03"/>
+				</dialog>
+			</state>
+			<state type="near_to_middle" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Steve_Q1_NearToMiddle"/>
+				</dialog>
+			</state>
+			<state type="middle_to_near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Steve_Q1_MiddleToNear"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Steve_Q1_Accomplished_A">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Steve_Q1_Accomplished_A"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Steve_Q1_Accomplished_B">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Steve_Q1_Accomplished_B"/>
+					<line id="Steve_Q1_Accomplished_C"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="Harlan">
+		<group name="Harlan_Q1_NF" time_btw_series="60.000000" random_order="true">
+			<state type="near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Harlan_Q1_Near_01"/>
+				</dialog>
+				<dialog>
+					<line id="Harlan_Q1_Near_02"/>
+				</dialog>
+				<dialog>
+					<line id="Harlan_Q1_Near_03"/>
+				</dialog>
+			</state>
+			<state type="near_to_middle" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Harlan_Q1_NearToMiddle"/>
+				</dialog>
+			</state>
+			<state type="middle_to_near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Harlan_Q1_MiddleToNear"/>
+				</dialog>
+			</state>
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Harlan_Q1_Use_A"/>
+					<line id="Harlan_Q1_Use_B"/>
+					<decision>
+						<choice>
+							<speech>&amp;DialogSystem_Yes&amp;</speech>
+							<audiofile/>
+							<line id="Harlan_Q1_Agree"/>
+						</choice>
+						<main-choice>
+							<speech>&amp;DialogSystem_No&amp;</speech>
+							<audiofile/>
+						</main-choice>
+					</decision>
+					<line id="Harlan_Q1_Disagree"/>
+				</dialog>
+			</state>
+			<state type="use_second" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Harlan_Q1_UseSecond"/>
+					<decision>
+						<choice>
+							<speech>&amp;DialogSystem_Yes&amp;</speech>
+							<audiofile/>
+							<line id="Harlan_Q1_Agree"/>
+						</choice>
+						<main-choice>
+							<speech>&amp;DialogSystem_No&amp;</speech>
+							<audiofile/>
+						</main-choice>
+					</decision>
+					<line id="Harlan_Q1_Disagree"/>
+				</dialog>
+			</state>
+			<state type="quest_brief" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Harlan_Q1_Name"/>
+				</dialog>
+				<dialog>
+					<line id="Harlan_Q1_PaperLine"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Harlan_Q1_InProgress" time_btw_series="188.000000" random_order="true">
+			<state type="middle_to_near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Harlan_Q1_InProgress_01"/>
+				</dialog>
+				<dialog>
+					<line id="Harlan_Q1_InProgress_02"/>
+				</dialog>
+				<dialog>
+					<line id="Harlan_Q1_InProgress_03"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Harlan_Q1_Accomplished">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Harlan_Q1_Accomplished"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Harlan_Q3_NF" time_btw_series="40.000000">
+			<state type="near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Harlan_Q3_Near_01"/>
+				</dialog>
+				<dialog>
+					<line id="Harlan_Q3_Near_02"/>
+				</dialog>
+				<dialog>
+					<line id="Harlan_Q3_Near_03"/>
+				</dialog>
+			</state>
+			<state type="middle" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Harlan_Q3_Middle_01"/>
+				</dialog>
+				<dialog>
+					<line id="Harlan_Q3_Middle_02"/>
+				</dialog>
+				<dialog>
+					<line id="Harlan_Q3_Middle_03"/>
+				</dialog>
+			</state>
+			<state type="near_to_middle" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Harlan_Q3_NearToMiddle"/>
+				</dialog>
+			</state>
+			<state type="middle_to_near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Harlan_Q3_MiddleToNear"/>
+				</dialog>
+			</state>
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Harlan_Q3_Use_A"/>
+					<line id="Harlan_Q3_Use_B"/>
+					<decision>
+						<choice>
+							<speech>&amp;DialogSystem_Yes&amp;</speech>
+							<audiofile/>
+							<line id="Harlan_Q3_Agree"/>
+						</choice>
+						<main-choice>
+							<speech>&amp;DialogSystem_No&amp;</speech>
+							<audiofile/>
+						</main-choice>
+					</decision>
+					<line id="Harlan_Q3_Disagree"/>
+				</dialog>
+			</state>
+			<state type="use_second" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Harlan_Q3_UseSecond"/>
+					<decision>
+						<choice>
+							<speech>&amp;DialogSystem_Yes&amp;</speech>
+							<audiofile/>
+							<line id="Harlan_Q3_Agree"/>
+						</choice>
+						<main-choice>
+							<speech>&amp;DialogSystem_No&amp;</speech>
+							<audiofile/>
+						</main-choice>
+					</decision>
+					<line id="Harlan_Q3_Disagree"/>
+				</dialog>
+			</state>
+			<state type="quest_brief" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Harlan_Q3_PaperTitle"/>
+				</dialog>
+				<dialog>
+					<line id="Harlan_Q3_PaperLine"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Harlan_Q3_InProgress" middle_radius="12.0" time_btw_series="188.000000" random_order="true">    <!-- Modificado -->
+			<state type="middle_to_near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Harlan_Q3_InProgress_01"/>
+				</dialog>
+				<dialog>
+					<line id="Harlan_Q3_InProgress_02"/>
+				</dialog>
+				<dialog>
+					<line id="Harlan_Q3_InProgress_03"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Harlan_Q3_Accomplished">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Harlan_Q3_Accomplished"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Harlan_Q4_NF" time_btw_series="40.000000">
+			<state type="near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Harlan_Q4_Near_01"/>
+				</dialog>
+				<dialog>
+					<line id="Harlan_Q4_Near_02"/>
+				</dialog>
+				<dialog>
+					<line id="Harlan_Q4_Near_03"/>
+				</dialog>
+			</state>
+			<state type="near_to_middle" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Harlan_Q4_NearToMiddle"/>
+				</dialog>
+			</state>
+			<state type="middle_to_near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Harlan_Q4_MiddleToNear"/>
+				</dialog>
+			</state>
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Harlan_Q4_Use_A"/>
+					<line id="Harlan_Q4_Use_B"/>
+					<decision>
+						<choice>
+							<speech>&amp;DialogSystem_Yes&amp;</speech>
+							<audiofile/>
+							<line id="Harlan_Q4_Agree"/>
+						</choice>
+						<main-choice>
+							<speech>&amp;DialogSystem_No&amp;</speech>
+							<audiofile/>
+						</main-choice>
+					</decision>
+					<line id="Harlan_Q4_Disagree"/>
+				</dialog>
+			</state>
+			<state type="use_second" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Harlan_Q4_UseSecond"/>
+					<decision>
+						<choice>
+							<speech>&amp;DialogSystem_Yes&amp;</speech>
+							<audiofile/>
+							<line id="Harlan_Q4_Agree"/>
+						</choice>
+						<main-choice>
+							<speech>&amp;DialogSystem_No&amp;</speech>
+							<audiofile/>
+						</main-choice>
+					</decision>
+					<line id="Harlan_Q4_Disagree"/>
+				</dialog>
+			</state>
+			<state type="quest_brief" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Harlan_Q4_Name"/>
+				</dialog>
+				<dialog>
+					<line id="Harlan_Q4_PaperLine"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Harlan_Q4_InProgress" time_btw_series="188.000000" random_order="true">
+			<state type="middle_to_near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Harlan_Q4_InProgress_01"/>
+				</dialog>
+				<dialog>
+					<line id="Harlan_Q4_InProgress_02"/>
+				</dialog>
+				<dialog>
+					<line id="Harlan_Q4_InProgress_03"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Harlan_Q4_Accomplished">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Harlan_Q4_Accomplished"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Harlan_Q0_NF" middle_radius="8.0" far_radius="15.0" time_btw_series="40.000000">    <!-- Modificado -->
+			<state type="middle" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Harlan_Q3_NearToMiddle"/>
+				</dialog>
+				<dialog>
+					<line id="Harlan_Q2_Middle_02"/>
+				</dialog>
+			</state>
+			<state type="far" range="70.56" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Harlan_Q3_Far_01"/>
+				</dialog>
+				<dialog>
+					<line id="Harlan_Q3_Far_02"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Harlan_Q0_Accomplished" near_radius="20.0" middle_radius="30.0" far_radius="40.0">    <!-- Modificado -->
+			<state type="use" range="100.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="GenericMan03_Accomplished_01"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Harlan_Q4_Loop" time_btw_series="40.000000">
+			<state type="near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Harlan_Q4_InProgress_02"/>
+				</dialog>
+				<dialog>
+					<line id="Harlan_Q4_InProgress_01"/>
+				</dialog>
+			</state>
+			<state type="middle_to_near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Harlan_Q4_Near_03"/>
+				</dialog>
+			</state>
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Harlan_Q4_UseSecond"/>
+				</dialog>
+			</state>
+			<state type="use_second" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Harlan_Q4_InProgress_01"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="Doyle">
+		<group name="Doyle_Q1_NF" middle_radius="7.0" time_btw_series="30.000000">    <!-- Modificado -->
+			<state type="near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Doyle_Q1_Near_01"/>
+				</dialog>
+				<dialog>
+					<line id="Doyle_Q1_Near_02"/>
+				</dialog>
+				<dialog>
+					<line id="Doyle_Q1_Near_03"/>
+				</dialog>
+			</state>
+			<state type="surprised" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Doyle_Q1_Name"/>
+				</dialog>
+				<dialog>
+					<line id="Doyle_Q1_PaperLine"/>
+				</dialog>
+			</state>
+			<state type="near_to_middle" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Doyle_Q1_NearToMiddle"/>
+				</dialog>
+			</state>
+			<state type="middle_to_near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Doyle_Q1_MiddleToNear"/>
+				</dialog>
+			</state>
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Doyle_Q1_Use_A"/>
+					<line id="Doyle_Q1_Use_B"/>
+					<decision>
+						<choice>
+							<speech>&amp;DialogSystem_Yes&amp;</speech>
+							<audiofile/>
+							<line id="Doyle_Q1_Agree_A"/>
+							<line id="Doyle_Q1_Agree_B"/>
+						</choice>
+						<main-choice>
+							<speech>&amp;DialogSystem_No&amp;</speech>
+							<audiofile/>
+						</main-choice>
+					</decision>
+					<line id="Doyle_Q1_Disagree"/>
+				</dialog>
+			</state>
+			<state type="use_second" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Doyle_Q1_Use_Second"/>
+					<decision>
+						<choice>
+							<speech>&amp;DialogSystem_Yes&amp;</speech>
+							<audiofile/>
+							<line id="Doyle_Q1_Agree_A"/>
+							<line id="Doyle_Q1_Agree_B"/>
+						</choice>
+						<main-choice>
+							<speech>&amp;DialogSystem_No&amp;</speech>
+							<audiofile/>
+						</main-choice>
+					</decision>
+					<line id="Doyle_Q1_Disagree"/>
+				</dialog>
+			</state>
+			<state type="quest_brief" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Doyle_Q1_Name"/>
+				</dialog>
+				<dialog>
+					<line id="Doyle_Q1_PaperLine"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Doyle_Q1_InProgress" middle_radius="7.0" time_btw_series="30.000000">    <!-- Modificado -->
+			<state type="middle_to_near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Doyle_Q1_InProgress_01"/>
+				</dialog>
+				<dialog>
+					<line id="Doyle_Q1_InProgress_02"/>
+				</dialog>
+				<dialog>
+					<line id="Doyle_Q1_InProgress_03"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Doyle_Q1_Accomplished">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Doyle_Q1_Accomplished_A"/>
+					<line id="Doyle_Q1_Accomplished_B"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="Daren">
+		<group name="Daren_Q1_NF" time_btw_series="30.000000">
+			<state type="near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Daren_Q1_Near_01"/>
+				</dialog>
+				<dialog>
+					<line id="Daren_Q1_Near_02"/>
+				</dialog>
+				<dialog>
+					<line id="Daren_Q1_Near_03"/>
+				</dialog>
+			</state>
+			<state type="near_to_middle" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Daren_Q1_NearToMiddle"/>
+				</dialog>
+			</state>
+			<state type="middle_to_near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Daren_Q1_MiddleToNear"/>
+				</dialog>
+			</state>
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Daren_Q1_Use_A"/>
+					<line id="Daren_Q1_Use_B"/>
+					<line id="Daren_Q1_Use_C"/>
+				</dialog>
+			</state>
+			<state type="use_second" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Daren_Q1_Use_Second"/>
+					<decision>
+						<choice>
+							<speech>&amp;DialogSystem_Yes&amp;</speech>
+							<audiofile/>
+							<line id="Daren_Q1_Agree"/>
+						</choice>
+						<main-choice>
+							<speech>&amp;DialogSystem_No&amp;</speech>
+							<audiofile/>
+						</main-choice>
+					</decision>
+					<line id="Daren_Q1_Disagree"/>
+				</dialog>
+			</state>
+			<state type="quest_brief" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Daren_Q1_Name"/>
+				</dialog>
+				<dialog>
+					<line id="Daren_Q1_PaperLine"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Daren_Q1_InProgress">
+			<state type="middle_to_near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Daren_Q1_InProgress_01"/>
+				</dialog>
+				<dialog>
+					<line id="Daren_Q1_InProgress_02"/>
+				</dialog>
+				<dialog>
+					<line id="Daren_Q1_InProgress_03"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Daren_Q1_Accomplished">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Daren_Q1_Accomplished"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Daren_Q0_NF" time_btw_series="30.000000">
+			<state type="near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Daren_Q0_Near_01"/>
+				</dialog>
+				<dialog>
+					<line id="Daren_Q0_Near_02"/>
+				</dialog>
+				<dialog>
+					<line id="Daren_Q0_Near_03"/>
+				</dialog>
+			</state>
+			<state type="middle" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Daren_Q0_Middle_01"/>
+				</dialog>
+				<dialog>
+					<line id="Daren_Q0_Middle_02"/>
+				</dialog>
+				<dialog>
+					<line id="Daren_Q0_Middle_03"/>
+				</dialog>
+			</state>
+			<state type="far" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Daren_Q0_Far_01"/>
+				</dialog>
+				<dialog>
+					<line id="Daren_Q0_Far_02"/>
+				</dialog>
+				<dialog>
+					<line id="Daren_Q0_Far_03"/>
+				</dialog>
+			</state>
+			<state type="near_to_middle" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Daren_Q0_NearToMiddle"/>
+				</dialog>
+			</state>
+			<state type="middle_to_near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Daren_Q0_MiddleToNear"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Daren_Q0_Accomplished">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Daren_Q0_Accomplished_A"/>
+					<line id="Daren_Q0_Accomplished_B"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="Omar">
+		<group name="Omar_Q1_NF" time_btw_series="40.000000">
+			<state type="near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Omar_Q1_Near_01"/>
+				</dialog>
+				<dialog>
+					<line id="Omar_Q1_Near_02"/>
+				</dialog>
+				<dialog>
+					<line id="Omar_Q1_Near_03"/>
+				</dialog>
+			</state>
+			<state type="near_to_middle" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Omar_Q1_NearToMiddle"/>
+				</dialog>
+			</state>
+			<state type="middle_to_near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Omar_Q1_MiddleToNear"/>
+				</dialog>
+			</state>
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Omar_Q1_Use_A"/>
+					<line id="Omar_Q1_Use_B"/>
+					<decision>
+						<choice>
+							<speech>&amp;DialogSystem_Yes&amp;</speech>
+							<audiofile/>
+							<line id="Omar_Q1_Agree"/>
+						</choice>
+						<main-choice>
+							<speech>&amp;DialogSystem_No&amp;</speech>
+							<audiofile/>
+						</main-choice>
+					</decision>
+					<line id="Omar_Q1_Disagree"/>
+				</dialog>
+			</state>
+			<state type="use_second" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Omar_Q1_Use_Second"/>
+					<decision>
+						<choice>
+							<speech>&amp;DialogSystem_Yes&amp;</speech>
+							<audiofile/>
+							<line id="Omar_Q1_Agree"/>
+						</choice>
+						<main-choice>
+							<speech>&amp;DialogSystem_No&amp;</speech>
+							<audiofile/>
+						</main-choice>
+					</decision>
+					<line id="Omar_Q1_Disagree"/>
+				</dialog>
+			</state>
+			<state type="quest_brief" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Omar_Q1_Name"/>
+				</dialog>
+				<dialog>
+					<line id="Omar_Q1_PaperLine"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Omar_Q1_InProgress" time_btw_series="188.000000">
+			<state type="middle_to_near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Omar_Q1_InProgress_01"/>
+				</dialog>
+				<dialog>
+					<line id="Omar_Q1_InProgress_02"/>
+				</dialog>
+				<dialog>
+					<line id="Omar_Q1_InProgress_03"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Omar_Q2_NF" time_btw_series="40.000000">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Omar_Q2_Use_A"/>
+					<line id="Omar_Q2_Use_B"/>
+					<decision>
+						<choice>
+							<speech>&amp;DialogSystem_Yes&amp;</speech>
+							<audiofile/>
+							<line id="Omar_Q2_Agree"/>
+						</choice>
+						<main-choice>
+							<speech>&amp;DialogSystem_No&amp;</speech>
+							<audiofile/>
+						</main-choice>
+					</decision>
+					<line id="Omar_Q2_Disagree"/>
+				</dialog>
+			</state>
+			<state type="use_second" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Omar_Q2_Use_Second"/>
+					<decision>
+						<choice>
+							<speech>&amp;DialogSystem_Yes&amp;</speech>
+							<audiofile/>
+							<line id="Omar_Q2_Agree"/>
+						</choice>
+						<main-choice>
+							<speech>&amp;DialogSystem_No&amp;</speech>
+							<audiofile/>
+						</main-choice>
+					</decision>
+					<line id="Omar_Q2_Disagree"/>
+				</dialog>
+			</state>
+			<state type="quest_brief" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Omar_Q2_Name"/>
+				</dialog>
+				<dialog>
+					<line id="Omar_Q2_PaperLine"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Omar_Q2_InProgress" time_btw_series="60.000000">
+			<state type="middle_to_near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Omar_Q2_InProgress_01"/>
+				</dialog>
+				<dialog>
+					<line id="Omar_Q2_InProgress_02"/>
+				</dialog>
+				<dialog>
+					<line id="Omar_Q2_InProgress_03"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Omar_Q1_Accomplished">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Omar_Q1_Accomplished"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Omar_Q2_Accomplished">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Omar_Q2_Accomplished"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Omar_Q1_Accomplished_01">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Omar_Q2_InProgress_02"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="Mike002">
+		<group name="Mike002_Q4_NF" near_radius="2.0" middle_radius="5.0" time_btw_series="40.000000">    <!-- Modificado -->
+			<state type="near_to_middle" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Mike_QF04_NearToMiddle"/>
+				</dialog>
+			</state>
+			<state type="middle_to_near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Mike_QF04_MiddleToNear"/>
+				</dialog>
+			</state>
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Mike_QF04_Use_A"/>
+					<line id="Mike_QF04_Use_B"/>
+					<line id="Mike_QF04_Use_C"/>
+					<line id="Mike_QF04_Use_D"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Mike002_Q4_Accomplished" auto_use="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Mike_QF04_Accomplished"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Mike002_Q4_InProgress" near_radius="2.0" middle_radius="5.0" time_btw_series="60.000000">    <!-- Modificado -->
+			<state type="middle_to_near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Mike_QF04_InProgress_01"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="Katie">
+		<group name="Katie_Q1_NF" near_radius="6.0" random_order="true">    <!-- Modificado -->
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Katie_Q1_Near"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Katie_Q1_Accomplished" near_radius="12.0" middle_radius="15.0" time_btw_series="-1.000000">    <!-- Modificado -->
+			<state type="near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Katie_Q1_Accomplished"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="Voice">
+		<group name="Voice_M_F">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Voice_M_F"/>
+					<line id="Voice_M_G"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="Luciano">
+		<group name="Luciano_Q1_NF" middle_radius="5.0" time_btw_series="30.000000">    <!-- Modificado -->
+			<state type="middle" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Luciano_Q1_Middle_01"/>
+				</dialog>
+				<dialog>
+					<line id="Luciano_Q1_Middle_02"/>
+				</dialog>
+				<dialog>
+					<line id="Luciano_Q1_Middle_03"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="Lucy">
+		<group name="Lucy_Speech_01" near_radius="7.0" time_btw_series="5.000000">    <!-- Modificado -->
+			<state type="near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Survivor_Cleaning_01"/>
+				</dialog>
+				<dialog>
+					<line id="Survivor_Cleaning_02"/>
+				</dialog>
+				<dialog>
+					<line id="Survivor_Cleaning_03"/>
+				</dialog>
+				<dialog>
+					<line id="Survivor_Cleaning_04"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="Edgar">
+		<group name="Edgar_Q1_NF" near_radius="5.0" middle_radius="6.0" far_radius="7.0" time_btw_series="2.000000" random_order="true">    <!-- Modificado -->
+			<state type="near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Edgar_Q1_Middle_01"/>
+				</dialog>
+				<dialog>
+					<line id="Edgar_Q1_Middle_02"/>
+				</dialog>
+				<dialog>
+					<line id="Edgar_Q1_Middle_03"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="Alfred001">
+		<group name="Alfred001_Q1_NF" near_radius="4.0" middle_radius="7.0" far_radius="40.0">    <!-- Modificado -->
+			<state type="near" range="100.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Alfred_Q1_Near_02"/>
+				</dialog>
+			</state>
+			<state type="middle" range="100.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Alfred_Q1_Near_03"/>
+				</dialog>
+				<dialog>
+					<line id="Alfred_Q1_Near_01"/>
+				</dialog>
+			</state>
+			<state type="far" range="100.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Alfred_Q1_Near_03"/>
+				</dialog>
+				<dialog>
+					<line id="Alfred_Q1_Near_01"/>
+				</dialog>
+			</state>
+			<state type="near_to_middle" range="100.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Alfred_Q1_NearToMiddle"/>
+				</dialog>
+				<dialog>
+					<line id="Alfred_Q1_MiddleToNear"/>
+				</dialog>
+			</state>
+			<state type="middle_to_near" range="100.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Alfred_Q1_MiddleToNear"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Alfred001_Q1_Accomplished">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Alfred_Q1_Accomplished"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="Steffen">
+		<group name="Steffen_Q1_NF" near_radius="2.0" middle_radius="4.0" time_btw_series="40.000000" random_order="true">    <!-- Modificado -->
+			<state type="near" range="12.25" volume="0.710000" subtitles="false">    <!-- Modificado -->
+				<dialog>
+					<line id="Steffen_Q1_Near_01"/>
+				</dialog>
+				<dialog>
+					<line id="Steffen_Q1_Near_02"/>
+				</dialog>
+				<dialog>
+					<line id="Steffen_Q1_Near_03"/>
+				</dialog>
+			</state>
+			<state type="player_spotted" range="12.96" volume="0.710000" subtitles="false">    <!-- Modificado -->
+				<dialog>
+					<line id="Steffen_Q1_PlayerSpotted"/>
+				</dialog>
+			</state>
+			<state type="near_to_middle" range="12.25" volume="0.700000" subtitles="false">    <!-- Modificado -->
+				<dialog>
+					<line id="Steffen_Q1_NearToMiddle"/>
+				</dialog>
+			</state>
+			<state type="use" range="12.96" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Steffen_Q1_Use_A"/>
+					<line id="Steffen_Q1_Use_B"/>
+					<decision>
+						<choice>
+							<speech>&amp;DialogSystem_Yes&amp;</speech>
+							<audiofile/>
+							<line id="Steffen_Q1_Agree"/>
+						</choice>
+						<main-choice>
+							<speech>&amp;DialogSystem_No&amp;</speech>
+							<audiofile/>
+						</main-choice>
+					</decision>
+					<line id="Steffen_Q1_Disagree"/>
+				</dialog>
+			</state>
+			<state type="use_second" range="13.69" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Steffen_Q1_Use_Second"/>
+					<decision>
+						<choice>
+							<speech>&amp;DialogSystem_Yes&amp;</speech>
+							<audiofile/>
+							<line id="Steffen_Q1_Agree"/>
+						</choice>
+						<main-choice>
+							<speech>&amp;DialogSystem_No&amp;</speech>
+							<audiofile/>
+						</main-choice>
+					</decision>
+					<line id="Steffen_Q1_Disagree"/>
+				</dialog>
+			</state>
+			<state type="quest_brief" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Steffen_Q1_Name"/>
+				</dialog>
+				<dialog>
+					<line id="Steffen_Q1_PaperLine_A"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Steffen_Q1_Accomplished" near_radius="3.0" middle_radius="5.0">    <!-- Modificado -->
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Steffen_Q1_Accomplished"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Steffen_Q1_InProgress" near_radius="3.0" middle_radius="5.0" time_btw_series="188.000000" random_order="true">    <!-- Modificado -->
+			<state type="middle_to_near" range="12.25" volume="0.700000" subtitles="false">    <!-- Modificado -->
+				<dialog>
+					<line id="Steffen_Q1_InProgress_01"/>
+				</dialog>
+				<dialog>
+					<line id="Steffen_Q1_InProgress_02"/>
+				</dialog>
+				<dialog>
+					<line id="Steffen_Q1_InProgress_03"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Steffen_Q1_NF0" near_radius="2.0" middle_radius="4.0" time_btw_series="40.000000">    <!-- Modificado -->
+			<state type="near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Steffen_Q1_Near_01"/>
+				</dialog>
+				<dialog>
+					<line id="Steffen_Q1_Near_02"/>
+				</dialog>
+				<dialog>
+					<line id="Steffen_Q1_Near_03"/>
+				</dialog>
+			</state>
+			<state type="player_spotted" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Steffen_Q1_PlayerSpotted"/>
+				</dialog>
+			</state>
+			<state type="near_to_middle" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Steffen_Q1_NearToMiddle"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="Dominic">
+		<group name="Dominic_Q1_NF" near_radius="2.0" middle_radius="4.0" far_radius="7.0" time_btw_series="40.000000" random_order="true">    <!-- Modificado -->
+			<state type="near" range="12.96" volume="0.840000">    <!-- Modificado -->
+				<dialog>
+					<line id="Dominic_Q1_Near_01"/>
+				</dialog>
+				<dialog>
+					<line id="Dominic_Q1_Near_02"/>
+				</dialog>
+				<dialog>
+					<line id="Dominic_Q1_Near_03"/>
+				</dialog>
+			</state>
+			<state type="middle" range="12.25" volume="0.850000">    <!-- Modificado -->
+				<dialog>
+					<line id="Dominic_Q1_Middle_01"/>
+				</dialog>
+				<dialog>
+					<line id="Dominic_Q1_Middle_02"/>
+				</dialog>
+				<dialog>
+					<line id="Dominic_Q1_Middle_03"/>
+				</dialog>
+			</state>
+			<state type="surprised" range="12.25" volume="0.850000">    <!-- Modificado -->
+				<dialog>
+					<line id="Dominic_Q1_Surprised"/>
+				</dialog>
+			</state>
+			<state type="player_spotted" range="14.44" volume="0.840000">    <!-- Modificado -->
+				<dialog>
+					<line id="Dominic_Q1_PlayerSpotted"/>
+				</dialog>
+			</state>
+			<state type="near_to_middle" range="12.96" volume="0.840000">    <!-- Modificado -->
+				<dialog>
+					<line id="Dominic_Q1_NearToMiddle_01"/>
+				</dialog>
+			</state>
+			<state type="middle_to_near" range="12.25" volume="0.830000">    <!-- Modificado -->
+				<dialog>
+					<line id="Dominic_Q1_MiddleToNear_01"/>
+				</dialog>
+			</state>
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Dominic_Q1_Use_A"/>
+					<line id="Dominic_Q1_Use_B"/>
+					<decision>
+						<choice>
+							<speech>&amp;DialogSystem_Yes&amp;</speech>
+							<audiofile/>
+							<line id="Dominic_Q1_Agree"/>
+						</choice>
+						<main-choice>
+							<speech>&amp;DialogSystem_No&amp;</speech>
+							<audiofile/>
+						</main-choice>
+					</decision>
+					<line id="Dominic_Q1_Disagree"/>
+				</dialog>
+			</state>
+			<state type="use_second" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Dominic_Q1_Use_Second"/>
+					<decision>
+						<choice>
+							<speech>&amp;DialogSystem_Yes&amp;</speech>
+							<audiofile/>
+							<line id="Dominic_Q1_Agree"/>
+						</choice>
+						<main-choice>
+							<speech>&amp;DialogSystem_No&amp;</speech>
+							<audiofile/>
+						</main-choice>
+					</decision>
+					<line id="Dominic_Q1_Disagree"/>
+				</dialog>
+			</state>
+			<state type="quest_brief" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Dominic_QF01_Name"/>
+				</dialog>
+				<dialog>
+					<line id="Dominic_QF01_PaperLine_A"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Dominic_Q1_Accomplished" near_radius="3.0" middle_radius="5.0" far_radius="10.0">    <!-- Modificado -->
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Dominic_Q1_Accomplished"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Dominic_Q1_InProgress" near_radius="2.0" middle_radius="4.0" time_btw_series="188.000000" random_order="true">    <!-- Modificado -->
+			<state type="middle_to_near" range="12.96" volume="0.820000" subtitles="false">    <!-- Modificado -->
+				<dialog>
+					<line id="Dominic_Q1_InProgress_01"/>
+				</dialog>
+				<dialog>
+					<line id="Dominic_Q1_InProgress_02"/>
+				</dialog>
+				<dialog>
+					<line id="Dominic_Q1_InProgress_03"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="Maggie">
+		<group name="Maggie_Q1_NF">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Maggie_Q1_Use_A"/>
+					<line id="Maggie_Q1_Use_B"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="Max">
+		<group name="Max_Q1_NF" near_radius="1.0" middle_radius="1.8" far_radius="3.0" time_btw_series="40.000000" random_order="true">    <!-- Modificado -->
+			<state type="near" range="10.89" volume="0.840000">    <!-- Modificado -->
+				<dialog>
+					<line id="Max_Q1_Near_01"/>
+				</dialog>
+				<dialog>
+					<line id="Max_Q1_Near_02"/>
+				</dialog>
+				<dialog>
+					<line id="Max_Q1_Near_03"/>
+				</dialog>
+			</state>
+			<state type="middle" range="10.89" volume="0.840000">    <!-- Modificado -->
+				<dialog>
+					<line id="Max_Q1_Middle_01"/>
+				</dialog>
+				<dialog>
+					<line id="Max_Q1_Middle_02"/>
+				</dialog>
+				<dialog>
+					<line id="Max_Q1_Middle_03"/>
+				</dialog>
+				<dialog>
+					<line id="Max_Q1_Far_01"/>
+				</dialog>
+				<dialog>
+					<line id="Max_Q1_Far_02"/>
+				</dialog>
+				<dialog>
+					<line id="Max_Q1_Far_03"/>
+				</dialog>
+			</state>
+			<state type="surprised" range="13.69" volume="0.780000">    <!-- Modificado -->
+				<dialog>
+					<line id="Max_Q1_Surprised"/>
+				</dialog>
+			</state>
+			<state type="player_spotted" range="13.69" volume="0.880000">    <!-- Modificado -->
+				<dialog>
+					<line id="Max_Q1_PlayerSpotted"/>
+				</dialog>
+			</state>
+			<state type="near_to_middle" range="13.69" volume="0.860000">    <!-- Modificado -->
+				<dialog>
+					<line id="Max_Q1_NearToMiddle_01"/>
+				</dialog>
+			</state>
+			<state type="middle_to_near" range="11.56" volume="0.850000">    <!-- Modificado -->
+				<dialog>
+					<line id="Max_Q1_MiddleToNear_01"/>
+				</dialog>
+			</state>
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Max_Q1_Use_A"/>
+					<line id="Max_Q1_Use_B"/>
+					<decision>
+						<choice>
+							<speech>&amp;DialogSystem_Yes&amp;</speech>
+							<audiofile/>
+							<line id="Max_Q1_Agree_A"/>
+							<line id="Max_Q1_Agree_B"/>
+						</choice>
+						<main-choice>
+							<speech>&amp;DialogSystem_No&amp;</speech>
+							<audiofile/>
+						</main-choice>
+					</decision>
+					<line id="Max_Q1_Disagree"/>
+				</dialog>
+			</state>
+			<state type="use_second" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Max_Q1_Use_A"/>
+					<line id="Max_Q1_Use_B"/>
+					<decision>
+						<choice>
+							<speech>&amp;DialogSystem_Yes&amp;</speech>
+							<audiofile/>
+							<line id="Max_Q1_Agree_A"/>
+							<line id="Max_Q1_Agree_B"/>
+						</choice>
+						<main-choice>
+							<speech>&amp;DialogSystem_No&amp;</speech>
+							<audiofile/>
+						</main-choice>
+					</decision>
+					<line id="Max_Q1_Disagree"/>
+				</dialog>
+			</state>
+			<state type="quest_brief" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Max_Q1_Name"/>
+				</dialog>
+				<dialog>
+					<line id="Max_Q1_PaperLine_A"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Max_Q1_Accomplished" near_radius="3.0" middle_radius="5.0">    <!-- Modificado -->
+			<state type="use" range="32.49" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Max_Q1_Accomplished"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Max_Q1_InProgress" near_radius="1.0" middle_radius="1.8" time_btw_series="188.000000" random_order="true">    <!-- Modificado -->
+			<state type="middle_to_near" range="12.96" volume="0.900000" subtitles="false">    <!-- Modificado -->
+				<dialog>
+					<line id="Max_Q1_InProgress_01"/>
+				</dialog>
+				<dialog>
+					<line id="Max_Q1_InProgress_02"/>
+				</dialog>
+				<dialog>
+					<line id="Max_Q1_InProgress_03"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="Jose_Radio_001">
+		<group name="Jose_Q1_Radio001" near_radius="1.5" middle_radius="4.0" far_radius="10.0" time_btw_series="60.000000" random_order="true">    <!-- Modificado -->
+			<state type="middle_to_near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Jose_Q1_Radio"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="Jose_Radio_002">
+		<group name="Jose_Q1_Radio002" near_radius="1.5" middle_radius="4.0" far_radius="10.0" time_btw_series="60.000000" random_order="true">    <!-- Modificado -->
+			<state type="middle_to_near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Jose_Q1_Radio"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="Sinamoi_Radio_001">
+		<group name="Sinqmoi_Q2_Radio001">
+			<state type="use" range="46.24" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Sinamoi_QF02_Accomplished"/>
+					<line id="CINLGTower_02_Sinamoi"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="Darvin">
+		<group name="Darvin_Q1_NF_02" near_radius="2.0" middle_radius="5.0" time_btw_series="40.000000" random_order="true">    <!-- Modificado -->
+			<state type="near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Darvin_Q1_Near_01"/>
+				</dialog>
+				<dialog>
+					<line id="Darvin_Q1_Near_02"/>
+				</dialog>
+				<dialog>
+					<line id="Darvin_Q1_Near_03"/>
+				</dialog>
+			</state>
+			<state type="player_spotted" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Darvin_Q1_PlayerSpotted"/>
+				</dialog>
+			</state>
+			<state type="near_to_middle" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Darvin_Q1_NearToMiddle"/>
+				</dialog>
+			</state>
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Darvin_Q1_Use_A"/>
+					<line id="Darvin_Q1_Use_B"/>
+					<decision>
+						<choice>
+							<speech>&amp;DialogSystem_Yes&amp;</speech>
+							<audiofile/>
+							<line id="Darvin_Q1_Agree"/>
+						</choice>
+						<main-choice>
+							<speech>&amp;DialogSystem_No&amp;</speech>
+							<audiofile/>
+						</main-choice>
+					</decision>
+					<line id="Darvin_Q1_Disagree"/>
+				</dialog>
+			</state>
+			<state type="use_second" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Darvin_Q1_Use_Second"/>
+					<decision>
+						<choice>
+							<speech>&amp;DialogSystem_Yes&amp;</speech>
+							<audiofile/>
+							<line id="Darvin_Q1_Agree"/>
+						</choice>
+						<main-choice>
+							<speech>&amp;DialogSystem_No&amp;</speech>
+							<audiofile/>
+						</main-choice>
+					</decision>
+					<line id="Darvin_Q1_Disagree"/>
+				</dialog>
+			</state>
+			<state type="quest_brief" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Darvin_Q1_Name"/>
+				</dialog>
+				<dialog>
+					<line id="Darvin_Q1_PaperLine_A"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Darvin_Q1_InProgress" near_radius="0.2" middle_radius="5.0" time_btw_series="188.000000" random_order="true">    <!-- Modificado -->
+			<state type="middle_to_near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Darvin_Q1_InProgress_01"/>
+				</dialog>
+				<dialog>
+					<line id="Darvin_Q1_InProgress_02"/>
+				</dialog>
+				<dialog>
+					<line id="Darvin_Q1_InProgress_03"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Darvin_Q1_Accomplished_02">
+			<state type="use" range="57.76" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Darvin_Q1_Accomplished_B"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Darvin_Q1_NF_01" near_radius="2.0" time_btw_series="40.000000">    <!-- Modificado -->
+			<state type="near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Darvin_Q0_Use_A"/>
+				</dialog>
+				<dialog>
+					<line id="Darvin_Q1_Near_03"/>
+				</dialog>
+			</state>
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Darvin_Q0_Use_B"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Darvin_Q1_Accomplished_01">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Darvin_Q1_Accomplished_A"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="Mick">
+		<group name="Mick_Q1_NF" near_radius="1.5" middle_radius="3.0" far_radius="5.0" time_btw_series="40.000000" random_order="true">    <!-- Modificado -->
+			<state type="near_to_middle" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Mick_Q1_NearToMiddle"/>
+				</dialog>
+			</state>
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Mick_Q1_Use_A"/>
+					<line id="Mick_Q1_Use_B"/>
+					<decision>
+						<choice>
+							<speech>&amp;DialogSystem_Yes&amp;</speech>
+							<audiofile/>
+							<line id="Mick_Q1_Agree"/>
+						</choice>
+						<main-choice>
+							<speech>&amp;DialogSystem_No&amp;</speech>
+							<audiofile/>
+						</main-choice>
+					</decision>
+					<line id="Mick_Q1_Disagree"/>
+				</dialog>
+			</state>
+			<state type="use_second" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Mick_Q1_Use_Second"/>
+					<decision>
+						<choice>
+							<speech>&amp;DialogSystem_Yes&amp;</speech>
+							<audiofile/>
+							<line id="Mick_Q1_Agree"/>
+						</choice>
+						<main-choice>
+							<speech>&amp;DialogSystem_No&amp;</speech>
+							<audiofile/>
+						</main-choice>
+					</decision>
+					<line id="Mick_Q1_Disagree"/>
+				</dialog>
+			</state>
+			<state type="quest_brief" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Mick_Q1_Name"/>
+				</dialog>
+				<dialog>
+					<line id="Mick_Q1_PaperLine_A"/>
+				</dialog>
+				<dialog>
+					<line id="Mick_Q1_PaperLine_B"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Mick_Q1_InProgress" near_radius="2.0" middle_radius="5.0" time_btw_series="188.000000" random_order="true">    <!-- Modificado -->
+			<state type="middle_to_near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Mick_Q1_InProgress_01"/>
+				</dialog>
+				<dialog>
+					<line id="Mick_Q1_InProgress_02"/>
+				</dialog>
+				<dialog>
+					<line id="Mick_Q1_InProgress_03"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Mick_Q1_Accomplished" auto_use="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Mick_Q1_Accomplished"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Mick_Q1_NF2" near_radius="2.0" middle_radius="5.0" time_btw_series="60.000000">    <!-- Modificado -->
+			<state type="near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Mick_Q1_Near_04"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Mick_Q1_N0" near_radius="1.5" time_btw_series="40.000000">    <!-- Modificado -->
+			<state type="near" range="7.29" volume="0.700000">    <!-- Modificado -->
+				<dialog>
+					<line id="Mick_Q1_Near_01"/>
+				</dialog>
+				<dialog>
+					<line id="Mick_Q1_PlayerSpotted"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="Javier">
+		<group name="Javier01_Shop_ItemLooking" time_btw_series="188.000000">
+			<state type="near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="ShopJavier_ItemLooking_01"/>
+				</dialog>
+				<dialog>
+					<line id="ShopJavier_ItemLooking_02"/>
+				</dialog>
+				<dialog>
+					<line id="ShopJavier_ItemLooking_03"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Javier01_Shop_NF" time_btw_series="188.000000">
+			<state type="near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="ShopJavier_Near_01"/>
+				</dialog>
+				<dialog>
+					<line id="ShopJavier_Near_02"/>
+				</dialog>
+				<dialog>
+					<line id="ShopJavier_Near_03"/>
+				</dialog>
+			</state>
+			<state type="near_to_middle" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="ShopJavier_NearToMiddle"/>
+				</dialog>
+			</state>
+			<state type="middle_to_near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="ShopJavier_MiddleToNear"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Javier01_Shop_ItemBuying">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="ShopJavier_ItemBuying_01"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="Richard_Radio_001">
+		<group name="Richard_Q1_Radio001" near_radius="1.5" middle_radius="4.0" far_radius="10.0" time_btw_series="60.000000" random_order="true">    <!-- Modificado -->
+			<state type="middle_to_near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Richard_Q1_Radio"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="Richard_Radio_002">
+		<group name="Richard_Q1_Radio002" near_radius="1.5" middle_radius="4.0" far_radius="10.0" time_btw_series="60.000000" random_order="true">    <!-- Modificado -->
+			<state type="middle_to_near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Richard_Q1_Radio"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="James_Radio_001">
+		<group name="James_Q1_Radio001" near_radius="2.0" middle_radius="3.0" far_radius="10.0" time_btw_series="60.000000" random_order="true">    <!-- Modificado -->
+			<state type="middle_to_near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="James_Q1_Radio"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="James_Radio_002">
+		<group name="James_Q1_Radio002" near_radius="2.0" middle_radius="3.0" far_radius="10.0" time_btw_series="120.000000">    <!-- Modificado -->
+			<state type="middle_to_near" range="12.96" volume="0.830000">    <!-- Modificado -->
+				<dialog>
+					<line id="James_Q1_Radio"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="Omar_Radio_001">
+		<group name="Omar_Q1_Radio001" near_radius="1.5" middle_radius="4.0" far_radius="10.0" time_btw_series="60.000000" random_order="true">    <!-- Modificado -->
+			<state type="middle_to_near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Omar_Q1_Radio"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="Omar_Radio_002">
+		<group name="Omar_Q1_Radio002" near_radius="1.5" middle_radius="4.0" far_radius="10.0" time_btw_series="60.000000" random_order="true">    <!-- Modificado -->
+			<state type="middle_to_near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Omar_Q1_Radio"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="Harlan_Radio_001">
+		<group name="Harlan_Q1_Radio001" near_radius="1.5" middle_radius="4.0" far_radius="10.0" time_btw_series="60.000000" random_order="true">    <!-- Modificado -->
+			<state type="middle_to_near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Harlan_Q1_Radio"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="Harlan_Radio_002">
+		<group name="Harlan_Q1_Radio002" near_radius="1.5" middle_radius="4.0" far_radius="10.0" time_btw_series="60.000000" random_order="true">    <!-- Modificado -->
+			<state type="middle_to_near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Harlan_Q1_Radio"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="Marcus">
+		<group name="Marcus_Q1_NF_01" time_btw_series="30.000000">
+			<state type="near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Marcus_Q1_Near_01"/>
+				</dialog>
+				<dialog>
+					<line id="Marcus_Q1_Near_02"/>
+				</dialog>
+			</state>
+			<state type="middle" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Marcus_Q1_Middle_01"/>
+				</dialog>
+				<dialog>
+					<line id="Marcus_Q1_Middle_02"/>
+				</dialog>
+				<dialog>
+					<line id="Marcus_Q1_Middle_03"/>
+				</dialog>
+			</state>
+			<state type="far" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Marcus_Q1_Far_01"/>
+				</dialog>
+				<dialog>
+					<line id="Marcus_Q1_Far_02"/>
+				</dialog>
+				<dialog>
+					<line id="Marcus_Q1_Far_03"/>
+				</dialog>
+			</state>
+			<state type="surprised" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Marcus_Q1_Surprised"/>
+				</dialog>
+			</state>
+			<state type="player_spotted" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Marcus_Q1_PlayerSpotted"/>
+				</dialog>
+			</state>
+			<state type="near_to_middle" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Marcus_Q1_NearToMiddle"/>
+				</dialog>
+			</state>
+			<state type="middle_to_near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Marcus_Q1_MiddleToNear"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Marcus_Q1_Accomplished">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Marcus_Q1_Accomplished_A"/>
+					<line id="Marcus_Q1_Accomplished_B"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Marcus_Q1_NF_02" time_btw_series="30.000000" auto_use="true">
+			<state type="near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Marcus_Q1_Near_03"/>
+				</dialog>
+			</state>
+			<state type="near_to_middle" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Marcus_Q1_NearToMiddle"/>
+				</dialog>
+			</state>
+			<state type="middle_to_near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Marcus_Q1_Surprised"/>
+				</dialog>
+			</state>
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Marcus_Q1_Use"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Marcus_Q1_NF_03" time_btw_series="40.000000">
+			<state type="near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Marcus_Q1_Near_04"/>
+				</dialog>
+				<dialog>
+					<line id="Marcus_Q1_Near_05"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Marcus_Q1_InProgess" time_btw_series="30.000000">
+			<state type="middle_to_near" range="21.16" volume="0.850000">    <!-- Modificado -->
+				<dialog>
+					<line id="Marcus_Q1_InProgress_01"/>
+				</dialog>
+				<dialog>
+					<line id="Marcus_Q1_InProgress_02"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="Colin">
+		<group name="Colin_Q1_NF_01" time_btw_series="40.000000">
+			<state type="middle" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Colin_Q1_Middle_01"/>
+				</dialog>
+				<dialog>
+					<line id="Colin_Q1_Middle_03"/>
+				</dialog>
+			</state>
+			<state type="near_to_middle" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Colin_Q1_NearToMiddle"/>
+				</dialog>
+			</state>
+			<state type="middle_to_near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Colin_Q1_MiddleToNear"/>
+				</dialog>
+			</state>
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Colin_Q1_Middle_02"/>
+					<line id="Colin_Q1_Use_A"/>
+					<line id="Colin_Q1_Use_B"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Colin_Q1_NF_02" time_btw_series="60.000000" auto_use="true">
+			<state type="near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Colin_Q1_Near_01"/>
+				</dialog>
+				<dialog>
+					<line id="Colin_Q1_Near_02"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Colin_Q1_NF_03" auto_use="true">
+			<state type="use" range="49.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Colin_Q1_Use_C"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="Anne">
+		<group name="Anne_Q1_NF" near_radius="2.5" middle_radius="5.0" time_btw_series="188.000000">    <!-- Modificado -->
+			<state type="near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Anne_Q1_Near_01"/>
+				</dialog>
+				<dialog>
+					<line id="Anne_Q1_Near_02"/>
+				</dialog>
+				<dialog>
+					<line id="Anne_Q1_Near_03"/>
+				</dialog>
+			</state>
+			<state type="middle" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Anne_Q1_Middle_01"/>
+				</dialog>
+				<dialog>
+					<line id="Anne_Q1_Middle_02"/>
+				</dialog>
+				<dialog>
+					<line id="Anne_Q1_Middle_03"/>
+				</dialog>
+			</state>
+			<state type="player_spotted" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Anne_Q1_PlayerSpotted"/>
+				</dialog>
+			</state>
+			<state type="near_to_middle" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Anne_Q1_NearToMiddle"/>
+				</dialog>
+			</state>
+			<state type="middle_to_near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Anne_Q1_MiddleToNear"/>
+				</dialog>
+			</state>
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Anne_Q1_Use_A"/>
+					<line id="Anne_Q1_Use_B"/>
+					<line id="Anne_Q1_Use_C"/>
+					<decision>
+						<choice>
+							<speech>&amp;DialogSystem_Yes&amp;</speech>
+							<audiofile/>
+							<line id="Anne_Q1_Agree_A"/>
+							<line id="Anne_Q1_Agree_B"/>
+						</choice>
+						<main-choice>
+							<speech>&amp;DialogSystem_No&amp;</speech>
+							<audiofile/>
+						</main-choice>
+					</decision>
+				</dialog>
+			</state>
+			<state type="quest_brief" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Anne_Q1_Name"/>
+				</dialog>
+				<dialog>
+					<line id="Anne_Q1_PaperLine_A"/>
+				</dialog>
+				<dialog>
+					<line id="Anne_Q1_PaperLine_B"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Anne_Q1_InProgress" near_radius="2.0" middle_radius="5.0" time_btw_series="188.000000">    <!-- Modificado -->
+			<state type="middle_to_near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Anne_Q1_InProgress_01"/>
+				</dialog>
+				<dialog>
+					<line id="Anne_Q1_InProgress_02"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Anne_Q1_Accomplished">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Anne_Q1_Accomplished"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Anne_Q2_NF" near_radius="2.5" middle_radius="5.0" time_btw_series="188.000000">    <!-- Modificado -->
+			<state type="near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Anne_Q2_Near_01"/>
+				</dialog>
+				<dialog>
+					<line id="Anne_Q2_Near_02"/>
+				</dialog>
+				<dialog>
+					<line id="Anne_Q2_Near_03"/>
+				</dialog>
+			</state>
+			<state type="middle" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Anne_Q2_Middle_01"/>
+				</dialog>
+				<dialog>
+					<line id="Anne_Q2_Middle_02"/>
+				</dialog>
+			</state>
+			<state type="near_to_middle" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Anne_Q2_NearToMiddle"/>
+				</dialog>
+			</state>
+			<state type="middle_to_near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Anne_Q2_MiddleToNear"/>
+				</dialog>
+			</state>
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Anne_Q2_Use"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="Trevor">
+		<group name="Trevor_Q1_NF" near_radius="2.0" middle_radius="3.0" time_btw_series="40.000000">    <!-- Modificado -->
+			<state type="near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Trevor_Q1_Near_01"/>
+				</dialog>
+				<dialog>
+					<line id="Trevor_Q1_Near_02"/>
+				</dialog>
+				<dialog>
+					<line id="Trevor_Q1_Near_03"/>
+				</dialog>
+			</state>
+			<state type="near_to_middle" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Trevor_Q1_NearToMiddle"/>
+				</dialog>
+			</state>
+			<state type="middle_to_near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Trevor_Q1_MiddleToNear"/>
+				</dialog>
+			</state>
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Trevor_Q1_Use_A"/>
+					<line id="Trevor_Q1_Use_B"/>
+					<decision>
+						<choice>
+							<speech>&amp;DialogSystem_Yes&amp;</speech>
+							<audiofile/>
+							<line id="Trevor_Q1_Agree"/>
+						</choice>
+						<main-choice>
+							<speech>&amp;DialogSystem_No&amp;</speech>
+							<audiofile/>
+						</main-choice>
+					</decision>
+					<line id="Trevor_Q1_Disagree"/>
+				</dialog>
+			</state>
+			<state type="use_second" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Trevor_Q1_Use_Second"/>
+					<decision>
+						<choice>
+							<speech>&amp;DialogSystem_Yes&amp;</speech>
+							<audiofile/>
+							<line id="Trevor_Q1_Agree"/>
+						</choice>
+						<main-choice>
+							<speech>&amp;DialogSystem_No&amp;</speech>
+							<audiofile/>
+						</main-choice>
+					</decision>
+					<line id="Trevor_Q1_Disagree"/>
+				</dialog>
+			</state>
+			<state type="quest_brief" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Trevor_Q1_Name"/>
+				</dialog>
+				<dialog>
+					<line id="Trevor_Q1_PaperLine"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Trevor_Q1_Accomplished">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Trevor_Q1_Accomplished"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Trevor_Q1_InProgress" near_radius="2.0" middle_radius="3.0" time_btw_series="188.000000">    <!-- Modificado -->
+			<state type="middle_to_near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Trevor_Q1_InProgress_01"/>
+				</dialog>
+				<dialog>
+					<line id="Trevor_Q1_InProgress_02"/>
+				</dialog>
+				<dialog>
+					<line id="Trevor_Q1_InProgress_03"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="Survivor_Act1A_002">
+		<group name="Survivor_Act1A_002_Q1_NF" time_btw_series="20.000000">
+			<state type="near" range="26.01" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Survivor002_Q1_Near_01"/>
+				</dialog>
+				<dialog>
+					<line id="Survivor002_Q1_Near_02"/>
+				</dialog>
+				<dialog>
+					<line id="Survivor002_Q1_Near_03"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="Danny">
+		<group name="Danny_Q1_Accomplished" middle_radius="6.0" time_btw_series="188.000000" random_order="true">    <!-- Modificado -->
+			<state type="near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Danny_Q1_Near_01"/>
+				</dialog>
+				<dialog>
+					<line id="Danny_Q1_Near_02"/>
+				</dialog>
+				<dialog>
+					<line id="Danny_Q1_Near_03"/>
+				</dialog>
+			</state>
+			<state type="near_to_middle" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Danny_Q1_NearToMiddle"/>
+				</dialog>
+			</state>
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Danny_Q1_Accomplished"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="Danny_Radio_001">
+		<group name="Danny_Q1_Radio001" near_radius="2.0" time_btw_series="60.000000" random_order="true">    <!-- Modificado -->
+			<state type="near" range="25.0" volume="0.910000">    <!-- Modificado -->
+				<dialog>
+					<line id="Danny_Q1_Radio"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="Luke">
+		<group name="Luke_Q1_NF" near_radius="2.0" middle_radius="4.0" time_btw_series="40.000000" random_order="true">    <!-- Modificado -->
+			<state type="near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Luke_Q1_Near_01"/>
+				</dialog>
+				<dialog>
+					<line id="Luke_Q1_Near_02"/>
+				</dialog>
+				<dialog>
+					<line id="Luke_Q1_Near_03"/>
+				</dialog>
+			</state>
+			<state type="near_to_middle" range="25.0" volume="1.000000" subtitles="false">    <!-- Modificado -->
+				<dialog>
+					<line id="Luke_Q1_NearToMiddle"/>
+				</dialog>
+			</state>
+			<state type="middle_to_near" range="25.0" volume="1.000000" subtitles="false">    <!-- Modificado -->
+				<dialog>
+					<line id="Luke_Q1_MiddleToNear"/>
+				</dialog>
+			</state>
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Luke_Q1_Use"/>
+					<decision>
+						<choice>
+							<speech>&amp;DialogSystem_Yes&amp;</speech>
+							<audiofile/>
+							<line id="Luke_Q1_Agree"/>
+						</choice>
+						<main-choice>
+							<speech>&amp;DialogSystem_No&amp;</speech>
+							<audiofile/>
+						</main-choice>
+					</decision>
+					<line id="Luke_Q1_Disagree"/>
+				</dialog>
+			</state>
+			<state type="use_second" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Luke_Q1_Use_Second"/>
+					<decision>
+						<choice>
+							<speech>&amp;DialogSystem_Yes&amp;</speech>
+							<audiofile/>
+							<line id="Luke_Q1_Agree"/>
+						</choice>
+						<main-choice>
+							<speech>&amp;DialogSystem_No&amp;</speech>
+							<audiofile/>
+						</main-choice>
+					</decision>
+					<line id="Luke_Q1_Disagree"/>
+				</dialog>
+			</state>
+			<state type="quest_brief" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Luke_Q1_Name"/>
+				</dialog>
+				<dialog>
+					<line id="Luke_Q1_PaperLine"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Luke_Q1_InProgress" near_radius="2.0" middle_radius="4.0" time_btw_series="188.000000" random_order="true">    <!-- Modificado -->
+			<state type="middle_to_near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Luke_Q1_InProgress_01"/>
+				</dialog>
+				<dialog>
+					<line id="Luke_Q1_InProgress_02"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="Survivor003">
+		<group name="Survivor003_NF">
+			<state type="near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Survivor003_Q1_Near_01"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="Wayne">
+		<group name="Wayne01_Shop_ItemBuying">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="ShopRon_ItemBuying_02"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Wayne01_Shop_ItemLooking" time_btw_series="188.000000">
+			<state type="near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="ShopRon_ItemLooking_01"/>
+				</dialog>
+				<dialog>
+					<line id="ShopRon_ItemLooking_02"/>
+				</dialog>
+				<dialog>
+					<line id="ShopRon_ItemLooking_03"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Wayne01_Shop_NF" time_btw_series="40.000000">
+			<state type="near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="ShopRon_Near_01"/>
+				</dialog>
+				<dialog>
+					<line id="ShopRon_Near_02"/>
+				</dialog>
+				<dialog>
+					<line id="ShopRon_Near_03"/>
+				</dialog>
+			</state>
+			<state type="near_to_middle" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="ShopRon_NearToMiddle"/>
+				</dialog>
+			</state>
+			<state type="middle_to_near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="ShopRon_MiddleToNear"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="Survivor_Act1A_022">
+		<group name="Survivor_Act1A_022_NF" near_radius="8.0" time_btw_series="30.000000">    <!-- Modificado -->
+			<state type="near" range="57.76" volume="1.000000" subtitles="false">    <!-- Modificado -->
+				<dialog>
+					<line id="SurvivorPool_Near_01"/>
+				</dialog>
+				<dialog>
+					<line id="SurvivorPool_Near_02"/>
+				</dialog>
+				<dialog>
+					<line id="SurvivorPool_Near_03"/>
+				</dialog>
+				<dialog>
+					<line id="SurvivorPool_Near_04"/>
+				</dialog>
+				<dialog>
+					<line id="SurvivorPool_Near_05"/>
+				</dialog>
+			</state>
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="SurvivorPool_Use_A"/>
+					<line id="SurvivorPool_Use_B"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Survivor_Act1A_022_NF_02" time_btw_series="30.000000">
+			<state type="near" range="57.76" volume="1.000000" subtitles="false">    <!-- Modificado -->
+				<dialog>
+					<line id="SurvivorPool_Near_01"/>
+				</dialog>
+				<dialog>
+					<line id="SurvivorPool_Near_02"/>
+				</dialog>
+				<dialog>
+					<line id="SurvivorPool_Near_03"/>
+				</dialog>
+				<dialog>
+					<line id="SurvivorPool_Near_04"/>
+				</dialog>
+				<dialog>
+					<line id="SurvivorPool_Near_05"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="Survivor_Act1A_028">
+		<group name="Survivor_Act1A_028_001_NF" near_radius="3.0" middle_radius="4.0" time_btw_series="35.000000" synchronized="true">    <!-- Modificado -->
+			<state type="near" range="7.84" volume="0.760000" subtitles="false">    <!-- Modificado -->
+				<dialog>
+					<line id="BungalowSurvivor003_Near_02"/>
+				</dialog>
+			</state>
+			<state type="near_to_middle" range="9.0" volume="0.800000" subtitles="false">    <!-- Modificado -->
+				<dialog>
+					<line id="BungalowSurvivor003_Near_01"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Survivor_Act1A_028_002_NF" time_btw_series="40.000000">
+			<state type="near" range="9.61" volume="0.760000" subtitles="false">    <!-- Modificado -->
+				<dialog>
+					<line id="BungalowSurvivor003_NearAfter_01"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="Survivor_Act1A_030">
+		<group name="Survivor_Act1A_030_001_NF" near_radius="3.0" middle_radius="5.0" time_btw_series="5.000000">    <!-- Modificado -->
+			<state type="near" range="12.25" volume="0.760000" subtitles="false">    <!-- Modificado -->
+				<dialog>
+					<line id="BungalowSurvivor005_Near_01"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="Survivor_Act1A_032">
+		<group name="Survivor_Act1A_032_001_NF" near_radius="3.0" middle_radius="5.0" synchronized="true" starter="true">    <!-- Modificado -->
+			<state type="near" range="7.29" volume="0.630000" subtitles="false">    <!-- Modificado -->
+				<dialog>
+					<line id="BungalowSurvivor007_Talk_01"/>
+				</dialog>
+				<dialog>
+					<line id="BungalowSurvivor007_Talk_03"/>
+				</dialog>
+				<dialog>
+					<line id="BungalowSurvivor007_Talk_05"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Survivor_Act1A_032_002_NF" near_radius="3.0" middle_radius="5.0" synchronized="true" starter="true">    <!-- Modificado -->
+			<state type="near" range="7.84" volume="0.650000" subtitles="false">    <!-- Modificado -->
+				<dialog>
+					<line id="BungalowSurvivor007_TalkAfter_01"/>
+				</dialog>
+				<dialog>
+					<line id="BungalowSurvivor007_TalkAfter_03"/>
+				</dialog>
+				<dialog>
+					<line id="BungalowSurvivor007_TalkAfter_05"/>
+				</dialog>
+				<dialog>
+					<line id="BungalowSurvivor007_TalkAfter_07"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="Survivor_Act1A_033">
+		<group name="Survivor_Act1A_033_001_NF" near_radius="3.0" middle_radius="5.0" synchronized="true">    <!-- Modificado -->
+			<state type="near" range="7.29" volume="0.590000" subtitles="false">    <!-- Modificado -->
+				<dialog>
+					<line id="BungalowSurvivor008_Talk_02"/>
+				</dialog>
+				<dialog>
+					<line id="BungalowSurvivor008_Talk_04"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Survivor_Act1A_033_002_NF" near_radius="3.0" middle_radius="5.0" synchronized="true">    <!-- Modificado -->
+			<state type="near" range="7.84" volume="0.570000" subtitles="false">    <!-- Modificado -->
+				<dialog>
+					<line id="BungalowSurvivor008_TalkAfter_02"/>
+				</dialog>
+				<dialog>
+					<line id="BungalowSurvivor008_TalkAfter_04"/>
+				</dialog>
+				<dialog>
+					<line id="BungalowSurvivor008_TalkAfter_06"/>
+				</dialog>
+				<dialog>
+					<line id="BungalowSurvivor008_TalkAfter_08"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="Survivor_Act1A_034">
+		<group name="Survivor_Act1A_034_001_NF" near_radius="0.5" middle_radius="1.0" far_radius="15.0" time_btw_series="10.000000" synchronized="true" starter="true">    <!-- Modificado -->
+			<state type="far" range="13.69" volume="0.880000" subtitles="false">    <!-- Modificado -->
+				<dialog>
+					<line id="BungalowSurvivor009_Talk_01"/>
+				</dialog>
+				<dialog>
+					<line id="BungalowSurvivor009_Talk_03"/>
+				</dialog>
+				<dialog>
+					<line id="BungalowSurvivor009_Talk_05"/>
+				</dialog>
+				<dialog>
+					<line id="BungalowSurvivor009_Talk_07"/>
+				</dialog>
+				<dialog>
+					<line id="BungalowSurvivor009_Talk_09"/>
+				</dialog>
+				<dialog>
+					<line id="BungalowSurvivor009_Near_01"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="Survivor_Act1A_035">
+		<group name="Survivor_Act1A_035_001_NF" near_radius="0.5" middle_radius="1.0" far_radius="15.0" time_btw_series="10.000000" synchronized="true">    <!-- Modificado -->
+			<state type="far" range="7.84" volume="0.850000" subtitles="false">    <!-- Modificado -->
+				<dialog>
+					<line id="BungalowSurvivor010_Talk_02"/>
+				</dialog>
+				<dialog>
+					<line id="BungalowSurvivor010_Talk_04"/>
+				</dialog>
+				<dialog>
+					<line id="BungalowSurvivor010_Talk_06"/>
+				</dialog>
+				<dialog>
+					<line id="BungalowSurvivor010_Talk_08"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Survivor_Act1A_035_002_NF" near_radius="3.0" middle_radius="5.0" synchronized="true">    <!-- Modificado -->
+			<state type="near" range="9.0" volume="0.750000" subtitles="false">    <!-- Modificado -->
+				<dialog>
+					<line id="BungalowSurvivor010_TalkAfter_01"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="Survivor_Act1A_036">
+		<group name="Survivor_Act1A_036_001_NF" near_radius="3.0" middle_radius="5.0">    <!-- Modificado -->
+			<state type="near" range="9.0" volume="0.720000" subtitles="false">    <!-- Modificado -->
+				<dialog>
+					<line id="BungalowSurvivor011_Near_01"/>
+				</dialog>
+				<dialog>
+					<line id="BungalowSurvivor011_Near_02"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="Survivor_Act1A_037">
+		<group name="Survivor_Act1A_037_001_NF" near_radius="0.5" middle_radius="0.6" far_radius="30.0" time_btw_series="11.000000" synchronized="true" starter="true">    <!-- Modificado -->
+			<state type="far" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="BungalowSurvivor012_Talk_01"/>
+					<line id="BungalowSurvivor012_Talk_02"/>
+				</dialog>
+				<dialog>
+					<line id="BungalowSurvivor012_Talk_04"/>
+				</dialog>
+				<dialog>
+					<line id="BungalowSurvivor012_Talk_06"/>
+				</dialog>
+				<dialog>
+					<line id="BungalowSurvivor012_Talk_08"/>
+				</dialog>
+				<dialog>
+					<line id="BungalowSurvivor012_Talk_10"/>
+				</dialog>
+				<dialog>
+					<line id="BungalowSurvivor012_Talk_12"/>
+				</dialog>
+				<dialog>
+					<line id="BungalowSurvivor012_Talk_14"/>
+				</dialog>
+				<dialog>
+					<line id="BungalowSurvivor012_Talk_16"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Survivor_Act1A_037_002_NF" near_radius="6.0" middle_radius="8.0" time_btw_series="5.000000" random_order="true">    <!-- Modificado -->
+			<state type="near" range="34.81" volume="0.860000" subtitles="false">    <!-- Modificado -->
+				<dialog>
+					<line id="BungalowSurvivor012_NoReact_01"/>
+				</dialog>
+				<dialog>
+					<line id="BungalowSurvivor012_NoReact_02"/>
+				</dialog>
+				<dialog>
+					<line id="BungalowSurvivor012_NoReact_03"/>
+				</dialog>
+				<dialog>
+					<line id="BungalowSurvivor012_NoReact_04"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Survivor_Act1A_037_003_NF">
+			<state type="use" range="34.81" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="BungalowSurvivor012_React_02"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Survivor_Act1A_037_000_NF">
+			<state type="use" range="37.21" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="BungalowSurvivor012_Near_01"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Survivor_Act1A_037_004_NF" near_radius="3.0" middle_radius="5.0" time_btw_series="45.000000" synchronized="true">    <!-- Modificado -->
+			<state type="near" range="11.56" volume="0.820000" subtitles="false">    <!-- Modificado -->
+				<dialog>
+					<line id="BungalowSurvivor012_TalkAfter_02"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="Survivor_Act1A_038">
+		<group name="Survivor_Act1A_038_001_NF" near_radius="0.5" middle_radius="0.6" far_radius="30.0" time_btw_series="8.000000" synchronized="true">    <!-- Modificado -->
+			<state type="far" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="BungalowSurvivor013_Talk_03"/>
+				</dialog>
+				<dialog>
+					<line id="BungalowSurvivor013_Talk_05"/>
+				</dialog>
+				<dialog>
+					<line id="BungalowSurvivor013_Talk_07"/>
+				</dialog>
+				<dialog>
+					<line id="BungalowSurvivor013_Talk_09"/>
+				</dialog>
+				<dialog>
+					<line id="BungalowSurvivor013_Talk_11"/>
+				</dialog>
+				<dialog>
+					<line id="BungalowSurvivor013_Talk_13"/>
+				</dialog>
+				<dialog>
+					<line id="BungalowSurvivor013_Talk_15"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Survivor_Act1A_038_002_NF" near_radius="3.0" middle_radius="8.0" time_btw_series="10.000000">    <!-- Modificado -->
+			<state type="use" range="28.09" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="BungalowSurvivor013_React_01"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Survivor_Act1A_038_003_NF" near_radius="4.0" middle_radius="6.0">    <!-- Modificado -->
+			<state type="use" range="28.09" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="BungalowSurvivor013_React_03"/>
+					<line id="BungalowSurvivor013_NoWeapon_01"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Survivor_Act1A_038_004_NF" near_radius="2.5" middle_radius="5.0">    <!-- Modificado -->
+			<state type="middle_to_near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="BungalowSurvivor013_NoWeapon_02"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Survivor_Act1A_038_006_NF" near_radius="3.0" middle_radius="5.0" time_btw_series="45.000000" synchronized="true" starter="true">    <!-- Modificado -->
+			<state type="near" range="12.96" volume="0.750000" subtitles="false">    <!-- Modificado -->
+				<dialog>
+					<line id="BungalowSurvivor013_TalkAfter_01"/>
+				</dialog>
+				<dialog>
+					<line id="BungalowSurvivor013_TalkAfter_03"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="Survivor_Act1A_029">
+		<group name="Survivor_Act1A_029_001_NF" near_radius="2.0" middle_radius="3.0">    <!-- Modificado -->
+			<state type="use" range="19.36" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="BungalowSurvivor004_Near_01"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Survivor_Act1A_029_002_NF" near_radius="2.0" middle_radius="3.0">    <!-- Modificado -->
+			<state type="near" range="13.69" volume="0.700000" subtitles="false">    <!-- Modificado -->
+				<dialog>
+					<line id="BungalowSurvivor004_Near_02"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Survivor_Act1A_029_003_NF" near_radius="2.0" middle_radius="3.0" time_btw_series="20.000000">    <!-- Modificado -->
+			<state type="near" range="12.25" volume="0.690000" subtitles="false">    <!-- Modificado -->
+				<dialog>
+					<line id="BungalowSurvivor004_NearAfter_01"/>
+				</dialog>
+				<dialog>
+					<line id="BungalowSurvivor004_NearAfter_02"/>
+				</dialog>
+				<dialog>
+					<line id="BungalowSurvivor004_NearAfter_03"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="Survivor_Act1A_025">
+		<group name="Survivor_Act1A_025_001_NF" near_radius="3.0" middle_radius="4.0" synchronized="true">    <!-- Modificado -->
+			<state type="near" range="25.0" volume="1.000000" subtitles="false">    <!-- Modificado -->
+				<dialog>
+					<line id="SurvivorCin_Quakes_01"/>
+				</dialog>
+				<dialog>
+					<line id="SurvivorCin_Quakes_02"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Survivor_Act1A_025_000_NF">
+			<state type="use" range="28.09" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="SurvivorCin_NearAfter_01"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="Survivor_Act1A_023">
+		<group name="Survivor_Act1A_023_NF_001" time_btw_series="30.000000" auto_use="true">
+			<state type="far" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="FirstGS_Survivor001_Q01_Far_01"/>
+				</dialog>
+				<dialog>
+					<line id="FirstGS_Survivor001_Q01_Far_02"/>
+				</dialog>
+			</state>
+			<state type="middle_to_near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="FirstGS_Survivor001_Q01_MiddleToNear"/>
+				</dialog>
+			</state>
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="FirstGS_Survivor001_Q01_Use"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Survivor_Act1A_023_NF_002" time_btw_series="30.000000">
+			<state type="near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="FirstGS_Survivor001_Q02_Near"/>
+				</dialog>
+			</state>
+			<state type="middle_to_near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="FirstGS_Survivor001_Q02_MiddleToNear"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Survivor_Act1A_023_NF_003" time_btw_series="40.000000">
+			<state type="near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="GenericMan01_Accomplished_07"/>
+				</dialog>
+				<dialog>
+					<line id="GenericMan01_Accomplished_02"/>
+				</dialog>
+				<dialog>
+					<line id="GenericMan01_Accomplished_01"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="Survivor_Act1A_024">
+		<group name="Survivor_Act1A_024_NF_001">
+			<state type="near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="FirstGS_Survivor002_Q01_Near"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Survivor_Act1A_024_NF_002">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="FirstGS_Survivor002_Q01_USE_A"/>
+					<line id="FirstGS_Survivor002_Q01_USE_B"/>
+					<line id="FirstGS_Survivor002_Q01_USE_C"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Survivor_Act1A_024_NF_003">
+			<state type="near" range="39.69" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="GenericMan03_InProgress_03"/>
+				</dialog>
+				<dialog>
+					<line id="GenericMan03_InProgress_05"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="Hank">
+		<group name="Hank_Q1_NF" near_radius="2.0" time_btw_series="40.000000">    <!-- Modificado -->
+			<state type="near" range="18.49" volume="0.880000">    <!-- Modificado -->
+				<dialog>
+					<line id="Hank_Q1_Near_01"/>
+				</dialog>
+				<dialog>
+					<line id="Hank_Q1_Near_02"/>
+				</dialog>
+				<dialog>
+					<line id="Hank_Q1_Near_03"/>
+				</dialog>
+			</state>
+			<state type="near_to_middle" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Hank_Q1_NearToMiddle"/>
+				</dialog>
+			</state>
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Hank_Q1_Use_A"/>
+					<line id="Hank_Q1_Use_B"/>
+					<line id="Hank_Q1_Use_C"/>
+					<decision>
+						<choice>
+							<speech>&amp;DialogSystem_Yes&amp;</speech>
+							<audiofile/>
+							<line id="Hank_Q1_Agree"/>
+						</choice>
+						<main-choice>
+							<speech>&amp;DialogSystem_No&amp;</speech>
+							<audiofile/>
+						</main-choice>
+					</decision>
+					<line id="Hank_Q1_Disagree"/>
+				</dialog>
+			</state>
+			<state type="use_second" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Hank_Q1_Use_C"/>
+					<decision>
+						<choice>
+							<speech>&amp;DialogSystem_Yes&amp;</speech>
+							<audiofile/>
+							<line id="Hank_Q1_Agree"/>
+						</choice>
+						<main-choice>
+							<speech>&amp;DialogSystem_No&amp;</speech>
+							<audiofile/>
+						</main-choice>
+					</decision>
+					<line id="Hank_Q1_Disagree"/>
+				</dialog>
+			</state>
+			<state type="quest_brief" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="ACT1A_Car_Repair_Name"/>
+				</dialog>
+				<dialog>
+					<line id="ACT1A_Car_Repair_PaperLine"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Hank_Q1_Accomplished_01" auto_use="true">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Hank_Q1_Accomplished_01"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Hank_Q1_InProgress" near_radius="2.0" time_btw_series="188.000000">    <!-- Modificado -->
+			<state type="middle_to_near" range="16.81" volume="0.820000">    <!-- Modificado -->
+				<dialog>
+					<line id="Hank_Q1_InProgress_01"/>
+				</dialog>
+				<dialog>
+					<line id="Hank_Q1_InProgress_02"/>
+				</dialog>
+				<dialog>
+					<line id="Hank_Q1_InProgress_03"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Hank_Q1_Accomplished_02" time_btw_series="40.000000">
+			<state type="middle_to_near" range="46.24" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Hank_Q1_Near_06"/>
+				</dialog>
+				<dialog>
+					<line id="Hank_Q1_Near_07"/>
+				</dialog>
+				<dialog>
+					<line id="Hank_Q1_Near_08"/>
+				</dialog>
+			</state>
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Hank_Q1_Accomplished_02"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Hank_Q1_NF2" time_btw_series="188.000000">
+			<state type="middle_to_near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Hank_Q1_Near_09"/>
+				</dialog>
+				<dialog>
+					<line id="Hank_Q1_Near_10"/>
+				</dialog>
+				<dialog>
+					<line id="Hank_Q1_Near_11"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="Survivor_Act1A_039">
+		<group name="Survivor_Act1A_039_001_NF" near_radius="100.0" middle_radius="150.0" far_radius="200.0">    <!-- Modificado -->
+			<state type="use" range="100.0" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Survivor_Act1A_039_Q1_Use_A"/>
+					<line id="Survivor_Act1A_039_Q1_Use_B"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Survivor_Act1A_039_001_NF2">
+			<state type="near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Survivor_Act1A_039_Q1_Use_C"/>
+				</dialog>
+			</state>
+			<state type="middle_to_near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Survivor_Act1A_039_Q1_Use_D"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="Sinamoi002">
+		<group name="Sinamoi_QF00_NF" time_btw_series="20.000000">
+			<state type="near" range="53.29" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Sinamoi_Fight_11"/>
+				</dialog>
+				<dialog>
+					<line id="Sinamoi_Fight_12"/>
+				</dialog>
+			</state>
+			<state type="middle" range="50.41" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Sinamoi_Fight_05"/>
+				</dialog>
+				<dialog>
+					<line id="Sinamoi_Fight_06"/>
+				</dialog>
+			</state>
+			<state type="far" range="56.25" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Sinamoi_Fight_04"/>
+				</dialog>
+				<dialog>
+					<line id="Sinamoi_Fight_07"/>
+				</dialog>
+				<dialog>
+					<line id="Sinamoi_Fight_08"/>
+				</dialog>
+				<dialog>
+					<line id="Sinamoi_Fight_09"/>
+				</dialog>
+				<dialog>
+					<line id="Sinamoi_Fight_10"/>
+				</dialog>
+			</state>
+			<state type="near_to_middle" range="49.0" volume="1.000000" subtitles="false">    <!-- Modificado -->
+				<dialog>
+					<line id="Sinamoi_Fight_03"/>
+				</dialog>
+			</state>
+			<state type="middle_to_near" range="49.0" volume="1.000000" subtitles="false">    <!-- Modificado -->
+				<dialog>
+					<line id="Sinamoi_Fight_01"/>
+				</dialog>
+				<dialog>
+					<line id="Sinamoi_Fight_02"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Sinamoi_QF00_Accomplished">
+			<state type="use" range="53.29" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Sinamoi_Fight_14"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="jinnotdepot">
+		<group name="Jin_QF00A">
+			<state type="use" range="42.25" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Jin_QF00A_Use"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Jin_QF01_NF" time_btw_series="188.000000">
+			<state type="near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Jin_QF01_InProgress_03"/>
+				</dialog>
+				<dialog>
+					<line id="Jin_QF01_InProgress_01"/>
+				</dialog>
+			</state>
+			<state type="middle_to_near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Jin_QF01_MiddleToNear_01"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="Svetlana">
+		<group name="Svetlana_Q1_NF" time_btw_series="40.000000">
+			<state type="near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Svetlana_Q1_Near_01"/>
+				</dialog>
+				<dialog>
+					<line id="Svetlana_Q1_Near_02"/>
+				</dialog>
+				<dialog>
+					<line id="Svetlana_Q1_Near_03"/>
+				</dialog>
+			</state>
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Svetlana_Q1_Use_A"/>
+					<line id="Svetlana_Q1_Use_B"/>
+					<decision>
+						<choice>
+							<speech>&amp;DialogSystem_Yes&amp;</speech>
+							<audiofile/>
+							<line id="Svetlana_Q1_Agree"/>
+						</choice>
+						<main-choice>
+							<speech>&amp;DialogSystem_No&amp;</speech>
+							<audiofile/>
+						</main-choice>
+					</decision>
+					<line id="Svetlana_Q1_Disagree"/>
+				</dialog>
+			</state>
+			<state type="use_second" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Svetlana_Q1_UseSecond"/>
+					<decision>
+						<choice>
+							<speech>&amp;DialogSystem_Yes&amp;</speech>
+							<audiofile/>
+							<line id="Svetlana_Q1_Agree"/>
+						</choice>
+						<main-choice>
+							<speech>&amp;DialogSystem_No&amp;</speech>
+							<audiofile/>
+						</main-choice>
+					</decision>
+					<line id="Svetlana_Q1_Disagree"/>
+				</dialog>
+			</state>
+			<state type="quest_brief" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line>
+						<speech>&amp;Svetlana_Q1_Name&amp;</speech>
+						<audiofile/>
+					</line>
+				</dialog>
+				<dialog>
+					<line>
+						<speech>&amp;Svetlana_Q1_PaperLine&amp;</speech>
+						<audiofile/>
+					</line>
+				</dialog>
+			</state>
+		</group>
+		<group name="Svetlana_Q1_Accomplished">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Svetlana_Q1_Accomplished"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Svetlana_Q1_NF_Loop" time_btw_series="60.000000">
+			<state type="near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Svetlana_Q1_InProgress_02"/>
+				</dialog>
+				<dialog>
+					<line id="Svetlana_Q1_InProgress_03"/>
+				</dialog>
+			</state>
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Svetlana_Q1_Accomplished"/>
+					<line id="Svetlana_Q1_Agree"/>
+				</dialog>
+			</state>
+			<state type="use_second" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Svetlana_Q1_Use_LOOP"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Svetlana_Q1_InProgress" time_btw_series="60.000000">
+			<state type="near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Svetlana_Q1_InProgress_02"/>
+				</dialog>
+				<dialog>
+					<line id="Svetlana_Q1_InProgress_03"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="Kim">
+		<group name="Kim_Q1_NF" time_btw_series="40.000000">
+			<state type="near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Kim_Q1_Near_01"/>
+				</dialog>
+				<dialog>
+					<line id="Kim_Q1_Near_02"/>
+				</dialog>
+				<dialog>
+					<line id="Kim_Q1_Near_03"/>
+				</dialog>
+			</state>
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Kim_Q1_Use_A"/>
+					<line id="Kim_Q1_Use_B"/>
+					<decision>
+						<choice>
+							<speech>&amp;DialogSystem_Yes&amp;</speech>
+							<audiofile/>
+							<line id="Kim_Q1_Agree"/>
+						</choice>
+						<main-choice>
+							<speech>&amp;DialogSystem_No&amp;</speech>
+							<audiofile/>
+						</main-choice>
+					</decision>
+					<line id="Kim_Q1_Disagree"/>
+				</dialog>
+			</state>
+			<state type="use_second" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Kim_Q1_UseSecond"/>
+					<decision>
+						<choice>
+							<speech>&amp;DialogSystem_Yes&amp;</speech>
+							<audiofile/>
+							<line id="Kim_Q1_Agree"/>
+						</choice>
+						<main-choice>
+							<speech>&amp;DialogSystem_No&amp;</speech>
+							<audiofile/>
+						</main-choice>
+					</decision>
+					<line id="Kim_Q1_Disagree"/>
+				</dialog>
+			</state>
+			<state type="quest_brief" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line>
+						<speech>&amp;Kim_Q1_Name&amp;</speech>
+						<audiofile/>
+					</line>
+				</dialog>
+				<dialog>
+					<line>
+						<speech>&amp;Kim_Q1_PaperLine&amp;</speech>
+						<audiofile/>
+					</line>
+				</dialog>
+			</state>
+		</group>
+		<group name="Kim_Q1_NF_Loop" time_btw_series="60.000000">
+			<state type="near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Kim_Q1_InProgress_02"/>
+				</dialog>
+				<dialog>
+					<line id="Kim_Q1_InProgress_03"/>
+				</dialog>
+			</state>
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Kim_Q1_Accomplished"/>
+				</dialog>
+			</state>
+			<state type="use_second" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Kim_Q1_Use_LOOP"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Kim_Q1_InProgress" time_btw_series="188.000000">
+			<state type="near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Kim_Q1_InProgress_02"/>
+				</dialog>
+				<dialog>
+					<line id="Kim_Q1_InProgress_03"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Kim_Q1_Accomplished">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Kim_Q1_Accomplished"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="Ned">
+		<group name="Ned_Q1_NF" time_btw_series="40.000000">
+			<state type="near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Ned_Q1_Near_01"/>
+				</dialog>
+				<dialog>
+					<line id="Ned_Q1_Near_02"/>
+				</dialog>
+				<dialog>
+					<line id="Ned_Q1_Near_03"/>
+				</dialog>
+			</state>
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Ned_Q1_Use_A"/>
+					<line id="Ned_Q1_Use_B"/>
+					<decision>
+						<choice>
+							<speech>&amp;DialogSystem_Yes&amp;</speech>
+							<audiofile/>
+							<line id="Ned_Q1_Agree"/>
+						</choice>
+						<main-choice>
+							<speech>&amp;DialogSystem_No&amp;</speech>
+							<audiofile/>
+						</main-choice>
+					</decision>
+					<line id="Ned_Q1_Disagree"/>
+				</dialog>
+			</state>
+			<state type="use_second" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Ned_Q1_UseSecond"/>
+					<decision>
+						<choice>
+							<speech>&amp;DialogSystem_Yes&amp;</speech>
+							<audiofile/>
+							<line id="Ned_Q1_Agree"/>
+						</choice>
+						<main-choice>
+							<speech>&amp;DialogSystem_No&amp;</speech>
+							<audiofile/>
+						</main-choice>
+					</decision>
+					<line id="Ned_Q1_Disagree"/>
+				</dialog>
+			</state>
+			<state type="quest_brief" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line>
+						<speech>&amp;Ned_Q1_Name&amp;</speech>
+						<audiofile/>
+					</line>
+				</dialog>
+				<dialog>
+					<line>
+						<speech>&amp;Ned_Q1_PaperLine&amp;</speech>
+						<audiofile/>
+					</line>
+				</dialog>
+			</state>
+		</group>
+		<group name="Ned_Q1_NF_Loop" time_btw_series="60.000000">
+			<state type="near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Ned_Q1_InProgress_02"/>
+				</dialog>
+				<dialog>
+					<line id="Ned_Q1_InProgress_03"/>
+				</dialog>
+			</state>
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Ned_Q1_Accomplished"/>
+				</dialog>
+			</state>
+			<state type="use_second" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Ned_Q1_Use_LOOP"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Ned_Q1_InProgress">
+			<state type="near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Ned_Q1_InProgress_02"/>
+				</dialog>
+				<dialog>
+					<line id="Ned_Q1_InProgress_03"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Ned_Q1_Accomplished">
+			<state type="use" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Ned_Q1_Accomplished"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="Danny_Radio_002">
+		<group name="Danny_Q1_Radio002" near_radius="3.0" time_btw_series="60.000000">    <!-- Modificado -->
+			<state type="near" range="25.0" volume="0.900000">    <!-- Modificado -->
+				<dialog>
+					<line id="Danny_Q1_Radio"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="Linwood">
+		<group name="Linwood_Q1_NF" time_btw_series="30.000000">
+			<state type="near" range="46.24" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="GenericMan01_InProgress_05"/>
+				</dialog>
+				<dialog>
+					<line id="GenericMan01_InProgress_15"/>
+				</dialog>
+			</state>
+			<state type="middle_to_near" range="47.61" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="GenericMan01_Far_07"/>
+				</dialog>
+				<dialog>
+					<line id="GenericMan01_Far_02"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="Linwood_Q1_Accomplished">
+			<state type="use" range="68.89" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="GenericMan01_InProgress_02"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="Sinamoi_Radio_002">
+		<group name="Sinamoi_Radio_002_Workshop" near_radius="10.0" middle_radius="20.0" far_radius="30.0">    <!-- Modificado -->
+			<state type="use" range="70.56" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Sinamoi_QF09_Accomplished_radio"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="Flight1012">
+		<group name="Flight1012_Radio" near_radius="10.0" middle_radius="12.0" time_btw_series="23.000000">    <!-- Modificado -->
+			<state type="near" range="34.81" volume="1.000000">    <!-- Modificado -->
+				<dialog attract_player="false">
+					<line id="Pilot_Radio_01"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="Steve_Radio_001">
+		<group name="Steve_Q1_Radio001" near_radius="1.5" middle_radius="4.0" time_btw_series="60.000000">    <!-- Modificado -->
+			<state type="middle_to_near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Steve_Q1_Radio"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="Steve_Radio_002">
+		<group name="Steve_Q1_Radio002" near_radius="1.5" middle_radius="4.0" time_btw_series="60.000000">    <!-- Modificado -->
+			<state type="middle_to_near" range="25.0" volume="1.000000">    <!-- Modificado -->
+				<dialog>
+					<line id="Steve_Q1_Radio"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+</speakers>
+

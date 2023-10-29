@@ -1,0 +1,393 @@
+!include("vessel_timing_events.def")
+!include("human_timing_events.def")
+
+/*
+SeqTrack("HumanTest_Unarmed_Reload", "M_FPP_Beretta_Reload.anm2", 0, 117, 30, 1, 0.3)
+/////////////////////////////////////////////////////////////////
+// stand 
+
+SeqTrack("HumanTest_Unarmed_Stand", 		            "M_TPP_Unarmed_Stand.anm2"		        , 0, 140, 30, 1, 0.3)
+{
+	Event(0, VIS_EVENT_LEFT_FOOT_LAND)
+	Event(0, VIS_EVENT_RIGHT_FOOT_LAND)
+}
+SeqTrack("HumanTest_Unarmed_Stand_TurnL_180", 		    "M_TPP_Unarmed_Stand_Turn_180_L.anm2"	, 0, 40, 30, 1, 0.3)
+SeqTrack("HumanTest_Unarmed_Stand_TurnR_180", 		    "M_TPP_Unarmed_Stand_Turn_180_R.anm2"	, 0, 60, 30, 1, 0.3)
+SeqTrack("HumanTest_Unarmed_Stand_TurnR_90", 		    "M_TPP_Unarmed_Stand_Turn_90_R.anm2"		, 0, 45, 30, 1, 0.0)
+SeqTrack("HumanTest_Unarmed_Stand_TurnL_90", 		    "M_TPP_Unarmed_Stand_Turn_90_L.anm2"		, 0, 50, 30, 1, 0.6)
+SeqTrack("HumanTest_Unarmed_Stand_TurnR_45", 		    "M_TPP_Unarmed_Stand_Turn_45_R.anm2"		, 0, 40, 30, 1, 0.3)
+SeqTrack("HumanTest_Unarmed_Stand_TurnL_45", 		    "M_TPP_Unarmed_Stand_Turn_45_L.anm2"		, 0, 40, 30, 1, 0.3)
+
+/////////////////////////////////////////////////////////////////
+// walk 
+SeqTrack("HumanTest_Unarmed_WalkBackward", 	        	"M_TPP_Unarmed_Walk_Backward.anm2"		, 0, 124, 30, 1, 0.3)
+SeqTrack("HumanTest_Unarmed_WalkForward",	            "M_TPP_Unarmed_Walk.anm2"		        , 0, 66, 30, 1, 0.3)
+{
+	Event(8, VIS_EVENT_RIGHT_FOOT_PRE_LAND)
+	Event(8, VIS_EVENT_LEFT_FOOT_PRE_LIFT)
+	Event(12, VIS_EVENT_RIGHT_FOOT_LAND)
+	Event(12, VIS_EVENT_LEFT_FOOT_LIFT)
+	Event(25, VIS_EVENT_RIGHT_FOOT_PRE_LIFT)
+	Event(25, VIS_EVENT_LEFT_FOOT_PRE_LAND)
+	Event(31, VIS_EVENT_RIGHT_FOOT_LIFT)
+	Event(31, VIS_EVENT_LEFT_FOOT_LAND)
+	
+	Event(42, VIS_EVENT_RIGHT_FOOT_PRE_LAND)
+	Event(42, VIS_EVENT_LEFT_FOOT_PRE_LIFT)
+	Event(46, VIS_EVENT_RIGHT_FOOT_LAND)
+	Event(46, VIS_EVENT_LEFT_FOOT_LIFT)
+	Event(57, VIS_EVENT_RIGHT_FOOT_PRE_LIFT)
+	Event(59, VIS_EVENT_LEFT_FOOT_PRE_LAND)
+	Event(62, VIS_EVENT_RIGHT_FOOT_LIFT)
+	Event(62, VIS_EVENT_LEFT_FOOT_LAND)
+}
+
+SeqTrack("HumanTest_Unarmed_WalkLeft", 		    "M_TPP_Unarmed_Walk_Left_v01.anm2"		, 0, 121, 30, 1, 0.3)
+{
+	Event(11, VIS_EVENT_STEP_LEFT)
+	Event(32, VIS_EVENT_STEP_RIGHT)
+	Event(51, VIS_EVENT_STEP_LEFT)
+	Event(70, VIS_EVENT_STEP_RIGHT)
+	Event(91, VIS_EVENT_STEP_LEFT)
+	Event(109, VIS_EVENT_STEP_RIGHT)
+}
+
+SeqTrack("HumanTest_Unarmed_WalkRight", 		    "M_TPP_Unarmed_Walk_Right_v01.anm2"		, 0, 76, 30, 1, 0.3)
+{
+	Event(8, VIS_EVENT_STEP_RIGHT)
+	Event(29, VIS_EVENT_STEP_LEFT)
+	Event(46, VIS_EVENT_STEP_RIGHT)
+	Event(66, VIS_EVENT_STEP_LEFT)
+}
+*/
+
+//[nosek_20100729] SeqTrack("HumanTest_Unarmed_WalkForward_Start", 		        "M_TPP_Unarmed_Walk_Start_F.anm2"		, 0, 55, 30, 1, 0.3) 
+//{
+//	Event(18, VIS_EVENT_STEP_LEFT)
+//    Event(19, VIS_EVENT_ROTATION_MOD_END)
+//	Event(25 ,VIS_EVENT_STOPANIM)
+//	Event(34, VIS_EVENT_STEP_RIGHT)
+//	Event(50, VIS_EVENT_STEP_LEFT)
+//}
+//[nosek_20100729] SeqTrack("HumanTest_Unarmed_WalkForward_StartR180",		        "M_TPP_Unarmed_Walk_Start_B.anm2"		, 0, 91, 30, 1, 0.3) 
+//{
+//	Event(18, VIS_EVENT_STEP_RIGHT)
+//	Event(33, VIS_EVENT_STEP_LEFT)
+//	Event(46 ,VIS_EVENT_STOPANIM)
+//    Event(46, VIS_EVENT_ROTATION_MOD_END)
+//	Event(57, VIS_EVENT_STEP_RIGHT)
+//	Event(73, VIS_EVENT_STEP_LEFT)
+//	Event(89, VIS_EVENT_STEP_RIGHT)
+//}
+//[nosek_20100729] SeqTrack("HumanTest_Unarmed_WalkForward_StartL90", 		        "M_TPP_Unarmed_Walk_Start_L.anm2"		, 0, 77, 30, 1, 0.3) 
+//{
+//	Event(23, VIS_EVENT_STEP_LEFT)
+//	Event(34, VIS_EVENT_STOPANIM)
+//    Event(34, VIS_EVENT_ROTATION_MOD_END)
+//	Event(42, VIS_EVENT_STEP_RIGHT)
+//	Event(59, VIS_EVENT_STEP_LEFT)
+//	Event(75, VIS_EVENT_STEP_RIGHT)
+//}
+//[nosek_20100729] SeqTrack("HumanTest_Unarmed_WalkForward_StartR90", 		        "M_TPP_Unarmed_Walk_Start_R.anm2"		, 0, 77, 30, 1, 0.3) 
+//{
+//	Event(24, VIS_EVENT_STEP_RIGHT)
+//	Event(33 ,VIS_EVENT_STOPANIM)
+//    Event(33, VIS_EVENT_ROTATION_MOD_END)
+//	Event(42, VIS_EVENT_STEP_LEFT)
+//	Event(58, VIS_EVENT_STEP_RIGHT)
+//	Event(73, VIS_EVENT_STEP_LEFT)
+//}
+/*
+SeqTrack("HumanTest_Unarmed_WalkForward_Stop", 		        "M_TPP_Unarmed_Walk_Stop_F.anm2"		    , 20, 60, 30, 1, 0.3) 
+{
+	Event(14, VIS_EVENT_STEP_LEFT)
+	Event(31, VIS_EVENT_STEP_RIGHT)
+	Event(49, VIS_EVENT_STEP_LEFT)
+	Event(49, VIS_EVENT_STOPANIM)
+}
+SeqTrack("HumanTest_Unarmed_WalkForward_StopR180", 		        "M_TPP_Unarmed_Walk_Stop_B.anm2"		    , 25, 85, 30, 1, 0.3)
+{
+	Event(14, VIS_EVENT_STEP_LEFT)
+	Event(30, VIS_EVENT_STEP_RIGHT)
+	Event(42, VIS_EVENT_STEP_LEFT)
+	Event(60, VIS_EVENT_STEP_RIGHT)
+	Event(71, VIS_EVENT_STEP_LEFT)
+	Event(73, VIS_EVENT_STOPANIM)
+}
+SeqTrack("HumanTest_Unarmed_WalkForward_StopL90", 		        "M_TPP_Unarmed_Walk_Stop_L.anm2"		    , 19, 66, 30, 1, 0.3)
+{
+	Event(16, VIS_EVENT_STEP_RIGHT)
+	Event(33, VIS_EVENT_STEP_LEFT)
+	Event(48, VIS_EVENT_STEP_RIGHT)
+	Event(55, VIS_EVENT_STEP_LEFT)
+	Event(56, VIS_EVENT_STOPANIM)
+}
+SeqTrack("HumanTest_Unarmed_WalkForward_StopR90", 		        "M_TPP_Unarmed_Walk_Stop_R.anm2"		    , 22, 70, 30, 1, 0.3)
+{
+	Event(14, VIS_EVENT_STEP_LEFT)
+	Event(30, VIS_EVENT_STEP_RIGHT)
+	Event(45, VIS_EVENT_STEP_LEFT)
+	Event(58, VIS_EVENT_STEP_RIGHT)
+	Event(60, VIS_EVENT_STOPANIM)
+}
+
+
+
+/////////////////////////////////////////////////////////////////////
+// trot
+SeqTrack("HumanTest_Unarmed_TrotForward", 			    "M_TPP_Unarmed_FastWalk_v03.anm2"		, 0, 58, 30, 1, 0.3)
+{
+	Event(11, VIS_EVENT_STEP_RIGHT)
+	Event(25, VIS_EVENT_STEP_LEFT)
+	Event(40, VIS_EVENT_STEP_RIGHT)
+	Event(53, VIS_EVENT_STEP_LEFT)
+}
+*/
+/*SeqTrack("M_TPP_Unarmed_FastWalk_v02", 			    "M_TPP_Unarmed_FastWalk_v02.anm2"		, 0, 55, 30, 1, 0.3)
+{
+	Event(9, VIS_EVENT_STEP_RIGHT)
+	Event(24, VIS_EVENT_STEP_LEFT)
+	Event(37, VIS_EVENT_STEP_RIGHT)
+	Event(51, VIS_EVENT_STEP_LEFT)
+}
+SeqTrack("M_TPP_Unarmed_FastWalk_v01", 			    "M_TPP_Unarmed_FastWalk_v01.anm2"		, 0, 61, 30, 1, 0.3)
+{
+	Event(9, VIS_EVENT_STEP_RIGHT)
+	Event(24, VIS_EVENT_STEP_LEFT)
+	Event(39, VIS_EVENT_STEP_RIGHT)
+	Event(53, VIS_EVENT_STEP_LEFT)
+}*/
+/*
+SeqTrack("HumanTest_Unarmed_TrotForward_Start", 		    "M_TPP_Unarmed_FastWalk_Start_F.anm2"	, 0, 62, 30, 1, 0.3)
+{
+	Event(32, VIS_EVENT_STEP_RIGHT)
+	Event(45, VIS_EVENT_STEP_LEFT)
+	Event(58, VIS_EVENT_STEP_RIGHT)
+}
+SeqTrack("HumanTest_Unarmed_TrotForward_StartR180", 		    "M_TPP_Unarmed_FastWalk_Start_B.anm2"	, 0, 66, 30, 1, 0.3)
+{
+	Event(31, VIS_EVENT_STEP_LEFT)
+	Event(45, VIS_EVENT_STEP_RIGHT)
+	Event(59, VIS_EVENT_STEP_LEFT)
+}
+SeqTrack("HumanTest_Unarmed_TrotForward_StartL90", 		    "M_TPP_Unarmed_FastWalk_Start_L.anm2"	, 0, 53, 30, 1, 0.3)
+{
+	Event(20, VIS_EVENT_STEP_LEFT)
+	Event(35, VIS_EVENT_STEP_RIGHT)
+	Event(49, VIS_EVENT_STEP_LEFT)
+}
+SeqTrack("HumanTest_Unarmed_TrotForward_StartR90", 		    "M_TPP_Unarmed_FastWalk_Start_R.anm2"	, 0, 53, 30, 1, 0.3)
+{
+	Event(8, VIS_EVENT_STEP_LEFT)
+	Event(18, VIS_EVENT_STEP_RIGHT)
+	Event(35, VIS_EVENT_STEP_LEFT)
+	Event(49, VIS_EVENT_STEP_RIGHT)
+}
+
+SeqTrack("HumanTest_Unarmed_TrotForward_Stop", 		    "M_TPP_Unarmed_FastWalk_Stop_F.anm2"		, 0, 70, 30, 1, 0.3)
+{
+	Event(10, VIS_EVENT_STEP_RIGHT)
+	Event(26, VIS_EVENT_STEP_LEFT)
+	Event(41, VIS_EVENT_STEP_RIGHT)
+	Event(55, VIS_EVENT_STEP_LEFT)
+}
+SeqTrack("HumanTest_Unarmed_TrotForward_StopL90", 			"M_TPP_Unarmed_FastWalk_Stop_L.anm2"		, 0, 75, 30, 1, 0.3)
+{
+	Event(11, VIS_EVENT_STEP_LEFT)
+	Event(24, VIS_EVENT_STEP_RIGHT)
+	Event(40, VIS_EVENT_STEP_LEFT)
+	Event(55, VIS_EVENT_STEP_RIGHT)
+}
+SeqTrack("HumanTest_Unarmed_TrotForward_StopR90", 			"M_TPP_Unarmed_FastWalk_Stop_R.anm2"		, 0, 77, 30, 1, 0.3)
+{
+	Event(11, VIS_EVENT_STEP_LEFT)
+	Event(25, VIS_EVENT_STEP_RIGHT)
+	Event(39, VIS_EVENT_STEP_LEFT)
+	Event(52, VIS_EVENT_STEP_RIGHT)
+	Event(65, VIS_EVENT_STEP_LEFT)
+}
+*/
+
+///////////////////////////////////////////////////////////////////////////////
+// Run
+/*
+SeqTrack("HumanTest_Unarmed_RunForward", 			        "M_TPP_Unarmed_Run_v01.anm2"		        , 0, 45, 30, 1, 0.3)
+{
+	Event(8, VIS_EVENT_STEP_RIGHT)
+	Event(19, VIS_EVENT_STEP_LEFT)
+	Event(30, VIS_EVENT_STEP_RIGHT)
+	Event(41, VIS_EVENT_STEP_LEFT)
+}
+*/
+/*SeqTrack("M_TPP_Unarmed_Run_v02", 			        "M_TPP_Unarmed_Run_v02.anm2"		        , 0, 46, 30, 1, 0.3)
+{
+	Event(9, VIS_EVENT_STEP_LEFT)
+	Event(21, VIS_EVENT_STEP_RIGHT)
+	Event(33, VIS_EVENT_STEP_LEFT)
+	Event(44, VIS_EVENT_STEP_RIGHT)
+}
+SeqTrack("M_TPP_Unarmed_Run_v03", 			        "M_TPP_Unarmed_Run_v03.anm2"		        , 0, 46, 30, 1, 0.3)
+{
+	Event(9, VIS_EVENT_STEP_LEFT)
+	Event(21, VIS_EVENT_STEP_RIGHT)
+	Event(32, VIS_EVENT_STEP_LEFT)
+	Event(44, VIS_EVENT_STEP_RIGHT)
+}*/
+/*
+SeqTrack("HumanTest_Unarmed_RunForward_StopL90", 			    "M_TPP_Unarmed_Run_Stop_L.anm2"		    , 27, 69, 30, 1, 0.3)
+{
+	Event(9, VIS_EVENT_STEP_LEFT)
+	Event(23, VIS_EVENT_STEP_RIGHT)
+	Event(36, VIS_EVENT_STEP_LEFT)
+	Event(48, VIS_EVENT_STEP_RIGHT)
+	Event(53 ,VIS_EVENT_STOPANIM)
+	Event(59, VIS_EVENT_STEP_LEFT)
+}
+SeqTrack("HumanTest_Unarmed_RunForward_StopR90", 			    "M_TPP_Unarmed_Run_Stop_R.anm2"		    , 25, 65, 30, 1, 0.3)
+{
+	Event(10, VIS_EVENT_STEP_RIGHT)
+	Event(20, VIS_EVENT_STEP_LEFT)
+	Event(33, VIS_EVENT_STEP_RIGHT)
+	Event(45, VIS_EVENT_STEP_LEFT)
+	Event(53, VIS_EVENT_STEP_RIGHT)
+	Event(53 ,VIS_EVENT_STOPANIM)
+}
+SeqTrack("HumanTest_Unarmed_RunForward_StopR180", 			    "M_TPP_Unarmed_Run_Stop_B.anm2"		    , 23, 63, 30, 1, 0.3)
+{
+	Event(12, VIS_EVENT_STEP_LEFT)
+	Event(23, VIS_EVENT_STEP_RIGHT)
+	Event(33, VIS_EVENT_STEP_LEFT)
+	Event(46, VIS_EVENT_STEP_RIGHT)
+	Event(56, VIS_EVENT_STEP_LEFT)
+}
+SeqTrack("HumanTest_Unarmed_RunForward_Stop", 			    "M_TPP_Unarmed_Run_Stop_F.anm2"		    , 27, 70, 30, 1, 0.3)
+{
+	Event(10, VIS_EVENT_STEP_RIGHT)
+	Event(22, VIS_EVENT_STEP_LEFT)
+	Event(33, VIS_EVENT_STEP_RIGHT)
+	Event(44, VIS_EVENT_STEP_LEFT)
+	Event(54, VIS_EVENT_STEP_RIGHT)
+	Event(55 ,VIS_EVENT_STOPANIM)
+}
+*/
+//[nosek_20100729] SeqTrack("HumanTest_Unarmed_RunForward_StartL90", 			    "M_TPP_Unarmed_Run_Start_L.anm2"		    , 4, 63, 30, 1, 0.3)
+//{
+//    Event(18, VIS_EVENT_STEP_LEFT)
+//    Event(21, VIS_EVENT_ROTATION_MOD_END)
+//	Event(23 ,VIS_EVENT_STOPANIM)
+//    Event(31, VIS_EVENT_STEP_RIGHT)
+//	Event(44, VIS_EVENT_STEP_LEFT)
+//    Event(52, VIS_EVENT_STEP_LEFT)
+//	Event(56, VIS_EVENT_STEP_RIGHT)	
+//}
+//[nosek_20100729] SeqTrack("HumanTest_Unarmed_RunForward_StartR90", 			    "M_TPP_Unarmed_Run_Start_R.anm2"		    , 4, 57, 30, 1, 0.3)
+//{
+//	Event(6, VIS_EVENT_STEP_LEFT)
+//    Event(22, VIS_EVENT_ROTATION_MOD_END)
+//	Event(22, VIS_EVENT_STEP_RIGHT)
+//	Event(29 ,VIS_EVENT_STOPANIM)
+//    Event(36, VIS_EVENT_STEP_LEFT)
+//	Event(50, VIS_EVENT_STEP_RIGHT)
+//	Event(52, VIS_EVENT_STEP_LEFT)
+//}
+//[nosek_20100729] SeqTrack("HumanTest_Unarmed_RunForward_StartR180", 			    "M_TPP_Unarmed_Run_Start_B.anm2"		    , 0, 62, 30, 1, 0.3)
+//{
+//	Event(12, VIS_EVENT_STEP_LEFT)
+//	Event(21, VIS_EVENT_STEP_RIGHT)
+//    Event(25, VIS_EVENT_ROTATION_MOD_END)
+//	Event(27 ,VIS_EVENT_STOPANIM)
+//    Event(35, VIS_EVENT_STEP_LEFT)
+//	Event(46, VIS_EVENT_STEP_RIGHT)
+//	Event(60, VIS_EVENT_STEP_LEFT)
+//}
+//[nosek_20100729] SeqTrack("HumanTest_Unarmed_RunForward_Start", 			    "M_TPP_Unarmed_Run_Start_F.anm2"		    , 0, 50, 30, 1, 0.3)
+//{
+//    Event(11, VIS_EVENT_STEP_LEFT)
+//    Event(17, VIS_EVENT_ROTATION_MOD_END)
+//	Event(23, VIS_EVENT_STEP_RIGHT)
+//    Event(27 ,VIS_EVENT_STOPANIM)
+//	Event(35, VIS_EVENT_STEP_LEFT)
+//	Event(47, VIS_EVENT_STEP_RIGHT)
+//}
+/*
+////////////////////////////////////////////////////////////////////////////////////
+// Sprint
+SeqTrack("HumanTest_Unarmed_SprintForward", 			    "M_TPP_Unarmed_Sprint_v01.anm2"		    , 0, 46, 30, 1, 0.3)
+{
+	Event(6, VIS_EVENT_STEP_LEFT)
+	Event(14, VIS_EVENT_STEP_RIGHT)
+	Event(22, VIS_EVENT_STEP_LEFT)
+	Event(30, VIS_EVENT_STEP_RIGHT)
+	Event(37, VIS_EVENT_STEP_LEFT)
+	Event(45, VIS_EVENT_STEP_RIGHT)
+}
+
+SeqTrack("HumanTest_Unarmed_SprintForward_StartR90", 		    "M_TPP_Unarmed_Sprint_Start_R.anm2"		, 0, 52, 30, 1, 0.3)
+{
+	Event(11, VIS_EVENT_STEP_LEFT)
+	Event(22, VIS_EVENT_STEP_RIGHT)
+	Event(27 ,VIS_EVENT_STOPANIM)
+	Event(31, VIS_EVENT_STEP_LEFT)
+	Event(40, VIS_EVENT_STEP_RIGHT)
+	Event(50, VIS_EVENT_STEP_LEFT)
+}
+SeqTrack("HumanTest_Unarmed_SprintForward_StartL90", 		    "M_TPP_Unarmed_Sprint_Start_L.anm2"		, 0, 50, 30, 1, 0.3)
+{
+	Event(11, VIS_EVENT_STEP_RIGHT)
+	Event(19, VIS_EVENT_STEP_LEFT)
+	Event(27 ,VIS_EVENT_STOPANIM)
+	Event(30, VIS_EVENT_STEP_RIGHT)
+	Event(40, VIS_EVENT_STEP_LEFT)
+	Event(49, VIS_EVENT_STEP_RIGHT)
+}
+SeqTrack("HumanTest_Unarmed_SprintForward_StartR180", 		    "M_TPP_Unarmed_Sprint_Start_B.anm2"		, 0, 57, 30, 1, 0.3)
+{
+	Event(18, VIS_EVENT_STEP_LEFT)
+	Event(26, VIS_EVENT_STEP_RIGHT)
+	Event(37, VIS_EVENT_STEP_LEFT)
+	Event(45, VIS_EVENT_STEP_RIGHT)
+	Event(55, VIS_EVENT_STEP_LEFT)
+}
+SeqTrack("HumanTest_Unarmed_SprintForward_Start", 		    "M_TPP_Unarmed_Sprint_Start_F.anm2"		, 0, 45, 30, 1, 0.3)
+{
+	Event(23, VIS_EVENT_STEP_RIGHT)
+	Event(27 ,VIS_EVENT_STOPANIM)
+    Event(27, VIS_EVENT_ROTATION_MOD_END)
+	Event(34, VIS_EVENT_STEP_LEFT)
+	Event(44, VIS_EVENT_STEP_RIGHT)
+}
+SeqTrack("HumanTest_Unarmed_SprintForward_StopL90", 		    "M_TPP_Unarmed_Sprint_Stop_L.anm2"		, 12, 55, 30, 1, 0.3)
+{
+	Event(9, VIS_EVENT_STEP_LEFT)
+	Event(18, VIS_EVENT_STEP_RIGHT)
+	Event(28, VIS_EVENT_STEP_LEFT)
+	Event(38, VIS_EVENT_STEP_RIGHT)
+	Event(46, VIS_EVENT_STEP_LEFT)
+	Event(46 ,VIS_EVENT_STOPANIM)	
+}
+SeqTrack("HumanTest_Unarmed_SprintForward_StopR90", 		    "M_TPP_Unarmed_Sprint_Stop_R.anm2"		, 11, 55, 30, 1, 0.3)
+{
+	Event(8, VIS_EVENT_STEP_RIGHT)
+	Event(17, VIS_EVENT_STEP_LEFT)
+	Event(25, VIS_EVENT_STEP_RIGHT)
+	Event(33, VIS_EVENT_STEP_LEFT)
+	Event(43, VIS_EVENT_STEP_RIGHT)
+	Event(43 ,VIS_EVENT_STOPANIM)
+}
+SeqTrack("HumanTest_Unarmed_SprintForward_StopR180", 		    "M_TPP_Unarmed_Sprint_Stop_B.anm2"		, 0, 59, 30, 1, 0.3)
+{
+	Event(8, VIS_EVENT_STEP_LEFT)
+	Event(18, VIS_EVENT_STEP_RIGHT)
+	Event(28, VIS_EVENT_STEP_LEFT)
+	Event(39, VIS_EVENT_STEP_RIGHT)
+	Event(51, VIS_EVENT_STEP_LEFT)
+}
+SeqTrack("HumanTest_Unarmed_SprintForward_Stop", 		    "M_TPP_Unarmed_Sprint_Stop_F.anm2"		, 12, 50, 30, 1, 0.3)
+{
+	Event(9, VIS_EVENT_STEP_LEFT)
+	Event(19, VIS_EVENT_STEP_RIGHT)
+	Event(26, VIS_EVENT_STEP_LEFT)
+	Event(35, VIS_EVENT_STEP_RIGHT)
+	Event(35 ,VIS_EVENT_STOPANIM)
+}
+*/

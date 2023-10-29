@@ -1,0 +1,263 @@
+!include("human_timing_events.def")
+
+// --- Noise kamery 
+
+//SeqTrack( "FPP_Stick2_MoveForwardNoise",		"M_FPP_Stick2_RunNoise.anm2",				0, 20, 30, 1, 0.5)
+//SeqTrack( "FPP_Stick2_MoveLeftNoise",			"M_FPP_Stick2_RunNoise.anm2",				0, 20, 30, 1, 0.5)
+//SeqTrack( "FPP_Stick2_MoveRightNoise",			"M_FPP_Stick2_RunNoise.anm2",				0, 20, 30, 1, 0.5)
+//SeqTrack( "FPP_Stick2_MoveBackwardNoise",		"M_FPP_Stick2_RunNoise.anm2",				0, 20, 30, 1, 0.5)
+
+
+SeqTrack( "FPP_Stick2_Stand",             "M_FPP_Stick2_Melee_ALL.anm2",          931, 1130, 30, 1, 0.5) //pozycja
+
+
+SeqTrack("FPP_Stick2_Vigilent2",              "M_FPP_Stick2_Vigilant_lvl0.anm2",          0, 180, 30, 1, 0.5) //pozycja
+SeqTrack("FPP_Stick2_Vigilent0",              "M_FPP_Stick2_Vigilant_lvl1.anm2",          0, 300, 30, 1, 0.5) //pozycja
+SeqTrack("FPP_Stick2_Vigilent1",              "M_FPP_Stick2_Vigilant_lvl2.anm2",          0, 422, 30, 1, 0.5) //pozycja
+
+SeqTrack( "FPP_Stick2_Defensive0",    			"M_FPP_Stick2_Def_lvl0.anm2",				0, 90, 30, 1, 0.5 )
+SeqTrack( "FPP_Stick2_Defensive1",    			"M_FPP_Stick2_Def_lvl1.anm2",				0, 150, 30, 1, 0.5 )
+
+SeqTrack( "FPP_Stick2_Defensive2_Begin",    			"M_FPP_Stick2_Def_lvl2.anm2",				0, 35, 30, 1, 0.5 )
+SeqTrack( "FPP_Stick2_Defensive2",    			"M_FPP_Stick2_Def_lvl2.anm2",				35, 113, 30, 1, 0.5 )
+SeqTrack( "FPP_Stick2_Defensive2_End",    			"M_FPP_Stick2_Def_lvl2.anm2",				113, 163, 30, 1, 0.5 )
+
+
+//===================================== Melee ============================================
+SeqTrack("FPP_Stick2_Melee_Stand", 				"M_FPP_Stick2_Melee_ALL.anm2",			115, 205, 30, 1, 0.3) //pozycja
+SeqTrackAlias("FPP_Stick2_Melee_Stand_center_open", "FPP_Stick2_Melee_Stand")
+//SeqTrackAlias("FPP_Stick2_Stand", "FPP_Stick2_Melee_Stand")
+//SeqTrack("FPP_Stick2_Melee_Stand_center_open",			"M_FPP_Stick2_Melee_ALL.anm2",			 931, 1130, 30, 1, 0.5) //pozycja
+
+SeqTrack("FPP_Stick2_Melee_PositionsSlow",		"M_FPP_Stick2_Melee_Positions_var2.anm2",		0, 360, 30, 1, 0.3)
+SeqTrackAlias("FPP_Stick2_Melee_Positions", "FPP_Stick2_Melee_PositionsSlow")
+
+SeqTrack("FPP_Stick2_Melee_AttackLR", 			"M_FPP_Stick2_Melee_ALL.anm2", 				730, 760, 30, 1, 0.3)
+SeqTrack("FPP_Stick2_Melee_AttackRL", 			"M_FPP_Stick2_Melee_ALL.anm2", 				690, 720, 30, 1, 0.3)
+SeqTrack("FPP_Stick2_Melee_AttackUD", 			"M_FPP_Stick2_Melee_ALL.anm2", 				850, 880, 30, 1, 0.3)
+SeqTrack("FPP_Stick2_Melee_AttackDU", 			"M_FPP_Stick2_Melee_ALL.anm2",				890, 920, 30, 1, 0.3)
+SeqTrack("FPP_Stick2_Melee_AttackDLUR", 			"M_FPP_Stick2_Melee_ALL.anm2",			810, 840, 30, 1, 0.3)
+SeqTrack("FPP_Stick2_Melee_AttackURDL", 			"M_FPP_Stick2_Melee_ALL.anm2",			770, 800, 30, 1, 0.3)
+SeqTrack("FPP_Stick2_Melee_AttackDRUL", 			"M_FPP_Stick2_Melee_ALL.anm2",			610, 640, 30, 1, 0.3)
+SeqTrack("FPP_Stick2_Melee_AttackULDR", 			"M_FPP_Stick2_Melee_ALL.anm2",			650, 680, 30, 1, 0.3)
+
+
+SeqTrack("FPP_Stick2_Melee_Attack_RL_Begin",			"M_FPP_Stick2_Sick.anm2", 		4, 5, 40, 1, 0.3)
+SeqTrack("FPP_Stick2_Melee_Attack_RL_Empty",			"M_FPP_Stick2_Sick.anm2", 		5, 22, 40, 1, 0.3)
+{
+	Event(8, PUNCH_HIT)	
+}
+
+SeqTrack("FPP_Stick2_Melee_Attack_RL_Empty_Rest",			"M_FPP_Stick2_Sick.anm2", 		22, 47, 40, 1, 0.3)
+
+
+SeqTrack("FPP_Stick2_Melee_Attack_LR_Begin",			"M_FPP_Stick2_Sick.anm2", 		52, 53, 40, 1, 0.3)
+SeqTrack("FPP_Stick2_Melee_Attack_LR_Empty",			"M_FPP_Stick2_Sick.anm2", 		53, 72, 40, 1, 0.3)
+{
+	Event(7, PUNCH_HIT)	
+}
+SeqTrack("FPP_Stick2_Melee_Attack_LR_Empty_Rest",			"M_FPP_Stick2_Sick.anm2", 		72, 98, 40, 1, 0.3)
+
+
+SeqTrackAlias("FPP_Stick2_Melee_LR_Stab_Rest", "FPP_Stick2_Melee_Attack_RL_Empty_Rest")
+
+SeqTrack("FPP_Stick2_Melee_RL_Stab_Rest",			"M_FPP_Stick2_Stab_01.anm2", 		62, 72, 30, 1, 0.3)
+
+SeqTrack( "FPP_Stick2_Melee_LR_Stab",			"M_FPP_Stick2_Stab_01.anm2"	, 21, 40, 30, 1, 0.3)
+{
+	Event(8, PUNCH_HIT)
+}
+
+SeqTrack( "FPP_Stick2_Melee_RL_Stab",			"M_FPP_Stick2_Stab_01.anm2"	, 43, 62, 30, 1, 0.3)
+{
+	Event(9, PUNCH_HIT)
+}
+
+SeqTrack("FPP_Stick2_Melee_Attack_RL_Hit", 		"M_FPP_Stick2_Strong_Hit.anm2", 		10, 29, 30, 1, 0.3)
+{
+	Event(14, PUNCH_HIT)	
+}
+SeqTrack("FPP_Stick2_Melee_Attack_RL_Hit_Rest", 		"M_FPP_Stick2_Strong_Hit.anm2", 		29, 65, 30, 1, 0.3)
+
+SeqTrack("FPP_Stick2_Melee_Attack_LR_Hit", 		"M_FPP_Stick2_Strong_Hit.anm2", 		66, 95, 30, 1, 0.3)
+{
+	Event(14, PUNCH_HIT)	
+}
+SeqTrack("FPP_Stick2_Melee_Attack_LR_Hit_Rest", 		"M_FPP_Stick2_Strong_Hit.anm2", 		95, 121, 30, 1, 0.3)
+
+SeqTrack("FPP_Stick2_Melee_Attack_UR_Empty", 		"M_FPP_Stick2_Strong_Hit_DU.anm2", 		0, 38, 30, 1, 0.3)
+{
+	Event(15, PUNCH_HIT)	
+}
+SeqTrack("FPP_Stick2_Melee_Attack_UR_Empty_Rest", 		"M_FPP_Stick2_Strong_Hit_DU.anm2"	, 38, 50, 30, 1, 0.3)
+
+SeqTrack("FPP_Stick2_Melee_Attack_UL_Empty", 		"M_FPP_Stick2_Strong_Hit_DU.anm2", 		53, 86, 30, 1, 0.3)
+{
+	Event(15, PUNCH_HIT)	
+}
+SeqTrack("FPP_Stick2_Melee_Attack_UL_Empty_Rest", 		"M_FPP_Stick2_Strong_Hit_DU.anm2"	, 86, 103, 30, 1, 0.3)
+
+SeqTrack("FPP_Stick2_Melee_Attack_UD_Begin", 			"M_FPP_Katana_UD_DU.anm2"	, 0, 3, 30, 1, 0.3)
+SeqTrack("FPP_Stick2_Melee_Attack_UD_Empty", 			"M_FPP_Katana_UD_DU.anm2"	, 3, 15, 25, 1, 0.3)
+{
+	Event(6, PUNCH_HIT)
+}
+
+SeqTrack("FPP_Stick2_Melee_Attack_UD_Empty_Rest", 			"M_FPP_Katana_UD_DU.anm2"	, 15, 20, 10, 1, 0.3)
+//SeqTrack("FPP_Stick2_Melee_Attack_UD_Empty_Rest", 			"M_FPP_Katana_UD_DU.anm2"	, 20, 49, 30, 1, 0.3)
+//SeqTrack("FPP_Stick2_Melee_Attack_UD_Empty_Rest", 			"M_FPP_Katana_UD_DU.anm2"	, 20, 49, 30, 1, 0.3)
+
+SeqTrack("FPP_Stick2_Melee_Attack_DU_Begin", 			"M_FPP_Katana_UD_DU.anm2"	, 50, 53, 30, 1, 0.3)
+SeqTrack("FPP_Stick2_Melee_Attack_DU_Empty", 			"M_FPP_Katana_UD_DU.anm2"	, 53, 70, 25, 1, 0.3)
+{
+	Event(6, PUNCH_HIT)
+}
+
+SeqTrack("FPP_Stick2_Melee_Attack_DU_Empty_Rest", 			"M_FPP_Katana_UD_DU.anm2"	, 70, 84, 30, 1, 0.3)
+
+SeqTrack("FPP_Stick2_Melee_Attack_UD_Hit",	"M_FPP_Stick_Melee_Finisher_UD_02.anm2",			0, 31, 25, 1, 0.5)
+{
+	Event(9, PUNCH_HIT)
+}
+
+//SeqTrackAlias("FPP_Stick2_Melee_Throw_Aim", "FPP_Stick_Melee_Throw_Aim")
+SeqTrack( "FPP_Stick2_Melee_Throw_Aim",		"M_FPP_Universal_Throw.anm2",			0, 2, 30, 1, 0.5)
+SeqTrack( "FPP_Stick2_Melee_Throw",		"M_FPP_Universal_Throw.anm2",				2, 35, 30, 1, 0.5)
+{
+	Event(4, PUNCH_HIT)	
+}
+
+SeqTrack("FPP_Stick2_Melee_Attack_DU_Hit",		"M_FPP_Stick2_Jab_02.anm2",				0, 35, 30, 1, 0.5)
+{
+	Event(12, PUNCH_HIT)	
+}
+
+SeqTrack("FPP_Stick2_Melee_Attack_DU_Hit_Rest",		"M_FPP_Stick2_Jab_02.anm2",				35, 50, 30, 1, 0.5)
+
+SeqTrack("FPP_Stick2_Melee_Attack_Exhausted", 		"M_FPP_Stick2_Low_Stamina.anm2"	, 0, 53, 30, 1, 0.3)
+SeqTrack("FPP_Stick2_Melee_Attack_Exhausted_Idle", 		"M_FPP_Stick2_Low_Stamina.anm2"	, 54, 114, 30, 1, 0.3)
+//SeqTrackAlias("FPP_Stick2_Melee_Attack_Exhausted_Idle", "FPP_Stick_Melee_Attack_Exhausted_Idle")
+
+
+SeqTrack( "FPP_Stick2_Crafted",		"M_FPP_Stick2_Crafted.anm2",			0, 215, 30, 1, 0.5)
+
+//SeqTrackAlias("FPP_Stick2_Jump_Pose", "TPP_Stick2_Jump_Pose")
+
+SeqTrack( "FPP_Stick2_Wall",		"M_FPP_Obstacle_Stick2.anm2",			0, 8, 30, 1, 0.5)
+
+///////////////////////////////////// NOT USED ///////////////////////////////////////////////////////
+
+//SeqTrack("FPP_Stick2_Melee_Attack_RL_Loop",			"M_FPP_Stick2_Melee_Complete.anm2", 		884, 894, 30, 1, 0.3)
+//SeqTrack("FPP_Stick2_Melee_Attack_LR_Loop",			"M_FPP_Stick2_Melee_Complete.anm2", 		896, 906, 30, 1, 0.3)
+/*SeqTrack("FPP_Stick2_Melee_Attack_CH_Begin",			"M_FPP_Stick2_Strong_Hit.anm2", 		0, 26, 30, 1, 0.3)
+SeqTrack("FPP_Stick2_Melee_Attack_CH_Empty",			"M_FPP_Stick2_Strong_Hit.anm2", 		27, 81, 30, 1, 0.3)
+{
+	Event(10, PUNCH_HIT)
+	Event(30, MELEE_REST_START)
+}
+
+SeqTrack("FPP_Stick2_Melee_Attack_CH_Loop",			"M_FPP_Stick2_Strong_Hit.anm2", 		0, 26, 30, 1, 0.3)*/
+
+//SeqTrack("FPP_Stick2_Melee_Attack_Exhausted_Return", 		"M_FPP_Stick2_Low_Stamina.anm2"	, 178, 220, 30, 1, 0.3)
+//SeqTrack("FPP_Stick2_Melee_Attack_Exhausted_Idle", 		"M_FPP_Stick2_Low_Stamina.anm2"	, 138, 178, 30, 1, 0.3)
+
+//SeqTrackAlias("FPP_Stick2_Melee_Attack_DU_Hit","FPP_Stick_Melee_Attack_DU_Empty")
+
+
+//SeqTrack("FPP_Stick2_Melee_Attack_Exhausted", 		"M_FPP_Stick2_Low_Stamina.anm2"	, 0, 138, 30, 1, 0.3)
+//SeqTrack("FPP_Stick2_Melee_Attack_Exhausted_Idle", 		"M_FPP_Stick2_Low_Stamina.anm2"	, 138, 178, 30, 1, 0.3)
+//SeqTrack("FPP_Stick2_Melee_Attack_Exhausted_Return", 		"M_FPP_Stick2_Low_Stamina.anm2"	, 178, 220, 30, 1, 0.3)
+
+//SeqTrack( "FPP_Stick2_Melee_Throw",		"M_FPP_Stick2_Melee_Throw.anm2",				53, 140, 30, 1, 0.5)
+//{
+//	Event(58, PUNCH_HIT)	
+//}
+
+/*SeqTrack("FPP_Stick2_Melee_Attack_UD_Begin",			"M_FPP_Stick2_Melee_Complete.anm2", 		909, 914, 30, 1, 0.3)
+SeqTrack("FPP_Stick2_Melee_Attack_UD_Empty",			"M_FPP_Stick2_Melee_Complete.anm2", 		914, 930, 30, 1, 0.3)
+{
+	Event(5, PUNCH_HIT)	
+}
+
+SeqTrack("FPP_Stick2_Melee_Attack_UD_Empty_Rest",			"M_FPP_Stick2_Melee_Complete.anm2", 		930, 956, 30, 1, 0.3)
+
+SeqTrack("FPP_Stick2_Melee_Attack_DU_Begin",			"M_FPP_Stick2_Melee_Complete.anm2", 		957, 963, 30, 1, 0.3)
+SeqTrack("FPP_Stick2_Melee_Attack_DU_Empty",			"M_FPP_Stick2_Melee_Complete.anm2", 		963, 977, 30, 1, 0.3)
+{
+	Event(4, PUNCH_HIT)	
+}
+
+SeqTrack("FPP_Stick2_Melee_Attack_DU_Empty_Rest",			"M_FPP_Stick2_Melee_Complete.anm2", 		977, 1004, 30, 1, 0.3)*/
+
+//SeqTrack("FPP_Stick2_Melee_Attack_RL_Cut",			"M_FPP_Stick2_Melee_Attack_LR_RL_All.anm2", 		---, ---, 30, 1, 0.3)
+//SeqTrack("FPP_Stick2_Melee_Attack_LR_Cut",			"M_FPP_Stick2_Melee_Attack_LR_RL_All.anm2", 		---, ---, 30, 1, 0.3)
+
+/*SeqTrack("FPP_Stick2_Melee_Attack_RL_Hit",			"M_FPP_Stick2_Strong_Hit.anm2", 		10, 59, 30, 1, 0.3)
+{
+	Event(14, PUNCH_HIT)	
+}
+SeqTrack("FPP_Stick2_Melee_Attack_RL_Hit_Rest",			"M_FPP_Stick2_Strong_Hit.anm2", 		59, 65, 30, 1, 0.3)
+
+SeqTrack("FPP_Stick2_Melee_Attack_LR_Hit",			"M_FPP_Stick2_Strong_Hit.anm2", 		66, 115, 30, 1, 0.3)
+{
+	Event(14, PUNCH_HIT)	
+}
+SeqTrack("FPP_Stick2_Melee_Attack_LR_Hit_Rest",			"M_FPP_Stick2_Strong_Hit.anm2", 		115, 121, 30, 1, 0.3)
+
+SeqTrack("FPP_Stick2_Melee_Attack_RL_Hit0", 		"M_FPP_Stick2_Strong_Hit_02.anm2", 		10, 44, 30, 1, 0.3)
+{
+	Event(11, PUNCH_HIT)	
+}
+SeqTrack("FPP_Stick2_Melee_Attack_LR_Hit0", 		"M_FPP_Stick2_Strong_Hit_02.anm2", 		45, 79, 30, 1, 0.3)
+{
+	Event(9, PUNCH_HIT)	
+}*/
+
+/*SeqTrackAlias("FPP_Stick2_Melee_LR_Stab1_Rest", "FPP_Stick2_Melee_Attack_RL_Empty_Rest")
+
+SeqTrack("FPP_Stick2_Melee_RL_Stab1_Rest",			"M_FPP_Stick2_Stab_01.anm2", 		62, 72, 30, 1, 0.3)
+
+SeqTrack( "FPP_Stick2_Melee_LR_Stab1",			"M_FPP_Stick2_Stab_01.anm2"	, 21, 40, 30, 1, 0.3)
+{
+	Event(8, PUNCH_HIT)
+}
+
+SeqTrack( "FPP_Stick2_Melee_RL_Stab1",			"M_FPP_Stick2_Stab_01.anm2"	, 43, 62, 30, 1, 0.3)
+{
+	Event(9, PUNCH_HIT)
+}*/
+
+
+/*SeqTrack("FPP_Stick2_Melee_Attack_RL_Begin",			"M_FPP_Stick2_Melee_Complete.anm2", 		365, 371, 40, 1, 0.3)
+SeqTrack("FPP_Stick2_Melee_Attack_RL_Empty",			"M_FPP_Stick2_Melee_Complete.anm2", 		371, 387, 40, 1, 0.3)
+{
+	Event(5, PUNCH_HIT)	
+}
+
+SeqTrack("FPP_Stick2_Melee_Attack_RL_Empty_Rest",			"M_FPP_Stick2_Melee_Complete.anm2", 		387, 412, 40, 1, 0.3)
+SeqTrack("FPP_Stick2_Melee_Attack_LR_Empty_Rest",			"M_FPP_Stick2_Melee_Complete.anm2", 		434, 460, 40, 1, 0.3)
+
+//SeqTrackAlias("FPP_Stick2_Melee_Attack_RL_Hit_Rest", "FPP_Stick2_Melee_Attack_RL_Empty_Rest")
+//SeqTrackAlias("FPP_Stick2_Melee_Attack_LR_Hit_Rest", "FPP_Stick2_Melee_Attack_LR_Empty_Rest")
+
+SeqTrack("FPP_Stick2_Melee_Attack_LR_Begin",			"M_FPP_Stick2_Melee_Complete.anm2", 		413, 418, 40, 1, 0.3)
+SeqTrack("FPP_Stick2_Melee_Attack_LR_Empty",			"M_FPP_Stick2_Melee_Complete.anm2", 		418, 434, 40, 1, 0.3)
+{
+	Event(6, PUNCH_HIT)	
+}*/
+
+//SeqTrack("FPP_Stick2_Melee_Positions",			"M_FPP_Stick2_Melee_Positions_var2.anm2", 		0, 360, 30, 1, 0.3)
+
+//SeqTrack( "FPP_Stick2_Calm",             "M_FPP_Stick2_Idle_Calm.anm2",          0, 432, 30, 1, 0.5) //pozycja
+//SeqTrack( "FPP_Stick2_Vigilent",             "M_FPP_Stick2_Idle_Alert_01.anm2",          0, 422, 30, 1, 0.5) //pozycja
+
+
+/*SeqTrack( "FPP_Unarmed_PushLevel2",					"M_FPP_Left_Hand_Push_Level2.anm2",						0, 25, 30, 1, 0.3)
+{
+	Event(2, PUNCH_HIT)	
+}
+
+SeqTrack( "FPP_Unarmed_PushLevel1",  					"M_FPP_Left_Hand_Push.anm2",						0, 34, 30, 1, 0.3)
+{
+	Event(2, PUNCH_HIT)	
+}*/

@@ -1,0 +1,4 @@
+sub cityhallb() {
+OnMap("cityhallb", "AIBaseSpawnBox", "MayorZombie", "14512", "2931", "11959"){Field("m_AILocation", 8);}
+
+}

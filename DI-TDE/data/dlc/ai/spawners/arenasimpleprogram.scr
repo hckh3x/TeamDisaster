@@ -1,0 +1,107 @@
+!Program(s)
+!Wave()
+!Spawn(f, f)
+!Preset(s, f, f)
+!Place(s)
+!DelayBtwSpawns(f)
+!Condition(s, f)
+!Pause(f)
+!RunProgram(s, i)
+!AddLevelPerPlayer(f)
+!AddLevelPerSeq(f)
+
+
+	Program("Base")
+	{
+		Wave()
+		{
+			Spawn(4.0, 0.0)
+			Preset("CityVesselMarket",   50.0,	0.0)
+			Preset("HotelInfectedTourist", 50.0, 0.0)
+
+			Place("close")
+			DelayBtwSpawns(1)
+			
+			Condition("count", 2)
+		}	
+
+		Wave()
+		{
+
+			Spawn(3.0, 1.0)
+			Preset("CityVesselMarket",   60.0, -5.0)
+			Preset("HotelInfectedTourist", 40, 5.0)
+
+			Place("close")
+			DelayBtwSpawns(5)
+
+			Condition("count", 0)
+		}	
+
+	}	
+
+
+	Program("Hard")
+	{
+		Wave()
+		{
+			Pause(20)
+
+			Spawn(4.0, 0.0)
+			Preset("CityVesselSlums", 100, 0)
+
+			Place("move")
+			DelayBtwSpawns(1)
+
+			Condition("count", 3)
+		}	
+
+		Wave()
+		{
+			Spawn(1.0, 0.0)
+			Preset("BossInfectedRamer", 100, 0)
+			Place("close")
+			DelayBtwSpawns(1)
+
+			Condition("time", 15)
+		}	
+
+		Wave()
+		{
+			Spawn(2.0, 1.0)
+			Preset("HotelInfectedTourist", 100, 0)
+
+			Place("close")
+			DelayBtwSpawns(4)
+
+			Condition("count", 0)
+		}	
+
+
+	}	
+
+	Program("Boss")
+	{
+		Wave()
+		{
+			Pause(20)
+
+			Spawn(6.0, 1.0)
+			Preset("BossInfectedRamer", 30, 0)
+			Preset("HotelInfectedTourist", 70, 0)
+			Place("close")
+			DelayBtwSpawns(3)
+			Condition("count", 0)
+		}	
+
+	}	
+
+
+AddLevelPerPlayer(0.5)
+AddLevelPerSeq(3)
+Pause(20)
+
+RunProgram("Base", 3)
+RunProgram("Hard", 1)
+RunProgram("Base", 2)
+RunProgram("Boss", 1)

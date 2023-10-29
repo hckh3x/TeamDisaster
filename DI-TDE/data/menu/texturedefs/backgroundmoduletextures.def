@@ -1,0 +1,39 @@
+!Texture(s, i, i) //texture file/ filename, width, height
+!HiddenInEditor(i) //if present, texture won't be visible in UIEditor combobox
+!Rect(s, i, i, i, i) //texture part / name, left, top, right, bottom (in pixels)
+!RectWithCorner(s, i, i, i, i, i, i) //texture part / name, left, top, right, bottom, corner width, corner height (in pixels)
+!Whole(s)
+
+Texture("Black.dds", 4, 4)
+{
+	Whole("black")
+}
+
+Texture("menu_gradient_alpha.dds", 16, 16)
+{
+	Whole("menu_gradient_alpha")
+}
+
+Texture("Drum.dds", 64, 64)
+{
+	Whole("Drum")
+}
+
+Texture("maz.dds", 512, 128)
+{
+    Whole("maz")
+}
+
+Texture("loading_screen_frames.dds", 1280, 256)
+{
+    Rect("loading_screen_top",  0,  0, 1280, 94)
+    Rect("loading_screen_bottom",  0,  128, 1280, 222)
+}
+
+Texture("back_to_menu.dds", 1280, 720)
+{
+    Whole("back_to_menu")
+}
+
+//-------- TEMP ---------
+

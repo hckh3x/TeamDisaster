@@ -1,0 +1,935 @@
+!include("AudioScript.def")
+!include("AudioProperties.scr")
+
+OnStart()
+{
+    //SoundAlias("test", "radio_polynesia.wav")
+    SetOcclusionLPFMin(2000.0)
+    SetOcclusionLPFMax(8000.0)
+    SetVariable("back_LPF_cutoff_frq", "4000.0f") // LPF cutoff frequency applied gradually to sounds behind player
+    
+    SetOcclusionVolumeMin(0.1)
+    
+    EnableOcclusion(2)
+    SetVariable("occlusion_impact_partial", "0.45")
+    SetVariable("occlusion_impact_full", "0.9")
+    SetVariable("occlusion_air_max_impact", "0.3")
+    SetVariable("occlusion_floor_over", "1.0") // currently used as occlusion attack time in seconds
+    SetVariable("occlusion_floor_under", "1.0") // currently used as occlusion release time in seconds
+
+    EnableListenerCone(1)
+    SetListenerCone(60., 1., 160., 0.7)    
+    
+    //////////////////////////////////////////////////////////////////////////
+    //SetHDR(windowSize [amplitude], lowestMaxAmplitude [amplitude], releaseTime [seconds], useRMS[0,1], RMSTreshold[-100,0] dB, HDRHeadroom[-100,0] dB)
+    // WARNING! windowSize <= lowestMaxAmplitude
+    //////////////////////////////////////////////////////////////////////////
+    SetHDR(1.0, 1.0, 1.3, 1, -10, 0)
+    
+    //////////////////////////////////////////////////////////////////////////
+    //SetMasterVolume(volume [-60,0]dB)
+    //////////////////////////////////////////////////////////////////////////
+    SetMasterVolume(-5.0)
+    
+    //////////////////////////////////////////////////////////////////////////
+    //SetMultichannel3DGain(volume [-60,0]dB)
+    //////////////////////////////////////////////////////////////////////////
+    SetMultichannel3DGain(-6.0)
+    
+    //////////////////////////////////////////////////////////////////////////
+    //SetRadioDspParams(distortion [0,1], hpfrq[20,22000]Hz, lpfrq[20,22000]Hz, gain[-60,0]dB)
+    //////////////////////////////////////////////////////////////////////////
+    SetRadioDspParams(0.3, 2000, 3000, 0.0)
+    
+    //ReuseSourceVoices(25)
+    
+    EnableAutoReverb(1)
+    //SetAutoReverb(0, 1)
+    //SetAutoReverb(2, 1)
+    //SetAutoReverb(3, 1)
+    //SetAutoReverb(4, 1)
+    //SetAutoReverb(11, 1)
+    
+    SetVariable("use_reverb_level", "1")
+    SetVariable("enable_auto_reverb", "1")
+    SetVariable("reverb_min_level", "0.3")
+    //SetVariable("reverb_min_distance", "2.0")    // MunDee Estuvo aquí
+    //SetVariable("reverb_max_distance", "10.0")    // MunDee Estuvo aquí
+    
+    SoundAlias("heavy_rain_outside_01", "heavy_rain_outside_loop_01")
+}
+
+//////////////////////////////////////////////////////////////////
+// Story Levels Procedures ///////////////////////////////////////
+//////////////////////////////////////////////////////////////////
+
+AudioProc("ACT1A")
+{
+    
+
+    LoadDefaultBanks()
+
+    LoadAudioBanks("Speech_Ai_Chatter")
+    LoadAudioBanks("Common")
+    LoadAudioBanks("Common_stream")
+    LoadAudioBanks("Music")
+    LoadAudioBanks("Menu")
+    LoadAudioBanks("Menu_stream")   
+    
+    LoadAudioBanks("all_in_maps")
+    LoadAudioBanks("all_in_maps_stream")
+    LoadAudioBanks("all_in_maps_local")
+    LoadAudioBanks("all_in_maps_local_stream")
+}
+
+AudioProc("ACT2A")
+{
+    
+
+    LoadDefaultBanks()
+
+    LoadAudioBanks("Speech_Ai_Chatter")
+    LoadAudioBanks("Common")
+    LoadAudioBanks("Common_stream")
+    LoadAudioBanks("Music")
+    LoadAudioBanks("Menu")
+    LoadAudioBanks("Menu_stream")
+    
+    LoadAudioBanks("all_in_maps")
+    LoadAudioBanks("all_in_maps_stream")
+    LoadAudioBanks("all_in_maps_local")
+    LoadAudioBanks("all_in_maps_local_stream")
+
+}
+
+AudioProc("ACT2B")
+{
+    
+
+    LoadDefaultBanks()
+
+    LoadAudioBanks("Speech_Ai_Chatter")
+    LoadAudioBanks("Common")
+    LoadAudioBanks("Common_stream")
+    LoadAudioBanks("Music")
+    LoadAudioBanks("Menu")
+    LoadAudioBanks("Menu_stream")
+    
+    LoadAudioBanks("all_in_maps")
+    LoadAudioBanks("all_in_maps_stream")
+    LoadAudioBanks("all_in_maps_local")
+    LoadAudioBanks("all_in_maps_local_stream")
+
+}
+
+AudioProc("ACT3A")
+{
+    
+
+    LoadDefaultBanks()
+
+    LoadAudioBanks("Speech_Ai_Chatter")
+    LoadAudioBanks("Common")
+    LoadAudioBanks("Common_stream")
+    LoadAudioBanks("Music")
+    LoadAudioBanks("Menu")
+    LoadAudioBanks("Menu_stream")
+    
+    LoadAudioBanks("all_in_maps")
+    LoadAudioBanks("all_in_maps_stream")
+    LoadAudioBanks("all_in_maps_local")
+    LoadAudioBanks("all_in_maps_local_stream")
+
+}
+
+AudioProc("ACT3B")
+{
+    
+
+    LoadDefaultBanks()
+
+    LoadAudioBanks("Speech_Ai_Chatter")
+    LoadAudioBanks("Common")
+    LoadAudioBanks("Common_stream")
+    LoadAudioBanks("Music")
+    LoadAudioBanks("Menu")
+    LoadAudioBanks("Menu_stream")
+    
+    LoadAudioBanks("all_in_maps")
+    LoadAudioBanks("all_in_maps_stream")
+    LoadAudioBanks("all_in_maps_local")
+    LoadAudioBanks("all_in_maps_local_stream")
+
+}
+
+AudioProc("ACT3C")
+{
+    
+
+    LoadDefaultBanks()
+
+    LoadAudioBanks("Speech_Ai_Chatter")
+    LoadAudioBanks("Common")
+    LoadAudioBanks("Common_stream")
+    LoadAudioBanks("Music")
+    LoadAudioBanks("Menu")
+    LoadAudioBanks("Menu_stream")
+    
+    LoadAudioBanks("all_in_maps")
+    LoadAudioBanks("all_in_maps_stream")
+    LoadAudioBanks("all_in_maps_local")
+    LoadAudioBanks("all_in_maps_local_stream")
+
+}
+
+AudioProc("ACT4A")
+{
+    
+
+    LoadDefaultBanks()
+
+    LoadAudioBanks("Speech_Ai_Chatter")
+    LoadAudioBanks("Common")
+    LoadAudioBanks("Common_stream")
+    LoadAudioBanks("Music")
+    LoadAudioBanks("Menu")
+    LoadAudioBanks("Menu_stream")
+    
+    LoadAudioBanks("all_in_maps")
+    LoadAudioBanks("all_in_maps_stream")
+    LoadAudioBanks("all_in_maps_local")
+    LoadAudioBanks("all_in_maps_local_stream")
+
+}
+
+AudioProc("ACT4B")
+{
+    
+
+    LoadDefaultBanks()
+
+    LoadAudioBanks("Speech_Ai_Chatter")
+    LoadAudioBanks("Common")
+    LoadAudioBanks("Common_stream")
+    LoadAudioBanks("Music")
+    LoadAudioBanks("Menu")
+    LoadAudioBanks("Menu_stream")
+    
+    LoadAudioBanks("all_in_maps")
+    LoadAudioBanks("all_in_maps_stream")
+    LoadAudioBanks("all_in_maps_local")
+    LoadAudioBanks("all_in_maps_local_stream")
+
+}
+
+AudioProc("BuildingInterior")
+{
+    
+
+    LoadDefaultBanks()
+
+    LoadAudioBanks("Speech_Ai_Chatter")
+    LoadAudioBanks("Common")
+    LoadAudioBanks("Common_stream")
+    LoadAudioBanks("Music")
+    LoadAudioBanks("Menu")
+    LoadAudioBanks("Menu_stream")
+    
+    LoadAudioBanks("all_in_maps")
+    LoadAudioBanks("all_in_maps_stream")
+    LoadAudioBanks("all_in_maps_local")
+    LoadAudioBanks("all_in_maps_local_stream")
+
+}
+
+AudioProc("Camp")
+{
+    
+
+    LoadDefaultBanks()
+
+    LoadAudioBanks("Speech_Ai_Chatter")
+    LoadAudioBanks("Common")
+    LoadAudioBanks("Common_stream")
+    LoadAudioBanks("Music")
+    LoadAudioBanks("Menu")
+    LoadAudioBanks("Menu_stream")
+    
+    LoadAudioBanks("all_in_maps")
+    LoadAudioBanks("all_in_maps_stream")
+    LoadAudioBanks("all_in_maps_local")
+    LoadAudioBanks("all_in_maps_local_stream")
+
+}
+
+AudioProc("CityHallA")
+{
+    
+
+    LoadDefaultBanks()
+
+    LoadAudioBanks("Speech_Ai_Chatter")
+    LoadAudioBanks("Common")
+    LoadAudioBanks("Common_stream")
+    LoadAudioBanks("Music")
+    LoadAudioBanks("Menu")
+    LoadAudioBanks("Menu_stream")
+    
+    LoadAudioBanks("all_in_maps")
+    LoadAudioBanks("all_in_maps_stream")
+    LoadAudioBanks("all_in_maps_local")
+    LoadAudioBanks("all_in_maps_local_stream")
+
+}
+
+AudioProc("CityHallB")
+{
+    
+
+    LoadDefaultBanks()
+
+    LoadAudioBanks("Speech_Ai_Chatter")
+    LoadAudioBanks("Common")
+    LoadAudioBanks("Common_stream")
+    LoadAudioBanks("Music")
+    LoadAudioBanks("Menu")
+    LoadAudioBanks("Menu_stream")
+    
+    LoadAudioBanks("all_in_maps")
+    LoadAudioBanks("all_in_maps_stream")
+    LoadAudioBanks("all_in_maps_local")
+    LoadAudioBanks("all_in_maps_local_stream")
+
+}
+
+AudioProc("Hospital")
+{
+    
+
+    LoadDefaultBanks()
+
+    LoadAudioBanks("Speech_Ai_Chatter")
+    LoadAudioBanks("Common")
+    LoadAudioBanks("Common_stream")
+    LoadAudioBanks("Music")
+    LoadAudioBanks("Menu")
+    LoadAudioBanks("Menu_stream")
+    
+    LoadAudioBanks("all_in_maps")
+    LoadAudioBanks("all_in_maps_stream")
+    LoadAudioBanks("all_in_maps_local")
+    LoadAudioBanks("all_in_maps_local_stream")
+
+}
+
+AudioProc("Hotel")
+{
+    
+
+    LoadDefaultBanks()
+
+    LoadAudioBanks("Speech_Ai_Chatter")
+    LoadAudioBanks("Common")
+    LoadAudioBanks("Common_stream")
+    LoadAudioBanks("Music")
+    LoadAudioBanks("Menu")
+    LoadAudioBanks("Menu_stream")
+    
+    LoadAudioBanks("all_in_maps")
+    LoadAudioBanks("all_in_maps_stream")
+    LoadAudioBanks("all_in_maps_local")
+    LoadAudioBanks("all_in_maps_local_stream")
+
+}
+
+AudioProc("Intro")
+{
+    
+
+    LoadDefaultBanks()
+
+    LoadAudioBanks("Speech_Ai_Chatter")
+    LoadAudioBanks("Common")
+    LoadAudioBanks("Common_stream")
+    LoadAudioBanks("Music")
+    LoadAudioBanks("Menu")
+    LoadAudioBanks("Menu_stream")
+    
+    LoadAudioBanks("all_in_maps")
+    LoadAudioBanks("all_in_maps_stream")
+    LoadAudioBanks("all_in_maps_local")
+    LoadAudioBanks("all_in_maps_local_stream")
+
+}
+
+AudioProc("Jungle")
+{
+    
+
+    LoadDefaultBanks()
+
+    LoadAudioBanks("Speech_Ai_Chatter")
+    LoadAudioBanks("Common")
+    LoadAudioBanks("Common_stream")
+    LoadAudioBanks("Music")
+    LoadAudioBanks("Menu")
+    LoadAudioBanks("Menu_stream")
+    
+    LoadAudioBanks("all_in_maps")
+    LoadAudioBanks("all_in_maps_stream")
+    LoadAudioBanks("all_in_maps_local")
+    LoadAudioBanks("all_in_maps_local_stream")
+
+}
+
+AudioProc("Laboratory")
+{
+    
+
+    LoadDefaultBanks()
+
+    LoadAudioBanks("Speech_Ai_Chatter")
+    LoadAudioBanks("Common")
+    LoadAudioBanks("Common_stream")
+    LoadAudioBanks("Music")
+    LoadAudioBanks("Menu")
+    LoadAudioBanks("Menu_stream")
+    
+    LoadAudioBanks("all_in_maps")
+    LoadAudioBanks("all_in_maps_stream")
+    LoadAudioBanks("all_in_maps_local")
+    LoadAudioBanks("all_in_maps_local_stream")
+
+}
+
+AudioProc("Market")
+{
+    
+
+    LoadDefaultBanks()
+
+    LoadAudioBanks("Speech_Ai_Chatter")
+    LoadAudioBanks("Common")
+    LoadAudioBanks("Common_stream")
+    LoadAudioBanks("Music")
+    LoadAudioBanks("Menu")
+    LoadAudioBanks("Menu_stream")
+    
+    LoadAudioBanks("all_in_maps")
+    LoadAudioBanks("all_in_maps_stream")
+    LoadAudioBanks("all_in_maps_local")
+    LoadAudioBanks("all_in_maps_local_stream")
+
+}
+
+AudioProc("menuback")
+{
+    
+
+    LoadDefaultBanks()
+
+    LoadAudioBanks("Common")
+    LoadAudioBanks("Common_stream")
+    LoadAudioBanks("Music")
+    LoadAudioBanks("Menu")
+    LoadAudioBanks("Menu_stream")
+    
+    LoadAudioBanks("all_in_maps")
+    LoadAudioBanks("all_in_maps_stream")
+    LoadAudioBanks("all_in_maps_local")
+    LoadAudioBanks("all_in_maps_local_stream")
+
+}
+
+AudioProc("ParkingLot")
+{
+    
+
+    LoadDefaultBanks()
+
+    LoadAudioBanks("Speech_Ai_Chatter")
+    LoadAudioBanks("Common")
+    LoadAudioBanks("Common_stream")
+    LoadAudioBanks("Music")
+    LoadAudioBanks("Menu")
+    LoadAudioBanks("Menu_stream")
+    
+    LoadAudioBanks("all_in_maps")
+    LoadAudioBanks("all_in_maps_stream")
+    LoadAudioBanks("all_in_maps_local")
+    LoadAudioBanks("all_in_maps_local_stream")
+
+}
+
+AudioProc("PoliceStation")
+{
+    
+
+    LoadDefaultBanks()
+
+    LoadAudioBanks("Speech_Ai_Chatter")
+    LoadAudioBanks("Common")
+    LoadAudioBanks("Common_stream")
+    LoadAudioBanks("Music")
+    LoadAudioBanks("Menu")
+    LoadAudioBanks("Menu_stream")
+    
+    LoadAudioBanks("all_in_maps")
+    LoadAudioBanks("all_in_maps_stream")
+    LoadAudioBanks("all_in_maps_local")
+    LoadAudioBanks("all_in_maps_local_stream")
+
+}
+
+AudioProc("RWhite")
+{
+    
+
+    LoadDefaultBanks()
+
+    LoadAudioBanks("Speech_Ai_Chatter")
+    LoadAudioBanks("Common")
+    LoadAudioBanks("Common_stream")
+    LoadAudioBanks("Music")
+    LoadAudioBanks("Menu")
+    LoadAudioBanks("Menu_stream")
+
+    LoadAudioBanks("all_in_maps")
+    LoadAudioBanks("all_in_maps_stream")
+    LoadAudioBanks("all_in_maps_local")
+    LoadAudioBanks("all_in_maps_local_stream")
+}
+
+AudioProc("Sewers")
+{
+    
+
+    LoadDefaultBanks()
+
+    LoadAudioBanks("Speech_Ai_Chatter")
+    LoadAudioBanks("Common")
+    LoadAudioBanks("Common_stream")
+    LoadAudioBanks("Music")
+    LoadAudioBanks("Menu")
+    LoadAudioBanks("Menu_stream")
+
+    LoadAudioBanks("all_in_maps")
+    LoadAudioBanks("all_in_maps_stream")
+    LoadAudioBanks("all_in_maps_local")
+    LoadAudioBanks("all_in_maps_local_stream")
+}
+
+AudioProc("Town")
+{
+    
+
+    LoadDefaultBanks()
+
+    LoadAudioBanks("Speech_Ai_Chatter")
+    LoadAudioBanks("Common")
+    LoadAudioBanks("Common_stream")
+    LoadAudioBanks("Music")
+    LoadAudioBanks("Menu")
+    LoadAudioBanks("Menu_stream")
+
+    LoadAudioBanks("all_in_maps")
+    LoadAudioBanks("all_in_maps_stream")
+    LoadAudioBanks("all_in_maps_local")
+    LoadAudioBanks("all_in_maps_local_stream")
+}
+
+AudioProc("Tunnels")
+{
+    
+
+    LoadDefaultBanks()
+
+    LoadAudioBanks("Speech_Ai_Chatter")
+    LoadAudioBanks("Common")
+    LoadAudioBanks("Common_stream")
+    LoadAudioBanks("Music")
+    LoadAudioBanks("Menu")
+    LoadAudioBanks("Menu_stream")
+
+    LoadAudioBanks("all_in_maps")
+    LoadAudioBanks("all_in_maps_stream")
+    LoadAudioBanks("all_in_maps_local")
+    LoadAudioBanks("all_in_maps_local_stream")
+}
+
+AudioProc("Tutorial")
+{
+    
+
+    LoadDefaultBanks()
+
+    LoadAudioBanks("Speech_Ai_Chatter")
+    LoadAudioBanks("Common")
+    LoadAudioBanks("Common_stream")
+    LoadAudioBanks("Music")
+    LoadAudioBanks("Menu")
+    LoadAudioBanks("Menu_stream")
+
+    LoadAudioBanks("all_in_maps")
+    LoadAudioBanks("all_in_maps_stream")
+    LoadAudioBanks("all_in_maps_local")
+    LoadAudioBanks("all_in_maps_local_stream")
+}
+
+AudioProc("TVStation")
+{
+    
+
+    LoadDefaultBanks()
+
+    LoadAudioBanks("Speech_Ai_Chatter")
+    LoadAudioBanks("Common")
+    LoadAudioBanks("Common_stream")
+    LoadAudioBanks("Music")
+    LoadAudioBanks("Menu")
+    LoadAudioBanks("Menu_stream")
+
+    LoadAudioBanks("all_in_maps")
+    LoadAudioBanks("all_in_maps_stream")
+    LoadAudioBanks("all_in_maps_local")
+    LoadAudioBanks("all_in_maps_local_stream")
+}
+
+AudioProc("Warehouse")
+{
+    
+
+    LoadDefaultBanks()
+
+    LoadAudioBanks("Speech_Ai_Chatter")
+    LoadAudioBanks("Common")
+    LoadAudioBanks("Common_stream")
+    LoadAudioBanks("Music")
+    LoadAudioBanks("Menu")
+    LoadAudioBanks("Menu_stream")
+
+    LoadAudioBanks("all_in_maps")
+    LoadAudioBanks("all_in_maps_stream")
+    LoadAudioBanks("all_in_maps_local")
+    LoadAudioBanks("all_in_maps_local_stream")
+}
+//////////////////////////////////////////////////////////////////
+//////////// DLC ARENA ///////////////////////////////////////////
+//////////////////////////////////////////////////////////////////
+
+AudioProc("arena_a")
+{
+    
+
+    LoadDefaultBanks()
+
+    LoadAudioBanks("Speech_Ai_Chatter")
+    LoadAudioBanks("Common")
+    LoadAudioBanks("Common_stream")
+    LoadAudioBanks("Music")
+    LoadAudioBanks("Menu")
+    LoadAudioBanks("Menu_stream")
+	
+	LoadAudioBanks("all_in_maps")
+    LoadAudioBanks("all_in_maps_stream")
+    LoadAudioBanks("all_in_maps_local")
+    LoadAudioBanks("all_in_maps_local_stream")
+
+}
+
+AudioProc("arena_b")
+{
+    
+
+    LoadDefaultBanks()
+
+    LoadAudioBanks("Speech_Ai_Chatter")
+    LoadAudioBanks("Common")
+    LoadAudioBanks("Common_stream")
+    LoadAudioBanks("Music")
+    LoadAudioBanks("Menu")
+    LoadAudioBanks("Menu_stream")
+    
+	LoadAudioBanks("all_in_maps")
+    LoadAudioBanks("all_in_maps_stream")
+    LoadAudioBanks("all_in_maps_local")
+    LoadAudioBanks("all_in_maps_local_stream")
+
+}
+AudioProc("arena_c")
+{
+    
+
+    LoadDefaultBanks()
+
+    LoadAudioBanks("Speech_Ai_Chatter")
+    LoadAudioBanks("Common")
+    LoadAudioBanks("Common_stream")
+    LoadAudioBanks("Music")
+    LoadAudioBanks("Menu")
+    LoadAudioBanks("Menu_stream")
+	
+    LoadAudioBanks("all_in_maps")
+    LoadAudioBanks("all_in_maps_stream")
+    LoadAudioBanks("all_in_maps_local")
+    LoadAudioBanks("all_in_maps_local_stream")
+
+}
+AudioProc("arena_d")
+{
+    
+
+    LoadDefaultBanks()
+
+    LoadAudioBanks("Speech_Ai_Chatter")
+    LoadAudioBanks("Common")
+    LoadAudioBanks("Common_stream")
+    LoadAudioBanks("Music")
+    LoadAudioBanks("Menu")
+    LoadAudioBanks("Menu_stream")
+
+	LoadAudioBanks("all_in_maps")
+    LoadAudioBanks("all_in_maps_stream")
+    LoadAudioBanks("all_in_maps_local")
+    LoadAudioBanks("all_in_maps_local_stream")
+
+}
+
+AudioProc("arena_lobby")
+{
+    
+
+    LoadDefaultBanks()
+
+    LoadAudioBanks("Speech_Ai_Chatter")
+    LoadAudioBanks("Common")
+    LoadAudioBanks("Common_stream")
+    LoadAudioBanks("Music")
+    LoadAudioBanks("Menu")
+    LoadAudioBanks("Menu_stream")
+	
+    LoadAudioBanks("all_in_maps")
+    LoadAudioBanks("all_in_maps_stream")
+    LoadAudioBanks("all_in_maps_local")
+    LoadAudioBanks("all_in_maps_local_stream")
+
+}
+
+
+//////////////////////////////////////////////////////////////////
+//////////// DLC RYDER ///////////////////////////////////////////
+//////////////////////////////////////////////////////////////////
+
+
+AudioProc("rwhite")
+{
+    
+
+    LoadDefaultBanks()
+
+    LoadAudioBanks("Speech_Ai_Chatter")
+    LoadAudioBanks("Common")
+    LoadAudioBanks("Common_stream")
+    LoadAudioBanks("Music")
+    LoadAudioBanks("Menu")
+    LoadAudioBanks("Menu_stream")
+	
+    LoadAudioBanks("all_in_maps")
+    LoadAudioBanks("all_in_maps_stream")
+    LoadAudioBanks("all_in_maps_local")
+    LoadAudioBanks("all_in_maps_local_stream")
+
+}
+
+AudioProc("RWhite_City")
+{
+    
+
+    LoadDefaultBanks()
+
+    LoadAudioBanks("Speech_Ai_Chatter")
+    LoadAudioBanks("Common")
+    LoadAudioBanks("Common_stream")
+    LoadAudioBanks("Music")
+    LoadAudioBanks("Menu")
+    LoadAudioBanks("Menu_stream")
+
+	LoadAudioBanks("all_in_maps")
+    LoadAudioBanks("all_in_maps_stream")
+    LoadAudioBanks("all_in_maps_local")
+    LoadAudioBanks("all_in_maps_local_stream")
+
+}
+
+AudioProc("RWhite_Jungle")
+{
+    
+
+    LoadDefaultBanks()
+
+    LoadAudioBanks("Speech_Ai_Chatter")
+    LoadAudioBanks("Common")
+    LoadAudioBanks("Common_stream")
+    LoadAudioBanks("Music")
+    LoadAudioBanks("Menu")
+    LoadAudioBanks("Menu_stream")
+	
+    LoadAudioBanks("all_in_maps")
+    LoadAudioBanks("all_in_maps_stream")
+    LoadAudioBanks("all_in_maps_local")
+    LoadAudioBanks("all_in_maps_local_stream")
+
+}
+
+
+
+//////////////////////////////////////////////////////////////////
+// Test Map Procedures ///////////////////////////////////////////
+//////////////////////////////////////////////////////////////////
+
+
+// TestMapAdrian
+
+AudioProc("TestMapAI")
+{
+    
+
+    LoadDefaultBanks()
+
+    LoadAudioBanks("Speech_Ai_Chatter")
+    LoadAudioBanks("Common")
+    LoadAudioBanks("Common_stream")
+    LoadAudioBanks("Music")
+    LoadAudioBanks("Menu")
+    LoadAudioBanks("Menu_stream")
+
+}
+
+AudioProc("TestMapBalance")
+{
+    
+
+    LoadDefaultBanks()
+
+    LoadAudioBanks("Speech_Ai_Chatter")
+    LoadAudioBanks("Common")
+    LoadAudioBanks("Common_stream")
+    LoadAudioBanks("Music")
+    LoadAudioBanks("Menu")
+    LoadAudioBanks("Menu_stream")
+
+}
+
+AudioProc("TestMapDI")
+{
+    
+
+    LoadDefaultBanks()
+
+    LoadAudioBanks("Speech_Ai_Chatter")
+    LoadAudioBanks("Common")
+    LoadAudioBanks("Common_stream")
+    LoadAudioBanks("Music")
+    LoadAudioBanks("Menu")
+    LoadAudioBanks("Menu_stream")
+
+}
+
+AudioProc("TestMapBibbit")
+{
+    
+
+    LoadDefaultBanks()
+
+    LoadAudioBanks("Speech_Ai_Chatter")
+    LoadAudioBanks("Common")
+    LoadAudioBanks("Common_stream")
+    LoadAudioBanks("Music")
+    LoadAudioBanks("Menu")
+    LoadAudioBanks("Menu_stream")
+
+}
+AudioProc("Testenemy")
+{
+    
+
+    LoadDefaultBanks()
+
+    LoadAudioBanks("Speech_Ai_Chatter")
+    LoadAudioBanks("Common")
+    LoadAudioBanks("Common_stream")
+    LoadAudioBanks("Music")
+    LoadAudioBanks("Menu")
+    LoadAudioBanks("Menu_stream")
+
+}
+
+AudioProc("testmap_kurak")
+{
+    
+
+    LoadDefaultBanks()
+
+    LoadAudioBanks("Speech_Ai_Chatter")
+    LoadAudioBanks("Common")
+    LoadAudioBanks("Common_stream")
+    LoadAudioBanks("Music")
+    LoadAudioBanks("Menu")
+    LoadAudioBanks("Menu_stream")
+	
+    LoadAudioBanks("all_in_maps")
+    LoadAudioBanks("all_in_maps_stream")
+    LoadAudioBanks("all_in_maps_local")
+    LoadAudioBanks("all_in_maps_local_stream")
+
+}
+
+// TestMapChallenge
+// TestMapCr33z
+// TestMapFaceEditor
+// TestMapHavana
+// TestMapNaviMesh
+// TestMapPuzzle
+// TestMapQuests
+// TestMapRagdoll
+// TestMapRM
+// TestMapSick
+// TestMapTomek
+
+//////////////////////////////////////////////////////////////////
+// Miscellaneous banks ///////////////////////////////////////////
+//////////////////////////////////////////////////////////////////
+
+AudioProc("main_menu")
+{
+    LoadAudioBanks("Music")
+    LoadAudioBanks("music_loadings")
+	LoadAudioBanks("menuback_local_stream")
+    LoadAudioBanks("Menu")
+    LoadAudioBanks("Menu_stream")
+    
+    LoadAudioBanks("all_in_maps")
+    LoadAudioBanks("all_in_maps_stream")
+    LoadAudioBanks("all_in_maps_local")
+    LoadAudioBanks("all_in_maps_local_stream")
+}
+
+AudioProc("music_only")
+{
+    LoadAudioBanks("music_loadings")
+    LoadAudioBanks("music")
+}
+
+// All banks are loaded by chromed at start up
+AudioProc("chromed")
+{
+    LoadDefaultBanks()
+
+    LoadAudioBanks("Music")
+    LoadAudioBanks("music_loadings")
+    LoadAudioBanks("Menu")
+    LoadAudioBanks("all_in_maps")
+    LoadAudioBanks("all_in_maps_stream")
+    LoadAudioBanks("all_in_maps_local")
+    LoadAudioBanks("all_in_maps_local_stream")
+}

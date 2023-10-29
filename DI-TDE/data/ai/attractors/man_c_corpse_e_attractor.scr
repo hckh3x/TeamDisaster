@@ -1,0 +1,118 @@
+!include("ai_data.def")
+!include("human_timing_events.def")
+!include("human_activities.def")
+!include("human_goals.def")
+
+UseNearestSlot()
+CheckSlotsAvailability()
+
+/*Slot("", 1, IDLE_STAND, 1,0.294,-0.0,1.547, -0.2, 0.0, -1.0,0.1)     // MunDee Estuvo aquí
+{
+    AiTypeDataSet("zombie")
+    {
+        //Data("idle:standing:stand_prepare", -2, "mz_calm_crouch_eating_v01")
+        //Data("idle:standing:stand", -2, "mz_calm_loop_eating_v01")
+        
+        Data("idle:standing:stand:none:none:prepare:none", -2, "MZ_A_Calm_Walk2Eat_R")
+        //Data("idle:standing:stand:none:none:none:none", -2, "MZ_Upset_MeatJar_Loop_02")
+        Data("idle:standing:stand:none:none:none:none", -2, "MZ_Upset_MeatJar_Loop_03")
+        //Data("idle:standing:stand:none:none:none:none", -2, "MZ_Upset_MeatJar_Loop_04")
+        Data("idle:standing:stand:none:none:none:finish", -2, "mz_b_upset_crouch_eating_standup_v03")
+        Data("idle:standing:stand:none:none:none:finish_enemy", -2, "MZ_Upset_MeatJar_AlertStand_01")
+        Data("idle:laying:stand:none:none:none:none", -2, "MZ_Upset_MeatJar_Loop_03")
+        
+        Data("alarming:standing:alarmed::", 2.9, "MZ_Upset_MeatJar_AlertStart_01")
+        Data("turn:standing::::", 0, "")
+    }
+    
+    AiTypeDataSet("infected")
+    {
+        Data("idle:standing:stand:none:none:prepare:none", -2, "MZ_A_Calm_Walk2Eat_R")
+    
+        Data("idle:standing:stand:none:none:none:none", -2, "mzi_upset_meatjar_loop01")
+        
+        Data("idle:standing:stand:none:none:none:finish", -2, "mzi_upset_meatjar_end01")
+        Data("idle:standing:stand:none:none:none:finish_enemy", -2, "MZ_Upset_MeatJar_AlertStand_01")
+        
+        Data("alarming:standing:alarmed::", 2.9, "MZ_Upset_MeatJar_AlertStart_01")
+        Data("turn:standing::::", 0, "")
+    }
+    
+    DeactivateOn(GOAL_ATTACK)
+    //DeactivateOn(GOAL_REACT_ON_ENEMY)
+    DiscardOn(GOAL_REACT_ON_HIT)
+}*/
+
+Slot("", 1, IDLE_STAND, 1,1.335,-0.0,0.302, -0.9, 0.0, -0.3,0.1)     // MunDee Estuvo aquí
+{
+    AiTypeDataSet("zombie")
+    {
+        //Data("idle:standing:stand_prepare", -2, "mz_calm_crouch_eating_v01")
+        //Data("idle:standing:stand", -2, "mz_calm_loop_eating_v01")
+        
+        Data("idle:standing:stand:none:none:prepare:none", -2, "MZ_A_Calm_Walk2Eat_R")
+        //Data("idle:standing:stand:none:none:none:none", -2, "MZ_Upset_MeatJar_Loop_02")
+        Data("idle:standing:stand:none:none:none:none", -2, "MZ_Upset_MeatJar_Loop_03")
+        //Data("idle:standing:stand:none:none:none:none", -2, "MZ_Upset_MeatJar_Loop_04")
+        Data("idle:standing:stand:none:none:none:finish", -2, "mz_b_upset_crouch_eating_standup_v03")
+        Data("idle:standing:stand:none:none:none:finish_enemy", -2, "MZ_Upset_MeatJar_AlertStand_01")
+        Data("idle:laying:stand:none:none:none:none", -2, "MZ_Upset_MeatJar_Loop_03")
+        
+        Data("alarming:standing:alarmed::", 2.9, "MZ_Upset_MeatJar_AlertStart_01")
+        Data("turn:standing::::", 0, "")
+    }
+    
+    AiTypeDataSet("infected")
+    {
+        Data("idle:standing:stand:none:none:prepare:none", -2, "MZ_A_Calm_Walk2Eat_R")
+    
+        Data("idle:standing:stand:none:none:none:none", -2, "mzi_upset_meatjar_loop01")
+        
+        Data("idle:standing:stand:none:none:none:finish", -2, "mzi_upset_meatjar_end01")
+        Data("idle:standing:stand:none:none:none:finish_enemy", -2, "MZ_Upset_MeatJar_AlertStand_01")
+        
+        Data("alarming:standing:alarmed::", 2.9, "MZ_Upset_MeatJar_AlertStart_01")
+        Data("turn:standing::::", 0, "")
+    }
+    
+    DeactivateOn(GOAL_ATTACK)
+    //DeactivateOn(GOAL_REACT_ON_ENEMY)
+    DiscardOn(GOAL_REACT_ON_HIT)
+}
+
+Slot("", 1, IDLE_STAND, 1,-1.223,-0.0,-0.248, 1.0, 0.0, 0.2,0.1)     // MunDee Estuvo aquí
+{
+    AiTypeDataSet("zombie")
+    {
+        //Data("idle:standing:stand_prepare", -2, "mz_calm_crouch_eating_v01")
+        //Data("idle:standing:stand", -2, "mz_calm_loop_eating_v01")
+        
+        Data("idle:standing:stand:none:none:prepare:none", -2, "MZ_A_Calm_Walk2Eat_R")
+        //Data("idle:standing:stand:none:none:none:none", -2, "MZ_Upset_MeatJar_Loop_02")
+        Data("idle:standing:stand:none:none:none:none", -2, "MZ_Upset_MeatJar_Loop_03")
+        //Data("idle:standing:stand:none:none:none:none", -2, "MZ_Upset_MeatJar_Loop_04")
+        Data("idle:standing:stand:none:none:none:finish", -2, "mz_b_upset_crouch_eating_standup_v03")
+        Data("idle:standing:stand:none:none:none:finish_enemy", -2, "MZ_Upset_MeatJar_AlertStand_01")
+        Data("idle:laying:stand:none:none:none:none", -2, "MZ_Upset_MeatJar_Loop_03")
+        
+        Data("alarming:standing:alarmed::", 2.9, "MZ_Upset_MeatJar_AlertStart_01")
+        Data("turn:standing::::", 0, "")
+    }
+    
+    AiTypeDataSet("infected")
+    {
+        Data("idle:standing:stand:none:none:prepare:none", -2, "MZ_A_Calm_Walk2Eat_R")
+    
+        Data("idle:standing:stand:none:none:none:none", -2, "mzi_upset_meatjar_loop01")
+        
+        Data("idle:standing:stand:none:none:none:finish", -2, "mzi_upset_meatjar_end01")
+        Data("idle:standing:stand:none:none:none:finish_enemy", -2, "MZ_Upset_MeatJar_AlertStand_01")
+        
+        Data("alarming:standing:alarmed::", 2.9, "MZ_Upset_MeatJar_AlertStart_01")
+        Data("turn:standing::::", 0, "")
+    }
+    
+    DeactivateOn(GOAL_ATTACK)
+    //DeactivateOn(GOAL_REACT_ON_ENEMY)
+    DiscardOn(GOAL_REACT_ON_HIT)
+}

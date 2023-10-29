@@ -1,0 +1,105 @@
+//w ustawieniach dwuargumentowych pierwszy z nich informuje o rodzaju zombiaka
+
+
+
+!RunMinDist( f )
+!RunMaxDist( f )
+!MaxRunningZombies( i )
+!MaxBerserkerZombies( i )
+!MaxZombiesAttackPlayer( i )
+!PlayerSpeed( f )
+!MaxMeleeDist( f )
+
+
+!TimeBetweenBerserker( f )
+
+
+!TimeBetweenBerserker( f )
+
+!MaxAttackTimeInBerserker( f )
+!MaxBerserkerTime( f )
+
+!m_Loiter2NoticeLongDistMax( f )
+!m_Loiter2NoticeShortDistMax( f )
+
+!m_Run2LoiterLongDistMin( f )
+!m_Run2LoiterShortDistMin( f )
+
+!m_WoundedRun2LoiterLongDistMin( f )
+!m_WoundedRun2LoiterShortDistMin( f )
+
+
+!Long_RunUpStartDist( f )
+!Long_RunUpStopTime( f )
+!Long_RunUpStopAngle( f )
+!Long_RunUpStopAgility( f )
+
+!Short_RunUpStartDist( f )
+!Short_RunUpStopTime( f )
+!Short_RunUpStopAngle( f )
+!Short_RunUpStopAgility( f )
+!MaxBiteYDiff(f)
+
+!RepulsionDist( f )
+!RepulsionMul( f )
+!RepulsionPow( f )
+
+!Zombie_BiteDamage( f )
+!Zombie_HandsDamage( f )
+!MaxBiteAngleForPlayer( f )
+
+
+
+RepulsionDist(10.0)    // MunDee Estuvo aquí
+RepulsionMul( 2.0 )
+RepulsionPow( 1.5 )
+
+
+
+RunMinDist(30.0)    // MunDee Estuvo aquí
+RunMaxDist(50.0)    // MunDee Estuvo aquí
+
+ 
+TimeBetweenBerserker( 3 )
+MaxAttackTimeInBerserker( 1.5 )//2.4f
+MaxBerserkerTime( 1.95 )
+
+
+
+
+MaxRunningZombies( 10 )//1
+MaxBerserkerZombies( 10 )//1
+MaxZombiesAttackPlayer( 20 )//1
+MaxMeleeDist(2.0)    // MunDee Estuvo aquí
+
+
+
+PlayerSpeed(2.8)    // MunDee Estuvo aquí
+
+m_Loiter2NoticeLongDistMax(35.0)    // MunDee Estuvo aquí
+m_Loiter2NoticeShortDistMax(25.0)    // MunDee Estuvo aquí
+
+m_Run2LoiterLongDistMin(36.0)    // MunDee Estuvo aquí
+m_Run2LoiterShortDistMin(25.0)    // MunDee Estuvo aquí
+
+m_WoundedRun2LoiterLongDistMin(36.0)    // MunDee Estuvo aquí
+m_WoundedRun2LoiterShortDistMin(25.0)    // MunDee Estuvo aquí
+
+
+Long_RunUpStartDist(4.0)    // MunDee Estuvo aquí
+Long_RunUpStopTime( 1.5 )
+Long_RunUpStopAngle( 60. )
+Long_RunUpStopAgility( 0.3 )
+
+Short_RunUpStartDist(4.0)    // MunDee Estuvo aquí
+Short_RunUpStopTime( 1.5 )
+Short_RunUpStopAngle( 60. )
+Short_RunUpStopAgility( 0.3 )
+MaxBiteYDiff(0.15)    // MunDee Estuvo aquí
+
+
+Zombie_BiteDamage( 50. )
+Zombie_HandsDamage( 20. )
+MaxBiteAngleForPlayer( 80 )
+
+

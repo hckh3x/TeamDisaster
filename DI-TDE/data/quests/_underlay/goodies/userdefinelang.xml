@@ -1,0 +1,74 @@
+<NotepadPlus>
+    <UserLang name="QFL PXSL" ext="pxsl">
+        <Settings>
+            <Global caseIgnored="no" />
+            <TreatAsSymbol comment="yes" commentLine="no" />
+            <Prefix words1="no" words2="no" words3="no" words4="no" />
+        </Settings>
+        <KeywordLists>
+            <Keywords name="Delimiters">000000</Keywords>
+            <Keywords name="Folder+"></Keywords>
+            <Keywords name="Folder-"></Keywords>
+            <Keywords name="Operators">=</Keywords>
+            <Keywords name="Comment"> 1&lt;&lt; 2&gt;&gt; 0--</Keywords>
+            <!-- gameplay macros -->
+            <Keywords name="Words1">,bring ,car-chase ,car-chase-watch ,car-chased ,car-stalk ,car-stalk-watch ,carry ,drive ,drive-ai ,entry-room ,escort ,fetch ,fill ,fill-multi ,follow ,follow-watch ,gather ,goto ,kill ,kill-ai ,kill-car-sp ,kill-multi ,kill-vehicle ,siblings ,take ,take-multi ,talk ,tutorial ,use ,use-multi ,arson ,steal ,rescue ,mp</Keywords>
+            <!-- conditionals, actions, constants  -->
+            <Keywords name="Words2">,locker ,end ,AND ,OR ,BLOCK ,OR ,RANDOM ,WATCH ,appear ,appear-multi ,challenge ,checkpoint ,clear-player-control ,dialog ,enable ,enable-multi ,finish-private-chance ,game-over ,get-in ,hide ,hide-multi ,hide-weapons ,if-all-dead ,lock-in-car ,mission-start ,move ,move-ai ,movie ,music ,new-private-chance ,players-in-area ,private-chance ,private-chance-body ,private-chance-expanded ,start-private-chance ,teleport ,wait ,weather ,reward ,set ,set-lp ,set-lp-multi ,set-multi ,show ,show-multi false true on off show hide opened closed follow lead walk run Ben Eddie Kim</Keywords>
+            <!-- keywords and objects -->
+            <Keywords name="Words3">quest phase accompl path fallback post pre QuestsDefinitions timeout MultiplayerQuestTree init ,ai ,area ,character ,container ,coop-path ,debugpos ,dest ,escortee ,item ,lifeplace ,o ,player-path ,rpath ,spawner ,spawner-car ,spawner-ho ,spec ,start ,trigger ,vehicle</Keywords>
+            <!-- joker and parameters -->
+            <Keywords name="Words4">_ -auto -car_only -character -coop -count -countdown -countdown_far -daytime -distance -enc -exp -far_distance -final -follow -get_distance -glued -level -mode -nearby_distance -new_chapter -new_map -new_map_spawn -new_map_clear_inv -obj -parent -private -raytrace -reason -remain_active -reward -safe_dist -show -leading_portal -sms -state -style -subtitles -too_close -too_far -what -score</Keywords>
+        </KeywordLists>
+        <Styles>
+            <WordsStyle name="DEFAULT" styleID="11" fgColor="DDDDDD" bgColor="1A0F0B" fontName="" fontStyle="0" />
+            <WordsStyle name="FOLDEROPEN" styleID="12" fgColor="DDDDDD" bgColor="1A0F0B" fontName="" fontStyle="0" />
+            <WordsStyle name="FOLDERCLOSE" styleID="13" fgColor="DDDDDD" bgColor="1A0F0B" fontName="" fontStyle="0" />
+            <WordsStyle name="KEYWORD1" styleID="5" fgColor="CC0000" bgColor="1A0F0B" fontName="" fontStyle="0" />
+            <WordsStyle name="KEYWORD2" styleID="6" fgColor="AAAA80" bgColor="1A0F0B" fontName="" fontStyle="0" />
+            <WordsStyle name="KEYWORD3" styleID="7" fgColor="0080FF" bgColor="1A0F0B" fontName="" fontStyle="0" />
+            <WordsStyle name="KEYWORD4" styleID="8" fgColor="F900F9" bgColor="1A0F0B" fontName="" fontStyle="0" />
+            <WordsStyle name="COMMENT" styleID="1" fgColor="808040" bgColor="1A0F0B" fontName="" fontStyle="0" />
+            <WordsStyle name="COMMENT LINE" styleID="2" fgColor="008000" bgColor="1A0F0B" fontName="" fontStyle="0" />
+            <WordsStyle name="NUMBER" styleID="4" fgColor="DDDDDD" bgColor="1A0F0B" fontName="" fontStyle="0" />
+            <WordsStyle name="OPERATOR" styleID="10" fgColor="FF8040" bgColor="1A0F0B" fontName="" fontStyle="0" />
+            <WordsStyle name="DELIMINER1" styleID="14" fgColor="808040" bgColor="1A0F0B" fontName="" fontStyle="0" />
+            <WordsStyle name="DELIMINER2" styleID="15" fgColor="DDDDDD" bgColor="1A0F0B" fontName="" fontStyle="0" />
+            <WordsStyle name="DELIMINER3" styleID="16" fgColor="DDDDDD" bgColor="1A0F0B" fontName="" fontStyle="0" />
+        </Styles>
+    </UserLang>
+	
+	<UserLang name="Skill PXSL" ext="pxsl">
+		<Settings>
+            <Global caseIgnored="no" />
+            <TreatAsSymbol comment="yes" commentLine="no" />
+            <Prefix words1="no" words2="no" words3="no" words4="no" />
+        </Settings>
+		<KeywordLists>
+            <Keywords name="Delimiters">000000</Keywords>
+            <Keywords name="Folder+"></Keywords>
+            <Keywords name="Folder-"></Keywords>
+            <Keywords name="Operators">=</Keywords>
+            <Keywords name="Comment"> 1&lt;&lt; 2&gt;&gt; 0--</Keywords>
+            <Keywords name="Words1">skill prefix postfix</Keywords>
+            <Keywords name="Words2">require level perk</Keywords>
+            <Keywords name="Words3">gives</Keywords>
+        </KeywordLists>
+        <Styles>
+            <WordsStyle name="DEFAULT" styleID="11" fgColor="DDDDDD" bgColor="1A0F0B" fontName="" fontStyle="0" />
+            <WordsStyle name="FOLDEROPEN" styleID="12" fgColor="DDDDDD" bgColor="1A0F0B" fontName="" fontStyle="0" />
+            <WordsStyle name="FOLDERCLOSE" styleID="13" fgColor="DDDDDD" bgColor="1A0F0B" fontName="" fontStyle="0" />
+            <WordsStyle name="KEYWORD1" styleID="5" fgColor="CC0000" bgColor="1A0F0B" fontName="" fontStyle="0" />
+            <WordsStyle name="KEYWORD2" styleID="6" fgColor="AAAA80" bgColor="1A0F0B" fontName="" fontStyle="0" />
+            <WordsStyle name="KEYWORD3" styleID="7" fgColor="0080FF" bgColor="1A0F0B" fontName="" fontStyle="0" />
+            <WordsStyle name="KEYWORD4" styleID="8" fgColor="F900F9" bgColor="1A0F0B" fontName="" fontStyle="0" />
+            <WordsStyle name="COMMENT" styleID="1" fgColor="808040" bgColor="1A0F0B" fontName="" fontStyle="0" />
+            <WordsStyle name="COMMENT LINE" styleID="2" fgColor="008000" bgColor="1A0F0B" fontName="" fontStyle="0" />
+            <WordsStyle name="NUMBER" styleID="4" fgColor="DDDDDD" bgColor="1A0F0B" fontName="" fontStyle="0" />
+            <WordsStyle name="OPERATOR" styleID="10" fgColor="FF8040" bgColor="1A0F0B" fontName="" fontStyle="0" />
+            <WordsStyle name="DELIMINER1" styleID="14" fgColor="808040" bgColor="1A0F0B" fontName="" fontStyle="0" />
+            <WordsStyle name="DELIMINER2" styleID="15" fgColor="DDDDDD" bgColor="1A0F0B" fontName="" fontStyle="0" />
+            <WordsStyle name="DELIMINER3" styleID="16" fgColor="DDDDDD" bgColor="1A0F0B" fontName="" fontStyle="0" />
+        </Styles>
+	</UserLang>
+</NotepadPlus>

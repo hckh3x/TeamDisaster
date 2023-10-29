@@ -1,0 +1,24 @@
+export int SKIN = 1;
+export int MORPH = 1;
+export int HIDE = 1;
+
+sub morphs()
+{
+  version(2);
+  // node(name, lod_index, is_skinning, is_hiding, is_morphing, morph_offset_vertices);
+  node("bag_a", 0, SKIN, 0, 0, 0);
+  node("bag_a", 1, SKIN, 0, 0, 0);
+  node("bag_b", 0, SKIN, 0, 0, 0);
+  node("bag_b", 1, SKIN, 0, 0, 0);
+  node("bag_c", 0, SKIN, 0, 0, 0);
+  node("bag_c", 1, SKIN, 0, 0, 0);
+  node("body", 0, SKIN, HIDE, 0, 0);
+  node("body", 1, SKIN, HIDE, 0, 0);
+  node("glasses", 0, SKIN, 0, 0, 0);
+  node("glasses", 1, SKIN, 0, 0, 0);
+  node("hair", 0, SKIN, 0, 0, 0);
+  node("hair", 1, SKIN, 0, 0, 0);
+  node("head", 0, SKIN, 0, 0, 0);
+  node("head", 1, SKIN, 0, 0, 0);
+  total(0);
+}

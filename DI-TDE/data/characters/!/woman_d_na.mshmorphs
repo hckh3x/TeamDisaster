@@ -1,0 +1,29 @@
+export int SKIN = 1;
+export int MORPH = 1;
+export int HIDE = 1;
+
+sub morphs()
+{
+  version(2);
+  // node(name, lod_index, is_skinning, is_hiding, is_morphing, morph_offset_vertices);
+  node("armband_l", 0, SKIN, 0, 0, 0);
+  node("armband_r", 0, SKIN, 0, 0, 0);
+  node("beanie_hat", 0, SKIN, 0, MORPH, 0);
+  node("body", 0, SKIN, HIDE, MORPH, 262);
+  node("f_bballcap_a", 0, SKIN, 0, MORPH, 4742);
+  node("f_panama", 0, SKIN, 0, MORPH, 5948);
+  node("f_scraf_a", 0, SKIN, 0, MORPH, 8525);
+  node("hair_a", 0, SKIN, 0, MORPH, 9459);
+  node("hair_b", 0, SKIN, 0, MORPH, 10438);
+  node("hair_c", 0, SKIN, 0, MORPH, 12209);
+  node("hair_d", 0, SKIN, 0, MORPH, 13639);
+  node("hair_e", 0, SKIN, 0, MORPH, 16080);
+  node("hair_f", 0, SKIN, 0, MORPH, 18159);
+  node("hair_g", 0, SKIN, 0, MORPH, 19095);
+  node("head", 0, SKIN, 0, MORPH, 21817);
+  node("head_cut_1", 0, SKIN, 0, MORPH, 23715);
+  node("head_cut_2", 0, SKIN, 0, MORPH, 24441);
+  node("head_cut_3", 0, SKIN, 0, MORPH, 24862);
+  node("scarf", 0, SKIN, 0, 0, 0);
+  total(25065);
+}

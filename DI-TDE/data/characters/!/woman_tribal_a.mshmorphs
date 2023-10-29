@@ -1,0 +1,33 @@
+export int SKIN = 1;
+export int MORPH = 1;
+export int HIDE = 1;
+
+sub morphs()
+{
+  version(2);
+  // node(name, lod_index, is_skinning, is_hiding, is_morphing, morph_offset_vertices);
+  node("body", 0, SKIN, HIDE, MORPH, 0);
+  node("body", 1, SKIN, HIDE, MORPH, 16002);
+  node("hair_g", 0, SKIN, 0, MORPH, 24758);
+  node("hair_g", 1, SKIN, 0, MORPH, 27480);
+  node("head", 0, SKIN, 0, MORPH, 28861);
+  node("head", 1, SKIN, 0, MORPH, 31522);
+  node("head_addons_a", 0, SKIN, 0, 0, 0);
+  node("head_cut_1", 0, SKIN, 0, MORPH, 33010);
+  node("head_cut_1", 1, SKIN, 0, MORPH, 33745);
+  node("head_cut_2", 0, SKIN, 0, MORPH, 34188);
+  node("head_cut_2", 1, SKIN, 0, MORPH, 34615);
+  node("head_cut_3", 0, SKIN, 0, MORPH, 34855);
+  node("head_cut_3", 1, SKIN, 0, MORPH, 35065);
+  node("rings_hand_left_a", 0, SKIN, HIDE, 0, 0);
+  node("rings_hand_left_b", 0, SKIN, HIDE, MORPH, 35187);
+  node("rings_hand_right_a", 0, SKIN, HIDE, 0, 0);
+  node("rings_hand_right_b", 0, SKIN, HIDE, MORPH, 35825);
+  node("rings_leg_left_a", 0, SKIN, HIDE, 0, 0);
+  node("rings_leg_right_a", 0, SKIN, HIDE, 0, 0);
+  node("straw_cloth", 0, SKIN, HIDE, 0, 0);
+  node("straw_cloth", 1, SKIN, HIDE, 0, 0);
+  node("woman_native_hairs", 0, SKIN, 0, MORPH, 36454);
+  node("woman_native_hairs", 1, SKIN, 0, MORPH, 38521);
+  total(39583);
+}

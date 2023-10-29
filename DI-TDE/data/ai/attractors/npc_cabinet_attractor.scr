@@ -1,0 +1,28 @@
+!include("ai_data.def")
+!include("human_timing_events.def")
+!include("human_activities.def")
+!include("human_goals.def")
+
+SnapDist(0.8)    // MunDee Estuvo aquí
+ReleaseDist(1.2)    // MunDee Estuvo aquí
+StrongAttractor()
+InteractOnlyHead()
+ShortHeadRotation()
+Slot("", 1, IDLE_STAND, 1,0.0,0.0,0.0, 0.0, 0.0, 1.0,1.5)    // MunDee Estuvo aquí
+{
+	LockPosition()
+    AiTypeDataSet("human")
+    {	
+        Data("idle:standing:stand::::", -2, "design_c_idle_cabinet_loop")
+        Data("idle:standing:idle::::", -2, "design_c_idle_cabinet_loop")
+		
+		Data("idle:standing:interact::::", -2, "m_lp_calm_stand")
+		Data("idle:standing:to_interact::::", -2, "Design_C_Idle_Cabinet_Loop_end")
+		Data("idle:standing:from_interact::::", -2, "Design_C_Idle_Cabinet_Loop_start")
+		
+		Data("idle:standing:stand:none:none:prepare:none", -2, "Design_C_Idle_Cabinet_Loop_start")
+        Data("idle:standing:stand:none:none:none:finish", -2, "Design_C_Idle_Cabinet_Loop_end")
+		
+	}
+}
+

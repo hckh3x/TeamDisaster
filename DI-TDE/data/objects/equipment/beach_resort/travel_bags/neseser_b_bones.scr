@@ -1,0 +1,4 @@
+SeqTrack( "open", "neseser_b_bones.anm2", 0, 20, 30, 0, 0.5 )
+SeqTrack( "close", "neseser_b_bones.anm2", 20, 0, 30, 0, 0.5 )
+
+

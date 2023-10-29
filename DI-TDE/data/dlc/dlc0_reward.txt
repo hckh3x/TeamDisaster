@@ -1,0 +1,1 @@
+RewardItemName("zzz_Craftplan_PatchAddon12", 1)

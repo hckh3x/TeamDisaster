@@ -1,0 +1,70 @@
+//----- animacje z anaconda
+
+
+SeqTrackAlias( "TPP_Anaconda_Idle", 						"TPP_Beretta_Idle") 			
+SeqTrackAlias( "TPP_Anaconda_Stand",  					"TPP_Beretta_Stand") 
+SeqTrackAlias( "TPP_Anaconda_WalkForward", 				"TPP_Beretta_WalkForward") 		
+SeqTrackAlias( "TPP_Anaconda_TrotForward", 				"TPP_Beretta_TrotForward") 		
+SeqTrackAlias( "TPP_Anaconda_RunForward",  				"TPP_Beretta_RunForward")       
+SeqTrackAlias( "TPP_Anaconda_WalkBackward", 				"TPP_Beretta_WalkBackward") 	
+SeqTrackAlias( "TPP_Anaconda_TrotBackward", 				"TPP_Beretta_TrotBackward") 	
+SeqTrackAlias( "TPP_Anaconda_RunBackward",  			    "TPP_Beretta_RunBackward") 		
+SeqTrackAlias( "TPP_Anaconda_WalkLeft",  					"TPP_Beretta_WalkLeft") 		
+SeqTrackAlias( "TPP_Anaconda_TrotLeft",  					"TPP_Beretta_TrotLeft") 		
+SeqTrackAlias( "TPP_Anaconda_RunLeft",   					"TPP_Beretta_RunLeft") 			
+SeqTrackAlias( "TPP_Anaconda_WalkRight",  				"TPP_Beretta_WalkRight") 		
+SeqTrackAlias( "TPP_Anaconda_TrotRight",  				"TPP_Beretta_TrotRight") 		
+SeqTrackAlias( "TPP_Anaconda_RunRight",   				"TPP_Beretta_RunRight") 
+		
+SeqTrackAlias( "TPP_Anaconda_Aim_Stand",  				"TPP_Beretta_Aim_Stand") 		
+SeqTrackAlias( "TPP_Anaconda_Aim_WalkForward",   			"TPP_Beretta_Aim_WalkForward") 	
+SeqTrackAlias( "TPP_Anaconda_Aim_TrotForward",   			"TPP_Beretta_Aim_TrotForward") 	
+SeqTrackAlias( "TPP_Anaconda_Aim_RunForward",    			"TPP_Beretta_Aim_RunForward") 	
+SeqTrackAlias( "TPP_Anaconda_Aim_WalkBackward",   		"TPP_Beretta_Aim_WalkBackward") 
+SeqTrackAlias( "TPP_Anaconda_Aim_TrotBackward",   		"TPP_Beretta_Aim_TrotBackward") 
+SeqTrackAlias( "TPP_Anaconda_Aim_RunBackward",   			"TPP_Beretta_Aim_RunBackward") 	
+SeqTrackAlias( "TPP_Anaconda_Aim_WalkLeft", 				"TPP_Beretta_Aim_WalkLeft") 	
+SeqTrackAlias( "TPP_Anaconda_Aim_TrotLeft", 				"TPP_Beretta_Aim_TrotLeft") 	
+SeqTrackAlias( "TPP_Anaconda_Aim_RunLeft", 				"TPP_Beretta_Aim_RunLeft") 		
+SeqTrackAlias( "TPP_Anaconda_Aim_WalkRight", 				"TPP_Beretta_Aim_WalkRight") 	
+SeqTrackAlias( "TPP_Anaconda_Aim_TrotRight", 				"TPP_Beretta_Aim_TrotRight") 	
+SeqTrackAlias( "TPP_Anaconda_Aim_RunRight", 				"TPP_Beretta_Aim_RunRight") 	
+
+
+//SeqTrack("TPP_Anaconda_Pre_Reload",             "M_FPP_Anaconda_Reload.anm2"			, 0, 73, 30, 1, 0.1)
+SeqTrack( "TPP_Anaconda_Shot", 							"multi_revolver_shot.anm2",                   0, 33,  30, 1, 0.3)
+SeqTrack( "TPP_Anaconda_Aim_Shot",  				    	"multi_revolver_aim_shot.anm2",               0, 35,  30, 1, 0.3)
+SeqTrack("TPP_Anaconda_Reload",                 "multi_revolver_reload.anm2",             0, 141,  50, 1, 0.3)
+{
+	Event(0, EVENT_RAGINGBULL_RELOAD_FULL)
+}
+//SeqTrack("TPP_Anaconda_Post_Reload",            "M_FPP_Anaconda_Reload.anm2"			, 100, 131, 30, 1, 0.1)
+
+
+SeqTrackAlias( "TPP_Anaconda_Jump_Pose", "TPP_Beretta_Jump_Pose")
+SeqTrack("TPP_Anaconda_KickAir", 		        "M_TPP_Anaconda_Jump_Kick_Hit.anm2"	        , 16, 49, 30, 1, 0.3)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

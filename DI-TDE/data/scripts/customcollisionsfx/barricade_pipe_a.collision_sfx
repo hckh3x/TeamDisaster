@@ -1,0 +1,21 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////
+// custom collision sfx preset
+// http://wiki.techland.pl/chromeengine/bin/view/ChromeEngine4/CollisionSfx
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+import "surface_id.def"
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+sub Sounds()
+{
+    Hit()
+    {
+		FreqRandomize(0.3, 0.6);  
+
+		MinInterval(0.2, 0.3);
+        MinSpeed(1.5, 10);
+
+        SoundHarder(SurfaceId_Gravel, 	"sharp_metal_XX.wav", 	"blunt_metal_XX.wav");
+		Sound(SurfaceId_Water,      	"hit_water_XX.wav",	"hit_big_water_XX.wav");
+    }
+}

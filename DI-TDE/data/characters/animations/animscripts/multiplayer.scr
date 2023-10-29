@@ -1,0 +1,95 @@
+//--------------------------------------------------AK-----------------------------------------
+
+SeqTrack("multi_ak47_reload", 	  "multi_ak47_reload.anm2"    , 0, 120, 30, 1, 0.3)
+SeqTrack("multi_ak47_walk_left", 	  "multi_ak47_walk_left.anm2"    , 0, 105, 30, 1, 0.3)
+SeqTrack("multi_ak47_walk_right", 	  "multi_ak47_walk_right.anm2"    , 0, 84, 30, 1, 0.3)
+SeqTrack("multi_ak47_walk_forward", 	  "multi_ak47_walk_forward.anm2"    , 0, 84, 30, 1, 0.3)
+SeqTrack("multi_ak47_walk_backward", 	  "multi_ak47_walk_backward.anm2"    , 0, 116, 30, 1, 0.3)
+SeqTrack("multi_ak47_run_forward", 	  "multi_ak47_run_forward.anm2"    , 0, 51, 30, 1, 0.3)
+SeqTrack("multi_ak47_run_left", 	  "multi_ak47_run_left.anm2"    , 0, 43, 30, 1, 0.3)
+SeqTrack("multi_ak47_run_right", 	  "multi_ak47_run_right.anm2"    , 0, 36, 30, 1, 0.3)
+SeqTrack("multi_ak47_run_backward", 	  "multi_ak47_run_backward.anm2"    , 0, 46, 30, 1, 0.3)
+SeqTrack("multi_ak47_trot_right", 	  "multi_ak47_trot_right.anm2"    , 0, 61, 30, 1, 0.3)
+SeqTrack("multi_ak47_trot_left", 	  "multi_ak47_trot_left.anm2"    , 0, 56, 30, 1, 0.3)
+SeqTrack("multi_ak47_trot_backward", 	  "multi_ak47_trot_backward.anm2"    , 0, 78, 30, 1, 0.3)
+SeqTrack("multi_ak47_trot_forward", 	  "multi_ak47_trot_forward.anm2"    , 0, 62, 30, 1, 0.3)
+
+SeqTrack("multi_ak47_aim_stand", 	  "multi_ak47_aim_stand.anm2"    , 0, 15, 30, 1, 0.3)
+SeqTrack("multi_ak47_aim_shot", 	  "multi_ak47_aim_shot.anm2"    , 0, 25, 30, 1, 0.3)
+SeqTrack("multi_ak47_aim_run_right", 	  "multi_ak47_aim_run_right.anm2"    , 0, 36, 30, 1, 0.3)
+SeqTrack("multi_ak47_aim_run_left", 	  "multi_ak47_aim_run_left.anm2"    , 0, 43, 30, 1, 0.3)
+SeqTrack("multi_ak47_aim_run_forward", 	  "multi_ak47_aim_run_forward.anm2"    , 0, 51, 30, 1, 0.3)
+SeqTrack("multi_ak47_aim_run_backward", 	  "multi_ak47_aim_run_backward.anm2"    , 0, 46, 30, 1, 0.3)
+SeqTrack("multi_ak47_aim_trot_left", 	  "multi_ak47_aim_trot_left.anm2"    , 0, 56, 30, 1, 0.3)
+SeqTrack("multi_ak47_aim_trot_forward", 	  "multi_ak47_aim_trot_forward.anm2"    , 0, 62, 30, 1, 0.3)
+SeqTrack("multi_ak47_aim_trot_backward", 	  "multi_ak47_aim_trot_backward.anm2"    , 0, 78, 30, 1, 0.3)
+SeqTrack("multi_ak47_aim_trot_right", 	  "multi_ak47_aim_trot_right.anm2"    , 0, 61, 30, 1, 0.3)
+SeqTrack("multi_ak47_wall", 	  "multi_ak47_wall.anm2"    , 0, 60, 30, 1, 0.3)
+SeqTrack("multi_ak47_stand", 	  "multi_ak47_stand.anm2"    , 0, 15, 30, 1, 0.3)
+SeqTrack("multi_ak47_shot", 	  "multi_ak47_shot.anm2"    , 0, 16, 30, 1, 0.3)
+SeqTrack("multi_ak47_aim_walk_right", 	  "multi_ak47_aim_walk_right.anm2"    , 0, 84, 30, 1, 0.3)
+SeqTrack("multi_ak47_aim_walk_left", 	  "multi_ak47_aim_walk_left.anm2"    , 0, 105, 30, 1, 0.3)
+SeqTrack("multi_ak47_aim_walk_backward", 	  "multi_ak47_aim_walk_backward.anm2"    , 0, 116, 30, 1, 0.3)
+SeqTrack("multi_ak47_aim_walk_forward", 	  "multi_ak47_aim_walk_forward.anm2"    , 0, 84, 30, 1, 0.3)
+
+//------------------------------------------------- Shotgun--------------------------------------------------
+
+SeqTrack("multi_shotgun_aim_shot", 	  "multi_shotgun_aim_shot.anm2"    , 0, 35, 30, 1, 0.3)
+SeqTrack("multi_shotgun_shot", 	  "multi_shotgun_shot.anm2"    , 0, 35, 30, 1, 0.3)
+SeqTrack("multi_shotgun_reload", 	  "multi_shotgun_reload_start.anm2"    , 0, 60, 30, 1, 0.3)
+SeqTrack("multi_shotgun_reload", 	  "multi_shotgun_reload_loop.anm2"    , 60, 85, 30, 1, 0.3)
+SeqTrack("multi_shotgun_reload", 	  "multi_shotgun_reload_end.anm2"    , 85, 153, 30, 1, 0.3)
+
+
+
+
+// ---------------------------------------------------- PISTOL --------------------------------------------------------------
+
+
+SeqTrack( "multi_pistol_stand_idle01",		        "multi_pistol_stand_idle01.anm2",             0, 54,  30, 1, 0.3)
+SeqTrack( "multi_pistol_run_backward",		        "multi_pistol_run_backward.anm2",             0, 26,  30, 1, 0.3)
+SeqTrack( "multi_pistol_run_forward",		        "multi_pistol_run_forward.anm2",             0, 33,  30, 1, 0.3)
+SeqTrack( "multi_pistol_run_left",		        "multi_pistol_run_left.anm2",             0, 48,  30, 1, 0.3)
+SeqTrack( "multi_pistol_run_right",		        "multi_pistol_run_right.anm2",             0, 34,  30, 1, 0.3)
+SeqTrack( "multi_pistol_shooting",		        "multi_pistol_shooting.anm2",             0, 23,  30, 1, 0.3)
+SeqTrack( "multi_pistol_trot_backward",		        "multi_pistol_trot_backward.anm2",             0, 67,  30, 1, 0.3)
+SeqTrack( "multi_pistol_trot_forward",		        "multi_pistol_trot_forward.anm2",             0, 80,  30, 1, 0.3)
+SeqTrack( "multi_pistol_trot_left",		        "multi_pistol_trot_left.anm2",             0, 83,  30, 1, 0.3)
+SeqTrack( "multi_pistol_trot_right",		        "multi_pistol_trot_right.anm2",             0, 60,  30, 1, 0.3)
+SeqTrack( "multi_pistol_walk_backward",		        "multi_pistol_walk_backward.anm2",             0, 127,  30, 1, 0.3)
+SeqTrack( "multi_pistol_walk_forward",		        "multi_pistol_walk_forward.anm2",             0, 104,  30, 1, 0.3)
+SeqTrack( "multi_pistol_walk_right",		        "multi_pistol_walk_right.anm2",             0, 106,  30, 1, 0.3)
+SeqTrack( "multi_pistol_walk_left",		        "multi_pistol_walk_left.anm2",             0, 112,  30, 1, 0.3)
+SeqTrack( "multi_pistol_wall",		        "multi_pistol_wall.anm2",             0, 10,  30, 1, 0.3)
+SeqTrack( "multi_pistol_reload02",		        "multi_pistol_reload02.anm2",             0, 54,  30, 1, 0.3)
+
+
+
+// ---------------------------------------------------- PISTOL AIM --------------------------------------------------------------
+
+SeqTrack( "multi_pistol_aim_stand_idle01",		        "multi_pistol_aim_stand_idle01.anm2",             0, 54,  30, 1, 0.3)
+SeqTrack( "multi_pistol_aim_run_backwards",		        "multi_pistol_aim_run_backwards.anm2",             0, 26,  30, 1, 0.3)
+SeqTrack( "multi_pistol_aim_run_left",		        "multi_pistol_aim_run_left.anm2",             0, 48,  30, 1, 0.3)
+SeqTrack( "multi_pistol_aim_run_right",		        "multi_pistol_aim_run_right.anm2",             0, 34,  30, 1, 0.3)
+SeqTrack( "multi_pistol_aim_shooting",		        "multi_pistol_aim_shooting.anm2",             0, 19,  30, 1, 0.3)
+SeqTrack( "multi_pistol_aim_trot_backwards",		        "multi_pistol_aim_trot_backwards.anm2",             0, 67,  30, 1, 0.3)
+SeqTrack( "multi_pistol_aim_trot_forwards",		        "multi_pistol_aim_trot_forwards.anm2",             0, 80,  30, 1, 0.3)
+SeqTrack( "multi_pistol_aim_trot_left",		        "multi_pistol_aim_trot_left.anm2",             0, 83,  30, 1, 0.3)
+SeqTrack( "multi_pistol_aim_trot_right",		        "multi_pistol_aim_trot_right.anm2",             0, 60,  30, 1, 0.3)
+SeqTrack( "multi_pistol_aim_walk_backward",		        "multi_pistol_aim_walk_backward.anm2",             0, 127,  30, 1, 0.3)
+SeqTrack( "multi_pistol_aim_walk_forward",		        "multi_pistol_aim_walk_forward.anm2",             0, 104,  30, 1, 0.3)
+SeqTrack( "multi_pistol_aim_walk_right",		        "multi_pistol_aim_walk_right.anm2",             0, 106,  30, 1, 0.3)
+SeqTrack( "multi_pistol_aim_walk_left",		        "multi_pistol_aim_walk_left.anm2",             0, 112,  30, 1, 0.3)
+SeqTrack( "multi_pistol_aim_run_forwards",		        "multi_pistol_aim_run_forwards.anm2",             0, 33,  30, 1, 0.3)
+
+
+// =============================================== RBULL ==========================================================================
+
+
+SeqTrack( "multi_revolver_shot",		        "multi_revolver_shot.anm2",             0, 33,  30, 1, 0.3)
+SeqTrack( "multi_revolver_aim_shot",		        "multi_revolver_aim_shot.anm2",             0, 33,  30, 1, 0.3)
+SeqTrack( "multi_revolver_reload",		        "multi_revolver_reload.anm2",             0, 107,  30, 1, 0.3)
+
+
+
+

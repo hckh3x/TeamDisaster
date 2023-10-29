@@ -1,0 +1,20 @@
+!Mesh(s)              // mesh name
+!AnimMoveSpeed(s,f)   // seqtrackname, move speed in cm/s
+
+Mesh("\\Data\\Characters\\Man\\Cowboys\\CowboyA.anm")
+{
+    AnimMoveSpeed("A_P_SuperJump", 300)
+    AnimMoveSpeed("Przewrotka", 355)//142
+
+    AnimMoveSpeed("C_N_W_Forward", 75)
+    AnimMoveSpeed("C_N_W_Backward", 75)
+
+    AnimMoveSpeed("C_N_R_Forward", 500)
+    AnimMoveSpeed("C_N_R_Backward", 500)
+
+    AnimMoveSpeed("C_N_H_Forward", 200)
+    AnimMoveSpeed("C_N_H_Backward", 200)
+}
+
+
+

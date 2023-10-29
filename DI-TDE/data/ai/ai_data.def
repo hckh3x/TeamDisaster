@@ -1,0 +1,42 @@
+!include("ai_curves.def")
+
+!Data(s, f, s) //Data(data_name, duration, reference_speed_animation_name)
+!Timing(i, f) //Timing(event_id, event_time)
+!InverseTiming(i, f) //InverseTiming(event_id, duration - event_time) useful for movement activities
+!ParamFloat(s, f) //ParamFloat(param_name, value)
+!ParamBool(s, i) //ParamBool(param_name, value)
+!ParamInt(s, i) //ParamInt(param_name, value)
+!ParamString(s, s) //ParamString(param_name, value)
+!Slot(s, i, i, i, f, f, f, f, f, f, f) //Slot(location_helper, is_idle_activity, activity_id, is_looped, location_local_pos_x, location_local_pos_y, location_local_pos_z, location_local_dir_x, location_local_dir_y, location_local_dir_z, radius)
+!MultiSlot(s, i, i, i, f, i, f) //MultiSlot(is_idle_activity, activity_id, is_looped, radius, locations_on_radius, slot radius) - multiple slots located on radius 
+!DeactivateOn(i)
+!DiscardOn(i)
+!StrongAttractor() // indicates that this is a strong attractor - attracts stronger than enemies
+!SemiStrongAttractor() // indicates that this is a semi strong attractor - disables Loiter, but enemies have higher priority
+!AiTypeDataSet(s) // data set for ai with given type
+!UseNearestSlot() // indicates that AI should use nearest slot instead of random one 
+!CheckSlotsAvailability() // attractor needs to check periodically if slots are available for use (i.e. are not blocked by some other object)
+!Curve(i, s) // Curve(curve_id, curve_name) curve_name is a string from curve_di.dat file
+!NPCUsingItem()
+!CanRotateInInteract()
+!CanMoveOnAnimation()
+!PlayNPCRole(s)
+!LockPosition()
+!CanPlayDialogAnim()
+!NoInteract()
+!Block()
+!BlockRotationsinDialog()
+!SnapDist(f)
+!InteractionDistance(f)
+!LPSound(s)
+!ReleaseDist(f)
+!SafePlace()
+!InteractFull()
+!InteractOnlyHead()
+!InteractOnce()
+!FXSequence(s, s, i)
+!SoundRange(f)
+!SpecAnimsFreq(f)
+!AlwaysBlocked()
+!ShortHeadRotation()
+!Invisible()

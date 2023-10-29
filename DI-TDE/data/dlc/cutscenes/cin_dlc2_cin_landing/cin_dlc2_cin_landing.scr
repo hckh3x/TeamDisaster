@@ -1,0 +1,3 @@
+SeqTrack("CIN_DLC2_CIN_Landing_Soldat_00", "CIN_DLC2_CIN_Landing_Soldat_00.anm2", 0, 370, 30, 1, 0.5) 
+SeqTrack("CIN_DLC2_CIN_Landing_Ryder_00", "CIN_DLC2_CIN_Landing_Ryder_00.anm2", 0, 370, 30, 1, 0.5) 
+SeqTrack("CIN_DLC2_CIN_Landing_Heli_00", "CIN_DLC2_CIN_Landing_Heli_00.anm2", 0, 370, 30, 1, 0.5) 

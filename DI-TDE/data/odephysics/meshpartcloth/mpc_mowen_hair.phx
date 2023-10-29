@@ -1,0 +1,151 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////
+!include("MeshPartCloth.def")
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+MeshPartCloth()
+{
+//----------------------------------------------
+// bones
+//----------------------------------------------
+    BonesGridSize(8, 4)
+
+    $XDIST1(f, -1)
+    $XDIST2(f, -1)
+    $XDIST3(f, -1)
+    $YDIST(f,-0.96)
+
+    Bone(0, 0, "bone_hair_h3", 1, XDIST1, YDIST)
+    Bone(0, 1, "bone_hair_h4", 0, XDIST2, YDIST)
+    Bone(0, 2, "bone_hair_h5", 0, XDIST2, YDIST)
+    Bone(0, 3, "",             0, XDIST2, YDIST)
+
+    Hook(1, 0, "bone_hair_g2", [0, 0, 0], XDIST1, YDIST)
+    Bone(1, 1, "bone_hair_g3", 0, XDIST2, YDIST)
+    Bone(1, 2, "bone_hair_g4", 0, XDIST2, YDIST)
+    Bone(1, 3, "",             0, XDIST2, YDIST)
+    
+    Bone(2, 0, "bone_hair_f3", 1, XDIST1, YDIST)
+    Bone(2, 1, "bone_hair_f4", 0, XDIST2, YDIST)
+    Bone(2, 2, "",             0, XDIST2, YDIST)
+    Bone(2, 3, "",             0, XDIST2, YDIST)
+
+    Bone(3, 0, "bone_hair_e2", 1, XDIST1, YDIST)
+    Bone(3, 1, "bone_hair_e3", 0, XDIST2, YDIST)
+    Bone(3, 2, "bone_hair_e4", 0, XDIST2, YDIST)
+    Bone(3, 3, "",             0, XDIST2, YDIST)
+
+    Bone(4, 0, "bone_hair_d2", 1, XDIST1, YDIST)
+    Bone(4, 1, "bone_hair_d3", 0, XDIST2, YDIST)
+    Bone(4, 2, "bone_hair_d4", 0, XDIST2, YDIST)
+    Bone(4, 3, "",             0, XDIST2, YDIST)
+
+    Bone(5, 0, "bone_hair_c2", 1, XDIST1, YDIST)
+    Bone(5, 1, "bone_hair_c3", 0, XDIST2, YDIST)
+    Bone(5, 2, "bone_hair_c4", 0, XDIST2, YDIST)
+    Bone(5, 3, "",             0, XDIST2, YDIST)
+
+    Bone(6, 0, "bone_hair_b2", 1, XDIST1, YDIST)
+    Bone(6, 1, "bone_hair_b3", 0, XDIST2, YDIST)
+    Bone(6, 2, "bone_hair_b4", 0, XDIST2, YDIST)
+    Bone(6, 3, "",             0, XDIST2, YDIST)
+
+    Bone(7, 0, "bone_hair_a3", 1, XDIST1, YDIST)
+    Bone(7, 1, "bone_hair_a4", 0, XDIST2, YDIST)
+    Bone(7, 2, "bone_hair_a5", 0, XDIST2, YDIST)
+    Bone(7, 3, "",             0, XDIST2, YDIST)
+
+    UseFlatNormalCalculations(1)
+
+//----------------------------------------------
+// collisions 
+//----------------------------------------------
+
+    CollisionSpeedMod(1)
+    CollisionSlide(1)
+    CollisionBounce(0)
+
+    CollisionSphere("bip01 head", 0.13)    // MunDee Estuvo aquí
+    CollisionSphereShift("bip01 spine3", [0, 0, 0], 0.17)    // MunDee Estuvo aquí
+    
+    $SPRING_CF(f, 1000)
+
+    CollisionMinDistance(0, 1, "bip01 spine3", [-0.1,0.1,0.5],  0.57, SPRING_CF)    // MunDee Estuvo aquí
+    CollisionMinDistance(0, 2, "bip01 spine3", [-0.1,0.1,0.5],  0.62, SPRING_CF)    // MunDee Estuvo aquí
+    CollisionMinDistance(0, 3, "bip01 spine3", [-0.1,0.1,0.5],  0.66, SPRING_CF)    // MunDee Estuvo aquí
+
+    CollisionMinDistance(1, 1, "bip01 spine3", [-0.1,0.1,0.5],  0.52, SPRING_CF)    // MunDee Estuvo aquí
+    CollisionMinDistance(1, 2, "bip01 spine3", [-0.1,0.1,0.5],  0.58, SPRING_CF)    // MunDee Estuvo aquí
+    CollisionMinDistance(1, 3, "bip01 spine3", [-0.1,0.1,0.5],  0.66, SPRING_CF)    // MunDee Estuvo aquí
+
+    CollisionMaxDistance(2, 1, "bip01 spine3", [0.05,0.15,0.12],  0.02, SPRING_CF)    // MunDee Estuvo aquí
+    CollisionMaxDistance(2, 2, "bip01 spine3", [0.0,0.15,0.12],   0.02, SPRING_CF)    // MunDee Estuvo aquí
+    CollisionMaxDistance(2, 3, "bip01 spine3", [-0.05,0.15,0.12], 0.02, SPRING_CF)    // MunDee Estuvo aquí
+
+    CollisionMinDistance(3, 1, "bip01 spine3", [-0.2,0.1,-1.0],1.07, SPRING_CF)    // MunDee Estuvo aquí
+    CollisionMinDistance(3, 2, "bip01 spine3", [-0.2,0.1,-1.0],1.13, SPRING_CF)    // MunDee Estuvo aquí
+    CollisionMinDistance(3, 3, "bip01 spine3", [-0.2,0.1,-1.0],1.13, SPRING_CF)    // MunDee Estuvo aquí
+
+    CollisionMinDistance(4, 1, "bip01 spine3", [-0.2,-0.1,-1.0],1.09, SPRING_CF)    // MunDee Estuvo aquí
+    CollisionMinDistance(4, 2, "bip01 spine3", [-0.2,-0.1,-1.0],1.15, SPRING_CF)    // MunDee Estuvo aquí
+    CollisionMinDistance(4, 3, "bip01 spine3", [-0.2,-0.1,-1.0],1.15, SPRING_CF)    // MunDee Estuvo aquí
+    
+    CollisionMaxDistance(5, 1, "bip01 spine3", [0.05,-0.15,0.12],0.02, SPRING_CF)    // MunDee Estuvo aquí
+    CollisionMaxDistance(5, 2, "bip01 spine3", [0.0,-0.15,0.12],0.02, SPRING_CF)    // MunDee Estuvo aquí
+    CollisionMaxDistance(5, 3, "bip01 spine3", [-0.05,-0.15,0.12],0.02, SPRING_CF)    // MunDee Estuvo aquí
+
+    CollisionMinDistance(6, 1, "bip01 spine3", [-0.1,-0.1,0.5],0.6, SPRING_CF)    // MunDee Estuvo aquí
+    CollisionMinDistance(6, 2, "bip01 spine3", [-0.1,-0.1,0.5],0.6, SPRING_CF)    // MunDee Estuvo aquí
+    CollisionMinDistance(6, 3, "bip01 spine3", [-0.1,-0.1,0.5],0.62, SPRING_CF)    // MunDee Estuvo aquí
+
+    CollisionMinDistance(7, 1, "bip01 spine3", [-0.1,-0.1,0.5],0.62, SPRING_CF)    // MunDee Estuvo aquí
+    CollisionMinDistance(7, 2, "bip01 spine3", [-0.1,-0.1,0.5],0.64, SPRING_CF)    // MunDee Estuvo aquí
+    CollisionMinDistance(7, 3, "bip01 spine3", [-0.1,-0.1,0.5],0.66, SPRING_CF)    // MunDee Estuvo aquí
+
+    CollisionMaxDistance(0, 2, "bip01 spine3", [-0.3,0.1,-0.15],0.35, SPRING_CF)    // MunDee Estuvo aquí
+    CollisionMaxDistance(7, 2, "bip01 spine3", [-0.3,-0.1,-0.15],0.35, SPRING_CF)    // MunDee Estuvo aquí
+    
+    CollisionShapesMoveInfluence(1)
+    
+    CollisionSegmentDivision(180)
+    CollisionNormalAngleThreshold(190)
+    
+    NodeCollisionSphereRadius(0.3)    // MunDee Estuvo aquí
+    ExternalCollisionAffectMul(0)
+
+//----------------------------------------------
+// spring params 
+//----------------------------------------------
+
+    Viscous(10)
+    AirFriction(10)
+
+    StructuralStiffness(8000, 0)
+    ShearStiffness(100, 0)
+    FlexionStiffness(100, 0)
+
+    HorizontSpringRatio(0.02)
+    
+    CheckLengthsStepsPerSec(0)
+    
+    // CheckBendingStiffness(0)
+
+//----------------------------------------------
+// physical params 
+//----------------------------------------------
+    
+    Mass(1)
+    GravityMul(1)
+    WindInfluence(0.3)
+
+//----------------------------------------------
+// other params
+//----------------------------------------------
+
+    EnableAPBOut(1)
+    SynchroWithPhysics(0)
+    
+    ObjectMoveMul(1)    
+    AnimationMoveMul(0.7) 
+}
+
+

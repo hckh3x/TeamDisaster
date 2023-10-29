@@ -1,0 +1,34 @@
+export int SKIN = 1;
+export int MORPH = 1;
+export int HIDE = 1;
+
+sub morphs()
+{
+  version(2);
+  // node(name, lod_index, is_skinning, is_hiding, is_morphing, morph_offset_vertices);
+  node("beard", 0, SKIN, 0, MORPH, 0);
+  node("beard_b", 0, SKIN, 0, MORPH, 172);
+  node("body", 0, SKIN, HIDE, MORPH, 1493);
+  node("gore", 0, SKIN, 0, MORPH, 4561);
+  node("hair_a", 0, SKIN, 0, MORPH, 4626);
+  node("hair_b", 0, SKIN, 0, MORPH, 5727);
+  node("hair_c", 0, SKIN, 0, MORPH, 7395);
+  node("hair_d", 0, SKIN, 0, MORPH, 8309);
+  node("hair_e", 0, SKIN, 0, MORPH, 11011);
+  node("head", 0, SKIN, 0, MORPH, 14984);
+  node("head_bandage", 0, SKIN, 0, 0, 0);
+  node("head_cut_1", 0, SKIN, 0, MORPH, 17081);
+  node("head_cut_2", 0, SKIN, 0, MORPH, 17845);
+  node("head_cut_3", 0, SKIN, 0, MORPH, 18318);
+  node("m_bballcap_a", 0, SKIN, 0, 0, 0);
+  node("m_bballcap_a_zombie", 0, SKIN, 0, MORPH, 18554);
+  node("m_bballcap_b", 0, SKIN, 0, 0, 0);
+  node("m_bballcap_b_zombie", 0, SKIN, 0, 0, 0);
+  node("m_indiana", 0, SKIN, 0, 0, 0);
+  node("m_indiana_s", 0, SKIN, 0, 0, 0);
+  node("m_scraf_a", 0, SKIN, 0, MORPH, 19946);
+  node("m_scraf_b", 0, SKIN, 0, 0, 0);
+  node("moustache_a", 0, SKIN, 0, MORPH, 20916);
+  node("moustache_b", 0, SKIN, 0, MORPH, 21073);
+  total(22002);
+}

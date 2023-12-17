@@ -1,8 +1,0 @@
-!include("human_sound_types.def")
-
-//EZombieSoundType
-$SOUND_TYPE_BERSERKER_MOVE      (i, 17)
-$SOUND_TYPE_LONG_BITE           (i, 20)
-$SOUND_TYPE_IDLE_CALM           (i, 23)
-$SOUND_TYPE_IDLE_ALARMED        (i, 24)
-$SOUND_TYPE_MOVE                (i, 35)

@@ -1,8 +1,0 @@
-!QuestStage( s, s, s )
-
-QuestStage( "07x05  &Market_FindSupplies_Name& (Market_FindSupplies/Market Start)", "Market_FindSupplies", "Market Start" )
-QuestStage( "07x05  &Market_FindSupplies_Name& (Market_FindSupplies/Market - Main Hall)", "Market_FindSupplies", "Market - Main Hall" )
-QuestStage( "07x05  &Market_FindSupplies_Name& (Market_FindSupplies/Market - Back)", "Market_FindSupplies", "Market - Back" )
-QuestStage( "07x05  &Market_FindSupplies_Name& (Market_FindSupplies/Market - Final Fight)", "Market_FindSupplies", "Market - Final Fight" )
-QuestStage( "07x05  &Market_FindSupplies_Name& (Market_FindSupplies/Market - End)", "Market_FindSupplies", "Market - End" )
-QuestStage( "07x05  &Market_FindSupplies_Name& (Market_FindSupplies/CINEMATIC - BRIDGE SUPPLY)", "Market_FindSupplies", "CINEMATIC - BRIDGE SUPPLY" )

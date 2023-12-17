@@ -1,4 +1,0 @@
-SeqTrack( "open", "travel_bag_a_anm.anm2", 0, 10, 15, 0, 0.5 )
-SeqTrack( "close", "travel_bag_a_anm.anm2", 10, 0, 15, 0, 0.5 )
-
-

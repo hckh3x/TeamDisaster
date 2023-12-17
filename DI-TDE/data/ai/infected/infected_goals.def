@@ -1,4 +1,0 @@
-//EInfectedGoal
-$GOAL_TAUNT                     (i, 301)
-$GOAL_INFECTED_MOVE             (i, 302)
-$GOAL_INFECTED_CHARGE		 	(i, 303)

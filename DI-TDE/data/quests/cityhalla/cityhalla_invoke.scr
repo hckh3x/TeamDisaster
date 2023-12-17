@@ -1,5 +1,0 @@
-!QuestStage( s, s, s )
-
-QuestStage( "07x01  &ACT2B_CityHall_Name& (ACT2B_CityHall/Go to Mayor)", "ACT2B_CityHall", "Go to Mayor" )
-QuestStage( "07x01  &ACT2B_CityHall_Name& (ACT2B_CityHall/ CINEMATIC - WHAT WE DO )", "ACT2B_CityHall", " CINEMATIC - WHAT WE DO " )
-QuestStage( "07x03s &Policeman_Q1_Name& (Policeman_Q1/ End_Of_CityHall_A )", "Policeman_Q1", " End_Of_CityHall_A " )

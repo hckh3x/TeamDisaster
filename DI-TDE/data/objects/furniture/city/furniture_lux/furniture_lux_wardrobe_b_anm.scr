@@ -1,2 +1,0 @@
-SeqTrack( "Open", "furniture_lux_wardrobe_b_anm.anm2", 0, 10, 30, 0, 0.5 )
-SeqTrack( "Close", "furniture_lux_wardrobe_b_anm.anm2", 10, 0, 30, 0, 0.5 )

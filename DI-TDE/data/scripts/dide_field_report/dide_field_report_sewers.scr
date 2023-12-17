@@ -1,5 +1,0 @@
-sub sewers() {
-OnMap("sewers", "NPCLifePlace", "", "14060", "1512", "15815"){Field("m_PlaceType", 1);}
-OnMap("sewers", "NPCLifePlace", "", "23875", "2694", "26660"){Field("m_PlaceType", 12);}
-
-}

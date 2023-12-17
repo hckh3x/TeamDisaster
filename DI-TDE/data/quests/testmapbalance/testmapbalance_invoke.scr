@@ -1,5 +1,0 @@
-!QuestStage( s, s, s )
-
-QuestStage( "00x01s &TestMapBalance_locker_Name& (TestMapBalance_locker/StartingPlayerPosition)", "TestMapBalance_locker", "StartingPlayerPosition" )
-QuestStage( "00x02s &TMB_Resort_Name& (TMB_Resort/Resort)", "TMB_Resort", "Resort" )
-QuestStage( "00x02s &TMB_Prison_Name& (TMB_Prison/Prison)", "TMB_Prison", "Prison" )

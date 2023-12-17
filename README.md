@@ -1,24 +1,17 @@
-# Team Disaster
-![image](tdportadaxd.png)
+# Apocalypse
+![image](deadisland.png)
 ## Modding/settings/videogames/etc
 ---
 - [Youtube](https://www.youtube.com/@TeamDisaster)
 - [Patreon](https://patreon.com/TeamDisaster)
-- [Facebook](https://www.facebook.com/TeamDisasterTD)
 
 ---
 
 ## Description (eng/spanish):
 ### Eng:
-This repo has been created to store all Team Disaster projects (mods, settings, etc). Team Disaster share this content only following a purpose: you can enjoy it!.
-Please, enjoy it and comment us what you think'bout those. You know where find us.
+Hello there!, here MunDee.
+This is the repo for Apocalypse MOD (DIDE and DIRDE) so, check out and use (giving me credits) or get satisfied your curiosity.
 
 ### Spanish:
-Este repositorio se ha creado para almacenar todos los proyectos de Team Disaster (mods, ajustes, etc.). Team disaster Comparte este contenido solo siguiendo un propósito: ¡Puedes disfrutarlo!.
-Por favor, disfrútalo y coméntanos lo que piensas sobre ello. Sabes dónde encontrarnos.
 
----
-
-## Look at this:
-- [Dead Island Team Disaster Edition](DI-TDE)
-  
+Este repo es para el mod Apocalypse (DIDE y DIRDE) si lo usarás (el código) por favor dame un poco de crédito o satisface tu curiosidad solamente.

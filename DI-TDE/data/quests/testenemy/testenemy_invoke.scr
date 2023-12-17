@@ -1,3 +1,0 @@
-!QuestStage( s, s, s )
-
-QuestStage( "00x01s &TestEnemy_locker_Name& (TestEnemy_locker/StartingPlayerPosition)", "TestEnemy_locker", "StartingPlayerPosition" )

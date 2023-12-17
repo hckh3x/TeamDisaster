@@ -1,6 +1,0 @@
-!include("events.def")
-!include("human_vis_events.def")
-!include("human_sound_events.def")
-!include("human_timing_events.def")
-
-!include("MP_NPC_AK47.scr")

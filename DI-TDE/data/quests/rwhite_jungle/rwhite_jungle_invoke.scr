@@ -1,4 +1,0 @@
-!QuestStage( s, s, s )
-
-QuestStage( "00x01  &game_root_rw_Name& (game_root_rw/start of all game quests)", "game_root_rw", "start of all game quests" )
-QuestStage( "00x02  &RWhite_Start_Name& (RWhite_Start/RW campaign Start)", "RWhite_Start", "RW campaign Start" )

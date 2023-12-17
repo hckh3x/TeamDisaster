@@ -1,2 +1,0 @@
-VarFloat("f_weather_interior", 1.0)
-VarInt("i_lighting_sun_on", 0)

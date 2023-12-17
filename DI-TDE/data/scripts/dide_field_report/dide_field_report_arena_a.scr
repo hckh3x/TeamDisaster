@@ -1,4 +1,0 @@
-sub arena_a() {
-OnMap("arena_a", "AIBaseSpawnBox", "AISpawner_arena_a", "11914", "3529", "10479"){Field("m_AILocation", 8);}
-
-}

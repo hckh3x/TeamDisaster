@@ -1,4 +1,0 @@
-SeqTrack("CIN_DLC2_CIN16A_Ryder_00", "CIN_DLC2_CIN16A_Ryder_00.anm2", 0, 720, 30, 1, 0.5) 
-SeqTrack("CIN_DLC2_CIN16A_PilotR_00", "CIN_DLC2_CIN16A_PilotR_00.anm2", 0, 720, 30, 1, 0.5) 
-SeqTrack("CIN_DLC2_CIN16A_PilotL_00", "CIN_DLC2_CIN16A_PilotL_00.anm2", 0, 720, 30, 1, 0.5) 
-SeqTrack("CIN_DLC2_CIN16A_Passenger_00", "CIN_DLC2_CIN16A_Passenger_00.anm2", 0, 720, 30, 1, 0.5) 

@@ -1,5 +1,0 @@
-sub main()
-{
-    WeaponDamageMul(1.15);
-    HitTimeMul(0.9);
-}

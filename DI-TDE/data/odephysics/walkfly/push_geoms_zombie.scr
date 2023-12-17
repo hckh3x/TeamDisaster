@@ -1,5 +1,0 @@
-FromBone("bip01 l foot", 20)
-FromBone("bip01 r foot", 20)
-FromBone("bip01 pelvis", 60)
-
-

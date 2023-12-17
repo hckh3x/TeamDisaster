@@ -1,4 +1,0 @@
-sub main()
-{
-    Tip("LadderDI", "m_Material", "Tip test");
-}

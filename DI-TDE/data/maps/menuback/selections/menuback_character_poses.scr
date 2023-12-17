@@ -1,7 +1,0 @@
-sub main()
-{
-  Object( "Logan", "m_tpp_ak47_stand", 170 );
-  Object( "Purna", "m_tpp_ak47_aim_trot_l", 0 );
-  Object( "SamB", "m_tpp_stick2heavy_stand", 0 );
-  Object( "Xian", "tpp_stick_stand", 0 );
-}

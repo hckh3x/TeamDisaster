@@ -1,7 +1,0 @@
-!QuestStage( s, s, s )
-
-QuestStage( "00x01  &game_root_Name& (game_root/start of all game quests)", "game_root", "start of all game quests" )
-QuestStage( "00x02  &Hotel_Prologue_Name& (Hotel_Prologue/Prolog Start)", "Hotel_Prologue", "Prolog Start" )
-QuestStage( "00x02  &Hotel_Prologue_Name& (Hotel_Prologue/ CINEMATIC - FALLING ELEVATOR )", "Hotel_Prologue", " CINEMATIC - FALLING ELEVATOR " )
-QuestStage( "00x02  &Hotel_Prologue_Name& (Hotel_Prologue/ CINEMATIC - PROLOG END )", "Hotel_Prologue", " CINEMATIC - PROLOG END " )
-QuestStage( "00x03s &__FalingGuy_Name& (__FalingGuy/ CINEMATIC - FALLING PEOPLE )", "__FalingGuy", " CINEMATIC - FALLING PEOPLE " )

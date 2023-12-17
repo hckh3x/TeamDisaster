@@ -1,7 +1,0 @@
-SeqTrack("CIN_DLC2_CIN19_Pilot1_00", "CIN_DLC2_CIN19_Pilot1_00.anm2", 0, 2761, 30, 1, 0.5) 
-SeqTrack("CIN_DLC2_CIN19_Pilot2_00", "CIN_DLC2_CIN19_Pilot2_00.anm2", 0, 2761, 30, 1, 0.5) 
-SeqTrack("CIN_DLC2_CIN19_Passenger1_00", "CIN_DLC2_CIN19_Passenger1_00.anm2", 0, 2761, 30, 1, 0.5) 
-SeqTrack("CIN_DLC2_CIN19_Passenger2_00", "CIN_DLC2_CIN19_Passenger2_00.anm2", 0, 2761, 30, 1, 0.5) 
-SeqTrack("CIN_DLC2_CIN19_Passenger3_00", "CIN_DLC2_CIN19_Passenger3_00.anm2", 0, 2761, 30, 1, 0.5) 
-SeqTrack("CIN_DLC2_CIN19_White_00", "CIN_DLC2_CIN19_White_00.anm2", 0, 2761, 30, 1, 0.5) 
-SeqTrack("CIN_DLC2_CIN19_Heli_00", "CIN_DLC2_CIN19_Heli_00.anm2", 0, 2761, 30, 1, 0.5) 

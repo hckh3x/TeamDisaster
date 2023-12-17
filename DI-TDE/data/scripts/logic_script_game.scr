@@ -1,5 +1,0 @@
-import "frame_script_def.scr"
-
-sub game_modify()
-{
-}

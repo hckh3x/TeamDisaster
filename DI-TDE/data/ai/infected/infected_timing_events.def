@@ -1,3 +1,0 @@
-!include("vessel_timing_events.def")
-
-////Keep this synchronized with EZombieTimingEvent enum!
